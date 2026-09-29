@@ -1,0 +1,577 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 3726
+     H or D atoms   : 8
+     chains         : 4
+     a.a. residues  : 431
+     nucleotides    : 0
+     water          : 242
+     other (ligands): 1
+   Ligands: GOL:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.048 (Z=  1.850)
+  Mean delta:    0.007 (Z=  0.333)
+
+                        ----------Bond angles----------                        
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   11.010 (Z=  3.670)
+  Mean delta:    0.944 (Z=  0.516)
+
+                      ----------Dihedral angles----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.005 (Z=  0.001)
+  Max. delta:   86.454 (Z=  3.900)
+  Mean delta:   13.895 (Z=  0.963)
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.300
+  Mean delta:    0.078
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.055
+  Mean delta:    0.009
+
+============================= Hydrogen validation =============================
+
+
+                ----------H/D atoms in the input model----------               
+
+  Total number of hydrogen atoms : 8
+  Total number of deuterium atoms: 0
+  Number of H atoms (protein)    : 0
+  Number of D atoms (protein)    : 0
+  Number of H atoms (water)      : 0
+  Number of D atoms (water)      : 0
+  Number of H atoms (other)      : 8
+  Number of D atoms (other)      : 0
+
+                      ----------Water molecules----------                      
+
+  Number of water                            : 242
+  Number of water with 0 H (or D)            : 242
+  Number of water with 1 H (or D)            : 0
+  Number of water with 2 H (or D)            : 0
+  Number of water in alternative conformation: 0
+  Number of water without oxygen atom        : 0
+
+                    ----------MISSING H or D atoms----------                   
+
+  THR A   2  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  GLU A   3  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ASN A   4  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  ILE A   5  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  LEU A   6  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ARG A   7  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  LYS A   8  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  SER A   9  conformer  : H, HA, HB2, HG, HB3 
+  ASP A  10  conformer  : H, HA, HB2, HB3 
+  GLU A  11  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLU A  12  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ILE A  13  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLN A  14  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  LYS A  15  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLU A  16  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ILE A  17  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  THR A  18  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ALA A  19  conformer  : H, HA, HB1, HB2, HB3 
+  ARG A  20  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  VAL A  21  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  LYS A  22  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  ALA A  23  conformer  : H, HA, HB1, HB2, HB3 
+  LEU A  24  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLU A  25  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  SER A  26  conformer  : H, HA, HB2, HG, HB3 
+  MET A  27  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  LEU A  28  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ILE A  29  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLU A  30  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLN A  31  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  GLY A  32  conformer  : H, HA2, HA3 
+  ILE A  33  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  LEU A  34  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  THR A  35  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  THR A  36  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  SER A  37  conformer  : H, HA, HB2, HG, HB3 
+  MET A  38  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  ILE A  39  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  ASP A  40  conformer  : H, HA, HB2, HB3 
+  ARG A  41  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  MET A  42  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  ALA A  43  conformer  : H, HA, HB1, HB2, HB3 
+  GLU A  44  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ILE A  45  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  TYR A  46  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  GLU A  47  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ASN A  48  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  GLU A  49  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  VAL A  50  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  GLY A  51  conformer  : H, HA2, HA3 
+  PRO A  52  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  HIS A  53  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  LEU A  54  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLY A  55  conformer  : H, HA2, HA3 
+  ALA A  56  conformer  : H, HA, HB1, HB2, HB3 
+  LYS A  57  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  VAL A  58  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A  59  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A  60  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  LYS A  61  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  ALA A  62  conformer  : H, HA, HB1, HB2, HB3 
+  TRP A  63  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  THR A  64  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ASP A  65  conformer  : H, HA, HB2, HB3 
+  PRO A  66  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLU A  67  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PHE A  68  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  LYS A  69  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  LYS A  70  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  ARG A  71  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  LEU A  72  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  LEU A  73  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ALA A  74  conformer  : H, HA, HB1, HB2, HB3 
+  ASP A  75  conformer  : H, HA, HB2, HB3 
+  GLY A  76  conformer  : H, HA2, HA3 
+  THR A  77  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  GLU A  78  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ALA A  79  conformer  : H, HA, HB1, HB2, HB3 
+  CYS A  80  conformer  : H, HA, HB2, HG, HB3 
+  LYS A  81  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLU A  82  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LEU A  83  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLY A  84  conformer  : H, HA2, HA3 
+  ILE A  85  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLY A  86  conformer  : H, HA2, HA3 
+  GLY A  87  conformer  : H, HA2, HA3 
+  LEU A  88  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLN A  89  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  GLY A  90  conformer  : H, HA2, HA3 
+  GLU A  91  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ASP A  92  conformer  : H, HA, HB2, HB3 
+  MET A  93  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  MET A  94  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  TRP A  95  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  VAL A  96  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  GLU A  97  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ASN A  98  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  THR A  99  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ASP A 100  conformer  : H, HA, HB2, HB3 
+  GLU A 101  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  VAL A 102  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  HIS A 103  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  HIS A 104  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  VAL A 105  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A 106  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A 107  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  CYS A 108  conformer  : H, HA, HB2, HG, HB3 
+  THR A 109  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  LEU A 110  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  CYS A 111  conformer  : H, HA, HB2, HG, HB3 
+  THR A 112  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  CSO A 113  conformer  : H, HN2, HA, HB2, HB3, HD 
+  TYR A 114  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  PRO A 115  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  TRP A 116  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  PRO A 117  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  VAL A 118  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  LEU A 119  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLY A 120  conformer  : H, HA2, HA3 
+  LEU A 121  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  PRO A 122  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  PRO A 123  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ASN A 124  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  TRP A 125  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  PHE A 126  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  LYS A 127  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLU A 128  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PRO A 129  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLN A 130  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  TYR A 131  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ARG A 132  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  SER A 133  conformer  : H, HA, HB2, HG, HB3 
+  ARG A 134  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  VAL A 135  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A 136  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ARG A 137  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  GLU A 138  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PRO A 139  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ARG A 140  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  GLN A 141  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  LEU A 142  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  LEU A 143  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  LYS A 144  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLU A 145  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLU A 146  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PHE A 147  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  GLY A 148  conformer  : H, HA2, HA3 
+  PHE A 149  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  GLU A 150  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  VAL A 151  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  PRO A 152  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  PRO A 153  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  SER A 154  conformer  : H, HA, HB2, HG, HB3 
+  LYS A 155  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLU A 156  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ILE A 157  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  LYS A 158  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  VAL A 159  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  TRP A 160  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  ASP A 161  conformer  : H, HA, HB2, HB3 
+  SER A 162  conformer A, B : H, HA, HB2, HG, HB3 
+  SER A 163  conformer  : H, HA, HB2, HG, HB3 
+  SER A 164  conformer  : H, HA, HB2, HG, HB3 
+  GLU A 165  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  MET A 166  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  ARG A 167  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PHE A 168  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  VAL A 169  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A 170  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  LEU A 171  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  PRO A 172  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLN A 173  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  ARG A 174  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PRO A 175  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ALA A 176  conformer  : H, HA, HB1, HB2, HB3 
+  GLY A 177  conformer  : H, HA2, HA3 
+  THR A 178  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ASP A 179  conformer  : H, HA, HB2, HB3 
+  GLY A 180  conformer  : H, HA2, HA3 
+  TRP A 181  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  SER A 182  conformer  : H, HA, HB2, HG, HB3 
+  GLU A 183  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLU A 184  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLU A 185  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LEU A 186  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ALA A 187  conformer  : H, HA, HB1, HB2, HB3 
+  THR A 188  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  LEU A 189  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  VAL A 190  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  THR A 191  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ARG A 192  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  GLU A 193  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  SER A 194  conformer  : H, HA, HB2, HG, HB3 
+  MET A 195  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  ILE A 196  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLY A 197  conformer  : H, HA2, HA3 
+  VAL A 198  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  GLU A 199  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PRO A 200  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ALA A 201  conformer  : H, HA, HB1, HB2, HB3 
+  LYS A 202  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  ALA A 203  conformer  : H, HA, HB1, HB2, HB3 
+  VAL A 204  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  MET B   1  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  ASN B   2  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  GLY B   3  conformer  : H, HA2, HA3 
+  VAL B   4  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  TYR B   5  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ASP B   6  conformer  : H, HA, HB2, HB3 
+  VAL B   7  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  GLY B   8  conformer  : H, HA2, HA3 
+  GLY B   9  conformer  : H, HA2, HA3 
+  THR B  10  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ASP B  11  conformer  : H, HA, HB2, HB3 
+  GLY B  12  conformer  : H, HA2, HA3 
+  LEU B  13  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLY B  14  conformer  : H, HA2, HA3 
+  PRO B  15  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ILE B  16  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  ASN B  17  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  ARG B  18  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PRO B  19  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ALA B  20  conformer  : H, HA, HB1, HB2, HB3 
+  ASP B  21  conformer  : H, HA, HB2, HB3 
+  GLU B  22  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PRO B  23  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  VAL B  24  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  PHE B  25  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  ARG B  26  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  ALA B  27  conformer  : H, HA, HB1, HB2, HB3 
+  GLU B  28  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  TRP B  29  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  GLU B  30  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LYS B  31  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  VAL B  32  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ALA B  33  conformer  : H, HA, HB1, HB2, HB3 
+  PHE B  34  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  ALA B  35  conformer  : H, HA, HB1, HB2, HB3 
+  MET B  36  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  PHE B  37  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  PRO B  38  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ALA B  39  conformer  : H, HA, HB1, HB2, HB3 
+  THR B  40  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  PHE B  41  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  ARG B  42  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  ALA B  43  conformer  : H, HA, HB1, HB2, HB3 
+  GLY B  44  conformer  : H, HA2, HA3 
+  PHE B  45  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  MET B  46  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  GLY B  47  conformer  : H, HA2, HA3 
+  LEU B  48  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ASP B  49  conformer  : H, HA, HB2, HB3 
+  GLU B  50  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PHE B  51  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  ARG B  52  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PHE B  53  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  GLY B  54  conformer  : H, HA2, HA3 
+  ILE B  55  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLU B  56  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLN B  57  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  MET B  58  conformer  : H, HA, HB2, HG2, HE1, HE2, HE3, HB3, HG3 
+  ASN B  59  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  PRO B  60  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ALA B  61  conformer  : H, HA, HB1, HB2, HB3 
+  GLU B  62  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  TYR B  63  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  LEU B  64  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLU B  65  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  SER B  66  conformer  : H, HA, HB2, HG, HB3 
+  PRO B  67  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  TYR B  68  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  TYR B  69  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  TRP B  70  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  HIS B  71  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  TRP B  72  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  ILE B  73  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  ARG B  74  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  THR B  75  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  TYR B  76  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ILE B  77  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  HIS B  78  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  HIS B  79  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  GLY B  80  conformer  : H, HA2, HA3 
+  VAL B  81  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ARG B  82  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  THR B  83  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  GLY B  84  conformer  : H, HA2, HA3 
+  LYS B  85  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  ILE B  86  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  ASP B  87  conformer  : H, HA, HB2, HB3 
+  LEU B  88  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLU B  89  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLU B  90  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LEU B  91  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLU B  92  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ARG B  93  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  ARG B  94  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  THR B  95  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  GLN B  96  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  TYR B  97  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  TYR B  98  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ARG B  99  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  GLU B 100  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  ASN B 101  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  PRO B 102  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ASP B 103  conformer  : H, HA, HB2, HB3 
+  ALA B 104  conformer  : H, HA, HB1, HB2, HB3 
+  PRO B 105  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  LEU B 106  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  PRO B 107  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLU B 108  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  HIS B 109  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  GLU B 110  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLN B 111  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  LYS B 112  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  PRO B 113  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLU B 114  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LEU B 115  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ILE B 116  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLU B 117  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PHE B 118  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  VAL B 119  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ASN B 120  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  GLN B 121  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  ALA B 122  conformer  : H, HA, HB1, HB2, HB3 
+  VAL B 123  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  TYR B 124  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  GLY B 125  conformer  : H, HA2, HA3 
+  GLY B 126  conformer  : H, HA2, HA3 
+  LEU B 127  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  PRO B 128  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ALA B 129  conformer  : H, HA, HB1, HB2, HB3 
+  SER B 130  conformer  : H, HA, HB2, HG, HB3 
+  ARG B 131  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  GLU B 132  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  VAL B 133  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ASP B 134  conformer  : H, HA, HB2, HB3 
+  ARG B 135  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PRO B 136  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  PRO B 137  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  LYS B 138  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  PHE B 139  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  LYS B 140  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLU B 141  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLY B 142  conformer  : H, HA2, HA3 
+  ASP B 143  conformer  : H, HA, HB2, HB3 
+  VAL B 144  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL B 145  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ARG B 146  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PHE B 147  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  SER B 148  conformer  : H, HA, HB2, HG, HB3 
+  THR B 149  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ALA B 150  conformer  : H, HA, HB1, HB2, HB3 
+  SER B 151  conformer  : H, HA, HB2, HG, HB3 
+  PRO B 152  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  LYS B 153  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  GLY B 154  conformer  : H, HA2, HA3 
+  HIS B 155  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  ALA B 156  conformer  : H, HA, HB1, HB2, HB3 
+  ARG B 157  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  ARG B 158  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  ALA B 159  conformer  : H, HA, HB1, HB2, HB3 
+  ARG B 160  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  TYR B 161  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  VAL B 162  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ARG B 163  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  GLY B 164  conformer  : H, HA2, HA3 
+  LYS B 165  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  THR B 166  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  GLY B 167  conformer  : H, HA2, HA3 
+  THR B 168  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  VAL B 169  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL B 170  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  LYS B 171  conformer  : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HD3, HE3 
+  HIS B 172  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  HIS B 173  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  GLY B 174  conformer  : H, HA2, HA3 
+  ALA B 175  conformer  : H, HA, HB1, HB2, HB3 
+  TYR B 176  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ILE B 177  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  TYR B 178  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  PRO B 179  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ASP B 180  conformer  : H, HA, HB2, HB3 
+  THR B 181  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ALA B 182  conformer  : H, HA, HB1, HB2, HB3 
+  GLY B 183  conformer  : H, HA2, HA3 
+  ASN B 184  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  GLY B 185  conformer  : H, HA2, HA3 
+  LEU B 186  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLY B 187  conformer  : H, HA2, HA3 
+  GLU B 188  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  CYS B 189  conformer  : H, HA, HB2, HG, HB3 
+  PRO B 190  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLU B 191  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  HIS B 192  conformer  : H, HA, HB2, HD1, HE1, HE2, HD2, HB3 
+  LEU B 193  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  TYR B 194  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  THR B 195  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  VAL B 196  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ARG B 197  conformer  : H, HA, HB2, HG2, HD2, HE, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  PHE B 198  conformer  : H, HA, HB2, HD1, HE1, HZ, HE2, HD2, HB3 
+  THR B 199  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+  ALA B 200  conformer  : H, HA, HB1, HB2, HB3 
+  GLN B 201  conformer  : H, HA, HB2, HG2, HE21, HE22, HB3, HG3 
+  GLU B 202  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LEU B 203  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  TRP B 204  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  GLY B 205  conformer  : H, HA2, HA3 
+  PRO B 206  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  GLU B 207  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  GLY B 208  conformer  : H, HA2, HA3 
+  ASP B 209  conformer  : H, HA, HB2, HB3 
+  PRO B 210  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  ASN B 211  conformer  : H, HA, HB2, HD21, HD22, HB3 
+  SER B 212  conformer  : H, HA, HB2, HG, HB3 
+  SER B 213  conformer  : H, HA, HB2, HG, HB3 
+  VAL B 214  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  TYR B 215  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  TYR B 216  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ASP B 217  conformer  : H, HA, HB2, HB3 
+  CYS B 218  conformer  : H, HA, HB2, HG, HB3 
+  TRP B 219  conformer  : H, HA, HB2, HD1, HE1, HE3, HZ3, HH2, HZ2, HB3 
+  GLU B 220  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  PRO B 221  conformer  : HA, HB2, HG2, HD2, HB3, HG3, HD3 
+  TYR B 222  conformer  : H, HA, HB2, HD1, HE1, HH, HE2, HD2, HB3 
+  ILE B 223  conformer  : H, HA, HB, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  GLU B 224  conformer  : H, HA, HB2, HG2, HB3, HG3 
+  LEU B 225  conformer  : H, HA, HB2, HG, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  VAL B 226  conformer  : H, HA, HB, HG11, HG12, HG13, HG21, HG22, HG23 
+  ASP B 227  conformer  : H, HA, HB2, HB3 
+  THR B 228  conformer  : H, HA, HB, HG1, HG21, HG22, HG23 
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.007   0.048   3573  Z= 0.333
+    Angle     :  0.944  11.010   4854  Z= 0.516
+    Chirality :  0.078   0.300    504
+    Planarity :  0.009   0.055    639
+    Dihedral  : 13.895  86.454   1338
+    Min Nonbonded Distance : 2.439
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 3.51
+    Ramachandran Plot:
+      Outliers :  0.24 %
+      Allowed  :  2.36 %
+      Favored  : 97.41 %
+    Rotamer:
+      Outliers :  1.08 %
+      Allowed  :  2.71 %
+      Favored  : 96.21 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole: -0.39 (0.36), residues: 425
+    helix: -0.11 (0.34), residues: 175
+    sheet: -0.50 (0.63), residues: 67
+    loop : -0.09 (0.40), residues: 183
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.005   0.001   ARG B 157 
+   TYR   0.039   0.007   TYR A 114 
+   PHE   0.027   0.006   PHE A 168 
+   TRP   0.028   0.006   TRP B  70 
+   HIS   0.015   0.004   HIS B 173 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.00736 ( 3573)
+    covalent geometry    : angle       0.94374 ( 4854)
+
+                     ----------Asn/Gln/His flips----------                     
+
+  No backwards Asn/Gln/His sidechains found.
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.24 %
+                favored =  97.41 %
+  Rotamer outliers      =   1.08 %
+  C-beta deviations     =     0
+  Clashscore            =   3.51
+  RMS(bonds)            =   0.0074
+  RMS(angles)           =   0.94
+  MolProbity score      =   1.28
+  Refinement program    = Phenix

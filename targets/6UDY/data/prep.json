@@ -1,0 +1,154 @@
+{
+ "target": "6UDY",
+ "pdb_id": "6UDY",
+ "sf_source": "/home/dev/data/raw/6UDY/6UDY-sf.cif",
+ "sf_sha256": "824e20d33848573b55383b70d0b0946bcf88926f4f3a463465f88f32732baaec",
+ "sf_block": "r6udysf",
+ "columns_present": [
+  "_refln.crystal_id",
+  "_refln.wavelength_id",
+  "_refln.scale_group_code",
+  "_refln.index_h",
+  "_refln.index_k",
+  "_refln.index_l",
+  "_refln.status",
+  "_refln.pdbx_r_free_flag",
+  "_refln.F_meas_au",
+  "_refln.F_meas_sigma_au",
+  "_refln.intensity_meas",
+  "_refln.intensity_sigma",
+  "_refln.pdbx_I_plus",
+  "_refln.pdbx_I_plus_sigma",
+  "_refln.pdbx_I_minus",
+  "_refln.pdbx_I_minus_sigma",
+  "_refln.pdbx_F_plus",
+  "_refln.pdbx_F_plus_sigma",
+  "_refln.pdbx_F_minus",
+  "_refln.pdbx_F_minus_sigma",
+  "_refln.pdbx_anom_difference",
+  "_refln.pdbx_anom_difference_sigma"
+ ],
+ "space_group": "P 21 21 21",
+ "unit_cell": [
+  43.271,
+  84.954,
+  90.328,
+  90.0,
+  90.0,
+  90.0
+ ],
+ "data_mtz": "/home/dev/data/targets/6UDY/data.mtz",
+ "flags_mtz": "/home/dev/data/targets/6UDY/flags.mtz",
+ "split_mtz": "/home/dev/data/targets/6UDY/split.mtz",
+ "split_json": "/home/dev/data/targets/6UDY/split.json",
+ "flag_label": "R-free-flags",
+ "test_flag_value": 0,
+ "data_labels": "IMEAN,SIGIMEAN",
+ "intensities_or_amplitudes": "intensities",
+ "n_free": 1778,
+ "fraction_free": 0.050073,
+ "data_mtz_sha256": "b6588a9c04d28559daf6f4011ce097684441a94440ec870f432bd7131a322485",
+ "flags_mtz_sha256": "3ea0316878ecbaf18fcac2247446befe76ee9280b97a98b6bf27f88eb61bda23",
+ "split_mtz_sha256": "892a2bebf0dad8b45b1531125cad58c8482318fdb77411af5f7011d0052bda13",
+ "split_sha256": "a4d369ed87e07db43b657d9226148e3dc82b6cb290c3cbb6978ce8f38ae4f7e9",
+ "n_select": 889,
+ "n_report": 889,
+ "split_seed": 416413547,
+ "flags_source": "inherited",
+ "convention_note": "Inherited unchanged from _refln.status of 6UDY-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+ "n_reflections": 35508,
+ "n_work": 33730,
+ "n_rows_in_sf": 35508,
+ "n_dropped_unmeasured": 0,
+ "n_dropped_missing_value": 0,
+ "data_choice": {
+  "kind": "intensities",
+  "value_tag": "intensity_meas",
+  "sigma_tag": "intensity_sigma",
+  "labels": [
+   "IMEAN",
+   "SIGIMEAN"
+  ],
+  "types": [
+   "J",
+   "Q"
+  ],
+  "also_available": [
+   "F_meas_au"
+  ],
+  "coverage": {
+   "intensities": {
+    "value_tag": "intensity_meas",
+    "sigma_tag": "intensity_sigma",
+    "n_measured_rows": 35508,
+    "n_usable": 35508,
+    "n_null": 0,
+    "n_zero_placeholder": 0
+   },
+   "amplitudes": {
+    "value_tag": "F_meas_au",
+    "sigma_tag": "F_meas_sigma_au",
+    "n_measured_rows": 35508,
+    "n_usable": 35508,
+    "n_null": 0,
+    "n_zero_placeholder": 0
+   }
+  },
+  "rejected": [],
+  "reason": "merged intensities present and fully populated; phenix.refine applies French-Wilson"
+ },
+ "convention": {
+  "source_tag": "_refln.status",
+  "free_symbol": "f",
+  "work_symbols": [
+   "o"
+  ],
+  "unmeasured_symbols": [],
+  "counts": {
+   "f": 1778,
+   "o": 33730
+  },
+  "cross_check": {
+   "tag": "_refln.pdbx_r_free_flag",
+   "kind": "20-bin k-fold index",
+   "free_value": 0,
+   "counts": {
+    "2": 1777,
+    "19": 1806,
+    "17": 1789,
+    "8": 1787,
+    "9": 1800,
+    "11": 1755,
+    "18": 1796,
+    "4": 1823,
+    "13": 1708,
+    "6": 1826,
+    "1": 1769,
+    "15": 1776,
+    "14": 1707,
+    "12": 1791,
+    "3": 1755,
+    "16": 1727,
+    "7": 1777,
+    "0": 1778,
+    "10": 1807,
+    "5": 1754
+   },
+   "identical_to_status_f": true,
+   "note": "bin 0 restricted to measured reflections is compared with status=='f'"
+  },
+  "note": "mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude."
+ },
+ "header_claim": {
+  "r_work": 0.2497,
+  "r_free": 0.285,
+  "n_free": 1778,
+  "pct_free": 4.8,
+  "n_obs": 35506,
+  "sigma_f": 0.0,
+  "cross_valid_method": "THROUGHOUT",
+  "sf_status": "REL"
+ },
+ "script": "autoref.flags.build",
+ "written_at": "2026-09-17T04:24:29+00:00"
+}

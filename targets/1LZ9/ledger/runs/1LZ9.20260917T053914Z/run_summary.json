@@ -1,0 +1,123 @@
+{
+ "run_id": "1LZ9.20260917T053914Z",
+ "target": "1LZ9",
+ "run_dir": "/home/dev/runs/1LZ9/runs/1LZ9.20260917T053914Z",
+ "cycles": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "n_cycles": 4,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [
+  [
+   1,
+   "1LZ9.c001.water_remove.A362"
+  ],
+  [
+   1,
+   "1LZ9.c001.water_remove.A393"
+  ],
+  [
+   1,
+   "1LZ9.c001.water_remove.A387"
+  ],
+  [
+   1,
+   "1LZ9.c001.water_remove.A243"
+  ],
+  [
+   1,
+   "1LZ9.c001.water_remove.A376"
+  ],
+  [
+   2,
+   "1LZ9.c002.water_remove.A369"
+  ],
+  [
+   2,
+   "1LZ9.c002.water_remove.A361"
+  ],
+  [
+   2,
+   "1LZ9.c002.water_remove.A353"
+  ],
+  [
+   2,
+   "1LZ9.c002.water_remove.A351"
+  ],
+  [
+   2,
+   "1LZ9.c002.water_remove.A399"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.22017143454064844,
+  "r_free_full": 0.26823129906531984,
+  "r_free_select": 0.27892559130331473,
+  "r_free_report": 0.2571987108525899,
+  "d_min": 1.7000371181531966,
+  "n_free": 1318,
+  "n_select": 659,
+  "n_report": 659
+ },
+ "r_free_final": {
+  "r_work": 0.21688011822764566,
+  "r_free_full": 0.26365443021353363,
+  "r_free_select": 0.2738860270548344,
+  "r_free_report": 0.2530991739893119,
+  "d_min": 1.7000371181531966,
+  "n_free": 1318,
+  "n_select": 659,
+  "n_report": 659
+ },
+ "delta_r_free_full": -0.004577,
+ "delta_r_free_report": -0.0041,
+ "published_better": null,
+ "published_target_r_free": null,
+ "reached_target": null,
+ "published_comparable_to_our_flags": null,
+ "gap_closed_fraction": null,
+ "sigma_select": 0.005895,
+ "k_multiple": 2.0,
+ "refine_extra_final": {
+  "tls_selections": [
+   "chain 'A' and (resid    1  through   14 )",
+   "chain 'A' and (resid   15  through   24 )",
+   "chain 'A' and (resid   25  through   50 )",
+   "chain 'A' and (resid   51  through   68 )",
+   "chain 'A' and (resid   69  through   88 )",
+   "chain 'A' and (resid   89  through   99 )",
+   "chain 'A' and (resid  100  through  108 )",
+   "chain 'A' and (resid  109  through  114 )",
+   "chain 'A' and (resid  115  through  129 )"
+  ]
+ },
+ "escape_tried": {
+  "reweight_reseed": "failed",
+  "rescale_bulk_solvent": "failed",
+  "simulated_annealing": "refused"
+ },
+ "final_model": "/home/dev/runs/1LZ9/runs/1LZ9.20260917T053914Z/cycles/c004/escape/null_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/1LZ9/runs/1LZ9.20260917T053914Z/cycles/c004/escape/null_arm/refine_001.mtz",
+ "stop_reason": "escape ladder exhausted (reweight_reseed=failed, rescale_bulk_solvent=failed, simulated_annealing=refused): the model is converged at this minimum",
+ "best_base": {
+  "cycle_index": 2,
+  "model": "/home/dev/runs/1LZ9/runs/1LZ9.20260917T053914Z/cycles/c002/paired/candidate_arm/refine_001.cif",
+  "mtz": "/home/dev/runs/1LZ9/runs/1LZ9.20260917T053914Z/cycles/c002/paired/candidate_arm/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.21443027538537532,
+   "r_free_full": 0.2628606655261614,
+   "r_free_select": 0.2737351236018988,
+   "r_free_report": 0.2516422122319867,
+   "d_min": 1.7000371181531966,
+   "n_free": 1318,
+   "n_select": 659,
+   "n_report": 659
+  }
+ },
+ "started_at": "2026-09-17T05:39:14+00:00",
+ "finished_at": "2026-09-17T07:04:56+00:00"
+}

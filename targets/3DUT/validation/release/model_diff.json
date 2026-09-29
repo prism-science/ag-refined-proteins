@@ -1,0 +1,23 @@
+{
+ "target": "3DUT",
+ "deposited": {
+  "n_atoms": 5013,
+  "n_hydrogen": 0,
+  "n_waters": 430,
+  "n_nonwater_residues": 580,
+  "n_residues_with_altlocs": 4
+ },
+ "released": {
+  "n_atoms": 5013,
+  "n_hydrogen": 0,
+  "n_waters": 430,
+  "n_nonwater_residues": 580,
+  "n_residues_with_altlocs": 4
+ },
+ "waters_added": [],
+ "waters_removed": [],
+ "nonwater_residues_added": [],
+ "nonwater_residues_removed": [],
+ "altloc_changes": [],
+ "hydrogens_delta": 0
+}

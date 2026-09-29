@@ -1,0 +1,248 @@
+{
+ "run_id": "3TC7.run1",
+ "target": "3TC7",
+ "run_dir": "/home/dev/runs/3TC7/runs/3TC7.run1",
+ "cycles": [
+  11,
+  12,
+  13,
+  14
+ ],
+ "n_cycles": 4,
+ "n_credited_cycles": 1,
+ "credited_change_ids": [
+  "3TC7.c011.water_remove.A782",
+  "3TC7.c011.water_add.A5001",
+  "3TC7.c011.water_add.A5002",
+  "3TC7.c011.water_add.A5003",
+  "3TC7.c011.water_add.A5004",
+  "3TC7.c011.water_add.A5005",
+  "3TC7.c011.water_add.A5006",
+  "3TC7.c011.water_add.A5007",
+  "3TC7.c011.water_add.A5008",
+  "3TC7.c011.water_add.A5009",
+  "3TC7.c011.water_add.A5010",
+  "3TC7.c011.water_add.A5011",
+  "3TC7.c011.water_add.A5012",
+  "3TC7.c011.water_add.A5013"
+ ],
+ "kept_uncredited": [
+  [
+   12,
+   "3TC7.c012.water_add.A5014"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5015"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5016"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5017"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5018"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5019"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5020"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5021"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5022"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5023"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5024"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5025"
+  ],
+  [
+   12,
+   "3TC7.c012.water_add.A5026"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5027"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5028"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5029"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5030"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5031"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5032"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5033"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5034"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5035"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5036"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5037"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5038"
+  ],
+  [
+   13,
+   "3TC7.c013.water_add.A5039"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5040"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5041"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5042"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5043"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5044"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5045"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5046"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5047"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5048"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5049"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5050"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5051"
+  ],
+  [
+   14,
+   "3TC7.c014.water_add.A5052"
+  ],
+  [
+   14,
+   "3TC7.c014.protein_altloc_add.A111"
+  ],
+  [
+   14,
+   "3TC7.c014.protein_altloc_add.A155"
+  ],
+  [
+   14,
+   "3TC7.c014.protein_altloc_add.A194"
+  ],
+  [
+   14,
+   "3TC7.c014.protein_altloc_add.A56"
+  ],
+  [
+   14,
+   "3TC7.c014.protein_altloc_add.A93"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.15328839080604148,
+  "r_free_full": 0.1917118596921645,
+  "r_free_select": 0.1966751946017364,
+  "r_free_report": 0.1866390497449829,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "r_free_final": {
+  "r_work": 0.1531384730728666,
+  "r_free_full": 0.187925177887822,
+  "r_free_select": 0.19300956423906543,
+  "r_free_report": 0.18272864649757545,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "delta_r_free_full": -0.003787,
+ "delta_r_free_report": -0.00391,
+ "published_better": {
+  "r_work": 0.138,
+  "r_free": 0.163,
+  "method": "qFit multiconformer model",
+  "source": "https://dynamicpdb.com/entries/a937eeb3-1dfd-43a3-af1a-08675aad9807",
+  "fetched": "2026-08-27"
+ },
+ "published_target_r_free": 0.163,
+ "reached_target": false,
+ "gap_closed_fraction": 0.1319,
+ "sigma_select": 0.001811,
+ "k_multiple": 2.0,
+ "refine_extra_final": {},
+ "escape_tried": {},
+ "final_model": "/home/dev/runs/3TC7/runs/3TC7.run1/cycles/c014/paired/candidate_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/3TC7/runs/3TC7.run1/cycles/c014/paired/candidate_arm/refine_001.mtz",
+ "stop_reason": "converged (PROTOCOL \u00a74.6): 3 quiet cycles; \u0394R-free-select span 0.00350 within 2.0\u00b7\u03c3",
+ "started_at": "2026-08-27T16:46:25+00:00",
+ "finished_at": "2026-08-27T20:00:37+00:00"
+}

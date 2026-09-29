@@ -1,0 +1,6793 @@
+{
+ "target": "9D5Y",
+ "pdb_id": "9D5Y",
+ "created_at": "2026-09-17T08:58:30+00:00",
+ "script_version": "autoref-0.1.0",
+ "thresholds_sha256": "baba5aacafcef3fe1bcb621047bb3aa44de2ea82298a20b5189a630aa4f67fcc",
+ "inputs": {
+  "model": {
+   "path": "/home/dev/data/raw/9D5Y/9D5Y.cif",
+   "sha256": "9044d2033604e456a43d64757e56bcdf8123615d0ad42d21459fb14c41bf3046"
+  },
+  "sf": {
+   "path": "/home/dev/data/raw/9D5Y/9D5Y-sf.cif",
+   "sha256": "41632145828344c92d762f6b3c9bd1b258618412faec9e58c1c420de76e96c46"
+  },
+  "fasta": {
+   "path": "/home/dev/data/raw/9D5Y/9D5Y.fasta",
+   "sha256": "25841a6ec33d0be2d7bc455a43b61b936bcc6504d320bde767420837ce88740f"
+  },
+  "claimed": {
+   "resolution": 1.35,
+   "space_group": "P 32 2 1",
+   "chains": null,
+   "ligands": null,
+   "metals": null,
+   "cofactors": null,
+   "n_polymer_entities": 2,
+   "n_nonpolymer_entities": 1,
+   "deposited_atoms": 3718
+  },
+  "header": {
+   "r_work": 0.2312,
+   "r_free": 0.2664,
+   "n_free": 2017,
+   "pct_free": 1.98,
+   "n_obs": 102067,
+   "sigma_f": 16.58,
+   "cross_valid_method": "FREE R-VALUE",
+   "sf_status": "REL"
+  }
+ },
+ "data_audit": {
+  "ok": true,
+  "log_path": "/home/dev/runs/9D5Y/c000/dossier/xtriage/xtriage.log",
+  "space_group": "P 32 2 1",
+  "space_group_number": 154,
+  "unit_cell": [
+   65.928,
+   65.928,
+   185.783,
+   90.0,
+   90.0,
+   120.0
+  ],
+  "d_max": 36.03,
+  "d_min": 1.35,
+  "n_reflections": 102067,
+  "n_centric": 9027,
+  "anomalous": false,
+  "wavelength": 0.0,
+  "data_labels": "IMEAN,SIGIMEAN",
+  "data_type": "xray.intensity",
+  "completeness_overall_pct": 98.37,
+  "completeness_high_shell_pct": 96.7,
+  "high_shell_d_max": 1.7053,
+  "high_shell_d_min": 1.35,
+  "i_sigi_overall": 12.6,
+  "i_sigi_high_shell": 1.35,
+  "i_sigi_high_shell_range": [
+   1.37,
+   1.35
+  ],
+  "wilson_b": 15.23,
+  "b_cart": [
+   14.71,
+   14.71,
+   16.35,
+   -0.0,
+   0.0,
+   0.0
+  ],
+  "b_cart_eigenvalues": [
+   16.35,
+   14.714,
+   14.714
+  ],
+  "anisotropy": 1.636,
+  "anisotropy_ratio": 1.1112,
+  "l_test_mean_abs_l": 0.397,
+  "l_test_mean_l2": 0.221,
+  "l_test_twin_fraction": 0.0,
+  "multivariate_z_l_test": 8.537,
+  "moment_i2_over_i_sq": 1.707,
+  "moment_f_sq_over_f2": 0.854,
+  "moment_e2_minus_1": 0.611,
+  "twin_laws": [],
+  "twinning_suspected": null,
+  "tncs_peaks": [
+   {
+    "min_length": 15.0,
+    "frac_coords": [
+     0.33,
+     -0.333,
+     -0.429
+    ],
+    "distance_to_origin": 88.17,
+    "height_pct_of_origin": 3.768,
+    "p_value": 0.9992
+   }
+  ],
+  "pseudotranslation_detected": false,
+  "ice_rings": [
+   {
+    "d_spacing": 3.897,
+    "expected_rel_i": 1.0,
+    "z_score": 3.28,
+    "completeness": 1.0
+   },
+   {
+    "d_spacing": 3.669,
+    "expected_rel_i": 0.75,
+    "z_score": 4.66,
+    "completeness": 1.0
+   },
+   {
+    "d_spacing": 3.441,
+    "expected_rel_i": 0.53,
+    "z_score": 4.11,
+    "completeness": 1.0
+   },
+   {
+    "d_spacing": 2.671,
+    "expected_rel_i": 0.17,
+    "z_score": 0.96,
+    "completeness": 1.0
+   },
+   {
+    "d_spacing": 2.249,
+    "expected_rel_i": 0.39,
+    "z_score": 3.48,
+    "completeness": 1.0
+   },
+   {
+    "d_spacing": 2.072,
+    "expected_rel_i": 0.3,
+    "z_score": 3.28,
+    "completeness": 1.0
+   },
+   {
+    "d_spacing": 1.948,
+    "expected_rel_i": 0.04,
+    "z_score": 9.25,
+    "completeness": 0.97
+   },
+   {
+    "d_spacing": 1.918,
+    "expected_rel_i": 0.18,
+    "z_score": 7.06,
+    "completeness": 0.98
+   },
+   {
+    "d_spacing": 1.883,
+    "expected_rel_i": 0.03,
+    "z_score": 5.34,
+    "completeness": 0.99
+   },
+   {
+    "d_spacing": 1.721,
+    "expected_rel_i": 0.02,
+    "z_score": 7.12,
+    "completeness": 0.96
+   }
+  ],
+  "ice_ring_problem": false,
+  "final_verdict": "The largest off-origin peak in the Patterson function is 3.77% of the height of the origin peak. No significant pseudotranslation is detected. The results of the L-test indicate that the intensity statistics are significantly different than is expected from good to reasonable, untwinned data. As there are twin laws possible given the crystal symmetry, twinning could be the reason for the departure of the intensity statistics from normality. It might be worthwhile carrying out refinement with a twin specific target function. Please note however that R-factors from twinned refinement cannot be directly compared to R-factors without twinning, as they will always be lower when a twin law is used. You should also use caution when interpreting the maps from refinement, as they will have significantly more model bias.",
+  "invocation": {
+   "argv": [
+    "phenix.xtriage",
+    "/home/dev/data/targets/9D5Y/data.mtz",
+    "/home/dev/data/raw/9D5Y/9D5Y.cif",
+    "log=/home/dev/runs/9D5Y/c000/dossier/xtriage/xtriage.log",
+    "loggraphs=True"
+   ],
+   "job_id": "-.dossier.phenix.xtriage.1789635417530.1338648",
+   "exit_code": 0,
+   "wall_clock_s": 6.2,
+   "log": "/home/dev/runs/9D5Y/c000/dossier/xtriage/xtriage.log",
+   "stdout": "/home/dev/runs/9D5Y/c000/dossier/xtriage/phenix.xtriage.stdout.log"
+  },
+  "parse_notes": [
+   "no explicit twinning verdict in log"
+  ]
+ },
+ "flags": {
+  "flag_label": "R-free-flags",
+  "test_flag_value": 0,
+  "n_free": 2006,
+  "fraction_free": 0.019654,
+  "flags_source": "inherited",
+  "flags_mtz_sha256": "255ccbf4e14f535de4818ae21fe8d01f566f1439038522fadeb9e7ba9013f8e6",
+  "split_sha256": "50d704b7f3aa983320a64595325b99c284562325f183ea4b46f0c17060d6e999",
+  "n_select": 1003,
+  "n_report": 1003,
+  "split_seed": 1802659533,
+  "convention_note": "Inherited unchanged from _refln.status of 9D5Y-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+  "data_labels": "IMEAN,SIGIMEAN",
+  "intensities_or_amplitudes": "intensities"
+ },
+ "small_test_set_warning": false,
+ "model_audit": {
+  "summary": {
+   "n_atoms": 3726,
+   "n_atoms_no_h": 3718,
+   "has_hydrogens": true,
+   "n_waters": 242,
+   "water_b_mean": 22.676,
+   "water_b_max": 40.76,
+   "n_residues_with_altlocs": 1,
+   "altloc_letters": [
+    "A",
+    "B"
+   ],
+   "n_protein_altloc_conformers": 2,
+   "n_ligand_altloc_conformers": 0,
+   "n_hetatm_residues": 243,
+   "hetatm_by_resname": {
+    "GOL": 1,
+    "HOH": 242
+   },
+   "chains": [
+    {
+     "id": "A",
+     "first": 2,
+     "last": 204,
+     "n_residues": 203,
+     "gaps": []
+    },
+    {
+     "id": "B",
+     "first": 1,
+     "last": 228,
+     "n_residues": 228,
+     "gaps": []
+    }
+   ],
+   "mean_b": 20.751,
+   "aniso_fraction": 1.0
+  },
+  "occupancy": {
+   "path": "/home/dev/data/raw/9D5Y/9D5Y.cif",
+   "tol": 0.01,
+   "ok": true,
+   "n_atoms": 3726,
+   "n_groups": 1,
+   "n_blank_altloc_atoms": 3712,
+   "groups_by_kind": {
+    "polymer": 1
+   },
+   "n_violations": 0,
+   "violations": [],
+   "groups": [
+    {
+     "chain": "A",
+     "resseq": 162,
+     "icode": "",
+     "resnames": [
+      "SER"
+     ],
+     "kind": "polymer",
+     "letters": [
+      "A",
+      "B"
+     ],
+     "letter_occ": {
+      "A": 0.64,
+      "B": 0.36
+     },
+     "occ_sum": 1.0,
+     "n_atoms": 6,
+     "uniform": true,
+     "expected": "== 1",
+     "ok": true
+    }
+   ]
+  },
+  "altloc_networks": {
+   "path": "/home/dev/data/raw/9D5Y/9D5Y.cif",
+   "n_nodes": 1,
+   "n_components": 1,
+   "n_edges": 0,
+   "components": [
+    {
+     "residues": [
+      [
+       "A",
+       162,
+       ""
+      ]
+     ],
+     "letters": [
+      "A",
+      "B"
+     ],
+     "n_residues": 1
+    }
+   ],
+   "edges": [],
+   "constraint_groups": []
+  },
+  "sequence_vs_fasta": {
+   "identity": 1.0,
+   "aligned_ranges": [
+    {
+     "chain": "A",
+     "fasta_record": "9D5Y_1|Chain",
+     "model_first": 2,
+     "model_last": 204,
+     "fasta_start": "2",
+     "fasta_end": "204",
+     "length": "203"
+    },
+    {
+     "chain": "B",
+     "fasta_record": "9D5Y_2|Chain",
+     "model_first": 1,
+     "model_last": 228,
+     "fasta_start": "1",
+     "fasta_end": "228",
+     "length": "228"
+    }
+   ],
+   "unbuilt_residues": [
+    {
+     "chain": "A",
+     "fasta_record": "9D5Y_1|Chain",
+     "fasta_index": 1,
+     "aa": "M"
+    }
+   ],
+   "mismatches": [],
+   "by_chain": [
+    {
+     "chain": "A",
+     "fasta_record": "9D5Y_1|Chain",
+     "score": 406.0,
+     "n_modelled": 203,
+     "n_fasta": 204,
+     "n_aligned": 203,
+     "n_identical": 203,
+     "identity": 1.0,
+     "n_unbuilt": 1,
+     "n_mismatches": 0
+    },
+    {
+     "chain": "B",
+     "fasta_record": "9D5Y_2|Chain",
+     "score": 456.0,
+     "n_modelled": 228,
+     "n_fasta": 228,
+     "n_aligned": 228,
+     "n_identical": 228,
+     "identity": 1.0,
+     "n_unbuilt": 0,
+     "n_mismatches": 0
+    }
+   ]
+  },
+  "ligands": [
+   {
+    "resname": "GOL",
+    "chain": "A",
+    "resseq": 301,
+    "icode": "",
+    "n_atoms": 6,
+    "altlocs": [
+     ""
+    ],
+    "occs": [
+     1.0
+    ],
+    "mean_b": 50.012
+   }
+  ],
+  "metals": []
+ },
+ "ligand_ccd": [
+  {
+   "resname": "GOL",
+   "resolved_by": "data.rcsb.org chemcomp",
+   "name": "GLYCEROL",
+   "formula": "C3 H8 O3",
+   "smiles": "C(C(CO)O)O",
+   "source_url": "https://data.rcsb.org/rest/v1/core/chemcomp/GOL"
+  }
+ ],
+ "maps": {
+  "maps_mtz": "/home/dev/runs/9D5Y/c000/dossier/maps/zero_001.mtz",
+  "model": "/home/dev/runs/9D5Y/c000/dossier/maps/zero_001.cif",
+  "r_work": 0.2531,
+  "r_free": 0.2888
+ },
+ "peaks": {
+  "positive": {
+   "n_peaks": 668,
+   "sigma": 3.0,
+   "negative": false,
+   "map_labels": "FOFCWT,PHFOFCWT",
+   "model": "/home/dev/runs/9D5Y/c000/dossier/maps/zero_001.cif",
+   "mtz": "/home/dev/runs/9D5Y/c000/dossier/maps/zero_001.mtz"
+  },
+  "negative": {
+   "n_peaks": 711,
+   "sigma": 3.0,
+   "negative": true,
+   "map_labels": "FOFCWT,PHFOFCWT",
+   "model": "/home/dev/runs/9D5Y/c000/dossier/maps/zero_001.cif",
+   "mtz": "/home/dev/runs/9D5Y/c000/dossier/maps/zero_001.mtz"
+  }
+ },
+ "water_audit": {
+  "n_waters_in_negative_density": 94,
+  "sites": [
+   {
+    "xyz": [
+     -1.942,
+     9.11,
+     44.256
+    ],
+    "frac": [
+     0.05033,
+     0.15956,
+     0.23822
+    ],
+    "height_sigma": 6.599,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 425,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.141
+    }
+   },
+   {
+    "xyz": [
+     -2.36,
+     33.427,
+     150.281
+    ],
+    "frac": [
+     0.25694,
+     0.58547,
+     0.80891
+    ],
+    "height_sigma": 5.995,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 470,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.244
+    }
+   },
+   {
+    "xyz": [
+     -21.688,
+     37.564,
+     61.928
+    ],
+    "frac": [
+     0.0,
+     0.65792,
+     0.33333
+    ],
+    "height_sigma": 5.403,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 473,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.023
+    }
+   },
+   {
+    "xyz": [
+     -2.847,
+     7.155,
+     51.233
+    ],
+    "frac": [
+     0.01948,
+     0.12532,
+     0.27577
+    ],
+    "height_sigma": 5.072,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 413,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.322
+    }
+   },
+   {
+    "xyz": [
+     -4.983,
+     16.391,
+     168.296
+    ],
+    "frac": [
+     0.06795,
+     0.28708,
+     0.90587
+    ],
+    "height_sigma": 5.027,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 486,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.369
+    }
+   },
+   {
+    "xyz": [
+     -10.945,
+     34.328,
+     70.285
+    ],
+    "frac": [
+     0.1346,
+     0.60124,
+     0.37832
+    ],
+    "height_sigma": 4.935,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 471,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.405
+    }
+   },
+   {
+    "xyz": [
+     -2.788,
+     10.882,
+     41.283
+    ],
+    "frac": [
+     0.05301,
+     0.1906,
+     0.22221
+    ],
+    "height_sigma": 4.925,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 407,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.32
+    }
+   },
+   {
+    "xyz": [
+     -2.213,
+     16.453,
+     38.818
+    ],
+    "frac": [
+     0.11052,
+     0.28817,
+     0.20894
+    ],
+    "height_sigma": 4.887,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 354,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.392
+    }
+   },
+   {
+    "xyz": [
+     -3.247,
+     18.012,
+     11.626
+    ],
+    "frac": [
+     0.10849,
+     0.31547,
+     0.06258
+    ],
+    "height_sigma": 4.868,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 440,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.297
+    }
+   },
+   {
+    "xyz": [
+     -13.577,
+     43.747,
+     151.256
+    ],
+    "frac": [
+     0.17716,
+     0.7662,
+     0.81416
+    ],
+    "height_sigma": 4.862,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 311,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.323
+    }
+   },
+   {
+    "xyz": [
+     -7.388,
+     21.39,
+     146.257
+    ],
+    "frac": [
+     0.07526,
+     0.37463,
+     0.78724
+    ],
+    "height_sigma": 4.602,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 405,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.239
+    }
+   },
+   {
+    "xyz": [
+     -19.419,
+     44.356,
+     97.963
+    ],
+    "frac": [
+     0.09389,
+     0.77688,
+     0.5273
+    ],
+    "height_sigma": 4.53,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 312,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.329
+    }
+   },
+   {
+    "xyz": [
+     -9.323,
+     30.491,
+     18.135
+    ],
+    "frac": [
+     0.1256,
+     0.53404,
+     0.09761
+    ],
+    "height_sigma": 4.514,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 478,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.088
+    }
+   },
+   {
+    "xyz": [
+     -15.539,
+     27.433,
+     129.609
+    ],
+    "frac": [
+     0.00454,
+     0.48047,
+     0.69764
+    ],
+    "height_sigma": 4.37,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 410,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.417
+    }
+   },
+   {
+    "xyz": [
+     -9.951,
+     27.425,
+     40.979
+    ],
+    "frac": [
+     0.08923,
+     0.48034,
+     0.22057
+    ],
+    "height_sigma": 4.365,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 351,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.215
+    }
+   },
+   {
+    "xyz": [
+     -8.758,
+     19.581,
+     128.029
+    ],
+    "frac": [
+     0.03864,
+     0.34296,
+     0.68913
+    ],
+    "height_sigma": 4.308,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 496,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.278
+    }
+   },
+   {
+    "xyz": [
+     -22.257,
+     42.855,
+     45.56
+    ],
+    "frac": [
+     0.0377,
+     0.75059,
+     0.24523
+    ],
+    "height_sigma": 4.307,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 422,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.347
+    }
+   },
+   {
+    "xyz": [
+     -22.87,
+     47.531,
+     166.202
+    ],
+    "frac": [
+     0.06935,
+     0.83248,
+     0.8946
+    ],
+    "height_sigma": 4.271,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 386,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.435
+    }
+   },
+   {
+    "xyz": [
+     -10.694,
+     41.349,
+     68.189
+    ],
+    "frac": [
+     0.19989,
+     0.7242,
+     0.36703
+    ],
+    "height_sigma": 4.223,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 463,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.241
+    }
+   },
+   {
+    "xyz": [
+     -7.376,
+     25.207,
+     26.706
+    ],
+    "frac": [
+     0.10886,
+     0.44149,
+     0.14375
+    ],
+    "height_sigma": 4.217,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 448,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.331
+    }
+   },
+   {
+    "xyz": [
+     -26.689,
+     46.273,
+     -0.071
+    ],
+    "frac": [
+     0.0004,
+     0.81045,
+     -0.00038
+    ],
+    "height_sigma": 4.195,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 420,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.255
+    }
+   },
+   {
+    "xyz": [
+     -10.103,
+     26.088,
+     23.92
+    ],
+    "frac": [
+     0.07522,
+     0.45692,
+     0.12875
+    ],
+    "height_sigma": 4.183,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 490,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.046
+    }
+   },
+   {
+    "xyz": [
+     -0.022,
+     22.449,
+     93.453
+    ],
+    "frac": [
+     0.19626,
+     0.39319,
+     0.50302
+    ],
+    "height_sigma": 4.155,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 367,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.122
+    }
+   },
+   {
+    "xyz": [
+     -5.602,
+     27.482,
+     44.155
+    ],
+    "frac": [
+     0.1557,
+     0.48133,
+     0.23767
+    ],
+    "height_sigma": 4.043,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 396,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.411
+    }
+   },
+   {
+    "xyz": [
+     -25.027,
+     44.459,
+     181.066
+    ],
+    "frac": [
+     0.00973,
+     0.77867,
+     0.97461
+    ],
+    "height_sigma": 4.04,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 371,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.201
+    }
+   },
+   {
+    "xyz": [
+     -19.072,
+     39.851,
+     146.562
+    ],
+    "frac": [
+     0.0597,
+     0.69798,
+     0.78889
+    ],
+    "height_sigma": 3.971,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 411,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.264
+    }
+   },
+   {
+    "xyz": [
+     -8.202,
+     40.999,
+     63.215
+    ],
+    "frac": [
+     0.23463,
+     0.71808,
+     0.34026
+    ],
+    "height_sigma": 3.954,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 487,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.238
+    }
+   },
+   {
+    "xyz": [
+     -20.451,
+     48.251,
+     81.002
+    ],
+    "frac": [
+     0.11234,
+     0.84509,
+     0.436
+    ],
+    "height_sigma": 3.93,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 461,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.438
+    }
+   },
+   {
+    "xyz": [
+     -18.627,
+     37.911,
+     30.217
+    ],
+    "frac": [
+     0.04946,
+     0.664,
+     0.16265
+    ],
+    "height_sigma": 3.924,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 403,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.341
+    }
+   },
+   {
+    "xyz": [
+     -16.033,
+     39.227,
+     148.778
+    ],
+    "frac": [
+     0.10033,
+     0.68704,
+     0.80081
+    ],
+    "height_sigma": 3.896,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 472,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.312
+    }
+   },
+   {
+    "xyz": [
+     -3.71,
+     34.352,
+     14.869
+    ],
+    "frac": [
+     0.24456,
+     0.60167,
+     0.08003
+    ],
+    "height_sigma": 3.884,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 445,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.269
+    }
+   },
+   {
+    "xyz": [
+     -0.868,
+     26.282,
+     22.956
+    ],
+    "frac": [
+     0.21699,
+     0.46032,
+     0.12356
+    ],
+    "height_sigma": 3.877,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 372,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.436
+    }
+   },
+   {
+    "xyz": [
+     -2.296,
+     31.855,
+     70.588
+    ],
+    "frac": [
+     0.24413,
+     0.55792,
+     0.37995
+    ],
+    "height_sigma": 3.845,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 437,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.371
+    }
+   },
+   {
+    "xyz": [
+     -16.261,
+     35.353,
+     52.09
+    ],
+    "frac": [
+     0.06294,
+     0.61919,
+     0.28038
+    ],
+    "height_sigma": 3.844,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 344,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.693
+    }
+   },
+   {
+    "xyz": [
+     -16.234,
+     43.669,
+     136.121
+    ],
+    "frac": [
+     0.13618,
+     0.76485,
+     0.73269
+    ],
+    "height_sigma": 3.842,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 358,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.406
+    }
+   },
+   {
+    "xyz": [
+     -3.428,
+     6.644,
+     42.527
+    ],
+    "frac": [
+     0.00619,
+     0.11637,
+     0.22891
+    ],
+    "height_sigma": 3.819,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 427,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.418
+    }
+   },
+   {
+    "xyz": [
+     -12.621,
+     27.404,
+     34.584
+    ],
+    "frac": [
+     0.04854,
+     0.47996,
+     0.18615
+    ],
+    "height_sigma": 3.817,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 310,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.231
+    }
+   },
+   {
+    "xyz": [
+     -15.867,
+     37.358,
+     46.698
+    ],
+    "frac": [
+     0.08648,
+     0.6543,
+     0.25136
+    ],
+    "height_sigma": 3.812,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 399,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.303
+    }
+   },
+   {
+    "xyz": [
+     -19.387,
+     45.34,
+     151.259
+    ],
+    "frac": [
+     0.103,
+     0.79411,
+     0.81417
+    ],
+    "height_sigma": 3.81,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 408,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.387
+    }
+   },
+   {
+    "xyz": [
+     -3.883,
+     30.569,
+     87.182
+    ],
+    "frac": [
+     0.2088,
+     0.5354,
+     0.46927
+    ],
+    "height_sigma": 3.793,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 434,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.395
+    }
+   },
+   {
+    "xyz": [
+     -1.633,
+     13.703,
+     18.44
+    ],
+    "frac": [
+     0.09523,
+     0.24,
+     0.09925
+    ],
+    "height_sigma": 3.784,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 442,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.282
+    }
+   },
+   {
+    "xyz": [
+     -10.8,
+     22.149,
+     74.848
+    ],
+    "frac": [
+     0.03015,
+     0.38793,
+     0.40288
+    ],
+    "height_sigma": 3.776,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 314,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.26
+    }
+   },
+   {
+    "xyz": [
+     -14.688,
+     30.544,
+     154.545
+    ],
+    "frac": [
+     0.04469,
+     0.53497,
+     0.83186
+    ],
+    "height_sigma": 3.767,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 419,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.393
+    }
+   },
+   {
+    "xyz": [
+     -24.357,
+     51.815,
+     164.683
+    ],
+    "frac": [
+     0.08431,
+     0.90751,
+     0.88643
+    ],
+    "height_sigma": 3.754,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 428,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.359
+    }
+   },
+   {
+    "xyz": [
+     -14.566,
+     33.799,
+     47.738
+    ],
+    "frac": [
+     0.07506,
+     0.59198,
+     0.25696
+    ],
+    "height_sigma": 3.746,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 380,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.331
+    }
+   },
+   {
+    "xyz": [
+     -4.667,
+     21.365,
+     84.951
+    ],
+    "frac": [
+     0.1163,
+     0.37419,
+     0.45726
+    ],
+    "height_sigma": 3.729,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 374,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.436
+    }
+   },
+   {
+    "xyz": [
+     -1.782,
+     11.497,
+     34.228
+    ],
+    "frac": [
+     0.07365,
+     0.20136,
+     0.18423
+    ],
+    "height_sigma": 3.715,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 327,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.466
+    }
+   },
+   {
+    "xyz": [
+     -16.192,
+     35.413,
+     27.68
+    ],
+    "frac": [
+     0.06452,
+     0.62025,
+     0.14899
+    ],
+    "height_sigma": 3.714,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 333,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.289
+    }
+   },
+   {
+    "xyz": [
+     -27.644,
+     49.636,
+     154.342
+    ],
+    "frac": [
+     0.01537,
+     0.86936,
+     0.83077
+    ],
+    "height_sigma": 3.696,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 418,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.246
+    }
+   },
+   {
+    "xyz": [
+     -1.668,
+     17.305,
+     95.197
+    ],
+    "frac": [
+     0.12625,
+     0.30309,
+     0.51241
+    ],
+    "height_sigma": 3.69,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 377,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.185
+    }
+   },
+   {
+    "xyz": [
+     -3.767,
+     23.064,
+     127.256
+    ],
+    "frac": [
+     0.14483,
+     0.40395,
+     0.68497
+    ],
+    "height_sigma": 3.667,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 474,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.294
+    }
+   },
+   {
+    "xyz": [
+     -18.862,
+     44.058,
+     33.769
+    ],
+    "frac": [
+     0.09973,
+     0.77166,
+     0.18177
+    ],
+    "height_sigma": 3.645,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 481,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.318
+    }
+   },
+   {
+    "xyz": [
+     -8.25,
+     29.577,
+     167.66
+    ],
+    "frac": [
+     0.13388,
+     0.51802,
+     0.90245
+    ],
+    "height_sigma": 3.632,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 480,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.406
+    }
+   },
+   {
+    "xyz": [
+     -17.878,
+     33.138,
+     172.171
+    ],
+    "frac": [
+     0.01902,
+     0.58039,
+     0.92673
+    ],
+    "height_sigma": 3.63,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 485,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.315
+    }
+   },
+   {
+    "xyz": [
+     -5.537,
+     12.59,
+     31.481
+    ],
+    "frac": [
+     0.02627,
+     0.22051,
+     0.16945
+    ],
+    "height_sigma": 3.622,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 436,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.504
+    }
+   },
+   {
+    "xyz": [
+     -5.54,
+     18.792,
+     60.918
+    ],
+    "frac": [
+     0.08053,
+     0.32914,
+     0.3279
+    ],
+    "height_sigma": 3.621,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 438,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.345
+    }
+   },
+   {
+    "xyz": [
+     -9.949,
+     38.615,
+     19.099
+    ],
+    "frac": [
+     0.18725,
+     0.67632,
+     0.1028
+    ],
+    "height_sigma": 3.579,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 401,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.272
+    }
+   },
+   {
+    "xyz": [
+     -0.44,
+     10.082,
+     17.878
+    ],
+    "frac": [
+     0.08162,
+     0.17658,
+     0.09623
+    ],
+    "height_sigma": 3.574,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 322,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.542
+    }
+   },
+   {
+    "xyz": [
+     -2.046,
+     12.714,
+     11.846
+    ],
+    "frac": [
+     0.08031,
+     0.22268,
+     0.06376
+    ],
+    "height_sigma": 3.56,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 491,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.248
+    }
+   },
+   {
+    "xyz": [
+     -0.802,
+     4.922,
+     107.156
+    ],
+    "frac": [
+     0.03094,
+     0.0862,
+     0.57678
+    ],
+    "height_sigma": 3.555,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 410,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.288
+    }
+   },
+   {
+    "xyz": [
+     -22.2,
+     45.405,
+     99.19
+    ],
+    "frac": [
+     0.0609,
+     0.79526,
+     0.5339
+    ],
+    "height_sigma": 3.478,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 355,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.163
+    }
+   },
+   {
+    "xyz": [
+     -2.421,
+     6.982,
+     99.669
+    ],
+    "frac": [
+     0.02441,
+     0.12228,
+     0.53648
+    ],
+    "height_sigma": 3.454,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 305,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.416
+    }
+   },
+   {
+    "xyz": [
+     -2.081,
+     15.067,
+     36.1
+    ],
+    "frac": [
+     0.10038,
+     0.2639,
+     0.19431
+    ],
+    "height_sigma": 3.421,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 315,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.102
+    }
+   },
+   {
+    "xyz": [
+     -0.626,
+     19.199,
+     158.033
+    ],
+    "frac": [
+     0.15864,
+     0.33626,
+     0.85063
+    ],
+    "height_sigma": 3.405,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 437,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.17
+    }
+   },
+   {
+    "xyz": [
+     -10.96,
+     22.672,
+     174.135
+    ],
+    "frac": [
+     0.0323,
+     0.39708,
+     0.9373
+    ],
+    "height_sigma": 3.398,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 432,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.433
+    }
+   },
+   {
+    "xyz": [
+     -16.195,
+     42.235,
+     123.803
+    ],
+    "frac": [
+     0.12421,
+     0.73974,
+     0.66638
+    ],
+    "height_sigma": 3.38,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 446,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.286
+    }
+   },
+   {
+    "xyz": [
+     -3.875,
+     15.247,
+     56.958
+    ],
+    "frac": [
+     0.07475,
+     0.26704,
+     0.30659
+    ],
+    "height_sigma": 3.378,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 304,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.31
+    }
+   },
+   {
+    "xyz": [
+     -14.198,
+     44.45,
+     17.677
+    ],
+    "frac": [
+     0.17391,
+     0.77852,
+     0.09515
+    ],
+    "height_sigma": 3.372,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 497,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.216
+    }
+   },
+   {
+    "xyz": [
+     -6.687,
+     33.168,
+     55.173
+    ],
+    "frac": [
+     0.18904,
+     0.58092,
+     0.29698
+    ],
+    "height_sigma": 3.368,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 365,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.233
+    }
+   },
+   {
+    "xyz": [
+     -5.782,
+     13.373,
+     64.221
+    ],
+    "frac": [
+     0.02941,
+     0.23422,
+     0.34568
+    ],
+    "height_sigma": 3.363,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 303,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.688
+    }
+   },
+   {
+    "xyz": [
+     -10.043,
+     30.399,
+     43.655
+    ],
+    "frac": [
+     0.11388,
+     0.53242,
+     0.23498
+    ],
+    "height_sigma": 3.346,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 317,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.212
+    }
+   },
+   {
+    "xyz": [
+     -5.599,
+     24.771,
+     32.588
+    ],
+    "frac": [
+     0.132,
+     0.43384,
+     0.17541
+    ],
+    "height_sigma": 3.331,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 469,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.36
+    }
+   },
+   {
+    "xyz": [
+     -23.604,
+     44.364,
+     54.986
+    ],
+    "frac": [
+     0.03048,
+     0.77702,
+     0.29597
+    ],
+    "height_sigma": 3.306,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 441,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.24
+    }
+   },
+   {
+    "xyz": [
+     -7.624,
+     23.546,
+     85.596
+    ],
+    "frac": [
+     0.09056,
+     0.4124,
+     0.46073
+    ],
+    "height_sigma": 3.296,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 321,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.498
+    }
+   },
+   {
+    "xyz": [
+     -7.937,
+     40.526,
+     137.538
+    ],
+    "frac": [
+     0.23451,
+     0.7098,
+     0.74032
+    ],
+    "height_sigma": 3.293,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 475,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.658
+    }
+   },
+   {
+    "xyz": [
+     -2.359,
+     14.896,
+     33.197
+    ],
+    "frac": [
+     0.09467,
+     0.2609,
+     0.17869
+    ],
+    "height_sigma": 3.265,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 385,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.265
+    }
+   },
+   {
+    "xyz": [
+     -8.567,
+     19.532,
+     30.851
+    ],
+    "frac": [
+     0.04111,
+     0.34209,
+     0.16606
+    ],
+    "height_sigma": 3.23,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 398,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.422
+    }
+   },
+   {
+    "xyz": [
+     -6.449,
+     24.974,
+     89.968
+    ],
+    "frac": [
+     0.12088,
+     0.4374,
+     0.48427
+    ],
+    "height_sigma": 3.216,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 409,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.259
+    }
+   },
+   {
+    "xyz": [
+     -31.791,
+     55.871,
+     169.501
+    ],
+    "frac": [
+     0.00707,
+     0.97856,
+     0.91236
+    ],
+    "height_sigma": 3.215,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 426,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.421
+    }
+   },
+   {
+    "xyz": [
+     -4.053,
+     17.241,
+     47.0
+    ],
+    "frac": [
+     0.08951,
+     0.30198,
+     0.25298
+    ],
+    "height_sigma": 3.207,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 366,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.558
+    }
+   },
+   {
+    "xyz": [
+     -9.546,
+     28.537,
+     131.36
+    ],
+    "frac": [
+     0.10512,
+     0.49981,
+     0.70706
+    ],
+    "height_sigma": 3.187,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 416,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.306
+    }
+   },
+   {
+    "xyz": [
+     -0.769,
+     15.744,
+     107.045
+    ],
+    "frac": [
+     0.12621,
+     0.27574,
+     0.57618
+    ],
+    "height_sigma": 3.179,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 357,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.385
+    }
+   },
+   {
+    "xyz": [
+     -1.56,
+     33.455,
+     6.588
+    ],
+    "frac": [
+     0.26931,
+     0.58595,
+     0.03546
+    ],
+    "height_sigma": 3.163,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 414,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.558
+    }
+   },
+   {
+    "xyz": [
+     -1.77,
+     28.717,
+     4.966
+    ],
+    "frac": [
+     0.22464,
+     0.50297,
+     0.02673
+    ],
+    "height_sigma": 3.16,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 417,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.268
+    }
+   },
+   {
+    "xyz": [
+     -5.174,
+     27.403,
+     86.784
+    ],
+    "frac": [
+     0.1615,
+     0.47995,
+     0.46712
+    ],
+    "height_sigma": 3.142,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 353,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.519
+    }
+   },
+   {
+    "xyz": [
+     -5.154,
+     19.327,
+     32.491
+    ],
+    "frac": [
+     0.09107,
+     0.3385,
+     0.17489
+    ],
+    "height_sigma": 3.142,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 452,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.323
+    }
+   },
+   {
+    "xyz": [
+     -15.504,
+     35.387,
+     49.234
+    ],
+    "frac": [
+     0.07472,
+     0.61978,
+     0.26501
+    ],
+    "height_sigma": 3.131,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 434,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.23
+    }
+   },
+   {
+    "xyz": [
+     -10.541,
+     36.453,
+     42.673
+    ],
+    "frac": [
+     0.15933,
+     0.63845,
+     0.22969
+    ],
+    "height_sigma": 3.131,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 348,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.122
+    }
+   },
+   {
+    "xyz": [
+     -2.338,
+     17.644,
+     15.688
+    ],
+    "frac": [
+     0.11904,
+     0.30902,
+     0.08444
+    ],
+    "height_sigma": 3.124,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 360,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.495
+    }
+   },
+   {
+    "xyz": [
+     -7.643,
+     16.767,
+     129.383
+    ],
+    "frac": [
+     0.0309,
+     0.29367,
+     0.69642
+    ],
+    "height_sigma": 3.114,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 422,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.543
+    }
+   },
+   {
+    "xyz": [
+     -3.265,
+     18.854,
+     27.117
+    ],
+    "frac": [
+     0.11559,
+     0.33021,
+     0.14596
+    ],
+    "height_sigma": 3.112,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 489,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.215
+    }
+   },
+   {
+    "xyz": [
+     -11.026,
+     23.056,
+     91.48
+    ],
+    "frac": [
+     0.03466,
+     0.40381,
+     0.4924
+    ],
+    "height_sigma": 3.052,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 400,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.663
+    }
+   },
+   {
+    "xyz": [
+     -1.271,
+     9.683,
+     85.751
+    ],
+    "frac": [
+     0.06551,
+     0.16959,
+     0.46157
+    ],
+    "height_sigma": 3.041,
+    "nearest": {
+     "chain": "B",
+     "resname": "HOH",
+     "resseq": 346,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.776
+    }
+   },
+   {
+    "xyz": [
+     -11.346,
+     31.152,
+     168.063
+    ],
+    "frac": [
+     0.10071,
+     0.54562,
+     0.90462
+    ],
+    "height_sigma": 3.024,
+    "nearest": {
+     "chain": "A",
+     "resname": "HOH",
+     "resseq": 493,
+     "icode": "",
+     "atom": "O",
+     "altloc": "",
+     "dist": 0.401
+    }
+   }
+  ]
+ },
+ "ringer": {
+  "n_secondary_sites": 393,
+  "csv": "/home/dev/runs/9D5Y/c000/dossier/ringer/ringer_input_noalt.csv",
+  "stripped_model": "/home/dev/runs/9D5Y/c000/dossier/ringer/input_noalt.cif"
+ },
+ "composition_hypothesis": {
+  "stated_at": "2026-09-17T08:58:30+00:00",
+  "unmodeled_positive_peaks_ge_sigma": {
+   "sigma": 3.0,
+   "n_total": 668,
+   "n_far_from_model_gt_2p2A": 268,
+   "top20": [
+    {
+     "xyz": [
+      -26.254,
+      46.581,
+      151.244
+     ],
+     "frac": [
+      0.0097,
+      0.81584,
+      0.81409
+     ],
+     "height_sigma": 6.346,
+     "nearest": {
+      "chain": "B",
+      "resname": "PRO",
+      "resseq": 137,
+      "icode": "",
+      "atom": "CD",
+      "altloc": "",
+      "dist": 3.604
+     }
+    },
+    {
+     "xyz": [
+      -11.233,
+      21.88,
+      49.469
+     ],
+     "frac": [
+      0.02122,
+      0.38321,
+      0.26627
+     ],
+     "height_sigma": 5.737,
+     "nearest": {
+      "chain": "B",
+      "resname": "TYR",
+      "resseq": 5,
+      "icode": "",
+      "atom": "OH",
+      "altloc": "",
+      "dist": 2.597
+     }
+    },
+    {
+     "xyz": [
+      -1.314,
+      14.658,
+      47.765
+     ],
+     "frac": [
+      0.10844,
+      0.25672,
+      0.2571
+     ],
+     "height_sigma": 5.464,
+     "nearest": {
+      "chain": "B",
+      "resname": "HOH",
+      "resseq": 419,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.341
+     }
+    },
+    {
+     "xyz": [
+      -19.441,
+      34.911,
+      117.726
+     ],
+     "frac": [
+      0.01084,
+      0.61145,
+      0.63367
+     ],
+     "height_sigma": 5.445,
+     "nearest": {
+      "chain": "B",
+      "resname": "ASP",
+      "resseq": 209,
+      "icode": "",
+      "atom": "OD1",
+      "altloc": "",
+      "dist": 2.778
+     }
+    },
+    {
+     "xyz": [
+      -10.69,
+      26.458,
+      75.09
+     ],
+     "frac": [
+      0.06955,
+      0.46339,
+      0.40418
+     ],
+     "height_sigma": 5.384,
+     "nearest": {
+      "chain": "A",
+      "resname": "LEU",
+      "resseq": 110,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.959
+     }
+    },
+    {
+     "xyz": [
+      -12.516,
+      34.703,
+      47.43
+     ],
+     "frac": [
+      0.11406,
+      0.6078,
+      0.2553
+     ],
+     "height_sigma": 5.319,
+     "nearest": {
+      "chain": "B",
+      "resname": "HOH",
+      "resseq": 380,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.547
+     }
+    },
+    {
+     "xyz": [
+      -1.547,
+      5.221,
+      46.523
+     ],
+     "frac": [
+      0.02225,
+      0.09144,
+      0.25042
+     ],
+     "height_sigma": 5.255,
+     "nearest": {
+      "chain": "B",
+      "resname": "HOH",
+      "resseq": 391,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.213
+     }
+    },
+    {
+     "xyz": [
+      -18.036,
+      45.371,
+      62.478
+     ],
+     "frac": [
+      0.12375,
+      0.79465,
+      0.33629
+     ],
+     "height_sigma": 5.096,
+     "nearest": {
+      "chain": "A",
+      "resname": "ASP",
+      "resseq": 10,
+      "icode": "",
+      "atom": "OD1",
+      "altloc": "",
+      "dist": 2.529
+     }
+    },
+    {
+     "xyz": [
+      -3.288,
+      25.782,
+      40.433
+     ],
+     "frac": [
+      0.1759,
+      0.45155,
+      0.21764
+     ],
+     "height_sigma": 5.084,
+     "nearest": {
+      "chain": "B",
+      "resname": "HOH",
+      "resseq": 432,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.241
+     }
+    },
+    {
+     "xyz": [
+      -20.745,
+      44.279,
+      57.307
+     ],
+     "frac": [
+      0.0731,
+      0.77553,
+      0.30846
+     ],
+     "height_sigma": 5.064,
+     "nearest": {
+      "chain": "A",
+      "resname": "ASN",
+      "resseq": 4,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.551
+     }
+    },
+    {
+     "xyz": [
+      -13.236,
+      37.387,
+      52.82
+     ],
+     "frac": [
+      0.12665,
+      0.65481,
+      0.28431
+     ],
+     "height_sigma": 4.986,
+     "nearest": {
+      "chain": "A",
+      "resname": "THR",
+      "resseq": 2,
+      "icode": "",
+      "atom": "CG2",
+      "altloc": "",
+      "dist": 2.33
+     }
+    },
+    {
+     "xyz": [
+      -17.3,
+      47.002,
+      18.365
+     ],
+     "frac": [
+      0.1492,
+      0.82323,
+      0.09885
+     ],
+     "height_sigma": 4.934,
+     "nearest": {
+      "chain": "A",
+      "resname": "GLU",
+      "resseq": 184,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.506
+     }
+    },
+    {
+     "xyz": [
+      -8.508,
+      19.623,
+      51.059
+     ],
+     "frac": [
+      0.0428,
+      0.3437,
+      0.27483
+     ],
+     "height_sigma": 4.915,
+     "nearest": {
+      "chain": "B",
+      "resname": "HOH",
+      "resseq": 376,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.657
+     }
+    },
+    {
+     "xyz": [
+      -3.928,
+      23.418,
+      162.384
+     ],
+     "frac": [
+      0.14551,
+      0.41016,
+      0.87405
+     ],
+     "height_sigma": 4.759,
+     "nearest": {
+      "chain": "B",
+      "resname": "GLU",
+      "resseq": 89,
+      "icode": "",
+      "atom": "OE1",
+      "altloc": "",
+      "dist": 2.587
+     }
+    },
+    {
+     "xyz": [
+      -14.305,
+      28.142,
+      91.183
+     ],
+     "frac": [
+      0.02947,
+      0.49289,
+      0.49081
+     ],
+     "height_sigma": 4.757,
+     "nearest": {
+      "chain": "B",
+      "resname": "MET",
+      "resseq": 46,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.54
+     }
+    },
+    {
+     "xyz": [
+      -3.463,
+      14.533,
+      38.91
+     ],
+     "frac": [
+      0.07475,
+      0.25454,
+      0.20944
+     ],
+     "height_sigma": 4.654,
+     "nearest": {
+      "chain": "B",
+      "resname": "HOH",
+      "resseq": 354,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.501
+     }
+    },
+    {
+     "xyz": [
+      -9.658,
+      31.359,
+      33.179
+     ],
+     "frac": [
+      0.12812,
+      0.54923,
+      0.17859
+     ],
+     "height_sigma": 4.624,
+     "nearest": {
+      "chain": "B",
+      "resname": "THR",
+      "resseq": 83,
+      "icode": "",
+      "atom": "CG2",
+      "altloc": "",
+      "dist": 3.645
+     }
+    },
+    {
+     "xyz": [
+      -11.395,
+      22.587,
+      155.963
+     ],
+     "frac": [
+      0.02496,
+      0.39561,
+      0.83949
+     ],
+     "height_sigma": 4.544,
+     "nearest": {
+      "chain": "A",
+      "resname": "HOH",
+      "resseq": 409,
+      "icode": "",
+      "atom": "O",
+      "altloc": "",
+      "dist": 2.699
+     }
+    },
+    {
+     "xyz": [
+      -4.68,
+      8.868,
+      16.115
+     ],
+     "frac": [
+      0.00667,
+      0.15531,
+      0.08674
+     ],
+     "height_sigma": 4.518,
+     "nearest": {
+      "chain": "B",
+      "resname": "ASP",
+      "resseq": 103,
+      "icode": "",
+      "atom": "OD1",
+      "altloc": "",
+      "dist": 2.507
+     }
+    },
+    {
+     "xyz": [
+      -5.483,
+      17.94,
+      15.433
+     ],
+     "frac": [
+      0.07394,
+      0.31422,
+      0.08307
+     ],
+     "height_sigma": 4.507,
+     "nearest": {
+      "chain": "B",
+      "resname": "GLU",
+      "resseq": 28,
+      "icode": "",
+      "atom": "N",
+      "altloc": "",
+      "dist": 2.956
+     }
+    }
+   ]
+  },
+  "ringer_secondary_sites": [
+   {
+    "chain": "A",
+    "resseq": 2,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 270.0,
+    "peak_sigma": 1.24,
+    "primary_chi_angle": 200.0,
+    "primary_peak_sigma": 1.665,
+    "modelled_chi": 321.8,
+    "separation_from_primary_deg": 70.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 2,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 1.151,
+    "primary_chi_angle": 200.0,
+    "primary_peak_sigma": 1.665,
+    "modelled_chi": 321.8,
+    "separation_from_primary_deg": 100.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 3,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 250.0,
+    "peak_sigma": 2.193,
+    "primary_chi_angle": 80.0,
+    "primary_peak_sigma": 3.411,
+    "modelled_chi": 92.1,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 4,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 4.309,
+    "primary_chi_angle": 350.0,
+    "primary_peak_sigma": 5.854,
+    "modelled_chi": 359.5,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 5,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 50.0,
+    "peak_sigma": 2.882,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.043,
+    "modelled_chi": 63.4,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 6,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 290.0,
+    "peak_sigma": 3.32,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.416,
+    "modelled_chi": 181.5,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 7,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 260.0,
+    "peak_sigma": 0.409,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 3.117,
+    "modelled_chi": 194.0,
+    "separation_from_primary_deg": 80.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 7,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 40.0,
+    "peak_sigma": 0.309,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.562,
+    "modelled_chi": 173.6,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 10,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 0.49,
+    "primary_chi_angle": 270.0,
+    "primary_peak_sigma": 1.635,
+    "modelled_chi": 281.4,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 10,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 1.623,
+    "primary_chi_angle": 330.0,
+    "primary_peak_sigma": 2.636,
+    "modelled_chi": 341.9,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 11,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 140.0,
+    "peak_sigma": 0.446,
+    "primary_chi_angle": 270.0,
+    "primary_peak_sigma": 1.484,
+    "modelled_chi": 286.9,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 11,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 150.0,
+    "peak_sigma": 1.348,
+    "primary_chi_angle": 310.0,
+    "primary_peak_sigma": 2.634,
+    "modelled_chi": 337.8,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 12,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 120.0,
+    "peak_sigma": 2.369,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 2.788,
+    "modelled_chi": 307.5,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 13,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 2.608,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.102,
+    "modelled_chi": 292.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 14,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 120.0,
+    "peak_sigma": 4.757,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 5.607,
+    "modelled_chi": 310.3,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 16,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 20.0,
+    "peak_sigma": 4.39,
+    "primary_chi_angle": 200.0,
+    "primary_peak_sigma": 4.562,
+    "modelled_chi": 25.6,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 17,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 4.071,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 4.339,
+    "modelled_chi": 293.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 18,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 170.0,
+    "peak_sigma": 4.09,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 6.293,
+    "modelled_chi": 298.2,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 21,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 3.489,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 4.145,
+    "modelled_chi": 170.6,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 24,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 170.0,
+    "peak_sigma": 3.471,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 3.477,
+    "modelled_chi": 56.1,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 25,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 180.0,
+    "peak_sigma": 3.72,
+    "primary_chi_angle": 350.0,
+    "primary_peak_sigma": 4.706,
+    "modelled_chi": 358.3,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 26,
+    "icode": "",
+    "resname": "SER",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 0.483,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 5.531,
+    "modelled_chi": 73.6,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 28,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 170.0,
+    "peak_sigma": 3.369,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 4.119,
+    "modelled_chi": 185.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 29,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 3.959,
+    "primary_chi_angle": 270.0,
+    "primary_peak_sigma": 4.333,
+    "modelled_chi": 285.8,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 30,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 320.0,
+    "peak_sigma": 2.479,
+    "primary_chi_angle": 140.0,
+    "primary_peak_sigma": 2.667,
+    "modelled_chi": 328.4,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 31,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 200.0,
+    "peak_sigma": 3.921,
+    "primary_chi_angle": 10.0,
+    "primary_peak_sigma": 3.988,
+    "modelled_chi": 28.2,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 33,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 2.866,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 4.166,
+    "modelled_chi": 68.8,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 34,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 60.0,
+    "peak_sigma": 2.905,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 4.166,
+    "modelled_chi": 69.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 35,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 3.831,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 5.945,
+    "modelled_chi": 63.1,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 36,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 280.0,
+    "peak_sigma": 3.309,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 6.408,
+    "modelled_chi": 52.1,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 39,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 3.509,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 3.657,
+    "modelled_chi": 297.4,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 40,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 40.0,
+    "peak_sigma": 0.559,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.609,
+    "modelled_chi": 284.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 40,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 190.0,
+    "peak_sigma": 0.474,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.609,
+    "modelled_chi": 284.7,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 40,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 170.0,
+    "peak_sigma": 4.183,
+    "primary_chi_angle": 340.0,
+    "primary_peak_sigma": 4.558,
+    "modelled_chi": 352.5,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 41,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 30.0,
+    "peak_sigma": 0.359,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 4.21,
+    "modelled_chi": 190.6,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 44,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 50.0,
+    "peak_sigma": 0.92,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 1.756,
+    "modelled_chi": 175.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 44,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 230.0,
+    "peak_sigma": 0.879,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 2.501,
+    "modelled_chi": 52.8,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 45,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 2.584,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.928,
+    "modelled_chi": 294.6,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 46,
+    "icode": "",
+    "resname": "TYR",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 90.0,
+    "peak_sigma": 4.023,
+    "primary_chi_angle": 270.0,
+    "primary_peak_sigma": 4.933,
+    "modelled_chi": 274.7,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 47,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 320.0,
+    "peak_sigma": 3.335,
+    "primary_chi_angle": 130.0,
+    "primary_peak_sigma": 4.884,
+    "modelled_chi": 327.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 48,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 120.0,
+    "peak_sigma": 2.1,
+    "primary_chi_angle": 310.0,
+    "primary_peak_sigma": 2.363,
+    "modelled_chi": 316.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 49,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 180.0,
+    "peak_sigma": 4.007,
+    "primary_chi_angle": 10.0,
+    "primary_peak_sigma": 4.064,
+    "modelled_chi": 17.9,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 50,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 3.079,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 3.32,
+    "modelled_chi": 171.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 53,
+    "icode": "",
+    "resname": "HIS",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 320.0,
+    "peak_sigma": 0.407,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 3.477,
+    "modelled_chi": 54.4,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 53,
+    "icode": "",
+    "resname": "HIS",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 100.0,
+    "peak_sigma": 2.631,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.175,
+    "modelled_chi": 282.8,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 54,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.402,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.38,
+    "modelled_chi": 180.3,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 57,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 20.0,
+    "peak_sigma": 0.395,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.186,
+    "modelled_chi": 172.5,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 58,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.516,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.723,
+    "modelled_chi": 184.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 59,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 3.035,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.5,
+    "modelled_chi": 166.4,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 60,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 60.0,
+    "peak_sigma": 2.029,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 2.839,
+    "modelled_chi": 303.6,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 61,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 100.0,
+    "peak_sigma": 0.415,
+    "primary_chi_angle": 190.0,
+    "primary_peak_sigma": 3.243,
+    "modelled_chi": 193.7,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 63,
+    "icode": "",
+    "resname": "TRP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 350.0,
+    "peak_sigma": 3.21,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.912,
+    "modelled_chi": 356.3,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 64,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.438,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 4.889,
+    "modelled_chi": 60.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 65,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 100.0,
+    "peak_sigma": 0.534,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 3.593,
+    "modelled_chi": 186.0,
+    "separation_from_primary_deg": 80.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 65,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 150.0,
+    "peak_sigma": 3.987,
+    "primary_chi_angle": 320.0,
+    "primary_peak_sigma": 4.125,
+    "modelled_chi": 334.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 66,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 190.0,
+    "peak_sigma": 0.57,
+    "primary_chi_angle": 340.0,
+    "primary_peak_sigma": 2.473,
+    "modelled_chi": 335.3,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 66,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 50.0,
+    "peak_sigma": 0.523,
+    "primary_chi_angle": 340.0,
+    "primary_peak_sigma": 2.473,
+    "modelled_chi": 335.3,
+    "separation_from_primary_deg": 70.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 67,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 140.0,
+    "peak_sigma": 0.322,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 1.715,
+    "modelled_chi": 313.9,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 67,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 280.0,
+    "peak_sigma": 1.449,
+    "primary_chi_angle": 100.0,
+    "primary_peak_sigma": 1.531,
+    "modelled_chi": 293.0,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 68,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 30.0,
+    "peak_sigma": 0.452,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.712,
+    "modelled_chi": 173.4,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 68,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 10.0,
+    "peak_sigma": 0.439,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.712,
+    "modelled_chi": 173.4,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 68,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 70.0,
+    "peak_sigma": 3.014,
+    "primary_chi_angle": 250.0,
+    "primary_peak_sigma": 3.767,
+    "modelled_chi": 71.5,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 70,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 100.0,
+    "peak_sigma": 0.402,
+    "primary_chi_angle": 220.0,
+    "primary_peak_sigma": 1.363,
+    "modelled_chi": 254.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 70,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 50.0,
+    "peak_sigma": 0.496,
+    "primary_chi_angle": 220.0,
+    "primary_peak_sigma": 1.12,
+    "modelled_chi": 226.0,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 71,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi4",
+    "chi_angle": 120.0,
+    "peak_sigma": 0.686,
+    "primary_chi_angle": 260.0,
+    "primary_peak_sigma": 3.532,
+    "modelled_chi": 282.4,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 72,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 180.0,
+    "peak_sigma": 3.311,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 3.848,
+    "modelled_chi": 64.9,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 73,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 2.098,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 2.968,
+    "modelled_chi": 167.9,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 73,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 80.0,
+    "peak_sigma": 0.343,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 2.968,
+    "modelled_chi": 167.9,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 75,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 2.651,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 2.657,
+    "modelled_chi": 329.9,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 77,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 2.762,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.802,
+    "modelled_chi": 291.6,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 78,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 50.0,
+    "peak_sigma": 0.974,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 1.825,
+    "modelled_chi": 292.2,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 78,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 350.0,
+    "peak_sigma": 0.778,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 1.825,
+    "modelled_chi": 292.2,
+    "separation_from_primary_deg": 70.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 78,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 10.0,
+    "peak_sigma": 0.768,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 1.825,
+    "modelled_chi": 292.2,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 78,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 340.0,
+    "peak_sigma": 1.754,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 1.758,
+    "modelled_chi": 349.9,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 81,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 150.0,
+    "peak_sigma": 0.701,
+    "primary_chi_angle": 260.0,
+    "primary_peak_sigma": 1.818,
+    "modelled_chi": 254.3,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 81,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi4",
+    "chi_angle": 270.0,
+    "peak_sigma": 0.605,
+    "primary_chi_angle": 140.0,
+    "primary_peak_sigma": 2.201,
+    "modelled_chi": 162.9,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 82,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 20.0,
+    "peak_sigma": 3.95,
+    "primary_chi_angle": 210.0,
+    "primary_peak_sigma": 5.912,
+    "modelled_chi": 33.5,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 83,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 190.0,
+    "peak_sigma": 1.93,
+    "primary_chi_angle": 70.0,
+    "primary_peak_sigma": 2.192,
+    "modelled_chi": 80.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 83,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 320.0,
+    "peak_sigma": 0.873,
+    "primary_chi_angle": 70.0,
+    "primary_peak_sigma": 2.192,
+    "modelled_chi": 80.0,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 85,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 2.236,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.835,
+    "modelled_chi": 294.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 88,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 40.0,
+    "peak_sigma": 3.167,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.766,
+    "modelled_chi": 56.3,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 89,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 90.0,
+    "peak_sigma": 3.884,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 5.055,
+    "modelled_chi": 288.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 91,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 160.0,
+    "peak_sigma": 5.361,
+    "primary_chi_angle": 340.0,
+    "primary_peak_sigma": 5.51,
+    "modelled_chi": 353.9,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 92,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 250.0,
+    "peak_sigma": 5.427,
+    "primary_chi_angle": 80.0,
+    "primary_peak_sigma": 5.477,
+    "modelled_chi": 87.8,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 94,
+    "icode": "",
+    "resname": "MET",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 300.0,
+    "peak_sigma": 0.439,
+    "primary_chi_angle": 150.0,
+    "primary_peak_sigma": 1.937,
+    "modelled_chi": 158.4,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 95,
+    "icode": "",
+    "resname": "TRP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 230.0,
+    "peak_sigma": 3.554,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 4.439,
+    "modelled_chi": 66.9,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 96,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 50.0,
+    "peak_sigma": 3.151,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 3.277,
+    "modelled_chi": 288.6,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 97,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 350.0,
+    "peak_sigma": 2.317,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 3.249,
+    "modelled_chi": 349.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 98,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 4.17,
+    "primary_chi_angle": 340.0,
+    "primary_peak_sigma": 6.391,
+    "modelled_chi": 348.8,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 99,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 1.7,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 3.776,
+    "modelled_chi": 76.9,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 100,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 140.0,
+    "peak_sigma": 1.415,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 2.591,
+    "modelled_chi": 326.3,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 101,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 130.0,
+    "peak_sigma": 0.435,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 1.998,
+    "modelled_chi": 64.8,
+    "separation_from_primary_deg": 70.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 101,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 230.0,
+    "peak_sigma": 1.835,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 1.838,
+    "modelled_chi": 57.1,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 102,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 1.949,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.069,
+    "modelled_chi": 183.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 102,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 60.0,
+    "peak_sigma": 0.4,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.069,
+    "modelled_chi": 183.0,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 103,
+    "icode": "",
+    "resname": "HIS",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 250.0,
+    "peak_sigma": 2.998,
+    "primary_chi_angle": 70.0,
+    "primary_peak_sigma": 5.219,
+    "modelled_chi": 77.6,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 104,
+    "icode": "",
+    "resname": "HIS",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 90.0,
+    "peak_sigma": 3.14,
+    "primary_chi_angle": 270.0,
+    "primary_peak_sigma": 5.586,
+    "modelled_chi": 278.5,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 105,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 50.0,
+    "peak_sigma": 2.272,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.618,
+    "modelled_chi": 57.9,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 106,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 170.0,
+    "peak_sigma": 3.174,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 3.604,
+    "modelled_chi": 187.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 107,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 170.0,
+    "peak_sigma": 3.174,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 3.776,
+    "modelled_chi": 58.3,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 109,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 3.032,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 5.467,
+    "modelled_chi": 69.4,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 110,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 3.062,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.064,
+    "modelled_chi": 172.8,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 112,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 2.214,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 3.226,
+    "modelled_chi": 58.9,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 114,
+    "icode": "",
+    "resname": "TYR",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 60.0,
+    "peak_sigma": 3.979,
+    "primary_chi_angle": 240.0,
+    "primary_peak_sigma": 4.903,
+    "modelled_chi": 79.6,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 115,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 140.0,
+    "peak_sigma": 0.639,
+    "primary_chi_angle": 30.0,
+    "primary_peak_sigma": 5.72,
+    "modelled_chi": 32.6,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 116,
+    "icode": "",
+    "resname": "TRP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 350.0,
+    "peak_sigma": 4.874,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 5.143,
+    "modelled_chi": 0.8,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 118,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 280.0,
+    "peak_sigma": 3.217,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 3.797,
+    "modelled_chi": 290.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 119,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.416,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 3.864,
+    "modelled_chi": 181.8,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 121,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 170.0,
+    "peak_sigma": 4.157,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 4.218,
+    "modelled_chi": 181.6,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 122,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 210.0,
+    "peak_sigma": 0.3,
+    "primary_chi_angle": 320.0,
+    "primary_peak_sigma": 3.692,
+    "modelled_chi": 322.5,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 124,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 90.0,
+    "peak_sigma": 3.52,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 4.887,
+    "modelled_chi": 295.1,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 125,
+    "icode": "",
+    "resname": "TRP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 250.0,
+    "peak_sigma": 3.233,
+    "primary_chi_angle": 80.0,
+    "primary_peak_sigma": 3.989,
+    "modelled_chi": 265.5,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 126,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 260.0,
+    "peak_sigma": 3.29,
+    "primary_chi_angle": 90.0,
+    "primary_peak_sigma": 3.909,
+    "modelled_chi": 89.4,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 128,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 180.0,
+    "peak_sigma": 4.979,
+    "primary_chi_angle": 0.0,
+    "primary_peak_sigma": 5.723,
+    "modelled_chi": 9.5,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 130,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 20.0,
+    "peak_sigma": 0.729,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.695,
+    "modelled_chi": 293.5,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 130,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 200.0,
+    "peak_sigma": 4.408,
+    "primary_chi_angle": 30.0,
+    "primary_peak_sigma": 6.007,
+    "modelled_chi": 38.8,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "TYR",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 240.0,
+    "peak_sigma": 4.003,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 4.059,
+    "modelled_chi": 68.5,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 132,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 300.0,
+    "peak_sigma": 0.581,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 5.543,
+    "modelled_chi": 50.3,
+    "separation_from_primary_deg": 100.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 132,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi4",
+    "chi_angle": 80.0,
+    "peak_sigma": 0.488,
+    "primary_chi_angle": 210.0,
+    "primary_peak_sigma": 3.685,
+    "modelled_chi": 216.9,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 133,
+    "icode": "",
+    "resname": "SER",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 310.0,
+    "peak_sigma": 0.628,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 5.536,
+    "modelled_chi": 66.8,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 135,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 70.0,
+    "peak_sigma": 2.999,
+    "primary_chi_angle": 190.0,
+    "primary_peak_sigma": 3.025,
+    "modelled_chi": 78.0,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 136,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 280.0,
+    "peak_sigma": 3.281,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 3.692,
+    "modelled_chi": 287.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 137,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi4",
+    "chi_angle": 190.0,
+    "peak_sigma": 0.485,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 2.741,
+    "modelled_chi": 79.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 138,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 310.0,
+    "peak_sigma": 1.68,
+    "primary_chi_angle": 130.0,
+    "primary_peak_sigma": 1.759,
+    "modelled_chi": 322.5,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 140,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 120.0,
+    "peak_sigma": 0.379,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.77,
+    "modelled_chi": 300.5,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 141,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 310.0,
+    "peak_sigma": 2.397,
+    "primary_chi_angle": 130.0,
+    "primary_peak_sigma": 2.627,
+    "modelled_chi": 321.0,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 142,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 170.0,
+    "peak_sigma": 2.06,
+    "primary_chi_angle": 250.0,
+    "primary_peak_sigma": 2.434,
+    "modelled_chi": 153.9,
+    "separation_from_primary_deg": 80.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 143,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 180.0,
+    "peak_sigma": 2.349,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 2.871,
+    "modelled_chi": 183.0,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 144,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 340.0,
+    "peak_sigma": 0.582,
+    "primary_chi_angle": 30.0,
+    "primary_peak_sigma": 0.75,
+    "modelled_chi": 55.2,
+    "separation_from_primary_deg": 50.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 145,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 40.0,
+    "peak_sigma": 1.959,
+    "primary_chi_angle": 200.0,
+    "primary_peak_sigma": 3.025,
+    "modelled_chi": 37.6,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 146,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 20.0,
+    "peak_sigma": 2.595,
+    "primary_chi_angle": 190.0,
+    "primary_peak_sigma": 3.418,
+    "modelled_chi": 22.9,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 147,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 250.0,
+    "peak_sigma": 2.825,
+    "primary_chi_angle": 80.0,
+    "primary_peak_sigma": 3.2,
+    "modelled_chi": 88.4,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 149,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 10.0,
+    "peak_sigma": 2.465,
+    "primary_chi_angle": 190.0,
+    "primary_peak_sigma": 2.894,
+    "modelled_chi": 20.7,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 150,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 250.0,
+    "peak_sigma": 1.458,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 1.512,
+    "modelled_chi": 335.8,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 150,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 300.0,
+    "peak_sigma": 1.407,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 1.512,
+    "modelled_chi": 335.8,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 151,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 1.562,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 1.989,
+    "modelled_chi": 176.8,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 152,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 100.0,
+    "peak_sigma": 0.437,
+    "primary_chi_angle": 320.0,
+    "primary_peak_sigma": 3.793,
+    "modelled_chi": 325.0,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 153,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 210.0,
+    "peak_sigma": 0.315,
+    "primary_chi_angle": 320.0,
+    "primary_peak_sigma": 2.049,
+    "modelled_chi": 328.9,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 153,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 200.0,
+    "peak_sigma": 0.604,
+    "primary_chi_angle": 30.0,
+    "primary_peak_sigma": 4.094,
+    "modelled_chi": 38.8,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 154,
+    "icode": "",
+    "resname": "SER",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 320.0,
+    "peak_sigma": 0.723,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 2.74,
+    "modelled_chi": 52.6,
+    "separation_from_primary_deg": 100.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 156,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 320.0,
+    "peak_sigma": 2.875,
+    "primary_chi_angle": 140.0,
+    "primary_peak_sigma": 3.023,
+    "modelled_chi": 327.0,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 157,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.413,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 3.2,
+    "modelled_chi": 301.2,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 157,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 30.0,
+    "peak_sigma": 0.539,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 3.2,
+    "modelled_chi": 301.2,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 158,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi4",
+    "chi_angle": 160.0,
+    "peak_sigma": 0.441,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 2.654,
+    "modelled_chi": 299.5,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 159,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 170.0,
+    "peak_sigma": 3.189,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.835,
+    "modelled_chi": 181.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 160,
+    "icode": "",
+    "resname": "TRP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 250.0,
+    "peak_sigma": 4.18,
+    "primary_chi_angle": 70.0,
+    "primary_peak_sigma": 4.863,
+    "modelled_chi": 79.0,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 161,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 310.0,
+    "peak_sigma": 0.591,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 3.815,
+    "modelled_chi": 193.3,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 161,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 350.0,
+    "peak_sigma": 5.835,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 5.953,
+    "modelled_chi": 359.8,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 162,
+    "icode": "",
+    "resname": "SER",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 150.0,
+    "peak_sigma": 2.122,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 2.202,
+    "modelled_chi": 64.8,
+    "separation_from_primary_deg": 100.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 162,
+    "icode": "",
+    "resname": "SER",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 320.0,
+    "peak_sigma": 0.521,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 2.202,
+    "modelled_chi": 64.8,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 163,
+    "icode": "",
+    "resname": "SER",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 0.496,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 5.101,
+    "modelled_chi": 50.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 165,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 90.0,
+    "peak_sigma": 3.66,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 4.672,
+    "modelled_chi": 288.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 166,
+    "icode": "",
+    "resname": "MET",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 1.356,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 2.959,
+    "modelled_chi": 194.9,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 168,
+    "icode": "",
+    "resname": "PHE",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 280.0,
+    "peak_sigma": 3.76,
+    "primary_chi_angle": 100.0,
+    "primary_peak_sigma": 4.195,
+    "modelled_chi": 287.1,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 169,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 310.0,
+    "peak_sigma": 3.639,
+    "primary_chi_angle": 190.0,
+    "primary_peak_sigma": 3.643,
+    "modelled_chi": 200.3,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 170,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 160.0,
+    "peak_sigma": 3.677,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 3.746,
+    "modelled_chi": 178.7,
+    "separation_from_primary_deg": 140.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 171,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 160.0,
+    "peak_sigma": 3.281,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 3.56,
+    "modelled_chi": 54.9,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 173,
+    "icode": "",
+    "resname": "GLN",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 110.0,
+    "peak_sigma": 1.553,
+    "primary_chi_angle": 300.0,
+    "primary_peak_sigma": 3.92,
+    "modelled_chi": 308.9,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 174,
+    "icode": "",
+    "resname": "ARG",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 260.0,
+    "peak_sigma": 0.5,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.38,
+    "modelled_chi": 176.1,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 175,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 110.0,
+    "peak_sigma": 0.51,
+    "primary_chi_angle": 20.0,
+    "primary_peak_sigma": 3.328,
+    "modelled_chi": 40.8,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 175,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 100.0,
+    "peak_sigma": 0.477,
+    "primary_chi_angle": 310.0,
+    "primary_peak_sigma": 4.507,
+    "modelled_chi": 322.0,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 178,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.867,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 4.337,
+    "modelled_chi": 59.8,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 179,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 90.0,
+    "peak_sigma": 0.636,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 1.768,
+    "modelled_chi": 282.8,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 179,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 10.0,
+    "peak_sigma": 0.396,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 1.768,
+    "modelled_chi": 282.8,
+    "separation_from_primary_deg": 90.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 179,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 240.0,
+    "peak_sigma": 0.793,
+    "primary_chi_angle": 40.0,
+    "primary_peak_sigma": 1.635,
+    "modelled_chi": 59.4,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 60.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 181,
+    "icode": "",
+    "resname": "TRP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 20.0,
+    "peak_sigma": 2.783,
+    "primary_chi_angle": 200.0,
+    "primary_peak_sigma": 3.684,
+    "modelled_chi": 25.6,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 40.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 183,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 330.0,
+    "peak_sigma": 0.393,
+    "primary_chi_angle": 260.0,
+    "primary_peak_sigma": 2.42,
+    "modelled_chi": 275.7,
+    "separation_from_primary_deg": 70.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 183,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 80.0,
+    "peak_sigma": 2.544,
+    "primary_chi_angle": 250.0,
+    "primary_peak_sigma": 2.552,
+    "modelled_chi": 81.7,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 184,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 350.0,
+    "peak_sigma": 0.576,
+    "primary_chi_angle": 140.0,
+    "primary_peak_sigma": 1.735,
+    "modelled_chi": 148.6,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 184,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 300.0,
+    "peak_sigma": 0.93,
+    "primary_chi_angle": 130.0,
+    "primary_peak_sigma": 1.825,
+    "modelled_chi": 309.6,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 185,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 90.0,
+    "peak_sigma": 1.484,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.221,
+    "modelled_chi": 172.4,
+    "separation_from_primary_deg": 80.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 185,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 330.0,
+    "peak_sigma": 0.76,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.221,
+    "modelled_chi": 172.4,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 185,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 130.0,
+    "peak_sigma": 1.869,
+    "primary_chi_angle": 320.0,
+    "primary_peak_sigma": 3.183,
+    "modelled_chi": 319.7,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 186,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 280.0,
+    "peak_sigma": 3.272,
+    "primary_chi_angle": 150.0,
+    "primary_peak_sigma": 3.398,
+    "modelled_chi": 169.2,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 188,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 2.35,
+    "primary_chi_angle": 60.0,
+    "primary_peak_sigma": 3.307,
+    "modelled_chi": 67.6,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 189,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 170.0,
+    "peak_sigma": 1.898,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 2.272,
+    "modelled_chi": 180.5,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 190,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 300.0,
+    "peak_sigma": 2.474,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 3.224,
+    "modelled_chi": 184.9,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 191,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 280.0,
+    "peak_sigma": 3.065,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 5.12,
+    "modelled_chi": 56.2,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 193,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 210.0,
+    "peak_sigma": 2.589,
+    "primary_chi_angle": 20.0,
+    "primary_peak_sigma": 4.467,
+    "modelled_chi": 32.4,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 196,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 3.556,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 3.62,
+    "modelled_chi": 295.6,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 198,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 60.0,
+    "peak_sigma": 2.93,
+    "primary_chi_angle": 290.0,
+    "primary_peak_sigma": 3.041,
+    "modelled_chi": 301.9,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 199,
+    "icode": "",
+    "resname": "GLU",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 350.0,
+    "peak_sigma": 2.916,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.395,
+    "modelled_chi": 357.6,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 50.0,
+    "rotameric": false,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "A",
+    "resseq": 202,
+    "icode": "",
+    "resname": "LYS",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 160.0,
+    "peak_sigma": 0.356,
+    "primary_chi_angle": 80.0,
+    "primary_peak_sigma": 1.453,
+    "modelled_chi": 90.6,
+    "separation_from_primary_deg": 80.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "A",
+    "resseq": 204,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 310.0,
+    "peak_sigma": 0.65,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 1.273,
+    "modelled_chi": 176.7,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "B",
+    "resseq": 1,
+    "icode": "",
+    "resname": "MET",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 210.0,
+    "peak_sigma": 0.341,
+    "primary_chi_angle": 30.0,
+    "primary_peak_sigma": 0.537,
+    "modelled_chi": 42.7,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "B",
+    "resseq": 1,
+    "icode": "",
+    "resname": "MET",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 330.0,
+    "peak_sigma": 1.328,
+    "primary_chi_angle": 100.0,
+    "primary_peak_sigma": 3.408,
+    "modelled_chi": 100.5,
+    "separation_from_primary_deg": 130.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 2,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 180.0,
+    "peak_sigma": 2.396,
+    "primary_chi_angle": 340.0,
+    "primary_peak_sigma": 3.513,
+    "modelled_chi": 2.7,
+    "separation_from_primary_deg": 160.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 4,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 280.0,
+    "peak_sigma": 2.581,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.584,
+    "modelled_chi": 174.6,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 4,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 60.0,
+    "peak_sigma": 0.918,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 2.584,
+    "modelled_chi": 174.6,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "B",
+    "resseq": 5,
+    "icode": "",
+    "resname": "TYR",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 80.0,
+    "peak_sigma": 2.072,
+    "primary_chi_angle": 260.0,
+    "primary_peak_sigma": 3.3,
+    "modelled_chi": 85.2,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 6,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 180.0,
+    "peak_sigma": 5.813,
+    "primary_chi_angle": 0.0,
+    "primary_peak_sigma": 6.116,
+    "modelled_chi": 15.1,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 0.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 7,
+    "icode": "",
+    "resname": "VAL",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 3.279,
+    "primary_chi_angle": 50.0,
+    "primary_peak_sigma": 3.614,
+    "modelled_chi": 299.2,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 10,
+    "icode": "",
+    "resname": "THR",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 170.0,
+    "peak_sigma": 2.211,
+    "primary_chi_angle": 280.0,
+    "primary_peak_sigma": 4.268,
+    "modelled_chi": 295.6,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 11,
+    "icode": "",
+    "resname": "ASP",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 320.0,
+    "peak_sigma": 2.859,
+    "primary_chi_angle": 140.0,
+    "primary_peak_sigma": 4.097,
+    "modelled_chi": 320.7,
+    "separation_from_primary_deg": 180.0,
+    "symmetry_degenerate": true,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 13,
+    "icode": "",
+    "resname": "LEU",
+    "altloc": "",
+    "chi": "chi2",
+    "chi_angle": 270.0,
+    "peak_sigma": 2.114,
+    "primary_chi_angle": 160.0,
+    "primary_peak_sigma": 2.267,
+    "modelled_chi": 156.1,
+    "separation_from_primary_deg": 110.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 15,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 200.0,
+    "peak_sigma": 0.377,
+    "primary_chi_angle": 30.0,
+    "primary_peak_sigma": 1.723,
+    "modelled_chi": 30.1,
+    "separation_from_primary_deg": 170.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "B",
+    "resseq": 15,
+    "icode": "",
+    "resname": "PRO",
+    "altloc": "",
+    "chi": "chi3",
+    "chi_angle": 280.0,
+    "peak_sigma": 0.36,
+    "primary_chi_angle": 20.0,
+    "primary_peak_sigma": 3.974,
+    "modelled_chi": 33.7,
+    "separation_from_primary_deg": 100.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "B",
+    "resseq": 16,
+    "icode": "",
+    "resname": "ILE",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 290.0,
+    "peak_sigma": 2.444,
+    "primary_chi_angle": 170.0,
+    "primary_peak_sigma": 3.033,
+    "modelled_chi": 297.7,
+    "separation_from_primary_deg": 120.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 10.0,
+    "rotameric": true,
+    "below_one_sigma": false
+   },
+   {
+    "chain": "B",
+    "resseq": 17,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 30.0,
+    "peak_sigma": 0.454,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 2.374,
+    "modelled_chi": 182.6,
+    "separation_from_primary_deg": 150.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 30.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   },
+   {
+    "chain": "B",
+    "resseq": 17,
+    "icode": "",
+    "resname": "ASN",
+    "altloc": "",
+    "chi": "chi1",
+    "chi_angle": 280.0,
+    "peak_sigma": 0.363,
+    "primary_chi_angle": 180.0,
+    "primary_peak_sigma": 2.374,
+    "modelled_chi": 182.6,
+    "separation_from_primary_deg": 100.0,
+    "symmetry_degenerate": false,
+    "deviation_from_ideal_deg": 20.0,
+    "rotameric": true,
+    "below_one_sigma": true
+   }
+  ],
+  "ligand_residual": "to be evaluated by polder in the ligand stage",
+  "free_text": "Expect: unmodeled solvent at the far positive peaks; alternate conformations at Ringer secondary sites; waters sitting in negative density are candidates for removal/reassignment. Recorded BEFORE any refinement."
+ },
+ "baselines": {
+  "pdbredo": {
+   "pdbid": "9d5y",
+   "source_file": "/home/dev/data/raw/9D5Y/pdbredo/data.json",
+   "properties": {
+    "AAXIS": 65.928,
+    "ALPHA": 90,
+    "BAVER": 20.75,
+    "BAXIS": 65.928,
+    "BBEST": "0.10",
+    "BETA": 90,
+    "BLTBEST": "1.00",
+    "BNET": 1.9,
+    "BREFTYPE": "ISOT",
+    "BWILS": 23.79,
+    "CAXIS": 185.783,
+    "CCFFIN": 0.955,
+    "CCFOLD": 0.927,
+    "CCWFIN": 0.951,
+    "CCWOLD": 0.946,
+    "COMMENT": null,
+    "COMPLETED": 98,
+    "DATARESH": 1.35,
+    "DATARESL": 36.03,
+    "DOTLS": true,
+    "DYEAR": 2024,
+    "EXPTYP": "X-ray",
+    "FALSETWIN": false,
+    "FARMSZ": 0.963,
+    "FBCONF": 0.22,
+    "FBPGRMSZ": null,
+    "FBPHBRMSZ": null,
+    "FBRMSZ": 0.869,
+    "FBUCKLE": null,
+    "FBUMPS": 20,
+    "FCHI12": -0.344,
+    "FCONFAL": null,
+    "FDNRMSD": null,
+    "FGFOLD": null,
+    "FHBSAT": 0.885,
+    "FHBUNS": 23,
+    "FHRMSZ": null,
+    "FIUSED": false,
+    "FPROPEL": null,
+    "FSCFCAL": 0.9275,
+    "FSCFFIN": 0.9275,
+    "FSCFTLS": 0.9275,
+    "FSCHI12": 0.471,
+    "FSCWCAL": 0.9339,
+    "FSCWFIN": 0.9785,
+    "FSCWTLS": 0.9777,
+    "FSHEAR": null,
+    "FSTRETCH": null,
+    "FSZRAMA": 0.432,
+    "FWBMPS": 0.007,
+    "FZPAK1": 0.248,
+    "FZPAK2": -0.48,
+    "FZRAMA": -0.803,
+    "GAMMA": 120,
+    "GOT_CARB": false,
+    "GOT_NUC": false,
+    "GOT_PROT": true,
+    "HBFLIP": 3,
+    "IONPROBE": 1.2,
+    "ISTWIN": true,
+    "LEGACY": false,
+    "LLFFIN": 11152.7,
+    "NARMSZ": 0.982,
+    "NBBFLIP": 0,
+    "NBCONF": 0.232,
+    "NBPGRMSZ": null,
+    "NBPHBRMSZ": null,
+    "NBRMSZ": 0.894,
+    "NBUCKLE": null,
+    "NBUMPS": 27,
+    "NCHI12": -0.771,
+    "NCHIRFX": 0,
+    "NCONFAL": null,
+    "NDNRMSD": null,
+    "NDROTA": 15,
+    "NGFOLD": null,
+    "NHBSAT": 0.891,
+    "NHBUNS": 21,
+    "NHRMSZ": null,
+    "NLOOPS": 0,
+    "NMETALREST2": 0,
+    "NNUCLEICREST": 0,
+    "NOPDB": false,
+    "NOSF": false,
+    "NPROPEL": null,
+    "NREFCNT": 102043,
+    "NSCBLT": 0,
+    "NSCHI12": 0.474,
+    "NSHEAR": null,
+    "NSTRETCH": null,
+    "NSZRAMA": 0.432,
+    "NTLS": 2,
+    "NTSTCNT": 2006,
+    "NWATDEL": 2,
+    "NWBMPS": 0.01,
+    "NZPAK1": 0.269,
+    "NZPAK2": -0.472,
+    "NZRAMA": -0.842,
+    "OARMSZ": 0.82,
+    "OBCONF": 0.331,
+    "OBPGRMSZ": null,
+    "OBPHBRMSZ": null,
+    "OBRMSZ": 0.728,
+    "OBUCKLE": null,
+    "OBUMPS": 58,
+    "OCHI12": -1.982,
+    "OCONFAL": null,
+    "ODNRMSD": null,
+    "OGFOLD": null,
+    "OHBSAT": 0.885,
+    "OHBUNS": 26,
+    "OHRMSZ": null,
+    "OPROPEL": null,
+    "OPTTLSG": "REDO",
+    "ORITLS": true,
+    "OSCHI12": 0.441,
+    "OSHEAR": null,
+    "OSTRETCH": null,
+    "OSZRAMA": 0.413,
+    "OWBMPS": 0.041,
+    "OZPAK1": 0.141,
+    "OZPAK2": -0.808,
+    "OZRAMA": -2.617,
+    "PBNET": 41,
+    "PROG": "PHENIX_(1.20.1_4487:____)",
+    "RCAL": 0.258,
+    "REFPATM": 26.9,
+    "RESOLUTION": 1.35,
+    "RESOTYPE": 4,
+    "RFACT": 0.2312,
+    "RFCAL": 0.2858,
+    "RFCALUNB": 0.2823,
+    "RFCALZ": -0.55,
+    "RFFIN": 0.2206,
+    "RFFINUNB": 0.2326,
+    "RFFINZ": 2.45,
+    "RFIN": 0.2126,
+    "RFREE": 0.2664,
+    "RFRRAT": 1.0941,
+    "RFTLS": 0.2227,
+    "RFTLSUNB": 0.2342,
+    "RFTLSZ": 2.3,
+    "RSCCB": 400,
+    "RSCCW": 0,
+    "RSHRINK": 1.2,
+    "RSRB": 353,
+    "RSRW": 1,
+    "RTLS": 0.2141,
+    "SIGRFCAL": 0.0064,
+    "SIGRFFIN": 0.0049,
+    "SIGRFTLS": 0.005,
+    "SOLVD": 47.8,
+    "SOLVENT": "SIMP",
+    "SPACEGROUP": "P 32 2 1",
+    "SRFRRAT": 0.0274,
+    "STFLIP": null,
+    "TFBPGRMSZ": null,
+    "TFCHI12": 85,
+    "TFCONFAL": null,
+    "TFHBSAT": 33,
+    "TFWBMPS": 65,
+    "TFZPAK1": 60,
+    "TFZPAK2": 72,
+    "TFZRAMA": 61,
+    "TIME": "2024-11-17",
+    "TITLE": "Nitrile hydratase S112T mutant",
+    "TLSBEST": "1.00",
+    "TNCONFAL": null,
+    "TOBPGRMSZ": null,
+    "TOCHI12": 51,
+    "TOCONFAL": null,
+    "TOHBSAT": 33,
+    "TOWBMPS": 21,
+    "TOZPAK1": 55,
+    "TOZPAK2": 61,
+    "TOZRAMA": 21,
+    "TSTCNT": 2006,
+    "TSTPRC": 2,
+    "URESO": 1.35,
+    "USIGMA": true,
+    "VDWPROBE": 1.7,
+    "VERSION": 8.13,
+    "WAVELENGTH": 0.97946,
+    "ZCALERR": false,
+    "ZCCF": 7.88,
+    "ZCCW": 11.15,
+    "ZRFRRATCAL": -0.5,
+    "ZRFRRATFIN": 2.06,
+    "ZRFRRATTLS": 1.97
+   },
+   "VERSION": 8.13,
+   "RESOLUTION": 1.35,
+   "RFACT": 0.2312,
+   "RFREE": 0.2664,
+   "RFCAL": 0.2858,
+   "RFCALUNB": 0.2823,
+   "SIGRFCAL": 0.0064,
+   "RFFIN": 0.2206,
+   "NTSTCNT": 2006,
+   "TSTPRC": 2,
+   "NREFCNT": 102043,
+   "OBUMPS": 58,
+   "NBUMPS": 27,
+   "absent_keys": [],
+   "version": 8.13,
+   "r_work_deposited": 0.2312,
+   "r_free_deposited": 0.2664,
+   "r_free_recalculated": 0.2858,
+   "r_free_recalculated_unbiased": 0.2823,
+   "sigma_r_free_recalculated": 0.0064,
+   "r_free_final": 0.2206,
+   "n_test": 2006,
+   "pct_test": 2,
+   "n_reflections": 102043,
+   "bumps_original": 58,
+   "bumps_new": 27,
+   "source_url": "https://pdb-redo.eu/db/9d5y/data.json",
+   "fetched_at": "fetched_at=2026-09-17T04:24:27+00:00\nrefreshed_at=2026-09-17T08:56:56+00:00"
+  },
+  "header": {
+   "r_work": 0.2312,
+   "r_free": 0.2664,
+   "n_free": 2017,
+   "pct_free": 1.98,
+   "n_obs": 102067,
+   "sigma_f": 16.58,
+   "cross_valid_method": "FREE R-VALUE",
+   "sf_status": "REL"
+  }
+ },
+ "resolution_cutoff": {
+  "deposited": 1.35,
+  "paired_refinement": "not yet run (stages.paired_refinement)"
+ },
+ "incomplete_sections": [],
+ "wall_clock_s": 93.2
+}

@@ -1,0 +1,126 @@
+{
+ "run_id": "3TC7.20260908v5b",
+ "target": "3TC7",
+ "run_dir": "/home/dev/runs/3TC7/runs/3TC7.20260908v5b",
+ "cycles": [
+  51,
+  52,
+  53
+ ],
+ "n_cycles": 3,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [
+  [
+   51,
+   "3TC7.c051.water_add.A5053"
+  ],
+  [
+   51,
+   "3TC7.c051.water_add.A5054"
+  ],
+  [
+   51,
+   "3TC7.c051.water_add.A5055"
+  ],
+  [
+   51,
+   "3TC7.c051.water_add.A5056"
+  ],
+  [
+   51,
+   "3TC7.c051.water_add.A5057"
+  ],
+  [
+   52,
+   "3TC7.c052.water_add.A5058"
+  ],
+  [
+   52,
+   "3TC7.c052.water_add.A5059"
+  ],
+  [
+   52,
+   "3TC7.c052.water_add.A5060"
+  ],
+  [
+   52,
+   "3TC7.c052.water_add.A5061"
+  ],
+  [
+   52,
+   "3TC7.c052.water_add.A5062"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.14679476884203055,
+  "r_free_full": 0.18417302884819434,
+  "r_free_select": 0.1885086126445358,
+  "r_free_report": 0.17974181616365467,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "r_free_final": {
+  "r_work": 0.14761396247142955,
+  "r_free_full": 0.18387697591124733,
+  "r_free_select": 0.18693266070808612,
+  "r_free_report": 0.18075389263855599,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "delta_r_free_full": -0.000296,
+ "delta_r_free_report": 0.001012,
+ "published_better": {
+  "r_work": 0.138,
+  "r_free": 0.163,
+  "method": "qFit multiconformer model",
+  "source": "https://dynamicpdb.com/entries/a937eeb3-1dfd-43a3-af1a-08675aad9807",
+  "fetched": "2026-08-27",
+  "comparable_to_our_flags": false,
+  "their_n_free": 1993,
+  "our_n_free": 2075,
+  "scored_on_our_flags": {
+   "r_work": 0.139,
+   "r_free_full": 0.1439,
+   "r_free_gap": 0.0049,
+   "clashscore_altloc_aware": 15.39,
+   "model": "https://files.dynamicpdb.com/a937eeb3-1dfd-43a3-af1a-08675aad9807/models/036b3d5e-c7e6-4f0e-ae39-37e76b3a7618/artifacts/2e719a59-01fd-4bd3-8ada-5bfdfc149940/3tc7_qFit_010.cif",
+   "sha256": "4dbee3272ff413a30db10dd5811c371c547a4804795792590592292e34e62a74",
+   "checked": "2026-08-29"
+  }
+ },
+ "published_target_r_free": 0.163,
+ "reached_target": null,
+ "published_comparable_to_our_flags": false,
+ "gap_closed_fraction": null,
+ "sigma_select": 0.001811,
+ "k_multiple": 2.0,
+ "refine_extra_final": {},
+ "escape_tried": {
+  "reweight_reseed": "failed"
+ },
+ "final_model": "/home/dev/runs/3TC7/runs/3TC7.20260908v5b/cycles/c053/escape/null_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/3TC7/runs/3TC7.20260908v5b/cycles/c053/escape/null_arm/refine_001.mtz",
+ "stop_reason": "max_cycles=3 reached",
+ "best_base": {
+  "cycle_index": 52,
+  "model": "/home/dev/runs/3TC7/runs/3TC7.20260908v5b/cycles/c052/paired/candidate_arm/refine_001.cif",
+  "mtz": "/home/dev/runs/3TC7/runs/3TC7.20260908v5b/cycles/c052/paired/candidate_arm/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.14759588944603597,
+   "r_free_full": 0.18383426059422395,
+   "r_free_select": 0.18673137669735568,
+   "r_free_report": 0.18087324352528497,
+   "d_min": 1.4999525524595603,
+   "n_free": 2075,
+   "n_select": 1037,
+   "n_report": 1038
+  }
+ },
+ "started_at": "2026-09-08T17:57:58+00:00",
+ "finished_at": "2026-09-08T20:04:35+00:00"
+}

@@ -1,0 +1,78 @@
+{
+ "eid": "E028b",
+ "change_id": "3TC7.c057.hydrogens_toggle.riding_h_pre",
+ "knob": "riding_h_pre",
+ "verdict_paired": "accepted",
+ "verdict_row": "accepted",
+ "attributable": -0.009941,
+ "sigma_select": 0.001811,
+ "accept_threshold": -0.003622,
+ "null": {
+  "r_work": 0.14726595390372785,
+  "r_free_full": 0.18410613227595218,
+  "r_free_select": 0.18808956164296764,
+  "r_free_report": 0.1800348414029706
+ },
+ "candidate": {
+  "r_work": 0.1351496281935661,
+  "r_free_full": 0.17276394500804818,
+  "r_free_select": 0.17814869528687724,
+  "r_free_report": 0.16726042463813334
+ },
+ "base": {
+  "r_free_select": 0.1885086126445358
+ },
+ "delta_r_gap": 0.00077,
+ "sigma_gap": 0.002264,
+ "gap_flag": null,
+ "cross_check": {
+  "null": {
+   "r_work": 0.1473,
+   "r_free": 0.184,
+   "r_free_in_file_header": 0.1841,
+   "log": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/null_arm/model_vs_data/model_vs_data.stdout.log"
+  },
+  "candidate": {
+   "r_work": 0.1352,
+   "r_free": 0.173,
+   "r_free_in_file_header": 0.1729,
+   "log": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/candidate_arm/model_vs_data/model_vs_data.stdout.log"
+  },
+  "delta_full": -0.011
+ },
+ "geometry": {
+  "null_arm": {
+   "bond_rmsd": 0.013,
+   "angle_rmsd": 1.319,
+   "r_work": 0.1473,
+   "r_free": 0.1841,
+   "n_atoms": 2509,
+   "mean_b": 16.18,
+   "wall_clock_s": 1034.0,
+   "macro_cycles": 5,
+   "adp_model": "anisotropic",
+   "n_trial_weights": 143,
+   "tls_groups": 0,
+   "strategy": "refinement.refine.strategy=individual_sites+individual_adp+occupancies",
+   "n_atoms_nonh": 2509
+  },
+  "candidate_arm": {
+   "bond_rmsd": 0.007,
+   "angle_rmsd": 1.042,
+   "r_work": 0.1352,
+   "r_free": 0.1729,
+   "n_atoms": 4832,
+   "mean_b": 16.06,
+   "wall_clock_s": 1159.3,
+   "macro_cycles": 5,
+   "adp_model": "anisotropic",
+   "n_trial_weights": 135,
+   "tls_groups": 0,
+   "strategy": "refinement.refine.strategy=individual_sites+individual_adp+occupancies",
+   "n_atoms_nonh": 2509
+  }
+ },
+ "geometry_ok": true,
+ "wall_clock_s": 1174.6,
+ "out": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre"
+}

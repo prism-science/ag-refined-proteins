@@ -1,0 +1,140 @@
+# 1V2X — run `1V2X.20260917T062029Z`
+
+started 2026-09-17T06:20:29+00:00 on actl-ws-xraymemory-autoresearch-devspace-8597768cc8-lxfq5 pid 536292  
+stages `['correction', 'solvent', 'protein_altloc']` · seed 1 · max cycles 8 · max/stage 20  
+noise floor σ_select = 0.000792, k = 2.0: a cycle is credited at ≤ -0.001584, bisected above +0.001584  
+published better model: none recorded in targets.yaml  
+starting model: `/home/dev/runs/1V2X/c000/baseline_rerefine/refine_001.cif`
+
+## cycle 0 — base
+
+cycle 0: re-refined the starting model to obtain map coefficients (/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/base/rerefine/refine_001.cif)  
+R-work 0.1876649012697371 · R-free full 0.2346438703920601 · report 0.2443499062109062 (select 0.22536221705306392)
+
+TLS partition pinned for the rest of the run (D415): 4 group(s) from `/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/base/rerefine/refine_decisions.json`
+
+## cycle 1 — real space (correction, solvent, protein_altloc)
+
+proposed/attempted/accepted/reverted per stage: `{"correction": {"proposed": 20, "attempted": 20, "accepted": 0, "reverted": 20, "not_attempted": []}, "solvent": {"proposed": 20, "attempted": 8, "accepted": 5, "reverted": 3, "not_attempted": ["1V2X.c001.water_remove.A462", "1V2X.c001.water_remove.A433", "1V2X.c001.water_remove.A554", "1V2X.c001.water_remove.A525", "1V2X.c001.water_remove.A442", "1V2X.c001.water_remove.A507", "1V2X.c001.water_remove.A529", "1V2X.c001.water_remove.A515", "1V2X.c001.water_remove.A520", "1V2X.c001.water_remove.A524", "1V2X.c001.water_remove.A574", "1V2X.c001.water_remove.A469"]}, "protein_altloc": {"skipped": "max_changes_per_cycle=5 reached"}}`
+- `1V2X.c001.rotamer_fix.A65` **reverted** — rscc 0.693967→0.697 (Δ 0.003033, rule mean_delta, worst neighbour drop 0.0238): failed: rscc [mean RSCC over 3 changed residue(s) moved 0.003033 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.411.. moved -0.0238 (0.7344 -> 0.7106), allowed drop 0.02]
+- `1V2X.c001.rotamer_fix.A64` **reverted** — rscc 0.735833→0.7078 (Δ -0.028033, rule mean_delta, worst neighbour drop 0.0322): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.028033 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.411.. moved -0.0322 (0.7344 -> 0.7022), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A10` **reverted** — rscc 0.795933→0.773267 (Δ -0.022666, rule mean_delta, worst neighbour drop 0.2037): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.022666 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.571.. moved -0.2037 (0.3373 -> 0.1336), allowed drop 0.02]; clash [5 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A14` **reverted** — rscc 0.917567→0.912533 (Δ -0.005034, rule mean_delta, worst neighbour drop 0.0209): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.005034 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.521.. moved -0.0209 (0.521 -> 0.5001), allowed drop 0.02]
+- `1V2X.c001.rotamer_fix.A92` **reverted** — rscc 0.9326→0.928167 (Δ -0.004433, rule mean_delta, worst neighbour drop 0.0473): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.004433 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.525.. moved -0.0473 (0.3913 -> 0.344), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A149` **reverted** — rscc None→None (Δ None, rule None, worst neighbour drop None): the change could not be applied: DiscreteError: Coot rotamer_fix moved residue(s) outside the 3-residue window [('A', 148, ''), ('A', 149, ''), ('A', 150, '')]: [('A', 568, '')]
+- `1V2X.c001.rotamer_fix.A29` **reverted** — rscc None→None (Δ None, rule None, worst neighbour drop None): the change could not be applied: DiscreteError: Coot rotamer_fix moved residue(s) outside the 3-residue window [('A', 28, ''), ('A', 29, ''), ('A', 30, '')]: [('A', 536, '')]
+- `1V2X.c001.rotamer_fix.A16` **reverted** — rscc 0.9391→0.940467 (Δ 0.001367, rule mean_delta, worst neighbour drop 0.0211): failed: rscc [mean RSCC over 3 changed residue(s) moved 0.001367 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.574.. moved -0.0211 (0.5054 -> 0.4843), allowed drop 0.02]
+- `1V2X.c001.rotamer_fix.A133` **reverted** — rscc 0.954867→0.948067 (Δ -0.0068, rule mean_delta, worst neighbour drop 0.0177): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.0068 < required +0.01]; clash [2 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A169` **reverted** — rscc 0.9411→0.941267 (Δ 0.000167, rule mean_delta, worst neighbour drop 0.0101): failed: rscc [mean RSCC over 3 changed residue(s) moved 0.000167 < required +0.01]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A5` **reverted** — rscc 0.586833→0.587 (Δ 0.000167, rule mean_delta, worst neighbour drop 0.0097): failed: rscc [mean RSCC over 3 changed residue(s) moved 0.000167 < required +0.01]; clash [2 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A3` **reverted** — rscc 0.6264→0.612067 (Δ -0.014333, rule mean_delta, worst neighbour drop 0.1172): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.014333 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.444.. moved -0.1172 (0.651 -> 0.5338), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A1` **reverted** — rscc 0.60855→0.6146 (Δ 0.00605, rule mean_delta, worst neighbour drop 0.0162): failed: rscc [mean RSCC over 2 changed residue(s) moved 0.00605 < required +0.01]
+- `1V2X.c001.rotamer_fix.A2` **reverted** — rscc 0.5981→0.5321 (Δ -0.066, rule mean_delta, worst neighbour drop 0.0698): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.066 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.490.. moved -0.0698 (0.3369 -> 0.2671), allowed drop 0.02]; geometry [angle_rmsd worsened by 0.6014 > rel_max 0.3 (prev 0.82643)]; cla
+- `1V2X.c001.rotamer_fix.A6` **reverted** — rscc 0.5782→0.5695 (Δ -0.0087, rule mean_delta, worst neighbour drop 0.0182): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.0087 < required +0.01]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c001.rotamer_fix.A67` **reverted** — rscc 0.7076→0.695733 (Δ -0.011867, rule mean_delta, worst neighbour drop 0.0187): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.011867 < required +0.01]; geometry [angle_rmsd=2.00427 > abs_max 2.0]
+- `1V2X.c001.rotamer_fix.A4` **reverted** — rscc 0.5734→0.5298 (Δ -0.0436, rule mean_delta, worst neighbour drop 0.1544): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.0436 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.484.. moved -0.1544 (0.7166 -> 0.5622), allowed drop 0.02]; geometry [bond_rmsd=0.02648 > abs_max 0.02; bond_rmsd worsened by 0.02179
+- `1V2X.c001.peptide_flip.A67` **reverted** — rscc 0.7541→0.6903 (Δ -0.0638, rule mean_delta, worst neighbour drop 0.0327): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.0638 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.469.. moved -0.0327 (0.506 -> 0.4733), allowed drop 0.02]; geometry [angle_rmsd=2.29411 > abs_max 2.0]; clash [2 new altloc-aware cla
+- `1V2X.c001.peptide_flip.A68` **reverted** — rscc 0.7827→0.6666 (Δ -0.1161, rule mean_delta, worst neighbour drop 0.0195): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.1161 < required +0.01]; geometry [angle_rmsd=2.33325 > abs_max 2.0; angle_rmsd worsened by 0.366 > rel_max 0.3 (prev 1.96727)]
+- `1V2X.c001.peptide_flip.A64` **reverted** — rscc 0.75045→0.708625 (Δ -0.041825, rule mean_delta, worst neighbour drop 0.1162): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.041825 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.411.. moved -0.1162 (0.7344 -> 0.6182), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c001.water_remove.A561` **accepted** — rscc 0.158→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0042): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.568.. moved -0.0042 (0.7541 -> 0.7499), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site
+- `1V2X.c001.water_remove.A495` **accepted** — rscc 0.2054→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0089): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.407.. moved -0.0089 (0.9368 -> 0.9279), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site
+- `1V2X.c001.water_remove.A435` **reverted** — rscc 0.2173→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0814): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.493.. moved -0.0814 (0.8197 -> 0.7383), allowed drop 0.02]
+- `1V2X.c001.water_remove.A562` **accepted** — rscc 0.2255→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0018): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.511.. moved -0.0018 (0.6756 -> 0.6738), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site
+- `1V2X.c001.water_remove.A504` **accepted** — rscc 0.281→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0034): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.102.. moved -0.0034 (0.7206 -> 0.7172), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site
+- `1V2X.c001.water_remove.A494` **reverted** — rscc 0.3037→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0567): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.510.. moved -0.0567 (0.7643 -> 0.7076), allowed drop 0.02]
+- `1V2X.c001.water_remove.A490` **reverted** — rscc 0.3317→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0497): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.588.. moved -0.0497 (0.6234 -> 0.5737), allowed drop 0.02]
+- `1V2X.c001.water_remove.A571` **accepted** — rscc 0.3432→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0028): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.31.. moved -0.0028 (0.8993 -> 0.8965), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site-
+
+**paired cycle**: null arm R-free-select 0.2262036758564063 · treatment arm 0.22593347683265103 · attributable **-0.000270** vs credit ≤ -0.001584 / regression > +0.001584 → **no_change**  
+attributable -0.000270 within (−0.001584, +0.001584]: of the raw 0.000571, 0.000841 is reproduced by re-refining the base with NO changes; the changes are not credited but stay (locally better, and not worse globally) || cross-check (phenix.model_vs_data, full set): null 0.2344 · treatment 0.2333 · Δ -0.0011 — agrees in sign
+
+cross-check (phenix.model_vs_data, full test set): null 0.2344 · treatment 0.2333 · Δ -0.0011 → **agrees in sign** with the gate
+
+changes kept without credit; cumulative un-credited drift since the last credited base: -0.000270 (guard at > +0.001584)
+
+⚠ whole-model geometry outside the frozen caps: rota_outliers 5.66 > 1.5; rama_outliers 1.59 > 0.5; clashscore 12.4481 > 10 (D479, monitor)
+
+base after cycle: `/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/cycles/c001/paired/candidate_arm/refine_001.cif` · R-free full 0.2331926373540301 · report 0.2407837064730652 · Δselect vs before +0.000571 · 2549.8 s
+
+## cycle 2 — real space (correction, solvent, protein_altloc)
+
+proposed/attempted/accepted/reverted per stage: `{"correction": {"proposed": 20, "attempted": 20, "accepted": 1, "reverted": 19, "not_attempted": []}, "solvent": {"proposed": 20, "attempted": 11, "accepted": 4, "reverted": 7, "not_attempted": ["1V2X.c002.water_remove.A473", "1V2X.c002.water_remove.A515", "1V2X.c002.water_remove.A524", "1V2X.c002.water_remove.A469", "1V2X.c002.water_remove.A480", "1V2X.c002.water_remove.A487", "1V2X.c002.water_remove.A485", "1V2X.c002.water_remove.A463", "1V2X.c002.water_remove.A479"]}, "protein_altloc": {"skipped": "max_changes_per_cycle=5 reached"}}`
+- `1V2X.c002.rotamer_fix.A65` **reverted** — rscc 0.712067→0.7003 (Δ -0.011767, rule mean_delta, worst neighbour drop 0.0527): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.011767 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.411.. moved -0.0527 (0.7688 -> 0.7161), allowed drop 0.02]
+- `1V2X.c002.rotamer_fix.A10` **reverted** — rscc 0.799433→0.797567 (Δ -0.001866, rule mean_delta, worst neighbour drop 0.031): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.001866 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.458.. moved -0.0310 (0.8152 -> 0.7842), allowed drop 0.02]; geometry [angle_rmsd worsened by 0.5136 > rel_max 0.3 (prev 0.79595)]; 
+- `1V2X.c002.rotamer_fix.A64` **reverted** — rscc 0.752567→0.7405 (Δ -0.012067, rule mean_delta, worst neighbour drop 0.0212): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.012067 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.411.. moved -0.0212 (0.7688 -> 0.7476), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A14` **reverted** — rscc 0.916967→0.913533 (Δ -0.003434, rule mean_delta, worst neighbour drop 0.0265): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.003434 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.521.. moved -0.0265 (0.5393 -> 0.5128), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A92` **reverted** — rscc 0.935133→0.933667 (Δ -0.001466, rule mean_delta, worst neighbour drop 0.0299): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.001466 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.525.. moved -0.0299 (0.4509 -> 0.421), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A149` **reverted** — rscc None→None (Δ None, rule None, worst neighbour drop None): the change could not be applied: DiscreteError: Coot rotamer_fix moved residue(s) outside the 3-residue window [('A', 148, ''), ('A', 149, ''), ('A', 150, '')]: [('A', 568, '')]
+- `1V2X.c002.rotamer_fix.A29` **reverted** — rscc None→None (Δ None, rule None, worst neighbour drop None): the change could not be applied: DiscreteError: Coot rotamer_fix moved residue(s) outside the 3-residue window [('A', 28, ''), ('A', 29, ''), ('A', 30, '')]: [('A', 536, '')]
+- `1V2X.c002.rotamer_fix.A16` **reverted** — rscc 0.9402→0.938733 (Δ -0.001467, rule mean_delta, worst neighbour drop 0.0145): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.001467 < required +0.01]; clash [2 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A169` **reverted** — rscc 0.9429→0.943967 (Δ 0.001067, rule mean_delta, worst neighbour drop 0.0085): failed: rscc [mean RSCC over 3 changed residue(s) moved 0.001067 < required +0.01]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A5` **reverted** — rscc 0.584967→0.588633 (Δ 0.003666, rule mean_delta, worst neighbour drop 0.0087): failed: rscc [mean RSCC over 3 changed residue(s) moved 0.003666 < required +0.01]; clash [3 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A3` **reverted** — rscc 0.629133→0.6586 (Δ 0.029467, rule mean_delta, worst neighbour drop 0.2343): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.444.. moved -0.2343 (0.614 -> 0.3797), allowed drop 0.02]; clash [1 new altloc-aware clash(es)]
+- `1V2X.c002.rotamer_fix.A1` **accepted** — rscc 0.60325→0.6257 (Δ 0.02245, rule mean_delta, worst neighbour drop 0.0113): RSCC gate passed: RSCC gate passed under mean_delta (delta +0.0225 >= +0.01); worst untouched neighbour A.490.. moved -0.0113 (0.3769 -> 0.3656), allowed drop 0.02; local geometry bond_rmsd=0.00405 angle_rmsd=1.16895 over 19 bond(s)/24 angle(s) within the band for d_min=1.5005248194509928; no new al
+- `1V2X.c002.rotamer_fix.A6` **reverted** — rscc 0.580167→0.564767 (Δ -0.0154, rule mean_delta, worst neighbour drop 0.0057): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.0154 < required +0.01]
+- `1V2X.c002.rotamer_fix.A2` **reverted** — rscc 0.609→0.565967 (Δ -0.043033, rule mean_delta, worst neighbour drop 0.0179): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.043033 < required +0.01]
+- `1V2X.c002.rotamer_fix.A67` **reverted** — rscc 0.727933→0.725233 (Δ -0.0027, rule mean_delta, worst neighbour drop 0.0123): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.0027 < required +0.01]; geometry [angle_rmsd=2.16431 > abs_max 2.0]
+- `1V2X.c002.rotamer_fix.A4` **reverted** — rscc 0.5716→0.315033 (Δ -0.256567, rule mean_delta, worst neighbour drop 0.2657): failed: rscc [mean RSCC over 3 changed residue(s) moved -0.256567 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.484.. moved -0.2657 (0.7417 -> 0.476), allowed drop 0.02]; geometry [bond_rmsd=0.04374 > abs_max 0.02; bond_rmsd worsened by 0.0363
+- `1V2X.c002.peptide_flip.A67` **reverted** — rscc 0.77225→0.68925 (Δ -0.083, rule mean_delta, worst neighbour drop 0.0344): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.083 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.487.. moved -0.0344 (0.5839 -> 0.5495), allowed drop 0.02]; geometry [bond_rmsd worsened by 0.00301 > rel_max 0.003 (prev 0.01139)]
+- `1V2X.c002.peptide_flip.A68` **reverted** — rscc 0.797725→0.70105 (Δ -0.096675, rule mean_delta, worst neighbour drop 0.0357): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.096675 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.487.. moved -0.0357 (0.5839 -> 0.5482), allowed drop 0.02]; geometry [angle_rmsd=2.61911 > abs_max 2.0; angle_rmsd worsened by 0.30
+- `1V2X.c002.peptide_flip.A64` **reverted** — rscc 0.765175→0.727125 (Δ -0.03805, rule mean_delta, worst neighbour drop 0.1582): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.03805 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.411.. moved -0.1582 (0.7719 -> 0.6137), allowed drop 0.02]; clash [2 new altloc-aware clash(es)]
+- `1V2X.c002.peptide_flip.A66` **reverted** — rscc 0.688825→0.472275 (Δ -0.21655, rule mean_delta, worst neighbour drop 0.063): failed: rscc [mean RSCC over 4 changed residue(s) moved -0.21655 < required +0.01]; neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.469.. moved -0.0630 (0.5501 -> 0.4871), allowed drop 0.02]; geometry [bond_rmsd worsened by 0.00412 > rel_max 0.003 (prev 0.0123); a
+- `1V2X.c002.water_remove.A490` **reverted** — rscc 0.3656→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0421): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.588.. moved -0.0421 (0.6363 -> 0.5942), allowed drop 0.02]
+- `1V2X.c002.water_remove.A433` **reverted** — rscc 0.3708→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0304): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.497.. moved -0.0304 (0.838 -> 0.8076), allowed drop 0.02]
+- `1V2X.c002.water_remove.A435` **reverted** — rscc 0.3789→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0633): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.493.. moved -0.0633 (0.8471 -> 0.7838), allowed drop 0.02]
+- `1V2X.c002.water_remove.A462` **reverted** — rscc 0.3966→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.035): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.480.. moved -0.0350 (0.5812 -> 0.5462), allowed drop 0.02]
+- `1V2X.c002.water_remove.A494` **reverted** — rscc 0.3988→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0777): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.510.. moved -0.0777 (0.7617 -> 0.684), allowed drop 0.02]
+- `1V2X.c002.water_remove.A507` **accepted** — rscc 0.4206→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0122): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.548.. moved -0.0122 (0.6721 -> 0.6599), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site
+- `1V2X.c002.water_remove.A529` **reverted** — rscc 0.4144→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0217): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.428.. moved -0.0217 (0.8137 -> 0.792), allowed drop 0.02]
+- `1V2X.c002.water_remove.A554` **accepted** — rscc 0.4344→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0041): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.173.. moved -0.0041 (0.9232 -> 0.9191), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site
+- `1V2X.c002.water_remove.A525` **accepted** — rscc 0.4641→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0002): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.91.. moved -0.0002 (0.9111 -> 0.9109), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site-
+- `1V2X.c002.water_remove.A520` **reverted** — rscc 0.4802→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0584): failed: neighbours [density stolen from an untouched neighbour: worst untouched neighbour A.449.. moved -0.0584 (0.6632 -> 0.6048), allowed drop 0.02]
+- `1V2X.c002.water_remove.A521` **accepted** — rscc 0.5349→None (Δ None, rule removed_residue_floor, worst neighbour drop 0.0017): RSCC gate passed: RSCC gate passed under removed_residue_floor; worst untouched neighbour A.14.. moved -0.0017 (0.898 -> 0.8963), allowed drop 0.02; local geometry bond_rmsd=None angle_rmsd=None over 0 bond(s)/0 angle(s) within the band for d_min=1.5005248194509928; no new altloc-aware clash; site-r
+
+**paired cycle**: null arm R-free-select 0.22575917836507742 · treatment arm 0.22769960555951255 · attributable **+0.001940** vs credit ≤ -0.001584 / regression > +0.001584 → **rejected** (REGRESSED)  
+attributable 0.001940 > +0.001584: the changes made R-free-select WORSE than the identically refined base — regression, bisect (SPEC_LOOP_V2 §1.3) || cross-check (phenix.model_vs_data, full set): null 0.2337 · treatment 0.2348 · Δ +0.0011 — agrees in sign
+
+cross-check (phenix.model_vs_data, full test set): null 0.2337 · treatment 0.2348 · Δ +0.0011 → **agrees in sign** with the gate
+
+bisection: culprits `[]` (2 refinement(s)); no subset beat the null arm — base ← null arm. no single change regresses on its own — the regression is an interaction between halves (1V2X.c002.rotamer_fix.A1+1V2X.c002.water_remove.A507+1V2X.c002.water_remove.A554+1V2X.c002.water_remove.A525+1V2X.c002.water_remove.A521); nothing convicted
+
+⚠ whole-model geometry outside the frozen caps: rota_outliers 5.03 > 1.5; rama_outliers 1.59 > 0.5; clashscore 10.8522 > 10 (D479, monitor)
+
+base after cycle: `/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/cycles/c002/paired/null_arm/refine_001.cif` · R-free full 0.23354187722337486 · report 0.2416804222785509 · Δselect vs before -0.000174 · 3911.6 s
+
+**stall detected** after cycle 2: 2 consecutive cycle(s) accepted changes locally but each moved R-free-select by < σ=0.000792: a minimum small edits cannot leave → next cycle takes an escape rung
+
+## cycle 3 — stall escape rung `reweight_reseed`
+
+different random seed, fresh xyz/adp weight optimisation, +3 macro-cycles: override `{'seed': 1001, 'optimize_xyz_weight': True, 'optimize_adp_weight': True, 'wxc_scale': None, 'wxu_scale': None, 'macro_cycles': 8}`  
+null arm R-free-select 0.22868272813027704 · escape arm 0.22881257382428905 · attributable **+0.000130** → did not clear  
+attributable 0.000130 within (−0.001584, +0.001584]: of the raw 0.003053, 0.002924 is reproduced by re-refining the base with NO changes; the changes are not credited and are not adopted (no local evidence of their own) || cross-check (phenix.model_vs_data, full set): null 0.2358 · treatment 0.2344 · Δ -0.0014 — DISAGREES in sign: treat this credit as provisional  
+ladder so far `{'reweight_reseed': 'failed'}`
+
+## cycle 4 — stall escape rung `rescale_bulk_solvent`
+
+bulk_solvent_and_scale.mode=slow — solvent and anisotropic scale re-fit from scratch: override `{'bulk_solvent_mode': 'slow'}`  
+null arm R-free-select 0.22939867711585687 · escape arm 0.23371879848959376 · attributable **+0.004320** → did not clear  
+attributable 0.004320 > +0.001584: the changes made R-free-select WORSE than the identically refined base — regression, bisect (SPEC_LOOP_V2 §1.3) || cross-check (phenix.model_vs_data, full set): null 0.2359 · treatment 0.2429 · Δ +0.0070 — agrees in sign  
+ladder so far `{'reweight_reseed': 'failed', 'rescale_bulk_solvent': 'failed'}`
+
+## cycle 5 — stall escape rung `simulated_annealing`
+
+simulated annealing (no altlocs present): override `{'simulated_annealing': True}`  
+null arm R-free-select 0.22885701542989617 · escape arm 0.34880850633661475 · attributable **+0.119951** → did not clear  
+attributable 0.119951 > +0.001584: the changes made R-free-select WORSE than the identically refined base — regression, bisect (SPEC_LOOP_V2 §1.3) || cross-check (phenix.model_vs_data, full set): null 0.2357 · treatment 0.3563 · Δ +0.1206 — agrees in sign  
+ladder so far `{'reweight_reseed': 'failed', 'rescale_bulk_solvent': 'failed', 'simulated_annealing': 'failed'}`
+
+## cycle 6 — escape
+
+escape ladder exhausted (reweight_reseed=failed, rescale_bulk_solvent=failed, simulated_annealing=failed): the model is converged at this minimum. **Converged at this minimum.**
+
+## finished 2026-09-17T09:15:23+00:00
+
+escape ladder exhausted (reweight_reseed=failed, rescale_bulk_solvent=failed, simulated_annealing=failed): the model is converged at this minimum  
+R-free full 0.2346438703920601 → 0.2355473428205288 (Δ 0.000903) · report 0.2443499062109062 → 0.24254357020821452  
+published better model: None · gap closed: None · reached: None  
+credited changes (0): `[]`  
+kept without credit: 5 · final model `/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/cycles/c005/escape/null_arm/refine_001.cif`  
+best base of the run: cycle 0 · R-free full 0.2346438703920601 · report 0.2443499062109062 · `/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/base/rerefine/refine_001.cif`
+

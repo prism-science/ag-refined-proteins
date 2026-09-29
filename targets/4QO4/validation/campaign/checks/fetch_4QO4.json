@@ -1,0 +1,43 @@
+{
+ "target": "4QO4",
+ "pdb_id": "4QO4",
+ "dest": "/home/dev/data/raw/4QO4",
+ "urls": {
+  "model_cif": "https://files.rcsb.org/download/4QO4.cif",
+  "model_pdb": "https://files.rcsb.org/download/4QO4.pdb",
+  "sf": "https://files.rcsb.org/download/4QO4-sf.cif",
+  "fasta": "https://www.rcsb.org/fasta/entry/4QO4",
+  "entry_json": "https://data.rcsb.org/rest/v1/core/entry/4QO4",
+  "pdbredo.final_cif": "https://pdb-redo.eu/db/4qo4/4qo4_final.cif",
+  "pdbredo.final_pdb": "https://pdb-redo.eu/db/4qo4/4qo4_final.pdb",
+  "pdbredo.final_mtz": "https://pdb-redo.eu/db/4qo4/4qo4_final.mtz",
+  "pdbredo.data_json": "https://pdb-redo.eu/db/4qo4/data.json"
+ },
+ "files": {
+  "model_cif": "/home/dev/data/raw/4QO4/4QO4.cif",
+  "model_pdb": "/home/dev/data/raw/4QO4/4QO4.pdb",
+  "sf": "/home/dev/data/raw/4QO4/4QO4-sf.cif",
+  "fasta": "/home/dev/data/raw/4QO4/4QO4.fasta",
+  "entry_json": "/home/dev/data/raw/4QO4/rcsb_entry.json",
+  "pdbredo.final_cif": "/home/dev/data/raw/4QO4/pdbredo/4qo4_final.cif",
+  "pdbredo.final_pdb": "/home/dev/data/raw/4QO4/pdbredo/4qo4_final.pdb",
+  "pdbredo.final_mtz": "/home/dev/data/raw/4QO4/pdbredo/4qo4_final.mtz",
+  "pdbredo.data_json": "/home/dev/data/raw/4QO4/pdbredo/data.json"
+ },
+ "errors": {},
+ "manifest": {
+  "./4QO4-sf.cif": "f62ef89b85ffd72aeb08d942fe49ba0ef503d0dded4450c5f77df2fb1d8a6cb3",
+  "./4QO4.cif": "cd9350e8612cc333da723cce0d0ce7e1418b9b57b6273ec10c18b95a8a499f29",
+  "./4QO4.fasta": "3c90ad1f070685b94998b1332b03287a6ba1ac326ee0a46980c492eceb3af5c0",
+  "./4QO4.pdb": "72eed3831575b2c0cae99d532e14b373211770b9ced4aa80cd6900ed27615192",
+  "./pdbredo/4qo4_final.cif": "a67068ee555363d49262b5fb6f3f01e37658375ac6ded44da08638dc3b466b4b",
+  "./pdbredo/4qo4_final.mtz": "bc194f3cdb437fe90c91cf797d8103bc0111d5760b1bf82ce6e015ab00614279",
+  "./pdbredo/4qo4_final.pdb": "d4b33a43e3ceff6f86dfece4af5c3674dd1b200c86364a715d60d18db6fba7c1",
+  "./pdbredo/data.json": "b3fee0213adb6ee94ad89e80ea67bffc375cb0ed0cfcab9fe911ca6886e3c306",
+  "./rcsb_entry.json": "58cb2b0d80542d83257ef23bade28610c78010607ed363df416da48f4fd42af1"
+ },
+ "manifest_path": "/home/dev/data/raw/4QO4/MANIFEST.sha256",
+ "missing_required": {},
+ "status": "PASS",
+ "ran_at": "2026-09-17T05:12:55+00:00"
+}

@@ -1,0 +1,199 @@
+target,column,cycle_index,stage,reason,owning_frame,script_version,thresholds_sha256,written_at
+3QUE,bsol,80,rerefine,not computed by any wrapper for this stage,stages.record,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-09T17:04:43+00:00
+3QUE,bsol,81,rerefine,not computed by any wrapper for this stage,stages.record,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-09T17:21:59+00:00
+3QUE,bsol,82,rerefine,not computed by any wrapper for this stage,stages.record,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-09T18:07:26+00:00
+3QUE,discrete:3QUE.c001.water_add.W5001:real_space_refine,1,solvent,"RealSpaceError: phenix.pdbtools could not cut '(chain W and resseq 5001) or (within(5.0, chain W and resseq 5001))': exit 0
+ed.cif
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep=""(chain W and resseq 5001) or (within(5.0, chain W and resseq 5001))""
+    output.filename=/home/dev/runs/3QUE/discrete_e2e/changes/3QUE.c001.water_add.W5001/rsr/region.pdb
+
+Final processed PHIL ",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-26T20:57:32+00:00
+3QUE,discrete:3QUE.c001.water_add.W5002:real_space_refine,1,solvent,"RealSpaceError: phenix.pdbtools could not cut '(chain W and resseq 5002) or (within(5.0, chain W and resseq 5002))': exit 0
+ed.cif
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep=""(chain W and resseq 5002) or (within(5.0, chain W and resseq 5002))""
+    output.filename=/home/dev/runs/3QUE/discrete_e2e/changes/3QUE.c001.water_add.W5002/rsr/region.pdb
+
+Final processed PHIL ",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-26T20:57:34+00:00
+3QUE,discrete:3QUE.c001.water_add.W5003:real_space_refine,1,solvent,"RealSpaceError: phenix.pdbtools could not cut '(chain W and resseq 5003) or (within(5.0, chain W and resseq 5003))': exit 0
+ed.cif
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep=""(chain W and resseq 5003) or (within(5.0, chain W and resseq 5003))""
+    output.filename=/home/dev/runs/3QUE/discrete_e2e/changes/3QUE.c001.water_add.W5003/rsr/region.pdb
+
+Final processed PHIL ",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-26T20:57:36+00:00
+3QUE,discrete:3QUE.c001.water_add.W5004:real_space_refine,1,solvent,"RealSpaceError: phenix.pdbtools could not cut '(chain W and resseq 5004) or (within(5.0, chain W and resseq 5004))': exit 0
+ed.cif
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep=""(chain W and resseq 5004) or (within(5.0, chain W and resseq 5004))""
+    output.filename=/home/dev/runs/3QUE/discrete_e2e/changes/3QUE.c001.water_add.W5004/rsr/region.pdb
+
+Final processed PHIL ",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-26T20:57:38+00:00
+3QUE,discrete:3QUE.c001.water_add.W5005:real_space_refine,1,solvent,"RealSpaceError: phenix.pdbtools could not cut '(chain W and resseq 5005) or (within(5.0, chain W and resseq 5005))': exit 0
+ed.cif
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep=""(chain W and resseq 5005) or (within(5.0, chain W and resseq 5005))""
+    output.filename=/home/dev/runs/3QUE/discrete_e2e/changes/3QUE.c001.water_add.W5005/rsr/region.pdb
+
+Final processed PHIL ",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-26T20:57:40+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A103:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 103, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T20:05:06+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A129:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 129, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T18:48:31+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A133:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 133, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T17:55:44+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A139:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 139, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:13:56+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A140:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 140, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T18:09:50+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A142:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 142, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T17:55:04+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A148:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 148, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T18:36:09+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A159:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 159, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:00:46+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A187:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 187, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T18:22:59+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A205:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 205, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T17:30:20+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A207:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 207, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T17:43:01+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A235:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 235, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T20:05:39+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A308:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 308, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:39:34+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A311:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 311, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:27:30+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A337:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 337, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:00:16+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A68:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 68, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:40:08+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A69:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 69, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:13:17+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A82:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 82, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T17:56:18+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A88:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 88, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T17:56:50+00:00
+3QUE,discrete:3QUE.c033.protein_altloc_add.A90:apply,33,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 90, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T19:52:31+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A103:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 103, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:44:52+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A129:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 129, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:53:45+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A133:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 133, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:07:11+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A140:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 140, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:06:30+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A142:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 142, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T20:52:53+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A148:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 148, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:45:50+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A159:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 159, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:54:14+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A187:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 187, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:20:58+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A205:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 205, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T20:27:48+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A207:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 207, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T20:40:37+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A24:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 24, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T23:10:41+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A308:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 308, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:18:44+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A311:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 311, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:31:17+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A313:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 313, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:45:19+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A317:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 317, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:31:46+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A337:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 337, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:33:15+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A69:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 69, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:06:57+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A82:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 82, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T20:53:25+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A88:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 88, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T21:54:47+00:00
+3QUE,discrete:3QUE.c034.protein_altloc_add.A90:apply,34,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 90, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T22:57:57+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A103:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 103, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:07:13+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A129:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 129, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T01:02:41+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A133:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 133, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:12:44+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A140:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 140, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:49:33+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A142:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 142, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:11:33+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A148:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 148, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T01:41:00+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A159:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 159, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T01:41:28+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A187:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 187, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:25:04+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A192:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 192, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:22:18+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A205:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 205, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:12:03+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A207:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 207, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T23:57:36+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A308:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 308, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T01:28:41+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A311:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 311, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T01:54:24+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A313:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 313, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:08:09+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A317:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 317, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:07:42+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A337:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 337, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:37:24+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A69:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 69, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T01:16:31+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A82:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 82, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T00:50:05+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A88:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 88, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-27T23:58:09+00:00
+3QUE,discrete:3QUE.c035.protein_altloc_add.A90:apply,35,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 90, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:21:49+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A103:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 103, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T05:11:16+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A129:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 129, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:06:39+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A133:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 133, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T03:36:43+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A140:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 140, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T03:36:06+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A142:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 142, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T03:11:27+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A148:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 148, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:18:30+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A159:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 159, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:43:46+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A169:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 169, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T05:23:01+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A187:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 187, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T03:23:59+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A205:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 205, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:59:04+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A207:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 207, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T02:58:34+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A308:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 308, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:59:03+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A311:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 311, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:31:05+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A313:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 313, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T05:23:28+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A317:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 317, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T05:23:55+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A337:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 337, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T03:54:33+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A69:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 69, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:43:16+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A82:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 82, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T03:11:58+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A88:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 88, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T04:19:01+00:00
+3QUE,discrete:3QUE.c036.protein_altloc_add.A90:apply,36,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 90, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T05:36:10+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A103:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 103, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T08:32:43+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A129:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 129, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T07:08:16+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A133:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 133, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:31:52+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A140:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 140, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:44:10+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A142:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 142, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:18:48+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A148:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 148, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T07:20:02+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A159:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 159, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T07:32:40+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A169:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 169, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T07:56:27+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A187:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 187, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:31:15+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A205:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 205, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:07:12+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A207:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 207, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:06:11+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A24:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 24, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T08:20:48+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A308:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 308, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T08:44:47+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A311:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 311, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T07:32:13+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A313:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 313, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T08:33:11+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A337:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 337, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:56:06+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A69:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 69, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T07:44:30+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A82:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 82, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:19:21+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A88:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 88, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T06:06:43+00:00
+3QUE,discrete:3QUE.c037.protein_altloc_add.A90:apply,37,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 90, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T08:08:37+00:00
+3QUE,discrete:3QUE.c061.loop_build.A177-182:apply,61,gaps,DiscreteError: phenix.fit_loops wrote no model (exit 0); log /home/dev/runs/3QUE/runs/3QUE.run5/cycles/c061/discrete/3QUE.c061.loop_build.A177-182/apply/fit_loops/phenix.fit_loops.stdout.log,stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T17:05:40+00:00
+3QUE,discrete:3QUE.c062.loop_build.A177-182:apply,62,gaps,DiscreteError: phenix.fit_loops wrote no model (exit 0); log /home/dev/runs/3QUE/runs/3QUE.run5/cycles/c062/discrete/3QUE.c062.loop_build.A177-182/apply/fit_loops/phenix.fit_loops.stdout.log,stages.discrete,autoref-0.1.0,716098db7cf512cfec47c48498200c55338a281c94d94cc0c88df618d0b788ec,2026-08-28T17:15:43+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A129:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 129, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T17:56:18+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A133:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 133, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:55:53+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A140:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 140, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T17:08:27+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A142:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 142, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:54:30+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A148:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 148, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T17:44:26+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A187:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 187, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T17:32:15+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A205:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 205, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:30:38+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A207:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 207, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:42:47+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A337:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 337, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T17:20:14+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A82:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 82, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:55:22+00:00
+3QUE,discrete:3QUE.c070.protein_altloc_add.A88:apply,70,protein_altloc,"DiscreteError: qFit built no alternate conformer for ('A', 88, '') (conformers: ['single'])",stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:54:56+00:00
+3QUE,discrete:3QUE.c070.water_add.A5012:local_reciprocal,70,solvent,DiscreteError: restricted phenix.refine wrote no model for the null arm in /home/dev/runs/3QUE/runs/3QUE.20260908v5/cycles/c070/discrete/3QUE.c070.water_add.A5012/local_reciprocal/null,stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:27:36+00:00
+3QUE,discrete:3QUE.c070.water_add.A5015:local_reciprocal,70,solvent,DiscreteError: restricted phenix.refine wrote no model for the null arm in /home/dev/runs/3QUE/runs/3QUE.20260908v5/cycles/c070/discrete/3QUE.c070.water_add.A5015/local_reciprocal/null,stages.discrete,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-08T16:30:10+00:00
+3QUE,dossier.ringer,-1,dossier,"RuntimeError: mmtbx.ringer failed (exit 1); no /home/dev/runs/3QUE/c000/dossier/ringer/ringer_input_noalt.csv
+model = /home/dev/runs/3QUE/c000/dossier/ringer/input_noalt.pdb
+cif_file = None
+map_coeffs = /home/dev/runs/3QUE/c000/dossier/maps/zero_001.mtz
+map_label = 2FOFCWT,PH2FOFCWT
+difference_map_label = FOFCWT,PHFOFCWT
+map_file = None
+sampling_angle = 10
+scaling = *sigma volume
+skip_alt_confs = True
+nproc = 1
+sampling_method = linear *spline direct
+grid_spacing = 1./5
+gui = False
+ignore_symmetry_conflicts =",stages.dossier,autoref-0.1.0,aabed5dd9b60d9dc1fd3cf302fbe5a3c61b846216d281a8df2e8f956e9e5458e,2026-08-26T17:52:36+00:00
+3QUE,ksol,80,rerefine,not computed by any wrapper for this stage,stages.record,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-09T17:04:43+00:00
+3QUE,ksol,81,rerefine,not computed by any wrapper for this stage,stages.record,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-09T17:21:59+00:00
+3QUE,ksol,82,rerefine,not computed by any wrapper for this stage,stages.record,autoref-0.1.0,0bdb45d72a107f38312a745410e919403fe1eb30e49bc572622a49b597b329c4,2026-09-09T18:07:26+00:00
+3QUE,paired_candidate_arm.riding_h,74,adp_model,"E028/E029 candidate arm crashed inside phenix.refine ADP weight optimisation: cctbx `CCTBX_ASSERT(f.use_u_iso())` in mmtbx.refinement.weights.adp_gradients when main.find_and_add_hydrogens=True is combined with adp.individual.isotropic=all (the freshly added hydrogens are not flagged u_iso). No model written; the paired cycle was not judged. Also found: find_and_add_hydrogens adds hydrogens to WATERS only (3TC7 c054 candidate output: 462 H = 2 x 231 waters), so protein riding H must be added before refinement (phenix.ready_set / mmtbx.reduce2, SPEC 6.1). Re-run as E028b with a pre-hydrogenated candidate model.",scripts.experiments.exp_refine_param,autoref-0.1.0,aabed5dd9b60d9dc1fd3cf302fbe5a3c61b846216d281a8df2e8f956e9e5458e,2026-09-09T16:26:23+00:00
+3QUE,tls_selections,0,verify,phenix.find_tls_groups produced no selections; refining without TLS,tools.phenix_refine,autoref-0.1.0,aabed5dd9b60d9dc1fd3cf302fbe5a3c61b846216d281a8df2e8f956e9e5458e,2026-08-26T17:01:52+00:00

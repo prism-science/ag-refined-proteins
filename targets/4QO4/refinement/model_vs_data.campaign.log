@@ -1,0 +1,58 @@
+Data: --------------------------------------------------------------------------
+  Miller array info: /home/dev/data/targets/4QO4/data.mtz:IMEAN,SIGIMEAN,systematic_absences_eliminated
+  Observation type: xray.amplitude
+  Type of data: double, size=11011
+  Type of sigmas: double, size=11011
+  Number of Miller indices: 11011
+  Anomalous flag: False
+  Unit cell: (56.727, 56.727, 102.382, 90, 90, 120)
+  Space group: P 61 2 2 (No. 178)
+  Systematic absences: 0
+  Centric reflections: 2208
+  Resolution range: 28.3635 1.70036
+  Completeness in resolution range: 0.972445
+  Completeness with d_max=infinity: 0.972188
+  Wavelength: 0.0000
+R-free-flags: ------------------------------------------------------------------
+  flag value: 0
+Model vs Data: -----------------------------------------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 28.364-8.966    94.29    93     6 0.3163   555.556   512.850 1.257 0.934 0.305
+  8.959-7.002    96.19    95     6 0.2276   507.046   464.717 1.305 0.942 0.300
+  7.002-5.492    96.55   186    10 0.2896   414.658   382.154 1.229 0.945 0.300
+  5.467-4.277    97.77   372    23 0.1981   539.132   511.790 1.354 0.946 0.289
+  4.277-3.343    96.92   750    36 0.2024   469.887   452.648 1.379 0.947 0.204
+  3.342-2.613    99.22  1574    75 0.2692   267.776   255.326 1.281 0.946 0.150
+  2.613-2.042    96.86  3109   158 0.2845   141.532   133.179 1.144 0.943 0.000
+  2.042-1.700    96.95  4303   214 0.3185    55.843    52.711 0.899 0.940 0.000
+
+  r_work: 0.2597
+  r_free: 0.3248
+
+  Number of F-obs outliers: 1
+Information extracted from PDB file header: ------------------------------------
+  program_name    : Phenix
+  year            : None
+  r_work          : 0.2658
+  r_free          : 0.3173
+  high_resolution : 1.7
+  low_resolution  : 28.36
+  sigma_cutoff    : 1.34
+  matthews_coeff  : None
+  solvent_cont    : None
+  exptl_method    : X-RAY DIFFRACTION
+After applying resolution and sigma cutoffs: -----------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 28.364-8.959    94.34    94     6 0.3154   554.702   509.512 1.258 0.936 0.310
+  8.927-7.007    96.12    93     6 0.2288   507.600   464.255 1.308 0.943 0.308
+  7.002-5.492    97.04   187    10 0.2892   415.036   383.495 1.233 0.946 0.307
+  5.467-4.310    97.69   359    21 0.1968   542.750   513.014 1.354 0.946 0.301
+  4.306-3.378    96.82   725    37 0.2014   474.130   457.216 1.384 0.947 0.202
+  3.377-2.649    99.18  1494    70 0.2684   275.474   262.724 1.287 0.947 0.130
+  2.649-2.078    96.64  2930   151 0.2832   148.099   139.352 1.149 0.944 0.000
+  2.077-1.700    97.12  4598   227 0.3176    58.819    55.894 0.921 0.941 0.000
+
+  r_work: 0.2601
+  r_free: 0.3251
+
+  Number of F-obs outliers: 3

@@ -1,0 +1,140 @@
+{
+ "target": "8IS2",
+ "pdb_id": "8IS2",
+ "sf_source": "/home/dev/data/raw/8IS2/8IS2-sf.cif",
+ "sf_sha256": "b406373d7db423e3e79b6ca07b3bbbac4163fba9d3292a407e9eef1ba176c53f",
+ "sf_block": "r8is2sf",
+ "columns_present": [
+  "_refln.crystal_id",
+  "_refln.wavelength_id",
+  "_refln.scale_group_code",
+  "_refln.index_h",
+  "_refln.index_k",
+  "_refln.index_l",
+  "_refln.status",
+  "_refln.pdbx_r_free_flag",
+  "_refln.F_meas_au",
+  "_refln.F_meas_sigma_au",
+  "_refln.pdbx_FWT",
+  "_refln.pdbx_PHWT",
+  "_refln.pdbx_DELFWT",
+  "_refln.pdbx_DELPHWT"
+ ],
+ "space_group": "P 31",
+ "unit_cell": [
+  50.945,
+  50.945,
+  74.75,
+  90.0,
+  90.0,
+  120.0
+ ],
+ "data_mtz": "/home/dev/data/targets/8IS2/data.mtz",
+ "flags_mtz": "/home/dev/data/targets/8IS2/flags.mtz",
+ "split_mtz": "/home/dev/data/targets/8IS2/split.mtz",
+ "split_json": "/home/dev/data/targets/8IS2/split.json",
+ "flag_label": "R-free-flags",
+ "test_flag_value": 0,
+ "data_labels": "FP,SIGFP",
+ "intensities_or_amplitudes": "amplitudes",
+ "n_free": 2404,
+ "fraction_free": 0.048525,
+ "data_mtz_sha256": "138fcfdeecdbd625c47b35aa8e6220e249e31257e32d96249cb8d07539857016",
+ "flags_mtz_sha256": "c16c5d7666ee8cf233d785247a86c9a2b761161d2ad5fd9546b4a2677c9bbbeb",
+ "split_mtz_sha256": "f08bb09ad5b812f0bdf3d41e9b593ac970de362e6b98be50ac1d87ace2fe615c",
+ "split_sha256": "077605ae5c25d991962e5a184f0b94bcba7f0b113f10d0117606b2bb0e0529fd",
+ "n_select": 1202,
+ "n_report": 1202,
+ "split_seed": 852616714,
+ "flags_source": "inherited",
+ "convention_note": "Inherited unchanged from _refln.status of 8IS2-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+ "n_reflections": 49541,
+ "n_work": 47137,
+ "n_rows_in_sf": 50828,
+ "n_dropped_unmeasured": 1287,
+ "n_dropped_missing_value": 0,
+ "data_choice": {
+  "kind": "amplitudes",
+  "value_tag": "F_meas_au",
+  "sigma_tag": "F_meas_sigma_au",
+  "labels": [
+   "FP",
+   "SIGFP"
+  ],
+  "types": [
+   "F",
+   "Q"
+  ],
+  "also_available": [],
+  "coverage": {
+   "intensities": null,
+   "amplitudes": {
+    "value_tag": "F_meas_au",
+    "sigma_tag": "F_meas_sigma_au",
+    "n_measured_rows": 49541,
+    "n_usable": 49541,
+    "n_null": 0,
+    "n_zero_placeholder": 0
+   }
+  },
+  "rejected": [],
+  "reason": "no merged intensities in the deposited file; amplitudes are all there is"
+ },
+ "convention": {
+  "source_tag": "_refln.status",
+  "free_symbol": "f",
+  "work_symbols": [
+   "o"
+  ],
+  "unmeasured_symbols": [
+   "x"
+  ],
+  "counts": {
+   "f": 2404,
+   "o": 47137,
+   "x": 1287
+  },
+  "cross_check": {
+   "tag": "_refln.pdbx_r_free_flag",
+   "kind": "20-bin k-fold index",
+   "free_value": 0,
+   "counts": {
+    "4": 2338,
+    "3": 2570,
+    "5": 2378,
+    "1": 2702,
+    "2": 2495,
+    "14": 2456,
+    "7": 2609,
+    "17": 2564,
+    "10": 2520,
+    "12": 2681,
+    "16": 2450,
+    "15": 2549,
+    "9": 2447,
+    "19": 2571,
+    "6": 2647,
+    "11": 2486,
+    "0": 2460,
+    "18": 2785,
+    "8": 2500,
+    "13": 2620
+   },
+   "identical_to_status_f": true,
+   "note": "bin 0 restricted to measured reflections is compared with status=='f'"
+  },
+  "note": "mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude."
+ },
+ "header_claim": {
+  "r_work": 0.224,
+  "r_free": 0.2753,
+  "n_free": 2404,
+  "pct_free": 4.85,
+  "n_obs": 49536,
+  "sigma_f": 1.97,
+  "cross_valid_method": "FREE R-VALUE",
+  "sf_status": "REL"
+ },
+ "script": "autoref.flags.build",
+ "written_at": "2026-09-17T04:24:27+00:00"
+}

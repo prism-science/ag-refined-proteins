@@ -1,0 +1,105 @@
+{
+ "run_id": "7KR0.20260910v7",
+ "target": "7KR0",
+ "run_dir": "/home/dev/runs/7KR0/runs/7KR0.20260910v7",
+ "cycles": [
+  45,
+  46
+ ],
+ "n_cycles": 2,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [
+  [
+   45,
+   "7KR0.c045.water_remove.A509"
+  ],
+  [
+   45,
+   "7KR0.c045.water_remove.A214"
+  ],
+  [
+   45,
+   "7KR0.c045.water_remove.A209"
+  ],
+  [
+   45,
+   "7KR0.c045.water_remove.A374"
+  ],
+  [
+   45,
+   "7KR0.c045.water_remove.A493"
+  ],
+  [
+   46,
+   "7KR0.c046.water_remove.A403"
+  ],
+  [
+   46,
+   "7KR0.c046.water_remove.A376"
+  ],
+  [
+   46,
+   "7KR0.c046.water_remove.A371"
+  ],
+  [
+   46,
+   "7KR0.c046.water_remove.A505"
+  ],
+  [
+   46,
+   "7KR0.c046.water_remove.A469"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.10360832962303718,
+  "r_free_full": 0.1125685619303301,
+  "r_free_select": 0.11033595761519327,
+  "r_free_report": 0.11482593627366146,
+  "d_min": 0.7700003403620237,
+  "n_free": 8712,
+  "n_select": 4356,
+  "n_report": 4356
+ },
+ "r_free_final": {
+  "r_work": 0.1041736245698705,
+  "r_free_full": 0.11237070374638494,
+  "r_free_select": 0.10984305258267618,
+  "r_free_report": 0.11492639838835916,
+  "d_min": 0.7700003403620237,
+  "n_free": 8712,
+  "n_select": 4356,
+  "n_report": 4356
+ },
+ "delta_r_free_full": -0.000198,
+ "delta_r_free_report": 0.0001,
+ "published_better": null,
+ "published_target_r_free": null,
+ "reached_target": null,
+ "published_comparable_to_our_flags": null,
+ "gap_closed_fraction": null,
+ "sigma_select": 0.000405,
+ "k_multiple": 2.0,
+ "refine_extra_final": {},
+ "escape_tried": {},
+ "final_model": "/home/dev/runs/7KR0/runs/7KR0.20260910v7/cycles/c046/paired/candidate_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/7KR0/runs/7KR0.20260910v7/cycles/c046/paired/candidate_arm/refine_001.mtz",
+ "stop_reason": "max_cycles=2 reached",
+ "best_base": {
+  "cycle_index": 46,
+  "model": "/home/dev/runs/7KR0/runs/7KR0.20260910v7/cycles/c046/paired/candidate_arm/refine_001.cif",
+  "mtz": "/home/dev/runs/7KR0/runs/7KR0.20260910v7/cycles/c046/paired/candidate_arm/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.1041736245698705,
+   "r_free_full": 0.11237070374638494,
+   "r_free_select": 0.10984305258267618,
+   "r_free_report": 0.11492639838835916,
+   "d_min": 0.7700003403620237,
+   "n_free": 8712,
+   "n_select": 4356,
+   "n_report": 4356
+  }
+ },
+ "started_at": "2026-09-10T03:50:56+00:00",
+ "finished_at": "2026-09-10T09:11:46+00:00"
+}

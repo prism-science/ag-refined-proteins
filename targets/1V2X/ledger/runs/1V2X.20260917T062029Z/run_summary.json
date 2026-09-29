@@ -1,0 +1,99 @@
+{
+ "run_id": "1V2X.20260917T062029Z",
+ "target": "1V2X",
+ "run_dir": "/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z",
+ "cycles": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "n_cycles": 5,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [
+  [
+   1,
+   "1V2X.c001.water_remove.A561"
+  ],
+  [
+   1,
+   "1V2X.c001.water_remove.A495"
+  ],
+  [
+   1,
+   "1V2X.c001.water_remove.A562"
+  ],
+  [
+   1,
+   "1V2X.c001.water_remove.A504"
+  ],
+  [
+   1,
+   "1V2X.c001.water_remove.A571"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.1876649012697371,
+  "r_free_full": 0.2346438703920601,
+  "r_free_select": 0.22536221705306392,
+  "r_free_report": 0.2443499062109062,
+  "d_min": 1.5005248194509928,
+  "n_free": 2399,
+  "n_select": 1199,
+  "n_report": 1200
+ },
+ "r_free_final": {
+  "r_work": 0.18573046385922712,
+  "r_free_full": 0.2355473428205288,
+  "r_free_select": 0.22885701542989617,
+  "r_free_report": 0.24254357020821452,
+  "d_min": 1.5005248194509928,
+  "n_free": 2399,
+  "n_select": 1199,
+  "n_report": 1200
+ },
+ "delta_r_free_full": 0.000903,
+ "delta_r_free_report": -0.001806,
+ "published_better": null,
+ "published_target_r_free": null,
+ "reached_target": null,
+ "published_comparable_to_our_flags": null,
+ "gap_closed_fraction": null,
+ "sigma_select": 0.000792,
+ "k_multiple": 2.0,
+ "refine_extra_final": {
+  "tls_selections": [
+   "chain 'A' and (resid    1  through   46 )",
+   "chain 'A' and (resid   47  through   69 )",
+   "chain 'A' and (resid   70  through  129 )",
+   "chain 'A' and (resid  130  through  191 )"
+  ]
+ },
+ "escape_tried": {
+  "reweight_reseed": "failed",
+  "rescale_bulk_solvent": "failed",
+  "simulated_annealing": "failed"
+ },
+ "final_model": "/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/cycles/c005/escape/null_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/cycles/c005/escape/null_arm/refine_001.mtz",
+ "stop_reason": "escape ladder exhausted (reweight_reseed=failed, rescale_bulk_solvent=failed, simulated_annealing=failed): the model is converged at this minimum",
+ "best_base": {
+  "cycle_index": 0,
+  "model": "/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/base/rerefine/refine_001.cif",
+  "mtz": "/home/dev/runs/1V2X/runs/1V2X.20260917T062029Z/base/rerefine/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.1876649012697371,
+   "r_free_full": 0.2346438703920601,
+   "r_free_select": 0.22536221705306392,
+   "r_free_report": 0.2443499062109062,
+   "d_min": 1.5005248194509928,
+   "n_free": 2399,
+   "n_select": 1199,
+   "n_report": 1200
+  }
+ },
+ "started_at": "2026-09-17T06:20:29+00:00",
+ "finished_at": "2026-09-17T09:15:23+00:00"
+}

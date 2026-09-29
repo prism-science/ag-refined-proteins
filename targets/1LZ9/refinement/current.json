@@ -1,0 +1,12 @@
+{
+ "target": "1LZ9",
+ "model": "/home/dev/runs/1LZ9/c000/baseline_rerefine/refine_001.cif",
+ "maps_mtz": null,
+ "cycle_index": 0,
+ "stage": "baseline_rerefine",
+ "r_free_select": 0.29414578462255747,
+ "r_free_report": 0.2692905421499996,
+ "r_free_full": 0.28191166628004716,
+ "r_work": 0.23176683571068685,
+ "updated_at": "2026-09-17T05:37:32+00:00"
+}

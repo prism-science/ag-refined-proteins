@@ -1,0 +1,47 @@
+# phenix.model_vs_data /home/dev/runs/agrp_export_20260929T1606Z/targets/1N7E/deposited/1N7E.cif /home/dev/runs/agrp_export_20260929T1606Z/_work/1N7E/merged.mtz
+Data: --------------------------------------------------------------------------
+  Miller array info: /home/dev/runs/agrp_export_20260929T1606Z/_work/1N7E/merged.mtz:FP,SIGFP,systematic_absences_eliminated
+  Observation type: xray.amplitude
+  Type of data: double, size=17694
+  Type of sigmas: double, size=17694
+  Number of Miller indices: 17694
+  Anomalous flag: False
+  Unit cell: (40.267, 40.267, 222.872, 90, 90, 120)
+  Space group: P 65 2 2 (No. 179)
+  Systematic absences: 0
+  Centric reflections: 4006
+  Resolution range: 14.78 1.50006
+  Completeness in resolution range: 0.966252
+  Completeness with d_max=infinity: 0.964408
+  Wavelength: 1.0000
+R-free-flags: ------------------------------------------------------------------
+  flag value: 0
+Model vs Data: -----------------------------------------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 14.780-7.760    65.16    94     7 0.2705   264.955   236.254 1.027 0.847 0.340
+  7.759-6.581    94.29    91     8 0.2482   269.707   249.705 1.047 0.849 0.340
+  6.579-5.582    97.02   145    18 0.2376   262.855   250.788 1.078 0.854 0.320
+  5.577-4.728    90.19   211    28 0.1887   338.855   326.585 1.179 0.857 0.269
+  4.726-4.009    88.45   324    36 0.2089   348.443   338.758 1.228 0.862 0.243
+  4.006-3.400    97.59   586    62 0.1981   348.336   337.217 1.274 0.869 0.160
+  3.397-2.881    99.71   931   112 0.1980   265.397   259.464 1.260 0.879 0.005
+  2.881-2.442    99.83  1563   157 0.2430   167.696   161.386 1.223 0.888 0.000
+  2.442-2.070    99.67  2425   278 0.2560   126.897   121.043 1.268 0.905 0.000
+  2.070-1.755    98.13  3871   434 0.3021    72.946    69.078 1.262 0.927 0.000
+  1.755-1.500    94.25  5705   590 0.3278    36.029    33.171 1.192 0.957 0.000
+
+  r_work: 0.2491
+  r_free: 0.2744
+
+  Number of F-obs outliers: 18
+Information extracted from PDB file header: ------------------------------------
+  program_name    : CNS
+  year            : 2002
+  r_work          : 0.254
+  r_free          : 0.278
+  high_resolution : 1.5
+  low_resolution  : 14.78
+  sigma_cutoff    : 0.0
+  matthews_coeff  : 2.22
+  solvent_cont    : 44.03
+  exptl_method    : X-RAY DIFFRACTION

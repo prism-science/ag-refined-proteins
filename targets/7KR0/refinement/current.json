@@ -1,0 +1,12 @@
+{
+ "target": "7KR0",
+ "model": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.cif",
+ "maps_mtz": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.mtz",
+ "cycle_index": 37,
+ "stage": "rerefine",
+ "r_free_select": 0.11033595761519327,
+ "r_free_report": 0.11482593627366146,
+ "r_free_full": 0.1125685619303301,
+ "r_work": 0.10360832962303718,
+ "updated_at": "2026-09-09T19:41:05+00:00"
+}

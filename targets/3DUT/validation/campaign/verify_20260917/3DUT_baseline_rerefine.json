@@ -1,0 +1,25 @@
+{
+ "model": "/home/dev/runs/3DUT/c000/baseline_rerefine/refine_001.cif",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 5013,
+ "n_hydrogen": 0,
+ "altlocs": [
+  "A",
+  "B"
+ ],
+ "n_water_residues": 430,
+ "n_reflections": 71980,
+ "n_free": 3587,
+ "n_select": 1793,
+ "n_report": 1794,
+ "n_work": 68393,
+ "d_min": 1.550012621200482,
+ "r_work_fmodel": 0.2107552928894037,
+ "r_free_fmodel": 0.2537159722025536,
+ "r_work_manual": 0.21075558362577473,
+ "r_free_manual": 0.2536923916106531,
+ "r_free_select_manual": 0.2625542577853269,
+ "r_free_report_manual": 0.2441917193136706,
+ "wall_s": 2.0
+}

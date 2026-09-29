@@ -1,0 +1,101 @@
+{
+ "model_stats": {
+  "n_atoms": 1295,
+  "n_atoms_nonh": 1295,
+  "n_altloc_atoms": 36,
+  "altloc_letters": [
+   "A",
+   "B"
+  ],
+  "has_altlocs": true,
+  "n_partial_occupancy_atoms": 37,
+  "max_chain_residues": 186,
+  "mean_b": 53.976
+ },
+ "mtz_stats": {
+  "n_refl": 18057,
+  "d_min": 1.7043,
+  "d_max": 29.113,
+  "space_group": "C 1 2 1"
+ },
+ "mtz_columns": [
+  {
+   "label": "H",
+   "type": "H"
+  },
+  {
+   "label": "K",
+   "type": "H"
+  },
+  {
+   "label": "L",
+   "type": "H"
+  },
+  {
+   "label": "IMEAN",
+   "type": "J"
+  },
+  {
+   "label": "SIGIMEAN",
+   "type": "Q"
+  }
+ ],
+ "adp_decision": {
+  "adp_model": "isotropic",
+  "tls": false,
+  "ratio": 13.94,
+  "reason": "n_refl/n_atoms(non-H)=13.94 / d_min=1.7043: isotropic"
+ },
+ "adp_model": "isotropic",
+ "tls": false,
+ "tls_selections": [],
+ "refine_occupancies": true,
+ "rama_restraints": false,
+ "ss_restraints": false,
+ "data_labels": "IMEAN,SIGIMEAN",
+ "macro_cycles": 5,
+ "params": {
+  "seed": 1,
+  "nproc": 1,
+  "macro_cycles": null,
+  "individual_sites": true,
+  "individual_adp": true,
+  "individual_sites_real_space": false,
+  "sites_selection": null,
+  "adp_selection": null,
+  "occupancy_selection": null,
+  "refine_occupancies": null,
+  "adp_model": null,
+  "group_adp": null,
+  "tls": null,
+  "tls_selections": [],
+  "ordered_solvent": false,
+  "ordered_solvent_params": {},
+  "hydrogens_riding": true,
+  "add_hydrogens": false,
+  "optimize_xyz_weight": true,
+  "optimize_adp_weight": true,
+  "wxc_scale": null,
+  "wxu_scale": null,
+  "rama_restraints": null,
+  "ss_restraints": null,
+  "nqh_flips": false,
+  "bulk_solvent_mode": "fast",
+  "scattering_table": null,
+  "simulated_annealing": false,
+  "rigid_body": false,
+  "paired_refinement_preregistered": false,
+  "high_resolution": null,
+  "low_resolution": null,
+  "sigma_fobs_rejection_criterion": null,
+  "sigma_iobs_rejection_criterion": null,
+  "generate_flags": false,
+  "ignore_r_free_flags": false,
+  "disable_suitability_test": false,
+  "data_labels": null,
+  "output_prefix": "refine",
+  "write_map_coefficients": true,
+  "write_geo_file": false,
+  "extra_phil": []
+ }
+}

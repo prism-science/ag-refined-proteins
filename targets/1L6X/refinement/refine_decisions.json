@@ -1,0 +1,107 @@
+{
+ "model_stats": {
+  "n_atoms": 2430,
+  "n_atoms_nonh": 2430,
+  "n_altloc_atoms": 0,
+  "altloc_letters": [],
+  "has_altlocs": false,
+  "n_partial_occupancy_atoms": 6,
+  "max_chain_residues": 490,
+  "mean_b": 24.796
+ },
+ "mtz_stats": {
+  "n_refl": 35198,
+  "d_min": 1.6471,
+  "d_max": 19.915,
+  "space_group": "C 2 2 21"
+ },
+ "mtz_columns": [
+  {
+   "label": "H",
+   "type": "H"
+  },
+  {
+   "label": "K",
+   "type": "H"
+  },
+  {
+   "label": "L",
+   "type": "H"
+  },
+  {
+   "label": "FP",
+   "type": "F"
+  },
+  {
+   "label": "SIGFP",
+   "type": "Q"
+  }
+ ],
+ "adp_decision": {
+  "adp_model": "isotropic",
+  "tls": true,
+  "ratio": 14.48,
+  "reason": "n_refl/n_atoms(non-H)=14.48 / d_min=1.6471: isotropic; TLS (d_min>=2.0 or chain>200 res)"
+ },
+ "adp_model": "isotropic",
+ "tls": true,
+ "tls_selections": [
+  "chain 'A' and (resid  237  through  279 )",
+  "chain 'A' and (resid  280  through  301 )",
+  "chain 'A' and (resid  302  through  336 )",
+  "chain 'A' and (resid  337  through  361 )",
+  "chain 'A' and (resid  362  through  428 )",
+  "chain 'A' and (resid  429  through  443 )",
+  "chain 'B' and (resid    6  through   19 )",
+  "chain 'B' and (resid   20  through   39 )"
+ ],
+ "refine_occupancies": true,
+ "rama_restraints": false,
+ "ss_restraints": false,
+ "data_labels": "FP,SIGFP",
+ "macro_cycles": 5,
+ "params": {
+  "seed": 1,
+  "nproc": 1,
+  "macro_cycles": null,
+  "individual_sites": true,
+  "individual_adp": true,
+  "individual_sites_real_space": false,
+  "sites_selection": null,
+  "adp_selection": null,
+  "occupancy_selection": null,
+  "refine_occupancies": null,
+  "adp_model": null,
+  "group_adp": null,
+  "tls": null,
+  "tls_selections": [],
+  "ordered_solvent": false,
+  "ordered_solvent_params": {},
+  "hydrogens_riding": true,
+  "add_hydrogens": false,
+  "optimize_xyz_weight": true,
+  "optimize_adp_weight": true,
+  "wxc_scale": null,
+  "wxu_scale": null,
+  "rama_restraints": null,
+  "ss_restraints": null,
+  "nqh_flips": false,
+  "bulk_solvent_mode": "fast",
+  "scattering_table": null,
+  "simulated_annealing": false,
+  "rigid_body": false,
+  "paired_refinement_preregistered": false,
+  "high_resolution": null,
+  "low_resolution": null,
+  "sigma_fobs_rejection_criterion": null,
+  "sigma_iobs_rejection_criterion": null,
+  "generate_flags": false,
+  "ignore_r_free_flags": false,
+  "disable_suitability_test": false,
+  "data_labels": null,
+  "output_prefix": "refine",
+  "write_map_coefficients": true,
+  "write_geo_file": false,
+  "extra_phil": []
+ }
+}

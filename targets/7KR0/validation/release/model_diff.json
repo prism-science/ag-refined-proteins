@@ -1,0 +1,26 @@
+{
+ "target": "7KR0",
+ "deposited": {
+  "n_atoms": 4300,
+  "n_hydrogen": 1990,
+  "n_waters": 312,
+  "n_nonwater_residues": 169,
+  "n_residues_with_altlocs": 88
+ },
+ "released": {
+  "n_atoms": 4298,
+  "n_hydrogen": 1990,
+  "n_waters": 310,
+  "n_nonwater_residues": 169,
+  "n_residues_with_altlocs": 88
+ },
+ "waters_added": [],
+ "waters_removed": [
+  "A 246",
+  "A 381"
+ ],
+ "nonwater_residues_added": [],
+ "nonwater_residues_removed": [],
+ "altloc_changes": [],
+ "hydrogens_delta": 0
+}

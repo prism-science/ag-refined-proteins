@@ -1,0 +1,339 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 4832
+     H or D atoms   : 2323
+     chains         : 2
+     a.a. residues  : 251
+     nucleotides    : 0
+     water          : 231
+     other (ligands): 4
+   Ligands: PO4:3,ACY:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.071 (Z=  2.382)
+  Mean delta:    0.007 (Z=  0.277)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 154  MET  CG
+   A 154  MET  SD
+   A 154  MET  CE        100.90    88.10    12.80  2.20e+00  3.38e+01   5.8*sigma
+   A  81  PHE  N
+   A  81  PHE  CA
+   A  81  PHE  CB        110.69   103.17     7.52  1.65e+00  2.08e+01   4.6*sigma
+   A  81  PHE  CA
+   A  81  PHE  CB
+   A  81  PHE  CG        113.80   117.99    -4.19  1.00e+00  1.76e+01   4.2*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   12.795 (Z=  5.816)
+  Mean delta:    1.043 (Z=  0.569)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A  51  GLU  CA
+   A  51  GLU  C
+   A  52  TYR  N
+   A  52  TYR  CA        180.00   159.63    20.37  5.00e+00  1.66e+01   4.1*sigma
+
+  Min. delta:    0.025 (Z=  0.001)
+  Max. delta:   78.118 (Z=  4.073)
+  Mean delta:   14.446 (Z=  0.991)
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.310
+  Mean delta:    0.076
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.052
+  Mean delta:    0.008
+
+============================= Hydrogen validation =============================
+
+
+                ----------H/D atoms in the input model----------               
+
+  Total number of hydrogen atoms : 2323
+  Total number of deuterium atoms: 0
+  Number of H atoms (protein)    : 2320
+  Number of D atoms (protein)    : 0
+  Number of H atoms (water)      : 0
+  Number of D atoms (water)      : 0
+  Number of H atoms (other)      : 3
+  Number of D atoms (other)      : 0
+
+                      ----------Water molecules----------                      
+
+  Number of water                            : 231
+  Number of water with 0 H (or D)            : 231
+  Number of water with 1 H (or D)            : 0
+  Number of water with 2 H (or D)            : 0
+  Number of water in alternative conformation: 0
+  Number of water without oxygen atom        : 0
+
+             ----------H (or D) atoms with zero occupancy----------            
+
+  pdb=" H  BPHE A  40 "
+  pdb=" HA BPHE A  40 "
+  pdb=" HB2BPHE A  40 "
+  pdb=" HB3BPHE A  40 "
+  pdb=" HD1BPHE A  40 "
+  pdb=" HD2BPHE A  40 "
+  pdb=" HE1BPHE A  40 "
+  pdb=" HE2BPHE A  40 "
+  pdb=" HZ BPHE A  40 "
+  pdb=" H  APHE A  72 "
+  pdb=" HA APHE A  72 "
+  pdb=" HB2APHE A  72 "
+  pdb=" HB3APHE A  72 "
+  pdb=" HD1APHE A  72 "
+  pdb=" HD2APHE A  72 "
+  pdb=" HE1APHE A  72 "
+  pdb=" HE2APHE A  72 "
+  pdb=" HZ APHE A  72 "
+  pdb=" H  BVAL A  78 "
+  pdb=" HA BVAL A  78 "
+  pdb=" HB BVAL A  78 "
+  pdb="HG11BVAL A  78 "
+  pdb="HG12BVAL A  78 "
+  pdb="HG13BVAL A  78 "
+  pdb="HG21BVAL A  78 "
+  pdb="HG22BVAL A  78 "
+  pdb="HG23BVAL A  78 "
+  pdb=" H  BILE A  82 "
+  pdb=" HA BILE A  82 "
+  pdb=" HB BILE A  82 "
+  pdb="HG12BILE A  82 "
+  pdb="HG13BILE A  82 "
+  pdb="HG21BILE A  82 "
+  pdb="HG22BILE A  82 "
+  pdb="HG23BILE A  82 "
+  pdb="HD11BILE A  82 "
+  pdb="HD12BILE A  82 "
+  pdb="HD13BILE A  82 "
+  pdb=" H  BILE A 107 "
+  pdb=" HA BILE A 107 "
+  pdb=" HB BILE A 107 "
+  pdb="HG12BILE A 107 "
+  pdb="HG13BILE A 107 "
+  pdb="HG21BILE A 107 "
+  pdb="HG22BILE A 107 "
+  pdb="HG23BILE A 107 "
+  pdb="HD11BILE A 107 "
+  pdb="HD12BILE A 107 "
+  pdb="HD13BILE A 107 "
+  pdb=" H  ATHR A 129 "
+  pdb=" HA ATHR A 129 "
+  pdb=" HB ATHR A 129 "
+  pdb=" HG1ATHR A 129 "
+  pdb="HG21ATHR A 129 "
+  pdb="HG22ATHR A 129 "
+  pdb="HG23ATHR A 129 "
+  pdb=" H  BILE A 133 "
+  pdb=" HA BILE A 133 "
+  pdb=" HB BILE A 133 "
+  pdb="HG12BILE A 133 "
+  pdb="HG13BILE A 133 "
+  pdb="HG21BILE A 133 "
+  pdb="HG22BILE A 133 "
+  pdb="HG23BILE A 133 "
+  pdb="HD11BILE A 133 "
+  pdb="HD12BILE A 133 "
+  pdb="HD13BILE A 133 "
+  pdb=" H  BILE A 136 "
+  pdb=" HA BILE A 136 "
+  pdb=" HB BILE A 136 "
+  pdb="HG12BILE A 136 "
+  pdb="HG13BILE A 136 "
+  pdb="HG21BILE A 136 "
+  pdb="HG22BILE A 136 "
+  pdb="HG23BILE A 136 "
+  pdb="HD11BILE A 136 "
+  pdb="HD12BILE A 136 "
+  pdb="HD13BILE A 136 "
+  pdb=" H  ATYR A 152 "
+  pdb=" HA ATYR A 152 "
+  pdb=" HB2ATYR A 152 "
+  pdb=" HB3ATYR A 152 "
+  pdb=" HD1ATYR A 152 "
+  pdb=" HD2ATYR A 152 "
+  pdb=" HE1ATYR A 152 "
+  pdb=" HE2ATYR A 152 "
+  pdb=" HH ATYR A 152 "
+  pdb=" H  AGLU A 155 "
+  pdb=" HA AGLU A 155 "
+  pdb=" HB2AGLU A 155 "
+  pdb=" HB3AGLU A 155 "
+  pdb=" HG2AGLU A 155 "
+  pdb=" HG3AGLU A 155 "
+  pdb=" H  AILE A 158 "
+  pdb=" HA AILE A 158 "
+  pdb=" HB AILE A 158 "
+  pdb="HG12AILE A 158 "
+  pdb="HG13AILE A 158 "
+  pdb="HG21AILE A 158 "
+  pdb="HG22AILE A 158 "
+  pdb="HG23AILE A 158 "
+  pdb="HD11AILE A 158 "
+  pdb="HD12AILE A 158 "
+  pdb="HD13AILE A 158 "
+  pdb=" H  AILE A 159 "
+  pdb=" HA AILE A 159 "
+  pdb=" HB AILE A 159 "
+  pdb="HG12AILE A 159 "
+  pdb="HG13AILE A 159 "
+  pdb="HG21AILE A 159 "
+  pdb="HG22AILE A 159 "
+  pdb="HG23AILE A 159 "
+  pdb="HD11AILE A 159 "
+  pdb="HD12AILE A 159 "
+  pdb="HD13AILE A 159 "
+  pdb=" H  BILE A 177 "
+  pdb=" HA BILE A 177 "
+  pdb=" HB BILE A 177 "
+  pdb="HG12BILE A 177 "
+  pdb="HG13BILE A 177 "
+  pdb="HG21BILE A 177 "
+  pdb="HG22BILE A 177 "
+  pdb="HG23BILE A 177 "
+  pdb="HD11BILE A 177 "
+  pdb="HD12BILE A 177 "
+  pdb="HD13BILE A 177 "
+  pdb=" H  AILE A 179 "
+  pdb=" HA AILE A 179 "
+  pdb=" HB AILE A 179 "
+  pdb="HG12AILE A 179 "
+  pdb="HG13AILE A 179 "
+  pdb="HG21AILE A 179 "
+  pdb="HG22AILE A 179 "
+  pdb="HG23AILE A 179 "
+  pdb="HD11AILE A 179 "
+  pdb="HD12AILE A 179 "
+  pdb="HD13AILE A 179 "
+  pdb=" H  AILE A 201 "
+  pdb=" HA AILE A 201 "
+  pdb=" HB AILE A 201 "
+  pdb="HG12AILE A 201 "
+  pdb="HG13AILE A 201 "
+  pdb="HG21AILE A 201 "
+  pdb="HG22AILE A 201 "
+  pdb="HG23AILE A 201 "
+  pdb="HD11AILE A 201 "
+  pdb="HD12AILE A 201 "
+  pdb="HD13AILE A 201 "
+  pdb=" H  BVAL A 205 "
+  pdb=" HA BVAL A 205 "
+  pdb=" HB BVAL A 205 "
+  pdb="HG11BVAL A 205 "
+  pdb="HG12BVAL A 205 "
+  pdb="HG13BVAL A 205 "
+  pdb="HG21BVAL A 205 "
+  pdb="HG22BVAL A 205 "
+  pdb="HG23BVAL A 205 "
+  pdb=" H  BVAL A 206 "
+  pdb=" HA BVAL A 206 "
+  pdb=" HB BVAL A 206 "
+  pdb="HG11BVAL A 206 "
+  pdb="HG12BVAL A 206 "
+  pdb="HG13BVAL A 206 "
+  pdb="HG21BVAL A 206 "
+  pdb="HG22BVAL A 206 "
+  pdb="HG23BVAL A 206 "
+  pdb=" H  CVAL A 208 "
+  pdb=" HA CVAL A 208 "
+  pdb=" HB CVAL A 208 "
+  pdb="HG11CVAL A 208 "
+  pdb="HG12CVAL A 208 "
+  pdb="HG13CVAL A 208 "
+  pdb="HG21CVAL A 208 "
+  pdb="HG22CVAL A 208 "
+  pdb="HG23CVAL A 208 "
+
+                    ----------MISSING H or D atoms----------                   
+
+  GLN A  27  conformer  : HG2, HE21, HE22, HG3 
+  LYS A 224  conformer  : HG2, HD2, HE2, HZ1, HZ2, HZ3, HG3, HD3, HE3 
+  GLU A 245  conformer  : HG2, HG3 
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.007   0.071   2332  Z= 0.277
+    Angle     :  1.043  12.795   3196  Z= 0.569
+    Chirality :  0.076   0.310    361
+    Planarity :  0.008   0.052    425
+    Dihedral  : 14.446  78.118    910
+    Min Nonbonded Distance : 2.330
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 2.10
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  2.41 %
+      Favored  : 97.59 %
+    Rotamer:
+      Outliers :  0.80 %
+      Allowed  :  3.21 %
+      Favored  : 95.98 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole: -0.82 (0.44), residues: 327
+    helix: -0.87 (0.35), residues: 157
+    sheet: -0.40 (0.62), residues: 73
+    loop :  0.43 (0.64), residues: 97
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.007   0.002   ARG A 182 
+   TYR   0.040   0.006   TYR A  52 
+   PHE   0.066   0.011   PHE A  81 
+   TRP   0.017   0.004   TRP A   8 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.00663 ( 2332)
+    covalent geometry    : angle       1.04259 ( 3196)
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A  44  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  97.59 %
+  Rotamer outliers      =   0.80 %
+  C-beta deviations     =     0
+  Clashscore            =   2.10
+  RMS(bonds)            =   0.0066
+  RMS(angles)           =   1.04
+  MolProbity score      =   1.07
+  Refinement program    = Phenix

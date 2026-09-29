@@ -1,0 +1,52 @@
+# FROZEN thresholds, version v1 (2026-08-25). Do not edit in place after production begins:
+# copy to thresholds_v2.yaml, change, and write a `deviations` row stating how many configurations were tried.
+version: thresholds_v1
+noise_floor:
+  n_seeds: 10
+  seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  k_multiple: 2.0            # accept iff delta_r_free_select <= -k * sigma_select
+  rfree_reproduce_tolerance_abs: 0.005   # gate G3: max(3*sigma, this)
+  small_test_set_n_free: 500
+refine:
+  macro_cycles: 5
+  aniso_min_refl_per_atom: 5.0
+  aniso_max_dmin: 1.5
+  tls_min_dmin: 2.0
+  rama_ss_restraints_min_dmin: 2.5
+  r_gap_widening_warn: 0.010
+geometry:
+  bond_rmsd:        {abs_max: 0.020, rel_max: 0.003}
+  angle_rmsd:       {abs_max: 2.0,   rel_max: 0.30}
+  rama_outliers_pct: {abs_max: 0.5,  rel_max: 0.2}
+  rama_favored_pct:  {abs_min: 95.0, rel_min_drop: 1.0}
+  rota_outliers_pct: {abs_max: 1.5,  rel_max: 0.5}
+  clashscore:       {abs_max: 10.0, abs_max_highres: 5.0, highres_dmin: 1.5, rel_max: 1.0}
+  cis_nonpro_new_max: 0
+  twisted_peptide_new_max: 0
+  cablam_outliers_pct: {abs_max: 2.0, rel_max: 0.5, applies_dmin_ge: 2.5}
+  rscc_outlier_protein: 0.70
+solvent:
+  phenix: {place_peak_sigma: 3.0, retain_2fofc_sigma: 1.0, b_max: 80.0, b_max_rel_protein: 2.5,
+           hbond_min: 2.4, hbond_max: 3.3, min_dist_any: 2.2, occ_min: 0.5}
+  coot:   {find_waters_sigma: 3.0, delete_2fofc_sigma: 0.8, b_max: 80.0, min_dist: 2.3, max_dist: 3.4, hbond_max: 3.4}
+  water_rscc_min: 0.70
+altloc:
+  ringer_secondary_sigma: 0.3
+  occupancy_floor: 0.10
+  max_prune_iterations: 5
+  before_diff_sigma_min: 3.0
+  after_residual_sigma_max: 1.5
+  conformer_rscc_min: 0.70
+ligand:
+  rscc_min: 0.80
+  rszd_max: 3.0
+  b_ratio_env_max: 1.5
+  polder_sigma: 3.0
+  polder_atom_fraction: 0.70
+  qfit_ligand_nconfs: 10000
+peaks:
+  triage_sigma: 3.0
+occupancy:
+  sum_tolerance: 0.01
+convergence:
+  quiet_macro_cycles: 3

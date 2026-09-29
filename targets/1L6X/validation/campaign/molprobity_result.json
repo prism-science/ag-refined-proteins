@@ -1,0 +1,364 @@
+{
+ "ok": true,
+ "clashscore": 3.45,
+ "rama_outliers_pct": 0.0,
+ "rama_favored_pct": 100.0,
+ "rota_outliers_pct": 3.11,
+ "cbeta_deviations": 0,
+ "bond_rmsd": 0.00725,
+ "angle_rmsd": 0.95589,
+ "cis_nonpro": 0,
+ "twisted_peptides": 0,
+ "cablam_outliers_pct": 0.4291845493562232,
+ "rama_z": 1.7,
+ "nqh_flips": [
+  {
+   "chain": "A",
+   "resseq": "310",
+   "resname": "HIS"
+  },
+  {
+   "chain": "A",
+   "resseq": "386",
+   "resname": "GLN"
+  },
+  {
+   "chain": "A",
+   "resseq": "390",
+   "resname": "ASN"
+  },
+  {
+   "chain": "A",
+   "resseq": "429",
+   "resname": "HIS"
+  },
+  {
+   "chain": "A",
+   "resseq": "434",
+   "resname": "ASN"
+  },
+  {
+   "chain": "B",
+   "resseq": "19",
+   "resname": "HIS"
+  }
+ ],
+ "per_residue_outliers": [
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "271",
+   "icode": "",
+   "resname": "PRO",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Disfavored",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "329",
+   "icode": "",
+   "resname": "PRO",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Disfavored",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "340",
+   "icode": "",
+   "resname": "LYS",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CA Geom Outlier",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "376",
+   "icode": "",
+   "resname": "ASP",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Disfavored",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "384",
+   "icode": "",
+   "resname": "ASN",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Disfavored",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "390",
+   "icode": "",
+   "resname": "ASN",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Disfavored",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "434",
+   "icode": "",
+   "resname": "ASN",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Disfavored",
+   "feedback": ""
+  },
+  {
+   "kind": "cablam",
+   "chain": "A",
+   "resseq": "435",
+   "icode": "",
+   "resname": "HIS",
+   "altloc": "",
+   "score": null,
+   "outlier_type": "CaBLAM Outlier",
+   "feedback": ""
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "246",
+   "icode": "",
+   "resname": "LYS",
+   "altloc": "",
+   "score": 0.21002456630447283,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "274",
+   "icode": "",
+   "resname": "LYS",
+   "altloc": "",
+   "score": 0.00011708900857481934,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "311",
+   "icode": "",
+   "resname": "GLN",
+   "altloc": "",
+   "score": 0.008817648779133071,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "326",
+   "icode": "",
+   "resname": "LYS",
+   "altloc": "",
+   "score": 0.0,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "342",
+   "icode": "",
+   "resname": "GLN",
+   "altloc": "",
+   "score": 0.0008274869318646967,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "355",
+   "icode": "",
+   "resname": "ARG",
+   "altloc": "",
+   "score": 0.0,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  },
+  {
+   "kind": "rota",
+   "chain": "A",
+   "resseq": "361",
+   "icode": "",
+   "resname": "ASN",
+   "altloc": "",
+   "score": 0.0,
+   "rotamer_name": "OUTLIER",
+   "evaluation": "OUTLIER"
+  }
+ ],
+ "invocation": {
+  "phenix.molprobity": {
+   "argv": [
+    "phenix.molprobity",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.cif",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.mtz",
+    "output.prefix=molprobity",
+    "output.probe_dots=False",
+    "output.coot=False",
+    "output.kinemage=False",
+    "pickle=False"
+   ],
+   "job_id": "1L6X.baseline_rerefine.phenix.molprobity.1789629285697.733623",
+   "exit_code": 0,
+   "wall_clock_s": 33.6,
+   "out": "/home/dev/runs/1L6X/c000/baseline_rerefine/molprobity.out"
+  },
+  "phenix.omegalyze": {
+   "argv": [
+    "phenix.omegalyze",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.cif",
+    "--json",
+    "--json-filename=/home/dev/runs/1L6X/c000/baseline_rerefine/omegalyze.json"
+   ],
+   "job_id": "1L6X.baseline_rerefine.phenix.omegalyze.1789629319541.733623",
+   "exit_code": 0,
+   "wall_clock_s": 1.2,
+   "json": "/home/dev/runs/1L6X/c000/baseline_rerefine/omegalyze.json"
+  },
+  "phenix.cablam": {
+   "argv": [
+    "phenix.cablam",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.cif",
+    "--json",
+    "--json-filename=/home/dev/runs/1L6X/c000/baseline_rerefine/cablam.json"
+   ],
+   "job_id": "1L6X.baseline_rerefine.phenix.cablam.1789629320993.733623",
+   "exit_code": 0,
+   "wall_clock_s": 1.5,
+   "json": "/home/dev/runs/1L6X/c000/baseline_rerefine/cablam.json"
+  },
+  "phenix.ramalyze": {
+   "argv": [
+    "phenix.ramalyze",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.cif",
+    "--json",
+    "--json-filename=/home/dev/runs/1L6X/c000/baseline_rerefine/ramalyze.json"
+   ],
+   "job_id": "1L6X.baseline_rerefine.phenix.ramalyze.1789629322829.733623",
+   "exit_code": 0,
+   "wall_clock_s": 1.4,
+   "json": "/home/dev/runs/1L6X/c000/baseline_rerefine/ramalyze.json"
+  },
+  "phenix.rotalyze": {
+   "argv": [
+    "phenix.rotalyze",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.cif",
+    "--json",
+    "--json-filename=/home/dev/runs/1L6X/c000/baseline_rerefine/rotalyze.json"
+   ],
+   "job_id": "1L6X.baseline_rerefine.phenix.rotalyze.1789629324530.733623",
+   "exit_code": 0,
+   "wall_clock_s": 1.7,
+   "json": "/home/dev/runs/1L6X/c000/baseline_rerefine/rotalyze.json"
+  },
+  "phenix.cbetadev": {
+   "argv": [
+    "phenix.cbetadev",
+    "/home/dev/runs/1L6X/c000/baseline_rerefine/refine_001.cif",
+    "--json",
+    "--json-filename=/home/dev/runs/1L6X/c000/baseline_rerefine/cbetadev.json"
+   ],
+   "job_id": "1L6X.baseline_rerefine.phenix.cbetadev.1789629326544.733623",
+   "exit_code": 0,
+   "wall_clock_s": 1.3,
+   "json": "/home/dev/runs/1L6X/c000/baseline_rerefine/cbetadev.json"
+  }
+ },
+ "rama_allowed_pct": 0.0,
+ "rota_favored_pct": 92.89,
+ "cis_pro": 1,
+ "twisted_pro": 0,
+ "cablam_disfavored_pct": 3.4334763948497855,
+ "ca_geom_outliers_pct": 0.4291845493562232,
+ "rama_z_std": 0.52,
+ "rama_z_by_type": {
+  "whole": {
+   "value": 1.7,
+   "std": 0.52,
+   "n_residues": 237
+  },
+  "helix": {
+   "value": 0.99,
+   "std": 0.77,
+   "n_residues": 43
+  },
+  "sheet": {
+   "value": 1.32,
+   "std": 0.49,
+   "n_residues": 97
+  },
+  "loop": {
+   "value": 1.19,
+   "std": 0.62,
+   "n_residues": 97
+  }
+ },
+ "molprobity_score": 1.51,
+ "cbeta_outliers_pct": 0.0,
+ "n_atoms": 2430,
+ "n_hydrogens": 0,
+ "n_aa_residues": 241,
+ "n_waters": 360,
+ "ligands": "NAG:4,BMA:1,MAN:2,GAL:2,FUL:1",
+ "r_work": 0.1881,
+ "r_free": 0.2388,
+ "resolution": 1.65,
+ "out_path": "/home/dev/runs/1L6X/c000/baseline_rerefine/molprobity.out",
+ "sources": {
+  "rama_outliers_pct": "phenix.molprobity",
+  "rama_favored_pct": "phenix.molprobity",
+  "rota_outliers_pct": "phenix.molprobity",
+  "cbeta_deviations": "phenix.molprobity",
+  "clashscore": "phenix.molprobity",
+  "molprobity_score": "phenix.molprobity",
+  "resolution": "phenix.molprobity",
+  "r_work": "phenix.molprobity",
+  "r_free": "phenix.molprobity",
+  "bond_rmsd": "phenix.molprobity",
+  "angle_rmsd": "phenix.molprobity",
+  "rama_allowed_pct": "phenix.molprobity",
+  "rota_favored_pct": "phenix.molprobity",
+  "cbeta_outliers_pct": "phenix.molprobity",
+  "rama_z": "phenix.molprobity",
+  "rama_z_std": "phenix.molprobity",
+  "rama_z_by_type": "phenix.molprobity",
+  "n_atoms": "phenix.molprobity",
+  "n_hydrogens": "phenix.molprobity",
+  "n_aa_residues": "phenix.molprobity",
+  "n_waters": "phenix.molprobity",
+  "ligands": "phenix.molprobity",
+  "nqh_flips": "phenix.molprobity",
+  "cis_nonpro": "phenix.omegalyze",
+  "cis_pro": "phenix.omegalyze",
+  "twisted_peptides": "phenix.omegalyze",
+  "twisted_pro": "phenix.omegalyze",
+  "cablam_outliers_pct": "phenix.cablam",
+  "cablam_disfavored_pct": "phenix.cablam",
+  "ca_geom_outliers_pct": "phenix.cablam"
+ },
+ "parse_notes": []
+}

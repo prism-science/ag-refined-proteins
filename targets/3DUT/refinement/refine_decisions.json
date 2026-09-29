@@ -1,0 +1,115 @@
+{
+ "model_stats": {
+  "n_atoms": 5013,
+  "n_atoms_nonh": 5013,
+  "n_altloc_atoms": 34,
+  "altloc_letters": [
+   "A",
+   "B"
+  ],
+  "has_altlocs": true,
+  "n_partial_occupancy_atoms": 34,
+  "max_chain_residues": 262,
+  "mean_b": 27.598
+ },
+ "mtz_stats": {
+  "n_refl": 71980,
+  "d_min": 1.55,
+  "d_max": 9.954,
+  "space_group": "P 1 21 1"
+ },
+ "mtz_columns": [
+  {
+   "label": "H",
+   "type": "H"
+  },
+  {
+   "label": "K",
+   "type": "H"
+  },
+  {
+   "label": "L",
+   "type": "H"
+  },
+  {
+   "label": "FP",
+   "type": "F"
+  },
+  {
+   "label": "SIGFP",
+   "type": "Q"
+  }
+ ],
+ "adp_decision": {
+  "adp_model": "isotropic",
+  "tls": true,
+  "ratio": 14.36,
+  "reason": "n_refl/n_atoms(non-H)=14.36 / d_min=1.55: isotropic; TLS (d_min>=2.0 or chain>200 res)"
+ },
+ "adp_model": "isotropic",
+ "tls": true,
+ "tls_selections": [
+  "chain 'A' and (resid    1  through   35 )",
+  "chain 'A' and (resid   36  through   89 )",
+  "chain 'A' and (resid   90  through  141 )",
+  "chain 'B' and (resid    1  through   19 )",
+  "chain 'B' and (resid   20  through   77 )",
+  "chain 'B' and (resid   78  through  146 )",
+  "chain 'C' and (resid    1  through   35 )",
+  "chain 'C' and (resid   36  through   71 )",
+  "chain 'C' and (resid   72  through  112 )",
+  "chain 'C' and (resid  113  through  141 )",
+  "chain 'D' and (resid    1  through   19 )",
+  "chain 'D' and (resid   20  through   99 )",
+  "chain 'D' and (resid  100  through  146 )"
+ ],
+ "refine_occupancies": true,
+ "rama_restraints": false,
+ "ss_restraints": false,
+ "data_labels": "FP,SIGFP",
+ "macro_cycles": 5,
+ "params": {
+  "seed": 1,
+  "nproc": 1,
+  "macro_cycles": null,
+  "individual_sites": true,
+  "individual_adp": true,
+  "individual_sites_real_space": false,
+  "sites_selection": null,
+  "adp_selection": null,
+  "occupancy_selection": null,
+  "refine_occupancies": null,
+  "adp_model": null,
+  "group_adp": null,
+  "tls": null,
+  "tls_selections": [],
+  "ordered_solvent": false,
+  "ordered_solvent_params": {},
+  "hydrogens_riding": true,
+  "add_hydrogens": false,
+  "optimize_xyz_weight": true,
+  "optimize_adp_weight": true,
+  "wxc_scale": null,
+  "wxu_scale": null,
+  "rama_restraints": null,
+  "ss_restraints": null,
+  "nqh_flips": false,
+  "bulk_solvent_mode": "fast",
+  "scattering_table": null,
+  "simulated_annealing": false,
+  "rigid_body": false,
+  "paired_refinement_preregistered": false,
+  "high_resolution": null,
+  "low_resolution": null,
+  "sigma_fobs_rejection_criterion": null,
+  "sigma_iobs_rejection_criterion": null,
+  "generate_flags": false,
+  "ignore_r_free_flags": false,
+  "disable_suitability_test": false,
+  "data_labels": null,
+  "output_prefix": "refine",
+  "write_map_coefficients": true,
+  "write_geo_file": false,
+  "extra_phil": []
+ }
+}

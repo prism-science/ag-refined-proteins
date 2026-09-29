@@ -1,0 +1,109 @@
+# FROZEN thresholds, version v3 (2026-09-04). v1 and v2 are kept unchanged next to this file; nothing is
+# ever edited in place. ONE change from v2, disclosed in state/deviations.md (D442) with the configurations
+# tried before it:
+#
+#   `discrete.neighbour_rule` — how an UNTOUCHED residue's RSCC drop is judged when a change is a whole-model
+#   batch (many residues rebuilt at once, e.g. whole-protein qFit). v2's single constant, "drop > 0.02 means
+#   the change stole this residue's density", was written for one local edit and was never given a null. Two
+#   nulls were then measured on 3TC7:
+#     1. refine the same model with different seeds (D435): per-residue RSCC sd 0.0025 (waters) / 0.0005
+#        (protein) — far below 0.02, so 0.02 is real signal for a LOCAL change;
+#     2. the change's own untouched residues under a whole-model batch (D436, C5): waters sd 0.023, 24 lose
+#        and 25 GAIN more than 0.02, no dependence on distance to the nearest new conformer — a symmetric
+#        redistribution as the whole cell re-phases, not theft. Theft is one-sided and local.
+#   So under a batch change the rule reads: an untouched residue is flagged only when its drop exceeds
+#   max(min_drop, k * sd_class), where sd_class is the sd of RSCC deltas over ALL untouched residues of its
+#   class (waters | protein) under THAT change, AND it lies within locality_a of an atom the change built.
+#   min_drop keeps v2's 0.02 as a floor: this rule can only be as strict as v2 or stricter in the "no map
+#   shift" limit, and adds the locality test v2 lacked. It is applied to every experiment ever scored under
+#   v2 (C, C2–C8), not only to the ones one hopes will pass; configurations tried = 3 (v2 constant; refine
+#   null; per-change null + locality). Single local changes are unaffected: mode `per_change_null` needs a
+#   population of untouched residues that a one-residue edit does not produce, so the per-change loop keeps
+#   reading `rscc_neighbour_drop_max` exactly as in v2.
+#
+# Everything below `discrete.neighbour_rule` is byte-identical to thresholds_v2.yaml (diff them).
+version: thresholds_v3
+noise_floor:
+  n_seeds: 10
+  seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  k_multiple: 2.0            # accept iff delta_r_free_select <= -k * sigma_select
+  rfree_reproduce_tolerance_abs: 0.005   # gate G3: max(3*sigma, this)
+  small_test_set_n_free: 500
+refine:
+  macro_cycles: 5
+  aniso_min_refl_per_atom: 5.0
+  aniso_max_dmin: 1.5
+  tls_min_dmin: 2.0
+  rama_ss_restraints_min_dmin: 2.5
+  r_gap_widening_warn: 0.010
+geometry:
+  # abs_max is chosen per resolution band (see header); rel_max applies in every band.
+  bond_rmsd:
+    rel_max: 0.003
+    bands:
+      - {d_min_max: 1.0, abs_max: 0.045}   # ultra-high: PDB-REDO's own 7KR0 sits at 0.0397
+      - {d_min_max: 1.8, abs_max: 0.020}
+      - {d_min_max: 99.0, abs_max: 0.020}
+  angle_rmsd:
+    rel_max: 0.30
+    bands:
+      - {d_min_max: 1.0, abs_max: 2.5}     # PDB-REDO 7KR0: 2.064
+      - {d_min_max: 1.8, abs_max: 2.0}
+      - {d_min_max: 99.0, abs_max: 2.0}
+  rama_outliers_pct: {abs_max: 0.5,  rel_max: 0.2}
+  rama_favored_pct:  {abs_min: 95.0, rel_min_drop: 1.0}
+  rota_outliers_pct: {abs_max: 1.5,  rel_max: 0.5}
+  clashscore:       {abs_max: 10.0, abs_max_highres: 5.0, highres_dmin: 1.5, rel_max: 1.0}
+  cis_nonpro_new_max: 0
+  twisted_peptide_new_max: 0
+  cablam_outliers_pct: {abs_max: 2.0, rel_max: 0.5, applies_dmin_ge: 2.5}
+  rscc_outlier_protein: 0.70
+solvent:
+  phenix: {place_peak_sigma: 3.0, retain_2fofc_sigma: 1.0, b_max: 80.0, b_max_rel_protein: 2.5,
+           hbond_min: 2.4, hbond_max: 3.3, min_dist_any: 2.2, occ_min: 0.5}
+  coot:   {find_waters_sigma: 3.0, delete_2fofc_sigma: 0.8, b_max: 80.0, min_dist: 2.3, max_dist: 3.4, hbond_max: 3.4}
+  water_rscc_min: 0.70
+altloc:
+  ringer_secondary_sigma: 0.3
+  occupancy_floor: 0.10
+  max_prune_iterations: 5
+  before_diff_sigma_min: 3.0
+  after_residual_sigma_max: 1.5
+  conformer_rscc_min: 0.70
+ligand:
+  rscc_min: 0.80
+  rszd_max: 3.0
+  b_ratio_env_max: 1.5
+  polder_sigma: 3.0
+  polder_atom_fraction: 0.70
+  qfit_ligand_nconfs: 10000
+peaks:
+  triage_sigma: 3.0
+occupancy:
+  sum_tolerance: 0.01
+convergence:
+  quiet_macro_cycles: 3
+
+# --- v2 additions: the discrete, RSCC-gated loop (SPEC_LOOP_V2.md) ---
+discrete:
+  neighbour_rule:                 # v3 (D442): batch-aware neighbour test; see header
+    mode: per_change_null         # per_change_null | fixed (fixed = v2 behaviour)
+    k: 2.0                        # outlier multiple of the per-class sd under the change
+    min_drop: 0.02                # never looser than v2's constant
+    locality_a: 4.0               # the flagged residue must be within this of a built atom
+  rscc_min_delta: 0.01            # a single change must improve local density fit by at least this
+  rscc_neighbour_drop_max: 0.02   # and must not steal density from an untouched neighbour
+  neighbour_radius_a: 5.0
+  local_refine: real_space        # coot | real_space
+  max_changes_per_cycle: 40       # force a full reciprocal pass after this many accepted changes
+  bisect_on_rfree_regression: true
+  max_bisect_depth: 3
+stall:
+  stall_cycles: 2                 # consecutive cycles with |dR-free| < sigma while changes still accepted
+  escalation: [reweight_reseed, rescale_bulk_solvent, simulated_annealing]
+  # simulated_annealing is refused by the phenix_refine guard when the model has alternate
+  # conformations (PROTOCOL 4.1); the escape ladder skips it rather than bypassing the guard.
+gaps:
+  classify: [internal, terminal, deferred]
+  min_internal_run: 1             # a single unbuilt internal residue still counts
+  skip_terminal: true             # purification tags are absent, not missing

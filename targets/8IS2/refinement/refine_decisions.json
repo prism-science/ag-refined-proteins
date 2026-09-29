@@ -1,0 +1,98 @@
+{
+ "model_stats": {
+  "n_atoms": 1829,
+  "n_atoms_nonh": 1829,
+  "n_altloc_atoms": 0,
+  "altloc_letters": [],
+  "has_altlocs": false,
+  "n_partial_occupancy_atoms": 0,
+  "max_chain_residues": 188,
+  "mean_b": 30.563
+ },
+ "mtz_stats": {
+  "n_refl": 49541,
+  "d_min": 1.3218,
+  "d_max": 28.5179,
+  "space_group": "P 31"
+ },
+ "mtz_columns": [
+  {
+   "label": "H",
+   "type": "H"
+  },
+  {
+   "label": "K",
+   "type": "H"
+  },
+  {
+   "label": "L",
+   "type": "H"
+  },
+  {
+   "label": "FP",
+   "type": "F"
+  },
+  {
+   "label": "SIGFP",
+   "type": "Q"
+  }
+ ],
+ "adp_decision": {
+  "adp_model": "anisotropic",
+  "tls": false,
+  "ratio": 27.09,
+  "reason": "n_refl/n_atoms(non-H)=27.09 >= 5.0 and d_min=1.3218 <= 1.5"
+ },
+ "adp_model": "anisotropic",
+ "tls": false,
+ "tls_selections": [],
+ "refine_occupancies": false,
+ "rama_restraints": false,
+ "ss_restraints": false,
+ "data_labels": "FP,SIGFP",
+ "macro_cycles": 5,
+ "params": {
+  "seed": 1,
+  "nproc": 1,
+  "macro_cycles": null,
+  "individual_sites": true,
+  "individual_adp": true,
+  "individual_sites_real_space": false,
+  "sites_selection": null,
+  "adp_selection": null,
+  "occupancy_selection": null,
+  "refine_occupancies": null,
+  "adp_model": null,
+  "group_adp": null,
+  "tls": null,
+  "tls_selections": [],
+  "ordered_solvent": false,
+  "ordered_solvent_params": {},
+  "hydrogens_riding": true,
+  "add_hydrogens": false,
+  "optimize_xyz_weight": true,
+  "optimize_adp_weight": true,
+  "wxc_scale": null,
+  "wxu_scale": null,
+  "rama_restraints": null,
+  "ss_restraints": null,
+  "nqh_flips": false,
+  "bulk_solvent_mode": "fast",
+  "scattering_table": null,
+  "simulated_annealing": false,
+  "rigid_body": false,
+  "paired_refinement_preregistered": false,
+  "high_resolution": null,
+  "low_resolution": null,
+  "sigma_fobs_rejection_criterion": null,
+  "sigma_iobs_rejection_criterion": null,
+  "generate_flags": false,
+  "ignore_r_free_flags": false,
+  "disable_suitability_test": false,
+  "data_labels": null,
+  "output_prefix": "refine",
+  "write_map_coefficients": true,
+  "write_geo_file": false,
+  "extra_phil": []
+ }
+}

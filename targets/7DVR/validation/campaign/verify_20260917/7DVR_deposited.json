@@ -1,0 +1,25 @@
+{
+ "model": "/home/dev/data/raw/7DVR/7DVR.cif",
+ "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 1295,
+ "n_hydrogen": 0,
+ "altlocs": [
+  "A",
+  "B"
+ ],
+ "n_water_residues": 37,
+ "n_reflections": 18057,
+ "n_free": 882,
+ "n_select": 441,
+ "n_report": 441,
+ "n_work": 17175,
+ "d_min": 1.7042752319993781,
+ "r_work_fmodel": 0.24217066259961523,
+ "r_free_fmodel": 0.29496825189656284,
+ "r_work_manual": 0.2421730302731464,
+ "r_free_manual": 0.29478224962975913,
+ "r_free_select_manual": 0.32687586169036126,
+ "r_free_report_manual": 0.26984161934148204,
+ "wall_s": 0.7
+}

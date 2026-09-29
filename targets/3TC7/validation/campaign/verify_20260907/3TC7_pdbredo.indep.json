@@ -1,0 +1,23 @@
+{
+ "model": "/home/dev/data/raw/3TC7/pdbredo/3tc7_final.pdb",
+ "n_atoms": 2229,
+ "n_hydrogen": 0,
+ "altlocs": [
+  "A",
+  "B"
+ ],
+ "n_water_residues": 177,
+ "n_reflections": 41052,
+ "n_free": 2075,
+ "n_select": 1037,
+ "n_report": 1038,
+ "n_work": 38977,
+ "d_min": 1.4999525524595603,
+ "r_work_fmodel": 0.16889881140322432,
+ "r_free_fmodel": 0.18724601975941504,
+ "r_work_manual": 0.1688988885720054,
+ "r_free_manual": 0.1872984547068497,
+ "r_free_select_manual": 0.18790193028103108,
+ "r_free_report_manual": 0.1866816684227558,
+ "wall_s": 1.0
+}

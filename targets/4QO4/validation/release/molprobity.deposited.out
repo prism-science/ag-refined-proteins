@@ -1,0 +1,131 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 845
+     H or D atoms   : 0
+     chains         : 2
+     a.a. residues  : 89
+     nucleotides    : 0
+     water          : 78
+     other (ligands): 1
+   Ligands: 35S:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   A 201  35S  C14
+   A 201  35S  O3          1.25     1.36    -0.11  2.00e-02  2.97e+01   5.5*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.109 (Z=  5.451)
+  Mean delta:    0.011 (Z=  0.486)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A  49  THR  N
+   A  49  THR  CA
+   A  49  THR  C         111.00    99.65    11.35  2.80e+00  1.64e+01   4.1*sigma
+
+  Min. delta:    0.001 (Z=  0.001)
+  Max. delta:   11.354 (Z=  4.055)
+  Mean delta:    1.563 (Z=  0.660)
+
+                      ----------Dihedral angles----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.002 (Z=  0.000)
+  Max. delta:   61.506 (Z=  3.888)
+  Mean delta:   16.825 (Z=  0.902)
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.001
+  Max. delta:    0.462
+  Mean delta:    0.113
+
+                       ----------Planar groups----------                       
+
+  atoms                 rms_deltas   delta_max    residual   deviation
+   A 201  35S  C11
+   A 201  35S  C12
+   A 201  35S  C7
+   A 201  35S  C8
+   A 201  35S  N2
+   A 201  35S  O1            0.061       0.085       55.37   4.2*sigma
+
+  Min. delta:    0.000
+  Max. delta:    0.061
+  Mean delta:    0.010
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.011   0.109    785  Z= 0.486
+    Angle     :  1.563  11.354   1064  Z= 0.660
+    Chirality :  0.113   0.462    122
+    Planarity :  0.010   0.061    126
+    Dihedral  : 16.825  61.506    326
+    Min Nonbonded Distance : 2.017
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 16.02
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  2.35 %
+      Favored  : 97.65 %
+    Rotamer:
+      Outliers :  6.02 %
+      Allowed  :  7.23 %
+      Favored  : 86.75 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole: -0.19 (0.91), residues: 85
+    helix: -0.34 (0.67), residues: 45
+    sheet:  None (None), residues: 0
+    loop :  0.38 (1.15), residues: 40
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.034   0.007   ARG A  97 
+   TYR   0.044   0.010   TYR A 104 
+   PHE   0.021   0.008   PHE A  55 
+   HIS   0.002   0.001   HIS A  73 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.01065 (  785)
+    covalent geometry    : angle       1.56269 ( 1064)
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A  18  GLN
+   A  59  GLN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  97.65 %
+  Rotamer outliers      =   6.02 %
+  C-beta deviations     =     0
+  Clashscore            =  16.02
+  RMS(bonds)            =   0.0106
+  RMS(angles)           =   1.56
+  MolProbity score      =   2.38
+  Refinement program    = CNS

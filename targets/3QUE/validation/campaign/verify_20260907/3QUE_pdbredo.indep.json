@@ -1,0 +1,20 @@
+{
+ "model": "/home/dev/data/raw/3QUE/pdbredo/3que_final.pdb",
+ "n_atoms": 2853,
+ "n_hydrogen": 0,
+ "altlocs": [],
+ "n_water_residues": 14,
+ "n_reflections": 10793,
+ "n_free": 864,
+ "n_select": 432,
+ "n_report": 432,
+ "n_work": 9929,
+ "d_min": 2.7001667213072826,
+ "r_work_fmodel": 0.2269073453913842,
+ "r_free_fmodel": 0.27101844929276125,
+ "r_work_manual": 0.22690977151990382,
+ "r_free_manual": 0.27196283300924623,
+ "r_free_select_manual": 0.26280080203257167,
+ "r_free_report_manual": 0.2815407411831294,
+ "wall_s": 0.4
+}

@@ -1,0 +1,26 @@
+{
+ "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/6CDX/model/6CDX_refined.cif",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 630,
+ "n_hydrogen": 0,
+ "altlocs": [
+  "A",
+  "B",
+  "C"
+ ],
+ "n_water_residues": 57,
+ "n_reflections": 27006,
+ "n_free": 1341,
+ "n_select": 670,
+ "n_report": 671,
+ "n_work": 25665,
+ "d_min": 1.00000438334742,
+ "r_work_fmodel": 0.14300674559424892,
+ "r_free_fmodel": 0.17199930457540744,
+ "r_work_manual": 0.1430053098593428,
+ "r_free_manual": 0.17164668398922847,
+ "r_free_select_manual": 0.1707518048328275,
+ "r_free_report_manual": 0.17254234630370133,
+ "wall_s": 0.7
+}

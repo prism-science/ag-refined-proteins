@@ -1,0 +1,7 @@
+# Binary crystallographic files: never diff, never convert line endings.
+*.mtz binary
+*.ccp4 binary
+*.map binary
+# Text formats that git should not touch either.
+*.cif -text
+*.pdb -text

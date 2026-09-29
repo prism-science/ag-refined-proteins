@@ -1,0 +1,196 @@
+{
+ "gate": "G3",
+ "target": "9D5U",
+ "status": "FAIL",
+ "reasons": [
+  "|R-free(recomputed) - R-free(header)| = 0.0254 > 0.0050"
+ ],
+ "ran_at": "2026-09-17T08:55:38+00:00",
+ "wall_clock_s": 63.3,
+ "header": {
+  "source_file": "/home/dev/data/raw/9D5U/9D5U.cif",
+  "source_sha256": "a996183271558a67283b2a6221dd17f72ff0dc8edc0f6d14313513536f877194",
+  "block": "9D5U",
+  "n_refine_rows": 1,
+  "r_work": 0.2392,
+  "r_free": 0.259,
+  "r_obs": 0.2521,
+  "n_free": 2044,
+  "n_work": null,
+  "n_obs": 100941,
+  "pct_free": 2.02,
+  "d_res_high": 1.35,
+  "d_res_low": 35.99,
+  "sigma_f": 18.59,
+  "sigma_i": null,
+  "solvent_model": "FLAT BULK SOLVENT MODEL",
+  "details": null,
+  "cross_valid_method": "FREE R-VALUE",
+  "free_selection_details": null,
+  "b_iso_mean": null,
+  "absent": [
+   "_refine.ls_number_reflns_R_work",
+   "_refine.pdbx_ls_sigma_I",
+   "_refine.details",
+   "_refine.pdbx_R_Free_selection_details",
+   "_refine.B_iso_mean"
+  ],
+  "refinement_programs": [
+   {
+    "name": "PHENIX",
+    "version": "(1.20.1_4487: ???)"
+   }
+  ]
+ },
+ "targets_yaml_header_claim": {
+  "r_work": 0.2392,
+  "r_free": 0.259,
+  "n_free": 2044,
+  "pct_free": 2.02,
+  "n_obs": 100941,
+  "sigma_f": 18.59,
+  "cross_valid_method": "FREE R-VALUE",
+  "sf_status": "REL"
+ },
+ "recomputed_zero_cycle": {
+  "path": "autoref.tools.phenix_refine.refine_zero_cycles",
+  "ok": true,
+  "r_work": 0.2612,
+  "r_free": 0.2844,
+  "n_refl": 100941,
+  "n_free": 2012,
+  "d_min": 1.35,
+  "d_max": 35.99,
+  "ksol": 0.4206,
+  "bsol": 45.35,
+  "log_path": "/home/dev/runs/9D5U/c000/verify/G3/zero_001.log",
+  "output_model": "/home/dev/runs/9D5U/c000/verify/G3/zero_001.cif",
+  "wall_clock_s": 57.7,
+  "version": "2.1-6048",
+  "argv": [
+   "phenix.refine",
+   "/home/dev/data/raw/9D5U/9D5U.cif",
+   "/home/dev/data/targets/9D5U/data.mtz",
+   "/home/dev/data/targets/9D5U/flags.mtz",
+   "refinement.input.xray_data.labels=IMEAN,SIGIMEAN",
+   "refinement.input.xray_data.r_free_flags.label=R-free-flags",
+   "data_manager.fmodel.xray_data.r_free_flags.test_flag_value=0",
+   "data_manager.fmodel.xray_data.r_free_flags.generate=False",
+   "data_manager.fmodel.xray_data.r_free_flags.ignore_r_free_flags=False",
+   "refinement.main.number_of_macro_cycles=0",
+   "refinement.main.random_seed=0",
+   "refinement.main.nproc=1",
+   "refinement.hydrogens.refine=riding",
+   "refinement.main.find_and_add_hydrogens=False",
+   "refinement.bulk_solvent_and_scale.mode=fast",
+   "output.prefix=zero",
+   "output.serial=1",
+   "output.overwrite=True",
+   "output.write_map_coefficients=True",
+   "output.write_geo_file=False",
+   "output.write_def_file=False",
+   "output.write_eff_file=True"
+  ]
+ },
+ "rfree_split": {
+  "r_work": 0.26119237744071794,
+  "r_free_full": 0.284516939988564,
+  "r_free_select": 0.2779707107881936,
+  "r_free_report": 0.29116925666294496,
+  "n_work": 98929,
+  "n_free": 2012,
+  "n_select": 1006,
+  "n_report": 1006,
+  "n_reflections": 100941,
+  "d_min": 1.3500069719038539,
+  "d_max": 35.9931078141356,
+  "ksol": 0.36000000000000004,
+  "bsol": 8.277909886874884,
+  "r_gap": 0.02332456254784604,
+  "outliers_rejection": true,
+  "remove_outliers_in_scaling": false,
+  "scattering_table": "n_gaussian",
+  "artifact": "/home/dev/runs/9D5U/c000/verify/G3/rfree_split/rfree_verify_a99618327155.json"
+ },
+ "delta_r_free_vs_header": 0.025399999999999978,
+ "delta_rfree_split_vs_phenix_refine": 0.00011693998856399102,
+ "tolerance": {
+  "tolerance": 0.005,
+  "abs_floor": 0.005,
+  "sigma_full": 0.000261,
+  "basis": "max(3*sigma_noise, abs_floor)"
+ },
+ "agreement_tolerance": 0.002,
+ "flags": {
+  "flag_label": "R-free-flags",
+  "test_flag_value": 0,
+  "flags_source": "inherited",
+  "n_free": 2012,
+  "fraction_free": 0.019932,
+  "n_select": 1006,
+  "n_report": 1006,
+  "split_seed": 1657023206,
+  "flags_mtz_sha256": "3f10fd144b9130bbb99c2b05a0dca4e9750d60bcde500a303a28079e69b1660d",
+  "data_mtz_sha256": "0ccfd11ee337dda95213150e48f6cad38c3ad211ef51cda81d99455bab3d3714",
+  "split_sha256": "eaa039939477ff341481d711ae30df13fe091341cc4b34f9bdfcc734c9c489ec",
+  "data_labels": "IMEAN,SIGIMEAN",
+  "intensities_or_amplitudes": "intensities",
+  "convention_note": "Inherited unchanged from _refln.status of 9D5U-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+  "n_reflections": 100941,
+  "n_rows_in_sf": 100941,
+  "n_dropped_unmeasured": 0,
+  "n_dropped_missing_value": 0
+ },
+ "n_free_header_vs_file": {
+  "header": 2044,
+  "structure_factor_file": 2012
+ },
+ "model": {
+  "path": "/home/dev/data/raw/9D5U/9D5U.cif",
+  "sha256": "a996183271558a67283b2a6221dd17f72ff0dc8edc0f6d14313513536f877194"
+ },
+ "diagnosis": {
+  "refinement_programs": [
+   {
+    "name": "PHENIX",
+    "version": "(1.20.1_4487: ???)"
+   }
+  ],
+  "header_details": null,
+  "header_solvent_model": "FLAT BULK SOLVENT MODEL",
+  "header_d_res": [
+   35.99,
+   1.35
+  ],
+  "our_d_res": [
+   35.9931078141356,
+   1.3500069719038539
+  ],
+  "header_sigma_f": 18.59,
+  "header_sigma_i": null,
+  "pdbredo": {
+   "VERSION": 8.13,
+   "RFACT": 0.2392,
+   "RFREE": 0.259,
+   "RFCAL": 0.2831,
+   "RFCALUNB": 0.3178,
+   "SIGRFCAL": 0.0063,
+   "RFFIN": 0.2311,
+   "NTSTCNT": 2012,
+   "NREFCNT": 100919,
+   "source_file": "/home/dev/data/raw/9D5U/pdbredo/data.json"
+  },
+  "pdbredo_agrees_on_n_free": true,
+  "pdbredo_agrees_on_n_reflections": false,
+  "pdbredo_recalculated_r_free_matches_header": false,
+  "r_free_minus_r_work": 0.02332,
+  "test_set_is_genuinely_held_out": true,
+  "n_free": {
+   "inherited_from_structure_factors": 2012,
+   "deposited_header": 2044,
+   "used_by_phenix_after_outlier_rejection": 2012
+  },
+  "shell_diagnostic": null,
+  "reading": "If PDB-REDO's independent parse gives the same reflection and test-set counts, the free set is read correctly and the residual difference is the depositor's refinement program/scaling model, not our data handling. A recomputed R-free that is *lower* than the header, uniformly across resolution shells, with the test set still clearly held out, is the signature of a better bulk-solvent/anisotropic scaling model \u2014 a baseline fact to report, not a flag error. A recomputed R-free close to R-work would instead mean the test set leaked and is campaign-stopping."
+ }
+}

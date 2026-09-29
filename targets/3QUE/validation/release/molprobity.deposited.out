@@ -1,0 +1,153 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 2849
+     H or D atoms   : 0
+     chains         : 2
+     a.a. residues  : 343
+     nucleotides    : 0
+     water          : 14
+     other (ligands): 3
+   Ligands: BOG:2,3FF:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   A 361  BOG  C5
+   A 361  BOG  O5          1.41     1.52    -0.11  2.00e-02  3.06e+01   5.5*sigma
+   A 361  BOG  C1
+   A 361  BOG  O1          1.37     1.47    -0.10  2.00e-02  2.33e+01   4.8*sigma
+   A 361  BOG  C1
+   A 361  BOG  O5          1.41     1.50    -0.09  2.00e-02  1.94e+01   4.4*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.111 (Z=  5.531)
+  Mean delta:    0.016 (Z=  0.679)
+
+                        ----------Bond angles----------                        
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   10.100 (Z=  3.799)
+  Mean delta:    1.662 (Z=  0.750)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 203  THR  CA
+   A 203  THR  C
+   A 204  VAL  N
+   A 204  VAL  CA        180.00   155.80    24.20  5.00e+00  2.34e+01   4.8*sigma
+   A 116  ILE  CA
+   A 116  ILE  C
+   A 117  VAL  N
+   A 117  VAL  CA        180.00   156.00    24.00  5.00e+00  2.30e+01   4.8*sigma
+   A 119  CYS  CA
+   A 119  CYS  C
+   A 120  GLN  N
+   A 120  GLN  CA        180.00  -156.25   -23.75  5.00e+00  2.26e+01   4.8*sigma
+   A 362  3FF  OAC
+   A 362  3FF  CAR
+   A 362  3FF  CBE
+   A 362  3FF  OAT        60.10  -167.72  -132.18  3.00e+01  1.78e+01   4.4*sigma
+   A 362  3FF  CAO
+   A 362  3FF  CAR
+   A 362  3FF  CBE
+   A 362  3FF  OAT      -174.09   -45.62  -128.47  3.00e+01  1.73e+01   4.3*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:  132.179 (Z=  4.839)
+  Mean delta:   19.725 (Z=  1.275)
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.370
+  Mean delta:    0.105
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.049
+  Mean delta:    0.007
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.016   0.111   2902  Z= 0.679
+    Angle     :  1.662  10.100   3939  Z= 0.750
+    Chirality :  0.105   0.370    445
+    Planarity :  0.007   0.049    495
+    Dihedral  : 19.725 132.179   1123
+    Min Nonbonded Distance : 2.208
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 10.58
+    Ramachandran Plot:
+      Outliers :  0.29 %
+      Allowed  :  4.72 %
+      Favored  : 94.99 %
+    Rotamer:
+      Outliers :  7.59 %
+      Allowed  : 11.55 %
+      Favored  : 80.86 %
+    Cbeta Deviations :  0.61 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole: -3.35 (0.38), residues: 339
+    helix: -3.36 (0.31), residues: 135
+    sheet: -0.75 (0.71), residues: 39
+    loop : -1.43 (0.43), residues: 165
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.012   0.001   ARG A 186 
+   TYR   0.024   0.006   TYR A 258 
+   PHE   0.028   0.007   PHE A  90 
+   TRP   0.018   0.006   TRP A 207 
+   HIS   0.010   0.003   HIS A 148 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.01555 ( 2902)
+    covalent geometry    : angle       1.66173 ( 3939)
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A 269  ASN
+   A 272  ASN
+   A 115  ASN
+   A 174  HIS
+   A 155  ASN
+   A 128  GLN
+   A 310  GLN
+   A 202  GLN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.29 %
+                favored =  94.99 %
+  Rotamer outliers      =   7.59 %
+  C-beta deviations     =     2
+  Clashscore            =  10.58
+  RMS(bonds)            =   0.0156
+  RMS(angles)           =   1.66
+  MolProbity score      =   2.56
+  Refinement program    = REFMAC

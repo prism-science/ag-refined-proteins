@@ -1,0 +1,118 @@
+{
+ "clashscore": 1.593625498007968,
+ "raw_count": 2,
+ "invocation": {
+  "argv": [
+   "phenix.clashscore",
+   "/home/dev/runs/9ARN/c000/baseline_rerefine/refine_001.cif",
+   "--json",
+   "--json-filename=/home/dev/runs/9ARN/c000/baseline_rerefine/clashscore.json",
+   "keep_hydrogens=False",
+   "nuclear=False"
+  ],
+  "job_id": "9ARN.baseline_rerefine.phenix.clashscore.1789627850603.598602",
+  "exit_code": 0,
+  "wall_clock_s": 17.8,
+  "json": "/home/dev/runs/9ARN/c000/baseline_rerefine/clashscore.json",
+  "log": "/home/dev/runs/9ARN/c000/baseline_rerefine/phenix.clashscore.stdout.log"
+ },
+ "parse_notes": [
+  "letter inferred for an added hydrogen in pass PAB"
+ ],
+ "complete_count": 3,
+ "complete_passes": 4,
+ "clashscore_altloc_aware": 1.5936,
+ "kept_count": 2,
+ "dropped_count": 1,
+ "occ_weighted_count": 2.0,
+ "rules_applied": {
+  "R2_blank_shared": 2,
+  "R1_same_residue_cross_letter": 1
+ },
+ "altloc_filter": "autoref.model+complete_pairs",
+ "kept": [
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 9,
+    "icode": "",
+    "resname": "ARG",
+    "name": "HH22",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 16,
+    "icode": "",
+    "resname": "ARG",
+    "name": "NH2",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "overlap": 0.503,
+   "source": "raw",
+   "rule": "R2_blank_shared",
+   "weight": 1.0,
+   "network1": null,
+   "network2": null,
+   "occ_source": "input"
+  },
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 1,
+    "icode": "",
+    "resname": "PRO",
+    "name": "HB2",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 4,
+    "icode": "",
+    "resname": "GLU",
+    "name": "HG2",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "overlap": 0.499,
+   "source": "raw",
+   "rule": "R2_blank_shared",
+   "weight": 1.0,
+   "network1": null,
+   "network2": null,
+   "occ_source": "input"
+  }
+ ],
+ "dropped": [
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 68,
+    "icode": "",
+    "resname": "ILE",
+    "name": "HG12",
+    "altloc": "B",
+    "occ": 0.5260000228881836
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 68,
+    "icode": "",
+    "resname": "ILE",
+    "name": "HD13",
+    "altloc": "A",
+    "occ": 0.4740000069141388
+   },
+   "overlap": 0.451,
+   "source": "PAB",
+   "rule": "R1_same_residue_cross_letter",
+   "weight": 0.0,
+   "network1": 0,
+   "network2": 0,
+   "occ_source": "input"
+  }
+ ]
+}

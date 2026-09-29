@@ -1,0 +1,297 @@
+{
+ "run_id": "3TC7.run2",
+ "target": "3TC7",
+ "run_dir": "/home/dev/runs/3TC7/runs/3TC7.run2",
+ "cycles": [
+  21,
+  22,
+  23,
+  24,
+  25
+ ],
+ "n_cycles": 5,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A128"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A41"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A61"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A51"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A86"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A11"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A147"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A22"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A158"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A134"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A157"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A177"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A65"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A201"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A208"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A205"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A130"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A78"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A137"
+  ],
+  [
+   21,
+   "3TC7.c021.protein_altloc_add.A40"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A167"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A94"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A74"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A34"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A95"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A168"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A72"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A179"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A206"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A107"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A159"
+  ],
+  [
+   22,
+   "3TC7.c022.protein_altloc_add.A82"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A22A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A41B"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A51A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A56A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A78C"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A86B"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A93A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A94A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A95A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A111A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A128A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A130B"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A134B"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A137B"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A155C"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A157A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_prune.A194A"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_add.A129"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_add.A133"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_add.A46"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_add.A166"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_add.A136"
+  ],
+  [
+   23,
+   "3TC7.c023.protein_altloc_add.A152"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.1531384730728666,
+  "r_free_full": 0.187925177887822,
+  "r_free_select": 0.19300956423906543,
+  "r_free_report": 0.18272864649757545,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "r_free_final": {
+  "r_work": 0.14679476884203055,
+  "r_free_full": 0.18417302884819434,
+  "r_free_select": 0.1885086126445358,
+  "r_free_report": 0.17974181616365467,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "delta_r_free_full": -0.003752,
+ "delta_r_free_report": -0.002987,
+ "published_better": {
+  "r_work": 0.138,
+  "r_free": 0.163,
+  "method": "qFit multiconformer model",
+  "source": "https://dynamicpdb.com/entries/a937eeb3-1dfd-43a3-af1a-08675aad9807",
+  "fetched": "2026-08-27"
+ },
+ "published_target_r_free": 0.163,
+ "reached_target": false,
+ "gap_closed_fraction": 0.1505,
+ "sigma_select": 0.001811,
+ "k_multiple": 2.0,
+ "refine_extra_final": {},
+ "escape_tried": {
+  "reweight_reseed": "failed",
+  "rescale_bulk_solvent": "failed",
+  "simulated_annealing": "refused"
+ },
+ "final_model": "/home/dev/runs/3TC7/runs/3TC7.run2/cycles/c025/escape/null_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/3TC7/runs/3TC7.run2/cycles/c025/escape/null_arm/refine_001.mtz",
+ "stop_reason": "escape ladder exhausted (reweight_reseed=failed, rescale_bulk_solvent=failed, simulated_annealing=refused): the model is converged at this minimum",
+ "best_base": {
+  "cycle_index": 24,
+  "model": "/home/dev/runs/3TC7/runs/3TC7.run2/cycles/c024/escape/null_arm/refine_001.cif",
+  "mtz": "/home/dev/runs/3TC7/runs/3TC7.run2/cycles/c024/escape/null_arm/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.14688398815151782,
+   "r_free_full": 0.18420958499393372,
+   "r_free_select": 0.18832667417818255,
+   "r_free_report": 0.18000168620253618,
+   "d_min": 1.4999525524595603,
+   "n_free": 2075,
+   "n_select": 1037,
+   "n_report": 1038
+  }
+ },
+ "started_at": "2026-08-27T20:01:15+00:00",
+ "finished_at": "2026-08-28T03:55:14+00:00"
+}

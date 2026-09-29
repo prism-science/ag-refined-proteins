@@ -1,0 +1,53 @@
+{
+ "run_id": "3TC7.smoke1",
+ "target": "3TC7",
+ "run_dir": "/home/dev/runs/3TC7/runs/3TC7.smoke1",
+ "cycles": [
+  1
+ ],
+ "n_cycles": 1,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [],
+ "r_free_start": {
+  "r_work": 0.15328839080604148,
+  "r_free_full": 0.1917118596921645,
+  "r_free_select": 0.1966751946017364,
+  "r_free_report": 0.1866390497449829,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "r_free_final": {
+  "r_work": 0.15584991569069717,
+  "r_free_full": 0.1909527593528231,
+  "r_free_select": 0.19505044923657153,
+  "r_free_report": 0.18676468774744748,
+  "d_min": 1.4999525524595603,
+  "n_free": 2075,
+  "n_select": 1037,
+  "n_report": 1038
+ },
+ "delta_r_free_full": -0.000759,
+ "delta_r_free_report": 0.000126,
+ "published_better": {
+  "r_work": 0.138,
+  "r_free": 0.163,
+  "method": "qFit multiconformer model",
+  "source": "https://dynamicpdb.com/entries/a937eeb3-1dfd-43a3-af1a-08675aad9807",
+  "fetched": "2026-08-27"
+ },
+ "published_target_r_free": 0.163,
+ "reached_target": false,
+ "gap_closed_fraction": 0.0264,
+ "sigma_select": 0.001811,
+ "k_multiple": 2.0,
+ "refine_extra_final": {},
+ "escape_tried": {},
+ "final_model": "/home/dev/runs/3TC7/runs/3TC7.smoke1/cycles/c001/rerefine/refine_001.cif",
+ "final_mtz": "/home/dev/runs/3TC7/runs/3TC7.smoke1/cycles/c001/rerefine/refine_001.mtz",
+ "stop_reason": "max_cycles=1 reached",
+ "started_at": "2026-08-27T16:21:24+00:00",
+ "finished_at": "2026-08-27T16:46:22+00:00"
+}

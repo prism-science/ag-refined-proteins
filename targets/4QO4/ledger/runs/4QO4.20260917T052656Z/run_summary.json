@@ -1,0 +1,108 @@
+{
+ "run_id": "4QO4.20260917T052656Z",
+ "target": "4QO4",
+ "run_dir": "/home/dev/runs/4QO4/runs/4QO4.20260917T052656Z",
+ "cycles": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "n_cycles": 8,
+ "n_credited_cycles": 3,
+ "credited_change_ids": [
+  "4QO4.c001.water_remove.A346",
+  "4QO4.c001.water_remove.A364",
+  "4QO4.c001.water_remove.A309",
+  "4QO4.c001.water_remove.A340",
+  "4QO4.c001.water_remove.A310",
+  "4QO4.c004.water_remove.A365",
+  "4QO4.c004.water_remove.A325",
+  "4QO4.c004.water_remove.A339",
+  "4QO4.c004.water_remove.A329",
+  "4QO4.c004.water_remove.A353",
+  "4QO4.c008.weight_change.rescale_bulk_solvent"
+ ],
+ "kept_uncredited": [
+  [
+   6,
+   "4QO4.c006.rotamer_fix.A18"
+  ],
+  [
+   6,
+   "4QO4.c006.water_remove.A370"
+  ],
+  [
+   6,
+   "4QO4.c006.water_remove.A371"
+  ],
+  [
+   6,
+   "4QO4.c006.water_add.A5001"
+  ],
+  [
+   6,
+   "4QO4.c006.water_add.A5002"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.28717316643233076,
+  "r_free_full": 0.36190468754175514,
+  "r_free_select": 0.3414751997278627,
+  "r_free_report": 0.38475677251927276,
+  "d_min": 1.700359054039257,
+  "n_free": 528,
+  "n_select": 264,
+  "n_report": 264
+ },
+ "r_free_final": {
+  "r_work": 0.2599204605159017,
+  "r_free_full": 0.32495401078949043,
+  "r_free_select": 0.3187102950887748,
+  "r_free_report": 0.3319381272327418,
+  "d_min": 1.700359054039257,
+  "n_free": 528,
+  "n_select": 264,
+  "n_report": 264
+ },
+ "delta_r_free_full": -0.036951,
+ "delta_r_free_report": -0.052819,
+ "published_better": null,
+ "published_target_r_free": null,
+ "reached_target": null,
+ "published_comparable_to_our_flags": null,
+ "gap_closed_fraction": null,
+ "sigma_select": 0.001872,
+ "k_multiple": 2.0,
+ "refine_extra_final": {
+  "bulk_solvent_mode": "slow"
+ },
+ "escape_tried": {
+  "reweight_reseed": "failed",
+  "rescale_bulk_solvent": "cleared"
+ },
+ "final_model": "/home/dev/runs/4QO4/runs/4QO4.20260917T052656Z/cycles/c008/escape/candidate_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/4QO4/runs/4QO4.20260917T052656Z/cycles/c008/escape/candidate_arm/refine_001.mtz",
+ "stop_reason": "max_cycles=8 reached",
+ "best_base": {
+  "cycle_index": 8,
+  "model": "/home/dev/runs/4QO4/runs/4QO4.20260917T052656Z/cycles/c008/escape/candidate_arm/refine_001.cif",
+  "mtz": "/home/dev/runs/4QO4/runs/4QO4.20260917T052656Z/cycles/c008/escape/candidate_arm/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.2599204605159017,
+   "r_free_full": 0.32495401078949043,
+   "r_free_select": 0.3187102950887748,
+   "r_free_report": 0.3319381272327418,
+   "d_min": 1.700359054039257,
+   "n_free": 528,
+   "n_select": 264,
+   "n_report": 264
+  }
+ },
+ "started_at": "2026-09-17T05:26:56+00:00",
+ "finished_at": "2026-09-17T08:16:13+00:00"
+}

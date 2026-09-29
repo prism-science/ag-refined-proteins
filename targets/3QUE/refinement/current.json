@@ -1,0 +1,12 @@
+{
+ "target": "3QUE",
+ "model": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.cif",
+ "maps_mtz": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.mtz",
+ "cycle_index": 62,
+ "stage": "rerefine",
+ "r_free_select": 0.2536515243015218,
+ "r_free_report": 0.26440837191730937,
+ "r_free_full": 0.25891058999407407,
+ "r_work": 0.21131427444753276,
+ "updated_at": "2026-08-28T17:28:38+00:00"
+}

@@ -1,0 +1,3208 @@
+Starting phenix.refine
+on Thu Sep 17 05:27:06 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/data/raw/1LZ9/1LZ9.cif
+  Found miller_array, /home/dev/data/targets/1LZ9/data.mtz
+  Found miller_array, /home/dev/data/targets/1LZ9/flags.mtz
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    refinement.input.xray_data.labels=FP,SIGFP
+    refinement.input.xray_data.r_free_flags.label=R-free-flags
+    data_manager.fmodel.xray_data.r_free_flags.test_flag_value=0
+    data_manager.fmodel.xray_data.r_free_flags.generate=False
+    data_manager.fmodel.xray_data.r_free_flags.ignore_r_free_flags=False
+    refinement.main.number_of_macro_cycles=5
+    refinement.main.random_seed=1
+    refinement.main.nproc=1
+    refinement.refine.strategy=individual_sites+individual_adp+occupancies+tls
+    refinement.refine.adp.individual.isotropic=not (element H or element D)
+    refinement.refine.adp.tls=chain 'A' and (resid    1  through   14 )
+    refinement.refine.adp.tls=chain 'A' and (resid   15  through   24 )
+    refinement.refine.adp.tls=chain 'A' and (resid   25  through   42 )
+    refinement.refine.adp.tls=chain 'A' and (resid   43  through   50 )
+    refinement.refine.adp.tls=chain 'A' and (resid   51  through   68 )
+    refinement.refine.adp.tls=chain 'A' and (resid   69  through   88 )
+    refinement.refine.adp.tls=chain 'A' and (resid   89  through   99 )
+    refinement.refine.adp.tls=chain 'A' and (resid  100  through  114 )
+    refinement.refine.adp.tls=chain 'A' and (resid  115  through  129 )
+    refinement.target_weights.optimize_xyz_weight=True
+    refinement.target_weights.optimize_adp_weight=True
+    refinement.pdb_interpretation.ramachandran_plot_restraints.enabled=False
+    refinement.pdb_interpretation.secondary_structure.enabled=False
+    refinement.main.ordered_solvent=False
+    refinement.main.simulated_annealing=False
+    refinement.main.nqh_flips=False
+    refinement.hydrogens.refine=riding
+    refinement.main.find_and_add_hydrogens=False
+    refinement.bulk_solvent_and_scale.mode=fast
+    output.prefix=refine
+    output.serial=1
+    output.overwrite=True
+    output.write_map_coefficients=True
+    output.write_geo_file=False
+    output.write_def_file=False
+    output.write_eff_file=True
+
+No user-defined map coefficients or files defined; will use default map
+outputs instead.
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/data/raw/1LZ9/1LZ9.cif"
+    }
+    default_model = "/home/dev/data/raw/1LZ9/1LZ9.cif"
+    miller_array {
+      file = "/home/dev/data/targets/1LZ9/data.mtz"
+    }
+    miller_array {
+      file = "/home/dev/data/targets/1LZ9/flags.mtz"
+    }
+    fmodel {
+      xray_data {
+        r_free_flags {
+          test_flag_value = 0
+        }
+      }
+    }
+    default_miller_array = "/home/dev/data/targets/1LZ9/data.mtz"
+  }
+  refinement {
+    output {
+      write_geo_file = False
+      write_def_file = False
+    }
+    electron_density_maps {
+      map_coefficients {
+        map_type = 2mFo-DFc
+        mtz_label_amplitudes = 2FOFCWT
+        mtz_label_phases = PH2FOFCWT
+        fill_missing_f_obs = True
+      }
+      map_coefficients {
+        map_type = 2mFo-DFc
+        mtz_label_amplitudes = 2FOFCWT_no_fill
+        mtz_label_phases = PH2FOFCWT_no_fill
+      }
+      map_coefficients {
+        map_type = mFo-DFc
+        mtz_label_amplitudes = FOFCWT
+        mtz_label_phases = PHFOFCWT
+      }
+      map_coefficients {
+        map_type = anomalous
+        mtz_label_amplitudes = ANOM
+        mtz_label_phases = PANOM
+      }
+      map {
+        map_type = 2mFo-DFc
+        fill_missing_f_obs = True
+      }
+      map {
+        map_type = 2mFo-DFc
+      }
+      map {
+        map_type = mFo-DFc
+      }
+    }
+    refine {
+      strategy = *individual_sites individual_sites_real_space rigid_body \
+                 *individual_adp group_adp *tls *occupancies group_anomalous \
+                 den
+      adp {
+        individual {
+          isotropic = not (element H or element D)
+        }
+        tls = chain 'A' and (resid 1 through 14 )
+        tls = chain 'A' and (resid 15 through 24 )
+        tls = chain 'A' and (resid 25 through 42 )
+        tls = chain 'A' and (resid 43 through 50 )
+        tls = chain 'A' and (resid 51 through 68 )
+        tls = chain 'A' and (resid 69 through 88 )
+        tls = chain 'A' and (resid 89 through 99 )
+        tls = chain 'A' and (resid 100 through 114 )
+        tls = chain 'A' and (resid 115 through 129 )
+      }
+    }
+    main {
+      nqh_flips = False
+      number_of_macro_cycles = 5
+      random_seed = 1
+    }
+    hydrogens {
+      refine = individual *riding Auto
+    }
+    target_weights {
+      optimize_xyz_weight = True
+      optimize_adp_weight = True
+    }
+    gui {
+      migration {
+        refinement {
+          input {
+            xray_data {
+              labels = FP,SIGFP
+              r_free_flags {
+                label = R-free-flags
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  output {
+    prefix = refine
+    serial = 1
+    overwrite = True
+  }
+
+
+Starting job
+===============================================================================
+
+  Symmetric amino acids flipped. Time to flip 2 residue(s): 0.00s
+
+  Monomer Library directory:
+    "/opt/phenix/lib/python3.9/site-packages/chem_data/mon_lib"
+  Total number of atoms: 1214
+  Number of models: 1
+  Model: ""
+    Number of chains: 2
+    Chain: "A"
+      Number of atoms: 1010
+      Number of conformers: 2
+      Conformer: "A"
+        Number of residues, atoms: 129, 1001
+          Classifications: {'peptide': 129}
+          Modifications used: {'COO': 1}
+          Link IDs: {'PTRANS': 2, 'TRANS': 126}
+      Conformer: "B"
+        Number of residues, atoms: 129, 1001
+          Classifications: {'peptide': 129}
+          Modifications used: {'COO': 1}
+          Link IDs: {'PTRANS': 2, 'TRANS': 126}
+          bond proxies already assigned to first conformer: 1012
+    Chain: "A"
+      Number of atoms: 204
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 204, 204
+          Unusual residues: {' BR': 6, ' NA': 1}
+          Classifications: {'undetermined': 7, 'water': 197}
+          Link IDs: {None: 203}
+  Residues with excluded nonbonded symmetry interactions: 34
+    residue:
+      pdb=" O   HOH A 373 " occ=0.50
+    residue:
+      pdb=" O   HOH A 374 " occ=0.50
+    residue:
+      pdb=" O   HOH A 375 " occ=0.50
+    residue:
+      pdb=" O   HOH A 376 " occ=0.50
+    residue:
+      pdb=" O   HOH A 377 " occ=0.50
+    residue:
+      pdb=" O   HOH A 378 " occ=0.50
+    residue:
+      pdb=" O   HOH A 379 " occ=0.50
+    residue:
+      pdb=" O   HOH A 380 " occ=0.50
+    residue:
+      pdb=" O   HOH A 381 " occ=0.50
+    residue:
+      pdb=" O   HOH A 382 " occ=0.50
+    residue:
+      pdb=" O   HOH A 383 " occ=0.50
+    residue:
+      pdb=" O   HOH A 384 " occ=0.50
+    ... (remaining 22 not shown)
+  Time building chain proxies: 0.32, per 1000 atoms: 0.26
+  Number of scatterers: 1214
+  At special positions: 0
+  Unit cell: (78.6, 78.6, 37.2, 90, 90, 90)
+  Space group: P 43 21 2 (No. 96)
+  Number of sites at special positions: 0
+  Number of scattering types: 6
+    Type Number    sf(0)
+     Br      6     34.99
+     S      10     16.00
+     Na      1     11.00
+     O     383      8.00
+     N     195      7.00
+     C     619      6.00
+    sf(0) = scattering factor at diffraction angle 0.
+
+  Number of disulfides: simple=4, symmetry=0
+    Simple disulfide: pdb=" SG  CYS A   6 " - pdb=" SG  CYS A 127 " distance=2.04
+    Simple disulfide: pdb=" SG  CYS A  30 " - pdb=" SG  CYS A 115 " distance=2.10
+    Simple disulfide: pdb=" SG  CYS A  64 " - pdb=" SG  CYS A  80 " distance=2.14
+    Simple disulfide: pdb=" SG  CYS A  76 " - pdb=" SG  CYS A  94 " distance=2.08
+
+  Automatic linking
+    Parameters for automatic linking
+      Linking & cutoffs
+        Metal                : Auto  - 3.00
+        Amino acid           : True  - 1.90
+        Carbohydrate         : True  - 1.99
+        Ligands              : True  - 1.99
+        Small molecules      : False - 1.98
+        Amino acid - RNA/DNA : False
+      
+  Number of custom bonds: simple=0, symmetry=0
+  Time building additional restraints: 0.05
+  Conformation dependent library (CDL) restraints added in 35.1 milliseconds
+  
+  Adding C-beta torsion restraints...
+  Number of C-beta restraints generated:  236
+
+  Time building geometry restraints manager: 0.07 seconds
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+  Histogram of bond lengths:
+        1.16 -     1.53: 810
+        1.53 -     1.90: 218
+        1.90 -     2.28: 1
+        2.28 -     2.65: 0
+        2.65 -     3.02: 1
+  Bond restraints: 1030
+  Sorted by residual:
+  bond pdb=" CG  ASN A  37 "
+       pdb=" ND2 ASN A  37 "
+    ideal  model  delta    sigma   weight residual
+    1.328  3.019 -1.691 2.10e-02 2.27e+03 6.49e+03
+  bond pdb=" CB  ARG A 125 "
+       pdb=" CG  ARG A 125 "
+    ideal  model  delta    sigma   weight residual
+    1.520  1.778 -0.258 3.00e-02 1.11e+03 7.41e+01
+  bond pdb=" C   VAL A   2 "
+       pdb=" O   VAL A   2 "
+    ideal  model  delta    sigma   weight residual
+    1.238  1.331 -0.093 1.09e-02 8.42e+03 7.36e+01
+  bond pdb=" C   LEU A  56 "
+       pdb=" N   GLN A  57 "
+    ideal  model  delta    sigma   weight residual
+    1.330  1.437 -0.107 1.30e-02 5.92e+03 6.75e+01
+  bond pdb=" C   VAL A 120 "
+       pdb=" N   GLN A 121 "
+    ideal  model  delta    sigma   weight residual
+    1.335  1.429 -0.094 1.33e-02 5.65e+03 5.00e+01
+  ... (remaining 1025 not shown)
+
+  Histogram of bond angle deviations from ideal:
+        0.00 -     5.21: 1098
+        5.21 -    10.42: 270
+       10.42 -    15.63: 21
+       15.63 -    20.85: 2
+       20.85 -    26.06: 2
+  Bond angle restraints: 1393
+  Sorted by residual:
+  angle pdb=" OD1 ASN A  37 "
+        pdb=" CG  ASN A  37 "
+        pdb=" ND2 ASN A  37 "
+      ideal   model   delta    sigma   weight residual
+     122.60   97.77   24.83 1.00e+00 1.00e+00 6.17e+02
+  angle pdb=" CA  ASP A  18 "
+        pdb=" CB  ASP A  18 "
+        pdb=" CG  ASP A  18 "
+      ideal   model   delta    sigma   weight residual
+     112.60  131.73  -19.13 1.00e+00 1.00e+00 3.66e+02
+  angle pdb=" CB  ASN A  37 "
+        pdb=" CG  ASN A  37 "
+        pdb=" ND2 ASN A  37 "
+      ideal   model   delta    sigma   weight residual
+     116.40  142.46  -26.06 1.50e+00 4.44e-01 3.02e+02
+  angle pdb=" NE  ARG A  68 "
+        pdb=" CZ  ARG A  68 "
+        pdb=" NH1 ARG A  68 "
+      ideal   model   delta    sigma   weight residual
+     121.50  109.14   12.36 1.00e+00 1.00e+00 1.53e+02
+  angle pdb=" O   ASN A 103 "
+        pdb=" C   ASN A 103 "
+        pdb=" N   GLY A 104 "
+      ideal   model   delta    sigma   weight residual
+     122.26  136.36  -14.10 1.23e+00 6.61e-01 1.31e+02
+  ... (remaining 1388 not shown)
+
+  Histogram of dihedral angle deviations from ideal:
+        0.02 -    17.08: 571
+       17.08 -    34.13: 39
+       34.13 -    51.19: 4
+       51.19 -    68.25: 3
+       68.25 -    85.30: 2
+  Dihedral angle restraints: 619
+    sinusoidal: 252
+      harmonic: 367
+  Sorted by residual:
+  dihedral pdb=" N   ASN A  39 "
+           pdb=" C   ASN A  39 "
+           pdb=" CA  ASN A  39 "
+           pdb=" CB  ASN A  39 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     122.80  108.97   13.83     0      2.50e+00 1.60e-01 3.06e+01
+  dihedral pdb=" N   LYS A   1 "
+           pdb=" C   LYS A   1 "
+           pdb=" CA  LYS A   1 "
+           pdb=" CB  LYS A   1 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     122.80  109.90   12.90     0      2.50e+00 1.60e-01 2.66e+01
+  dihedral pdb=" N   LYS A  96 "
+           pdb=" C   LYS A  96 "
+           pdb=" CA  LYS A  96 "
+           pdb=" CB  LYS A  96 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     122.80  110.01   12.79     0      2.50e+00 1.60e-01 2.62e+01
+  ... (remaining 616 not shown)
+
+  Histogram of chiral volume deviations from ideal:
+       0.002 -    0.164: 69
+       0.164 -    0.326: 44
+       0.326 -    0.487: 22
+       0.487 -    0.649: 10
+       0.649 -    0.810: 1
+  Chirality restraints: 146
+  Sorted by residual:
+  chirality pdb=" CB  ILE A  55 "
+            pdb=" CA  ILE A  55 "
+            pdb=" CG1 ILE A  55 "
+            pdb=" CG2 ILE A  55 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.64    1.83    0.81 2.00e-01 2.50e+01 1.64e+01
+  chirality pdb=" CA  ASN A  74 "
+            pdb=" N   ASN A  74 "
+            pdb=" C   ASN A  74 "
+            pdb=" CB  ASN A  74 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.51    3.10   -0.59 2.00e-01 2.50e+01 8.56e+00
+  chirality pdb=" CA  ASN A  44 "
+            pdb=" N   ASN A  44 "
+            pdb=" C   ASN A  44 "
+            pdb=" CB  ASN A  44 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.51    3.07   -0.56 2.00e-01 2.50e+01 7.80e+00
+  ... (remaining 143 not shown)
+
+  Planarity restraints: 182
+  Sorted by residual:
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  LEU A 129 "    0.066 2.00e-02 2.50e+03   1.30e-01 1.68e+02
+        pdb=" C   LEU A 129 "   -0.224 2.00e-02 2.50e+03
+        pdb=" O   LEU A 129 "    0.080 2.00e-02 2.50e+03
+        pdb=" OXT LEU A 129 "    0.079 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  ALA A  90 "   -0.039 2.00e-02 2.50e+03   7.96e-02 6.33e+01
+        pdb=" C   ALA A  90 "    0.138 2.00e-02 2.50e+03
+        pdb=" O   ALA A  90 "   -0.049 2.00e-02 2.50e+03
+        pdb=" N   SER A  91 "   -0.050 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  SER A  50 "    0.034 2.00e-02 2.50e+03   6.70e-02 4.48e+01
+        pdb=" C   SER A  50 "   -0.116 2.00e-02 2.50e+03
+        pdb=" O   SER A  50 "    0.044 2.00e-02 2.50e+03
+        pdb=" N   THR A  51 "    0.038 2.00e-02 2.50e+03
+  ... (remaining 179 not shown)
+
+  Histogram of nonbonded interaction distances:
+        1.52 -     2.20: 13
+        2.20 -     2.87: 582
+        2.87 -     3.55: 1999
+        3.55 -     4.22: 4134
+        4.22 -     4.90: 6111
+  Nonbonded interactions: 12839
+  Sorted by model distance:
+  nonbonded pdb=" O   HOH A 295 "
+            pdb=" O   HOH A 295 "
+     model   vdw sym.op.
+     1.522 3.040 y,x,-z+2
+  nonbonded pdb=" O   HOH A 260 "
+            pdb=" O   HOH A 260 "
+     model   vdw sym.op.
+     1.554 3.040 -y,-x,-z+1/2
+  nonbonded pdb=" ND2 ASN A  37 "
+            pdb=" O   HOH A 331 "
+     model   vdw
+     1.689 3.120
+  nonbonded pdb=" O   HOH A 301 "
+            pdb=" O   HOH A 379 "
+     model   vdw
+     1.974 3.040
+  nonbonded pdb=" NH2 ARG A  73 "
+            pdb=" O   HOH A 393 "
+     model   vdw
+     2.058 3.120
+  ... (remaining 12834 not shown)
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+============================== Scattering factors =============================
+
+
+                ----------X-ray scattering dictionary----------                
+
+Number of scattering types: 6
+  Type Number    sf(0)   Gaussians
+   Br      6     34.91       2
+   S      10     15.96       2
+   Na      1     10.93       2
+   O     383      7.97       2
+   N     195      6.97       2
+   C     619      5.97       2
+  sf(0) = scattering factor at diffraction angle 0.
+
+=========================== Regularize ADP if needed ==========================
+
+
+========================== Anomalous scatterer groups =========================
+
+All atoms refined with f_prime=0 and f_double_prime=0.
+
+====================== Modifying start model if requested =====================
+
+n_use            =  1214
+n_use_u_iso      =  1214
+n_use_u_aniso    =  0
+n_grad_site      =  0
+n_grad_u_iso     =  0
+n_grad_u_aniso   =  0
+n_grad_occupancy =  0
+n_grad_fp        =  0
+n_grad_fdp       =  0
+total number of scatterers =  1214
+
+================== Extract refinement strategy and selections =================
+
+Refinement flags and selection counts:
+  individual_sites       =  True (1214 atoms)
+  torsion_angles         = False (0 atoms)
+  rigid_body             = False (0 atoms in 0 groups)
+  individual_adp         =  True (iso = 1214 aniso = 0)
+  group_adp              = False (1214 atoms in 333 groups)
+  tls                    =  True (1010 atoms in 9 groups)
+  occupancies            =  True (215 atoms)
+  group_anomalous        = False
+
+============================ Non-default parameters ===========================
+
+A complete record of all parameters was written to the .eff file above.
+Below are only the non-defaults.
+
+#phil __ON__
+refinement {
+  output {
+    write_geo_file = False
+    write_def_file = False
+  }
+  electron_density_maps {
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT"
+      mtz_label_phases = "PH2FOFCWT"
+      fill_missing_f_obs = True
+    }
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT_no_fill"
+      mtz_label_phases = "PH2FOFCWT_no_fill"
+    }
+    map_coefficients {
+      map_type = "mFo-DFc"
+      mtz_label_amplitudes = "FOFCWT"
+      mtz_label_phases = "PHFOFCWT"
+    }
+    map_coefficients {
+      map_type = "anomalous"
+      mtz_label_amplitudes = "ANOM"
+      mtz_label_phases = "PANOM"
+    }
+    map {
+      map_type = "2mFo-DFc"
+      fill_missing_f_obs = True
+    }
+    map {
+      map_type = "2mFo-DFc"
+    }
+    map {
+      map_type = "mFo-DFc"
+    }
+  }
+  refine {
+    strategy = *individual_sites individual_sites_real_space rigid_body \
+               *individual_adp group_adp *tls *occupancies group_anomalous \
+               den
+    adp {
+      individual {
+        isotropic = not (element H or element D)
+      }
+      tls = chain 'A' and (resid 1 through 14 )
+      tls = chain 'A' and (resid 15 through 24 )
+      tls = chain 'A' and (resid 25 through 42 )
+      tls = chain 'A' and (resid 43 through 50 )
+      tls = chain 'A' and (resid 51 through 68 )
+      tls = chain 'A' and (resid 69 through 88 )
+      tls = chain 'A' and (resid 89 through 99 )
+      tls = chain 'A' and (resid 100 through 114 )
+      tls = chain 'A' and (resid 115 through 129 )
+    }
+  }
+  main {
+    nqh_flips = False
+    number_of_macro_cycles = 5
+    random_seed = 1
+  }
+  hydrogens {
+    refine = individual *riding Auto
+  }
+  target_weights {
+    optimize_xyz_weight = True
+    optimize_adp_weight = True
+  }
+  gui {
+    migration {
+      refinement {
+        input {
+          xray_data {
+            labels = "FP,SIGFP"
+            r_free_flags {
+              label = "R-free-flags"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+output {
+  prefix = "refine"
+  serial = 1
+  target_output_format = None pdb *mmcif
+  overwrite = True
+}
+#phil __OFF__
+
+
+   ----------structure factors based statistics (before refinement)----------  
+
+
+                         ----------X-ray data----------                        
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2489 r_free= 0.3297 coordinate error (max.-lik. estimate): 0.06 A |
+|                                                                             |
+| normalized target function (ml) (work): 5.165250                            |
+| target function (ml) not normalized (work): 61931.341806                    |
+| target function (ml) not normalized (free): 7111.884484                     |
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+| Bin     Resolution   Compl.  No. Refl.    R-factors          Targets        |
+|number     range              work test   work   test        work        test|
+|  1:   19.06 -    3.53 1.00   1467  136 0.3361 0.4243      6.3874      6.5597|
+|  2:    3.53 -    2.81 1.00   1339  161 0.2402 0.3109      5.9467      6.1652|
+|  3:    2.80 -    2.45 1.00   1348  145 0.2221 0.3197      5.4534      5.6275|
+|  4:    2.45 -    2.23 1.00   1320  150 0.2285 0.2812      5.2194      5.4443|
+|  5:    2.23 -    2.07 1.00   1305  140 0.2275 0.3133      5.0417      5.3174|
+|  6:    2.07 -    1.95 1.00   1311  160 0.2199 0.3357      4.8614      5.1672|
+|  7:    1.95 -    1.85 1.00   1298  147 0.1985 0.2973      4.6549      4.9074|
+|  8:    1.85 -    1.77 1.00   1296  135 0.1855 0.2874       4.452      4.7156|
+|  9:    1.77 -    1.70 1.00   1306  144 0.1775 0.2553      4.2825      4.6205|
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+|R-free likelihood based estimates for figures of merit, absolute phase error,|
+|and distribution parameters alpha and beta (Acta Cryst. (1995). A51, 880-887)|
+|                                                                             |
+| Bin     Resolution      No. Refl.   FOM  Phase Scale    Alpha        Beta   |
+|  #        range        work  test        error factor                       |
+|  1:   19.06 -    3.53  1467   136  0.59  43.29   0.88     0.71      86362.41|
+|  2:    3.53 -    2.81  1339   161  0.67  37.08   1.08     0.87      40290.33|
+|  3:    2.80 -    2.45  1348   145  0.75  30.16   1.10     0.94      14082.70|
+|  4:    2.45 -    2.23  1320   150  0.77  28.10   1.15     0.96       8502.14|
+|  5:    2.23 -    2.07  1305   140  0.80  25.76   1.18     0.99       5878.28|
+|  6:    2.07 -    1.95  1311   160  0.79  26.95   1.16     1.00       4235.54|
+|  7:    1.95 -    1.85  1298   147  0.78  27.40   1.10     0.96       2760.84|
+|  8:    1.85 -    1.77  1296   135  0.78  27.62   1.08     0.92       1961.09|
+|  9:    1.77 -    1.70  1306   144  0.80  26.15   1.05     0.91       1353.81|
+|alpha:            min =        0.71 max =            1.00 mean =         0.92|
+|beta:             min =     1353.81 max =        86362.41 mean =     19346.61|
+|figures of merit: min =        0.00 max =            1.00 mean =         0.75|
+|phase err.(work): min =        0.00 max =           90.00 mean =        30.47|
+|phase err.(test): min =        0.00 max =           89.68 mean =        28.20|
+|-----------------------------------------------------------------------------|
+
+        ----------Initial model statistics (before refinement)----------       
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.062   1.691   1034  Z= 3.284
+    Angle     :  4.332  26.058   1401  Z= 3.094
+    Chirality :  0.262   0.810    146
+    Planarity :  0.026   0.130    182
+    Dihedral  : 13.750  85.304    371
+    Min Nonbonded Distance : 1.522
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 8.08
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  3.94 %
+      Favored  : 96.06 %
+    Rotamer:
+      Outliers :  2.78 %
+      Allowed  :  3.70 %
+      Favored  : 93.52 %
+    Cbeta Deviations : 17.80 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole: -1.62 (0.70), residues: 127
+    helix: -2.22 (0.59), residues: 51
+    sheet: -2.02 (0.92), residues: 10
+    loop :  0.30 (0.80), residues: 66
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.042   0.005   ARG A   5 
+   TYR   0.039   0.013   TYR A  23 
+   PHE   0.047   0.019   PHE A  38 
+   TRP   0.047   0.018   TRP A 123 
+   HIS   0.021   0.014   HIS A  15 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.06218 ( 1030)
+    covalent geometry    : angle       4.33675 ( 1393)
+    SS BOND              : bond        0.06848 (    4)
+    SS BOND              : angle       3.35763 (    8)
+
+ Individual atomic B
+                min    max   mean <Bi,j>   iso aniso
+   Overall:    3.81  79.95  17.57   4.64  1214  1010
+   Protein:    3.81  79.95  15.53   4.64  1010  1010
+   Water:      8.59  44.24  27.65    N/A   197     0
+   Other:     15.28  46.80  28.80    N/A     7     0
+   Chain  A:   3.81  79.95  17.57    N/A  1214  1010
+   Histogram:
+       Values      Number of atoms
+     3.81 - 11.42       362
+    11.42 - 19.04       478
+    19.04 - 26.65       172
+    26.65 - 34.27       107
+    34.27 - 41.88        67
+    41.88 - 49.49        19
+    49.49 - 57.11         4
+    57.11 - 64.72         1
+    64.72 - 72.34         1
+    72.34 - 79.95         3
+
+|-Occupancies statistics------------------------------------------------------|
+| occupancies: max = 1.00   min = 0.00   number of occupancies < 0.1 = 6      |
+|-----------------------------------------------------------------------------|
+Writing MTZ file:
+  /home/dev/runs/1LZ9/c000/baseline_rerefine/refine_data.mtz
+
+
+=================== Write initial parameters into .eff file ===================
+
+
+
+*********************** REFINEMENT MACRO_CYCLE 1 OF 5 *************************
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2489 r_free= 0.3297 coordinate error (max.-lik. estimate): 0.06 A |
+|                                                                             |
+| normalized target function (ml) (work): 5.165250                            |
+| target function (ml) not normalized (work): 61931.341806                    |
+| target function (ml) not normalized (free): 7111.884484                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2573 0.2489 0.3297 n_refl.: 13308
+       re-set all scales: r(all,work,free)=0.2573 0.2489 0.3297 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2573 0.2489 0.3297 n_refl.: 13308
+overall B=-0.61 to atoms: r(all,work,free)=0.2527 0.2442 0.3264 n_refl.: 13308
+bulk-solvent and scaling: r(all,work,free)=0.2084 0.2010 0.2740 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2084 0.2010 0.2740 n_refl.: 13308
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3285   362.719   345.917 0.658 0.952 0.294
+  9.137-7.240    99.02    94     7 0.3060   348.312   353.301 0.818 0.978 0.299
+  7.240-5.741   100.00   181    17 0.2941   300.024   282.463 0.806 0.983 0.301
+  5.735-4.547   100.00   351    28 0.2733   369.313   348.980 0.853 0.989 0.292
+  4.540-3.603   100.00   667    64 0.2071   474.381   463.563 0.975 0.994 0.136
+  3.602-2.855   100.00  1286   151 0.2095   352.018   342.883 0.983 0.995 0.000
+  2.854-2.262    99.90  2571   284 0.1888   223.909   219.047 0.995 0.992 0.000
+  2.262-1.792    99.93  5025   575 0.1787   142.260   141.163 1.026 0.984 0.000
+  1.792-1.700    99.90  1725   182 0.1689    89.394    87.636 0.936 0.976 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9167   b_overall=-1.0702 
+
+============================ Set refinement target ============================
+
+  using refinement target ls_wunit_k1 
+
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 19.985135             wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 0.332904              wxu_scale = 1.000            wu = 1.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+Weight selection criteria:
+  R_free deviation:  0.0000
+  R_free-R_work gap: 5.0000
+  Bond RMSD:         0.0200
+  Angle RMSD:        2.5000
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2307 0.2765 0.0458  0.004   0.7    3.5   0.0   1.9    0   0.125
+ 0.2301 0.2765 0.0464  0.004   0.7    4.0   0.0   1.9    0   0.250
+ 0.2292 0.2765 0.0473  0.004   0.7    4.0   0.0   1.9    0   0.500
+ 0.2274 0.2764 0.0489  0.004   0.7    4.5   0.0   1.9    0   1.000
+ 0.2242 0.2759 0.0517  0.004   0.7    4.0   0.0   1.9    0   2.000
+ 0.2220 0.2757 0.0537  0.004   0.8    3.5   0.0   2.8    0   3.000
+ 0.2203 0.2757 0.0554  0.004   0.8    3.5   0.0   2.8    0   4.000
+ 0.2190 0.2761 0.0571  0.005   0.8    3.5   0.0   2.8    0   5.000
+ 0.2179 0.2763 0.0584  0.005   0.8    3.5   0.0   2.8    0   6.000
+ 0.2169 0.2766 0.0597  0.005   0.8    3.5   0.0   2.8    0   7.000
+ 0.2161 0.2769 0.0608  0.006   0.8    3.5   0.0   2.8    0   8.000
+ 0.2154 0.2769 0.0615  0.006   0.8    3.5   0.0   2.8    0   9.000
+ 0.2148 0.2771 0.0623  0.006   0.9    3.5   0.0   2.8    0  10.000
+ 0.2148 0.2771 0.0622  0.006   0.9    3.5   0.0   2.8    0   9.993
+
+ Best weight:
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2220 0.2757 0.0537  0.004   0.8    3.5   0.0   2.8    0   3.000
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+                       ----------TLS refinement----------                      
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2220 r_free = 0.2757 target = 0.058903 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 29)----------------|
+| r_work = 0.2220 r_free = 0.2756 target = 0.058857 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+
+|-Information about rigid groups----------------------------------------------|
+| Total number of atoms = 1214    Number of rigid groups = 9                  |
+| group: start point:                        end point:                       |
+|               x      B  atom  residue  <>        x      B  atom  residue    |
+|     1:    2.966  11.72   N   LYS    1  <>  -16.767  44.68   NH2 ARG   14    |
+|     2:  -12.352   9.91   N   HIS   15  <>  -11.014  14.93   OG  SER   24    |
+|     3:  -11.323  11.47   N   LEU   25  <>    7.340   6.71   CB  ALA   42    |
+|     4:    9.761   7.87   N   THR   43  <>   11.875  13.37   OG  SER   50    |
+|     5:   11.841   9.74   N   THR   51  <>   15.579  13.81   NH2 ARG   68    |
+|     6:   13.763  12.18   N   THR   69  <>   -6.173  12.35   CD1 ILE   88    |
+|     7:   -5.403   9.14   N   THR   89  <>   -6.219  12.84   CG2 VAL   99    |
+|     8:   -6.380  11.95   N   SER  100  <>    6.661  10.31   NH2 ARG  114    |
+|     9:    0.245  11.39   N   CYS  115  <>  -17.492  42.97   OXT LEU  129    |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: start model-------------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0588567  r_work = 0.2220  r_free = 0.2756      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start model-------------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 3.14     max = 79.78    mean = 17.00   |
+| Isotropic B only:              min = 0.00     max = 77.01    mean = 14.59   |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    7.701:     323      |        3.144 -   10.808:     358      |
+|      7.701 -   15.402:     496      |       10.808 -   18.472:     481      |
+|     15.402 -   23.103:     164      |       18.472 -   26.136:     173      |
+|     23.103 -   30.804:     112      |       26.136 -   33.800:     110      |
+|     30.804 -   38.505:      80      |       33.800 -   41.464:      65      |
+|     38.505 -   46.206:      30      |       41.464 -   49.128:      18      |
+|     46.206 -   53.907:       4      |       49.128 -   56.792:       4      |
+|     53.907 -   61.608:       1      |       56.792 -   64.456:       1      |
+|     61.608 -   69.309:       1      |       64.456 -   72.120:       1      |
+|     69.309 -   77.010:       3      |       72.120 -   79.784:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start parameters--------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8311   16.2354    9.4031                |
+|T11=  0.0398 T22=  0.0398 T33=  0.0398 T12= -0.0000 T13= -0.0000 T23= -0.0000|
+|L11=  0.0001 L22=  0.0001 L33=  0.0000 L12= -0.0000 L13= -0.0001 L23= -0.0000|
+|S11=  0.0000 S22=  0.0000 S33= -0.0000 S12= -0.0000 S13=  0.0000 S21= -0.0000|
+|S23= -0.0000 S31=  0.0000 S32=  0.0000                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6138   23.4569   20.4814                |
+|T11=  0.0140 T22=  0.0140 T33=  0.0140 T12=  0.0000 T13=  0.0000 T23= -0.0000|
+|L11=  0.0001 L22=  0.0001 L33=  0.0001 L12=  0.0001 L13=  0.0000 L23=  0.0000|
+|S11= -0.0000 S22=  0.0000 S33= -0.0000 S12= -0.0000 S13=  0.0000 S21= -0.0000|
+|S23= -0.0000 S31= -0.0000 S32= -0.0000                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2651   21.7086   12.7507                |
+|T11=  0.0605 T22=  0.0605 T33=  0.0605 T12= -0.0000 T13= -0.0000 T23= -0.0000|
+|L11=  0.0000 L22=  0.0000 L33=  0.0000 L12=  0.0000 L13= -0.0000 L23= -0.0000|
+|S11=  0.0000 S22= -0.0000 S33= -0.0000 S12=  0.0000 S13=  0.0000 S21= -0.0000|
+|S23=  0.0000 S31= -0.0000 S32=  0.0000                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4753   19.5317   23.5730                |
+|T11=  0.0537 T22=  0.0537 T33=  0.0537 T12= -0.0000 T13=  0.0000 T23=  0.0000|
+|L11=  0.0003 L22=  0.0006 L33=  0.0019 L12=  0.0003 L13=  0.0007 L23=  0.0010|
+|S11= -0.0000 S22= -0.0000 S33=  0.0000 S12=  0.0000 S13=  0.0000 S21= -0.0000|
+|S23=  0.0000 S31= -0.0000 S32= -0.0000                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0465   16.5926   25.6511                |
+|T11=  0.0575 T22=  0.0575 T33=  0.0575 T12= -0.0000 T13=  0.0000 T23=  0.0000|
+|L11=  0.0000 L22=  0.0000 L33=  0.0000 L12= -0.0000 L13= -0.0000 L23=  0.0000|
+|S11= -0.0000 S22=  0.0000 S33= -0.0000 S12= -0.0000 S13=  0.0000 S21=  0.0000|
+|S23= -0.0000 S31=  0.0000 S32= -0.0000                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1691   11.8271   26.2977                |
+|T11=  0.0378 T22=  0.0378 T33=  0.0378 T12= -0.0000 T13=  0.0000 T23=  0.0000|
+|L11=  0.0000 L22=  0.0000 L33=  0.0002 L12=  0.0000 L13=  0.0001 L23=  0.0000|
+|S11= -0.0000 S22=  0.0000 S33= -0.0000 S12=  0.0000 S13= -0.0000 S21=  0.0000|
+|S23=  0.0000 S31=  0.0000 S32= -0.0000                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0566   17.0946   24.3755                |
+|T11=  0.0169 T22=  0.0169 T33=  0.0169 T12=  0.0000 T13=  0.0000 T23=  0.0000|
+|L11=  0.0000 L22=  0.0010 L33=  0.0005 L12=  0.0001 L13=  0.0000 L23=  0.0005|
+|S11=  0.0000 S22=  0.0000 S33= -0.0000 S12= -0.0000 S13=  0.0000 S21= -0.0000|
+|S23= -0.0000 S31= -0.0000 S32=  0.0000                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1975   29.5542   22.4602                |
+|T11=  0.0010 T22=  0.0010 T33=  0.0010 T12=  0.0000 T13= -0.0000 T23= -0.0000|
+|L11=  0.0002 L22=  0.0001 L33=  0.0005 L12=  0.0001 L13= -0.0003 L23= -0.0002|
+|S11=  0.0000 S22=  0.0000 S33= -0.0000 S12= -0.0000 S13=  0.0000 S21=  0.0000|
+|S23=  0.0000 S31= -0.0000 S32= -0.0000                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4345   28.3354    8.0408                |
+|T11=  0.0351 T22=  0.0351 T33=  0.0351 T12= -0.0000 T13= -0.0000 T23= -0.0000|
+|L11=  0.0000 L22=  0.0000 L33=  0.0000 L12= -0.0000 L13= -0.0000 L23=  0.0000|
+|S11= -0.0000 S22=  0.0000 S33= -0.0000 S12= -0.0000 S13=  0.0000 S21= -0.0000|
+|S23=  0.0000 S31=  0.0000 S32=  0.0000                                       |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 4.25     max = 80.89    mean = 17.46   |
+| Isotropic B only:              min = 0.00     max = 77.01    mean = 14.59   |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    7.701:     323      |        4.253 -   11.916:     408      |
+|      7.701 -   15.402:     496      |       11.916 -   19.580:     453      |
+|     15.402 -   23.103:     164      |       19.580 -   27.243:     170      |
+|     23.103 -   30.804:     112      |       27.243 -   34.907:     103      |
+|     30.804 -   38.505:      80      |       34.907 -   42.570:      56      |
+|     38.505 -   46.206:      30      |       42.570 -   50.234:      15      |
+|     46.206 -   53.907:       4      |       50.234 -   57.897:       4      |
+|     53.907 -   61.608:       1      |       57.897 -   65.560:       1      |
+|     61.608 -   69.309:       1      |       65.560 -   73.224:       1      |
+|     69.309 -   77.010:       3      |       73.224 -   80.887:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8311   16.2354    9.4031                |
+|T11=  0.0334 T22=  0.0493 T33=  0.0215 T12=  0.0252 T13= -0.0859 T23= -0.0211|
+|L11=  0.0004 L22=  0.0004 L33=  0.0011 L12=  0.0001 L13=  0.0005 L23=  0.0007|
+|S11=  0.0004 S22= -0.0023 S33= -0.0000 S12=  0.0011 S13= -0.0007 S21= -0.0026|
+|S23=  0.0049 S31=  0.0019 S32=  0.0026                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6138   23.4569   20.4814                |
+|T11= -0.0113 T22=  0.0218 T33=  0.0339 T12=  0.0067 T13=  0.0157 T23= -0.0064|
+|L11=  0.0005 L22=  0.0002 L33= -0.0001 L12= -0.0000 L13= -0.0002 L23= -0.0000|
+|S11=  0.0022 S22=  0.0072 S33= -0.0000 S12= -0.0036 S13= -0.0028 S21=  0.0012|
+|S23=  0.0033 S31= -0.0019 S32= -0.0051                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2651   21.7086   12.7507                |
+|T11=  0.0693 T22=  0.0601 T33=  0.0636 T12=  0.0154 T13= -0.0215 T23= -0.0027|
+|L11=  0.0004 L22=  0.0001 L33=  0.0003 L12=  0.0002 L13=  0.0012 L23=  0.0008|
+|S11=  0.0098 S22=  0.0049 S33= -0.0000 S12=  0.0101 S13=  0.0028 S21=  0.0019|
+|S23= -0.0081 S31= -0.0051 S32= -0.0069                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4753   19.5317   23.5730                |
+|T11=  0.0335 T22=  0.0650 T33=  0.0593 T12= -0.0122 T13= -0.0432 T23= -0.0154|
+|L11=  0.0003 L22=  0.0006 L33=  0.0018 L12=  0.0003 L13=  0.0008 L23=  0.0011|
+|S11=  0.0043 S22=  0.0018 S33=  0.0000 S12=  0.0008 S13= -0.0009 S21=  0.0010|
+|S23= -0.0017 S31= -0.0045 S32= -0.0003                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0465   16.5926   25.6511                |
+|T11=  0.0681 T22=  0.0552 T33=  0.0626 T12=  0.0133 T13= -0.0197 T23= -0.0035|
+|L11=  0.0008 L22=  0.0000 L33=  0.0008 L12=  0.0005 L13= -0.0003 L23= -0.0002|
+|S11=  0.0017 S22= -0.0007 S33= -0.0000 S12= -0.0059 S13= -0.0089 S21=  0.0104|
+|S23= -0.0003 S31=  0.0003 S32=  0.0038                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1691   11.8271   26.2977                |
+|T11=  0.0421 T22=  0.0406 T33=  0.0415 T12=  0.0168 T13= -0.0161 T23= -0.0012|
+|L11=  0.0003 L22=  0.0014 L33=  0.0007 L12= -0.0006 L13= -0.0002 L23= -0.0014|
+|S11= -0.0073 S22= -0.0053 S33= -0.0000 S12= -0.0171 S13= -0.0047 S21=  0.0063|
+|S23=  0.0041 S31= -0.0018 S32=  0.0077                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0566   17.0946   24.3755                |
+|T11=  0.0053 T22=  0.0106 T33=  0.0368 T12= -0.0181 T13= -0.0173 T23=  0.0107|
+|L11= -0.0001 L22=  0.0009 L33=  0.0007 L12= -0.0000 L13=  0.0003 L23=  0.0005|
+|S11=  0.0005 S22=  0.0005 S33= -0.0000 S12= -0.0046 S13= -0.0005 S21=  0.0035|
+|S23= -0.0003 S31= -0.0038 S32= -0.0014                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1975   29.5542   22.4602                |
+|T11= -0.0491 T22= -0.0036 T33=  0.0033 T12= -0.0344 T13=  0.0147 T23=  0.0251|
+|L11=  0.0003 L22= -0.0001 L33=  0.0005 L12=  0.0011 L13= -0.0004 L23=  0.0000|
+|S11= -0.0095 S22=  0.0050 S33= -0.0000 S12= -0.0011 S13=  0.0011 S21=  0.0167|
+|S23= -0.0038 S31= -0.0024 S32= -0.0001                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4345   28.3354    8.0408                |
+|T11=  0.0122 T22=  0.0402 T33=  0.0455 T12=  0.0221 T13= -0.0652 T23=  0.0256|
+|L11=  0.0005 L22=  0.0003 L33=  0.0001 L12= -0.0007 L13=  0.0004 L23=  0.0000|
+|S11=  0.0073 S22=  0.0106 S33= -0.0000 S12=  0.0018 S13=  0.0001 S21=  0.0002|
+|S23=  0.0049 S31=  0.0011 S32= -0.0097                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0583817  r_work = 0.2209  r_free = 0.2737      |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 3.54     max = 80.01    mean = 17.10   |
+| Isotropic B only:              min = 0.00     max = 77.01    mean = 14.59   |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    7.701:     323      |        3.537 -   11.185:     384      |
+|      7.701 -   15.402:     496      |       11.185 -   18.832:     460      |
+|     15.402 -   23.103:     164      |       18.832 -   26.480:     171      |
+|     23.103 -   30.804:     112      |       26.480 -   34.127:     109      |
+|     30.804 -   38.505:      80      |       34.127 -   41.775:      60      |
+|     38.505 -   46.206:      30      |       41.775 -   49.422:      20      |
+|     46.206 -   53.907:       4      |       49.422 -   57.070:       5      |
+|     53.907 -   61.608:       1      |       57.070 -   64.717:       1      |
+|     61.608 -   69.309:       1      |       64.717 -   72.365:       1      |
+|     69.309 -   77.010:       3      |       72.365 -   80.012:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8311   16.2354    9.4031                |
+|T11= -0.0956 T22=  0.0334 T33= -0.1172 T12=  0.0046 T13= -0.2053 T23= -0.0190|
+|L11=  0.0006 L22=  0.0004 L33=  0.0032 L12=  0.0002 L13=  0.0012 L23=  0.0024|
+|S11=  0.0049 S22= -0.0109 S33= -0.0000 S12=  0.0055 S13= -0.0055 S21= -0.0111|
+|S23=  0.0217 S31=  0.0088 S32=  0.0089                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6138   23.4569   20.4814                |
+|T11= -0.0865 T22=  0.0126 T33=  0.0316 T12=  0.0200 T13=  0.0212 T23= -0.0140|
+|L11=  0.0012 L22=  0.0003 L33= -0.0005 L12= -0.0003 L13= -0.0008 L23= -0.0003|
+|S11=  0.0048 S22=  0.0260 S33= -0.0000 S12= -0.0137 S13= -0.0130 S21=  0.0041|
+|S23=  0.0128 S31= -0.0064 S32= -0.0189                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2651   21.7086   12.7507                |
+|T11=  0.0565 T22=  0.0574 T33=  0.0527 T12=  0.0177 T13= -0.0119 T23=  0.0064|
+|L11=  0.0017 L22=  0.0000 L33=  0.0008 L12=  0.0006 L13=  0.0037 L23=  0.0030|
+|S11=  0.0286 S22=  0.0092 S33= -0.0000 S12=  0.0370 S13=  0.0114 S21=  0.0052|
+|S23= -0.0308 S31= -0.0159 S32= -0.0255                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4753   19.5317   23.5730                |
+|T11= -0.0130 T22=  0.0667 T33=  0.0612 T12= -0.0195 T13= -0.1076 T23= -0.0459|
+|L11=  0.0002 L22=  0.0003 L33=  0.0016 L12=  0.0004 L13=  0.0012 L23=  0.0017|
+|S11=  0.0160 S22=  0.0069 S33=  0.0000 S12=  0.0021 S13= -0.0032 S21=  0.0058|
+|S23= -0.0086 S31= -0.0199 S32= -0.0004                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0465   16.5926   25.6511                |
+|T11=  0.0526 T22=  0.0529 T33=  0.0466 T12=  0.0124 T13= -0.0228 T23=  0.0001|
+|L11=  0.0032 L22= -0.0002 L33=  0.0031 L12=  0.0021 L13= -0.0020 L23= -0.0012|
+|S11=  0.0012 S22= -0.0011 S33= -0.0000 S12= -0.0188 S13= -0.0299 S21=  0.0380|
+|S23=  0.0033 S31= -0.0014 S32=  0.0141                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1691   11.8271   26.2977                |
+|T11=  0.0413 T22=  0.0421 T33=  0.0350 T12=  0.0055 T13= -0.0063 T23= -0.0004|
+|L11=  0.0012 L22=  0.0051 L33=  0.0022 L12= -0.0012 L13= -0.0017 L23= -0.0059|
+|S11= -0.0291 S22= -0.0160 S33= -0.0000 S12= -0.0555 S13= -0.0179 S21=  0.0202|
+|S23=  0.0197 S31= -0.0061 S32=  0.0232                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0566   17.0946   24.3755                |
+|T11= -0.0410 T22= -0.0108 T33=  0.0433 T12= -0.0434 T13= -0.0151 T23=  0.0054|
+|L11= -0.0006 L22=  0.0003 L33=  0.0013 L12= -0.0003 L13=  0.0009 L23=  0.0007|
+|S11=  0.0037 S22=  0.0035 S33= -0.0000 S12= -0.0185 S13= -0.0031 S21=  0.0140|
+|S23= -0.0004 S31= -0.0147 S32= -0.0064                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1975   29.5542   22.4602                |
+|T11= -0.2169 T22= -0.0590 T33= -0.0217 T12= -0.1209 T13=  0.0583 T23=  0.0388|
+|L11=  0.0004 L22= -0.0006 L33= -0.0000 L12=  0.0038 L13= -0.0007 L23=  0.0009|
+|S11= -0.0390 S22=  0.0181 S33= -0.0000 S12= -0.0070 S13=  0.0025 S21=  0.0661|
+|S23= -0.0160 S31= -0.0108 S32=  0.0004                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4345   28.3354    8.0408                |
+|T11= -0.1094 T22=  0.0009 T33= -0.0286 T12=  0.0740 T13= -0.1428 T23=  0.0650|
+|L11=  0.0011 L22= -0.0007 L33= -0.0001 L12= -0.0012 L13=  0.0010 L23=  0.0013|
+|S11=  0.0347 S22=  0.0443 S33= -0.0000 S12=  0.0089 S13= -0.0032 S21= -0.0048|
+|S23=  0.0315 S31=  0.0054 S32= -0.0412                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0583142  r_work = 0.2205  r_free = 0.2723      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: final values------------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8311   16.2354    9.4031                |
+|T11= -0.0956 T22=  0.0334 T33= -0.1172 T12=  0.0046 T13= -0.2053 T23= -0.0190|
+|L11=  0.0006 L22=  0.0004 L33=  0.0032 L12=  0.0002 L13=  0.0012 L23=  0.0024|
+|S11=  0.0049 S22= -0.0109 S33= -0.0000 S12=  0.0055 S13= -0.0055 S21= -0.0111|
+|S23=  0.0217 S31=  0.0088 S32=  0.0089                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6138   23.4569   20.4814                |
+|T11= -0.0865 T22=  0.0126 T33=  0.0316 T12=  0.0200 T13=  0.0212 T23= -0.0140|
+|L11=  0.0012 L22=  0.0003 L33= -0.0005 L12= -0.0003 L13= -0.0008 L23= -0.0003|
+|S11=  0.0048 S22=  0.0260 S33= -0.0000 S12= -0.0137 S13= -0.0130 S21=  0.0041|
+|S23=  0.0128 S31= -0.0064 S32= -0.0189                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2651   21.7086   12.7507                |
+|T11=  0.0565 T22=  0.0574 T33=  0.0527 T12=  0.0177 T13= -0.0119 T23=  0.0064|
+|L11=  0.0017 L22=  0.0000 L33=  0.0008 L12=  0.0006 L13=  0.0037 L23=  0.0030|
+|S11=  0.0286 S22=  0.0092 S33= -0.0000 S12=  0.0370 S13=  0.0114 S21=  0.0052|
+|S23= -0.0308 S31= -0.0159 S32= -0.0255                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4753   19.5317   23.5730                |
+|T11= -0.0130 T22=  0.0667 T33=  0.0612 T12= -0.0195 T13= -0.1076 T23= -0.0459|
+|L11=  0.0002 L22=  0.0003 L33=  0.0016 L12=  0.0004 L13=  0.0012 L23=  0.0017|
+|S11=  0.0160 S22=  0.0069 S33=  0.0000 S12=  0.0021 S13= -0.0032 S21=  0.0058|
+|S23= -0.0086 S31= -0.0199 S32= -0.0004                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0465   16.5926   25.6511                |
+|T11=  0.0526 T22=  0.0529 T33=  0.0466 T12=  0.0124 T13= -0.0228 T23=  0.0001|
+|L11=  0.0032 L22= -0.0002 L33=  0.0031 L12=  0.0021 L13= -0.0020 L23= -0.0012|
+|S11=  0.0012 S22= -0.0011 S33= -0.0000 S12= -0.0188 S13= -0.0299 S21=  0.0380|
+|S23=  0.0033 S31= -0.0014 S32=  0.0141                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1691   11.8271   26.2977                |
+|T11=  0.0413 T22=  0.0421 T33=  0.0350 T12=  0.0055 T13= -0.0063 T23= -0.0004|
+|L11=  0.0012 L22=  0.0051 L33=  0.0022 L12= -0.0012 L13= -0.0017 L23= -0.0059|
+|S11= -0.0291 S22= -0.0160 S33= -0.0000 S12= -0.0555 S13= -0.0179 S21=  0.0202|
+|S23=  0.0197 S31= -0.0061 S32=  0.0232                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0566   17.0946   24.3755                |
+|T11= -0.0410 T22= -0.0108 T33=  0.0433 T12= -0.0434 T13= -0.0151 T23=  0.0054|
+|L11= -0.0006 L22=  0.0003 L33=  0.0013 L12= -0.0003 L13=  0.0009 L23=  0.0007|
+|S11=  0.0037 S22=  0.0035 S33= -0.0000 S12= -0.0185 S13= -0.0031 S21=  0.0140|
+|S23= -0.0004 S31= -0.0147 S32= -0.0064                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1975   29.5542   22.4602                |
+|T11= -0.2169 T22= -0.0590 T33= -0.0217 T12= -0.1209 T13=  0.0583 T23=  0.0388|
+|L11=  0.0004 L22= -0.0006 L33= -0.0000 L12=  0.0038 L13= -0.0007 L23=  0.0009|
+|S11= -0.0390 S22=  0.0181 S33= -0.0000 S12= -0.0070 S13=  0.0025 S21=  0.0661|
+|S23= -0.0160 S31= -0.0108 S32=  0.0004                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4345   28.3354    8.0408                |
+|T11= -0.1094 T22=  0.0009 T33= -0.0286 T12=  0.0740 T13= -0.1428 T23=  0.0650|
+|L11=  0.0011 L22= -0.0007 L33= -0.0001 L12= -0.0012 L13=  0.0010 L23=  0.0013|
+|S11=  0.0347 S22=  0.0443 S33= -0.0000 S12=  0.0089 S13= -0.0032 S21= -0.0048|
+|S23=  0.0315 S31=  0.0054 S32= -0.0412                                       |
+|-----------------------------------------------------------------------------|
+
+                 ----------Individual ADP refinement----------                 
+
+    R-FACTORS      <Bi-Bj>  <B>   WEIGHT       TARGETS
+ work  free  delta                           data restr
+22.05 27.23   5.18  4.641  17.102  0.333    0.058
+38.04 41.05   3.01  1.452  32.022  0.010    0.139
+26.41 31.05   4.64  2.372  20.882  0.042    0.075
+23.22 28.58   5.36  2.537  18.530  0.166    0.061
+22.38 28.06   5.68  2.936  17.998  0.333    0.058
+22.08 28.03   5.95  3.318  18.009  0.499    0.056
+21.89 28.04   6.16  3.680  18.024  0.666    0.055
+21.77 28.02   6.25  4.006  18.122  0.832    0.054
+21.71 28.04   6.33  4.305  18.189  0.999    0.054
+21.65 28.04   6.39  4.614  18.328  1.165    0.054
+21.60 28.07   6.47  4.912  18.471  1.332    0.053
+21.58 28.12   6.53  5.080  18.483  1.498    0.053
+21.58 28.17   6.59  5.287  18.562  1.665    0.053
+  max suggested <Bi-Bj> for this run:   10.00
+  max allowed Rfree-Rwork gap:   5.0
+  range of equivalent Rfree:   0.0
+Best ADP weight:    0.042
+Accepted refinement result:
+26.41 31.05   4.64  2.372  20.882  0.042    0.075
+
+ Individual atomic B
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   11.04  75.01  20.88   2.37  1214  1010
+   Protein:   11.04  75.01  20.03   2.37  1010  1010
+   Water:     11.99  40.71  24.91    N/A   197     0
+   Other:     19.25  43.19  30.05    N/A     7     0
+   Chain  A:  11.04  75.01  20.88    N/A  1214  1010
+   Histogram:
+       Values      Number of atoms
+    11.04 - 17.44       425
+    17.44 - 23.84       504
+    23.84 - 30.23       177
+    30.23 - 36.63        74
+    36.63 - 43.03        23
+    43.03 - 49.43         5
+    49.43 - 55.82         2
+    55.82 - 62.22         0
+    62.22 - 68.62         1
+    68.62 - 75.01         3
+
+
+============================= Occupancy refinement ============================
+
+|-occupancy refinement: start-------------------------------------------------|
+| r_work = 0.2641 r_free = 0.3105    target_work(ls_wunit_k1) = 0.075         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        6 |
+|-----------------------------------------------------------------------------|
+|-occupancy refinement: end---------------------------------------------------|
+| r_work = 0.2588 r_free = 0.3123    target_work(ls_wunit_k1) = 0.071         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        6 |
+|-----------------------------------------------------------------------------|
+
+*********************** REFINEMENT MACRO_CYCLE 2 OF 5 *************************
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2588 r_free= 0.3123 coordinate error (max.-lik. estimate): 0.06 A |
+|                                                                             |
+| normalized target function (ls_wunit_k1) (work): 0.070628                   |
+| target function (ls_wunit_k1) not normalized (work): 846.833458             |
+| target function (ls_wunit_k1) not normalized (free): 151.812465             |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2643 0.2588 0.3123 n_refl.: 13308
+       re-set all scales: r(all,work,free)=0.3259 0.3199 0.3777 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.3259 0.3199 0.3777 n_refl.: 13308
+overall B=-5.08 to atoms: r(all,work,free)=0.2884 0.2822 0.3422 n_refl.: 13308
+bulk-solvent and scaling: r(all,work,free)=0.2488 0.2431 0.2985 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2488 0.2431 0.2985 n_refl.: 13308
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3062   290.784   282.220 0.705 0.949 0.303
+  9.137-7.240    99.02    94     7 0.2901   279.235   284.453 0.856 0.976 0.303
+  7.240-5.741   100.00   181    17 0.2925   240.523   229.037 0.836 0.980 0.299
+  5.735-4.547   100.00   351    28 0.2596   296.071   283.732 0.899 0.986 0.242
+  4.540-3.603   100.00   667    64 0.1936   380.302   373.713 1.035 0.992 0.163
+  3.602-2.855   100.00  1286   151 0.2239   282.206   276.124 1.025 0.994 0.068
+  2.854-2.262    99.90  2571   284 0.2401   179.504   174.021 1.007 0.992 0.000
+  2.262-1.792    99.93  5025   575 0.2591   114.047   111.495 1.045 0.986 0.000
+  1.792-1.700    99.90  1725   182 0.2831    71.665    68.627 0.956 0.980 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9549   b_overall=-0.7415 
+
+============================ Set refinement target ============================
+
+  using refinement target ls_wunit_k1 
+
+
+============================ Update CDL restraints ============================
+
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 18.407322             wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 0.334595              wxu_scale = 1.000            wu = 1.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+Weight selection criteria:
+  R_free deviation:  0.0000
+  R_free-R_work gap: 5.0000
+  Bond RMSD:         0.0200
+  Angle RMSD:        2.5000
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2615 0.3071 0.0456  0.002   0.5    4.5   0.0   1.9    0   0.125
+ 0.2594 0.3063 0.0469  0.002   0.5    4.0   0.0   1.9    0   0.250
+ 0.2561 0.3051 0.0490  0.002   0.5    4.0   0.0   1.9    0   0.500
+ 0.2518 0.3037 0.0519  0.002   0.5    3.0   0.0   1.9    0   1.000
+ 0.2464 0.3029 0.0566  0.003   0.6    3.5   0.0   1.9    0   2.000
+ 0.2428 0.3032 0.0604  0.003   0.6    4.0   0.0   1.9    0   3.000
+ 0.2404 0.3035 0.0631  0.003   0.6    4.0   0.0   1.9    0   4.000
+ 0.2384 0.3036 0.0653  0.004   0.7    4.0   0.0   1.9    0   5.000
+ 0.2369 0.3039 0.0669  0.004   0.7    4.0   0.0   1.9    0   6.000
+ 0.2356 0.3040 0.0684  0.004   0.7    4.0   0.0   1.9    0   7.000
+ 0.2349 0.3040 0.0692  0.005   0.7    4.0   0.0   1.9    0   8.000
+ 0.2342 0.3039 0.0697  0.005   0.8    4.0   0.0   1.9    0   9.000
+ 0.2332 0.3038 0.0706  0.005   0.8    4.0   0.0   1.9    0  10.000
+ 0.2339 0.3038 0.0700  0.005   0.8    4.0   0.0   1.9    0   9.204
+
+ Best weight:
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2464 0.3029 0.0566  0.003   0.6    3.5   0.0   1.9    0   2.000
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+                       ----------TLS refinement----------                      
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2464 r_free = 0.3029 target = 0.065437 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 24)----------------|
+| r_work = 0.2403 r_free = 0.2951 target = 0.062877 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+
+|-Information about rigid groups----------------------------------------------|
+| Total number of atoms = 1214    Number of rigid groups = 9                  |
+| group: start point:                        end point:                       |
+|               x      B  atom  residue  <>        x      B  atom  residue    |
+|     1:    2.976   9.46   N   LYS    1  <>  -16.717  39.38   NH2 ARG   14    |
+|     2:  -12.348  16.63   N   HIS   15  <>  -10.975   9.78   OG  SER   24    |
+|     3:  -11.341  11.85   N   LEU   25  <>    7.317   7.16   CB  ALA   42    |
+|     4:    9.751  10.42   N   THR   43  <>   11.906  12.06   OG  SER   50    |
+|     5:   11.828   7.87   N   THR   51  <>   15.544  17.88   NH2 ARG   68    |
+|     6:   13.732  12.48   N   THR   69  <>   -6.157  10.97   CD1 ILE   88    |
+|     7:   -5.409   9.68   N   THR   89  <>   -6.253   8.56   CG2 VAL   99    |
+|     8:   -6.427  12.49   N   SER  100  <>    6.628   9.62   NH2 ARG  114    |
+|     9:    0.255  10.91   N   CYS  115  <>  -17.483  45.64   OXT LEU  129    |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: start model-------------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0628769  r_work = 0.2403  r_free = 0.2951      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start model-------------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.37     max = 61.29    mean = 15.06   |
+| Isotropic B only:              min = 0.00     max = 52.17    mean = 9.31    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    5.217:     515      |        5.373 -   10.964:     434      |
+|      5.217 -   10.433:     306      |       10.964 -   16.555:     408      |
+|     10.433 -   15.650:     153      |       16.555 -   22.146:     180      |
+|     15.650 -   20.866:      96      |       22.146 -   27.738:     119      |
+|     20.866 -   26.083:      78      |       27.738 -   33.329:      38      |
+|     26.083 -   31.299:      45      |       33.329 -   38.920:      20      |
+|     31.299 -   36.516:      14      |       38.920 -   44.512:       8      |
+|     36.516 -   41.732:       3      |       44.512 -   50.103:       3      |
+|     41.732 -   46.949:       1      |       50.103 -   55.694:       1      |
+|     46.949 -   52.165:       3      |       55.694 -   61.285:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start parameters--------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8367   16.2360    9.3967                |
+|T11=  0.0903 T22=  0.0715 T33=  0.0878 T12=  0.0083 T13= -0.0295 T23= -0.0083|
+|L11=  0.0123 L22=  0.0005 L33=  0.0038 L12= -0.0024 L13= -0.0069 L23=  0.0013|
+|S11=  0.0023 S22= -0.0023 S33= -0.0060 S12=  0.0044 S13= -0.0016 S21= -0.0048|
+|S23=  0.0059 S31= -0.0003 S32=  0.0076                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6158   23.4594   20.4858                |
+|T11=  0.0634 T22=  0.0706 T33=  0.0835 T12=  0.0003 T13=  0.0023 T23= -0.0071|
+|L11=  0.0191 L22=  0.0012 L33=  0.0301 L12= -0.0007 L13= -0.0086 L23= -0.0052|
+|S11= -0.0018 S22=  0.0100 S33=  0.0226 S12= -0.0109 S13= -0.0051 S21=  0.0024|
+|S23=  0.0069 S31= -0.0014 S32= -0.0064                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2608   21.7073   12.7528                |
+|T11=  0.0694 T22=  0.0703 T33=  0.0656 T12=  0.0177 T13= -0.0119 T23=  0.0064|
+|L11=  0.0027 L22=  0.0009 L33=  0.0030 L12=  0.0015 L13=  0.0028 L23=  0.0016|
+|S11=  0.0285 S22=  0.0092 S33=  0.0000 S12=  0.0370 S13=  0.0113 S21=  0.0053|
+|S23= -0.0308 S31= -0.0159 S32= -0.0255                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4902   19.5356   23.5610                |
+|T11=  0.0860 T22=  0.1001 T33=  0.1154 T12=  0.0008 T13= -0.0372 T23= -0.0190|
+|L11=  0.0065 L22=  0.0020 L33=  0.0222 L12=  0.0036 L13=  0.0119 L23=  0.0066|
+|S11=  0.0058 S22=  0.0015 S33=  0.0157 S12= -0.0004 S13= -0.0065 S21=  0.0040|
+|S23= -0.0072 S31=  0.0014 S32=  0.0050                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0395   16.5907   25.6527                |
+|T11=  0.0768 T22=  0.0771 T33=  0.0708 T12=  0.0124 T13= -0.0228 T23=  0.0001|
+|L11=  0.0025 L22=  0.0014 L33=  0.0020 L12=  0.0018 L13= -0.0023 L23= -0.0016|
+|S11=  0.0010 S22= -0.0010 S33=  0.0002 S12= -0.0188 S13= -0.0298 S21=  0.0378|
+|S23=  0.0032 S31= -0.0014 S32=  0.0140                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1673   11.8202   26.2984                |
+|T11=  0.1042 T22=  0.1049 T33=  0.0978 T12=  0.0055 T13= -0.0063 T23= -0.0004|
+|L11=  0.0085 L22=  0.0067 L33=  0.0051 L12=  0.0011 L13= -0.0041 L23= -0.0051|
+|S11= -0.0280 S22= -0.0153 S33= -0.0018 S12= -0.0553 S13= -0.0178 S21=  0.0204|
+|S23=  0.0185 S31= -0.0057 S32=  0.0221                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0648   17.1007   24.3698                |
+|T11=  0.0756 T22=  0.0771 T33=  0.0976 T12= -0.0041 T13= -0.0070 T23=  0.0065|
+|L11=  0.0002 L22=  0.0040 L33=  0.0022 L12=  0.0008 L13= -0.0006 L23= -0.0029|
+|S11=  0.0076 S22= -0.0047 S33=  0.0044 S12= -0.0130 S13= -0.0013 S21=  0.0050|
+|S23= -0.0014 S31= -0.0003 S32=  0.0028                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1991   29.5551   22.4637                |
+|T11=  0.0891 T22=  0.0918 T33=  0.0893 T12= -0.0014 T13= -0.0007 T23=  0.0016|
+|L11=  0.0033 L22=  0.0023 L33=  0.0055 L12=  0.0002 L13= -0.0042 L23= -0.0002|
+|S11= -0.0022 S22= -0.0023 S33= -0.0164 S12=  0.0029 S13=  0.0028 S21= -0.0012|
+|S23= -0.0037 S31= -0.0031 S32=  0.0068                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4326   28.3477    8.0352                |
+|T11=  0.1120 T22=  0.1128 T33=  0.1261 T12=  0.0030 T13= -0.0212 T23=  0.0077|
+|L11=  0.0004 L22=  0.0137 L33=  0.0005 L12=  0.0025 L13= -0.0005 L23= -0.0025|
+|S11=  0.0118 S22=  0.0213 S33=  0.0459 S12= -0.0031 S13= -0.0301 S21= -0.0052|
+|S23=  0.0284 S31=  0.0238 S32= -0.0346                                       |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.44     max = 61.17    mean = 15.33   |
+| Isotropic B only:              min = 0.00     max = 52.17    mean = 9.31    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    5.217:     515      |        5.435 -   11.009:     408      |
+|      5.217 -   10.433:     306      |       11.009 -   16.582:     421      |
+|     10.433 -   15.650:     153      |       16.582 -   22.156:     182      |
+|     15.650 -   20.866:      96      |       22.156 -   27.730:     120      |
+|     20.866 -   26.083:      78      |       27.730 -   33.303:      48      |
+|     26.083 -   31.299:      45      |       33.303 -   38.877:      19      |
+|     31.299 -   36.516:      14      |       38.877 -   44.450:       7      |
+|     36.516 -   41.732:       3      |       44.450 -   50.024:       5      |
+|     41.732 -   46.949:       1      |       50.024 -   55.598:       1      |
+|     46.949 -   52.165:       3      |       55.598 -   61.171:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8367   16.2360    9.3967                |
+|T11=  0.0824 T22=  0.0969 T33=  0.0830 T12=  0.0162 T13= -0.0591 T23= -0.0274|
+|L11=  0.0173 L22=  0.0135 L33=  0.0254 L12=  0.0063 L13=  0.0037 L23=  0.0098|
+|S11=  0.0265 S22= -0.0411 S33= -0.0060 S12=  0.1134 S13= -0.0287 S21= -0.0496|
+|S23=  0.1487 S31=  0.0578 S32=  0.1070                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6158   23.4594   20.4858                |
+|T11=  0.0465 T22=  0.0706 T33=  0.1153 T12=  0.0048 T13= -0.0012 T23=  0.0048|
+|L11=  0.0482 L22=  0.0187 L33=  0.0590 L12=  0.0093 L13= -0.0267 L23= -0.0195|
+|S11= -0.0427 S22=  0.1683 S33=  0.0226 S12= -0.1427 S13= -0.0865 S21=  0.0797|
+|S23=  0.0309 S31= -0.0141 S32= -0.0215                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2608   21.7073   12.7528                |
+|T11=  0.0768 T22=  0.0749 T33=  0.0608 T12=  0.0194 T13= -0.0187 T23= -0.0042|
+|L11=  0.0331 L22=  0.0104 L33=  0.0443 L12=  0.0192 L13=  0.0336 L23=  0.0211|
+|S11=  0.0772 S22= -0.0717 S33=  0.0000 S12=  0.1709 S13=  0.0644 S21=  0.0596|
+|S23= -0.0897 S31= -0.0223 S32= -0.0576                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4902   19.5356   23.5610                |
+|T11= -0.0967 T22=  0.1152 T33=  0.0730 T12= -0.0334 T13= -0.1756 T23= -0.0618|
+|L11=  0.0138 L22=  0.0063 L33=  0.0215 L12=  0.0090 L13=  0.0133 L23=  0.0101|
+|S11=  0.0973 S22=  0.0627 S33=  0.0157 S12=  0.0942 S13= -0.0610 S21=  0.0136|
+|S23= -0.1064 S31= -0.1318 S32=  0.0183                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0395   16.5907   25.6527                |
+|T11=  0.0904 T22=  0.0701 T33=  0.0700 T12=  0.0185 T13= -0.0214 T23= -0.0018|
+|L11=  0.0499 L22=  0.0272 L33=  0.0605 L12=  0.0312 L13= -0.0450 L23= -0.0142|
+|S11= -0.0618 S22=  0.0442 S33=  0.0002 S12=  0.0056 S13= -0.0821 S21=  0.1497|
+|S23=  0.0685 S31= -0.1123 S32=  0.0465                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1673   11.8202   26.2984                |
+|T11=  0.1091 T22=  0.1074 T33=  0.0959 T12=  0.0103 T13= -0.0117 T23=  0.0056|
+|L11=  0.0331 L22=  0.0524 L33=  0.0377 L12= -0.0151 L13= -0.0280 L23= -0.0871|
+|S11= -0.1096 S22=  0.0109 S33= -0.0018 S12= -0.1109 S13= -0.1448 S21=  0.0334|
+|S23=  0.1063 S31= -0.0410 S32=  0.0604                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0648   17.1007   24.3698                |
+|T11=  0.0691 T22=  0.0774 T33=  0.1105 T12= -0.0079 T13= -0.0042 T23=  0.0123|
+|L11=  0.0000 L22=  0.0061 L33=  0.0259 L12= -0.0051 L13=  0.0027 L23=  0.0058|
+|S11=  0.0268 S22=  0.0133 S33=  0.0044 S12= -0.0427 S13= -0.1286 S21=  0.0202|
+|S23=  0.0265 S31= -0.0343 S32= -0.1041                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1991   29.5551   22.4637                |
+|T11=  0.0738 T22=  0.1036 T33=  0.1028 T12= -0.0018 T13=  0.0004 T23=  0.0119|
+|L11=  0.0158 L22=  0.0198 L33=  0.0199 L12= -0.0070 L13= -0.0284 L23=  0.0017|
+|S11= -0.0807 S22=  0.0513 S33= -0.0164 S12=  0.0353 S13=  0.0349 S21=  0.1038|
+|S23= -0.1397 S31= -0.0431 S32=  0.0227                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4326   28.3477    8.0352                |
+|T11=  0.0828 T22=  0.1504 T33=  0.1311 T12=  0.0174 T13= -0.0524 T23=  0.0482|
+|L11=  0.0047 L22=  0.0397 L33=  0.0164 L12=  0.0047 L13=  0.0133 L23= -0.0158|
+|S11=  0.1921 S22=  0.1754 S33=  0.0459 S12=  0.0416 S13= -0.0820 S21=  0.0429|
+|S23=  0.0177 S31= -0.1431 S32= -0.1727                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0622833  r_work = 0.2389  r_free = 0.2929      |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.44     max = 61.17    mean = 15.33   |
+| Isotropic B only:              min = 0.00     max = 52.17    mean = 9.31    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    5.217:     515      |        5.435 -   11.009:     408      |
+|      5.217 -   10.433:     306      |       11.009 -   16.582:     421      |
+|     10.433 -   15.650:     153      |       16.582 -   22.156:     182      |
+|     15.650 -   20.866:      96      |       22.156 -   27.730:     120      |
+|     20.866 -   26.083:      78      |       27.730 -   33.303:      48      |
+|     26.083 -   31.299:      45      |       33.303 -   38.877:      19      |
+|     31.299 -   36.516:      14      |       38.877 -   44.450:       7      |
+|     36.516 -   41.732:       3      |       44.450 -   50.024:       5      |
+|     41.732 -   46.949:       1      |       50.024 -   55.598:       1      |
+|     46.949 -   52.165:       3      |       55.598 -   61.171:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8367   16.2360    9.3967                |
+|T11=  0.0824 T22=  0.0969 T33=  0.0830 T12=  0.0162 T13= -0.0591 T23= -0.0274|
+|L11=  0.0173 L22=  0.0135 L33=  0.0254 L12=  0.0063 L13=  0.0037 L23=  0.0098|
+|S11=  0.0265 S22= -0.0411 S33= -0.0060 S12=  0.1134 S13= -0.0287 S21= -0.0496|
+|S23=  0.1487 S31=  0.0578 S32=  0.1070                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6158   23.4594   20.4858                |
+|T11=  0.0465 T22=  0.0706 T33=  0.1153 T12=  0.0048 T13= -0.0012 T23=  0.0048|
+|L11=  0.0482 L22=  0.0187 L33=  0.0590 L12=  0.0093 L13= -0.0267 L23= -0.0195|
+|S11= -0.0427 S22=  0.1683 S33=  0.0226 S12= -0.1427 S13= -0.0865 S21=  0.0797|
+|S23=  0.0309 S31= -0.0141 S32= -0.0215                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2608   21.7073   12.7528                |
+|T11=  0.0768 T22=  0.0749 T33=  0.0608 T12=  0.0194 T13= -0.0187 T23= -0.0042|
+|L11=  0.0331 L22=  0.0104 L33=  0.0443 L12=  0.0192 L13=  0.0336 L23=  0.0211|
+|S11=  0.0772 S22= -0.0717 S33=  0.0000 S12=  0.1709 S13=  0.0644 S21=  0.0596|
+|S23= -0.0897 S31= -0.0223 S32= -0.0576                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4902   19.5356   23.5610                |
+|T11= -0.0967 T22=  0.1152 T33=  0.0730 T12= -0.0334 T13= -0.1756 T23= -0.0618|
+|L11=  0.0138 L22=  0.0063 L33=  0.0215 L12=  0.0090 L13=  0.0133 L23=  0.0101|
+|S11=  0.0973 S22=  0.0627 S33=  0.0157 S12=  0.0942 S13= -0.0610 S21=  0.0136|
+|S23= -0.1064 S31= -0.1318 S32=  0.0183                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0395   16.5907   25.6527                |
+|T11=  0.0904 T22=  0.0701 T33=  0.0700 T12=  0.0185 T13= -0.0214 T23= -0.0018|
+|L11=  0.0499 L22=  0.0272 L33=  0.0605 L12=  0.0312 L13= -0.0450 L23= -0.0142|
+|S11= -0.0618 S22=  0.0442 S33=  0.0002 S12=  0.0056 S13= -0.0821 S21=  0.1497|
+|S23=  0.0685 S31= -0.1123 S32=  0.0465                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1673   11.8202   26.2984                |
+|T11=  0.1091 T22=  0.1074 T33=  0.0959 T12=  0.0103 T13= -0.0117 T23=  0.0056|
+|L11=  0.0331 L22=  0.0524 L33=  0.0377 L12= -0.0151 L13= -0.0280 L23= -0.0871|
+|S11= -0.1096 S22=  0.0109 S33= -0.0018 S12= -0.1109 S13= -0.1448 S21=  0.0334|
+|S23=  0.1063 S31= -0.0410 S32=  0.0604                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0648   17.1007   24.3698                |
+|T11=  0.0691 T22=  0.0774 T33=  0.1105 T12= -0.0079 T13= -0.0042 T23=  0.0123|
+|L11=  0.0000 L22=  0.0061 L33=  0.0259 L12= -0.0051 L13=  0.0027 L23=  0.0058|
+|S11=  0.0268 S22=  0.0133 S33=  0.0044 S12= -0.0427 S13= -0.1286 S21=  0.0202|
+|S23=  0.0265 S31= -0.0343 S32= -0.1041                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1991   29.5551   22.4637                |
+|T11=  0.0738 T22=  0.1036 T33=  0.1028 T12= -0.0018 T13=  0.0004 T23=  0.0119|
+|L11=  0.0158 L22=  0.0198 L33=  0.0199 L12= -0.0070 L13= -0.0284 L23=  0.0017|
+|S11= -0.0807 S22=  0.0513 S33= -0.0164 S12=  0.0353 S13=  0.0349 S21=  0.1038|
+|S23= -0.1397 S31= -0.0431 S32=  0.0227                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4326   28.3477    8.0352                |
+|T11=  0.0828 T22=  0.1504 T33=  0.1311 T12=  0.0174 T13= -0.0524 T23=  0.0482|
+|L11=  0.0047 L22=  0.0397 L33=  0.0164 L12=  0.0047 L13=  0.0133 L23= -0.0158|
+|S11=  0.1921 S22=  0.1754 S33=  0.0459 S12=  0.0416 S13= -0.0820 S21=  0.0429|
+|S23=  0.0177 S31= -0.1431 S32= -0.1727                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0622833  r_work = 0.2389  r_free = 0.2929      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: final values------------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8367   16.2360    9.3967                |
+|T11=  0.0824 T22=  0.0969 T33=  0.0830 T12=  0.0162 T13= -0.0591 T23= -0.0274|
+|L11=  0.0173 L22=  0.0135 L33=  0.0254 L12=  0.0063 L13=  0.0037 L23=  0.0098|
+|S11=  0.0265 S22= -0.0411 S33= -0.0060 S12=  0.1134 S13= -0.0287 S21= -0.0496|
+|S23=  0.1487 S31=  0.0578 S32=  0.1070                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6158   23.4594   20.4858                |
+|T11=  0.0465 T22=  0.0706 T33=  0.1153 T12=  0.0048 T13= -0.0012 T23=  0.0048|
+|L11=  0.0482 L22=  0.0187 L33=  0.0590 L12=  0.0093 L13= -0.0267 L23= -0.0195|
+|S11= -0.0427 S22=  0.1683 S33=  0.0226 S12= -0.1427 S13= -0.0865 S21=  0.0797|
+|S23=  0.0309 S31= -0.0141 S32= -0.0215                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2608   21.7073   12.7528                |
+|T11=  0.0768 T22=  0.0749 T33=  0.0608 T12=  0.0194 T13= -0.0187 T23= -0.0042|
+|L11=  0.0331 L22=  0.0104 L33=  0.0443 L12=  0.0192 L13=  0.0336 L23=  0.0211|
+|S11=  0.0772 S22= -0.0717 S33=  0.0000 S12=  0.1709 S13=  0.0644 S21=  0.0596|
+|S23= -0.0897 S31= -0.0223 S32= -0.0576                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4902   19.5356   23.5610                |
+|T11= -0.0967 T22=  0.1152 T33=  0.0730 T12= -0.0334 T13= -0.1756 T23= -0.0618|
+|L11=  0.0138 L22=  0.0063 L33=  0.0215 L12=  0.0090 L13=  0.0133 L23=  0.0101|
+|S11=  0.0973 S22=  0.0627 S33=  0.0157 S12=  0.0942 S13= -0.0610 S21=  0.0136|
+|S23= -0.1064 S31= -0.1318 S32=  0.0183                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0395   16.5907   25.6527                |
+|T11=  0.0904 T22=  0.0701 T33=  0.0700 T12=  0.0185 T13= -0.0214 T23= -0.0018|
+|L11=  0.0499 L22=  0.0272 L33=  0.0605 L12=  0.0312 L13= -0.0450 L23= -0.0142|
+|S11= -0.0618 S22=  0.0442 S33=  0.0002 S12=  0.0056 S13= -0.0821 S21=  0.1497|
+|S23=  0.0685 S31= -0.1123 S32=  0.0465                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1673   11.8202   26.2984                |
+|T11=  0.1091 T22=  0.1074 T33=  0.0959 T12=  0.0103 T13= -0.0117 T23=  0.0056|
+|L11=  0.0331 L22=  0.0524 L33=  0.0377 L12= -0.0151 L13= -0.0280 L23= -0.0871|
+|S11= -0.1096 S22=  0.0109 S33= -0.0018 S12= -0.1109 S13= -0.1448 S21=  0.0334|
+|S23=  0.1063 S31= -0.0410 S32=  0.0604                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0648   17.1007   24.3698                |
+|T11=  0.0691 T22=  0.0774 T33=  0.1105 T12= -0.0079 T13= -0.0042 T23=  0.0123|
+|L11=  0.0000 L22=  0.0061 L33=  0.0259 L12= -0.0051 L13=  0.0027 L23=  0.0058|
+|S11=  0.0268 S22=  0.0133 S33=  0.0044 S12= -0.0427 S13= -0.1286 S21=  0.0202|
+|S23=  0.0265 S31= -0.0343 S32= -0.1041                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1991   29.5551   22.4637                |
+|T11=  0.0738 T22=  0.1036 T33=  0.1028 T12= -0.0018 T13=  0.0004 T23=  0.0119|
+|L11=  0.0158 L22=  0.0198 L33=  0.0199 L12= -0.0070 L13= -0.0284 L23=  0.0017|
+|S11= -0.0807 S22=  0.0513 S33= -0.0164 S12=  0.0353 S13=  0.0349 S21=  0.1038|
+|S23= -0.1397 S31= -0.0431 S32=  0.0227                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4326   28.3477    8.0352                |
+|T11=  0.0828 T22=  0.1504 T33=  0.1311 T12=  0.0174 T13= -0.0524 T23=  0.0482|
+|L11=  0.0047 L22=  0.0397 L33=  0.0164 L12=  0.0047 L13=  0.0133 L23= -0.0158|
+|S11=  0.1921 S22=  0.1754 S33=  0.0459 S12=  0.0416 S13= -0.0820 S21=  0.0429|
+|S23=  0.0177 S31= -0.1431 S32= -0.1727                                       |
+|-----------------------------------------------------------------------------|
+
+                 ----------Individual ADP refinement----------                 
+
+    R-FACTORS      <Bi-Bj>  <B>   WEIGHT       TARGETS
+ work  free  delta                           data restr
+23.89 29.29   5.40  2.610  15.330  0.335    0.062
+27.90 33.20   5.30  1.927  18.836  0.010    0.080
+24.91 30.82   5.92  1.827  17.124  0.042    0.067
+23.12 29.23   6.11  1.942  16.335  0.167    0.059
+22.52 28.67   6.15  2.395  16.605  0.335    0.056
+22.22 28.49   6.27  2.849  16.740  0.502    0.055
+22.06 28.44   6.37  3.283  16.920  0.669    0.054
+21.96 28.34   6.39  3.660  17.241  0.836    0.054
+21.90 28.38   6.48  3.971  17.336  1.004    0.053
+21.85 28.42   6.57  4.294  17.429  1.171    0.053
+21.82 28.38   6.55  4.568  17.677  1.338    0.053
+21.81 28.42   6.60  4.735  17.703  1.506    0.053
+21.79 28.42   6.63  4.988  17.871  1.673    0.053
+  max suggested <Bi-Bj> for this run:   10.00
+  max allowed Rfree-Rwork gap:   5.0
+  range of equivalent Rfree:   0.0
+Best ADP weight:    0.042
+Accepted refinement result:
+24.91 30.82   5.92  1.827  17.124  0.042    0.067
+
+ Individual atomic B
+                min    max   mean <Bi,j>   iso aniso
+   Overall:    9.52  56.17  17.12   1.83  1214  1010
+   Protein:    9.52  56.17  16.51   1.83  1010  1010
+   Water:     10.57  33.43  19.89    N/A   197     0
+   Other:     16.42  42.62  28.08    N/A     7     0
+   Chain  A:   9.52  56.17  17.12    N/A  1214  1010
+   Histogram:
+       Values      Number of atoms
+     9.52 - 14.18       408
+    14.18 - 18.85       483
+    18.85 - 23.51       183
+    23.51 - 28.18        88
+    28.18 - 32.84        30
+    32.84 - 37.51        12
+    37.51 - 42.17         3
+    42.17 - 46.84         3
+    46.84 - 51.51         2
+    51.51 - 56.17         2
+
+
+============================= Occupancy refinement ============================
+
+|-occupancy refinement: start-------------------------------------------------|
+| r_work = 0.2491 r_free = 0.3082    target_work(ls_wunit_k1) = 0.067         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        6 |
+|-----------------------------------------------------------------------------|
+|-occupancy refinement: end---------------------------------------------------|
+| r_work = 0.2470 r_free = 0.3048    target_work(ls_wunit_k1) = 0.066         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        6 |
+|-----------------------------------------------------------------------------|
+
+*********************** REFINEMENT MACRO_CYCLE 3 OF 5 *************************
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2470 r_free= 0.3048 coordinate error (max.-lik. estimate): 0.07 A |
+|                                                                             |
+| normalized target function (ls_wunit_k1) (work): 0.065833                   |
+| target function (ls_wunit_k1) not normalized (work): 789.336901             |
+| target function (ls_wunit_k1) not normalized (free): 148.555305             |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2529 0.2470 0.3048 n_refl.: 13308
+       re-set all scales: r(all,work,free)=0.3002 0.2938 0.3563 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.3002 0.2938 0.3563 n_refl.: 13308
+overall B=-1.62 to atoms: r(all,work,free)=0.2906 0.2841 0.3463 n_refl.: 13308
+bulk-solvent and scaling: r(all,work,free)=0.2495 0.2434 0.3024 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2495 0.2434 0.3024 n_refl.: 13308
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3114   328.496   320.345 0.710 0.891 0.301
+  9.137-7.240    99.02    94     7 0.3040   315.448   319.719 0.872 0.917 0.295
+  7.240-5.741   100.00   181    17 0.3006   271.716   258.926 0.853 0.923 0.293
+  5.735-4.547   100.00   351    28 0.2587   334.468   321.047 0.919 0.932 0.224
+  4.540-3.603   100.00   667    64 0.1914   429.623   422.534 1.065 0.941 0.133
+  3.602-2.855   100.00  1286   151 0.2212   318.805   311.965 1.048 0.950 0.042
+  2.854-2.262    99.90  2571   284 0.2410   202.783   197.381 1.024 0.958 0.000
+  2.262-1.792    99.93  5025   575 0.2612   128.837   125.755 1.057 0.970 0.000
+  1.792-1.700    99.90  1725   182 0.2812    80.959    77.709 0.976 0.977 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9167   b_overall=-1.3484 
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+============================ Update CDL restraints ============================
+
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 4.705371              wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 0.142963              wxu_scale = 1.000            wu = 1.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+Weight selection criteria:
+  R_free deviation:  0.0000
+  R_free-R_work gap: 5.0000
+  Bond RMSD:         0.0200
+  Angle RMSD:        2.5000
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2549 0.3077 0.0528  0.002   0.5    3.5   0.0   1.9    0   0.125
+ 0.2483 0.3044 0.0561  0.002   0.5    3.0   0.0   1.9    0   0.250
+ 0.2421 0.3018 0.0597  0.003   0.6    3.0   0.0   1.9    0   0.500
+ 0.2372 0.2984 0.0612  0.003   0.7    3.0   0.0   1.9    0   1.000
+ 0.2332 0.2967 0.0635  0.005   0.8    3.5   0.0   1.9    0   2.000
+ 0.2313 0.2960 0.0647  0.006   0.9    3.5   0.0   1.9    0   3.000
+ 0.2300 0.2958 0.0658  0.007   1.0    3.5   0.0   1.9    0   4.000
+ 0.2291 0.2957 0.0666  0.008   1.1    3.5   0.0   1.9    0   5.000
+ 0.2284 0.2956 0.0672  0.009   1.1    3.5   0.0   1.9    0   6.000
+ 0.2278 0.2959 0.0681  0.010   1.2    3.5   0.0   1.9    0   7.000
+ 0.2274 0.2957 0.0683  0.011   1.2    4.0   0.0   1.9    0   8.000
+ 0.2269 0.2957 0.0687  0.012   1.3    4.5   0.0   1.9    0   9.000
+ 0.2265 0.2956 0.0691  0.013   1.4    5.1   0.0   1.9    0  10.000
+ 0.2323 0.2964 0.0640  0.005   0.8    3.5   0.0   1.9    0   2.353
+
+ Best weight:
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2284 0.2956 0.0672  0.009   1.1    3.5   0.0   1.9    0   6.000
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+                       ----------TLS refinement----------                      
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2284 r_free = 0.2956 target = 5.242874 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 30)----------------|
+| r_work = 0.2224 r_free = 0.2893 target = 5.213136 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+
+|-Information about rigid groups----------------------------------------------|
+| Total number of atoms = 1214    Number of rigid groups = 9                  |
+| group: start point:                        end point:                       |
+|               x      B  atom  residue  <>        x      B  atom  residue    |
+|     1:    2.915  12.57   N   LYS    1  <>  -16.762  38.30   NH2 ARG   14    |
+|     2:  -12.324  15.58   N   HIS   15  <>  -10.939  12.43   OG  SER   24    |
+|     3:  -11.318  12.93   N   LEU   25  <>    7.309  10.06   CB  ALA   42    |
+|     4:    9.777  12.36   N   THR   43  <>   11.893  13.62   OG  SER   50    |
+|     5:   11.909  11.34   N   THR   51  <>   15.513  14.27   NH2 ARG   68    |
+|     6:   13.755  12.14   N   THR   69  <>   -6.140  12.33   CD1 ILE   88    |
+|     7:   -5.417  11.48   N   THR   89  <>   -6.168  10.27   CG2 VAL   99    |
+|     8:   -6.417  15.03   N   SER  100  <>    6.706  11.41   NH2 ARG  114    |
+|     9:    0.263  12.78   N   CYS  115  <>  -17.518  41.48   OXT LEU  129    |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: start model-------------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0588322  r_work = 0.2224  r_free = 0.2893      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start model-------------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 7.17     max = 47.98    mean = 15.38   |
+| Isotropic B only:              min = 0.00     max = 41.00    mean = 7.69    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    4.100:     535      |        7.174 -   11.255:     285      |
+|      4.100 -    8.200:     280      |       11.255 -   15.335:     475      |
+|      8.200 -   12.300:     126      |       15.335 -   19.416:     204      |
+|     12.300 -   16.400:      98      |       19.416 -   23.496:     143      |
+|     16.400 -   20.500:      85      |       23.496 -   27.577:      57      |
+|     20.500 -   24.600:      53      |       27.577 -   31.658:      25      |
+|     24.600 -   28.700:      26      |       31.658 -   35.738:      13      |
+|     28.700 -   32.800:       8      |       35.738 -   39.819:       4      |
+|     32.800 -   36.900:       1      |       39.819 -   43.899:       6      |
+|     36.900 -   41.000:       2      |       43.899 -   47.980:       2      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start parameters--------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8296   16.2284    9.4061                |
+|T11=  0.1307 T22=  0.1411 T33=  0.1325 T12=  0.0116 T13= -0.0455 T23= -0.0216|
+|L11=  0.0872 L22=  0.1999 L33=  0.0306 L12= -0.0478 L13= -0.0102 L23= -0.0659|
+|S11=  0.0142 S22= -0.0295 S33= -0.0054 S12=  0.0962 S13= -0.0162 S21= -0.0593|
+|S23=  0.0991 S31=  0.0435 S32=  0.0783                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6101   23.4658   20.5010                |
+|T11=  0.0788 T22=  0.1036 T33=  0.1471 T12=  0.0052 T13= -0.0010 T23=  0.0044|
+|L11=  0.0184 L22=  0.1153 L33=  0.1480 L12= -0.0164 L13= -0.0258 L23= -0.0830|
+|S11= -0.0412 S22=  0.1629 S33=  0.0265 S12= -0.1403 S13= -0.0808 S21=  0.0724|
+|S23=  0.0306 S31= -0.0112 S32= -0.0170                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2633   21.7176   12.7666                |
+|T11=  0.0934 T22=  0.0918 T33=  0.0775 T12=  0.0192 T13= -0.0186 T23= -0.0041|
+|L11=  0.1692 L22=  0.0311 L33=  0.0475 L12= -0.0443 L13= -0.0829 L23=  0.0100|
+|S11=  0.0701 S22= -0.0728 S33=  0.0082 S12=  0.1643 S13=  0.0599 S21=  0.0581|
+|S23= -0.0845 S31= -0.0235 S32= -0.0581                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4679   19.5390   23.5766                |
+|T11=  0.1077 T22=  0.1529 T33=  0.1584 T12= -0.0015 T13= -0.0479 T23= -0.0233|
+|L11=  0.0572 L22=  0.0557 L33=  0.2535 L12=  0.0559 L13=  0.1031 L23=  0.0923|
+|S11=  0.0315 S22=  0.0304 S33=  0.1138 S12=  0.0652 S13= -0.0614 S21=  0.0174|
+|S23= -0.0633 S31=  0.0202 S32=  0.0434                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0543   16.5882   25.6448                |
+|T11=  0.1124 T22=  0.0921 T33=  0.0922 T12=  0.0185 T13= -0.0212 T23= -0.0017|
+|L11=  0.0595 L22=  0.0251 L33=  0.0559 L12=  0.0305 L13= -0.0474 L23= -0.0112|
+|S11= -0.0613 S22=  0.0439 S33=  0.0000 S12=  0.0051 S13= -0.0805 S21=  0.1482|
+|S23=  0.0672 S31= -0.1116 S32=  0.0465                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1616   11.8228   26.3043                |
+|T11=  0.1335 T22=  0.1320 T33=  0.1213 T12=  0.0091 T13= -0.0108 T23=  0.0052|
+|L11=  0.0428 L22=  0.1049 L33=  0.0205 L12= -0.0361 L13=  0.0054 L23= -0.0429|
+|S11= -0.0996 S22=  0.0153 S33= -0.0162 S12= -0.1081 S13= -0.1405 S21=  0.0324|
+|S23=  0.0947 S31= -0.0450 S32=  0.0502                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0645   17.0835   24.3802                |
+|T11=  0.0912 T22=  0.0995 T33=  0.1325 T12= -0.0079 T13= -0.0042 T23=  0.0123|
+|L11=  0.0025 L22=  0.0107 L33=  0.0238 L12= -0.0037 L13=  0.0026 L23=  0.0067|
+|S11=  0.0269 S22=  0.0137 S33=  0.0040 S12= -0.0427 S13= -0.1293 S21=  0.0202|
+|S23=  0.0262 S31= -0.0345 S32= -0.1045                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1987   29.5480   22.4640                |
+|T11=  0.0944 T22=  0.1244 T33=  0.1230 T12= -0.0017 T13=  0.0000 T23=  0.0116|
+|L11=  0.0264 L22=  0.0993 L33=  0.0485 L12=  0.0153 L13= -0.0345 L23= -0.0379|
+|S11= -0.0786 S22=  0.0516 S33= -0.0189 S12=  0.0336 S13=  0.0338 S21=  0.0987|
+|S23= -0.1361 S31= -0.0404 S32=  0.0224                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4483   28.3431    8.0415                |
+|T11=  0.1154 T22=  0.1561 T33=  0.1478 T12=  0.0175 T13= -0.0325 T23=  0.0351|
+|L11=  0.0450 L22=  0.1989 L33=  0.5644 L12= -0.0557 L13= -0.1539 L23=  0.1204|
+|S11=  0.1052 S22=  0.1144 S33=  0.1938 S12=  0.0624 S13= -0.0677 S21=  0.0663|
+|S23=  0.0499 S31= -0.0155 S32= -0.1072                                       |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 6.16     max = 46.34    mean = 14.90   |
+| Isotropic B only:              min = 0.00     max = 41.00    mean = 7.69    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    4.100:     535      |        6.160 -   10.178:     249      |
+|      4.100 -    8.200:     280      |       10.178 -   14.196:     448      |
+|      8.200 -   12.300:     126      |       14.196 -   18.213:     235      |
+|     12.300 -   16.400:      98      |       18.213 -   22.231:     145      |
+|     16.400 -   20.500:      85      |       22.231 -   26.248:      63      |
+|     20.500 -   24.600:      53      |       26.248 -   30.266:      39      |
+|     24.600 -   28.700:      26      |       30.266 -   34.283:      17      |
+|     28.700 -   32.800:       8      |       34.283 -   38.301:       9      |
+|     32.800 -   36.900:       1      |       38.301 -   42.318:       4      |
+|     36.900 -   41.000:       2      |       42.318 -   46.336:       5      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8296   16.2284    9.4061                |
+|T11=  0.1117 T22=  0.1409 T33=  0.1129 T12=  0.0122 T13= -0.0399 T23= -0.0186|
+|L11=  0.1191 L22=  0.2764 L33=  0.1126 L12= -0.0084 L13=  0.0175 L23= -0.0222|
+|S11=  0.0766 S22= -0.1063 S33= -0.0054 S12=  0.2196 S13= -0.1041 S21= -0.0715|
+|S23=  0.0912 S31=  0.0691 S32= -0.0265                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6101   23.4658   20.5010                |
+|T11=  0.0575 T22=  0.0965 T33=  0.1468 T12=  0.0066 T13=  0.0111 T23= -0.0056|
+|L11=  0.0813 L22=  0.1745 L33=  0.2102 L12=  0.0070 L13= -0.0611 L23= -0.1335|
+|S11= -0.0250 S22=  0.1436 S33=  0.0265 S12= -0.1382 S13= -0.1017 S21=  0.3508|
+|S23=  0.1160 S31=  0.0281 S32= -0.1012                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2633   21.7176   12.7666                |
+|T11=  0.0774 T22=  0.0819 T33=  0.0745 T12=  0.0208 T13= -0.0208 T23=  0.0021|
+|L11=  0.2450 L22=  0.0516 L33=  0.1559 L12= -0.0214 L13= -0.0590 L23=  0.0502|
+|S11=  0.1081 S22= -0.0996 S33=  0.0082 S12=  0.1954 S13=  0.1093 S21= -0.0276|
+|S23= -0.1429 S31= -0.0302 S32= -0.0629                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4679   19.5390   23.5766                |
+|T11=  0.0871 T22=  0.1607 T33=  0.1560 T12= -0.0059 T13= -0.0620 T23= -0.0451|
+|L11=  0.0597 L22=  0.0710 L33=  0.2543 L12=  0.0826 L13=  0.1026 L23=  0.1103|
+|S11=  0.3035 S22=  0.2846 S33=  0.1138 S12=  0.1796 S13= -0.1741 S21=  0.0409|
+|S23= -0.4128 S31= -0.2383 S32=  0.1967                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0543   16.5882   25.6448                |
+|T11=  0.1108 T22=  0.0768 T33=  0.0808 T12=  0.0205 T13= -0.0204 T23= -0.0026|
+|L11=  0.2431 L22=  0.1137 L33=  0.2801 L12=  0.1747 L13= -0.1772 L23= -0.0551|
+|S11= -0.0345 S22=  0.0636 S33=  0.0000 S12= -0.0257 S13= -0.0914 S21=  0.1778|
+|S23=  0.0200 S31= -0.1632 S32=  0.0520                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1616   11.8228   26.3043                |
+|T11=  0.1177 T22=  0.1213 T33=  0.1206 T12=  0.0103 T13= -0.0110 T23=  0.0003|
+|L11=  0.2129 L22=  0.2671 L33=  0.0636 L12= -0.1647 L13= -0.0688 L23= -0.2445|
+|S11= -0.0938 S22= -0.0147 S33= -0.0162 S12= -0.1261 S13= -0.1045 S21=  0.0680|
+|S23=  0.1080 S31=  0.0836 S32=  0.0901                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0645   17.0835   24.3802                |
+|T11=  0.0869 T22=  0.0916 T33=  0.1155 T12= -0.0055 T13= -0.0055 T23=  0.0144|
+|L11= -0.0099 L22=  0.0035 L33=  0.1116 L12= -0.0140 L13=  0.0286 L23=  0.0286|
+|S11=  0.0519 S22= -0.0485 S33=  0.0040 S12= -0.0610 S13= -0.1676 S21=  0.1165|
+|S23=  0.1161 S31= -0.0234 S32= -0.1325                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1987   29.5480   22.4640                |
+|T11=  0.0805 T22=  0.1142 T33=  0.1050 T12= -0.0048 T13=  0.0040 T23=  0.0161|
+|L11=  0.0675 L22=  0.1353 L33=  0.0984 L12=  0.0193 L13= -0.0720 L23= -0.0018|
+|S11= -0.0332 S22=  0.0425 S33= -0.0189 S12= -0.0171 S13=  0.0526 S21=  0.1510|
+|S23= -0.1083 S31= -0.0812 S32=  0.0782                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4483   28.3431    8.0415                |
+|T11=  0.0904 T22=  0.1643 T33=  0.1585 T12=  0.0174 T13= -0.0472 T23=  0.0376|
+|L11=  0.1650 L22=  0.2785 L33=  0.6717 L12= -0.0804 L13= -0.2084 L23=  0.0392|
+|S11=  0.1234 S22=  0.1185 S33=  0.1938 S12= -0.0864 S13= -0.1155 S21= -0.0007|
+|S23=  0.1643 S31= -0.1701 S32= -0.3951                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0581299  r_work = 0.2210  r_free = 0.2864      |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 6.18     max = 46.34    mean = 14.92   |
+| Isotropic B only:              min = 0.00     max = 41.00    mean = 7.69    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    4.100:     535      |        6.177 -   10.194:     248      |
+|      4.100 -    8.200:     280      |       10.194 -   14.210:     451      |
+|      8.200 -   12.300:     126      |       14.210 -   18.227:     234      |
+|     12.300 -   16.400:      98      |       18.227 -   22.243:     144      |
+|     16.400 -   20.500:      85      |       22.243 -   26.260:      62      |
+|     20.500 -   24.600:      53      |       26.260 -   30.276:      40      |
+|     24.600 -   28.700:      26      |       30.276 -   34.293:      17      |
+|     28.700 -   32.800:       8      |       34.293 -   38.309:       9      |
+|     32.800 -   36.900:       1      |       38.309 -   42.326:       4      |
+|     36.900 -   41.000:       2      |       42.326 -   46.342:       5      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8296   16.2284    9.4061                |
+|T11=  0.1117 T22=  0.1425 T33=  0.1132 T12=  0.0128 T13= -0.0417 T23= -0.0199|
+|L11=  0.1192 L22=  0.2767 L33=  0.1129 L12= -0.0083 L13=  0.0176 L23= -0.0221|
+|S11=  0.0764 S22= -0.1058 S33= -0.0054 S12=  0.2187 S13= -0.1038 S21= -0.0714|
+|S23=  0.0908 S31=  0.0690 S32= -0.0259                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6101   23.4658   20.5010                |
+|T11=  0.0529 T22=  0.0975 T33=  0.1475 T12=  0.0079 T13=  0.0099 T23= -0.0073|
+|L11=  0.0815 L22=  0.1746 L33=  0.2105 L12=  0.0070 L13= -0.0613 L23= -0.1337|
+|S11= -0.0251 S22=  0.1439 S33=  0.0265 S12= -0.1379 S13= -0.1016 S21=  0.3493|
+|S23=  0.1159 S31=  0.0290 S32= -0.1008                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2633   21.7176   12.7666                |
+|T11=  0.0789 T22=  0.0816 T33=  0.0739 T12=  0.0193 T13= -0.0209 T23=  0.0015|
+|L11=  0.2453 L22=  0.0516 L33=  0.1563 L12= -0.0213 L13= -0.0589 L23=  0.0504|
+|S11=  0.1069 S22= -0.1006 S33=  0.0082 S12=  0.1950 S13=  0.1089 S21= -0.0278|
+|S23= -0.1433 S31= -0.0297 S32= -0.0631                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4679   19.5390   23.5766                |
+|T11=  0.0877 T22=  0.1607 T33=  0.1558 T12= -0.0073 T13= -0.0601 T23= -0.0431|
+|L11=  0.0597 L22=  0.0711 L33=  0.2543 L12=  0.0827 L13=  0.1026 L23=  0.1103|
+|S11=  0.3038 S22=  0.2853 S33=  0.1138 S12=  0.1799 S13= -0.1744 S21=  0.0405|
+|S23= -0.4133 S31= -0.2389 S32=  0.1967                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0543   16.5882   25.6448                |
+|T11=  0.1123 T22=  0.0788 T33=  0.0818 T12=  0.0221 T13= -0.0199 T23= -0.0031|
+|L11=  0.2437 L22=  0.1140 L33=  0.2808 L12=  0.1751 L13= -0.1776 L23= -0.0552|
+|S11= -0.0355 S22=  0.0618 S33=  0.0000 S12= -0.0252 S13= -0.0907 S21=  0.1771|
+|S23=  0.0207 S31= -0.1636 S32=  0.0518                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1616   11.8228   26.3043                |
+|T11=  0.1169 T22=  0.1213 T33=  0.1218 T12=  0.0091 T13= -0.0110 T23=  0.0005|
+|L11=  0.2133 L22=  0.2675 L33=  0.0637 L12= -0.1651 L13= -0.0689 L23= -0.2451|
+|S11= -0.0943 S22= -0.0140 S33= -0.0162 S12= -0.1275 S13= -0.1047 S21=  0.0689|
+|S23=  0.1082 S31=  0.0825 S32=  0.0904                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0645   17.0835   24.3802                |
+|T11=  0.0855 T22=  0.0906 T33=  0.1156 T12= -0.0052 T13= -0.0051 T23=  0.0146|
+|L11= -0.0099 L22=  0.0035 L33=  0.1119 L12= -0.0141 L13=  0.0287 L23=  0.0287|
+|S11=  0.0529 S22= -0.0478 S33=  0.0040 S12= -0.0613 S13= -0.1668 S21=  0.1168|
+|S23=  0.1158 S31= -0.0242 S32= -0.1322                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1987   29.5480   22.4640                |
+|T11=  0.0827 T22=  0.1129 T33=  0.1050 T12= -0.0049 T13=  0.0043 T23=  0.0162|
+|L11=  0.0676 L22=  0.1354 L33=  0.0986 L12=  0.0193 L13= -0.0722 L23= -0.0017|
+|S11= -0.0337 S22=  0.0425 S33= -0.0189 S12= -0.0168 S13=  0.0534 S21=  0.1502|
+|S23= -0.1095 S31= -0.0816 S32=  0.0783                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4483   28.3431    8.0415                |
+|T11=  0.0906 T22=  0.1652 T33=  0.1573 T12=  0.0122 T13= -0.0471 T23=  0.0371|
+|L11=  0.1653 L22=  0.2788 L33=  0.6720 L12= -0.0804 L13= -0.2086 L23=  0.0390|
+|S11=  0.1238 S22=  0.1185 S33=  0.1938 S12= -0.0863 S13= -0.1152 S21= -0.0005|
+|S23=  0.1630 S31= -0.1703 S32= -0.3937                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0581217  r_work = 0.2210  r_free = 0.2866      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: final values------------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8296   16.2284    9.4061                |
+|T11=  0.1117 T22=  0.1425 T33=  0.1132 T12=  0.0128 T13= -0.0417 T23= -0.0199|
+|L11=  0.1192 L22=  0.2767 L33=  0.1129 L12= -0.0083 L13=  0.0176 L23= -0.0221|
+|S11=  0.0764 S22= -0.1058 S33= -0.0054 S12=  0.2187 S13= -0.1038 S21= -0.0714|
+|S23=  0.0908 S31=  0.0690 S32= -0.0259                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6101   23.4658   20.5010                |
+|T11=  0.0529 T22=  0.0975 T33=  0.1475 T12=  0.0079 T13=  0.0099 T23= -0.0073|
+|L11=  0.0815 L22=  0.1746 L33=  0.2105 L12=  0.0070 L13= -0.0613 L23= -0.1337|
+|S11= -0.0251 S22=  0.1439 S33=  0.0265 S12= -0.1379 S13= -0.1016 S21=  0.3493|
+|S23=  0.1159 S31=  0.0290 S32= -0.1008                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2633   21.7176   12.7666                |
+|T11=  0.0789 T22=  0.0816 T33=  0.0739 T12=  0.0193 T13= -0.0209 T23=  0.0015|
+|L11=  0.2453 L22=  0.0516 L33=  0.1563 L12= -0.0213 L13= -0.0589 L23=  0.0504|
+|S11=  0.1069 S22= -0.1006 S33=  0.0082 S12=  0.1950 S13=  0.1089 S21= -0.0278|
+|S23= -0.1433 S31= -0.0297 S32= -0.0631                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4679   19.5390   23.5766                |
+|T11=  0.0877 T22=  0.1607 T33=  0.1558 T12= -0.0073 T13= -0.0601 T23= -0.0431|
+|L11=  0.0597 L22=  0.0711 L33=  0.2543 L12=  0.0827 L13=  0.1026 L23=  0.1103|
+|S11=  0.3038 S22=  0.2853 S33=  0.1138 S12=  0.1799 S13= -0.1744 S21=  0.0405|
+|S23= -0.4133 S31= -0.2389 S32=  0.1967                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0543   16.5882   25.6448                |
+|T11=  0.1123 T22=  0.0788 T33=  0.0818 T12=  0.0221 T13= -0.0199 T23= -0.0031|
+|L11=  0.2437 L22=  0.1140 L33=  0.2808 L12=  0.1751 L13= -0.1776 L23= -0.0552|
+|S11= -0.0355 S22=  0.0618 S33=  0.0000 S12= -0.0252 S13= -0.0907 S21=  0.1771|
+|S23=  0.0207 S31= -0.1636 S32=  0.0518                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1616   11.8228   26.3043                |
+|T11=  0.1169 T22=  0.1213 T33=  0.1218 T12=  0.0091 T13= -0.0110 T23=  0.0005|
+|L11=  0.2133 L22=  0.2675 L33=  0.0637 L12= -0.1651 L13= -0.0689 L23= -0.2451|
+|S11= -0.0943 S22= -0.0140 S33= -0.0162 S12= -0.1275 S13= -0.1047 S21=  0.0689|
+|S23=  0.1082 S31=  0.0825 S32=  0.0904                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0645   17.0835   24.3802                |
+|T11=  0.0855 T22=  0.0906 T33=  0.1156 T12= -0.0052 T13= -0.0051 T23=  0.0146|
+|L11= -0.0099 L22=  0.0035 L33=  0.1119 L12= -0.0141 L13=  0.0287 L23=  0.0287|
+|S11=  0.0529 S22= -0.0478 S33=  0.0040 S12= -0.0613 S13= -0.1668 S21=  0.1168|
+|S23=  0.1158 S31= -0.0242 S32= -0.1322                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1987   29.5480   22.4640                |
+|T11=  0.0827 T22=  0.1129 T33=  0.1050 T12= -0.0049 T13=  0.0043 T23=  0.0162|
+|L11=  0.0676 L22=  0.1354 L33=  0.0986 L12=  0.0193 L13= -0.0722 L23= -0.0017|
+|S11= -0.0337 S22=  0.0425 S33= -0.0189 S12= -0.0168 S13=  0.0534 S21=  0.1502|
+|S23= -0.1095 S31= -0.0816 S32=  0.0783                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4483   28.3431    8.0415                |
+|T11=  0.0906 T22=  0.1652 T33=  0.1573 T12=  0.0122 T13= -0.0471 T23=  0.0371|
+|L11=  0.1653 L22=  0.2788 L33=  0.6720 L12= -0.0804 L13= -0.2086 L23=  0.0390|
+|S11=  0.1238 S22=  0.1185 S33=  0.1938 S12= -0.0863 S13= -0.1152 S21= -0.0005|
+|S23=  0.1630 S31= -0.1703 S32= -0.3937                                       |
+|-----------------------------------------------------------------------------|
+
+                 ----------Individual ADP refinement----------                 
+
+    R-FACTORS      <Bi-Bj>  <B>   WEIGHT       TARGETS
+ work  free  delta                           data restr
+22.10 28.66   6.56  2.070  14.917  0.143    5.204
+23.21 29.74   6.53  1.362  15.339  0.004    5.251
+21.88 28.38   6.50  1.527  14.940  0.018    5.185
+21.02 27.09   6.08  2.164  15.049  0.071    5.134
+20.81 26.85   6.04  2.657  15.247  0.143    5.123
+20.72 26.67   5.94  2.986  15.420  0.214    5.118
+20.69 26.62   5.93  3.178  15.498  0.286    5.116
+20.69 26.64   5.95  3.292  15.530  0.357    5.116
+20.66 26.53   5.87  3.479  15.650  0.429    5.114
+20.66 26.50   5.85  3.596  15.709  0.500    5.113
+20.65 26.51   5.85  3.644  15.732  0.572    5.114
+20.66 26.51   5.85  3.704  15.748  0.643    5.113
+20.66 26.52   5.87  3.723  15.747  0.715    5.114
+  max suggested <Bi-Bj> for this run:   10.00
+  max allowed Rfree-Rwork gap:   5.0
+  range of equivalent Rfree:   0.0
+Best ADP weight:    0.004
+Accepted refinement result:
+23.21 29.74   6.53  1.362  15.339  0.004    5.251
+
+ Individual atomic B
+                min    max   mean <Bi,j>   iso aniso
+   Overall:    7.09  41.34  15.34   1.36  1214  1010
+   Protein:    7.09  41.34  14.80   1.36  1010  1010
+   Water:      9.69  30.87  17.83    N/A   197     0
+   Other:     15.24  36.00  23.64    N/A     7     0
+   Chain  A:   7.09  41.34  15.34    N/A  1214  1010
+   Histogram:
+       Values      Number of atoms
+     7.09 - 10.52        95
+    10.52 - 13.94       507
+    13.94 - 17.37       311
+    17.37 - 20.79       144
+    20.79 - 24.22        87
+    24.22 - 27.64        39
+    27.64 - 31.07        13
+    31.07 - 34.49        10
+    34.49 - 37.92         3
+    37.92 - 41.34         5
+
+
+============================= Occupancy refinement ============================
+
+|-occupancy refinement: start-------------------------------------------------|
+| r_work = 0.2321 r_free = 0.2974             target_work(ml) = 5.251         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        6 |
+|-----------------------------------------------------------------------------|
+|-occupancy refinement: end---------------------------------------------------|
+| r_work = 0.2301 r_free = 0.2809             target_work(ml) = 5.213         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        7 |
+|-----------------------------------------------------------------------------|
+
+*********************** REFINEMENT MACRO_CYCLE 4 OF 5 *************************
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2301 r_free= 0.2809 coordinate error (max.-lik. estimate): 0.11 A |
+|                                                                             |
+| normalized target function (ml) (work): 5.212861                            |
+| target function (ml) not normalized (work): 62502.205005                    |
+| target function (ml) not normalized (free): 7117.669877                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2353 0.2300 0.2812 n_refl.: 13308
+       re-set all scales: r(all,work,free)=0.2846 0.2794 0.3301 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2846 0.2794 0.3301 n_refl.: 13308
+overall B=-0.73 to atoms: r(all,work,free)=0.2799 0.2746 0.3258 n_refl.: 13308
+bulk-solvent and scaling: r(all,work,free)=0.2346 0.2292 0.2826 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2346 0.2292 0.2826 n_refl.: 13308
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3412   328.496   316.405 0.617 0.950 0.285
+  9.137-7.240    99.02    94     7 0.3247   315.448   318.241 0.791 0.979 0.260
+  7.240-5.741   100.00   181    17 0.3213   271.716   253.568 0.779 0.983 0.241
+  5.735-4.547   100.00   351    28 0.2821   334.468   315.342 0.858 0.990 0.201
+  4.540-3.603   100.00   667    64 0.2087   429.623   419.033 1.004 0.996 0.015
+  3.602-2.855   100.00  1286   151 0.2273   318.805   311.105 1.009 0.998 0.000
+  2.854-2.262    99.90  2571   284 0.2312   202.783   196.925 0.991 0.995 0.000
+  2.262-1.792    99.93  5025   575 0.2158   128.837   126.783 1.031 0.989 0.000
+  1.792-1.700    99.90  1725   182 0.2097    80.959    78.844 0.961 0.982 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9167   b_overall=-1.2811 
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+============================ Update CDL restraints ============================
+
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 4.242857              wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 0.110153              wxu_scale = 1.000            wu = 1.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+Weight selection criteria:
+  R_free deviation:  0.0000
+  R_free-R_work gap: 5.0000
+  Bond RMSD:         0.0200
+  Angle RMSD:        2.5000
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2453 0.2854 0.0401  0.003   0.6    4.0   0.0   1.9    0   0.125
+ 0.2427 0.2844 0.0417  0.003   0.6    3.5   0.0   1.9    0   0.250
+ 0.2393 0.2833 0.0440  0.003   0.6    3.5   0.0   1.9    0   0.500
+ 0.2357 0.2824 0.0467  0.004   0.7    3.5   0.0   1.9    0   1.000
+ 0.2322 0.2820 0.0498  0.005   0.8    3.0   0.0   1.9    0   2.000
+ 0.2302 0.2819 0.0517  0.007   0.9    3.5   0.0   1.9    0   3.000
+ 0.2289 0.2817 0.0528  0.008   1.0    3.5   0.0   1.9    0   4.000
+ 0.2280 0.2816 0.0536  0.009   1.1    4.0   0.0   1.9    0   5.000
+ 0.2272 0.2818 0.0546  0.010   1.2    5.1   0.0   1.9    0   6.000
+ 0.2266 0.2819 0.0553  0.011   1.2    4.5   0.0   1.9    0   7.000
+ 0.2261 0.2820 0.0560  0.012   1.3    4.5   0.0   1.9    0   8.000
+ 0.2257 0.2822 0.0565  0.013   1.3    4.5   0.0   1.9    0   9.000
+ 0.2252 0.2824 0.0571  0.014   1.4    4.5   0.0   1.9    0  10.000
+ 0.2318 0.2819 0.0501  0.005   0.8    3.0   0.0   1.9    0   2.121
+
+ Best weight:
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2289 0.2817 0.0528  0.008   1.0    3.5   0.0   1.9    0   4.000
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+                       ----------TLS refinement----------                      
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2289 r_free = 0.2817 target = 5.210440 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 31)----------------|
+| r_work = 0.2248 r_free = 0.2770 target = 5.186012 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+
+|-Information about rigid groups----------------------------------------------|
+| Total number of atoms = 1214    Number of rigid groups = 9                  |
+| group: start point:                        end point:                       |
+|               x      B  atom  residue  <>        x      B  atom  residue    |
+|     1:    2.905  10.97   N   LYS    1  <>  -16.805  36.76   NH2 ARG   14    |
+|     2:  -12.324  17.70   N   HIS   15  <>  -10.968  11.85   OG  SER   24    |
+|     3:  -11.332  12.09   N   LEU   25  <>    7.290   8.29   CB  ALA   42    |
+|     4:    9.769  10.90   N   THR   43  <>   11.906  12.90   OG  SER   50    |
+|     5:   11.903  10.92   N   THR   51  <>   15.496  15.02   NH2 ARG   68    |
+|     6:   13.753  12.59   N   THR   69  <>   -6.135  12.10   CD1 ILE   88    |
+|     7:   -5.427  11.97   N   THR   89  <>   -6.161   9.85   CG2 VAL   99    |
+|     8:   -6.417  14.68   N   SER  100  <>    6.705  11.37   NH2 ARG  114    |
+|     9:    0.256  12.27   N   CYS  115  <>  -17.520  38.95   OXT LEU  129    |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: start model-------------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0634697  r_work = 0.2248  r_free = 0.2770      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start model-------------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 6.48     max = 40.24    mean = 14.67   |
+| Isotropic B only:              min = 0.00     max = 35.27    mean = 7.05    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    3.527:     506      |        6.483 -    9.858:     173      |
+|      3.527 -    7.054:     284      |        9.858 -   13.233:     450      |
+|      7.054 -   10.580:     126      |       13.233 -   16.609:     249      |
+|     10.580 -   14.107:     102      |       16.609 -   19.984:     147      |
+|     14.107 -   17.634:      83      |       19.984 -   23.359:     109      |
+|     17.634 -   21.161:      63      |       23.359 -   26.735:      40      |
+|     21.161 -   24.687:      36      |       26.735 -   30.110:      23      |
+|     24.687 -   28.214:      11      |       30.110 -   33.486:      14      |
+|     28.214 -   31.741:       2      |       33.486 -   36.861:       6      |
+|     31.741 -   35.268:       1      |       36.861 -   40.236:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start parameters--------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8301   16.2307    9.4052                |
+|T11=  0.1134 T22=  0.1440 T33=  0.1148 T12=  0.0128 T13= -0.0416 T23= -0.0198|
+|L11=  0.1264 L22=  0.2782 L33=  0.1198 L12= -0.0127 L13=  0.0141 L23= -0.0169|
+|S11=  0.0758 S22= -0.1044 S33= -0.0063 S12=  0.2160 S13= -0.1018 S21= -0.0711|
+|S23=  0.0898 S31=  0.0689 S32= -0.0248                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6059   23.4698   20.5011                |
+|T11=  0.0664 T22=  0.1064 T33=  0.1472 T12=  0.0082 T13=  0.0104 T23= -0.0064|
+|L11=  0.0122 L22=  1.2385 L33=  0.2250 L12= -0.0480 L13=  0.0471 L23=  0.0276|
+|S11= -0.0281 S22=  0.1341 S33=  0.0393 S12= -0.1360 S13= -0.0952 S21=  0.2484|
+|S23=  0.0866 S31=  0.0198 S32= -0.0922                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2641   21.7167   12.7660                |
+|T11=  0.0899 T22=  0.0927 T33=  0.0853 T12=  0.0189 T13= -0.0199 T23=  0.0021|
+|L11=  0.3223 L22=  0.1852 L33=  0.1143 L12= -0.1453 L13= -0.0581 L23=  0.0579|
+|S11=  0.1012 S22= -0.0969 S33=  0.0101 S12=  0.1891 S13=  0.1006 S21= -0.0264|
+|S23= -0.1337 S31= -0.0270 S32= -0.0596                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4712   19.5394   23.5753                |
+|T11=  0.1022 T22=  0.1579 T33=  0.1557 T12= -0.0080 T13= -0.0443 T23= -0.0332|
+|L11=  0.1574 L22=  0.0777 L33=  1.6873 L12= -0.1010 L13= -0.4647 L23=  0.2345|
+|S11=  0.2002 S22=  0.1947 S33=  0.3079 S12=  0.1151 S13= -0.1134 S21=  0.0621|
+|S23= -0.3228 S31= -0.0947 S32=  0.1730                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0554   16.5850   25.6425                |
+|T11=  0.1148 T22=  0.0813 T33=  0.0843 T12=  0.0222 T13= -0.0199 T23= -0.0031|
+|L11=  0.2523 L22=  0.1259 L33=  0.2800 L12=  0.1653 L13= -0.1737 L23= -0.0608|
+|S11= -0.0354 S22=  0.0617 S33=  0.0000 S12= -0.0252 S13= -0.0907 S21=  0.1769|
+|S23=  0.0206 S31= -0.1637 S32=  0.0519                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1637   11.8213   26.3031                |
+|T11=  0.1247 T22=  0.1288 T33=  0.1293 T12=  0.0090 T13= -0.0109 T23=  0.0006|
+|L11=  0.2488 L22=  0.3174 L33=  0.1504 L12= -0.1311 L13= -0.0311 L23= -0.1744|
+|S11= -0.0911 S22= -0.0127 S33= -0.0207 S12= -0.1274 S13= -0.1053 S21=  0.0681|
+|S23=  0.1042 S31=  0.0807 S32=  0.0872                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0690   17.0830   24.3804                |
+|T11=  0.0996 T22=  0.1046 T33=  0.1296 T12= -0.0052 T13= -0.0051 T23=  0.0146|
+|L11=  0.0080 L22=  0.0080 L33=  0.1105 L12=  0.0003 L13=  0.0234 L23=  0.0192|
+|S11=  0.0528 S22= -0.0477 S33=  0.0039 S12= -0.0611 S13= -0.1666 S21=  0.1167|
+|S23=  0.1158 S31= -0.0242 S32= -0.1321                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1981   29.5484   22.4667                |
+|T11=  0.0884 T22=  0.1189 T33=  0.1102 T12= -0.0048 T13=  0.0038 T23=  0.0158|
+|L11=  0.0715 L22=  0.2328 L33=  0.1169 L12=  0.0427 L13= -0.0914 L23= -0.0511|
+|S11= -0.0314 S22=  0.0428 S33= -0.0214 S12= -0.0192 S13=  0.0519 S21=  0.1441|
+|S23= -0.1059 S31= -0.0784 S32=  0.0777                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4511   28.3497    8.0370                |
+|T11=  0.1052 T22=  0.1587 T33=  0.1550 T12=  0.0171 T13= -0.0371 T23=  0.0288|
+|L11=  0.1344 L22=  0.2298 L33=  0.6807 L12= -0.0157 L13= -0.3016 L23=  0.0056|
+|S11=  0.0827 S22=  0.0765 S33=  0.2769 S12= -0.0562 S13= -0.0847 S21=  0.0188|
+|S23=  0.1596 S31= -0.0783 S32= -0.3048                                       |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.91     max = 41.93    mean = 14.53   |
+| Isotropic B only:              min = 0.00     max = 35.27    mean = 7.05    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    3.527:     506      |        5.909 -    9.512:     193      |
+|      3.527 -    7.054:     284      |        9.512 -   13.114:     438      |
+|      7.054 -   10.580:     126      |       13.114 -   16.717:     241      |
+|     10.580 -   14.107:     102      |       16.717 -   20.319:     146      |
+|     14.107 -   17.634:      83      |       20.319 -   23.922:     106      |
+|     17.634 -   21.161:      63      |       23.922 -   27.524:      40      |
+|     21.161 -   24.688:      36      |       27.524 -   31.127:      29      |
+|     24.688 -   28.214:      11      |       31.127 -   34.729:      12      |
+|     28.214 -   31.741:       2      |       34.729 -   38.332:       6      |
+|     31.741 -   35.268:       1      |       38.332 -   41.934:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8301   16.2307    9.4052                |
+|T11=  0.1050 T22=  0.1297 T33=  0.1078 T12=  0.0131 T13= -0.0441 T23= -0.0167|
+|L11=  0.1807 L22=  0.3770 L33=  0.2320 L12=  0.0049 L13=  0.0579 L23=  0.0452|
+|S11=  0.0245 S22= -0.0474 S33= -0.0063 S12=  0.1565 S13= -0.1123 S21= -0.0795|
+|S23=  0.1275 S31=  0.0890 S32=  0.0455                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6059   23.4698   20.5011                |
+|T11= -0.0034 T22=  0.0880 T33=  0.1950 T12=  0.0059 T13=  0.0222 T23= -0.0018|
+|L11=  0.1060 L22=  1.3238 L33=  0.2992 L12= -0.0142 L13= -0.0060 L23= -0.0328|
+|S11= -0.0700 S22=  0.1762 S33=  0.0393 S12= -0.3061 S13= -0.2617 S21=  0.7414|
+|S23=  0.3948 S31= -0.0774 S32= -0.2621                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2641   21.7167   12.7660                |
+|T11=  0.0874 T22=  0.0829 T33=  0.0815 T12=  0.0178 T13= -0.0196 T23=  0.0028|
+|L11=  0.3897 L22=  0.2001 L33=  0.2664 L12= -0.1529 L13=  0.0067 L23=  0.1075|
+|S11=  0.1087 S22= -0.0980 S33=  0.0101 S12=  0.1983 S13=  0.1238 S21= -0.0260|
+|S23= -0.1902 S31= -0.0279 S32= -0.0554                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4712   19.5394   23.5753                |
+|T11=  0.0609 T22=  0.1724 T33=  0.1467 T12= -0.0288 T13= -0.0868 T23= -0.0706|
+|L11=  0.1581 L22=  0.0956 L33=  1.6835 L12= -0.0781 L13= -0.4530 L23=  0.2597|
+|S11=  0.5036 S22=  0.5045 S33=  0.3079 S12=  0.1142 S13= -0.2065 S21=  0.1085|
+|S23= -0.5822 S31= -0.6029 S32=  0.4393                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0554   16.5850   25.6425                |
+|T11=  0.1090 T22=  0.0766 T33=  0.0795 T12=  0.0249 T13= -0.0231 T23= -0.0019|
+|L11=  0.4713 L22=  0.2425 L33=  0.5278 L12=  0.2789 L13= -0.3017 L23= -0.0999|
+|S11= -0.0622 S22=  0.0464 S33=  0.0000 S12= -0.0333 S13= -0.0966 S21=  0.2000|
+|S23= -0.0105 S31= -0.1825 S32=  0.0675                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1637   11.8213   26.3031                |
+|T11=  0.1179 T22=  0.1166 T33=  0.1347 T12=  0.0091 T13= -0.0067 T23=  0.0022|
+|L11=  0.4595 L22=  0.5332 L33=  0.2514 L12= -0.2139 L13= -0.1466 L23= -0.4817|
+|S11= -0.1027 S22= -0.0192 S33= -0.0207 S12= -0.1584 S13= -0.0945 S21=  0.1279|
+|S23=  0.1138 S31=  0.1244 S32=  0.1363                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0690   17.0830   24.3804                |
+|T11=  0.0776 T22=  0.1046 T33=  0.1332 T12= -0.0094 T13= -0.0094 T23=  0.0198|
+|L11= -0.0030 L22=  0.0070 L33=  0.2052 L12= -0.0388 L13=  0.0709 L23=  0.0600|
+|S11=  0.0027 S22=  0.0470 S33=  0.0039 S12= -0.2210 S13= -0.2266 S21=  0.0503|
+|S23=  0.1695 S31= -0.0415 S32= -0.1967                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1981   29.5484   22.4667                |
+|T11=  0.0803 T22=  0.1073 T33=  0.0988 T12= -0.0032 T13= -0.0013 T23=  0.0184|
+|L11=  0.1454 L22=  0.2833 L33=  0.1588 L12=  0.0937 L13= -0.1221 L23= -0.0086|
+|S11= -0.0313 S22=  0.0724 S33= -0.0214 S12= -0.0343 S13=  0.1113 S21=  0.2672|
+|S23= -0.1123 S31= -0.1849 S32=  0.1097                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4511   28.3497    8.0370                |
+|T11=  0.0966 T22=  0.1795 T33=  0.1456 T12=  0.0161 T13= -0.0390 T23=  0.0347|
+|L11=  0.2710 L22=  0.3466 L33=  0.8012 L12= -0.0701 L13= -0.3370 L23= -0.0921|
+|S11=  0.1328 S22=  0.0220 S33=  0.2769 S12= -0.1175 S13= -0.0460 S21= -0.0011|
+|S23=  0.1958 S31= -0.1362 S32= -0.5296                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0630671  r_work = 0.2245  r_free = 0.2754      |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.42     max = 41.99    mean = 14.47   |
+| Isotropic B only:              min = 0.00     max = 35.27    mean = 7.05    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    3.527:     506      |        5.424 -    9.080:     146      |
+|      3.527 -    7.054:     284      |        9.080 -   12.737:     459      |
+|      7.054 -   10.580:     126      |       12.737 -   16.393:     257      |
+|     10.580 -   14.107:     102      |       16.393 -   20.049:     151      |
+|     14.107 -   17.634:      83      |       20.049 -   23.705:     110      |
+|     17.634 -   21.161:      63      |       23.705 -   27.361:      40      |
+|     21.161 -   24.688:      36      |       27.361 -   31.017:      30      |
+|     24.688 -   28.214:      11      |       31.017 -   34.673:      11      |
+|     28.214 -   31.741:       2      |       34.673 -   38.329:       7      |
+|     31.741 -   35.268:       1      |       38.329 -   41.985:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8301   16.2307    9.4052                |
+|T11=  0.1066 T22=  0.1258 T33=  0.1102 T12=  0.0135 T13= -0.0454 T23= -0.0177|
+|L11=  0.1814 L22=  0.3781 L33=  0.2332 L12=  0.0050 L13=  0.0581 L23=  0.0462|
+|S11=  0.0273 S22= -0.0506 S33= -0.0063 S12=  0.1596 S13= -0.1088 S21= -0.0794|
+|S23=  0.1252 S31=  0.0888 S32=  0.0438                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6059   23.4698   20.5011                |
+|T11= -0.0264 T22=  0.1003 T33=  0.1835 T12=  0.0000 T13=  0.0189 T23= -0.0012|
+|L11=  0.1072 L22=  1.3244 L33=  0.3001 L12= -0.0142 L13= -0.0067 L23= -0.0331|
+|S11= -0.0705 S22=  0.1794 S33=  0.0393 S12= -0.2985 S13= -0.2535 S21=  0.7396|
+|S23=  0.3917 S31= -0.0828 S32= -0.2604                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2641   21.7167   12.7660                |
+|T11=  0.0832 T22=  0.0847 T33=  0.0808 T12=  0.0171 T13= -0.0200 T23=  0.0034|
+|L11=  0.3903 L22=  0.2002 L33=  0.2678 L12= -0.1531 L13=  0.0072 L23=  0.1078|
+|S11=  0.1057 S22= -0.0942 S33=  0.0101 S12=  0.2035 S13=  0.1256 S21= -0.0299|
+|S23= -0.1880 S31= -0.0351 S32= -0.0529                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4712   19.5394   23.5753                |
+|T11=  0.0464 T22=  0.1701 T33=  0.1433 T12= -0.0229 T13= -0.0924 T23= -0.0703|
+|L11=  0.1582 L22=  0.0960 L33=  1.6834 L12= -0.0778 L13= -0.4530 L23=  0.2600|
+|S11=  0.5056 S22=  0.5078 S33=  0.3079 S12=  0.1194 S13= -0.2056 S21=  0.1031|
+|S23= -0.5819 S31= -0.6104 S32=  0.4377                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0554   16.5850   25.6425                |
+|T11=  0.1102 T22=  0.0764 T33=  0.0794 T12=  0.0249 T13= -0.0228 T23= -0.0026|
+|L11=  0.4737 L22=  0.2439 L33=  0.5308 L12=  0.2798 L13= -0.3027 L23= -0.1002|
+|S11= -0.0547 S22=  0.0466 S33=  0.0000 S12= -0.0321 S13= -0.0903 S21=  0.2007|
+|S23= -0.0058 S31= -0.1866 S32=  0.0666                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1637   11.8213   26.3031                |
+|T11=  0.1194 T22=  0.1158 T33=  0.1314 T12=  0.0088 T13= -0.0062 T23=  0.0018|
+|L11=  0.4619 L22=  0.5349 L33=  0.2523 L12= -0.2146 L13= -0.1476 L23= -0.4849|
+|S11= -0.1079 S22= -0.0182 S33= -0.0207 S12= -0.1533 S13= -0.1023 S21=  0.1224|
+|S23=  0.1227 S31=  0.1264 S32=  0.1253                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0690   17.0830   24.3804                |
+|T11=  0.0869 T22=  0.0888 T33=  0.1353 T12= -0.0087 T13= -0.0087 T23=  0.0179|
+|L11= -0.0030 L22=  0.0070 L33=  0.2065 L12= -0.0393 L13=  0.0715 L23=  0.0605|
+|S11=  0.0035 S22=  0.0432 S33=  0.0039 S12= -0.2170 S13= -0.2234 S21=  0.0525|
+|S23=  0.1678 S31= -0.0446 S32= -0.1946                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1981   29.5484   22.4667                |
+|T11=  0.0828 T22=  0.1034 T33=  0.0998 T12= -0.0029 T13= -0.0023 T23=  0.0169|
+|L11=  0.1462 L22=  0.2837 L33=  0.1594 L12=  0.0943 L13= -0.1226 L23= -0.0082|
+|S11= -0.0333 S22=  0.0764 S33= -0.0214 S12= -0.0382 S13=  0.1096 S21=  0.2611|
+|S23= -0.1153 S31= -0.1841 S32=  0.1092                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4511   28.3497    8.0370                |
+|T11=  0.1012 T22=  0.1753 T33=  0.1442 T12=  0.0132 T13= -0.0431 T23=  0.0323|
+|L11=  0.2717 L22=  0.3476 L33=  0.8024 L12= -0.0707 L13= -0.3367 L23= -0.0921|
+|S11=  0.1348 S22=  0.0295 S33=  0.2769 S12= -0.1131 S13= -0.0510 S21= -0.0079|
+|S23=  0.1963 S31= -0.1296 S32= -0.5269                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| target_work(ls_wunit_k1) = 0.063039  r_work = 0.2243  r_free = 0.2753       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: final values------------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8301   16.2307    9.4052                |
+|T11=  0.1066 T22=  0.1258 T33=  0.1102 T12=  0.0135 T13= -0.0454 T23= -0.0177|
+|L11=  0.1814 L22=  0.3781 L33=  0.2332 L12=  0.0050 L13=  0.0581 L23=  0.0462|
+|S11=  0.0273 S22= -0.0506 S33= -0.0063 S12=  0.1596 S13= -0.1088 S21= -0.0794|
+|S23=  0.1252 S31=  0.0888 S32=  0.0438                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6059   23.4698   20.5011                |
+|T11= -0.0264 T22=  0.1003 T33=  0.1835 T12=  0.0000 T13=  0.0189 T23= -0.0012|
+|L11=  0.1072 L22=  1.3244 L33=  0.3001 L12= -0.0142 L13= -0.0067 L23= -0.0331|
+|S11= -0.0705 S22=  0.1794 S33=  0.0393 S12= -0.2985 S13= -0.2535 S21=  0.7396|
+|S23=  0.3917 S31= -0.0828 S32= -0.2604                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2641   21.7167   12.7660                |
+|T11=  0.0832 T22=  0.0847 T33=  0.0808 T12=  0.0171 T13= -0.0200 T23=  0.0034|
+|L11=  0.3903 L22=  0.2002 L33=  0.2678 L12= -0.1531 L13=  0.0072 L23=  0.1078|
+|S11=  0.1057 S22= -0.0942 S33=  0.0101 S12=  0.2035 S13=  0.1256 S21= -0.0299|
+|S23= -0.1880 S31= -0.0351 S32= -0.0529                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4712   19.5394   23.5753                |
+|T11=  0.0464 T22=  0.1701 T33=  0.1433 T12= -0.0229 T13= -0.0924 T23= -0.0703|
+|L11=  0.1582 L22=  0.0960 L33=  1.6834 L12= -0.0778 L13= -0.4530 L23=  0.2600|
+|S11=  0.5056 S22=  0.5078 S33=  0.3079 S12=  0.1194 S13= -0.2056 S21=  0.1031|
+|S23= -0.5819 S31= -0.6104 S32=  0.4377                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0554   16.5850   25.6425                |
+|T11=  0.1102 T22=  0.0764 T33=  0.0794 T12=  0.0249 T13= -0.0228 T23= -0.0026|
+|L11=  0.4737 L22=  0.2439 L33=  0.5308 L12=  0.2798 L13= -0.3027 L23= -0.1002|
+|S11= -0.0547 S22=  0.0466 S33=  0.0000 S12= -0.0321 S13= -0.0903 S21=  0.2007|
+|S23= -0.0058 S31= -0.1866 S32=  0.0666                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1637   11.8213   26.3031                |
+|T11=  0.1194 T22=  0.1158 T33=  0.1314 T12=  0.0088 T13= -0.0062 T23=  0.0018|
+|L11=  0.4619 L22=  0.5349 L33=  0.2523 L12= -0.2146 L13= -0.1476 L23= -0.4849|
+|S11= -0.1079 S22= -0.0182 S33= -0.0207 S12= -0.1533 S13= -0.1023 S21=  0.1224|
+|S23=  0.1227 S31=  0.1264 S32=  0.1253                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0690   17.0830   24.3804                |
+|T11=  0.0869 T22=  0.0888 T33=  0.1353 T12= -0.0087 T13= -0.0087 T23=  0.0179|
+|L11= -0.0030 L22=  0.0070 L33=  0.2065 L12= -0.0393 L13=  0.0715 L23=  0.0605|
+|S11=  0.0035 S22=  0.0432 S33=  0.0039 S12= -0.2170 S13= -0.2234 S21=  0.0525|
+|S23=  0.1678 S31= -0.0446 S32= -0.1946                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1981   29.5484   22.4667                |
+|T11=  0.0828 T22=  0.1034 T33=  0.0998 T12= -0.0029 T13= -0.0023 T23=  0.0169|
+|L11=  0.1462 L22=  0.2837 L33=  0.1594 L12=  0.0943 L13= -0.1226 L23= -0.0082|
+|S11= -0.0333 S22=  0.0764 S33= -0.0214 S12= -0.0382 S13=  0.1096 S21=  0.2611|
+|S23= -0.1153 S31= -0.1841 S32=  0.1092                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4511   28.3497    8.0370                |
+|T11=  0.1012 T22=  0.1753 T33=  0.1442 T12=  0.0132 T13= -0.0431 T23=  0.0323|
+|L11=  0.2717 L22=  0.3476 L33=  0.8024 L12= -0.0707 L13= -0.3367 L23= -0.0921|
+|S11=  0.1348 S22=  0.0295 S33=  0.2769 S12= -0.1131 S13= -0.0510 S21= -0.0079|
+|S23=  0.1963 S31= -0.1296 S32= -0.5269                                       |
+|-----------------------------------------------------------------------------|
+
+                 ----------Individual ADP refinement----------                 
+
+    R-FACTORS      <Bi-Bj>  <B>   WEIGHT       TARGETS
+ work  free  delta                           data restr
+22.43 27.53   5.10  1.625  14.472  0.110    5.183
+23.56 28.89   5.32  1.220  14.927  0.003    5.244
+22.20 27.62   5.42  1.357  14.177  0.014    5.178
+21.41 26.81   5.40  1.967  14.248  0.055    5.134
+21.20 26.55   5.35  2.446  14.473  0.110    5.122
+21.12 26.47   5.35  2.753  14.611  0.165    5.118
+21.08 26.42   5.34  2.997  14.727  0.220    5.116
+21.06 26.46   5.40  3.095  14.738  0.275    5.118
+21.05 26.43   5.38  3.234  14.818  0.330    5.116
+21.04 26.48   5.44  3.276  14.808  0.386    5.118
+21.02 26.36   5.34  3.496  14.954  0.441    5.114
+21.02 26.38   5.37  3.505  14.946  0.496    5.115
+21.01 26.33   5.32  3.697  15.054  0.551    5.114
+  max suggested <Bi-Bj> for this run:   10.00
+  max allowed Rfree-Rwork gap:   5.0
+  range of equivalent Rfree:   0.0
+Best ADP weight:    0.003
+Accepted refinement result:
+23.56 28.89   5.32  1.220  14.927  0.003    5.244
+
+ Individual atomic B
+                min    max   mean <Bi,j>   iso aniso
+   Overall:    8.43  36.99  14.93   1.22  1214  1010
+   Protein:    8.43  36.99  14.63   1.22  1010  1010
+   Water:      9.79  30.37  16.20    N/A   197     0
+   Other:     15.00  30.27  22.21    N/A     7     0
+   Chain  A:   8.43  36.99  14.93    N/A  1214  1010
+   Histogram:
+       Values      Number of atoms
+     8.43 - 11.28       180
+    11.28 - 14.14       452
+    14.14 - 16.99       323
+    16.99 - 19.85       125
+    19.85 - 22.71        65
+    22.71 - 25.56        35
+    25.56 - 28.42        19
+    28.42 - 31.27         9
+    31.27 - 34.13         3
+    34.13 - 36.99         3
+
+
+============================= Occupancy refinement ============================
+
+|-occupancy refinement: start-------------------------------------------------|
+| r_work = 0.2356 r_free = 0.2889             target_work(ml) = 5.244         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        7 |
+|-----------------------------------------------------------------------------|
+|-occupancy refinement: end---------------------------------------------------|
+| r_work = 0.2360 r_free = 0.2838             target_work(ml) = 5.232         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        7 |
+|-----------------------------------------------------------------------------|
+
+*********************** REFINEMENT MACRO_CYCLE 5 OF 5 *************************
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2360 r_free= 0.2838 coordinate error (max.-lik. estimate): 0.10 A |
+|                                                                             |
+| normalized target function (ml) (work): 5.232003                            |
+| target function (ml) not normalized (work): 62731.714689                    |
+| target function (ml) not normalized (free): 7126.672688                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2409 0.2360 0.2838 n_refl.: 13308
+       re-set all scales: r(all,work,free)=0.2909 0.2864 0.3302 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2909 0.2864 0.3302 n_refl.: 13308
+overall B=-0.76 to atoms: r(all,work,free)=0.2860 0.2814 0.3258 n_refl.: 13308
+bulk-solvent and scaling: r(all,work,free)=0.2405 0.2355 0.2844 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2405 0.2355 0.2844 n_refl.: 13308
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3565   328.496   314.098 0.596 0.949 0.280
+  9.137-7.240    99.02    94     7 0.3390   315.448   318.106 0.776 0.979 0.240
+  7.240-5.741   100.00   181    17 0.3423   271.716   249.737 0.763 0.984 0.211
+  5.735-4.547   100.00   351    28 0.2936   334.468   314.076 0.850 0.991 0.181
+  4.540-3.603   100.00   667    64 0.2183   429.623   417.988 1.009 0.997 0.000
+  3.602-2.855   100.00  1286   151 0.2314   318.805   310.816 1.018 0.999 0.000
+  2.854-2.262    99.90  2571   284 0.2354   202.783   196.973 0.994 0.996 0.000
+  2.262-1.792    99.93  5025   575 0.2213   128.837   126.803 1.033 0.990 0.000
+  1.792-1.700    99.90  1725   182 0.2137    80.959    78.909 0.962 0.983 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9167   b_overall=-1.3293 
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+============================ Update CDL restraints ============================
+
+
+============================= Setup riding H model ============================
+
+  Before: r_work=0.2354 r_free=0.2844
+  After: r_work=0.2354 r_free=0.2844
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 4.632135              wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 0.182449              wxu_scale = 1.000            wu = 1.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+Weight selection criteria:
+  R_free deviation:  0.0000
+  R_free-R_work gap: 5.0000
+  Bond RMSD:         0.0200
+  Angle RMSD:        2.5000
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2515 0.2891 0.0376  0.003   0.6    3.0   0.0   1.9    0   0.125
+ 0.2492 0.2881 0.0389  0.003   0.6    3.0   0.0   1.9    0   0.250
+ 0.2448 0.2860 0.0412  0.003   0.6    3.0   0.0   1.9    0   0.500
+ 0.2417 0.2852 0.0435  0.004   0.7    3.0   0.0   1.9    0   1.000
+ 0.2383 0.2851 0.0468  0.005   0.8    2.5   0.0   1.9    0   2.000
+ 0.2365 0.2856 0.0492  0.007   0.9    3.0   0.0   1.9    0   3.000
+ 0.2352 0.2851 0.0499  0.008   1.0    3.5   0.0   1.9    0   4.000
+ 0.2341 0.2855 0.0514  0.009   1.1    3.5   0.0   1.9    0   5.000
+ 0.2335 0.2855 0.0520  0.010   1.2    4.0   0.0   1.9    0   6.000
+ 0.2330 0.2856 0.0526  0.011   1.2    3.5   0.0   1.9    0   7.000
+ 0.2323 0.2857 0.0533  0.012   1.3    3.5   0.0   1.9    0   8.000
+ 0.2319 0.2854 0.0534  0.013   1.4    3.5   0.0   1.9    0   9.000
+ 0.2316 0.2860 0.0544  0.014   1.4    4.0   0.0   1.9    0  10.000
+ 0.2377 0.2854 0.0477  0.006   0.8    3.0   0.0   1.9    0   2.316
+
+ Best weight:
+
+ R-FACTORS             RMSD           CLASH  RAMA  ROTA CBET WEIGHT
+ work   free   delta   bonds   angl
+ 0.2352 0.2851 0.0499  0.008   1.0    3.5   0.0   1.9    0   4.000
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+                       ----------TLS refinement----------                      
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2352 r_free = 0.2851 target = 5.232638 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 32)----------------|
+| r_work = 0.2295 r_free = 0.2787 target = 5.199586 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+
+|-Information about rigid groups----------------------------------------------|
+| Total number of atoms = 1214    Number of rigid groups = 9                  |
+| group: start point:                        end point:                       |
+|               x      B  atom  residue  <>        x      B  atom  residue    |
+|     1:    2.911  11.27   N   LYS    1  <>  -16.817  36.03   NH2 ARG   14    |
+|     2:  -12.325  16.61   N   HIS   15  <>  -10.966  11.22   OG  SER   24    |
+|     3:  -11.339  12.34   N   LEU   25  <>    7.299   8.58   CB  ALA   42    |
+|     4:    9.770  11.10   N   THR   43  <>   11.907  12.70   OG  SER   50    |
+|     5:   11.904  11.37   N   THR   51  <>   15.505  14.59   NH2 ARG   68    |
+|     6:   13.751  11.87   N   THR   69  <>   -6.114  12.48   CD1 ILE   88    |
+|     7:   -5.420  12.21   N   THR   89  <>   -6.131  10.34   CG2 VAL   99    |
+|     8:   -6.405  14.87   N   SER  100  <>    6.704  10.92   NH2 ARG  114    |
+|     9:    0.261  12.09   N   CYS  115  <>  -17.519  37.93   OXT LEU  129    |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: start model-------------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0667699  r_work = 0.2295  r_free = 0.2787      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start model-------------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 6.36     max = 39.40    mean = 14.31   |
+| Isotropic B only:              min = 0.00     max = 29.61    mean = 6.56    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    2.961:     372      |        6.360 -    9.664:     136      |
+|      2.961 -    5.923:     373      |        9.664 -   12.968:     480      |
+|      5.923 -    8.884:     157      |       12.968 -   16.272:     282      |
+|      8.884 -   11.845:      92      |       16.272 -   19.576:     145      |
+|     11.845 -   14.806:      85      |       19.576 -   22.880:      91      |
+|     14.806 -   17.768:      70      |       22.880 -   26.183:      36      |
+|     17.768 -   20.729:      39      |       26.183 -   29.487:      26      |
+|     20.729 -   23.690:      14      |       29.487 -   32.791:      12      |
+|     23.690 -   26.652:       9      |       32.791 -   36.095:       3      |
+|     26.652 -   29.613:       3      |       36.095 -   39.399:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: start parameters--------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8275   16.2298    9.4038                |
+|T11=  0.1197 T22=  0.1386 T33=  0.1234 T12=  0.0132 T13= -0.0453 T23= -0.0176|
+|L11=  0.2206 L22=  0.3816 L33=  0.2558 L12= -0.0092 L13=  0.0320 L23=  0.0565|
+|S11=  0.0283 S22= -0.0490 S33= -0.0089 S12=  0.1557 S13= -0.1049 S21= -0.0796|
+|S23=  0.1236 S31=  0.0883 S32=  0.0456                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6054   23.4715   20.5029                |
+|T11=  0.0462 T22=  0.1030 T33=  0.1527 T12=  0.0071 T13=  0.0216 T23=  0.0001|
+|L11=  0.2973 L22=  4.1865 L33=  0.3602 L12= -0.2007 L13=  0.3238 L23= -0.3945|
+|S11= -0.0468 S22=  0.1035 S33=  0.0916 S12= -0.2611 S13= -0.2040 S21=  0.2324|
+|S23=  0.2998 S31=  0.0283 S32= -0.1588                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2610   21.7173   12.7644                |
+|T11=  0.0827 T22=  0.0845 T33=  0.0808 T12=  0.0167 T13= -0.0189 T23=  0.0040|
+|L11=  0.4586 L22=  0.3778 L33=  0.2168 L12= -0.2853 L13=  0.0186 L23=  0.1128|
+|S11=  0.1008 S22= -0.0905 S33=  0.0113 S12=  0.1977 S13=  0.1166 S21= -0.0288|
+|S23= -0.1764 S31= -0.0315 S32= -0.0484                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4698   19.5415   23.5786                |
+|T11=  0.1090 T22=  0.1663 T33=  0.1622 T12= -0.0116 T13= -0.0437 T23= -0.0405|
+|L11=  0.4409 L22=  0.0931 L33=  4.7838 L12= -0.1995 L13= -0.5267 L23=  0.3477|
+|S11=  0.2760 S22=  0.2756 S33=  0.7697 S12=  0.0332 S13= -0.1950 S21=  0.1431|
+|S23= -0.4528 S31= -0.1183 S32=  0.3880                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0545   16.5869   25.6411                |
+|T11=  0.1130 T22=  0.0793 T33=  0.0823 T12=  0.0248 T13= -0.0228 T23= -0.0026|
+|L11=  0.4739 L22=  0.2450 L33=  0.5358 L12=  0.2811 L13= -0.2990 L23= -0.0987|
+|S11= -0.0545 S22=  0.0463 S33=  0.0001 S12= -0.0323 S13= -0.0902 S21=  0.2006|
+|S23= -0.0058 S31= -0.1863 S32=  0.0661                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1646   11.8196   26.3066                |
+|T11=  0.1241 T22=  0.1194 T33=  0.1341 T12=  0.0097 T13= -0.0061 T23=  0.0024|
+|L11=  0.4993 L22=  0.5746 L33=  0.3730 L12= -0.1518 L13= -0.1423 L23= -0.3759|
+|S11= -0.0981 S22= -0.0158 S33= -0.0329 S12= -0.1520 S13= -0.1018 S21=  0.1184|
+|S23=  0.1081 S31=  0.1173 S32=  0.1112                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0667   17.0848   24.3839                |
+|T11=  0.0897 T22=  0.0936 T33=  0.1368 T12= -0.0075 T13= -0.0076 T23=  0.0169|
+|L11=  0.0311 L22=  0.0417 L33=  0.2979 L12= -0.0181 L13=  0.0957 L23= -0.0442|
+|S11=  0.0044 S22=  0.0345 S33=  0.0116 S12= -0.1978 S13= -0.2048 S21=  0.0507|
+|S23=  0.1704 S31= -0.0382 S32= -0.1795                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1986   29.5438   22.4664                |
+|T11=  0.0917 T22=  0.1131 T33=  0.1064 T12= -0.0023 T13= -0.0039 T23=  0.0149|
+|L11=  0.1207 L22=  0.7323 L33=  0.2273 L12=  0.1210 L13= -0.1637 L23= -0.2215|
+|S11= -0.0219 S22=  0.0696 S33= -0.0260 S12= -0.0449 S13=  0.1008 S21=  0.2328|
+|S23= -0.1057 S31= -0.1734 S32=  0.1098                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4523   28.3486    8.0369                |
+|T11=  0.1154 T22=  0.1733 T33=  0.1479 T12=  0.0168 T13= -0.0359 T23=  0.0273|
+|L11=  0.2988 L22=  0.3265 L33=  0.6692 L12= -0.0192 L13= -0.3210 L23= -0.1064|
+|S11=  0.1081 S22=  0.0021 S33=  0.3310 S12= -0.0952 S13= -0.0418 S21=  0.0104|
+|S23=  0.1981 S31= -0.0647 S32= -0.4460                                       |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.87     max = 39.21    mean = 13.86   |
+| Isotropic B only:              min = 0.00     max = 29.61    mean = 6.56    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    2.961:     372      |        5.870 -    9.204:     144      |
+|      2.961 -    5.923:     373      |        9.204 -   12.538:     473      |
+|      5.923 -    8.884:     157      |       12.538 -   15.872:     277      |
+|      8.884 -   11.845:      92      |       15.872 -   19.206:     150      |
+|     11.845 -   14.807:      85      |       19.206 -   22.540:      92      |
+|     14.807 -   17.768:      70      |       22.540 -   25.874:      34      |
+|     17.768 -   20.729:      39      |       25.874 -   29.208:      28      |
+|     20.729 -   23.690:      14      |       29.208 -   32.542:      10      |
+|     23.690 -   26.652:       9      |       32.542 -   35.876:       3      |
+|     26.652 -   29.613:       3      |       35.876 -   39.210:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8275   16.2298    9.4038                |
+|T11=  0.1102 T22=  0.1305 T33=  0.1096 T12=  0.0143 T13= -0.0409 T23= -0.0151|
+|L11=  0.2222 L22=  0.3844 L33=  0.2592 L12= -0.0095 L13=  0.0329 L23=  0.0585|
+|S11=  0.0322 S22= -0.0521 S33= -0.0089 S12=  0.1588 S13= -0.1067 S21= -0.0839|
+|S23=  0.1224 S31=  0.0880 S32=  0.0491                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6054   23.4715   20.5029                |
+|T11= -0.0085 T22=  0.0722 T33=  0.1909 T12=  0.0185 T13=  0.0266 T23= -0.0087|
+|L11=  0.2999 L22=  4.1893 L33=  0.3608 L12= -0.1993 L13=  0.3224 L23= -0.3958|
+|S11= -0.0389 S22=  0.1085 S33=  0.0916 S12= -0.2673 S13= -0.2166 S21=  0.2540|
+|S23=  0.3113 S31=  0.0392 S32= -0.1803                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2610   21.7173   12.7644                |
+|T11=  0.0813 T22=  0.0756 T33=  0.0756 T12=  0.0179 T13= -0.0190 T23=  0.0057|
+|L11=  0.4601 L22=  0.3775 L33=  0.2202 L12= -0.2859 L13=  0.0192 L23=  0.1140|
+|S11=  0.0966 S22= -0.0843 S33=  0.0113 S12=  0.2123 S13=  0.1167 S21= -0.0447|
+|S23= -0.1887 S31= -0.0434 S32= -0.0286                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4698   19.5415   23.5786                |
+|T11=  0.0843 T22=  0.1542 T33=  0.1579 T12= -0.0051 T13= -0.0582 T23= -0.0440|
+|L11=  0.4407 L22=  0.0932 L33=  4.7835 L12= -0.1988 L13= -0.5261 L23=  0.3488|
+|S11=  0.2789 S22=  0.2782 S33=  0.7697 S12=  0.0259 S13= -0.2006 S21=  0.1523|
+|S23= -0.4639 S31= -0.1327 S32=  0.4006                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0545   16.5869   25.6411                |
+|T11=  0.1053 T22=  0.0762 T33=  0.0771 T12=  0.0274 T13= -0.0216 T23= -0.0018|
+|L11=  0.4802 L22=  0.2489 L33=  0.5431 L12=  0.2847 L13= -0.3028 L23= -0.1000|
+|S11= -0.0515 S22=  0.0333 S33=  0.0001 S12= -0.0416 S13= -0.0752 S21=  0.2042|
+|S23= -0.0104 S31= -0.1976 S32=  0.0796                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1646   11.8196   26.3066                |
+|T11=  0.1188 T22=  0.1128 T33=  0.1356 T12=  0.0078 T13= -0.0054 T23=  0.0034|
+|L11=  0.5057 L22=  0.5800 L33=  0.3759 L12= -0.1529 L13= -0.1451 L23= -0.3849|
+|S11= -0.1037 S22= -0.0158 S33= -0.0329 S12= -0.1709 S13= -0.1078 S21=  0.1412|
+|S23=  0.1298 S31=  0.1213 S32=  0.0931                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0667   17.0848   24.3839                |
+|T11=  0.0748 T22=  0.0798 T33=  0.1314 T12= -0.0107 T13= -0.0147 T23=  0.0164|
+|L11=  0.0303 L22=  0.0416 L33=  0.3003 L12= -0.0191 L13=  0.0968 L23= -0.0424|
+|S11=  0.0020 S22=  0.0325 S33=  0.0116 S12= -0.2056 S13= -0.2092 S21=  0.0613|
+|S23=  0.1733 S31= -0.0407 S32= -0.1824                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1986   29.5438   22.4664                |
+|T11=  0.0750 T22=  0.1063 T33=  0.0986 T12= -0.0021 T13= -0.0057 T23=  0.0188|
+|L11=  0.1227 L22=  0.7338 L33=  0.2279 L12=  0.1231 L13= -0.1634 L23= -0.2203|
+|S11= -0.0348 S22=  0.0880 S33= -0.0260 S12= -0.0723 S13=  0.1117 S21=  0.2464|
+|S23= -0.1197 S31= -0.1933 S32=  0.1296                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4523   28.3486    8.0369                |
+|T11=  0.1117 T22=  0.1737 T33=  0.1432 T12=  0.0122 T13= -0.0344 T23=  0.0330|
+|L11=  0.3014 L22=  0.3280 L33=  0.6722 L12= -0.0203 L13= -0.3209 L23= -0.1074|
+|S11=  0.1243 S22=  0.0150 S33=  0.3310 S12= -0.0794 S13= -0.0452 S21= -0.0059|
+|S23=  0.2226 S31= -0.0600 S32= -0.4651                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 1------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0667241  r_work = 0.2293  r_free = 0.2779      |
+|-----------------------------------------------------------------------------|
+
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| iso = 1214    aniso = 1010    pos. def. = 1214    non-pos. def. = 0         |
+| Total B(isotropic equivalent): min = 5.87     max = 39.21    mean = 13.86   |
+| Isotropic B only:              min = 0.00     max = 29.61    mean = 6.56    |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|                     Distribution of isotropic B-factors:                    |
+|            Isotropic                |             Total                     |
+|      0.000 -    2.961:     372      |        5.870 -    9.204:     144      |
+|      2.961 -    5.923:     373      |        9.204 -   12.538:     473      |
+|      5.923 -    8.884:     157      |       12.538 -   15.872:     277      |
+|      8.884 -   11.845:      92      |       15.872 -   19.206:     150      |
+|     11.845 -   14.807:      85      |       19.206 -   22.540:      92      |
+|     14.807 -   17.768:      70      |       22.540 -   25.874:      34      |
+|     17.768 -   20.729:      39      |       25.874 -   29.208:      28      |
+|     20.729 -   23.690:      14      |       29.208 -   32.542:      10      |
+|     23.690 -   26.652:       9      |       32.542 -   35.876:       3      |
+|     26.652 -   29.613:       3      |       35.876 -   39.210:       3      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8275   16.2298    9.4038                |
+|T11=  0.1102 T22=  0.1305 T33=  0.1096 T12=  0.0143 T13= -0.0409 T23= -0.0151|
+|L11=  0.2222 L22=  0.3844 L33=  0.2592 L12= -0.0095 L13=  0.0329 L23=  0.0585|
+|S11=  0.0322 S22= -0.0521 S33= -0.0089 S12=  0.1588 S13= -0.1067 S21= -0.0839|
+|S23=  0.1224 S31=  0.0880 S32=  0.0491                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6054   23.4715   20.5029                |
+|T11= -0.0085 T22=  0.0722 T33=  0.1909 T12=  0.0185 T13=  0.0266 T23= -0.0087|
+|L11=  0.2999 L22=  4.1893 L33=  0.3608 L12= -0.1993 L13=  0.3224 L23= -0.3958|
+|S11= -0.0389 S22=  0.1085 S33=  0.0916 S12= -0.2673 S13= -0.2166 S21=  0.2540|
+|S23=  0.3113 S31=  0.0392 S32= -0.1803                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2610   21.7173   12.7644                |
+|T11=  0.0813 T22=  0.0756 T33=  0.0756 T12=  0.0179 T13= -0.0190 T23=  0.0057|
+|L11=  0.4601 L22=  0.3775 L33=  0.2202 L12= -0.2859 L13=  0.0192 L23=  0.1140|
+|S11=  0.0966 S22= -0.0843 S33=  0.0113 S12=  0.2123 S13=  0.1167 S21= -0.0447|
+|S23= -0.1887 S31= -0.0434 S32= -0.0286                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4698   19.5415   23.5786                |
+|T11=  0.0843 T22=  0.1542 T33=  0.1579 T12= -0.0051 T13= -0.0582 T23= -0.0440|
+|L11=  0.4407 L22=  0.0932 L33=  4.7835 L12= -0.1988 L13= -0.5261 L23=  0.3488|
+|S11=  0.2789 S22=  0.2782 S33=  0.7697 S12=  0.0259 S13= -0.2006 S21=  0.1523|
+|S23= -0.4639 S31= -0.1327 S32=  0.4006                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0545   16.5869   25.6411                |
+|T11=  0.1053 T22=  0.0762 T33=  0.0771 T12=  0.0274 T13= -0.0216 T23= -0.0018|
+|L11=  0.4802 L22=  0.2489 L33=  0.5431 L12=  0.2847 L13= -0.3028 L23= -0.1000|
+|S11= -0.0515 S22=  0.0333 S33=  0.0001 S12= -0.0416 S13= -0.0752 S21=  0.2042|
+|S23= -0.0104 S31= -0.1976 S32=  0.0796                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1646   11.8196   26.3066                |
+|T11=  0.1188 T22=  0.1128 T33=  0.1356 T12=  0.0078 T13= -0.0054 T23=  0.0034|
+|L11=  0.5057 L22=  0.5800 L33=  0.3759 L12= -0.1529 L13= -0.1451 L23= -0.3849|
+|S11= -0.1037 S22= -0.0158 S33= -0.0329 S12= -0.1709 S13= -0.1078 S21=  0.1412|
+|S23=  0.1298 S31=  0.1213 S32=  0.0931                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0667   17.0848   24.3839                |
+|T11=  0.0748 T22=  0.0798 T33=  0.1314 T12= -0.0107 T13= -0.0147 T23=  0.0164|
+|L11=  0.0303 L22=  0.0416 L33=  0.3003 L12= -0.0191 L13=  0.0968 L23= -0.0424|
+|S11=  0.0020 S22=  0.0325 S33=  0.0116 S12= -0.2056 S13= -0.2092 S21=  0.0613|
+|S23=  0.1733 S31= -0.0407 S32= -0.1824                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1986   29.5438   22.4664                |
+|T11=  0.0750 T22=  0.1063 T33=  0.0986 T12= -0.0021 T13= -0.0057 T23=  0.0188|
+|L11=  0.1227 L22=  0.7338 L33=  0.2279 L12=  0.1231 L13= -0.1634 L23= -0.2203|
+|S11= -0.0348 S22=  0.0880 S33= -0.0260 S12= -0.0723 S13=  0.1117 S21=  0.2464|
+|S23= -0.1197 S31= -0.1933 S32=  0.1296                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4523   28.3486    8.0369                |
+|T11=  0.1117 T22=  0.1737 T33=  0.1432 T12=  0.0122 T13= -0.0344 T23=  0.0330|
+|L11=  0.3014 L22=  0.3280 L33=  0.6722 L12= -0.0203 L13= -0.3209 L23= -0.1074|
+|S11=  0.1243 S22=  0.0150 S33=  0.3310 S12= -0.0794 S13= -0.0452 S21= -0.0059|
+|S23=  0.2226 S31= -0.0600 S32= -0.4651                                       |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: after macrocycle 2------------------------------------------|
+| target_work(ls_wunit_k1) = 0.0667241  r_work = 0.2293  r_free = 0.2779      |
+|-----------------------------------------------------------------------------|
+|-TLS refinement: final values------------------------------------------------|
+|TLS group number 1:                                                          |
+|               Origin (x,y,z) =   -6.8275   16.2298    9.4038                |
+|T11=  0.1102 T22=  0.1305 T33=  0.1096 T12=  0.0143 T13= -0.0409 T23= -0.0151|
+|L11=  0.2222 L22=  0.3844 L33=  0.2592 L12= -0.0095 L13=  0.0329 L23=  0.0585|
+|S11=  0.0322 S22= -0.0521 S33= -0.0089 S12=  0.1588 S13= -0.1067 S21= -0.0839|
+|S23=  0.1224 S31=  0.0880 S32=  0.0491                                       |
+|TLS group number 2:                                                          |
+|               Origin (x,y,z) =  -11.6054   23.4715   20.5029                |
+|T11= -0.0085 T22=  0.0722 T33=  0.1909 T12=  0.0185 T13=  0.0266 T23= -0.0087|
+|L11=  0.2999 L22=  4.1893 L33=  0.3608 L12= -0.1993 L13=  0.3224 L23= -0.3958|
+|S11= -0.0389 S22=  0.1085 S33=  0.0916 S12= -0.2673 S13= -0.2166 S21=  0.2540|
+|S23=  0.3113 S31=  0.0392 S32= -0.1803                                       |
+|TLS group number 3:                                                          |
+|               Origin (x,y,z) =    0.2610   21.7173   12.7644                |
+|T11=  0.0813 T22=  0.0756 T33=  0.0756 T12=  0.0179 T13= -0.0190 T23=  0.0057|
+|L11=  0.4601 L22=  0.3775 L33=  0.2202 L12= -0.2859 L13=  0.0192 L23=  0.1140|
+|S11=  0.0966 S22= -0.0843 S33=  0.0113 S12=  0.2123 S13=  0.1167 S21= -0.0447|
+|S23= -0.1887 S31= -0.0434 S32= -0.0286                                       |
+|TLS group number 4:                                                          |
+|               Origin (x,y,z) =   14.4698   19.5415   23.5786                |
+|T11=  0.0843 T22=  0.1542 T33=  0.1579 T12= -0.0051 T13= -0.0582 T23= -0.0440|
+|L11=  0.4407 L22=  0.0932 L33=  4.7835 L12= -0.1988 L13= -0.5261 L23=  0.3488|
+|S11=  0.2789 S22=  0.2782 S33=  0.7697 S12=  0.0259 S13= -0.2006 S21=  0.1523|
+|S23= -0.4639 S31= -0.1327 S32=  0.4006                                       |
+|TLS group number 5:                                                          |
+|               Origin (x,y,z) =    7.0545   16.5869   25.6411                |
+|T11=  0.1053 T22=  0.0762 T33=  0.0771 T12=  0.0274 T13= -0.0216 T23= -0.0018|
+|L11=  0.4802 L22=  0.2489 L33=  0.5431 L12=  0.2847 L13= -0.3028 L23= -0.1000|
+|S11= -0.0515 S22=  0.0333 S33=  0.0001 S12= -0.0416 S13= -0.0752 S21=  0.2042|
+|S23= -0.0104 S31= -0.1976 S32=  0.0796                                       |
+|TLS group number 6:                                                          |
+|               Origin (x,y,z) =    3.1646   11.8196   26.3066                |
+|T11=  0.1188 T22=  0.1128 T33=  0.1356 T12=  0.0078 T13= -0.0054 T23=  0.0034|
+|L11=  0.5057 L22=  0.5800 L33=  0.3759 L12= -0.1529 L13= -0.1451 L23= -0.3849|
+|S11= -0.1037 S22= -0.0158 S33= -0.0329 S12= -0.1709 S13= -0.1078 S21=  0.1412|
+|S23=  0.1298 S31=  0.1213 S32=  0.0931                                       |
+|TLS group number 7:                                                          |
+|               Origin (x,y,z) =   -5.0667   17.0848   24.3839                |
+|T11=  0.0748 T22=  0.0798 T33=  0.1314 T12= -0.0107 T13= -0.0147 T23=  0.0164|
+|L11=  0.0303 L22=  0.0416 L33=  0.3003 L12= -0.0191 L13=  0.0968 L23= -0.0424|
+|S11=  0.0020 S22=  0.0325 S33=  0.0116 S12= -0.2056 S13= -0.2092 S21=  0.0613|
+|S23=  0.1733 S31= -0.0407 S32= -0.1824                                       |
+|TLS group number 8:                                                          |
+|               Origin (x,y,z) =    0.1986   29.5438   22.4664                |
+|T11=  0.0750 T22=  0.1063 T33=  0.0986 T12= -0.0021 T13= -0.0057 T23=  0.0188|
+|L11=  0.1227 L22=  0.7338 L33=  0.2279 L12=  0.1231 L13= -0.1634 L23= -0.2203|
+|S11= -0.0348 S22=  0.0880 S33= -0.0260 S12= -0.0723 S13=  0.1117 S21=  0.2464|
+|S23= -0.1197 S31= -0.1933 S32=  0.1296                                       |
+|TLS group number 9:                                                          |
+|               Origin (x,y,z) =   -8.4523   28.3486    8.0369                |
+|T11=  0.1117 T22=  0.1737 T33=  0.1432 T12=  0.0122 T13= -0.0344 T23=  0.0330|
+|L11=  0.3014 L22=  0.3280 L33=  0.6722 L12= -0.0203 L13= -0.3209 L23= -0.1074|
+|S11=  0.1243 S22=  0.0150 S33=  0.3310 S12= -0.0794 S13= -0.0452 S21= -0.0059|
+|S23=  0.2226 S31= -0.0600 S32= -0.4651                                       |
+|-----------------------------------------------------------------------------|
+
+                 ----------Individual ADP refinement----------                 
+
+    R-FACTORS      <Bi-Bj>  <B>   WEIGHT       TARGETS
+ work  free  delta                           data restr
+22.93 27.79   4.86  1.592  13.861  0.182    5.196
+23.15 28.31   5.16  1.050  13.900  0.005    5.216
+22.16 27.35   5.18  1.341  13.493  0.023    5.164
+21.58 26.80   5.22  2.215  13.823  0.091    5.135
+21.43 26.64   5.21  2.773  14.068  0.182    5.127
+21.38 26.65   5.27  3.117  14.177  0.274    5.126
+21.35 26.59   5.24  3.372  14.305  0.365    5.125
+21.33 26.55   5.21  3.612  14.429  0.456    5.124
+21.35 26.69   5.33  3.512  14.304  0.547    5.127
+21.33 26.58   5.25  3.783  14.476  0.639    5.125
+21.33 26.58   5.25  3.837  14.499  0.730    5.125
+21.33 26.59   5.27  3.836  14.493  0.821    5.126
+21.33 26.66   5.33  3.750  14.418  0.912    5.127
+  max suggested <Bi-Bj> for this run:   10.00
+  max allowed Rfree-Rwork gap:   5.0
+  range of equivalent Rfree:   0.0
+Best ADP weight:    0.005
+Accepted refinement result:
+23.15 28.31   5.16  1.050  13.900  0.005    5.216
+
+ Individual atomic B
+                min    max   mean <Bi,j>   iso aniso
+   Overall:    8.04  34.21  13.90   1.05  1214  1010
+   Protein:    8.04  34.21  13.60   1.05  1010  1010
+   Water:      9.27  29.06  15.14    N/A   197     0
+   Other:     14.37  31.73  22.83    N/A     7     0
+   Chain  A:   8.04  34.21  13.90    N/A  1214  1010
+   Histogram:
+       Values      Number of atoms
+     8.04 - 10.66       213
+    10.66 - 13.27       444
+    13.27 - 15.89       282
+    15.89 - 18.51       135
+    18.51 - 21.13        75
+    21.13 - 23.74        33
+    23.74 - 26.36        14
+    26.36 - 28.98         9
+    28.98 - 31.59         5
+    31.59 - 34.21         4
+
+
+============================= Occupancy refinement ============================
+
+|-occupancy refinement: start-------------------------------------------------|
+| r_work = 0.2315 r_free = 0.2831             target_work(ml) = 5.216         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        7 |
+|-----------------------------------------------------------------------------|
+|-occupancy refinement: end---------------------------------------------------|
+| r_work = 0.2317 r_free = 0.2816             target_work(ml) = 5.214         |
+| occupancies: max = 1.00  min = 0.00   number of occupancies < 0.1:        7 |
+|-----------------------------------------------------------------------------|
+
+                         ----------X-ray data----------                        
+
+|--(resolution: 1.70 - 19.06 A, n_refl.=13308 (all), 9.90  % free)------------|
+|                                                                             |
+| r_work= 0.2317 r_free= 0.2816 coordinate error (max.-lik. estimate): 0.13 A |
+|                                                                             |
+| normalized target function (ml) (work): 5.213550                            |
+| target function (ml) not normalized (work): 62510.469599                    |
+| target function (ml) not normalized (free): 7115.117733                     |
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+| Bin     Resolution   Compl.  No. Refl.    R-factors          Targets        |
+|number     range              work test   work   test        work        test|
+|  1:   19.06 -    3.53 1.00   1467  136 0.2622 0.3060      6.1514      6.3213|
+|  2:    3.53 -    2.81 1.00   1339  161 0.2342 0.2841      5.8692      6.1667|
+|  3:    2.80 -    2.45 1.00   1348  145 0.2390 0.2627      5.5378       5.615|
+|  4:    2.45 -    2.23 1.00   1320  150 0.2162 0.2665      5.3105      5.4997|
+|  5:    2.23 -    2.07 1.00   1305  140 0.2108 0.2528      5.1436      5.2979|
+|  6:    2.07 -    1.95 1.00   1311  160 0.2109 0.3003       4.976      5.1961|
+|  7:    1.95 -    1.85 1.00   1298  147 0.2187 0.2708       4.788      5.0082|
+|  8:    1.85 -    1.77 1.00   1296  135 0.2050 0.3033      4.5678      4.7671|
+|  9:    1.77 -    1.70 1.00   1306  144 0.2037 0.2650      4.4273       4.657|
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+|R-free likelihood based estimates for figures of merit, absolute phase error,|
+|and distribution parameters alpha and beta (Acta Cryst. (1995). A51, 880-887)|
+|                                                                             |
+| Bin     Resolution      No. Refl.   FOM  Phase Scale    Alpha        Beta   |
+|  #        range        work  test        error factor                       |
+|  1:   19.06 -    3.53  1467   136  0.74  29.98   1.00     0.94      42428.38|
+|  2:    3.53 -    2.81  1339   161  0.77  28.39   1.00     0.93      24965.62|
+|  3:    2.80 -    2.45  1348   145  0.77  28.83   0.99     0.92      13329.88|
+|  4:    2.45 -    2.23  1320   150  0.78  27.60   1.02     0.92       8719.98|
+|  5:    2.23 -    2.07  1305   140  0.81  25.41   1.03     0.93       6026.41|
+|  6:    2.07 -    1.95  1311   160  0.79  27.03   1.02     0.94       4556.73|
+|  7:    1.95 -    1.85  1298   147  0.78  27.63   0.96     0.90       3087.73|
+|  8:    1.85 -    1.77  1296   135  0.78  28.18   0.96     0.89       2205.97|
+|  9:    1.77 -    1.70  1306   144  0.80  26.70   1.01     0.94       1575.99|
+|alpha:            min =        0.89 max =            0.94 mean =         0.92|
+|beta:             min =     1575.99 max =        42428.38 mean =     12336.43|
+|figures of merit: min =        0.00 max =            1.00 mean =         0.78|
+|phase err.(work): min =        0.00 max =           89.98 mean =        27.78|
+|phase err.(test): min =        0.00 max =           89.72 mean =        26.12|
+|-----------------------------------------------------------------------------|
+
+==================================== Final ====================================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2368 0.2317 0.2816 n_refl.: 13308
+       re-set all scales: r(all,work,free)=0.2846 0.2800 0.3244 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2846 0.2800 0.3244 n_refl.: 13308
+overall B=-0.29 to atoms: r(all,work,free)=0.2829 0.2782 0.3229 n_refl.: 13308
+bulk-solvent and scaling: r(all,work,free)=0.2371 0.2320 0.2822 n_refl.: 13308
+         remove outliers: r(all,work,free)=0.2371 0.2320 0.2822 n_refl.: 13308
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3590   328.496   313.588 0.596 0.950 0.280
+  9.137-7.240    99.02    94     7 0.3425   315.448   318.103 0.772 0.980 0.235
+  7.240-5.741   100.00   181    17 0.3503   271.716   248.505 0.758 0.985 0.200
+  5.735-4.547   100.00   351    28 0.2962   334.468   313.471 0.849 0.992 0.170
+  4.540-3.603   100.00   667    64 0.2189   429.623   418.053 1.009 0.998 0.000
+  3.602-2.855   100.00  1286   151 0.2312   318.805   310.828 1.020 1.000 0.000
+  2.854-2.262    99.90  2571   284 0.2309   202.783   197.000 0.993 0.996 0.000
+  2.262-1.792    99.93  5025   575 0.2134   128.837   127.086 1.031 0.989 0.000
+  1.792-1.700    99.90  1725   182 0.2042    80.959    79.106 0.959 0.982 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9167   b_overall=-1.2939 
+
+================= overall refinement statistics: step by step =================
+
+****************** REFINEMENT STATISTICS STEP BY STEP ******************
+leading digit, like 1_, means number of macro-cycle                     
+0    : statistics at the very beginning when nothing is done yet        
+1_bss: bulk solvent correction and/or (anisotropic) scaling             
+1_xyz: refinement of coordinates                                        
+1_adp: refinement of ADPs (Atomic Displacement Parameters)              
+1_occ: refinement of occupancies                                        
+------------------------------------------------------------------------
+ stage r-work r-free bonds angles b_min b_max b_ave n_water shift
+      0    : 0.2489 0.3297 0.062  4.332   3.8  80.0  17.6 197      0.000
+      1_bss: 0.2010 0.2740 0.062  4.332   3.2  79.3  17.0 197      0.000
+1_settarget: 0.2010 0.2740 0.062  4.332   3.2  79.3  17.0 197      0.000
+   1_weight: 0.2010 0.2740 0.062  4.332   3.2  79.3  17.0 197      0.000
+   1_xyzrec: 0.2220 0.2757 0.004  0.751   3.2  79.3  17.0 197      0.105
+      1_adp: 0.2641 0.3105 0.004  0.751  11.0  75.0  20.9 197      0.105
+      1_occ: 0.2588 0.3123 0.004  0.751  11.0  75.0  20.9 197      0.105
+      2_bss: 0.2431 0.2985 0.004  0.751   6.0  69.9  15.8 197      0.105
+2_settarget: 0.2431 0.2985 0.004  0.751   6.0  69.9  15.8 197      0.105
+2_updatecdl: 0.2431 0.2985 0.004  0.797   6.0  69.9  15.8 197      0.105
+   2_weight: 0.2431 0.2985 0.004  0.797   6.0  69.9  15.8 197      0.105
+   2_xyzrec: 0.2464 0.3029 0.003  0.559   6.0  69.9  15.8 197      0.132
+      2_adp: 0.2491 0.3082 0.003  0.559   9.5  56.2  17.1 197      0.132
+      2_occ: 0.2470 0.3048 0.003  0.559   9.5  56.2  17.1 197      0.132
+      3_bss: 0.2434 0.3024 0.003  0.559   7.9  54.6  15.5 197      0.132
+3_settarget: 0.2434 0.3024 0.003  0.559   7.9  54.6  15.5 197      0.132
+3_updatecdl: 0.2434 0.3024 0.003  0.580   7.9  54.6  15.5 197      0.132
+   3_weight: 0.2434 0.3024 0.003  0.580   7.9  54.6  15.5 197      0.132
+   3_xyzrec: 0.2284 0.2956 0.009  1.108   7.9  54.6  15.5 197      0.107
+      3_adp: 0.2321 0.2974 0.009  1.108   7.1  41.3  15.3 197      0.107
+      3_occ: 0.2301 0.2809 0.009  1.108   7.1  41.3  15.3 197      0.107
+      4_bss: 0.2292 0.2826 0.009  1.108   6.4  40.6  14.6 197      0.107
+4_settarget: 0.2292 0.2826 0.009  1.108   6.4  40.6  14.6 197      0.107
+4_updatecdl: 0.2292 0.2826 0.009  1.115   6.4  40.6  14.6 197      0.107
+   4_weight: 0.2292 0.2826 0.009  1.115   6.4  40.6  14.6 197      0.107
+   4_xyzrec: 0.2289 0.2817 0.008  1.003   6.4  40.6  14.6 197      0.114
+      4_adp: 0.2356 0.2889 0.008  1.003   8.4  37.0  14.9 197      0.114
+      4_occ: 0.2360 0.2838 0.008  1.003   8.4  37.0  14.9 197      0.114
+      5_bss: 0.2354 0.2844 0.008  1.003   7.7  36.2  14.2 197      0.114
+5_settarget: 0.2354 0.2844 0.008  1.003   7.7  36.2  14.2 197      0.114
+5_updatecdl: 0.2354 0.2844 0.008  1.010   7.7  36.2  14.2 197      0.114
+    5_setrh: 0.2354 0.2844 0.008  1.010   7.7  36.2  14.2 197      0.114
+   5_weight: 0.2354 0.2844 0.008  1.010   7.7  36.2  14.2 197      0.114
+   5_xyzrec: 0.2352 0.2851 0.008  0.999   7.7  36.2  14.2 197      0.119
+      5_adp: 0.2315 0.2831 0.008  0.999   8.0  34.2  13.9 197      0.119
+      5_occ: 0.2317 0.2816 0.008  0.999   8.0  34.2  13.9 197      0.119
+        end: 0.2320 0.2822 0.008  0.999   7.8  33.9  13.6 197      0.119
+------------------------------------------------------------------------
+
+============================== Exporting results ==============================
+
+
+Writing refined structure to CIF file:
+  /home/dev/runs/1LZ9/c000/baseline_rerefine/refine_001.cif
+Timing summary:
+  Write initial files (write_before_run_outputs): 0.0100
+  Refinement macro-cycles (run)                 : 443.1600
+  Write final files (write_after_run_outputs)   : 5.6500
+  Total                                         : 448.8200
+Total CPU time: 7.80 minutes
+
+=========================== phenix.refine: finished ===========================
+
+# Date 2026-09-17 Time 05:35:43 UTC +0000 (1789623343.13 s)
+
+Start R-work = 0.2010, R-free = 0.2740
+Final R-work = 0.2320, R-free = 0.2822
+
+===============================================================================
+Job complete
+usr+sys time: 468.01 seconds
+wall clock time: 8 minutes 49.25 seconds (529.25 seconds total)

@@ -1,0 +1,39 @@
+{
+ "target": "1LZ9",
+ "cycle_index": 0,
+ "stage": "baseline_rerefine",
+ "run_dir": "/home/dev/runs/1LZ9/c000/baseline_rerefine",
+ "input_model_sha256": "9903b139f0e3107fb272f1be367bbacbea3866694219a1fea58eeebdc0743768",
+ "output_model_sha256": "e47c8fd751a316cbf3481d391b571d4eeffb100b1978a1fcf48cadfa37c8eff3",
+ "mtz_sha256": "c2151e45223b21ceda3fbd0f92aef4cd57ec3294bad307835cc88ce08b0df187",
+ "rfree_flag_sha256": "fc985ebb6303f1aa29b0aa17162840ed5334a182459ef461ded73f7a17bc360a",
+ "accepted_changes": 0,
+ "rejected_changes": 0,
+ "rejected_changes_with_rfree_gain": 0,
+ "wall_clock_s": 637.1,
+ "program_versions": {
+  "script_version": "autoref-0.1.0",
+  "phenix": [
+   "Version: 2.1",
+   "Release tag: 6048"
+  ]
+ },
+ "r_work": 0.23176683571068685,
+ "r_free_full": 0.28191166628004716,
+ "r_free_select": 0.29414578462255747,
+ "r_free_report": 0.2692905421499996,
+ "ksol": 0.18000000000000002,
+ "bsol": 20.0,
+ "n_waters": 197,
+ "n_protein_altlocs": 6,
+ "n_ligand_altlocs": 0,
+ "n_atoms": 1214,
+ "mean_b": 13.612,
+ "clashscore_altloc_aware": 4.0404,
+ "rama_outliers": 0.0,
+ "rota_outliers": 1.85,
+ "bond_rmsd": 0.00774,
+ "angle_rmsd": 0.99749,
+ "r_gap": 0.05014,
+ "archive_sha256": "dbefcacdeb4bd9f4252a0054c3a01c2a1794560e8a17ba35614492c001d8c9f5"
+}

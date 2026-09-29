@@ -1,0 +1,43 @@
+{
+ "target": "1L6X",
+ "pdb_id": "1L6X",
+ "dest": "/home/dev/data/raw/1L6X",
+ "urls": {
+  "model_cif": "https://files.rcsb.org/download/1L6X.cif",
+  "model_pdb": "https://files.rcsb.org/download/1L6X.pdb",
+  "sf": "https://files.rcsb.org/download/1L6X-sf.cif",
+  "fasta": "https://www.rcsb.org/fasta/entry/1L6X",
+  "entry_json": "https://data.rcsb.org/rest/v1/core/entry/1L6X",
+  "pdbredo.final_cif": "https://pdb-redo.eu/db/1l6x/1l6x_final.cif",
+  "pdbredo.final_pdb": "https://pdb-redo.eu/db/1l6x/1l6x_final.pdb",
+  "pdbredo.final_mtz": "https://pdb-redo.eu/db/1l6x/1l6x_final.mtz",
+  "pdbredo.data_json": "https://pdb-redo.eu/db/1l6x/data.json"
+ },
+ "files": {
+  "model_cif": "/home/dev/data/raw/1L6X/1L6X.cif",
+  "model_pdb": "/home/dev/data/raw/1L6X/1L6X.pdb",
+  "sf": "/home/dev/data/raw/1L6X/1L6X-sf.cif",
+  "fasta": "/home/dev/data/raw/1L6X/1L6X.fasta",
+  "entry_json": "/home/dev/data/raw/1L6X/rcsb_entry.json",
+  "pdbredo.final_cif": "/home/dev/data/raw/1L6X/pdbredo/1l6x_final.cif",
+  "pdbredo.final_pdb": "/home/dev/data/raw/1L6X/pdbredo/1l6x_final.pdb",
+  "pdbredo.final_mtz": "/home/dev/data/raw/1L6X/pdbredo/1l6x_final.mtz",
+  "pdbredo.data_json": "/home/dev/data/raw/1L6X/pdbredo/data.json"
+ },
+ "errors": {},
+ "manifest": {
+  "./1L6X-sf.cif": "db6637918b292066d48d515f61bc8334da6699b2e10f7c37d0769b39a6c9f569",
+  "./1L6X.cif": "4d57409ff16ed2739f35bbde83d800ab3c70b6217005e3c011dddee696392deb",
+  "./1L6X.fasta": "c09d655befb3d8791ea66d87fba58ed509d35c705e8215b16bcf93d52ba28a18",
+  "./1L6X.pdb": "e80eba16c79d8e6f2fd18c67373af573bdb7f0c9fc98927739c5efe1a58b6c0e",
+  "./pdbredo/1l6x_final.cif": "8f3068c0ae074a3ddcb90df2bad16f2811806fd59f6d32008314344bfb2eef98",
+  "./pdbredo/1l6x_final.mtz": "4f83b533d4c1fec8f77e2eb48ea329dae9cfe639ba318190b6ef4367703e1b28",
+  "./pdbredo/1l6x_final.pdb": "e1db9d57bc0e221c9d0050cc96091a65797fb473a1117d4eb97916e2c392c2d8",
+  "./pdbredo/data.json": "b59a42ee8add8884f44397c9d5f7be6b360a6f58398bd2696ccf255f3a1bf90d",
+  "./rcsb_entry.json": "7c7ccbc90ad2cc69d69cc08cf0819ba714cb86f2e5255130c595253b13ff072d"
+ },
+ "manifest_path": "/home/dev/data/raw/1L6X/MANIFEST.sha256",
+ "missing_required": {},
+ "status": "PASS",
+ "ran_at": "2026-09-17T04:33:12+00:00"
+}

@@ -1,0 +1,22 @@
+{
+ "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/3QUE/model/3QUE_refined.cif",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 2850,
+ "n_hydrogen": 0,
+ "altlocs": [],
+ "n_water_residues": 15,
+ "n_reflections": 10793,
+ "n_free": 864,
+ "n_select": 432,
+ "n_report": 432,
+ "n_work": 9929,
+ "d_min": 2.7001667213072826,
+ "r_work_fmodel": 0.21131427444753276,
+ "r_free_fmodel": 0.25891058999407407,
+ "r_work_manual": 0.21131694745598997,
+ "r_free_manual": 0.2596788823002654,
+ "r_free_select_manual": 0.2544261837516894,
+ "r_free_report_manual": 0.26517000806609387,
+ "wall_s": 0.6
+}

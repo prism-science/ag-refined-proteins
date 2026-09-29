@@ -1,0 +1,23 @@
+{
+ "target": "1LZ9",
+ "deposited": {
+  "n_atoms": 1214,
+  "n_hydrogen": 0,
+  "n_waters": 197,
+  "n_nonwater_residues": 136,
+  "n_residues_with_altlocs": 3
+ },
+ "released": {
+  "n_atoms": 1214,
+  "n_hydrogen": 0,
+  "n_waters": 197,
+  "n_nonwater_residues": 136,
+  "n_residues_with_altlocs": 3
+ },
+ "waters_added": [],
+ "waters_removed": [],
+ "nonwater_residues_added": [],
+ "nonwater_residues_removed": [],
+ "altloc_changes": [],
+ "hydrogens_delta": 0
+}

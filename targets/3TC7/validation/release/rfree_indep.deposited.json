@@ -1,0 +1,25 @@
+{
+ "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/3TC7/deposited/3TC7.cif",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 2220,
+ "n_hydrogen": 0,
+ "altlocs": [
+  "A",
+  "B"
+ ],
+ "n_water_residues": 180,
+ "n_reflections": 41052,
+ "n_free": 2075,
+ "n_select": 1037,
+ "n_report": 1038,
+ "n_work": 38977,
+ "d_min": 1.4999525524595603,
+ "r_work_fmodel": 0.1535428600411212,
+ "r_free_fmodel": 0.19153032671524378,
+ "r_work_manual": 0.1535434323695697,
+ "r_free_manual": 0.19160274966622695,
+ "r_free_select_manual": 0.19382719313336474,
+ "r_free_report_manual": 0.1893292422054908,
+ "wall_s": 1.4
+}

@@ -1,0 +1,45 @@
+# phenix.model_vs_data /home/dev/runs/agrp_export_20260929T1606Z/targets/1LZ9/model/1LZ9_refined.cif /home/dev/runs/agrp_export_20260929T1606Z/_work/1LZ9/merged.mtz
+Data: --------------------------------------------------------------------------
+  Miller array info: /home/dev/runs/agrp_export_20260929T1606Z/_work/1LZ9/merged.mtz:FP,SIGFP,systematic_absences_eliminated
+  Observation type: xray.amplitude
+  Type of data: double, size=13308
+  Type of sigmas: double, size=13308
+  Number of Miller indices: 13308
+  Anomalous flag: False
+  Unit cell: (78.6, 78.6, 37.2, 90, 90, 90)
+  Space group: P 43 21 2 (No. 96)
+  Systematic absences: 0
+  Centric reflections: 2143
+  Resolution range: 19.0633 1.70004
+  Completeness in resolution range: 0.999174
+  Completeness with d_max=infinity: 0.998125
+  Wavelength: 1.0000
+R-free-flags: ------------------------------------------------------------------
+  flag value: 0
+Model vs Data: -----------------------------------------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 19.063-9.172   100.00    90    10 0.3584   382.083   366.424 0.651 0.959 0.280
+  9.137-7.240    99.02    94     7 0.3426   366.907   371.410 0.843 0.989 0.234
+  7.240-5.741   100.00   181    17 0.3503   316.041   290.068 0.828 0.993 0.200
+  5.735-4.547   100.00   351    28 0.2962   389.029   365.576 0.927 0.998 0.160
+  4.540-3.603   100.00   667    64 0.2190   499.706   487.301 1.105 1.003 0.000
+  3.602-2.855   100.00  1286   151 0.2312   370.811   361.846 1.119 1.002 0.000
+  2.854-2.262    99.90  2571   284 0.2309   235.863   228.803 1.092 0.993 0.000
+  2.262-1.792    99.93  5025   575 0.2133   149.854   147.061 1.139 0.978 0.000
+  1.792-1.700    99.90  1725   182 0.2043    94.166    91.221 1.063 0.964 0.000
+
+  r_work: 0.2320
+  r_free: 0.2823
+
+  Number of F-obs outliers: 0
+Information extracted from PDB file header: ------------------------------------
+  program_name    : Phenix
+  year            : None
+  r_work          : 0.232
+  r_free          : 0.2822
+  high_resolution : 1.7
+  low_resolution  : 19.06
+  sigma_cutoff    : 1.59
+  matthews_coeff  : None
+  solvent_cont    : None
+  exptl_method    : X-RAY DIFFRACTION

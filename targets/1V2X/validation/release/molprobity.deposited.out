@@ -1,0 +1,178 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 1757
+     H or D atoms   : 0
+     chains         : 2
+     a.a. residues  : 191
+     nucleotides    : 0
+     water          : 190
+     other (ligands): 3
+   Ligands: PO4:2,SAM:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   A 400  SAM  C4'
+   A 400  SAM  C5'         1.51     0.89     0.62  2.00e-02  9.73e+02  31.2*sigma
+   A 400  SAM  SD
+   A 400  SAM  C5'         1.81     2.04    -0.23  2.00e-02  1.37e+02  11.7*sigma
+   A 201  PO4  O3
+   A 201  PO4  P           1.57     1.46     0.10  2.00e-02  2.71e+01   5.2*sigma
+   A 201  PO4  O2
+   A 201  PO4  P           1.57     1.47     0.10  2.00e-02  2.31e+01   4.8*sigma
+   A 400  SAM  N
+   A 400  SAM  CA          1.45     1.55    -0.10  2.00e-02  2.26e+01   4.8*sigma
+   A 201  PO4  O4
+   A 201  PO4  P           1.57     1.48     0.09  2.00e-02  2.03e+01   4.5*sigma
+   A 400  SAM  C1'
+   A 400  SAM  N9          1.45     1.37     0.09  2.00e-02  1.88e+01   4.3*sigma
+   A 201  PO4  O1
+   A 201  PO4  P           1.56     1.48     0.08  2.00e-02  1.73e+01   4.2*sigma
+   A 202  PO4  O4
+   A 202  PO4  P           1.57     1.48     0.08  2.00e-02  1.73e+01   4.2*sigma
+   A 400  SAM  CA
+   A 400  SAM  C           1.54     1.46     0.08  2.00e-02  1.72e+01   4.1*sigma
+   A 202  PO4  O3
+   A 202  PO4  P           1.57     1.49     0.08  2.00e-02  1.71e+01   4.1*sigma
+   A 202  PO4  O2
+   A 202  PO4  P           1.57     1.48     0.08  2.00e-02  1.69e+01   4.1*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.624 (Z= 31.190)
+  Mean delta:    0.023 (Z=  1.111)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 400  SAM  C3'
+   A 400  SAM  C4'
+   A 400  SAM  C5'       112.02   146.01   -33.99  3.00e+00  1.28e+02  11.3*sigma
+   A 400  SAM  C2'
+   A 400  SAM  C1'
+   A 400  SAM  N9        114.88   137.31   -22.43  3.00e+00  5.59e+01   7.5*sigma
+   A  68  GLY  N
+   A  68  GLY  CA
+   A  68  GLY  C         113.30    91.76    21.54  2.90e+00  5.52e+01   7.4*sigma
+   A  95  THR  N
+   A  95  THR  CA
+   A  95  THR  C         111.00    97.60    13.40  2.80e+00  2.29e+01   4.8*sigma
+   A 400  SAM  CA
+   A 400  SAM  CB
+   A 400  SAM  CG        115.90   130.14   -14.24  3.00e+00  2.25e+01   4.7*sigma
+   A  69  GLY  N
+   A  69  GLY  CA
+   A  69  GLY  C         113.30   100.92    12.38  2.90e+00  1.82e+01   4.3*sigma
+   A 400  SAM  C1'
+   A 400  SAM  N9
+   A 400  SAM  C8        123.85   111.53    12.32  3.00e+00  1.69e+01   4.1*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   33.991 (Z= 11.330)
+  Mean delta:    2.100 (Z=  0.872)
+
+                      ----------Dihedral angles----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.003 (Z=  0.000)
+  Max. delta:   84.581 (Z=  3.987)
+  Mean delta:   18.260 (Z=  0.954)
+
+                       ----------Chiral volumes----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 400  SAM  C4'
+   A 400  SAM  C3'
+   A 400  SAM  C5'
+   A 400  SAM  O4'        -2.55     0.09    -2.64  2.00e-01  1.74e+02  13.2*sigma
+   A 400  SAM  C1'
+   A 400  SAM  C2'
+   A 400  SAM  N9
+   A 400  SAM  O4'         2.30     0.66     1.64  2.00e-01  6.72e+01   8.2*sigma
+
+  Min. delta:    0.001
+  Max. delta:    2.639
+  Mean delta:    0.241
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.092
+  Mean delta:    0.010
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.023   0.624   1599  Z= 1.111
+    Angle     :  2.100  33.991   2170  Z= 0.872
+    Chirality :  0.241   2.639    241
+    Planarity :  0.010   0.092    278
+    Dihedral  : 18.260  84.581    620
+    Min Nonbonded Distance : 1.593
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 31.32
+    Ramachandran Plot:
+      Outliers :  2.12 %
+      Allowed  :  2.12 %
+      Favored  : 95.77 %
+    Rotamer:
+      Outliers :  5.66 %
+      Allowed  :  6.92 %
+      Favored  : 87.42 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole: -1.44 (0.53), residues: 189
+    helix: -1.16 (0.44), residues: 85
+    sheet:  0.01 (0.81), residues: 31
+    loop : -0.88 (0.70), residues: 73
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.044   0.003   ARG A  19 
+   TYR   0.048   0.013   TYR A 174 
+   PHE   0.025   0.008   PHE A 162 
+   TRP   0.028   0.008   TRP A  73 
+   HIS   0.006   0.002   HIS A  52 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.02331 ( 1599)
+    covalent geometry    : angle       2.09951 ( 2170)
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A  35  ASN
+   A 152  ASN
+   A  52  HIS
+   A  79  HIS
+   A  29  ASN
+   A  55  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   2.12 %
+                favored =  95.77 %
+  Rotamer outliers      =   5.66 %
+  C-beta deviations     =     0
+  Clashscore            =  31.32
+  RMS(bonds)            =   0.0233
+  RMS(angles)           =   2.10
+  MolProbity score      =   2.85
+  Refinement program    = CNS

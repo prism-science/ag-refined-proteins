@@ -1,0 +1,119 @@
+{
+ "target": "9D5Y",
+ "pdb_id": "9D5Y",
+ "sf_source": "/home/dev/data/raw/9D5Y/9D5Y-sf.cif",
+ "sf_sha256": "41632145828344c92d762f6b3c9bd1b258618412faec9e58c1c420de76e96c46",
+ "sf_block": "r9d5ysf",
+ "columns_present": [
+  "_refln.crystal_id",
+  "_refln.wavelength_id",
+  "_refln.scale_group_code",
+  "_refln.index_h",
+  "_refln.index_k",
+  "_refln.index_l",
+  "_refln.status",
+  "_refln.pdbx_r_free_flag",
+  "_refln.intensity_meas",
+  "_refln.intensity_sigma"
+ ],
+ "space_group": "P 32 2 1",
+ "unit_cell": [
+  65.928,
+  65.928,
+  185.783,
+  90.0,
+  90.0,
+  120.0
+ ],
+ "data_mtz": "/home/dev/data/targets/9D5Y/data.mtz",
+ "flags_mtz": "/home/dev/data/targets/9D5Y/flags.mtz",
+ "split_mtz": "/home/dev/data/targets/9D5Y/split.mtz",
+ "split_json": "/home/dev/data/targets/9D5Y/split.json",
+ "flag_label": "R-free-flags",
+ "test_flag_value": 0,
+ "data_labels": "IMEAN,SIGIMEAN",
+ "intensities_or_amplitudes": "intensities",
+ "n_free": 2006,
+ "fraction_free": 0.019654,
+ "data_mtz_sha256": "f1d9e5a41af0b028daec88c2eab0160683359ea6abc3e92c853882b02ba8c938",
+ "flags_mtz_sha256": "255ccbf4e14f535de4818ae21fe8d01f566f1439038522fadeb9e7ba9013f8e6",
+ "split_mtz_sha256": "864d07e18f4512b428ad61daab08cdd3c4f0ddfe2de49de2f3e61c9e974588be",
+ "split_sha256": "50d704b7f3aa983320a64595325b99c284562325f183ea4b46f0c17060d6e999",
+ "n_select": 1003,
+ "n_report": 1003,
+ "split_seed": 1802659533,
+ "flags_source": "inherited",
+ "convention_note": "Inherited unchanged from _refln.status of 9D5Y-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+ "n_reflections": 102067,
+ "n_work": 100061,
+ "n_rows_in_sf": 102067,
+ "n_dropped_unmeasured": 0,
+ "n_dropped_missing_value": 0,
+ "data_choice": {
+  "kind": "intensities",
+  "value_tag": "intensity_meas",
+  "sigma_tag": "intensity_sigma",
+  "labels": [
+   "IMEAN",
+   "SIGIMEAN"
+  ],
+  "types": [
+   "J",
+   "Q"
+  ],
+  "also_available": [],
+  "coverage": {
+   "intensities": {
+    "value_tag": "intensity_meas",
+    "sigma_tag": "intensity_sigma",
+    "n_measured_rows": 102067,
+    "n_usable": 102067,
+    "n_null": 0,
+    "n_zero_placeholder": 0
+   },
+   "amplitudes": null
+  },
+  "rejected": [],
+  "reason": "merged intensities present and fully populated; phenix.refine applies French-Wilson"
+ },
+ "convention": {
+  "source_tag": "_refln.status",
+  "free_symbol": "f",
+  "work_symbols": [
+   "o"
+  ],
+  "unmeasured_symbols": [],
+  "counts": {
+   "f": 2006,
+   "o": 100061
+  },
+  "cross_check": {
+   "tag": "_refln.pdbx_r_free_flag",
+   "kind": "binary",
+   "free_value": "1",
+   "counts": {
+    "0": 100061,
+    "1": 2006
+   },
+   "identical_to_status_f": true
+  },
+  "note": "mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude."
+ },
+ "header_claim": {
+  "r_work": 0.2312,
+  "r_free": 0.2664,
+  "n_free": 2017,
+  "pct_free": 1.98,
+  "n_obs": 102067,
+  "sigma_f": 16.58,
+  "cross_valid_method": "FREE R-VALUE",
+  "sf_status": "REL"
+ },
+ "script": "autoref.flags.build",
+ "written_at": "2026-09-17T04:24:29+00:00",
+ "n_free_vs_header": {
+  "header": 2017,
+  "structure_factor_file": 2006,
+  "note": "reported verbatim; the inherited flag column is authoritative and unchanged"
+ }
+}

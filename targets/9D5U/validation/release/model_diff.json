@@ -1,0 +1,35 @@
+{
+ "target": "9D5U",
+ "deposited": {
+  "n_atoms": 3735,
+  "n_hydrogen": 8,
+  "n_waters": 251,
+  "n_nonwater_residues": 432,
+  "n_residues_with_altlocs": 1
+ },
+ "released": {
+  "n_atoms": 3743,
+  "n_hydrogen": 8,
+  "n_waters": 259,
+  "n_nonwater_residues": 432,
+  "n_residues_with_altlocs": 1
+ },
+ "waters_added": [
+  "B 5001",
+  "B 5002",
+  "B 5003",
+  "B 5004",
+  "B 5005",
+  "B 5006",
+  "B 5007",
+  "B 5008",
+  "B 5009"
+ ],
+ "waters_removed": [
+  "B 422"
+ ],
+ "nonwater_residues_added": [],
+ "nonwater_residues_removed": [],
+ "altloc_changes": [],
+ "hydrogens_delta": 0
+}

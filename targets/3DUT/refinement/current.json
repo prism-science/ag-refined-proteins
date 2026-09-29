@@ -1,0 +1,12 @@
+{
+ "target": "3DUT",
+ "model": "/home/dev/runs/3DUT/c000/baseline_rerefine/refine_001.cif",
+ "maps_mtz": null,
+ "cycle_index": 0,
+ "stage": "baseline_rerefine",
+ "r_free_select": 0.2625772669225434,
+ "r_free_report": 0.2442159125534692,
+ "r_free_full": 0.2537159722025536,
+ "r_work": 0.2107552928894037,
+ "updated_at": "2026-09-17T08:16:18+00:00"
+}

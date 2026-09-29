@@ -1,0 +1,107 @@
+{
+ "run_id": "3QUE.run3",
+ "target": "3QUE",
+ "run_dir": "/home/dev/runs/3QUE/runs/3QUE.run3",
+ "cycles": [
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "n_cycles": 8,
+ "n_credited_cycles": 1,
+ "credited_change_ids": [
+  "3QUE.c031.water_remove.A376",
+  "3QUE.c031.water_remove.A365",
+  "3QUE.c031.water_add.A5001",
+  "3QUE.c031.water_add.A5007",
+  "3QUE.c031.water_add.A5008"
+ ],
+ "kept_uncredited": [
+  [
+   33,
+   "3QUE.c033.water_add.A5010"
+  ],
+  [
+   33,
+   "3QUE.c033.water_add.A5014"
+  ],
+  [
+   35,
+   "3QUE.c035.water_add.A5018"
+  ],
+  [
+   37,
+   "3QUE.c037.water_add.A5022"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.21816660253813513,
+  "r_free_full": 0.26648658613170473,
+  "r_free_select": 0.26212952558334107,
+  "r_free_report": 0.27104141965568235,
+  "d_min": 2.7001667213072826,
+  "n_free": 864,
+  "n_select": 432,
+  "n_report": 432
+ },
+ "r_free_final": {
+  "r_work": 0.22211314401638974,
+  "r_free_full": 0.27331334108673927,
+  "r_free_select": 0.26425997770937304,
+  "r_free_report": 0.2827776490894036,
+  "d_min": 2.7001667213072826,
+  "n_free": 864,
+  "n_select": 432,
+  "n_report": 432
+ },
+ "delta_r_free_full": 0.006827,
+ "delta_r_free_report": 0.011736,
+ "published_better": {
+  "r_work": 0.171,
+  "r_free": 0.25,
+  "method": "ensemble refinement (different model representation \u2014 see SPEC_DPDB_RUNS \u00a70)",
+  "source": "https://dynamicpdb.com/entries/e1231493-23e9-4110-b815-da94a2c17184",
+  "fetched": "2026-08-27"
+ },
+ "published_target_r_free": 0.25,
+ "reached_target": false,
+ "gap_closed_fraction": -0.4141,
+ "sigma_select": 0.00144,
+ "k_multiple": 2.0,
+ "refine_extra_final": {
+  "tls_selections": [
+   "chain 'A' and (resid    5  through   87 )",
+   "chain 'A' and (resid   88  through  123 )",
+   "chain 'A' and (resid  124  through  201 )",
+   "chain 'A' and (resid  202  through  353 )"
+  ]
+ },
+ "escape_tried": {
+  "reweight_reseed": "failed"
+ },
+ "final_model": "/home/dev/runs/3QUE/runs/3QUE.run3/cycles/c038/escape/null_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/3QUE/runs/3QUE.run3/cycles/c038/escape/null_arm/refine_001.mtz",
+ "stop_reason": "max_cycles=8 reached",
+ "best_base": {
+  "cycle_index": 31,
+  "model": "/home/dev/runs/3QUE/runs/3QUE.run3/cycles/c031/paired/candidate_arm/refine_001.cif",
+  "mtz": null,
+  "rfree": {
+   "r_work": 0.2136905000688107,
+   "r_free_full": 0.25985654441952555,
+   "r_free_select": 0.2528646590703779,
+   "r_free_report": 0.26716580106872845,
+   "d_min": 2.7001667213072826,
+   "n_free": 864,
+   "n_select": 432,
+   "n_report": 432
+  }
+ },
+ "started_at": "2026-08-27T16:46:25+00:00",
+ "finished_at": "2026-08-28T09:08:38+00:00"
+}

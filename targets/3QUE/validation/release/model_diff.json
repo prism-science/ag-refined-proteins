@@ -1,0 +1,30 @@
+{
+ "target": "3QUE",
+ "deposited": {
+  "n_atoms": 2849,
+  "n_hydrogen": 0,
+  "n_waters": 14,
+  "n_nonwater_residues": 346,
+  "n_residues_with_altlocs": 0
+ },
+ "released": {
+  "n_atoms": 2850,
+  "n_hydrogen": 0,
+  "n_waters": 15,
+  "n_nonwater_residues": 346,
+  "n_residues_with_altlocs": 0
+ },
+ "waters_added": [
+  "A 5001",
+  "A 5007",
+  "A 5008"
+ ],
+ "waters_removed": [
+  "A 365",
+  "A 376"
+ ],
+ "nonwater_residues_added": [],
+ "nonwater_residues_removed": [],
+ "altloc_changes": [],
+ "hydrogens_delta": 0
+}

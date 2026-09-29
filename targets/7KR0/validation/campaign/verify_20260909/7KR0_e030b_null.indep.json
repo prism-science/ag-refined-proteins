@@ -1,0 +1,25 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e030b_macro_cycles15/paired/null_arm/refine_001.cif",
+ "n_atoms": 4298,
+ "n_hydrogen": 1990,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D"
+ ],
+ "n_water_residues": 310,
+ "n_reflections": 178324,
+ "n_free": 8712,
+ "n_select": 4356,
+ "n_report": 4356,
+ "n_work": 169612,
+ "d_min": 0.7700003403620237,
+ "r_work_fmodel": 0.10426623407674483,
+ "r_free_fmodel": 0.11332163101557928,
+ "r_work_manual": 0.10426539262237583,
+ "r_free_manual": 0.11328395025604923,
+ "r_free_select_manual": 0.11126452908235447,
+ "r_free_report_manual": 0.11532577625941831,
+ "wall_s": 4.8
+}

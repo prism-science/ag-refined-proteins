@@ -1,0 +1,12 @@
+{
+ "target": "9ARN",
+ "model": "/home/dev/runs/9ARN/c000/baseline_rerefine/refine_001.cif",
+ "maps_mtz": null,
+ "cycle_index": 0,
+ "stage": "baseline_rerefine",
+ "r_free_select": 0.3012091351890411,
+ "r_free_report": 0.29092167538776614,
+ "r_free_full": 0.2962671299411622,
+ "r_work": 0.2562321880541689,
+ "updated_at": "2026-09-17T06:51:16+00:00"
+}

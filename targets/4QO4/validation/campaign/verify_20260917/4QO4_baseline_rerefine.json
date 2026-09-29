@@ -1,0 +1,22 @@
+{
+ "model": "/home/dev/runs/4QO4/c000/baseline_rerefine/refine_001.cif",
+ "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 845,
+ "n_hydrogen": 0,
+ "altlocs": [],
+ "n_water_residues": 78,
+ "n_reflections": 11011,
+ "n_free": 528,
+ "n_select": 264,
+ "n_report": 264,
+ "n_work": 10483,
+ "d_min": 1.700359054039257,
+ "r_work_fmodel": 0.2817058768837824,
+ "r_free_fmodel": 0.34718315667194266,
+ "r_work_manual": 0.2817009534044305,
+ "r_free_manual": 0.34586089608229453,
+ "r_free_select_manual": 0.3326511193719928,
+ "r_free_report_manual": 0.3606371324063678,
+ "wall_s": 0.4
+}

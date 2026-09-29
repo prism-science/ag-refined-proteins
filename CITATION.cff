@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "ag-refined-proteins: crystallographic models re-refined by an autonomous agent, with data, maps, validation and decision logs"
+message: "If you use these models or records, cite this repository and the original PDB entry of each target (its primary citation is in targets/<ID>/deposited/rcsb_entry.json)."
+type: dataset
+authors:
+  - name: "Astera Institute, autoresearch campaign"
+license: CC-BY-4.0
+date-released: "2026-09-29"
+repository-code: "https://github.com/prism-science/ag-refined-proteins"
+keywords:
+  - crystallography
+  - refinement
+  - R-free
+  - autonomous agent
+  - Phenix

@@ -1,0 +1,131 @@
+{
+ "run_id": "3DUT.20260917T081842Z",
+ "target": "3DUT",
+ "run_dir": "/home/dev/runs/3DUT/runs/3DUT.20260917T081842Z",
+ "cycles": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "n_cycles": 6,
+ "n_credited_cycles": 0,
+ "credited_change_ids": [],
+ "kept_uncredited": [
+  [
+   1,
+   "3DUT.c001.water_remove.C309"
+  ],
+  [
+   1,
+   "3DUT.c001.water_remove.C259"
+  ],
+  [
+   1,
+   "3DUT.c001.water_remove.B259"
+  ],
+  [
+   1,
+   "3DUT.c001.water_remove.C269"
+  ],
+  [
+   1,
+   "3DUT.c001.water_remove.A228"
+  ],
+  [
+   2,
+   "3DUT.c002.water_remove.B284"
+  ],
+  [
+   2,
+   "3DUT.c002.water_remove.A158"
+  ],
+  [
+   2,
+   "3DUT.c002.water_remove.D240"
+  ],
+  [
+   2,
+   "3DUT.c002.water_remove.B236"
+  ],
+  [
+   2,
+   "3DUT.c002.water_remove.B281"
+  ]
+ ],
+ "r_free_start": {
+  "r_work": 0.21046897402774387,
+  "r_free_full": 0.2504512550606583,
+  "r_free_select": 0.258474392187901,
+  "r_free_report": 0.2418497714524383,
+  "d_min": 1.550012621200482,
+  "n_free": 3587,
+  "n_select": 1793,
+  "n_report": 1794
+ },
+ "r_free_final": {
+  "r_work": 0.21110145143960835,
+  "r_free_full": 0.2486899195119823,
+  "r_free_select": 0.2547961656595908,
+  "r_free_report": 0.24214350564500794,
+  "d_min": 1.550012621200482,
+  "n_free": 3587,
+  "n_select": 1793,
+  "n_report": 1794
+ },
+ "delta_r_free_full": -0.001761,
+ "delta_r_free_report": 0.000294,
+ "published_better": null,
+ "published_target_r_free": null,
+ "reached_target": null,
+ "published_comparable_to_our_flags": null,
+ "gap_closed_fraction": null,
+ "sigma_select": 0.000631,
+ "k_multiple": 2.0,
+ "refine_extra_final": {
+  "tls_selections": [
+   "chain 'A' and (resid    1  through   35 )",
+   "chain 'A' and (resid   36  through   71 )",
+   "chain 'A' and (resid   72  through   94 )",
+   "chain 'A' and (resid   95  through  141 )",
+   "chain 'B' and (resid    1  through   19 )",
+   "chain 'B' and (resid   20  through   57 )",
+   "chain 'B' and (resid   58  through   77 )",
+   "chain 'B' and (resid   78  through  146 )",
+   "chain 'C' and (resid    1  through   35 )",
+   "chain 'C' and (resid   36  through   52 )",
+   "chain 'C' and (resid   53  through   71 )",
+   "chain 'C' and (resid   72  through  112 )",
+   "chain 'C' and (resid  113  through  141 )",
+   "chain 'D' and (resid    1  through   19 )",
+   "chain 'D' and (resid   20  through  146 )"
+  ]
+ },
+ "escape_tried": {
+  "reweight_reseed": "failed",
+  "rescale_bulk_solvent": "failed",
+  "simulated_annealing": "refused"
+ },
+ "final_model": "/home/dev/runs/3DUT/runs/3DUT.20260917T081842Z/cycles/c006/escape/null_arm/refine_001.cif",
+ "final_mtz": "/home/dev/runs/3DUT/runs/3DUT.20260917T081842Z/cycles/c006/escape/null_arm/refine_001.mtz",
+ "stop_reason": "escape ladder exhausted (reweight_reseed=failed, rescale_bulk_solvent=failed, simulated_annealing=refused): the model is converged at this minimum",
+ "best_base": {
+  "cycle_index": 6,
+  "model": "/home/dev/runs/3DUT/runs/3DUT.20260917T081842Z/cycles/c006/escape/null_arm/refine_001.cif",
+  "mtz": "/home/dev/runs/3DUT/runs/3DUT.20260917T081842Z/cycles/c006/escape/null_arm/refine_001.mtz",
+  "rfree": {
+   "r_work": 0.21110145143960835,
+   "r_free_full": 0.2486899195119823,
+   "r_free_select": 0.2547961656595908,
+   "r_free_report": 0.24214350564500794,
+   "d_min": 1.550012621200482,
+   "n_free": 3587,
+   "n_select": 1793,
+   "n_report": 1794
+  }
+ },
+ "started_at": "2026-09-17T08:18:42+00:00",
+ "finished_at": "2026-09-17T16:20:48+00:00"
+}

@@ -1,0 +1,63 @@
+# phenix.model_vs_data /home/dev/runs/agrp_export_20260929T1606Z/targets/3TC7/deposited/3TC7.cif /home/dev/runs/agrp_export_20260929T1606Z/_work/3TC7/merged.mtz
+Data: --------------------------------------------------------------------------
+  Miller array info: /home/dev/runs/agrp_export_20260929T1606Z/_work/3TC7/merged.mtz:FP,SIGFP,systematic_absences_eliminated
+  Observation type: xray.amplitude
+  Type of data: double, size=41052
+  Type of sigmas: double, size=41052
+  Number of Miller indices: 41052
+  Anomalous flag: False
+  Unit cell: (60.96, 60.96, 118.663, 90, 90, 120)
+  Space group: P 31 2 1 (No. 152)
+  Systematic absences: 0
+  Centric reflections: 4184
+  Resolution range: 39.4401 1.49995
+  Completeness in resolution range: 0.984626
+  Completeness with d_max=infinity: 0.984531
+  Wavelength: 1.0000
+R-free-flags: ------------------------------------------------------------------
+  flag value: 0
+Model vs Data: -----------------------------------------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 39.440-11.795   90.91    93     7 0.2525   423.964   393.302 0.961 1.001 0.344
+ 11.795-9.340    95.24    97     3 0.1572   614.011   601.311 1.025 1.003 0.354
+  9.328-7.380    97.99   184    11 0.1699   534.463   522.235 1.051 1.002 0.358
+  7.354-5.837    98.48   374    15 0.2084   388.477   373.272 1.020 1.002 0.358
+  5.826-4.616    98.96   720    42 0.1744   485.438   471.946 1.072 1.002 0.350
+  4.610-3.650    99.41  1445    78 0.1545   565.658   554.035 1.131 1.001 0.310
+  3.648-2.885    99.87  2866   147 0.1686   412.158   403.478 1.120 0.999 0.024
+  2.885-2.282    99.92  5745   289 0.1593   252.735   247.435 1.086 0.996 0.000
+  2.281-1.804    99.89 11415   595 0.1287   165.752   163.323 1.136 0.991 0.000
+  1.804-1.500    96.68 16034   888 0.1528    80.635    78.669 1.039 0.983 0.000
+
+  r_work: 0.1535
+  r_free: 0.1914
+
+  Number of F-obs outliers: 4
+Information extracted from PDB file header: ------------------------------------
+  program_name    : PHENIX
+  year            : 2011
+  r_work          : 0.158
+  r_free          : 0.193
+  high_resolution : 1.5
+  low_resolution  : 39.44
+  sigma_cutoff    : 1.34
+  matthews_coeff  : 2.14
+  solvent_cont    : 42.42
+  exptl_method    : X-RAY DIFFRACTION
+After applying resolution and sigma cutoffs: -----------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 39.440-11.795   90.91    93     7 0.2525   423.964   393.302 0.961 1.001 0.344
+ 11.795-9.340    95.24    97     3 0.1572   614.011   601.311 1.025 1.003 0.354
+  9.328-7.380    97.99   184    11 0.1699   534.463   522.235 1.051 1.002 0.358
+  7.354-5.837    98.48   374    15 0.2084   388.477   373.272 1.020 1.002 0.358
+  5.826-4.616    98.96   720    42 0.1744   485.438   471.946 1.072 1.002 0.350
+  4.610-3.650    99.41  1445    78 0.1545   565.658   554.035 1.131 1.001 0.310
+  3.648-2.885    99.87  2866   147 0.1686   412.158   403.478 1.120 0.999 0.024
+  2.885-2.282    99.92  5745   289 0.1593   252.735   247.435 1.086 0.996 0.000
+  2.281-1.804    99.87 11412   595 0.1287   165.791   163.359 1.136 0.991 0.000
+  1.804-1.500    96.67 16033   887 0.1528    80.643    78.677 1.039 0.983 0.000
+
+  r_work: 0.1535
+  r_free: 0.1914
+
+  Number of F-obs outliers: 9

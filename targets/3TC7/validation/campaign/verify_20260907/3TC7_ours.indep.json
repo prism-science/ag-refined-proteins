@@ -1,0 +1,24 @@
+{
+ "model": "/home/dev/runs/3TC7/runs/3TC7.run2/cycles/c025/escape/null_arm/refine_001.cif",
+ "n_atoms": 2509,
+ "n_hydrogen": 0,
+ "altlocs": [
+  "A",
+  "B",
+  "C"
+ ],
+ "n_water_residues": 231,
+ "n_reflections": 41052,
+ "n_free": 2075,
+ "n_select": 1037,
+ "n_report": 1038,
+ "n_work": 38977,
+ "d_min": 1.4999525524595603,
+ "r_work_fmodel": 0.14679476884203055,
+ "r_free_fmodel": 0.18417302884819434,
+ "r_work_manual": 0.14679414435655733,
+ "r_free_manual": 0.18424491880246427,
+ "r_free_select_manual": 0.18855158892357396,
+ "r_free_report_manual": 0.17984325753486263,
+ "wall_s": 1.1
+}

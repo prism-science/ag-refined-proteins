@@ -1,0 +1,45 @@
+{
+ "target": "3QUE",
+ "pdb_id": "3QUE",
+ "dest": "/home/dev/data/raw/3QUE",
+ "urls": {
+  "model_cif": "https://files.rcsb.org/download/3QUE.cif",
+  "model_pdb": "https://files.rcsb.org/download/3QUE.pdb",
+  "sf": "https://files.rcsb.org/download/3QUE-sf.cif",
+  "fasta": "https://www.rcsb.org/fasta/entry/3QUE",
+  "entry_json": "https://data.rcsb.org/rest/v1/core/entry/3QUE",
+  "pdbredo.final_cif": "https://pdb-redo.eu/db/3que/3que_final.cif",
+  "pdbredo.final_pdb": "https://pdb-redo.eu/db/3que/3que_final.pdb",
+  "pdbredo.final_mtz": "https://pdb-redo.eu/db/3que/3que_final.mtz",
+  "pdbredo.data_json": "https://pdb-redo.eu/db/3que/data.json"
+ },
+ "files": {
+  "model_cif": "/home/dev/data/raw/3QUE/3QUE.cif",
+  "model_pdb": "/home/dev/data/raw/3QUE/3QUE.pdb",
+  "sf": "/home/dev/data/raw/3QUE/3QUE-sf.cif",
+  "fasta": "/home/dev/data/raw/3QUE/3QUE.fasta",
+  "entry_json": "/home/dev/data/raw/3QUE/rcsb_entry.json",
+  "pdbredo.final_cif": "/home/dev/data/raw/3QUE/pdbredo/3que_final.cif",
+  "pdbredo.final_pdb": "/home/dev/data/raw/3QUE/pdbredo/3que_final.pdb",
+  "pdbredo.final_mtz": "/home/dev/data/raw/3QUE/pdbredo/3que_final.mtz",
+  "pdbredo.data_json": "/home/dev/data/raw/3QUE/pdbredo/data.json"
+ },
+ "errors": {},
+ "manifest": {
+  "./3QUE-sf.cif": "7dca2e602c18bdef3c708cd5d41354cda0ea63daddb6f0089bdb4081c84314cf",
+  "./3QUE.cif": "67bbe98159bdb43ef40a652cc809a5a3cbe5117b0229508c5204a91ff6459fcc",
+  "./3QUE.fasta": "a65e96a0408569adc070bb78beacf7c98e938c6192a3f34e6c07dccd83762bad",
+  "./3QUE.pdb": "3ce8cd7e0a04db79162b58855a0b1049df05e199acab795701c729d510152a48",
+  "./3QUE_2mFo-DFc_map.ccp4": "70b4638fba37afba79ec16d0341398080801708decc3ee72bd1f510c7df8f30b",
+  "./3QUE_map_coeffs.mtz": "be57ccf4fbd9535d66f6041a5d25af3edfa2d5a21d20fcd57db2d3e0f9a09fc4",
+  "./pdbredo/3que_final.cif": "30e16ce7d31d8d1eb831e70f7c3c50f661b43c86dd7eba7ffcd674a312841db1",
+  "./pdbredo/3que_final.mtz": "e64d66f7731dfa20fe97c325567d28ac638fab6caa8ad21b40423078be70da18",
+  "./pdbredo/3que_final.pdb": "3fd6c5d3e3b915f8d904f905ec085a0c48f8634f6eb0e353c9820c251e60b2f5",
+  "./pdbredo/data.json": "7465b92aa5ff7324a80c02dab265bc36688054d88ab6f7da98a0c7ba59224a69",
+  "./rcsb_entry.json": "3b47e4eb5a70f531bd0bd5af2048373c675a79ba5e98a75eac85a071279a3798"
+ },
+ "manifest_path": "/home/dev/data/raw/3QUE/MANIFEST.sha256",
+ "missing_required": {},
+ "status": "PASS",
+ "ran_at": "2026-08-26T17:24:38+00:00"
+}

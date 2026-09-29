@@ -1,0 +1,96 @@
+{
+ "target": "9D5U",
+ "merge_exit": 0,
+ "models": {
+  "deposited": {
+   "model_sha256": "a996183271558a67283b2a6221dd17f72ff0dc8edc0f6d14313513536f877194",
+   "indep_exit": 0,
+   "indep": {
+    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/deposited/9D5U.cif",
+    "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
+    "n_dropped_french_wilson": 0,
+    "n_atoms": 3735,
+    "n_hydrogen": 8,
+    "altlocs": [
+     "A",
+     "B"
+    ],
+    "n_water_residues": 251,
+    "n_reflections": 100941,
+    "n_free": 2012,
+    "n_select": 1006,
+    "n_report": 1006,
+    "n_work": 98929,
+    "d_min": 1.3500069719038539,
+    "r_work_fmodel": 0.2611923774407143,
+    "r_free_fmodel": 0.2845169399885635,
+    "r_work_manual": 0.2611825192151872,
+    "r_free_manual": 0.2853149754316784,
+    "r_free_select_manual": 0.27902494048818466,
+    "r_free_report_manual": 0.291706945993097,
+    "wall_s": 3.6
+   },
+   "model_vs_data_exit": 0,
+   "model_vs_data": {
+    "r_work": 0.2612,
+    "r_free": 0.2844
+   },
+   "molprobity_exit": 0,
+   "molprobity": {
+    "ramachandran_outliers_pct": 0.7,
+    "ramachandran_favored_pct": 97.42,
+    "rotamer_outliers_pct": 0.27,
+    "cbeta_deviations": 1.0,
+    "clashscore": 10.1,
+    "rms_bonds": 0.0246,
+    "rms_angles": 2.22,
+    "molprobity_score": 1.64
+   }
+  },
+  "refined": {
+   "model_sha256": "c08adae3c119d11d8e26fef15e074a0bf7651ae1e89abbe03247a68c7455e104",
+   "indep_exit": 0,
+   "indep": {
+    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/model/9D5U_refined.cif",
+    "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
+    "n_dropped_french_wilson": 0,
+    "n_atoms": 3743,
+    "n_hydrogen": 8,
+    "altlocs": [
+     "A",
+     "B"
+    ],
+    "n_water_residues": 259,
+    "n_reflections": 100941,
+    "n_free": 2012,
+    "n_select": 1006,
+    "n_report": 1006,
+    "n_work": 98929,
+    "d_min": 1.3500069719038539,
+    "r_work_fmodel": 0.23062588889877175,
+    "r_free_fmodel": 0.25280085634071,
+    "r_work_manual": 0.2306185227067744,
+    "r_free_manual": 0.25324361766277226,
+    "r_free_select_manual": 0.24855178899023037,
+    "r_free_report_manual": 0.2580114815973126,
+    "wall_s": 3.3
+   },
+   "model_vs_data_exit": 0,
+   "model_vs_data": {
+    "r_work": 0.2306,
+    "r_free": 0.2526
+   },
+   "molprobity_exit": 0,
+   "molprobity": {
+    "ramachandran_outliers_pct": 0.23,
+    "ramachandran_favored_pct": 97.42,
+    "rotamer_outliers_pct": 0.27,
+    "cbeta_deviations": 0.0,
+    "clashscore": 4.54,
+    "rms_bonds": 0.0028,
+    "rms_angles": 0.61,
+    "molprobity_score": 1.34
+   }
+  }
+ }
+}

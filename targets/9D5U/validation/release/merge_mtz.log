@@ -1,0 +1,2 @@
+# phenix.python /home/dev/runs/agrp_export_20260929T1606Z/_helpers/merge_mtz.py /home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/data/9D5U_data.mtz /home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/data/9D5U_flags.mtz /home/dev/runs/agrp_export_20260929T1606Z/_work/9D5U/merged.mtz
+wrote /home/dev/runs/agrp_export_20260929T1606Z/_work/9D5U/merged.mtz IMEAN 100941 reflections; 2012 free

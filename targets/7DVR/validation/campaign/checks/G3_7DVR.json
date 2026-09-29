@@ -1,0 +1,194 @@
+{
+ "gate": "G3",
+ "target": "7DVR",
+ "status": "FAIL",
+ "reasons": [
+  "|R-free(recomputed) - R-free(header)| = 0.0242 > 0.0050",
+  "rfree_split r_free_full disagrees with phenix.refine by 0.0147 > 0.002"
+ ],
+ "ran_at": "2026-09-17T05:14:44+00:00",
+ "wall_clock_s": 25.5,
+ "header": {
+  "source_file": "/home/dev/data/raw/7DVR/7DVR.cif",
+  "source_sha256": "79eabb470764bc2050bb306213ad22a86be67a10ce869a91d27e80956d4cf5c2",
+  "block": "7DVR",
+  "n_refine_rows": 1,
+  "r_work": 0.2366,
+  "r_free": 0.285,
+  "r_obs": 0.2386,
+  "n_free": 882,
+  "n_work": null,
+  "n_obs": 17175,
+  "pct_free": 4.9,
+  "d_res_high": 1.7,
+  "d_res_low": 29.13,
+  "sigma_f": 0.0,
+  "sigma_i": null,
+  "solvent_model": "MASK",
+  "details": "HYDROGENS HAVE BEEN ADDED IN THE RIDING POSITIONS U VALUES      : WITH TLS ADDED",
+  "cross_valid_method": "THROUGHOUT",
+  "free_selection_details": "RANDOM",
+  "b_iso_mean": 50.487,
+  "absent": [
+   "_refine.ls_number_reflns_R_work",
+   "_refine.pdbx_ls_sigma_I"
+  ],
+  "refinement_programs": [
+   {
+    "name": "REFMAC",
+    "version": "5.8.0258"
+   }
+  ]
+ },
+ "targets_yaml_header_claim": {
+  "r_work": 0.2366,
+  "r_free": 0.285,
+  "n_free": 882,
+  "pct_free": 4.9,
+  "n_obs": 17175,
+  "sigma_f": 0.0,
+  "cross_valid_method": "THROUGHOUT",
+  "sf_status": "REL"
+ },
+ "recomputed_zero_cycle": {
+  "path": "autoref.tools.phenix_refine.refine_zero_cycles",
+  "ok": true,
+  "r_work": 0.2591,
+  "r_free": 0.3092,
+  "n_refl": 18051,
+  "n_free": 881,
+  "d_min": 1.7,
+  "d_max": 29.11,
+  "ksol": 0.3579,
+  "bsol": 66.025,
+  "log_path": "/home/dev/runs/7DVR/c000/verify/G3/zero_001.log",
+  "output_model": "/home/dev/runs/7DVR/c000/verify/G3/zero_001.cif",
+  "wall_clock_s": 23.2,
+  "version": "2.1-6048",
+  "argv": [
+   "phenix.refine",
+   "/home/dev/data/raw/7DVR/7DVR.cif",
+   "/home/dev/data/targets/7DVR/data.mtz",
+   "/home/dev/data/targets/7DVR/flags.mtz",
+   "refinement.input.xray_data.labels=IMEAN,SIGIMEAN",
+   "refinement.input.xray_data.r_free_flags.label=R-free-flags",
+   "data_manager.fmodel.xray_data.r_free_flags.test_flag_value=0",
+   "data_manager.fmodel.xray_data.r_free_flags.generate=False",
+   "data_manager.fmodel.xray_data.r_free_flags.ignore_r_free_flags=False",
+   "refinement.main.number_of_macro_cycles=0",
+   "refinement.main.random_seed=0",
+   "refinement.main.nproc=1",
+   "refinement.hydrogens.refine=riding",
+   "refinement.main.find_and_add_hydrogens=False",
+   "refinement.bulk_solvent_and_scale.mode=fast",
+   "output.prefix=zero",
+   "output.serial=1",
+   "output.overwrite=True",
+   "output.write_map_coefficients=True",
+   "output.write_geo_file=False",
+   "output.write_def_file=False",
+   "output.write_eff_file=True"
+  ]
+ },
+ "rfree_split": {
+  "r_work": 0.24214766801140847,
+  "r_free_full": 0.2945018639095084,
+  "r_free_select": 0.326488641155578,
+  "r_free_report": 0.269644234447623,
+  "n_work": 17169,
+  "n_free": 882,
+  "n_select": 441,
+  "n_report": 441,
+  "n_reflections": 18051,
+  "d_min": 1.7042752319993781,
+  "d_max": 29.113012051911234,
+  "ksol": 0.37,
+  "bsol": 65.5517410350262,
+  "r_gap": 0.05235419589809992,
+  "outliers_rejection": true,
+  "remove_outliers_in_scaling": false,
+  "scattering_table": "n_gaussian",
+  "artifact": "/home/dev/runs/7DVR/c000/verify/G3/rfree_split/rfree_verify_79eabb470764.json"
+ },
+ "delta_r_free_vs_header": 0.0242,
+ "delta_rfree_split_vs_phenix_refine": -0.014698136090491587,
+ "tolerance": {
+  "tolerance": 0.005,
+  "abs_floor": 0.005,
+  "sigma_full": 0.000722,
+  "basis": "max(3*sigma_noise, abs_floor)"
+ },
+ "agreement_tolerance": 0.002,
+ "flags": {
+  "flag_label": "R-free-flags",
+  "test_flag_value": 0,
+  "flags_source": "inherited",
+  "n_free": 882,
+  "fraction_free": 0.048845,
+  "n_select": 441,
+  "n_report": 441,
+  "split_seed": 1387261970,
+  "flags_mtz_sha256": "2a551b5c07c51fdc3b0a18b1f1cbb41fa2fd895f031116beeff16bd30937d115",
+  "data_mtz_sha256": "330b512de2517d38ee14036d1a73a4d3bb6f44f344f1e8194be7ab617752fa26",
+  "split_sha256": "b06bad438d726b87937cfbe9ba2ce40b0ad9affcddc753c4b0a6fc35e6270046",
+  "data_labels": "IMEAN,SIGIMEAN",
+  "intensities_or_amplitudes": "intensities",
+  "convention_note": "Inherited unchanged from _refln.status of 7DVR-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+  "n_reflections": 18057,
+  "n_rows_in_sf": 18619,
+  "n_dropped_unmeasured": 562,
+  "n_dropped_missing_value": 0
+ },
+ "n_free_header_vs_file": {
+  "header": 882,
+  "structure_factor_file": 882
+ },
+ "model": {
+  "path": "/home/dev/data/raw/7DVR/7DVR.cif",
+  "sha256": "79eabb470764bc2050bb306213ad22a86be67a10ce869a91d27e80956d4cf5c2"
+ },
+ "diagnosis": {
+  "refinement_programs": [
+   {
+    "name": "REFMAC",
+    "version": "5.8.0258"
+   }
+  ],
+  "header_details": "HYDROGENS HAVE BEEN ADDED IN THE RIDING POSITIONS U VALUES      : WITH TLS ADDED",
+  "header_solvent_model": "MASK",
+  "header_d_res": [
+   29.13,
+   1.7
+  ],
+  "our_d_res": [
+   29.113012051911234,
+   1.7042752319993781
+  ],
+  "header_sigma_f": 0.0,
+  "header_sigma_i": null,
+  "pdbredo": {
+   "VERSION": 8.21,
+   "RFACT": 0.2366,
+   "RFREE": 0.285,
+   "RFCAL": 0.2881,
+   "RFCALUNB": 0.2749,
+   "SIGRFCAL": 0.0097,
+   "RFFIN": 0.2627,
+   "NTSTCNT": 882,
+   "NREFCNT": 18057,
+   "source_file": "/home/dev/data/raw/7DVR/pdbredo/data.json"
+  },
+  "pdbredo_agrees_on_n_free": true,
+  "pdbredo_agrees_on_n_reflections": true,
+  "pdbredo_recalculated_r_free_matches_header": true,
+  "r_free_minus_r_work": 0.05235,
+  "test_set_is_genuinely_held_out": true,
+  "n_free": {
+   "inherited_from_structure_factors": 882,
+   "deposited_header": 882,
+   "used_by_phenix_after_outlier_rejection": 881
+  },
+  "shell_diagnostic": null,
+  "reading": "If PDB-REDO's independent parse gives the same reflection and test-set counts, the free set is read correctly and the residual difference is the depositor's refinement program/scaling model, not our data handling. A recomputed R-free that is *lower* than the header, uniformly across resolution shells, with the test set still clearly held out, is the signature of a better bulk-solvent/anisotropic scaling model \u2014 a baseline fact to report, not a flag error. A recomputed R-free close to R-work would instead mean the test set leaked and is campaign-stopping."
+ }
+}
