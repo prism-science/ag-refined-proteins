@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/3DUT/deposited/3DUT.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/3DUT/deposited/3DUT.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -207,11 +207,11 @@
   Number of additional bonds: simple=4, symmetry=0
   Coordination:
   Other bonds:
-  Time building additional restraints: 0.23
+  Time building additional restraints: 0.22
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  1076
 
-  Time building geometry restraints manager: 0.31 seconds
+  Time building geometry restraints manager: 0.28 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

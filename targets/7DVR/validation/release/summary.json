@@ -6,7 +6,7 @@
    "model_sha256": "79eabb470764bc2050bb306213ad22a86be67a10ce869a91d27e80956d4cf5c2",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/7DVR/deposited/7DVR.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/7DVR/deposited/7DVR.cif",
     "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 1295,
@@ -51,7 +51,7 @@
    "model_sha256": "1e5b318b6d25dddb12855ed6a115ff9d420a7d79775e7477c2cac25ad3cf0b82",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/7DVR/model/7DVR_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/7DVR/model/7DVR_refined.cif",
     "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 1295,

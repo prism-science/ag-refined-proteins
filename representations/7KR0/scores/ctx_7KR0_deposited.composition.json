@@ -1,0 +1,23 @@
+{
+ "model": "/home/dev/data/raw/7KR0/7KR0.cif",
+ "n_atoms": 4300,
+ "n_hydrogen": 1990,
+ "n_anisou": 2310,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D"
+ ],
+ "n_water_atoms": 316,
+ "water_occupancy_sum": 309.04,
+ "protein_occupancy_per_copy": {
+  "A": 0.6059,
+  "B": 0.3599,
+  "C": 0.3177,
+  "D": 0.49,
+  "_": 1.0
+ },
+ "protein_site_occupancy_sum_min": 0.81,
+ "protein_site_occupancy_sum_max": 1.0
+}

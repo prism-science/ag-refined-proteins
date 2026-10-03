@@ -1,19 +1,19 @@
 # Effective refinement parameters
-# Date 2026-09-09 Time 16:29:09 UTC +0000 (1788971349.27 s)
+# Date 2026-10-03 Time 05:29:45 UTC +0000 (1791005385.29 s)
 
 # Command to extract only non-defaults:
 #   phenix.refine --diff_params "refine_001.eff"
 
 data_manager {
   model {
-    file = "/home/dev/runs/3TC7/experiments/e028b_hydrogenate/refine_001H.cif"
+    file = "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/assemble/loo5/assembled.cif"
     type = *x_ray neutron electron reference
   }
-  default_model = "/home/dev/runs/3TC7/experiments/e028b_hydrogenate/refine_001H.cif"
-  restraint_files = None
-  default_restraint = None
+  default_model = "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/assemble/loo5/assembled.cif"
   phil_files = None
   default_phil = None
+  restraint_files = None
+  default_restraint = None
   miller_array {
     file = "/home/dev/data/targets/3TC7/data.mtz"
     labels {
@@ -1131,10 +1131,10 @@ refinement {
   }
   target_weights {
     optimize_xyz_weight = True
-    optimize_adp_weight = True
+    optimize_adp_weight = False
     r_free_only = False
     wxc_scale = 0.5
-    wxu_scale = 1
+    wxu_scale = 0.03
     wc = 1
     wu = 1
     fix_wxc = None

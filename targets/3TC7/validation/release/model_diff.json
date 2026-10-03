@@ -8,11 +8,11 @@
   "n_residues_with_altlocs": 1
  },
  "released": {
-  "n_atoms": 4832,
-  "n_hydrogen": 2323,
-  "n_waters": 231,
+  "n_atoms": 4804,
+  "n_hydrogen": 2274,
+  "n_waters": 236,
   "n_nonwater_residues": 255,
-  "n_residues_with_altlocs": 29
+  "n_residues_with_altlocs": 30
  },
  "waters_added": [
   "A 5001",
@@ -66,7 +66,12 @@
   "A 5049",
   "A 5050",
   "A 5051",
-  "A 5052"
+  "A 5052",
+  "A 5054",
+  "A 5056",
+  "A 5057",
+  "A 5059",
+  "A 5060"
  ],
  "waters_removed": [
   "A 782"
@@ -91,11 +96,6 @@
   },
   {
    "residue": "A 133 ILE",
-   "before": "-",
-   "after": "AB"
-  },
-  {
-   "residue": "A 136 ILE",
    "before": "-",
    "after": "AB"
   },
@@ -140,6 +140,11 @@
    "after": "AB"
   },
   {
+   "residue": "A 175 ARG",
+   "before": "-",
+   "after": "AB"
+  },
+  {
    "residue": "A 177 ILE",
    "before": "-",
    "after": "AB"
@@ -155,11 +160,6 @@
    "after": "AB"
   },
   {
-   "residue": "A 205 VAL",
-   "before": "-",
-   "after": "AB"
-  },
-  {
    "residue": "A 206 VAL",
    "before": "-",
    "after": "AB"
@@ -168,6 +168,16 @@
    "residue": "A 208 VAL",
    "before": "-",
    "after": "ABC"
+  },
+  {
+   "residue": "A 250 SER",
+   "before": "-",
+   "after": "ABC"
+  },
+  {
+   "residue": "A 30 ILE",
+   "before": "-",
+   "after": "AB"
   },
   {
    "residue": "A 34 ASN",
@@ -215,5 +225,5 @@
    "after": "AB"
   }
  ],
- "hydrogens_delta": 2323
+ "hydrogens_delta": 2274
 }

@@ -6,7 +6,7 @@
    "model_sha256": "67bbe98159bdb43ef40a652cc809a5a3cbe5117b0229508c5204a91ff6459fcc",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/3QUE/deposited/3QUE.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3QUE/deposited/3QUE.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 2849,
@@ -45,45 +45,45 @@
    }
   },
   "refined": {
-   "model_sha256": "7255387af0eb358178730ec5fdf14034dc56450c45ef6c3893e8d109343243e3",
+   "model_sha256": "b6f8a498124cb18dcb7c740c8148b3574e60020f46a0c3283c96d0d99dca1d34",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/3QUE/model/3QUE_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3QUE/model/3QUE_refined.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
-    "n_atoms": 2850,
+    "n_atoms": 2881,
     "n_hydrogen": 0,
     "altlocs": [],
-    "n_water_residues": 15,
+    "n_water_residues": 46,
     "n_reflections": 10793,
     "n_free": 864,
     "n_select": 432,
     "n_report": 432,
     "n_work": 9929,
     "d_min": 2.7001667213072826,
-    "r_work_fmodel": 0.21131427444753276,
-    "r_free_fmodel": 0.25891058999407407,
-    "r_work_manual": 0.21131694745598997,
-    "r_free_manual": 0.2596788823002654,
-    "r_free_select_manual": 0.2544261837516894,
-    "r_free_report_manual": 0.26517000806609387,
-    "wall_s": 0.6
+    "r_work_fmodel": 0.21036592843005836,
+    "r_free_fmodel": 0.25245568683792774,
+    "r_work_manual": 0.21037121083959606,
+    "r_free_manual": 0.2532972768792094,
+    "r_free_select_manual": 0.2428663802372678,
+    "r_free_report_manual": 0.26420164627744946,
+    "wall_s": 0.5
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {
-    "r_work": 0.2107,
-    "r_free": 0.2583
+    "r_work": 0.2103,
+    "r_free": 0.2525
    },
    "molprobity_exit": 0,
    "molprobity": {
     "ramachandran_outliers_pct": 0.0,
     "ramachandran_favored_pct": 98.53,
-    "rotamer_outliers_pct": 3.96,
+    "rotamer_outliers_pct": 4.29,
     "cbeta_deviations": 0.0,
-    "clashscore": 3.7,
-    "rms_bonds": 0.002,
-    "rms_angles": 0.51,
-    "molprobity_score": 1.61
+    "clashscore": 2.82,
+    "rms_bonds": 0.0039,
+    "rms_angles": 0.62,
+    "molprobity_score": 1.55
    }
   }
  }

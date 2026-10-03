@@ -1,0 +1,29 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e035f_stage2p/arms/T/Untangler/output/7KR0_6conf_B0_current15.pdb",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 17808,
+ "n_hydrogen": 7722,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_residues": 2394,
+ "n_reflections": 178324,
+ "n_free": 8712,
+ "n_select": 4356,
+ "n_report": 4356,
+ "n_work": 169612,
+ "d_min": 0.7700003403620237,
+ "r_work_fmodel": 0.08603637577943508,
+ "r_free_fmodel": 0.09500594345881187,
+ "r_work_manual": 0.0860375415111966,
+ "r_free_manual": 0.0949147946791772,
+ "r_free_select_manual": 0.09279954036260882,
+ "r_free_report_manual": 0.09705351706337556,
+ "wall_s": 5.3
+}

@@ -1,19 +1,19 @@
 # Effective refinement parameters
-# Date 2026-08-28 Time 15:14:47 UTC +0000 (1787930087.97 s)
+# Date 2026-10-03 Time 08:22:36 UTC +0000 (1791015756.90 s)
 
 # Command to extract only non-defaults:
 #   phenix.refine --diff_params "refine_001.eff"
 
 data_manager {
+  model {
+    file = "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/assemble/loo3/assembled.cif"
+    type = *x_ray neutron electron reference
+  }
+  default_model = "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/assemble/loo3/assembled.cif"
   phil_files = None
   default_phil = None
   restraint_files = None
   default_restraint = None
-  model {
-    file = "/home/dev/runs/3QUE/runs/3QUE.run3/cycles/c031/paired/candidate_arm/refine_001.cif"
-    type = *x_ray neutron electron reference
-  }
-  default_model = "/home/dev/runs/3QUE/runs/3QUE.run3/cycles/c031/paired/candidate_arm/refine_001.cif"
   miller_array {
     file = "/home/dev/data/targets/3QUE/data.mtz"
     labels {
@@ -259,16 +259,16 @@ refinement {
     }
     adp {
       individual {
-        isotropic = all
+        isotropic = not (element H or element D)
         anisotropic = None
       }
       group_adp_refinement_mode = *one_adp_group_per_residue \
                                   two_adp_groups_per_residue group_selection
       group = None
-      tls = chain 'A' and (resid 5 through 123 )
+      tls = chain 'A' and (resid 5 through 87 )
+      tls = chain 'A' and (resid 88 through 123 )
       tls = chain 'A' and (resid 124 through 201 )
-      tls = chain 'A' and (resid 202 through 261 )
-      tls = chain 'A' and (resid 262 through 353 )
+      tls = chain 'A' and (resid 202 through 353 )
     }
     occupancies {
       individual = water
@@ -660,7 +660,7 @@ refinement {
           serial_number = "2"
           helix_identifier = "2"
           enabled = True
-          selection = chain 'A' and resid 96 through 98
+          selection = chain 'A' and resid 113 through 115
           helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
@@ -676,8 +676,8 @@ refinement {
           serial_number = "3"
           helix_identifier = "3"
           enabled = True
-          selection = chain 'A' and resid 113 through 115
-          helix_type = alpha pi *3_10 unknown
+          selection = chain 'A' and resid 124 through 144
+          helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
           top_out = False
@@ -692,8 +692,8 @@ refinement {
           serial_number = "4"
           helix_identifier = "4"
           enabled = True
-          selection = chain 'A' and resid 124 through 144
-          helix_type = *alpha pi 3_10 unknown
+          selection = chain 'A' and resid 153 through 155
+          helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
           top_out = False
@@ -708,7 +708,7 @@ refinement {
           serial_number = "5"
           helix_identifier = "5"
           enabled = True
-          selection = chain 'A' and resid 153 through 155
+          selection = chain 'A' and resid 185 through 188
           helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
@@ -724,8 +724,8 @@ refinement {
           serial_number = "6"
           helix_identifier = "6"
           enabled = True
-          selection = chain 'A' and resid 186 through 188
-          helix_type = alpha pi *3_10 unknown
+          selection = chain 'A' and resid 191 through 194
+          helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
           top_out = False
@@ -740,8 +740,8 @@ refinement {
           serial_number = "7"
           helix_identifier = "7"
           enabled = True
-          selection = chain 'A' and resid 191 through 194
-          helix_type = *alpha pi 3_10 unknown
+          selection = chain 'A' and resid 202 through 218
+          helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
           top_out = False
@@ -756,8 +756,8 @@ refinement {
           serial_number = "8"
           helix_identifier = "8"
           enabled = True
-          selection = chain 'A' and resid 202 through 218
-          helix_type = alpha pi *3_10 unknown
+          selection = chain 'A' and resid 228 through 239
+          helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
           top_out = False
@@ -772,7 +772,7 @@ refinement {
           serial_number = "9"
           helix_identifier = "9"
           enabled = True
-          selection = chain 'A' and resid 228 through 239
+          selection = chain 'A' and resid 244 through 249
           helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
@@ -788,7 +788,7 @@ refinement {
           serial_number = "10"
           helix_identifier = "10"
           enabled = True
-          selection = chain 'A' and resid 244 through 249
+          selection = chain 'A' and resid 253 through 261
           helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
@@ -804,7 +804,7 @@ refinement {
           serial_number = "11"
           helix_identifier = "11"
           enabled = True
-          selection = chain 'A' and resid 253 through 261
+          selection = chain 'A' and resid 270 through 273
           helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
@@ -820,7 +820,7 @@ refinement {
           serial_number = "12"
           helix_identifier = "12"
           enabled = True
-          selection = chain 'A' and resid 270 through 273
+          selection = chain 'A' and resid 279 through 288
           helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
@@ -836,7 +836,7 @@ refinement {
           serial_number = "13"
           helix_identifier = "13"
           enabled = True
-          selection = chain 'A' and resid 279 through 288
+          selection = chain 'A' and resid 299 through 304
           helix_type = *alpha pi 3_10 unknown
           sigma = 0.05
           slack = 0
@@ -852,8 +852,8 @@ refinement {
           serial_number = "14"
           helix_identifier = "14"
           enabled = True
-          selection = chain 'A' and resid 299 through 304
-          helix_type = *alpha pi 3_10 unknown
+          selection = chain 'A' and resid 306 through 308
+          helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
           top_out = False
@@ -868,7 +868,7 @@ refinement {
           serial_number = "15"
           helix_identifier = "15"
           enabled = True
-          selection = chain 'A' and resid 306 through 308
+          selection = chain 'A' and resid 314 through 316
           helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
@@ -884,7 +884,7 @@ refinement {
           serial_number = "16"
           helix_identifier = "16"
           enabled = True
-          selection = chain 'A' and resid 314 through 316
+          selection = chain 'A' and resid 326 through 329
           helix_type = alpha pi *3_10 unknown
           sigma = 0.05
           slack = 0
@@ -899,22 +899,6 @@ refinement {
         helix {
           serial_number = "17"
           helix_identifier = "17"
-          enabled = True
-          selection = chain 'A' and resid 326 through 329
-          helix_type = alpha pi *3_10 unknown
-          sigma = 0.05
-          slack = 0
-          top_out = False
-          angle_sigma_scale = 1
-          angle_sigma_set = None
-          hbond {
-            donor = None
-            acceptor = None
-          }
-        }
-        helix {
-          serial_number = "18"
-          helix_identifier = "18"
           enabled = True
           selection = chain 'A' and resid 334 through 346
           helix_type = *alpha pi 3_10 unknown
@@ -931,7 +915,7 @@ refinement {
         sheet {
           enabled = True
           first_strand = chain 'A' and resid 8 through 13
-          sheet_id = "A"
+          sheet_id = "  A"
           strand {
             selection = chain 'A' and resid 16 through 21
             sense = parallel *antiparallel unknown
@@ -951,7 +935,7 @@ refinement {
         sheet {
           enabled = True
           first_strand = chain 'A' and resid 88 through 90
-          sheet_id = "B"
+          sheet_id = "  B"
           strand {
             selection = chain 'A' and resid 103 through 107
             sense = parallel *antiparallel unknown
@@ -989,7 +973,7 @@ refinement {
         sheet {
           enabled = True
           first_strand = chain 'A' and resid 156 through 158
-          sheet_id = "C"
+          sheet_id = "  C"
           strand {
             selection = chain 'A' and resid 164 through 166
             sense = parallel *antiparallel unknown

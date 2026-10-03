@@ -54,7 +54,7 @@ Refinement protocol of the released model: phenix.refine 2.1-6048, 15 macro-cycl
 
 The released model was written by cycle 37 (`rerefine`, run `7KR0.E030c`), verdict **accepted**, attributable ΔR-free-select -0.00101 against its paired null, ΔR-gap -0.00039; geometry flag: clashscore 10.7098 > 5.
 
-Cycles on record for this target: 29; credited: 6; changes proposed: 240 (`ledger/cycles.csv`, `ledger/changes.csv`).
+Cycles on record for this target: 32; credited: 6; changes proposed: 1009 (`ledger/cycles.csv`, `ledger/changes.csv`).
 
 Credited cycles on record, all runs and experiment lines. A credit is relative to that cycle's own paired null; not every credit moved the standing model (promotion rules D484/D499/D508), and experiment-line cycles judged candidates against their own base.
 
@@ -72,7 +72,7 @@ Credited cycles on record, all runs and experiment lines. A credit is relative t
 - MolProbity rotamer outliers and the altloc-aware clashscore of this model exceed the campaign's own frozen caps (1.5 % and 5.0); the deposited multiconformer model already exceeds the clashscore cap by construction (D451, D474). Depositable by ordinary standards, not by the campaign's own bar.
 - The changes carried by this model are two waters removed plus three 15-macro-cycle refinement passes credited at 2.1σ, 2.0σ and 2.5σ (D489, D493, D494): continued refinement, not remodelling. The deposited model was already near-optimal as a single-conformer representation.
 - Three credited cycles on record (run `7KR0.exp_sw_distill`) belong to the ensemble-distillation line, which judged its candidates against its own base and was closed as a negative result (D463, D466); they are not in this model's lineage.
-- Ensemble representations of the same data score far lower (the operator's six-copy model 0.0673 on these flags, D455) but are not depositable single models and are not part of this release.
+- Ensemble representations of the same data score far lower (44PS, the six-conformation model of Passmore et al. 2026 on this dataset, 0.0657 on these flags; the campaign's own six-copy models 0.088–0.092). They are a second representation, not a deliverable (PROTOCOL §18.1); the campaign's are released separately in `representations/7KR0/`.
 
 ## Verify it yourself
 
@@ -109,13 +109,13 @@ coot targets/7KR0/model/7KR0_refined.pdb --auto targets/7KR0/maps/7KR0_refined_m
 | `deposited/fetch_manifest.sha256` | 756 | SHA-256 of the raw files at fetch time. |
 | `deposited/rcsb_entry.json` | 19,808 | The RCSB entry record (title, citation, experimental details) as fetched. |
 | `ledger/bisections.csv` | 7,105 | Bisection steps when a cycle regressed. |
-| `ledger/changes.csv` | 654,652 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
+| `ledger/changes.csv` | 2,309,293 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
 | `ledger/checks.csv` | 3,596 | Gate results G0–G8. |
-| `ledger/cycles.csv` | 14,938 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
-| `ledger/defects.csv` | 33,344 | Values that could not be computed, with the reason (never a sentinel). |
+| `ledger/cycles.csv` | 17,604 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
+| `ledger/defects.csv` | 58,848 | Values that could not be computed, with the reason (never a sentinel). |
 | `ledger/deviations.csv` | 93,320 | Decision-log rows that name this target. |
 | `ledger/noise_floor.csv` | 1,350 | The noise-floor row that set the credit bar: σ of R-free on every set. |
-| `ledger/rfree_consultations.csv` | 226 | How many times R-free-select was consulted (PROTOCOL §3.6). |
+| `ledger/rfree_consultations.csv` | 227 | How many times R-free-select was consulted (PROTOCOL §3.6). |
 | `ledger/runs/7KR0.20260908v5/DECISIONS.md` | 696 | The per-run human-readable decision log written by the driver. |
 | `ledger/runs/7KR0.20260908v5b/DECISIONS.md` | 13,123 | The per-run human-readable decision log written by the driver. |
 | `ledger/runs/7KR0.20260908v5b/run_summary.json` | 2,154 | The per-run summary (cycles, credits, stop reason). |

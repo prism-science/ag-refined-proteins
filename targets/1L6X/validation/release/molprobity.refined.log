@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/1L6X/model/1L6X_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/1L6X/model/1L6X_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -83,7 +83,7 @@
     residue:
       pdb=" O   HOH A 463 " occ=0.97
     ... (remaining 277 not shown)
-  Time building chain proxies: 0.38, per 1000 atoms: 0.16
+  Time building chain proxies: 0.36, per 1000 atoms: 0.15
   Number of scatterers: 2430
   At special positions: 0
   Unit cell: (54.023, 124.774, 90.131, 90, 90, 90)
@@ -182,7 +182,7 @@
       " NAG C   1 " - " ASN A 297 "
   Time building additional restraints: 0.14
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 34.7 milliseconds
+  Conformation dependent library (CDL) restraints added in 34.8 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  466

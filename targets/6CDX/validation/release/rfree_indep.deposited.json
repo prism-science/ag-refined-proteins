@@ -1,5 +1,5 @@
 {
- "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/6CDX/deposited/6CDX.cif",
+ "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/6CDX/deposited/6CDX.cif",
  "data": "amplitudes (FP,SIGFP)",
  "n_dropped_french_wilson": 0,
  "n_atoms": 589,
@@ -21,5 +21,5 @@
  "r_free_manual": 0.2258440208219586,
  "r_free_select_manual": 0.22837071600735434,
  "r_free_report_manual": 0.2233151143863451,
- "wall_s": 0.8
+ "wall_s": 0.9
 }

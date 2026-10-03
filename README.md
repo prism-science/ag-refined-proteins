@@ -23,9 +23,9 @@ decisions (see *Method*). Every number is read from a file in `targets/<ID>/` by
 | Target | Res. (Å) | Entry | Deposited, our flags (full / report) | Re-refined, no changes (mean of 10) | This release (full / report) | Δ full: vs deposited / beyond re-refinement | Clashscore, rotamer outliers % (deposited → ours) | Status |
 |---|---|---|---|---|---|---|---|---|
 | [6CDX](targets/6CDX/README.md) | 1.0 | High-resolution crystal structure of fluoropropylated cystine… | 0.2258 / 0.2233 | 0.1901 | **0.1716 / 0.1725** | -0.0542 / -0.0184 (-36.9σ) | 9.6, 1.8 → 20.7, 1.7 | improved |
-| [3TC7](targets/3TC7/README.md) | 1.5 | Crystal Structure of Engineered Protein. Northeast Structural… | 0.1916 / 0.1893 | 0.1885 | **0.1728 / 0.1673** | -0.0188 / -0.0157 (-7.7σ) | 2.9, 1.4 → 2.1, 0.8 | improved |
+| [3TC7](targets/3TC7/README.md) | 1.5 | Crystal Structure of Engineered Protein. Northeast Structural… | 0.1916 / 0.1893 | 0.1885 | **0.1717 / 0.1677** | -0.0200 / -0.0168 (-8.2σ) | 2.9, 1.4 → 2.5, 1.6 | improved |
+| [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP Kinase in Complex with Skepinone-L | 0.2879 / 0.2901 | 0.2668 | **0.2533 / 0.2642** | -0.0346 / -0.0135 (-8.0σ) | 10.6, 7.6 → 2.8, 4.3 | improved |
 | [6UDY](targets/6UDY/README.md) | 1.7 | X-ray co-crystal structure of compound 5 with Mcl-1 | 0.2592 / 0.2655 | 0.2567 | **0.2479 / 0.2555** | -0.0113 / -0.0088 (-1.1σ) | 12.9, 1.1 → 4.2, 0.8 | improved |
-| [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP Kinase in Complex with Skepinone-L | 0.2879 / 0.2901 | 0.2668 | **0.2597 / 0.2652** | -0.0283 / -0.0071 (-4.2σ) | 10.6, 7.6 → 3.7, 4.0 | improved |
 | [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal… | 0.1174 / 0.1189 | 0.1163 | **0.1125 / 0.1147** | -0.0048 / -0.0038 (-15.9σ) | 4.7, 0.9 → 6.7, 1.3 | improved |
 | [1N7E](targets/1N7E/README.md) | 1.5 | Crystal structure of the sixth PDZ domain of GRIP1 | 0.2746 / 0.2620 | 0.2474 | **0.2447 / 0.2437** | -0.0299 / -0.0027 (-3.0σ) | 13.3, 1.3 → 8.4, 1.3 | improved |
 | [9D5U](targets/9D5U/README.md) | 1.35 | Nitrile hydratase S112A mutant | 0.2853 / 0.2917 | 0.2549 | **0.2532 / 0.2580** | -0.0321 / -0.0016 (-6.2σ) | 10.1, 0.3 → 4.5, 0.3 | improved |
@@ -49,9 +49,29 @@ Status meanings:
 - **re-refined baseline, nothing credited**: the released model is one Phenix re-refinement of the deposited file. The
   gain over the deposited value is what phenix.refine does on its own, not the agent's work.
 
+Changed on 2026-10-03 (3TC7 and 3QUE; records written by the campaign's graph search). On both, the held-back report half,
+the unbiased estimate, improved little or not at all; the full-set gain sits mostly on the select half the search consults
+(campaign row D519):
+
+- **3TC7**: full R-free 0.17276 → 0.17161, but report 0.16726 → 0.16769 (worse; ledger values). Rotamer outliers 1.59 % at
+  release time, above the campaign's 1.5 % cap (D517).
+- **3QUE**: full R-free 0.25891 → 0.25246, report only 0.26441 → 0.26334 (ledger values). The record before this one (D520) had
+  report 0.25983; the promotion that wrote this model lowered full by 0.0004 and raised report by 0.0035 (D518–D520). Rotamer
+  outliers 4.29 % at release time (3.96 % in the previous model, 7.59 % deposited; the campaign calls them pre-existing).
+
 Read each target's card (`targets/<ID>/README.md`) before quoting it. The cards carry the caveats the campaign attached to
 its own numbers: 7KR0's geometry is above the campaign's own caps, 6UDY's gain is within its noise floor, 3QUE's deposited
 header R-free is a REFMAC number, and so on.
+
+## Ensemble representations
+
+`representations/7KR0/` holds six-copy ensemble models of the 7KR0 data from the campaign's replication of Passmore et al.
+2026 (connectivity optimization with Untangler; experiment line E035). They are a second representation of the same data, not
+a released model and not comparable column for column with the table above (campaign PROTOCOL §18.1). Best on the same frozen
+flags: 0.0920 full R-free isotropic, 0.0879 anisotropic (the anisotropic models fail the campaign's R-gap gate), against
+0.0657 for the authors' deposited 44PS and 0.1125 for the released single model. Each copy writes occupancy 0.17, so protein
+sites sum to 1.02 in these PDB files. The section's README has the per-stage table, the paired-control results and the
+caveats.
 
 ## What is in a target directory
 
@@ -141,6 +161,8 @@ the commit these snapshots were taken from.
 `scripts/pull_from_pod.sh` stages a new snapshot on the campaign pod (`scripts/stage_on_pod.py`: copy, validate, hash,
 tar), transfers it in verified chunks, extracts it here and rebuilds the cards, `index.json` and `MANIFEST.sha256` with
 `scripts/build_index.py`. Commit the result with the export timestamp in the message and add a line to `CHANGELOG.md`.
+`scripts/pull_representations.sh` does the same for `representations/7KR0/` (`scripts/stage_representations_on_pod.py` on the
+pod, `scripts/build_representations.py` here).
 
 ## Licence and citation
 

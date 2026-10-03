@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/9D5Y/deposited/9D5Y.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/9D5Y/deposited/9D5Y.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -65,7 +65,7 @@
       pdb=" O   HOH A 409 " occ=0.50
     residue:
       pdb=" O   HOH A 473 " occ=0.50
-  Time building chain proxies: 0.57, per 1000 atoms: 0.15
+  Time building chain proxies: 0.58, per 1000 atoms: 0.16
   Number of scatterers: 3726
   At special positions: 0
   Unit cell: (65.928, 65.928, 185.783, 90, 90, 120)
@@ -143,11 +143,11 @@
         Amino acid - RNA/DNA : False
       
   Number of custom bonds: simple=0, symmetry=0
-  Time building additional restraints: 0.13
+  Time building additional restraints: 0.12
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  794
 
-  Time building geometry restraints manager: 0.18 seconds
+  Time building geometry restraints manager: 0.17 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

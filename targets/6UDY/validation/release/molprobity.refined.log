@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/6UDY/model/6UDY_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/6UDY/model/6UDY_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -165,12 +165,12 @@
   Number of custom bonds: simple=0, symmetry=0
   Time building additional restraints: 0.10
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 42.6 milliseconds
+  Conformation dependent library (CDL) restraints added in 42.2 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  558
 
-  Time building geometry restraints manager: 0.14 seconds
+  Time building geometry restraints manager: 0.13 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

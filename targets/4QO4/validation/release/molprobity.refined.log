@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/4QO4/model/4QO4_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/4QO4/model/4QO4_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -134,9 +134,9 @@
         Amino acid - RNA/DNA : False
       
   Number of custom bonds: simple=0, symmetry=0
-  Time building additional restraints: 0.03
+  Time building additional restraints: 0.07
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 13.1 milliseconds
+  Conformation dependent library (CDL) restraints added in 12.9 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  170

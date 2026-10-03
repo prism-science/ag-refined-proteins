@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/model/9D5U_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/9D5U/model/9D5U_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -161,7 +161,7 @@
   Number of custom bonds: simple=0, symmetry=0
   Time building additional restraints: 0.12
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 120.3 milliseconds
+  Conformation dependent library (CDL) restraints added in 125.3 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  794

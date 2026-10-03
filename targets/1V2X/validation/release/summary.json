@@ -6,7 +6,7 @@
    "model_sha256": "80b21d11e3e7c0bd39dba3e9600cdaead35b422e19d6cf67124d8af258f6f1d5",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/1V2X/deposited/1V2X.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/1V2X/deposited/1V2X.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 1757,
@@ -48,7 +48,7 @@
    "model_sha256": "a379c37d0594ab1ffdcf42b8669e8df783ac5be7717da7a30b8b92c4748547df",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/1V2X/model/1V2X_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/1V2X/model/1V2X_refined.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 1757,
@@ -67,7 +67,7 @@
     "r_free_manual": 0.23540844237184166,
     "r_free_select_manual": 0.22624595156460334,
     "r_free_report_manual": 0.24498986722330343,
-    "wall_s": 0.7
+    "wall_s": 0.8
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {

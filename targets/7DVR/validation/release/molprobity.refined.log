@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/7DVR/model/7DVR_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/7DVR/model/7DVR_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -60,7 +60,7 @@
     residue:
       pdb=" O   HOH A 314 " occ=0.75
     ... (remaining 12 not shown)
-  Time building chain proxies: 0.33, per 1000 atoms: 0.25
+  Time building chain proxies: 0.32, per 1000 atoms: 0.25
   Number of scatterers: 1295
   At special positions: 0
   Unit cell: (68.899, 32.149, 76.654, 90, 95.072, 90)
@@ -144,7 +144,7 @@
   Other bonds:
   Time building additional restraints: 0.06
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 50.9 milliseconds
+  Conformation dependent library (CDL) restraints added in 39.4 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  290

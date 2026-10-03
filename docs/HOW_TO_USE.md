@@ -95,3 +95,35 @@ the identical free set.
 `index.json` has one record per target: entry metadata from RCSB, data and flag hashes, R-free of the deposited,
 re-refined and released models on every set, composition, MolProbity summary, the credited cycles with their
 attributable deltas, the thresholds version, the refinement protocol, the caveats and the file list with SHA-256.
+
+## Ensemble representations (`representations/7KR0/`)
+
+Six-copy ensemble models from the campaign's Untangler line (E035), with their map coefficients, independent-scorer JSONs,
+composition JSONs and each stage's trajectory. They are not released models (see the section README). Look and check exactly
+as for a target:
+
+```bash
+coot representations/7KR0/models/E035d_T_aniso.pdb --auto representations/7KR0/models/E035d_T_aniso_map_coeffs.mtz
+phenix.python scripts/indep_rfree.py representations/7KR0/models/E035d_T_aniso.pdb targets/7KR0/data/7KR0_data.mtz \
+  targets/7KR0/data/7KR0_flags.mtz targets/7KR0/data/7KR0_split.mtz out.json
+```
+
+The output should match `representations/7KR0/scores/E035d_T_aniso.json` to the digit.
+
+## Refreshing from the campaign pod
+
+Both scripts need an `actl` login that can exec into the campaign pod. They are read-only on the campaign: everything is staged
+under a new `/home/dev/runs/agrp_export_<UTC>[_rep]/` directory, transferred as line-wrapped base64 in 100 000-line chunks (each
+chunk and the whole tarball checked by SHA-256 on both ends), and every file is checked against the pod-side manifest.
+
+```bash
+scripts/pull_from_pod.sh          # targets/: the standing deliverables, release-time validation, cards, index, manifest
+scripts/pull_representations.sh   # representations/7KR0/: frozen six-copy models, fresh scores, trajectories, provenance
+```
+
+`pull_from_pod.sh` releases the targets already under `targets/` (the pod also holds records of onboarded targets that are
+not released); set `AGRP_TARGETS="ID ID …"` to change the list. `pull_representations.sh` takes its model list from
+`scripts/stage_representations_on_pod.py`: add a row there when a stage produces a model worth freezing, then re-run. It keeps
+`representations/7KR0/README.md` and rewrites only the table between its markers (`scripts/build_representations.py`); update
+the prose by hand when the numbers change its reading. Afterwards run `scripts/verify_checksums.sh`, add a `CHANGELOG.md` entry
+and commit.

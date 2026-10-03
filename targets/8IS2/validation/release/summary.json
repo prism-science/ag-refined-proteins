@@ -6,7 +6,7 @@
    "model_sha256": "df05904a15f4538408c91761b5884a9b42f45196ac0ed1f423fe50de0326cf46",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/8IS2/deposited/8IS2.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/8IS2/deposited/8IS2.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 1829,
@@ -48,7 +48,7 @@
    "model_sha256": "4460980105e38e886dfd630c9a879822b5b0f6f67101f12a49c6a3da826b8055",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/8IS2/model/8IS2_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/8IS2/model/8IS2_refined.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 1829,
@@ -67,7 +67,7 @@
     "r_free_manual": 0.2667782491288428,
     "r_free_select_manual": 0.2501688507055559,
     "r_free_report_manual": 0.2827129087007337,
-    "wall_s": 1.3
+    "wall_s": 1.5
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {

@@ -1,0 +1,6 @@
+T iso {'r_work': 0.08324, 'r_free_full': 0.09206, 'r_free_select': 0.08973, 'r_free_report': 0.09441, 'r_gap': 0.00882}
+T aniso {'r_work': 0.07505, 'r_free_full': 0.08792, 'r_free_select': 0.0858, 'r_free_report': 0.09007, 'r_gap': 0.01287} dRwork -0.00819 dRfree -0.00413 ratio 0.50 dgap +0.00406 (sigma_gap 0.00016 -> 25 sigma)
+T_r2 iso {'r_work': 0.08325, 'r_free_full': 0.09233, 'r_free_select': 0.08982, 'r_free_report': 0.09487, 'r_gap': 0.00908}
+T_r2 aniso {'r_work': 0.07532, 'r_free_full': 0.08796, 'r_free_select': 0.0856, 'r_free_report': 0.09035, 'r_gap': 0.01265} dRwork -0.00793 dRfree -0.00437 ratio 0.55 dgap +0.00357 (sigma_gap 0.00016 -> 22 sigma)
+T_r3 iso {'r_work': 0.08246, 'r_free_full': 0.09218, 'r_free_select': 0.09004, 'r_free_report': 0.09434, 'r_gap': 0.00972}
+T_r3 aniso {'r_work': 0.07476, 'r_free_full': 0.08812, 'r_free_select': 0.08611, 'r_free_report': 0.09015, 'r_gap': 0.01335} dRwork -0.00770 dRfree -0.00406 ratio 0.53 dgap +0.00364 (sigma_gap 0.00016 -> 23 sigma)

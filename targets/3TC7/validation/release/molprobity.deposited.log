@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/3TC7/deposited/3TC7.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/3TC7/deposited/3TC7.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -54,7 +54,7 @@
       pdb=" N  ASER A 235 " occ=0.41
       ... (10 atoms not shown)
       pdb=" OG BSER A 235 " occ=0.59
-  Time building chain proxies: 0.47, per 1000 atoms: 0.21
+  Time building chain proxies: 0.46, per 1000 atoms: 0.21
   Number of scatterers: 2220
   At special positions: 0
   Unit cell: (60.96, 60.96, 118.663, 90, 90, 120)
