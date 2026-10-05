@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-05c — E041 line R six-copy models added
+
+`representations/7KR0/models/` gains the E041 line R models built from 7KR0: `E041_R4_S.pdb` (0.0680 full R-free, clashscore 26.7),
+`E041_CJ_R4_p2.pdb` (after two clash-cleanup passes: 0.0689, clashscore 4.5) and `E041_CJ_R4_polish.pdb` (0.0690, clashscore 4.4), each
+scored by the independent scorer on the frozen flags. `scripts/indep_rfree.py` updated to the campaign's split-aware scorer (E047);
+the staging guard pins its new checksum. No single-model target changed.
+
 ## 2026-10-05 (b) — 7R2H and 8C5N added
 
 Snapshot exported from the pod at 2026-10-05T08:15:10Z (`provenance.json`); release-time validation re-run on all five targets.

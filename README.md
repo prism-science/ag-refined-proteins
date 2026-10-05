@@ -64,8 +64,9 @@ to the deposited sets of 7KR0 and 44PS).
 | 7KR0 deposited, single model | 0.1174 / 0.1189 | | | 4.7 | 0.9 % |
 | 7KR0 released, single model (`targets/7KR0/`) | 0.1125 / 0.1147 | | | 6.7 | 1.3 % |
 | E035d, six copies, anisotropic (`representations/7KR0/`) | 0.0879 / 0.0901 | 0.0751 | 1 305 | | |
-| E041 line R, six copies (best, not in this release) | 0.0680 / 0.0694 | 0.0457 | 3 198 | 26.7 | 3.0 % |
-| E041 line X, 44PS extended (not in this release) | 0.0643 / 0.0649 | 0.0445 | | 5.2 | 2.0 % |
+| E041 line R, six copies, best R-free (`representations/7KR0/models/E041_R4_S.pdb`) | 0.0680 / 0.0694 | 0.0457 | 3 198 | 26.7 | 3.0 % |
+| E041 line R after clash cleanup (`representations/7KR0/models/E041_CJ_R4_p2.pdb`) | 0.0689 / 0.0709 | 0.0456 | 2 577 | 4.5 | |
+| E041 line X, 44PS extended (pod only) | 0.0643 / 0.0649 | 0.0445 | | 5.2 | 2.0 % |
 | 44PS deposited (Passmore et al.) | 0.0657 / 0.0660 | 0.0485 | 2 581 | 2.2 | 2.0 % |
 
 - **E035** ran the paper's pipeline as published. Its models are in `representations/7KR0/`, with their own README, per-stage table
@@ -74,7 +75,8 @@ to the deposited sets of 7KR0 and 44PS).
   water copy has to clear only its own conformer, then anisotropic waters, then a looser geometry weight with a weaker B-factor
   restraint. Each gain was measured against a paired control from the same model. Line R ends 0.0023 above 44PS.
 - **Line R's geometry is not depositable yet.** Its clashscore of 26.7 comes mostly from water copies touching riding hydrogens of
-  their own conformer. A clash cleanup is running. The line R models will be added here once they pass the geometry caps.
+  their own conformer. Two cleanup passes bring the clashscore to 4.5 at R-free 0.0689, about 0.0004 above the
+  no-cleanup control; that model and the uncleaned best are in `representations/7KR0/models/`.
 - **E041 line X** starts from 44PS itself, so it extends the authors' model and does not count as a replication.
 - Numbers for E041 come from the campaign ledger, scored by the harness evaluator, not yet by this release's independent scorer.
 

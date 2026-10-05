@@ -1,0 +1,26 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e041_44ps/phaseA/CJ_R4_p2/e041_CJ_R4_p2.pdb",
+ "n_atoms": 17991,
+ "n_hydrogen": 7722,
+ "n_anisou": 10189,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_atoms": 2577,
+ "water_occupancy_sum": 545.77,
+ "protein_occupancy_per_copy": {
+  "A": 0.1667,
+  "B": 0.1667,
+  "C": 0.1667,
+  "D": 0.1667,
+  "E": 0.1666,
+  "F": 0.1666
+ },
+ "protein_site_occupancy_sum_min": 1.0,
+ "protein_site_occupancy_sum_max": 1.0
+}
