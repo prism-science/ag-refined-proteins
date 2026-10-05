@@ -1,0 +1,202 @@
+{
+ "gate": "G3",
+ "target": "8C5N",
+ "status": "FAIL",
+ "reasons": [
+  "|R-free(recomputed) - R-free(header)| = 0.0081 > 0.0050"
+ ],
+ "ran_at": "2026-10-05T02:58:17+00:00",
+ "wall_clock_s": 105.5,
+ "header": {
+  "source_file": "/home/dev/data/raw/8C5N/8C5N.cif",
+  "source_sha256": "abda46e2185866df21b10a5cd70e4548c5cc62faf5fdb89e03706631378073bb",
+  "block": "8C5N",
+  "n_refine_rows": 1,
+  "r_work": 0.1537,
+  "r_free": 0.1634,
+  "r_obs": null,
+  "n_free": 9879,
+  "n_work": 186693,
+  "n_obs": 196572,
+  "pct_free": 5.026,
+  "d_res_high": 0.75,
+  "d_res_low": 47.357,
+  "sigma_f": null,
+  "sigma_i": null,
+  "solvent_model": "MASK BULK SOLVENT",
+  "details": "Hydrogens have been used if present in the input file",
+  "cross_valid_method": "FREE R-VALUE",
+  "free_selection_details": null,
+  "b_iso_mean": 10.591,
+  "absent": [
+   "_refine.ls_R_factor_obs",
+   "_refine.pdbx_ls_sigma_F",
+   "_refine.pdbx_ls_sigma_I",
+   "_refine.pdbx_R_Free_selection_details"
+  ],
+  "refinement_programs": [
+   {
+    "name": "SHELXL",
+    "version": "2018/3"
+   },
+   {
+    "name": "PHENIX",
+    "version": "1.20.1"
+   }
+  ]
+ },
+ "targets_yaml_header_claim": {
+  "r_work": 0.1537,
+  "r_free": 0.1634,
+  "n_free": 9879,
+  "pct_free": 5.026,
+  "n_obs": 196572,
+  "cross_valid_method": "FREE R-VALUE",
+  "sf_status": "REL"
+ },
+ "recomputed_zero_cycle": {
+  "path": "autoref.tools.phenix_refine.refine_zero_cycles",
+  "ok": true,
+  "r_work": 0.146,
+  "r_free": 0.1553,
+  "n_refl": 198461,
+  "n_free": 9968,
+  "d_min": 0.75,
+  "d_max": 47.36,
+  "ksol": 0.37,
+  "bsol": 12.858,
+  "log_path": "/home/dev/runs/8C5N/c000/verify/G3/zero_001.log",
+  "output_model": "/home/dev/runs/8C5N/c000/verify/G3/zero_001.cif",
+  "wall_clock_s": 97.7,
+  "version": "2.1-6048",
+  "argv": [
+   "phenix.refine",
+   "/home/dev/data/raw/8C5N/8C5N.cif",
+   "/home/dev/data/targets/8C5N/data.mtz",
+   "/home/dev/data/targets/8C5N/flags.mtz",
+   "refinement.input.xray_data.labels=FP,SIGFP",
+   "refinement.input.xray_data.r_free_flags.label=R-free-flags",
+   "data_manager.fmodel.xray_data.r_free_flags.test_flag_value=0",
+   "data_manager.fmodel.xray_data.r_free_flags.generate=False",
+   "data_manager.fmodel.xray_data.r_free_flags.ignore_r_free_flags=False",
+   "refinement.main.number_of_macro_cycles=0",
+   "refinement.main.random_seed=0",
+   "refinement.main.nproc=1",
+   "refinement.hydrogens.refine=riding",
+   "refinement.main.find_and_add_hydrogens=False",
+   "refinement.bulk_solvent_and_scale.mode=fast",
+   "output.prefix=zero",
+   "output.serial=1",
+   "output.overwrite=True",
+   "output.write_map_coefficients=True",
+   "output.write_geo_file=False",
+   "output.write_def_file=False",
+   "output.write_eff_file=True"
+  ]
+ },
+ "rfree_split": {
+  "r_work": 0.1480133612185291,
+  "r_free_full": 0.15721298625176205,
+  "r_free_select": 0.15312397936770572,
+  "r_free_report": 0.1611669830862127,
+  "n_work": 188493,
+  "n_free": 9968,
+  "n_select": 4984,
+  "n_report": 4984,
+  "n_reflections": 198461,
+  "d_min": 0.749888742952205,
+  "d_max": 47.356623233766676,
+  "ksol": 0.36,
+  "bsol": 1.106986454116715,
+  "r_gap": 0.009199625033232961,
+  "outliers_rejection": true,
+  "remove_outliers_in_scaling": false,
+  "scattering_table": "n_gaussian",
+  "artifact": "/home/dev/runs/8C5N/c000/verify/G3/rfree_split/rfree_verify_abda46e21858.json"
+ },
+ "delta_r_free_vs_header": -0.008099999999999996,
+ "delta_rfree_split_vs_phenix_refine": 0.001912986251762061,
+ "tolerance": {
+  "tolerance": 0.005,
+  "abs_floor": 0.005,
+  "sigma_full": null,
+  "basis": "abs_floor only \u2014 no noise_floor row for this target yet"
+ },
+ "agreement_tolerance": 0.002,
+ "flags": {
+  "flag_label": "R-free-flags",
+  "test_flag_value": 0,
+  "flags_source": "inherited",
+  "n_free": 9968,
+  "fraction_free": 0.050226,
+  "n_select": 4984,
+  "n_report": 4984,
+  "split_seed": 1431474922,
+  "flags_mtz_sha256": "d42d38db669cc6f6f286bbe2075b52e07a110251664fadd2de15521913f722df",
+  "data_mtz_sha256": "c8b5afe5ac57978cdd1668e88e51aa9efb14db53cf23506080576de12e6529e6",
+  "split_sha256": "275bab4653eb004bb46afd5f8ada4c8fe12908ae0a2a7bafb17796a3d01d4556",
+  "data_labels": "FP,SIGFP",
+  "intensities_or_amplitudes": "amplitudes",
+  "convention_note": "Inherited unchanged from _refln.status of 8C5N-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
+  "n_reflections": 198461,
+  "n_rows_in_sf": 261596,
+  "n_dropped_unmeasured": 63132,
+  "n_dropped_missing_value": 3
+ },
+ "n_free_header_vs_file": {
+  "header": 9879,
+  "structure_factor_file": 9968
+ },
+ "model": {
+  "path": "/home/dev/data/raw/8C5N/8C5N.cif",
+  "sha256": "abda46e2185866df21b10a5cd70e4548c5cc62faf5fdb89e03706631378073bb"
+ },
+ "diagnosis": {
+  "refinement_programs": [
+   {
+    "name": "SHELXL",
+    "version": "2018/3"
+   },
+   {
+    "name": "PHENIX",
+    "version": "1.20.1"
+   }
+  ],
+  "header_details": "Hydrogens have been used if present in the input file",
+  "header_solvent_model": "MASK BULK SOLVENT",
+  "header_d_res": [
+   47.357,
+   0.75
+  ],
+  "our_d_res": [
+   47.356623233766676,
+   0.749888742952205
+  ],
+  "header_sigma_f": null,
+  "header_sigma_i": null,
+  "pdbredo": {
+   "VERSION": 8.12,
+   "RFACT": 0.1537,
+   "RFREE": 0.1634,
+   "RFCAL": 0.1618,
+   "RFCALUNB": 0.1534,
+   "SIGRFCAL": 0.0016,
+   "RFFIN": 0.1573,
+   "NTSTCNT": 9968,
+   "NREFCNT": 198461,
+   "source_file": "/home/dev/data/raw/8C5N/pdbredo/data.json"
+  },
+  "pdbredo_agrees_on_n_free": true,
+  "pdbredo_agrees_on_n_reflections": true,
+  "pdbredo_recalculated_r_free_matches_header": true,
+  "r_free_minus_r_work": 0.0092,
+  "test_set_is_genuinely_held_out": true,
+  "n_free": {
+   "inherited_from_structure_factors": 9968,
+   "deposited_header": 9879,
+   "used_by_phenix_after_outlier_rejection": 9968
+  },
+  "shell_diagnostic": null,
+  "reading": "If PDB-REDO's independent parse gives the same reflection and test-set counts, the free set is read correctly and the residual difference is the depositor's refinement program/scaling model, not our data handling. A recomputed R-free that is *lower* than the header, uniformly across resolution shells, with the test set still clearly held out, is the signature of a better bulk-solvent/anisotropic scaling model \u2014 a baseline fact to report, not a flag error. A recomputed R-free close to R-work would instead mean the test set leaked and is campaign-stopping."
+ }
+}

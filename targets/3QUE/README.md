@@ -25,7 +25,7 @@ Both models scored at release time with the independent scorer (`scripts/indep_r
 | **This release** | **0.2104** | **0.2533** | 0.2429 | 0.2642 | 0.2103 / 0.2525 |
 
 Δ full R-free vs deposited: **-0.0346**; beyond re-refinement alone: **-0.0135** (-8.0 × the floor's own spread).
-Credit bar used by the campaign on this target (`ledger/noise_floor.csv`, protocol `noise_floor`): σ_select 0.00144, σ_report 0.00219, σ_full 0.00168; a cycle is credited at ΔR-free-select ≤ -0.00288 (k = 2.0).
+Credit bar used by the campaign on this target (`ledger/noise_floor.csv`, protocol `noise_floor_e043_wxc01`): σ_select 0.00205, σ_report 0.00352, σ_full 0.00273; a cycle is credited at ΔR-free-select ≤ -0.00410 (k = 2.0).
 Campaign ledger for this model (`refinement/current.json`): R-work 0.2104, R-free full 0.2525, select 0.2420, report 0.2633.
 
 ## Geometry and composition (phenix.molprobity, release time, default settings)
@@ -55,7 +55,7 @@ Refinement protocol of the released model: phenix.refine 2.1-6048, 5 macro-cycle
 
 The released model was written by cycle 921 (`graph`, run `3QUE.graph-weekend-20261002d`), verdict **accepted**, attributable ΔR-free-select -0.00869 against its paired null, ΔR-gap -0.00059; geometry flag: rota_outliers 4.29 > 1.5.
 
-Cycles on record for this target: 49; credited: 9; changes proposed: 2130 (`ledger/cycles.csv`, `ledger/changes.csv`).
+Cycles on record for this target: 68; credited: 9; changes proposed: 2855 (`ledger/cycles.csv`, `ledger/changes.csv`).
 
 Credited cycles on record, all runs and experiment lines. A credit is relative to that cycle's own paired null; not every credit moved the standing model (promotion rules D484/D499/D508), and experiment-line cycles judged candidates against their own base.
 
@@ -116,13 +116,13 @@ coot targets/3QUE/model/3QUE_refined.pdb --auto targets/3QUE/maps/3QUE_refined_m
 | `deposited/fetch_manifest.sha256` | 935 | SHA-256 of the raw files at fetch time. |
 | `deposited/rcsb_entry.json` | 18,418 | The RCSB entry record (title, citation, experimental details) as fetched. |
 | `ledger/bisections.csv` | 1,268 | Bisection steps when a cycle regressed. |
-| `ledger/changes.csv` | 6,829,908 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
+| `ledger/changes.csv` | 8,717,661 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
 | `ledger/checks.csv` | 1,693 | Gate results G0–G8. |
-| `ledger/cycles.csv` | 29,276 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
-| `ledger/defects.csv` | 112,815 | Values that could not be computed, with the reason (never a sentinel). |
-| `ledger/deviations.csv` | 112,095 | Decision-log rows that name this target. |
-| `ledger/noise_floor.csv` | 1,341 | The noise-floor row that set the credit bar: σ of R-free on every set. |
-| `ledger/rfree_consultations.csv` | 232 | How many times R-free-select was consulted (PROTOCOL §3.6). |
+| `ledger/cycles.csv` | 36,822 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
+| `ledger/defects.csv` | 120,938 | Values that could not be computed, with the reason (never a sentinel). |
+| `ledger/deviations.csv` | 121,458 | Decision-log rows that name this target. |
+| `ledger/noise_floor.csv` | 1,346 | The noise-floor row that set the credit bar: σ of R-free on every set. |
+| `ledger/rfree_consultations.csv` | 228 | How many times R-free-select was consulted (PROTOCOL §3.6). |
 | `ledger/runs/3QUE.20260908v5/DECISIONS.md` | 1,361 | The per-run human-readable decision log written by the driver. |
 | `ledger/runs/3QUE.20260908v5b/DECISIONS.md` | 31,862 | The per-run human-readable decision log written by the driver. |
 | `ledger/runs/3QUE.20260908v5b/run_summary.json` | 2,855 | The per-run summary (cycles, credits, stop reason). |
@@ -150,6 +150,7 @@ coot targets/3QUE/model/3QUE_refined.pdb --auto targets/3QUE/maps/3QUE_refined_m
 | `validation/campaign/checks/fetch_3QUE.json` | 2,400 | Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check. |
 | `validation/campaign/dossier.json` | 108,647 | The campaign dossier: xtriage, model audit, composition hypothesis, baselines. |
 | `validation/campaign/noise_floor.json` | 7,468 | A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model). |
+| `validation/campaign/noise_floor_e043_wxc01.json` | 8,041 | A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model). |
 | `validation/campaign/verify_20260907/3QUE_deposited.indep.json` | 509 | The campaign's independent verification runs (same scorer, earlier dates). |
 | `validation/campaign/verify_20260907/3QUE_ours.indep.json` | 555 | The campaign's independent verification runs (same scorer, earlier dates). |
 | `validation/campaign/verify_20260907/3QUE_pdbredo.indep.json` | 525 | The campaign's independent verification runs (same scorer, earlier dates). |

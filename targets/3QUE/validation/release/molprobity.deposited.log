@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/3QUE/deposited/3QUE.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261005T0813Z/targets/3QUE/deposited/3QUE.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -37,7 +37,7 @@
           Unusual residues: {'3FF': 1, 'BOG': 2}
           Classifications: {'undetermined': 3, 'water': 14}
           Link IDs: {None: 16}
-  Time building chain proxies: 0.37, per 1000 atoms: 0.13
+  Time building chain proxies: 0.40, per 1000 atoms: 0.14
   Number of scatterers: 2849
   At special positions: 0
   Unit cell: (65.408, 74.016, 77.47, 90, 90, 90)
