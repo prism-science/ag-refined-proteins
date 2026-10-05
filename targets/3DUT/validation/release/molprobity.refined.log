@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/3DUT/model/3DUT_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/3DUT/model/3DUT_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -151,7 +151,7 @@
     residue:
       pdb=" O   HOH A 175 " occ=0.88
     ... (remaining 257 not shown)
-  Time building chain proxies: 0.87, per 1000 atoms: 0.17
+  Time building chain proxies: 0.86, per 1000 atoms: 0.17
   Number of scatterers: 5013
   At special positions: 0
   Unit cell: (53.256, 79.632, 62.346, 90, 98.662, 90)
@@ -233,9 +233,9 @@
   Number of additional bonds: simple=4, symmetry=0
   Coordination:
   Other bonds:
-  Time building additional restraints: 0.23
+  Time building additional restraints: 0.26
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 177.5 milliseconds
+  Conformation dependent library (CDL) restraints added in 138.9 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  1076

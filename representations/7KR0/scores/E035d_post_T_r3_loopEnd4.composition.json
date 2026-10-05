@@ -1,0 +1,26 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e035d_post/arms/T_r3/Untangler/output/7KR0_6conf_B0_loopEnd4.pdb",
+ "n_atoms": 16790,
+ "n_hydrogen": 7722,
+ "n_anisou": 0,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_atoms": 1376,
+ "water_occupancy_sum": 255.89,
+ "protein_occupancy_per_copy": {
+  "A": 0.17,
+  "B": 0.17,
+  "C": 0.17,
+  "D": 0.17,
+  "E": 0.17,
+  "F": 0.17
+ },
+ "protein_site_occupancy_sum_min": 1.02,
+ "protein_site_occupancy_sum_max": 1.02
+}

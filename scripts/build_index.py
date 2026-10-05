@@ -26,20 +26,42 @@ TABLE_BEGIN, TABLE_END = "<!-- results-table:begin -->", "<!-- results-table:end
 # Caveats are the campaign's own, one bullet per decision row (docs/campaign/deviations.md). Keep them short.
 CAVEATS: dict[str, list[str]] = {
     "3QUE": [
+        "The held-back report half, the unbiased estimate (PROTOCOL §3.6), improved much less than the full set. Ledger values, "
+        "previous record (2026-08-28) → this model: full 0.25891 → 0.25246, report 0.26441 → 0.26334, select 0.25365 → 0.24205 "
+        "(independent scorer: full 0.25968 → 0.25330, report 0.26517 → 0.26420). Most of the full-set gain sits on the select half, "
+        "the half the search consults (D519).",
+        "This model is the graph search's third 3QUE promotion on 2026-10-03 (`3QUE.graph-weekend-20261002d`, generation 6). The one "
+        "before it (generation 4, D520) had report 0.25983, better on both halves than the 2026-08-28 record; this promotion lowered "
+        "full by 0.0004 and raised report by 0.0035. It passed the promotion rules (report inside 2σ_report of the record it replaced); "
+        "no decision row covers it yet. The first promotion (generation 2, D518) had made report worse (0.26725).",
+        "The gain is water sites transferred from 9MHB, the 1.65 Å isomorphous p38α entry, combined in credited batches against "
+        "matched null arms (D518, D520). Waters 15 → 46 against the previous release (deposited 14).",
+        "Rotamer outliers are above the campaign's 1.5 % cap: 4.29 % at release time (phenix.molprobity; previous released model "
+        "3.96 %, deposited 7.59 %). The campaign records 3.96 % for both records and calls it pre-existing (D518, D520).",
         "The deposited header R-free (0.311) is a REFMAC number; Phenix recomputes the same model at 0.287 on these flags (D008). "
         "Only the recomputed value is comparable.",
-        "Most of the gain over the deposited file is Phenix re-refinement of a REFMAC-refined model (TLS, riding hydrogens, weight "
-        "optimisation); the campaign's own credited changes are three waters added, two removed and water occupancies refined (D421/D485).",
+        "Most of the gain over the deposited file is Phenix re-refinement of a REFMAC-refined model (TLS, weight optimisation); the "
+        "campaign's own credited changes are water edits: three added, two removed, water occupancies refined (D421/D485), then the "
+        "9MHB transfer waters.",
         "The model carries no riding hydrogens: adding them was tested and rejected at 2.7 Å (D490).",
     ],
     "3TC7": [
-        "The largest single credited change is riding hydrogens on a model that never had any (2323 H, no new parameters), −0.011 on every "
-        "R-free set with the R-free − R-work gap unchanged (D488). Earlier credits added 51 waters net and alternate conformations at 28 residues.",
+        "The held-back report half did not improve with the 2026-10-03 promotions: ledger 0.16726 → 0.16769 (independent scorer "
+        "0.16730 → 0.16772, +1.6σ_report, D519). The full-set gain 0.17276 → 0.17161 is carried by the select half "
+        "(0.17815 → 0.17545), the half the search consults. Each promotion passed the promotion rules; D519 proposes a cumulative "
+        "report bound that would have refused the second one.",
+        "Rotamer outliers 1.59 % at release time (campaign monitor 1.58 %) exceed the campaign's 1.5 % cap (D517); the previous "
+        "released model had 0.8 %. Depositable by ordinary standards, not by the campaign's own bar.",
+        "What the 2026-10-03 promotions added: qFit alternate conformers at A175, A250 and A30 in a credited batch "
+        "(`3TC7.graph-weekend-20261002c` generation 2, D517), then a second credited batch (generation 3, node N3.0, D519).",
+        "The largest single credited change on record is riding hydrogens on a model that never had any (no new parameters), −0.011 on every "
+        "R-free set with the R-free − R-work gap unchanged (D488). Earlier credits added waters and alternate conformations.",
         "The refinement protocol uses a fixed ADP weight (wxu_scale 0.03) because Phenix's weight optimiser widens the R-gap on the "
         "hydrogen-bearing model (D491/D496); a re-refinement with default weights will not reproduce the R-gap. The credit bar (σ_select) "
         "quoted below is from the noise floor re-measured under that protocol.",
-        "Campaign records after 2026-09-28 report a lower R-free on this target from continued manual Coot–refinement alternation (0.1583, D512). "
-        "That model is not yet scored on the frozen flags and is not in this release.",
+        "Campaign records after 2026-09-28 report a lower R-free on this target from manual Coot–refinement alternation (0.1583, D512). "
+        "That model was never scored on the frozen flags and no copy of it was found (E039); plain Phenix water picking on these flags "
+        "reaches 0.1702 and fails the R-gap gate. It is not in this release.",
     ],
     "7KR0": [
         "MolProbity rotamer outliers and the altloc-aware clashscore of this model exceed the campaign's own frozen caps (1.5 % and 5.0); the "
@@ -48,8 +70,9 @@ CAVEATS: dict[str, list[str]] = {
         "continued refinement, not remodelling. The deposited model was already near-optimal as a single-conformer representation.",
         "Three credited cycles on record (run `7KR0.exp_sw_distill`) belong to the ensemble-distillation line, which judged its candidates against "
         "its own base and was closed as a negative result (D463, D466); they are not in this model's lineage.",
-        "Ensemble representations of the same data score far lower (the operator's six-copy model 0.0673 on these flags, D455) but are not "
-        "depositable single models and are not part of this release.",
+        "Ensemble representations of the same data score far lower (44PS, the six-conformation model of Passmore et al. 2026 on this dataset, "
+        "0.0657 on these flags; the campaign's own six-copy models 0.088–0.092). They are a second representation, not a deliverable "
+        "(PROTOCOL §18.1); the campaign's are released separately in `representations/7KR0/`.",
     ],
     "4QO4": [
         "Credited but still worse than the deposited file recomputed on these flags: Phenix's default re-refinement of this CNS-refined model costs "
@@ -471,12 +494,18 @@ def main() -> int:
     index = {"name": "ag-refined-proteins", "generated_by": "scripts/build_index.py", "exported_from_pod_at": prov.get("exported_at"),
              "phenix_version": prov.get("phenix_version"), "n_targets": len(recs),
              "summary": {s: sum(1 for t in recs if t["status"] == s) for s in ("improved", "credited, not below deposited", "re-refined baseline, nothing credited")},
+             "representations": sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "representations").glob("*") if p.is_dir())
+             if (ROOT / "representations").exists() else [],
              "targets": recs}
     outputs[ROOT / "index.json"] = json.dumps(index, indent=1) + "\n"
     man = []
     for t in recs:
         for f in t["files"]:
             man.append(f"{f['sha256']}  targets/{t['id']}/{f['path']}")
+    rep = ROOT / "representations"
+    if rep.exists():
+        for p in sorted(x for x in rep.rglob("*") if x.is_file()):
+            man.append(f"{sha256(p)}  {p.relative_to(ROOT).as_posix()}")
     outputs[ROOT / "MANIFEST.sha256"] = "\n".join(man) + "\n"
     if README.exists():
         txt = README.read_text()

@@ -1,0 +1,13 @@
+E035 setup 2026-09-21T18:24:05Z
+Untangler commit: 1776c8d4e1539f9ea6176cc8547b0afc8f6590e1
+phenix:   Version: 2.1
+python: Python 3.9.23
+pulp 3.0.2 ['PULP_CBC_CMD']
+raw pdb sha256 9c8bcecfa12bc0d10a4e6847f9c19549d41f80113a1f749d565ae1485b3f7dfa
+merged data+flags mtz sha256 cb925bdb8b47e932645fb069c7693444a22d3bfda5a1d37c9091b7bae691341c
+data.mtz sha256 ae703738dc52b3e3597d4ca641d98bfb88f1793dee88ca8a24176d3d3fd378fe
+flags.mtz sha256 31939295cafaf855a01545c567b5b6763ef8365a63246ae5a29639e7561b202f
+script e035_merge_mtz.py sha256 c2e76083cff8492b5f116481d79b3005d3f32a7fb46203aa429c61b8f85cbfe7
+script exp_untangler_7kr0.sh sha256 7fd7b2d2e3ba252cb70a159ed43f4001f8fe6d385ac5e1d8d66c0103f23d546b
+script exp_untangler_score.py sha256 c9d944f78be7d74a7b7ffc454186d733c52e7b53fb9869b189eb6d78eaa5ef70
+script untangler_patch.sh sha256 81ca7585847a374c03831da4b58c6fd69af6a7a280255a4156160f7e6b9cf9dc

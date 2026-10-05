@@ -1,2 +1,2 @@
-# phenix.python /home/dev/runs/agrp_export_20260929T1606Z/_helpers/merge_mtz.py /home/dev/runs/agrp_export_20260929T1606Z/targets/7DVR/data/7DVR_data.mtz /home/dev/runs/agrp_export_20260929T1606Z/targets/7DVR/data/7DVR_flags.mtz /home/dev/runs/agrp_export_20260929T1606Z/_work/7DVR/merged.mtz
-wrote /home/dev/runs/agrp_export_20260929T1606Z/_work/7DVR/merged.mtz IMEAN 18057 reflections; 882 free
+# phenix.python /home/dev/runs/agrp_export_20261003T1834Z/_helpers/merge_mtz.py /home/dev/runs/agrp_export_20261003T1834Z/targets/7DVR/data/7DVR_data.mtz /home/dev/runs/agrp_export_20261003T1834Z/targets/7DVR/data/7DVR_flags.mtz /home/dev/runs/agrp_export_20261003T1834Z/_work/7DVR/merged.mtz
+wrote /home/dev/runs/agrp_export_20261003T1834Z/_work/7DVR/merged.mtz IMEAN 18057 reflections; 882 free

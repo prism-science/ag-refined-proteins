@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/6CDX/deposited/6CDX.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/6CDX/deposited/6CDX.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -173,7 +173,7 @@
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  116
 
-  Time building geometry restraints manager: 0.04 seconds
+  Time building geometry restraints manager: 0.05 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

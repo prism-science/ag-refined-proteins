@@ -1,5 +1,5 @@
 {
- "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/1LZ9/deposited/1LZ9.cif",
+ "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/1LZ9/deposited/1LZ9.cif",
  "data": "amplitudes (FP,SIGFP)",
  "n_dropped_french_wilson": 0,
  "n_atoms": 1214,
@@ -21,5 +21,5 @@
  "r_free_manual": 0.27382601458855116,
  "r_free_select_manual": 0.28250309049257555,
  "r_free_report_manual": 0.26487445396076137,
- "wall_s": 0.5
+ "wall_s": 0.4
 }

@@ -1,5 +1,5 @@
 {
- "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/9D5Y/model/9D5Y_refined.cif",
+ "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/9D5Y/model/9D5Y_refined.cif",
  "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
  "n_dropped_french_wilson": 0,
  "n_atoms": 3726,
@@ -21,5 +21,5 @@
  "r_free_manual": 0.23424635544045697,
  "r_free_select_manual": 0.22730969859189218,
  "r_free_report_manual": 0.24122888186555783,
- "wall_s": 3.4
+ "wall_s": 3.3
 }

@@ -6,7 +6,7 @@
    "model_sha256": "a996183271558a67283b2a6221dd17f72ff0dc8edc0f6d14313513536f877194",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/deposited/9D5U.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/9D5U/deposited/9D5U.cif",
     "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 3735,
@@ -51,7 +51,7 @@
    "model_sha256": "c08adae3c119d11d8e26fef15e074a0bf7651ae1e89abbe03247a68c7455e104",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/9D5U/model/9D5U_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/9D5U/model/9D5U_refined.cif",
     "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 3743,

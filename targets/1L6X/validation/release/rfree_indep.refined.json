@@ -1,5 +1,5 @@
 {
- "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/1L6X/model/1L6X_refined.cif",
+ "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/1L6X/model/1L6X_refined.cif",
  "data": "amplitudes (FP,SIGFP)",
  "n_dropped_french_wilson": 0,
  "n_atoms": 2430,

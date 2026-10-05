@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/7DVR/deposited/7DVR.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/7DVR/deposited/7DVR.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -40,7 +40,7 @@
   Residues with excluded nonbonded symmetry interactions: 1
     residue:
       pdb="CO    CO A 202 " occ=0.60
-  Time building chain proxies: 0.36, per 1000 atoms: 0.28
+  Time building chain proxies: 0.32, per 1000 atoms: 0.25
   Number of scatterers: 1295
   At special positions: 0
   Unit cell: (68.899, 32.149, 76.654, 90, 95.07, 90)

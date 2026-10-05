@@ -6,7 +6,7 @@
    "model_sha256": "4984c1691ef559555788bd8bc9f3cc187f41f5447917270e911c524527f3c23b",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/6UDY/deposited/6UDY.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/6UDY/deposited/6UDY.cif",
     "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 2890,
@@ -48,7 +48,7 @@
    "model_sha256": "01cf78f94922fb48198f8e1a9fd7e8cd21889ba163c5684bd66db16fb1215d65",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20260929T1606Z/targets/6UDY/model/6UDY_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/6UDY/model/6UDY_refined.cif",
     "data": "intensities (IMEAN,SIGIMEAN) -> French-Wilson amplitudes (cctbx.french_wilson)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 2885,
@@ -67,7 +67,7 @@
     "r_free_manual": 0.2478500707395927,
     "r_free_select_manual": 0.2397145503864419,
     "r_free_report_manual": 0.2554915659195852,
-    "wall_s": 1.3
+    "wall_s": 1.4
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {

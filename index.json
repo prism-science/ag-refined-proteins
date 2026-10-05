@@ -1,7 +1,7 @@
 {
  "name": "ag-refined-proteins",
  "generated_by": "scripts/build_index.py",
- "exported_from_pod_at": "2026-09-29T16:09:02Z",
+ "exported_from_pod_at": "2026-10-03T18:36:33Z",
  "phenix_version": "Version: 2.1 Release tag: 6048",
  "n_targets": 16,
  "summary": {
@@ -9,6 +9,9 @@
   "credited, not below deposited": 1,
   "re-refined baseline, nothing credited": 8
  },
+ "representations": [
+  "representations/7KR0"
+ ],
  "targets": [
   {
    "id": "1L6X",
@@ -438,7 +441,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "1ec7b173ff6d112b757e7417de2af7c48e0391688d2121c212d88a6ee7dfbf72",
+     "sha256": "d40056e18cf2577ce353b58f44bdbe004262bdde6e5595f1838ad006f8723a97",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -450,19 +453,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2367,
-     "sha256": "7567ab4ec6601abc81ed6fbd8554d910e51a6358e2c84f31ff96e037fc1502fb",
+     "sha256": "6d1891f2373e67b2f6117a36dff5734d225b64139dc51aa8a5de14b1ff1aa727",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2373,
-     "sha256": "8678cba6a3399faea9fff1f8d833fde9aa9d0e7a8c0c38bc3d2fc51a1067392b",
+     "sha256": "bc2de74d3f6243505438ec02ff815536d3ee52d03c6a73d5b33679fcf19d089b",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 17692,
-     "sha256": "c3d1888add836baea38c4272334d35c62316a46325f9d76fd760365806fe4891",
+     "sha256": "96fb193568c0e935becb9ff045f1bf9dcf4671745c68a67aa57fbf2fca47301d",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -474,7 +477,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 18187,
-     "sha256": "90a77d63bf951eb3fb659b2ec8ea46ea19496b6227da4ad374d92adc3a28254b",
+     "sha256": "e98bf6b14d94fc3e34b56277b32b76be996d7c98b73cd409197b85164f6e029c",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -486,31 +489,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 621,
-     "sha256": "bdf1b7481fa6eabf3e3794b0e0d61984c7e89651ad34da1fbfed8fdbd398e0c1",
+     "sha256": "3a6392895b6cdbb8a2c8aa950a6a81412899501d7036abc09845c9863a645161",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1081,
-     "sha256": "c11244a5c669e5be87c3cc1c1d0ab3895cc9cd04776e8292d8f2a29ea6a58a8e",
+     "sha256": "15f45e93d5bfe0e015a90c3f4151bea9b341bf524cb113bd77f82e0262f7cd7f",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 627,
-     "sha256": "04622b96c8ab2d131a434861b65d3faa9510e2e03777a8fb15d74917398c6692",
+     "sha256": "ed7c805299a402bfd0c52cae8084760014f224294efc53d8a18d4c07ca197f89",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1089,
-     "sha256": "3747f3001720534ae49640cd04e4c54d1649b608f0d03e9bbee42d4e48aea381",
+     "sha256": "40a54dc54b96dc434f2b1e3e92e863c2e51dde6db8441cae9e0bea3e4b0b0703",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2493,
-     "sha256": "cea476ff217df5781456a4521180a9decc929c7f8f6409dc6050756285e101b5",
+     "sha256": "83d84b03a4c69c3f5edc0cd150f7f7f839ba7c294eeb1ca4c41dbcca59c00de2",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -949,7 +952,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "112eaceac6bbbb06eafb30631bc297e443ba4ac96d137b7a384d03ce5659846b",
+     "sha256": "7ebd8f388b0f4d537fadbc93d8186791990c8d138587f1829d039140b66ab0b1",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -961,19 +964,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2198,
-     "sha256": "48c59983ffc641fb3ce780c1a19141e404bd4aa69401561356add3ef20b2d1f2",
+     "sha256": "b2b2c4697bdd64cb427777d0a9b1e4c6190c2737f8e8e59395e47bd086e5ec18",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2207,
-     "sha256": "b96a2b2fe7fc88c03857dd85182812f83d07a91eb246b1fab242137452baae77",
+     "sha256": "062adef9aab34b9745095928178ce3226e11be704fd5c01d7646bbe14be1c71d",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 37303,
-     "sha256": "f7e069447fefcb8d5759edb96dcc59c5d47639ca9a4fd62dd88ea523c01d3a18",
+     "sha256": "24a8179c0234d6871bb49a8decd65e0de5db70a0bffcc4762d52c361ede52036",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -985,7 +988,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 16446,
-     "sha256": "15254a2a2bab06c8114491ce1f4ba5b5e9731682ffeb4659179b40fa35684065",
+     "sha256": "3fa318b63dbcba1c2065ef0e94d6678440cf0092e20bc81e81a157278b749d8c",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -997,31 +1000,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 636,
-     "sha256": "31313a62363d2f808dc24647d90daa4d781085e59a2e01b8a8b5169b79066bce",
+     "sha256": "f26f5cffb2d7c8ed117c880a2e2b4dacfd6bd6934b24f87c71dae7c89d3dc2ca",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1089,
-     "sha256": "ea3f64b23e3922746e506e8b10296103acb016a62a9d9451fce897405b51ac5f",
+     "sha256": "c8d50603b457d5c60d2ea456987d312c1761094898ed81f14dd3547c952786ec",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 638,
-     "sha256": "6eac36c240fb313446479bf8ebc8019ac95630848e43891792266ba910570ca5",
+     "sha256": "58dfe5be18a63e140bb384a35074647947151770a86b8c7f334117f9266a1d4b",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1093,
-     "sha256": "8b5b8d262a325d85e4d58f24d15309a1ac06bb570bc4c4c7acecf1d9fb166408",
+     "sha256": "1c36475ba8f0ad998b1b1653a0d3b5ca575c968ee69d730b1139b5b99f9689e6",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2534,
-     "sha256": "52467c5c7d1e191ddd69e948e224420bac13e8f8cb65a7d49f376de93211a03b",
+     "sha256": "fa975546848cacfd87eda05010b594889e35f06332ec0bc858eadd004c2dcd39",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -1457,7 +1460,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "3229331a04e57ee7ae52a69ed72d40b3ff1a5d9154a80388ecf1251d60e39c0a",
+     "sha256": "cbe8473843d2b6431dc1b65e92f8b1c5325af35ff8adb9c024a93a72da662b57",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -1469,19 +1472,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2366,
-     "sha256": "676d77f5df4b92f37e80d0e3af8923f9a271b821534ba98f9dfd13c089cff709",
+     "sha256": "449d648f0884dc0237b44ed94af2adf946f928fd8ec1fe4fc212903dedfb1614",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3482,
-     "sha256": "08e452be71c9ab251c1514c0231a09f0b68f559506d378a8250f21b9be3e1897",
+     "sha256": "84a3120500ac9a24f09dd548a3979e8cc4783962337d13c433484798d50bfeae",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 14428,
-     "sha256": "b604184a91c744ea5a34955c45f89e83c0eda3b7c40ffc59ea574fa4a20b652a",
+     "sha256": "5a06f54674247ce19cc2a75fc1c962229e53da11d9dbe5138e9592c789b27ac5",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -1493,7 +1496,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15315,
-     "sha256": "37028e4cb93e53c44c0afd54b86549fd53864dcf04e77c8e5061895c81f29e2f",
+     "sha256": "0dae47bf453f44359dc2695ea73db139d3992fa36be5ed30ee21c3da4a598a7a",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -1505,31 +1508,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 617,
-     "sha256": "4966c2fd158b1a30a00ebefa64b65da89697b5012ac6403e924f2f19067c5212",
+     "sha256": "27048fead1771ae5217af436006c4e9edf06bb59ceb2bc51edaa1b82fec64521",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1077,
-     "sha256": "b82140e74267363f563a3c6f763f59305c6fd82f62127c7a4ce011adac69a4d5",
+     "sha256": "b7b6c32cddf42ec88496eb3e59c13e16a3b176d049cd08fc3a27e9180bf73a7c",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 623,
-     "sha256": "00b6d799b5ff1900be3d2fa92bee490fd0edd9b56eb3344071d4de79fad5df34",
+     "sha256": "7285a8d0dcaaa48c16d118b1968b9b7363e725ab3b7aa22f51b084b0d0f123f0",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1085,
-     "sha256": "0e3273bae705df7c26f16548d65904328cf24b31a5fd300d4623d11a30b474f6",
+     "sha256": "86982418b4a3390afa0c5fa7f8b974f13244e5a5e316c1cc1dfe806fbe669e23",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2484,
-     "sha256": "d33a94ae2b364c44eeb4e95b6ff6f8c10f360ba692037306f9684b7f56519468",
+     "sha256": "3931a3dd9084521865f53552d8a71a2f3872c9461aecb72f223990f45c64ce54",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -1962,7 +1965,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "5429b0b59c72762048911883ba2c00a53e4e2236d4f2cf6add84eba61bcc50ef",
+     "sha256": "faf044cf2095462183278694c03cd954723aa6c9f6ae8d2910b09c0ac32986c8",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -1974,19 +1977,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2286,
-     "sha256": "db3bc0d8789fff12e033ebafe1a16f2069b583cd09af315b5a02921352679eb4",
+     "sha256": "51f3257ba1742e42e76a1fb04e36d584291996bae77e14c4ff089bdaaf3ef2ea",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2294,
-     "sha256": "abb25535d31e7068b9fef57800cca0fe68398a218812fb93c0d06a9b51022533",
+     "sha256": "83a14602bda1c75ca8de4a756f1c9ea9edb6d656287a5fa4a861f965f76df716",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 17355,
-     "sha256": "f79a88ab3de808e32c9deae2c7310daf4998ae0c42c2f7e18e3143a57aa1c5cc",
+     "sha256": "52c102da3e50cfb5cfc1e07e68ba5de488582184a8e716d19675f7228b34abcc",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -1998,7 +2001,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15492,
-     "sha256": "e5ffa4670ae70afe2e688828f4739990bf25a61da199d1053f41c1e4e00ad890",
+     "sha256": "7a8a711ad23381596f7a050fcc0a8ff0e2c9f221b899571aad83aeaa6f4acc35",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -2010,31 +2013,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 621,
-     "sha256": "edee487660643a8cd65895046f451bb0185c0267dd189e842bbd505c7beac9af",
+     "sha256": "13901c803dc01eb5c454f4b32e1b8e986e4129290546220decd11ab0287741f0",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1081,
-     "sha256": "800dcee9f3a29ddba69c9c780058a9f265629434871c1771a90b41e266d8cf86",
+     "sha256": "3a69f27bed72986b262915cb770f32965fdd4030cec24948d18b87a676a95cd8",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 628,
-     "sha256": "9e3761ff4941bcb65fb5507adf55916ca4d6a03233b1e849b3ed0063a7bc0eae",
+     "sha256": "04709b164dea93b40fec2cbf5504bc3584cf66c929b7532bca427f05dc931635",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1090,
-     "sha256": "c6ceab092ba231633d8b3070887a38c787c0ee3fc694306813f6d68c6b5ee9d6",
+     "sha256": "d7c7c9f88bca10d36c5bb12cd79b8faa879d3425ad39097e9593135b381142c8",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2494,
-     "sha256": "ccd036954d2ee2903bfacee9825457a5213da74780374b9e254128d6801e301f",
+     "sha256": "c2f7ce96f087dd82f5f5e15e814c60e733d553f13df39b8c9e8efcf6ea5ee45f",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -2473,7 +2476,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "94bceb7d64c2133fc893310299df8fa023028eb13ade301ce82e0f38a3e3d14c",
+     "sha256": "e49d137201257e5f1afec7b6787c3563cb0f3d3ddbb83a3b42eda8bfec42b320",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -2485,19 +2488,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 3169,
-     "sha256": "5baa24d71aa073d9ccf888d123c03649a51e593f0d857ad90955cb38cc2918a2",
+     "sha256": "9456118e3edb3d9b9a4f2d7a8521792648394dd9a4a857adc245332ca537e873",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3175,
-     "sha256": "0aeab24c6dee5412638bf8cf00dcf1ba6c2862b5c4c25debfb1ab33a488cf58b",
+     "sha256": "145cc81b122a12bc48afdaacf639b8b3e6bb420917eb2c86a2b36dfd81b7434f",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 22301,
-     "sha256": "503b528b91e6b1fb6c58afdcbf2c6b8dd3c185c2212d6f62bd4d91532066d0d5",
+     "sha256": "57600499a59a29a35183d8be28a7001a313ab827932ca46dfa6ee23d2c11322c",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -2509,7 +2512,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 19866,
-     "sha256": "78cd57c9617fce7ad79d4d5c30f418f289e1a1ebe295ee6aba232d20802b861d",
+     "sha256": "a3740d97febe2d91b0fd40908195087099f9be7b910d39ca079895a23c3f7577",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -2521,31 +2524,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 634,
-     "sha256": "4d82d552d468658649ea4971d4b5ec6c9abfa6418fb0a86acfad317d5e8797fe",
+     "sha256": "3872c395346719e98ad1a1b9faa6e40192724015cee7c245195a3e169ea5c6cb",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1087,
-     "sha256": "65f2746a41ef26b997322e2b6ef0b6c2c87ea28d1de055b568afb9a3239f682e",
+     "sha256": "607dbd1885f746f6a4b1e8944b13bbca2b20f8d67c1de4f00221d164928b2fb1",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 637,
-     "sha256": "2cbfae68edf95e3d79f2ef9526f7b70328aa429b0db16c1a1ff055b0233a3606",
+     "sha256": "5257c6b31198862f71cf5a1082fd57eab4c45c3ac49aae7271a6980008c18a20",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1092,
-     "sha256": "72a589a0df7853655d904d6e5275725fd868ae15011667168e0d969eef85607e",
+     "sha256": "a2c3d326e24b3f547ce6373769260906974aba90fcdb121b12655a897c782332",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2534,
-     "sha256": "2a84a9989555f239e1fd6fe8531189a6c7901b6542d1c01eccafa9240caebb3e",
+     "sha256": "8630368641075a0c5416eb1be1938175c244c8501f4e822cbaaebbea3a4181f5",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -2621,24 +2624,24 @@
      "accept_threshold_select": -0.00288
     },
     "released": {
-     "r_work": 0.21131694745598997,
-     "full": 0.2596788823002654,
-     "select": 0.2544261837516894,
-     "report": 0.26517000806609387,
+     "r_work": 0.21037121083959606,
+     "full": 0.2532972768792094,
+     "select": 0.2428663802372678,
+     "report": 0.26420164627744946,
      "model_vs_data": {
-      "r_work": 0.2107,
-      "r_free": 0.2583
+      "r_work": 0.2103,
+      "r_free": 0.2525
      },
      "ledger": {
-      "r_work": 0.21131427444753276,
-      "r_free_full": 0.25891058999407407,
-      "r_free_select": 0.2536515243015218,
-      "r_free_report": 0.26440837191730937
+      "r_work": 0.21036592843005836,
+      "r_free_full": 0.25245568683792774,
+      "r_free_select": 0.24204807816133822,
+      "r_free_report": 0.26333571119801324
      }
     },
-    "delta_full_vs_deposited": -0.028259864602942997,
-    "delta_full_beyond_rerefinement": -0.007122314231215732,
-    "delta_beyond_in_sd_full": -4.242950874516272
+    "delta_full_vs_deposited": -0.03464147002399903,
+    "delta_full_beyond_rerefinement": -0.013503919652271767,
+    "delta_beyond_in_sd_full": -8.04464192928818
    },
    "composition": {
     "deposited": {
@@ -2648,9 +2651,9 @@
      "altlocs": []
     },
     "released": {
-     "n_atoms": 2850,
+     "n_atoms": 2881,
      "n_hydrogen": 0,
-     "n_water_residues": 15,
+     "n_water_residues": 46,
      "altlocs": []
     }
    },
@@ -2658,7 +2661,38 @@
     "waters_added": [
      "A 5001",
      "A 5007",
-     "A 5008"
+     "A 5008",
+     "A 5139",
+     "A 5140",
+     "A 5141",
+     "A 5159",
+     "A 5167",
+     "A 5172",
+     "A 5177",
+     "A 5185",
+     "A 5187",
+     "A 5188",
+     "A 5192",
+     "A 5195",
+     "A 5201",
+     "A 5204",
+     "A 5210",
+     "A 5217",
+     "A 5224",
+     "A 5226",
+     "A 5253",
+     "A 5255",
+     "A 5258",
+     "A 5260",
+     "A 5307",
+     "A 5322",
+     "A 5323",
+     "A 5326",
+     "A 5331",
+     "A 5340",
+     "A 5354",
+     "A 5356",
+     "A 5357"
     ],
     "waters_removed": [
      "A 365",
@@ -2683,30 +2717,30 @@
     "released": {
      "ramachandran_outliers_pct": 0.0,
      "ramachandran_favored_pct": 98.53,
-     "rotamer_outliers_pct": 3.96,
+     "rotamer_outliers_pct": 4.29,
      "cbeta_deviations": 0.0,
-     "clashscore": 3.7,
-     "rms_bonds": 0.002,
-     "rms_angles": 0.51,
-     "molprobity_score": 1.61
+     "clashscore": 2.82,
+     "rms_bonds": 0.0039,
+     "rms_angles": 0.62,
+     "molprobity_score": 1.55
     }
    },
    "campaign": {
-    "cycle_index": 62,
+    "cycle_index": 922,
     "stage": "rerefine",
-    "updated_at": "2026-08-28T17:28:38+00:00",
-    "model_on_pod": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 29,
-    "n_credited_cycles": 2,
+    "updated_at": "2026-10-03T09:13:23+00:00",
+    "model_on_pod": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.cif",
+    "n_cycles_on_record": 49,
+    "n_credited_cycles": 9,
     "writing_cycle": {
-     "cycle_index": 41,
-     "stage": "rerefine",
-     "run_id": "3QUE.exp_water_occ",
+     "cycle_index": 921,
+     "stage": "graph",
+     "run_id": "3QUE.graph-weekend-20261002d",
      "verdict": "accepted",
-     "attributable_delta_select": -0.005568,
-     "delta_r_gap": null,
-     "geometry_flag": null,
-     "run_dir": "/home/dev/runs/3QUE/experiments/water_occupancy"
+     "attributable_delta_select": -0.00869,
+     "delta_r_gap": -0.00059,
+     "geometry_flag": "rota_outliers 4.29 > 1.5",
+     "run_dir": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0"
     },
     "bisect_step": null,
     "credited_cycles": [
@@ -2727,10 +2761,73 @@
       "delta_r_gap": null,
       "geometry_flag": null,
       "accepted_changes": 1.0
+     },
+     {
+      "cycle_index": 912,
+      "run_id": "3QUE.E040",
+      "attributable_delta_select": -0.003778,
+      "r_free_full": 0.2615352878953992,
+      "delta_r_gap": -0.00414,
+      "geometry_flag": null,
+      "accepted_changes": 1.0
+     },
+     {
+      "cycle_index": 913,
+      "run_id": "3QUE.E040",
+      "attributable_delta_select": -0.003757,
+      "r_free_full": 0.262228956565101,
+      "delta_r_gap": -0.00458,
+      "geometry_flag": null,
+      "accepted_changes": 1.0
+     },
+     {
+      "cycle_index": 915,
+      "run_id": "3QUE.graph-weekend-20261002d",
+      "attributable_delta_select": -0.006609,
+      "r_free_full": 0.25711806606710697,
+      "delta_r_gap": -0.00724,
+      "geometry_flag": "rota_outliers 3.96 > 1.5",
+      "accepted_changes": 9.0
+     },
+     {
+      "cycle_index": 916,
+      "run_id": "3QUE.graph-weekend-20261002d",
+      "attributable_delta_select": -0.005137,
+      "r_free_full": 0.2565374001896503,
+      "delta_r_gap": -0.01013,
+      "geometry_flag": "rota_outliers 3.96 > 1.5",
+      "accepted_changes": 8.0
+     },
+     {
+      "cycle_index": 917,
+      "run_id": "3QUE.graph-weekend-20261002d",
+      "attributable_delta_select": -0.004789,
+      "r_free_full": 0.2528286021169598,
+      "delta_r_gap": 0.00546,
+      "geometry_flag": "rota_outliers 3.96 > 1.5",
+      "accepted_changes": 7.0
+     },
+     {
+      "cycle_index": 921,
+      "run_id": "3QUE.graph-weekend-20261002d",
+      "attributable_delta_select": -0.00869,
+      "r_free_full": 0.25245568683792774,
+      "delta_r_gap": -0.00059,
+      "geometry_flag": "rota_outliers 4.29 > 1.5",
+      "accepted_changes": 9.0
+     },
+     {
+      "cycle_index": 922,
+      "run_id": "3QUE.graph-weekend-20261002d",
+      "attributable_delta_select": -0.004381,
+      "r_free_full": 0.2583842363697152,
+      "delta_r_gap": 0.00384,
+      "geometry_flag": "rota_outliers 3.96 > 1.5",
+      "accepted_changes": 8.0
      }
     ],
-    "n_changes_proposed": 489,
-    "thresholds_version": "thresholds_v2",
+    "n_changes_proposed": 2130,
+    "thresholds_version": "thresholds_v9",
     "run_summary": null,
     "refinement": {
      "phenix_version": "2.1-6048",
@@ -2739,12 +2836,16 @@
      "n_tls_groups": 4,
      "riding_hydrogens": true,
      "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=3.79 / d_min=2.7002: isotropic; TLS (d_min>=2.0 or chain>200 res)"
+     "adp_decision": "n_refl/n_atoms(non-H)=3.75 / d_min=2.7002: isotropic; TLS (d_min>=2.0 or chain>200 res)"
     }
    },
    "caveats": [
+    "The held-back report half, the unbiased estimate (PROTOCOL \u00a73.6), improved much less than the full set. Ledger values, previous record (2026-08-28) \u2192 this model: full 0.25891 \u2192 0.25246, report 0.26441 \u2192 0.26334, select 0.25365 \u2192 0.24205 (independent scorer: full 0.25968 \u2192 0.25330, report 0.26517 \u2192 0.26420). Most of the full-set gain sits on the select half, the half the search consults (D519).",
+    "This model is the graph search's third 3QUE promotion on 2026-10-03 (`3QUE.graph-weekend-20261002d`, generation 6). The one before it (generation 4, D520) had report 0.25983, better on both halves than the 2026-08-28 record; this promotion lowered full by 0.0004 and raised report by 0.0035. It passed the promotion rules (report inside 2\u03c3_report of the record it replaced); no decision row covers it yet. The first promotion (generation 2, D518) had made report worse (0.26725).",
+    "The gain is water sites transferred from 9MHB, the 1.65 \u00c5 isomorphous p38\u03b1 entry, combined in credited batches against matched null arms (D518, D520). Waters 15 \u2192 46 against the previous release (deposited 14).",
+    "Rotamer outliers are above the campaign's 1.5 % cap: 4.29 % at release time (phenix.molprobity; previous released model 3.96 %, deposited 7.59 %). The campaign records 3.96 % for both records and calls it pre-existing (D518, D520).",
     "The deposited header R-free (0.311) is a REFMAC number; Phenix recomputes the same model at 0.287 on these flags (D008). Only the recomputed value is comparable.",
-    "Most of the gain over the deposited file is Phenix re-refinement of a REFMAC-refined model (TLS, riding hydrogens, weight optimisation); the campaign's own credited changes are three waters added, two removed and water occupancies refined (D421/D485).",
+    "Most of the gain over the deposited file is Phenix re-refinement of a REFMAC-refined model (TLS, weight optimisation); the campaign's own credited changes are water edits: three added, two removed, water occupancies refined (D421/D485), then the 9MHB transfer waters.",
     "The model carries no riding hydrogens: adding them was tested and rejected at 2.7 \u00c5 (D490)."
    ],
    "files": [
@@ -2816,8 +2917,8 @@
     },
     {
      "path": "ledger/changes.csv",
-     "bytes": 1680771,
-     "sha256": "e3256270a001ca4f25bc494a224d0025fe5fe2317c40d59dcf88ef232c15d977",
+     "bytes": 6829908,
+     "sha256": "8334eedb588f856d27c16e248b60b399d96446c0f2a98a006f050ef98eb316bb",
      "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
     },
     {
@@ -2828,20 +2929,20 @@
     },
     {
      "path": "ledger/cycles.csv",
-     "bytes": 13915,
-     "sha256": "8567e5f2fcccca6475c780636deaddc1bc08e79e9ddee0775f132995ff8dd272",
+     "bytes": 29276,
+     "sha256": "693b5cf409b95ae3a7cc8b03cab0f5ae9254f72d4e060bd180cb8e2c3140d542",
      "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
     },
     {
      "path": "ledger/defects.csv",
-     "bytes": 39906,
-     "sha256": "33b1e7decb603024304abfa28abc599bdb586f87fe85f27c1041fc7688789e1a",
+     "bytes": 112815,
+     "sha256": "df1d2623ffb99f8cb8bf702fcc14ce16ca28f0982aa911faecbeaaabd83b2570",
      "description": "Values that could not be computed, with the reason (never a sentinel)."
     },
     {
      "path": "ledger/deviations.csv",
-     "bytes": 111707,
-     "sha256": "75f28dc0b88b632abb8a91f42b2d5562a3e6cf7d3cf01a5be0013f9c420ccf22",
+     "bytes": 112095,
+     "sha256": "544008d181b4a702a880acfb1d37df07a2265946781d0eaaf3dda5ad7881b201",
      "description": "Decision-log rows that name this target."
     },
     {
@@ -2852,8 +2953,8 @@
     },
     {
      "path": "ledger/rfree_consultations.csv",
-     "bytes": 226,
-     "sha256": "a32e4e6598492839c80aaee2a99576f2f8a6bdd696d2a0e0a835c052120c77d9",
+     "bytes": 232,
+     "sha256": "a2e9cabf16dbc48484ff8002f172e90f46fdeb62ca6327c0a9197ef57ee1e139",
      "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
     },
     {
@@ -2931,67 +3032,67 @@
     {
      "path": "maps/3QUE_refined_map_coeffs.mtz",
      "bytes": 697408,
-     "sha256": "4a66e4356348d534537eae69ae61813e4b7fe9d3aa6756f07aa2a5f7caaf1639",
+     "sha256": "3896232efda16bc1b5698fce618abb19b065a629d458c38bca667136830fe0c7",
      "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
     },
     {
      "path": "model/3QUE_refined.cif",
-     "bytes": 506879,
-     "sha256": "7255387af0eb358178730ec5fdf14034dc56450c45ef6c3893e8d109343243e3",
+     "bytes": 510111,
+     "sha256": "b6f8a498124cb18dcb7c740c8148b3574e60020f46a0c3283c96d0d99dca1d34",
      "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
     },
     {
      "path": "model/3QUE_refined.pdb",
-     "bytes": 455276,
-     "sha256": "f9e0872557c925d219ca0328fffbb4ca60999e729bad8f4822db045bf4e0d87d",
+     "bytes": 457646,
+     "sha256": "4ba43e27b8301a58ad7b720bec33613061d7ae65b77cccf087bfd55a41bfb84b",
      "description": "The same model in PDB format, from the same run."
     },
     {
      "path": "refinement/command.txt",
-     "bytes": 1840,
-     "sha256": "8ddc4250049edd56b5f672730c8c41b1ecf76c98f50ac2062c470a082e0d77fc",
+     "bytes": 1933,
+     "sha256": "1d97620c5a7a0effe8255ac910040a7e1f306e15c6a1b05c83ec0d87484c5707",
      "description": "The verbatim phenix.refine argv that wrote the model."
     },
     {
      "path": "refinement/current.json",
-     "bytes": 436,
-     "sha256": "0e62c7d9ce5b710278c227471fc96390187d8baa5d0426d6ceb85c60a6be475e",
+     "bytes": 520,
+     "sha256": "a14b1449a900551d1b3ad9e770fd77ba27e2601dba6b1e76f5de2f50ede694a5",
      "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
     },
     {
      "path": "refinement/experiment_paired_cycle.json",
-     "bytes": 6071,
-     "sha256": "1cbcd1f72d33997a0ee881a03e1a8b07a7ebc9e42924190460ffc9e242e50a77",
+     "bytes": 7428,
+     "sha256": "23334b542ec737bc854a8518a6331f720804f7ee5fc9f01c4ad980b7513f3295",
      "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
     },
     {
      "path": "refinement/model_vs_data.campaign.log",
      "bytes": 2809,
-     "sha256": "ddb3bc03b8b3eab522040728db5d9f35f77e37abd615199eecbcf6896c633377",
+     "sha256": "8da8d67a12c678c04e3aba4b22f1f42771ab3faca2c346e193ceefd071252b1d",
      "description": "phenix.model_vs_data as run by the campaign on this model."
     },
     {
      "path": "refinement/refine_001.eff",
-     "bytes": 52592,
-     "sha256": "309b22952699ab08c53d4b1ea467a02c894efd96643a768a2848014f9ca99a62",
+     "bytes": 52224,
+     "sha256": "de188e68c7d0637c2ec77d65ba21255eb91d091dc6ac0cdbc80243dbb9d2bada",
      "description": "The effective parameters of that run."
     },
     {
      "path": "refinement/refine_001.log",
-     "bytes": 152523,
-     "sha256": "5503943f2e24248fd346e3eaf12585c8446d9a4e190ac64e9238ed0f4bce56d8",
+     "bytes": 152624,
+     "sha256": "9ccbff19f3d5248f68747d46d1156e5fa1d853f3765beae4a757a7dfed163877",
      "description": "The phenix.refine log of that run."
     },
     {
      "path": "refinement/refine_decisions.json",
-     "bytes": 2218,
-     "sha256": "eeb118da1059813ba7e04432b9016cb22ce0d3bea3fecbf998325a709346836f",
+     "bytes": 2350,
+     "sha256": "999616bb69d48c029be61b645e408b2533bf19cdb7501798a8fce981b060b950",
      "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
     },
     {
      "path": "refinement/refine_result.json",
-     "bytes": 3409,
-     "sha256": "08ab92cdfd4c24dbe1d9c517149629742b3bd14343615671f57f76c62b232386",
+     "bytes": 3662,
+     "sha256": "9e5bed78d693677380db7a868a88e6a5bf113a67105e52b6f1a1378b139f39c0",
      "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
     },
     {
@@ -3037,33 +3138,51 @@
      "description": "The campaign's independent verification runs (same scorer, earlier dates)."
     },
     {
+     "path": "validation/campaign/verify_20261003/3QUE_d_g002.json",
+     "bytes": 661,
+     "sha256": "d23920703e076871d52248d68fc75887c0bff5b4d2195fa15f58d580c47972d1",
+     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
+    },
+    {
+     "path": "validation/campaign/verify_20261003/3QUE_now.json",
+     "bytes": 658,
+     "sha256": "5e786b5b992dde63ec869ab6e03603a8a6a0d51bdd60aab539698dfa88b7e670",
+     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
+    },
+    {
+     "path": "validation/campaign/verify_20261003/3QUE_old.json",
+     "bytes": 620,
+     "sha256": "5942ba77808e1d9fc097f161bba0baab3bb94233f7d38ffced05d36acdb27e37",
+     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
+    },
+    {
      "path": "validation/release/merge_mtz.log",
      "bytes": 394,
-     "sha256": "da57bf17892cacf2b450983bb29b79b0cdbce1094efc10975604a9eccee3d748",
+     "sha256": "661332b0f5787b617230fe183de78ed9f1c112c711a434d9eab19fc3242727c9",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
      "path": "validation/release/model_diff.json",
-     "bytes": 510,
-     "sha256": "9009dc289f18c2fff8043c6edc55e75892fa50bd026ae4e189e7aecb3352222b",
+     "bytes": 882,
+     "sha256": "9c47e0cc50295c2b62e8b9af03d83bc7a4d7632e7c30a78719ed70e3140762e1",
      "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
     },
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2996,
-     "sha256": "d1ca933a2ba9312cc9434ec758670d75cdb4e13c6f58e6b9276a06e67539990d",
+     "sha256": "3543cff51c6020b9dee7cf34f4d6f96dc5d28efe894ee9cf2ad548d73b691be8",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3001,
-     "sha256": "c8e96c5456b7655ba8075019a0ec4be2740943da9de961cdb130ca20ee996085",
+     "sha256": "b673821fb6c2f8fa07f9c1d40363a73bdac00407a7a97adef9a9790a9bb45daa",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 16072,
-     "sha256": "ca60228d0bc082ec69ed627b77e9f2545a268696e3979aab12b4da6076548369",
+     "sha256": "d36cc1b41db996c2435a8be292d75a28671f53657f4de297a55a327be2c15bf1",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -3074,44 +3193,44 @@
     },
     {
      "path": "validation/release/molprobity.refined.log",
-     "bytes": 14772,
-     "sha256": "cd5c1a161bd3e04210d880aed54c960ed146a6c5f95955e97035d300828abcbb",
+     "bytes": 15055,
+     "sha256": "e3c3c2586c7fbc702150bc22c2dc8bf404ea18c8f7c8f90eca210b0187843740",
      "description": "phenix.molprobity with default settings."
     },
     {
      "path": "validation/release/molprobity.refined.out",
-     "bytes": 3704,
-     "sha256": "f324a37a1a353e273bbc43a7a1fab5d36854138cbb8dd800b6ab705d449b06dd",
+     "bytes": 3732,
+     "sha256": "e2a5ce777d3e0483623fe6ec5dfc19df7a483a7dd48a3e2814498437e5d61a77",
      "description": "phenix.molprobity with default settings."
     },
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 615,
-     "sha256": "b5c44ef8ea3ba51e64a83bc0ce944f2df5c49496dd9963ee0a934303fedca0dd",
+     "sha256": "cd3626c3bfb8b5f1101de77fbed1d4f75c61eb5550801adabe0d65be778bb411",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1075,
-     "sha256": "b6580832215ba44a3af980eb17d3daee304cd49099a921116d85f61381a847da",
+     "sha256": "b20390d9b1c0275dc8d2accf0849504b15239a260883e6e2da9631a6726b1b71",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 621,
-     "sha256": "d924846e077f3d0a09c9e7b498a9ea245205fd41dcd7b2641e9c7c01463f9fa9",
+     "sha256": "6594406bffc4952fa7689edbde2856a4cb0713701f8defa7eba039dc78729157",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1083,
-     "sha256": "994503672df6b1c192e8a0ba720413ab596f9b83e689ce6c3f23009106df822b",
+     "sha256": "2dfb1dbbd2a5a6bbf16c6af8b9184a881dd0e73dc209478b6849dd213264c96c",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
-     "bytes": 2481,
-     "sha256": "3b1f9104b5f37900729c6f2c94c78b24f6cca8384d79b8343020d2c643ff42ff",
+     "bytes": 2483,
+     "sha256": "0bc8255f213a27e1938218867cadb3a510f36ee8d510d622ab8d7d904c0f5fa6",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -3187,24 +3306,24 @@
      "accept_threshold_select": -0.000168
     },
     "released": {
-     "r_work": 0.1351502407365192,
-     "full": 0.17278438665447002,
-     "select": 0.17815057278572333,
-     "report": 0.16729983989689604,
+     "r_work": 0.13499229799227888,
+     "full": 0.17165068327632663,
+     "select": 0.17549515686556866,
+     "report": 0.16772141309398073,
      "model_vs_data": {
-      "r_work": 0.1352,
-      "r_free": 0.173
+      "r_work": 0.135,
+      "r_free": 0.1717
      },
      "ledger": {
-      "r_work": 0.1351496281935661,
-      "r_free_full": 0.17276394500804818,
-      "r_free_select": 0.17814869528687724,
-      "r_free_report": 0.16726042463813334
+      "r_work": 0.13499200013114948,
+      "r_free_full": 0.17161219977360884,
+      "r_free_select": 0.1754544204245543,
+      "r_free_report": 0.16768523222205486
      }
     },
-    "delta_full_vs_deposited": -0.018818363011756933,
-    "delta_full_beyond_rerefinement": -0.01568647208339599,
-    "delta_beyond_in_sd_full": -7.677760828867098
+    "delta_full_vs_deposited": -0.019952066389900325,
+    "delta_full_beyond_rerefinement": -0.016820175461539383,
+    "delta_beyond_in_sd_full": -8.232653180824112
    },
    "composition": {
     "deposited": {
@@ -3217,9 +3336,9 @@
      ]
     },
     "released": {
-     "n_atoms": 4832,
-     "n_hydrogen": 2323,
-     "n_water_residues": 231,
+     "n_atoms": 4804,
+     "n_hydrogen": 2274,
+     "n_water_residues": 236,
      "altlocs": [
       "A",
       "B",
@@ -3280,7 +3399,12 @@
      "A 5049",
      "A 5050",
      "A 5051",
-     "A 5052"
+     "A 5052",
+     "A 5054",
+     "A 5056",
+     "A 5057",
+     "A 5059",
+     "A 5060"
     ],
     "waters_removed": [
      "A 782"
@@ -3305,11 +3429,6 @@
      },
      {
       "residue": "A 133 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 136 ILE",
       "before": "-",
       "after": "AB"
      },
@@ -3354,6 +3473,11 @@
       "after": "AB"
      },
      {
+      "residue": "A 175 ARG",
+      "before": "-",
+      "after": "AB"
+     },
+     {
       "residue": "A 177 ILE",
       "before": "-",
       "after": "AB"
@@ -3369,11 +3493,6 @@
       "after": "AB"
      },
      {
-      "residue": "A 205 VAL",
-      "before": "-",
-      "after": "AB"
-     },
-     {
       "residue": "A 206 VAL",
       "before": "-",
       "after": "AB"
@@ -3382,6 +3501,16 @@
       "residue": "A 208 VAL",
       "before": "-",
       "after": "ABC"
+     },
+     {
+      "residue": "A 250 SER",
+      "before": "-",
+      "after": "ABC"
+     },
+     {
+      "residue": "A 30 ILE",
+      "before": "-",
+      "after": "AB"
      },
      {
       "residue": "A 34 ASN",
@@ -3429,7 +3558,7 @@
       "after": "AB"
      }
     ],
-    "hydrogens_delta": 2323
+    "hydrogens_delta": 2274
    },
    "molprobity": {
     "deposited": {
@@ -3444,31 +3573,31 @@
     },
     "released": {
      "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 97.59,
-     "rotamer_outliers_pct": 0.8,
-     "cbeta_deviations": 0.0,
-     "clashscore": 2.1,
+     "ramachandran_favored_pct": 97.99,
+     "rotamer_outliers_pct": 1.59,
+     "cbeta_deviations": 1.0,
+     "clashscore": 2.55,
      "rms_bonds": 0.0066,
      "rms_angles": 1.04,
-     "molprobity_score": 1.07
+     "molprobity_score": 1.2
     }
    },
    "campaign": {
-    "cycle_index": 57,
+    "cycle_index": 913,
     "stage": "rerefine",
-    "updated_at": "2026-09-09T16:55:12+00:00",
-    "model_on_pod": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 37,
-    "n_credited_cycles": 5,
+    "updated_at": "2026-10-03T05:45:25+00:00",
+    "model_on_pod": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.cif",
+    "n_cycles_on_record": 55,
+    "n_credited_cycles": 10,
     "writing_cycle": {
-     "cycle_index": 57,
-     "stage": "rerefine",
-     "run_id": "3TC7.E028b",
+     "cycle_index": 913,
+     "stage": "graph",
+     "run_id": "3TC7.graph-weekend-20261002c",
      "verdict": "accepted",
-     "attributable_delta_select": -0.009941,
-     "delta_r_gap": 0.00077,
-     "geometry_flag": null,
-     "run_dir": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired"
+     "attributable_delta_select": -0.001013,
+     "delta_r_gap": -0.00026,
+     "geometry_flag": "rota_outliers 1.59 > 1.5",
+     "run_dir": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0"
     },
     "bisect_step": null,
     "credited_cycles": [
@@ -3516,10 +3645,55 @@
       "delta_r_gap": -0.00113,
       "geometry_flag": null,
       "accepted_changes": 5.0
+     },
+     {
+      "cycle_index": 912,
+      "run_id": "3TC7.graph-weekend-20261002c",
+      "attributable_delta_select": -0.001642,
+      "r_free_full": 0.17183178692079418,
+      "delta_r_gap": -0.00155,
+      "geometry_flag": "rota_outliers 1.58 > 1.5",
+      "accepted_changes": 3.0
+     },
+     {
+      "cycle_index": 913,
+      "run_id": "3TC7.graph-weekend-20261002c",
+      "attributable_delta_select": -0.001013,
+      "r_free_full": 0.17161219977360884,
+      "delta_r_gap": -0.00026,
+      "geometry_flag": "rota_outliers 1.59 > 1.5",
+      "accepted_changes": 7.0
+     },
+     {
+      "cycle_index": 915,
+      "run_id": "3TC7.graph-weekend-20261002c",
+      "attributable_delta_select": -0.001724,
+      "r_free_full": 0.1705703151497331,
+      "delta_r_gap": -0.00015,
+      "geometry_flag": "rota_outliers 1.62 > 1.5",
+      "accepted_changes": 5.0
+     },
+     {
+      "cycle_index": 917,
+      "run_id": "3TC7.graph-weekend-20261002c",
+      "attributable_delta_select": -0.000467,
+      "r_free_full": 0.17052156534399573,
+      "delta_r_gap": -0.00014,
+      "geometry_flag": null,
+      "accepted_changes": 3.0
+     },
+     {
+      "cycle_index": 919,
+      "run_id": "3TC7.graph-weekend-20261002c",
+      "attributable_delta_select": -0.000507,
+      "r_free_full": 0.17057866790171486,
+      "delta_r_gap": -0.00024,
+      "geometry_flag": null,
+      "accepted_changes": 2.0
      }
     ],
-    "n_changes_proposed": 578,
-    "thresholds_version": "thresholds_v5",
+    "n_changes_proposed": 2004,
+    "thresholds_version": "thresholds_v9",
     "run_summary": null,
     "refinement": {
      "phenix_version": "2.1-6048",
@@ -3528,13 +3702,16 @@
      "n_tls_groups": 0,
      "riding_hydrogens": true,
      "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=16.36 >= 5.0 and d_min=1.5 <= 1.5"
+     "adp_decision": "n_refl/n_atoms(non-H)=16.23 >= 5.0 and d_min=1.5 <= 1.5"
     }
    },
    "caveats": [
-    "The largest single credited change is riding hydrogens on a model that never had any (2323 H, no new parameters), \u22120.011 on every R-free set with the R-free \u2212 R-work gap unchanged (D488). Earlier credits added 51 waters net and alternate conformations at 28 residues.",
+    "The held-back report half did not improve with the 2026-10-03 promotions: ledger 0.16726 \u2192 0.16769 (independent scorer 0.16730 \u2192 0.16772, +1.6\u03c3_report, D519). The full-set gain 0.17276 \u2192 0.17161 is carried by the select half (0.17815 \u2192 0.17545), the half the search consults. Each promotion passed the promotion rules; D519 proposes a cumulative report bound that would have refused the second one.",
+    "Rotamer outliers 1.59 % at release time (campaign monitor 1.58 %) exceed the campaign's 1.5 % cap (D517); the previous released model had 0.8 %. Depositable by ordinary standards, not by the campaign's own bar.",
+    "What the 2026-10-03 promotions added: qFit alternate conformers at A175, A250 and A30 in a credited batch (`3TC7.graph-weekend-20261002c` generation 2, D517), then a second credited batch (generation 3, node N3.0, D519).",
+    "The largest single credited change on record is riding hydrogens on a model that never had any (no new parameters), \u22120.011 on every R-free set with the R-free \u2212 R-work gap unchanged (D488). Earlier credits added waters and alternate conformations.",
     "The refinement protocol uses a fixed ADP weight (wxu_scale 0.03) because Phenix's weight optimiser widens the R-gap on the hydrogen-bearing model (D491/D496); a re-refinement with default weights will not reproduce the R-gap. The credit bar (\u03c3_select) quoted below is from the noise floor re-measured under that protocol.",
-    "Campaign records after 2026-09-28 report a lower R-free on this target from continued manual Coot\u2013refinement alternation (0.1583, D512). That model is not yet scored on the frozen flags and is not in this release."
+    "Campaign records after 2026-09-28 report a lower R-free on this target from manual Coot\u2013refinement alternation (0.1583, D512). That model was never scored on the frozen flags and no copy of it was found (E039); plain Phenix water picking on these flags reaches 0.1702 and fails the R-gap gate. It is not in this release."
    ],
    "files": [
     {
@@ -3605,8 +3782,8 @@
     },
     {
      "path": "ledger/changes.csv",
-     "bytes": 1893887,
-     "sha256": "4bbe368de670692e18ea988953d7ec9bb3633f9d9c9974163032ab1515394887",
+     "bytes": 5883505,
+     "sha256": "d64367941c60fc397d057ae04d376e25c436eaee559ba6971a027f7ba4a3a525",
      "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
     },
     {
@@ -3617,20 +3794,20 @@
     },
     {
      "path": "ledger/cycles.csv",
-     "bytes": 18392,
-     "sha256": "7383b9f428351712e42fd28fb06e16a4b567efa4292bf01eb8cb4fbc35768c64",
+     "bytes": 30976,
+     "sha256": "fdc62a35116334c0e1b5c35a227416b4bf3702c84a871205f2e2409653ebc6e2",
      "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
     },
     {
      "path": "ledger/defects.csv",
-     "bytes": 51873,
-     "sha256": "0af1626f3137a2d2f14e56210a0ed82348b437f0b28a1dcae30818ab70d1ae24",
+     "bytes": 115898,
+     "sha256": "778a5e3d504dec0269a696ae7bc3bb43d28988f4b60b54b5ae6353516ed9a6a9",
      "description": "Values that could not be computed, with the reason (never a sentinel)."
     },
     {
      "path": "ledger/deviations.csv",
-     "bytes": 119959,
-     "sha256": "feeff5a45d98b5d790c70e09afe0136b23bd73b961a0e8bde19c0a763019d885",
+     "bytes": 123445,
+     "sha256": "9b0412d57b606ef38460093eecb96f617a8bb183f336e5993e27b268d9e297bd",
      "description": "Decision-log rows that name this target."
     },
     {
@@ -3641,8 +3818,8 @@
     },
     {
      "path": "ledger/rfree_consultations.csv",
-     "bytes": 226,
-     "sha256": "06bdef2ac636782192c6d10d83b5935eec1a8a2c5765ab381fc230782c41bccc",
+     "bytes": 232,
+     "sha256": "5ba1b7eb565eb144626e1c427ab3b91b065159ed5fc1ddb17a1428cde4e53110",
      "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
     },
     {
@@ -3750,79 +3927,67 @@
     {
      "path": "maps/3TC7_refined_map_coeffs.mtz",
      "bytes": 2674208,
-     "sha256": "01d93add2a5f80df1516c07926f5e73147c6289d93729ff1bee41be031c4f256",
+     "sha256": "25e21800baee9f10c6a9fe15aa96007f6ee446296177a4c5e4c5e0a75d666d27",
      "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
     },
     {
      "path": "model/3TC7_refined.cif",
-     "bytes": 630654,
-     "sha256": "ea2888b963acffaa4e24825c38c95cf06d0885e36b7d86d3a24831acac215605",
+     "bytes": 629537,
+     "sha256": "0b3d85debe8d7a7ce6aea80febcbbf6853a9c904dee5221ba61eae1ab9f1ea92",
      "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
     },
     {
      "path": "model/3TC7_refined.pdb",
-     "bytes": 586411,
-     "sha256": "7be713d6a44f1ce15f99f44f3827f03f65377831b20da0032d299eaebd7a4eea",
+     "bytes": 585859,
+     "sha256": "2c8098e379adb2378a4c4e70921803bc668538500ba340dc0637c739b9f540c3",
      "description": "The same model in PDB format, from the same run."
     },
     {
      "path": "refinement/command.txt",
-     "bytes": 1501,
-     "sha256": "2e0e54c8ea66d0ab5662bb28a0c2e8272a9558dfcad8d65d175cc413da2ba277",
+     "bytes": 1615,
+     "sha256": "dbd48f95ce3249c6b50d0396bdb5c578c85791aa084161dbcc8e738cd48d2769",
      "description": "The verbatim phenix.refine argv that wrote the model."
     },
     {
      "path": "refinement/current.json",
-     "bytes": 456,
-     "sha256": "180a800ae4b2b66d6e3699f0740a218d32f0f1625ce8edb47cf8e63f85520a8f",
+     "bytes": 519,
+     "sha256": "2a93b0f4b454ed711e0b4c216c88a26a22fdd352813778fe8e540b485ba2a6d8",
      "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
     },
     {
-     "path": "refinement/experiment_header.json",
-     "bytes": 397,
-     "sha256": "3b481806eb7f192f6e56d64e3e8ea4f2ceaf77a9d0092c6334b6b3f1d0a31ce9",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
      "path": "refinement/experiment_paired_cycle.json",
-     "bytes": 6084,
-     "sha256": "2cf7b93f1366f5adc7d4e0f49ad766be4c60843091d6f879a29d749c66dec628",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
-     "path": "refinement/experiment_result.json",
-     "bytes": 2092,
-     "sha256": "24e906b0716168a5d8cb0708668c26bb906a38c38322290866624c9e440f1139",
+     "bytes": 7266,
+     "sha256": "018d1e8568fc33b9922d44d03c7ad3bb27e5fe822a294f1f7de4f424f619f615",
      "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
     },
     {
      "path": "refinement/model_vs_data.campaign.log",
-     "bytes": 2102,
-     "sha256": "c24c7c4bc99dc84be88f380a264f844489588614cce7e55456d3b82f8900b7ce",
+     "bytes": 2101,
+     "sha256": "d7575108cdc8e51c7bffb77f280e4177ed6baf077902c52da656ef244e406cc9",
      "description": "phenix.model_vs_data as run by the campaign on this model."
     },
     {
      "path": "refinement/refine_001.eff",
-     "bytes": 42742,
-     "sha256": "dc4ef6430a7ebec8ddd182d5420a895a8eb3704a0a2fa18e3ef6ac71f5792f79",
+     "bytes": 42818,
+     "sha256": "60e70cd9d464bb798976fff58942fbae2c1e8c34e63c18edafd8f07c8305add8",
      "description": "The effective parameters of that run."
     },
     {
      "path": "refinement/refine_001.log",
-     "bytes": 76874,
-     "sha256": "a7de3f0d240d7deb348548c9aef66aff14ba6a5581035309d3c47326508ac17c",
+     "bytes": 73146,
+     "sha256": "917fbcb2c907fcd9aa38e4c78b07e955c31356307e6480427cf2e04d2512d2d7",
      "description": "The phenix.refine log of that run."
     },
     {
      "path": "refinement/refine_decisions.json",
-     "bytes": 2079,
-     "sha256": "0159fed003cc9b829d70dd3c8096bc3c9bdd4e944eb1a176eb1576db67b97bfd",
+     "bytes": 2108,
+     "sha256": "d8216b0d0cc3accc2d7c654e0b408ae445bc46d2646464bd8462fafcb452a826",
      "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
     },
     {
      "path": "refinement/refine_result.json",
-     "bytes": 2939,
-     "sha256": "20debf005bd459e3193ea1180ab1bda73ebef6d83a3349a9caa850a1df1b3497",
+     "bytes": 3180,
+     "sha256": "91a422eef0fa991c68fa1709c4c8f5dc5001249295fdea1a7170d230e45b98f8",
      "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
     },
     {
@@ -3904,33 +4069,51 @@
      "description": "The campaign's independent verification runs (same scorer, earlier dates)."
     },
     {
+     "path": "validation/campaign/verify_20261003/3TC7_N2.0.json",
+     "bytes": 693,
+     "sha256": "466f3bde2f97adfe39b5317c4f70842ce5ce0b2f6b8ead2a011bc4fdae4732d4",
+     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
+    },
+    {
+     "path": "validation/campaign/verify_20261003/3TC7_N3.0.json",
+     "bytes": 693,
+     "sha256": "c541d38cca1716a298bf49d1830bb5a2e0246024de6ecc307eda26aa4379d5c9",
+     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
+    },
+    {
+     "path": "validation/campaign/verify_20261003/3TC7_start.json",
+     "bytes": 660,
+     "sha256": "b9cdd13d6c47d7006b5fed5756fed0c9a980e8363d72a18455cfa6a098019ab2",
+     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
+    },
+    {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "256d74532079a63f917079bc9d847f2061c4215524fa47ad80cb7eda5259f5c9",
+     "sha256": "62d5cff952cdf9be31714a062efc343fc66a4bf5e0e2d927f064440833e0f8e7",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
      "path": "validation/release/model_diff.json",
-     "bytes": 3076,
-     "sha256": "4a9db80490d4ae4bef283d35aecaf9f7f13571a3db0016f4469470f680680109",
+     "bytes": 3207,
+     "sha256": "dca0daf812582fa6a1d4216310e2c46f316d0f27325e40aad09228cf2fb62e13",
      "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
     },
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 3316,
-     "sha256": "65a3ec625d50fc65b0fa7de9277f3e4f5493288a1234d277701f88a1758a8cdd",
+     "sha256": "17fe338e32211c36cee0c614e42970c56d0ac329cb78d68472ec17421ba6025e",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
-     "bytes": 2294,
-     "sha256": "150ab3c5bd9a1dbfa626eecf417b7d573e6fa76e482ecc5d57d0e1e0b91fadf3",
+     "bytes": 2293,
+     "sha256": "7b1ff294e2916eee6e197bb7f113fcc0848e605c8b08fa1960b9cefaacdc8ec0",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 16206,
-     "sha256": "4ae42e43988de3c4815c12a6112e0a56222bcca4bf38d5eefea4ef31344bd3a7",
+     "sha256": "61ac93858dbfc216403d5b9d725b83a5dd01ef2ca0a021d5233f63f309c7ea7d",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -3941,44 +4124,44 @@
     },
     {
      "path": "validation/release/molprobity.refined.log",
-     "bytes": 24509,
-     "sha256": "3abcf154b28713b12c411d0ac091e6f155e54c0b64999018c34c6e7f51f348b4",
+     "bytes": 24270,
+     "sha256": "bb7be4f20b21d4a5036b58986a55de1f1cdfe2743f8bc054a2baf8588abcfafd",
      "description": "phenix.molprobity with default settings."
     },
     {
      "path": "validation/release/molprobity.refined.out",
-     "bytes": 9513,
-     "sha256": "ad03fffaf3f63ebf3747c53e5cbe344184e1e86b20a712fb36a2c3df4fe7c0c4",
+     "bytes": 9272,
+     "sha256": "e9b9b79e540d70591f0403eade90f571f87f5ce3019945868a5c56565ab1a8bf",
      "description": "phenix.molprobity with default settings."
     },
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 636,
-     "sha256": "25afa313f8ad59bdb16e62140fd1af5235825f34c43ae9ed82f862be047e6f6c",
+     "sha256": "2b3245e9254896e27cf5a85b5a78355de75b7b8953a4109250bf9a2cc4ace469",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1089,
-     "sha256": "222ed49830796bfb944bc3e8d124f9fcdf905b9c8cdda7816664d6e7a94f86ac",
+     "sha256": "5211e38dd78cda3e73f6c24f0fe748890e106ea76e4a1622cf3d6aa617691be7",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
-     "bytes": 651,
-     "sha256": "a834d04653ee6bf8459a0ab7bbb6f4d4196dde806fc0ecd037b52c37bcc2a6d0",
+     "bytes": 653,
+     "sha256": "d7322cbbf8add0762a36f4a5092f92d777db702b22dac52514c7a0ac41439fe2",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
-     "bytes": 1104,
-     "sha256": "f406028e55b40c3a07ca250581550fe42cb20f8ff9111b2bc4ff2372d45a94e1",
+     "bytes": 1106,
+     "sha256": "a7e80e5324df5c090fb3ce032f1bf2bd4bfdd8e6f4180ad51b668555632d5f0e",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
-     "bytes": 2550,
-     "sha256": "d87fbde12972173def9b04f640a28820f3fa82d828f170508e519427bbbbba98",
+     "bytes": 2553,
+     "sha256": "0dd8c1e45079094550b11fe29fdb4ad05f1577f6886952bfe5b2a16426e8291b",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -4451,7 +4634,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 397,
-     "sha256": "4a03221fabca301a350b9466ce3e43a8ae26eff483e6aa97d86afdfca6ecc706",
+     "sha256": "7999a8335d3b6339778bfaf21403547cf5861c20b3bbb00f864f927a8350f643",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -4463,19 +4646,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2132,
-     "sha256": "ffc3a835c672ccb186f43cf114efa963e335165b5cbd64ea3a7799a4725166b6",
+     "sha256": "b928e95e56d79ff3544251c7d033cf91176f93f41defdf129cd3d17ee2459fcc",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3009,
-     "sha256": "b60f0e0ad8947176166b4593dd168263e2e5a3ff7af3c84ecaf8ea7469a2e537",
+     "sha256": "fc09041efca7f64b34a8aa1d2804813375c0ad78413b2e97627783dc98f4144b",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 15391,
-     "sha256": "ebc0b79b429bbffa1cbe30c01a70b77fdab3b1e5fa24571cfcc36321920d7f31",
+     "sha256": "1e6dcb353bb2d25a95f2cfe9ccf54e99d5d5bd6176a95ab5dcd245bfee61767e",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -4487,7 +4670,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15644,
-     "sha256": "42bd31e60077e4aa6bb644596bdc1070f92230cca463c830cff96ba6912d5ef8",
+     "sha256": "c92ecb9e6701f2b07363f2f9c604f1c3ea95c0264c3034549dc00bfa318a4ea8",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -4499,31 +4682,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 671,
-     "sha256": "2e825427377c59f4c44338a2ac9b5db41f8f7df40908e5ddcc3b4991b5ba7d75",
+     "sha256": "f94516a89e84beb06eca87c598ff8006cb28de4a66b554a0e4e216416623169f",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1131,
-     "sha256": "4ae3ae60573602b2c1b87d75b684d1dcbaf7d1f3ecee0990aca7092811c6edca",
+     "sha256": "14b95a24ded52406cfc888754cb1209df40b8147ed26f6bc594794daf3cd7163",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 676,
-     "sha256": "26467b45ae1fb1f0a30050dc64a940f2996919924bbfeb89e08c4ede3793f865",
+     "sha256": "5c9dd898c4f6947ca2af2ee1c2512b700fc8bc2e09884484537ec6d8a52492f0",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1138,
-     "sha256": "25742061f7edf2280d346ebeb7928d8105cb3b688af40a1892c0e7674060a753",
+     "sha256": "c5c96e34dff3d5b5e3d1543aa80123a8af3eb3e77915f6cbe264d88705c645ef",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2593,
-     "sha256": "0bbd2b0f5040a53aecd288a3a60e0cb6ca44f5c4382c02d98d587ec799052b77",
+     "sha256": "3e440af470d8201c60f9ae60a0e5cbf53dfcbe69778294a3739dcf3251b7552c",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -4995,7 +5178,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "0989fd0d3954a1b03babac907011543b695bdfda0042c366bf03f2e51bd3f927",
+     "sha256": "dd85acdf60169229ee6c476ed692eebab731f40855b583d7ae6e78e5dc8f9a51",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -5007,19 +5190,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2201,
-     "sha256": "5170bc5be4e4a59242aed02dd4ec3317a3497734dca6cc931301e05398043c2d",
+     "sha256": "65b25e67d58222adc6c2e93c88d0d7e5b2e7c189ba4fc428f41c50ffafc50d5c",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2205,
-     "sha256": "c7bc5e8045ce10d6bd918931315f966eb611d498661e9e2260a8dbae1d40e3f5",
+     "sha256": "37249a61bec574c21bc3d58b483f2d477e1072c057ef58871b0d2933ee285465",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 18889,
-     "sha256": "abb840f91d8e2a24ac0bf49c99262d8b999907b71d1d7ec56b31d2d0ac8e48c7",
+     "sha256": "4cc32e3893cb8f684ac326ef2ea1e697ad2883e7a70453a6752dbae235972b78",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -5031,7 +5214,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 19048,
-     "sha256": "179d55924dd772b44603a8c025b4d724ec6d942aea9e3b1e452ea65cc8ae40bf",
+     "sha256": "46bcbee367fa82cc3b60d3a7e8271f715f98f91495835e6824988aef5e51f7c2",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -5043,31 +5226,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 631,
-     "sha256": "ead34da769fb50bbda0005edf4c066d4888713f6dd886e350ca7a8dc71925d8f",
+     "sha256": "e21614cf670e8f227e0e8f5215fa289a7ec76ab331d843415cccb865589768b1",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1084,
-     "sha256": "87958508d1ec7da50e75064eb59564feeb80ac17102afaf082a5f64a28294e0d",
+     "sha256": "90cd53226b0f61530f89945464858f8973bd51d0fdc3c26004e2bb7af6efb98a",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 642,
-     "sha256": "637f9b2df9959ca847a80c826355995213e5e07b5949973db6077277a30c5447",
+     "sha256": "87d7ec1ccbe8eb258e1bc6353ec3f43e58540e0744df817de1a4ab5f5afd179d",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1095,
-     "sha256": "3fdd16716526077034c71c0ee0004239b4bcb163eb5f382264ac8d1ba248a592",
+     "sha256": "6bce9bb87aa5445ccfc232aa9a3d3faf427bdc8ebeaf6028977821fcd705984b",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2539,
-     "sha256": "93ccc41f17648139b2d0d56442964ed52daf4cbf2e36ce4f72aa27baae83059f",
+     "sha256": "50116d3b575b4398b76d8954f4e9a3f0037dd46354b942ac34947c5d41ade554",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -5503,7 +5686,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 398,
-     "sha256": "516a2823c304a4522463c93dc05842a398d20895650488ed61e5db984407997c",
+     "sha256": "6d6b0380be8752e266d25b59620f6827aa66f391a4e0264ff647b461f9bcf624",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -5515,19 +5698,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2294,
-     "sha256": "bcf4e1f27c27ee3a48d90e82a09a743268c97b6af11880a9e64b59371d285174",
+     "sha256": "3b202a9bb24745430ac82fdd6e070e6ad29d7e0ac4ce69fbf23e4635862da2a7",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3330,
-     "sha256": "117aa3d2c721671b43946f2a525f67ccbf9261ed87c78186ad0a47ca1899494b",
+     "sha256": "c4dfac7f0a55ab633905cd444095db2f833b7495be663e913d954530be0e9245",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 17013,
-     "sha256": "bb89000aefddfad268ba96fbf12fe2f3af45b2e03ec2828d32c82a61ea340fdb",
+     "sha256": "e47cb4498017e6812084d13017811b38e1ab2fa9e66f76fe01a824fc045504ef",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -5539,7 +5722,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 16495,
-     "sha256": "053addd05275c3f28d633a91bd5843728ea2ae0a0c45f96e3a8ff70f23feb05d",
+     "sha256": "2a828d46e8147d65e9180cdb772d09ad124fbae0237ac55e5818b26ec33f33ca",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -5551,31 +5734,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 676,
-     "sha256": "e0671b25449b8f65bf472431791e0234bb5b16e9084bfa4db32b7abdf2725aad",
+     "sha256": "cbbfaaa994fface607f86cc64c8d930e7aecdf3c1f5363872722dd4c782a77ab",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1136,
-     "sha256": "57ac79c212344f43632a4d673a7c0e9de5fbc1f9a4bcd283674987b810f8930f",
+     "sha256": "a659099887a142119d501c763be3f11ca035ec09d08913a5115a939d3144e63e",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 679,
-     "sha256": "f5d5bec937ab63e40d331d1825218165c9efa3c02c8229cc987eb12e7048f21a",
+     "sha256": "3fc3e0c2bc10e19cf71171ad49f28d52e8763e6c8b6cc8ddaf833d5ccd19956b",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1141,
-     "sha256": "8e14b47d3f88e8001a501bd9c192e3b01c04a2bcb6b079f438f03a1b0a144b7b",
+     "sha256": "5877dbac16250aae0f16a508215bbed527db4d10a1fcbb11563f93035c7b91bc",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2600,
-     "sha256": "3a6c3af05c6ca00f2b426ddd578e6cd467ef455c321b61c2635dc91d1198517b",
+     "sha256": "fe045409a0d9434fab1c04945797fec729255428ff549eed5ba9e877cf5526dc",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -6014,7 +6197,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 397,
-     "sha256": "05073b6f7a7127b6b611a500bf768cc7cda7e8bcb555516bf7d3bf51032b9c23",
+     "sha256": "8a6cfd6e6bfbbde9ec460e2a09c5db369cab7ab19590a9eadd2c34fb1fb22c8f",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -6026,19 +6209,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2216,
-     "sha256": "7ecaa842163698490266cb2794ab1027a036d42ecad3c4ddf71c2fc092bdff9f",
+     "sha256": "b05b5b730ced4f1a54319b536e9fbaaf879167cd333c5e690a2d888ab40dcffa",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2221,
-     "sha256": "c025f4de2ff4ccf4328449e1fa4e95dd5e11a649dabfafa6d62fa214d411d3d8",
+     "sha256": "7e20fc091a380181d210cde8c21aae9e3e2f00eb0aa14e9550b8ec87615d4756",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 16547,
-     "sha256": "cc2ad86d26dcea36fedc9394ebb0d226d20287ad0180fca8eeeb1188bbe59243",
+     "sha256": "465afed4870fbe8e2a905d564db438b80e2e90bbe566e623cde240cf2cd1de1a",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -6050,7 +6233,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15872,
-     "sha256": "5d28bf8ea23b7d824dbc423f981568471defa34fec01023a519c21cd120c978f",
+     "sha256": "72cc8ae46bd659b40f790ef4830b3b75f5c3107f47a50cc23ad58b97a38ba0f9",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -6062,31 +6245,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 691,
-     "sha256": "236acd226827c59e6824db108b76dd1b4eff37ae7c981ddde0a77d1d92a7f257",
+     "sha256": "3f072c1d79a13a1cecd04f3d93bce68847829ce7106dc9b9ae29fb668b916396",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1144,
-     "sha256": "8f0f455864fb841bf1d02ff4863482a4d39c8ebdc708449678314038a28c804e",
+     "sha256": "a893a44c0f65141d265620e4f8bb049a0b9dd3ba7b57b27d413abe04fa33d88c",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 693,
-     "sha256": "deab325551c1a4b4fd91653c54d42fb96c4ebe6e87872e23a08c5e2f56ee2219",
+     "sha256": "256911b89e351dd83a78f8aa7267f433d1f04d083ab48dea3f635baeb4fb49dc",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1148,
-     "sha256": "38a532a3e21c3f13f8bb531c9e2ca0595c8eb70dfef0ea22eefd0a600ab15e82",
+     "sha256": "d5bf4037373a20935e2ba6d9d94410d17a2b3432347bfcf7eee37c8f2e387d5a",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2647,
-     "sha256": "c83e279653f9e04e9f3b63d3a1a96f50829932b16777dc9b377e6ce320651e60",
+     "sha256": "816ebe9997a8f11ed30a1e8f7e8ffe396fd4f228e2dd6d171491c3c46b2f319f",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -6243,7 +6426,7 @@
     "stage": "rerefine",
     "updated_at": "2026-09-09T19:41:05+00:00",
     "model_on_pod": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 29,
+    "n_cycles_on_record": 32,
     "n_credited_cycles": 6,
     "writing_cycle": {
      "cycle_index": 37,
@@ -6312,7 +6495,7 @@
       "accepted_changes": 1.0
      }
     ],
-    "n_changes_proposed": 240,
+    "n_changes_proposed": 1009,
     "thresholds_version": "thresholds_v5",
     "run_summary": null,
     "refinement": {
@@ -6329,7 +6512,7 @@
     "MolProbity rotamer outliers and the altloc-aware clashscore of this model exceed the campaign's own frozen caps (1.5 % and 5.0); the deposited multiconformer model already exceeds the clashscore cap by construction (D451, D474). Depositable by ordinary standards, not by the campaign's own bar.",
     "The changes carried by this model are two waters removed plus three 15-macro-cycle refinement passes credited at 2.1\u03c3, 2.0\u03c3 and 2.5\u03c3 (D489, D493, D494): continued refinement, not remodelling. The deposited model was already near-optimal as a single-conformer representation.",
     "Three credited cycles on record (run `7KR0.exp_sw_distill`) belong to the ensemble-distillation line, which judged its candidates against its own base and was closed as a negative result (D463, D466); they are not in this model's lineage.",
-    "Ensemble representations of the same data score far lower (the operator's six-copy model 0.0673 on these flags, D455) but are not depositable single models and are not part of this release."
+    "Ensemble representations of the same data score far lower (44PS, the six-conformation model of Passmore et al. 2026 on this dataset, 0.0657 on these flags; the campaign's own six-copy models 0.088\u20130.092). They are a second representation, not a deliverable (PROTOCOL \u00a718.1); the campaign's are released separately in `representations/7KR0/`."
    ],
    "files": [
     {
@@ -6400,8 +6583,8 @@
     },
     {
      "path": "ledger/changes.csv",
-     "bytes": 654652,
-     "sha256": "18ce60a23fbb8e6edff051b2aba7ce9e0410bc2817e3e6d4369a5d0ede3e3e7b",
+     "bytes": 2309293,
+     "sha256": "04ce89bb0e06c9f7f01c61bc4065f98f63ecfeded36a9a9fe0b7b75d8c938f3a",
      "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
     },
     {
@@ -6412,20 +6595,20 @@
     },
     {
      "path": "ledger/cycles.csv",
-     "bytes": 14938,
-     "sha256": "e143720dbd8e51bbce35bd362a7dfa1ec718da58c8ce1b6c78386d7b164e9e7a",
+     "bytes": 17604,
+     "sha256": "768a978eae3fdd2e4c81a25044e6eb714dc06d6c7d2fb0be90018d6effe6228b",
      "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
     },
     {
      "path": "ledger/defects.csv",
-     "bytes": 33344,
-     "sha256": "d22e01bc88ee3fd920fb9a5f8b375167cd29fe321afe4d2629a99766e767244c",
+     "bytes": 58848,
+     "sha256": "c0e4b3d8119132504ade2f052bbb466e479b25b1a6b3de980b0129320d98f1df",
      "description": "Values that could not be computed, with the reason (never a sentinel)."
     },
     {
      "path": "ledger/deviations.csv",
      "bytes": 93320,
-     "sha256": "04fb82a87ff11c452b6702695d4a523c1e735348281cb3db8b31465c00e95387",
+     "sha256": "0effa7975bd2a43530d1958a63c550df3b2e2fa0d3099ac3c56d4c4e78a5cdc0",
      "description": "Decision-log rows that name this target."
     },
     {
@@ -6436,8 +6619,8 @@
     },
     {
      "path": "ledger/rfree_consultations.csv",
-     "bytes": 226,
-     "sha256": "a97e74706dff9ef73a68bd8af9e61ae97988ba9f99d2f6dfe2da2460a8d82ff4",
+     "bytes": 227,
+     "sha256": "afdf1c5f4d4bcf9b8fd7e15ee0d8855ac88ab78a987ede3c9cc60317c503ab49",
      "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
     },
     {
@@ -6671,7 +6854,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 396,
-     "sha256": "901c69d725173f58799ced92d56e803e7368b3233a79ae38b5111bb67c2e29da",
+     "sha256": "f84d5f377f9714ace95eb46cc0ede28eac8a15a9ff0a4b82b07c4d125b913eec",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -6683,19 +6866,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2451,
-     "sha256": "cedcf0352499d58b2196282e32a8f58f41591ffb493a33508fa91ea99501e9fb",
+     "sha256": "0b73a2576399dd9031ff3d29c4c454aad4931fcc51aafefe7fc604b107397305",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2453,
-     "sha256": "f0fe485b5bc8ce9cf0b445e7e1aa8eed528d126aea59a71f142aa25c021551f2",
+     "sha256": "f3a9efc2810472329c93f8432f49423af299d4662047dad005687c66650a9c30",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 19545,
-     "sha256": "09c0aa19e9c66dff897aaf8e0cfb548282f4ed87a244d5c9ee7c45ccd354578b",
+     "sha256": "461a2d4955638f645fb15d2c9b8c2460656c1516f3a8c130a1c1eeed5229e168",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -6707,7 +6890,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 20375,
-     "sha256": "a7153cc64f8b17ca365cdd257481acbb1a69b9988bdf61ea93fdeeb7635a4be7",
+     "sha256": "e668f1f8a62dc66b83dbdd6ba8c6dc7e7dde70096d5bbe607de7368fe7256ba4",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -6719,31 +6902,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 657,
-     "sha256": "2c23b374a12bce295eccac27af2ae57020024d85aa93ce23ee34eb3b813bc699",
+     "sha256": "ae71499eec3a6fbd2107f5f291fda10f5d6185810312ed30c4375ab702c20edc",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1106,
-     "sha256": "bc345fea218a91907838d0edc5a4d7d4a1125096fa4e2112a03ff28f4e39853f",
+     "sha256": "ed6933f65e5c1002cfcf7360dedbd9b477dd39c2c6fcc7b12e78901842b38297",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 661,
-     "sha256": "2bb96d3bf515cf2f6a8817f13e732e389f559ae11c014a3bac2b5380900a7cf1",
+     "sha256": "5398a0630d962589946ff58d6a513db70e8cc6af0c07614e759a0f3d0367168b",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1112,
-     "sha256": "b3c2a347250e62947c2e1a042bb6c72b7d9b344e9f7d7f28ec20005ba02cba5e",
+     "sha256": "b98fbe38f877fb12c0653363288bc8b3881b9e60b3aaf039f566b081bc274d78",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2590,
-     "sha256": "c26367ed28d9e00e91e26e0e819dc11607982a28fefaefd8562bd7fd0c38e384",
+     "sha256": "03b8e95a1ac2ce49e6dd02fc8479a1f0d8f1e57b15fc66ac19a53bebfec92593",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -7176,7 +7359,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "7ce6913cfe15e4cc0b6e6b25e85ba21f537a291395afa57833ef9630aede5dad",
+     "sha256": "3691c5bf7611633efd31867d3eb4b0d7ee24ce6c5a64d8a54d5588a0c769c1ef",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -7188,19 +7371,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2364,
-     "sha256": "9b739dc79ebc0cbddac97dfce0928bb387995ec353fc08e8751dadaa367c28a6",
+     "sha256": "be93b8a837fcf48b6c9f9bdef8b3c19729c9abdaf6b08ee821205f5622e2aef2",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2368,
-     "sha256": "9f6a6a0c797c11eec3e269711c48542e981d785e5e4154129224eda34d742476",
+     "sha256": "448e884bdfb2573361fa40d815849ad93cda5c4b1034ab07cda1cd7083c25063",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 14776,
-     "sha256": "189ab737cac9c820063300ec32081efe23f20a89f13ef6a23c748d7219ce1b62",
+     "sha256": "73380925f586982df3dc7cf6292da12a090483607987ad019c60264dc656820e",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -7212,7 +7395,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15092,
-     "sha256": "edc27601f5546a62e578d2748cb90d490b7f34f1dbe94b5e33dcff6354d9fb7f",
+     "sha256": "e3565b7ac92f0ec8e12c22b36617428e0a4437a504815ecbe33f60eb651cc23b",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -7224,31 +7407,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 621,
-     "sha256": "c01ad8ec7638eddb806ac48776970f993cc0759d6df84177d3d3a0a8ac6e4cc1",
+     "sha256": "f32036ee077cf072d1a683c46cb95e8a41e371b039d208ff599b9b9c089f74a9",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1081,
-     "sha256": "8a9a3f4c9598a1e602e4997bb48df7b603cf691aa336ac5f0299fbf4536c9799",
+     "sha256": "3845e6cedf5d0c8d826a5547466e9b8023bbab13e37fa9146fcc4a0faa2edba2",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 623,
-     "sha256": "9e388618087c100790fbe4dbcce8281c8bb5ac7a4ec71db96414733fde9dfc84",
+     "sha256": "1d1302da67e2523fb243e37e73161d4daa86010972680d5827602dc37042de4b",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1085,
-     "sha256": "4fec96dd986458ab04f8a28bc5ff3979d4c705d0ac66f187d63c636c1735edc6",
+     "sha256": "6fb92443970955fa1a9328e38d452623bb683f1c0bbaa41f1d226bb5771d7d32",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2488,
-     "sha256": "09ff73a9a7ad2233576398b91029c51679fe820b295499e2012389d651140bb3",
+     "sha256": "7dc0896a815f7621751234c68fab56d711ceb9dd75a9a7f5826024e148d3dae5",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -7687,7 +7870,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 394,
-     "sha256": "90efc26ec4515abcd711f7b5c790ce9f71e42b6d0829ebbc3140534534503e8e",
+     "sha256": "51263275ffa16501c556c6d69b12eae2977a7a0feeb81b4363ecbc65e8347ff6",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -7699,19 +7882,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 3161,
-     "sha256": "ef4a65c38db98add54d9f658d3b44ed6f5a672352a81d515c6beb714da954596",
+     "sha256": "03698917eaec07989badad853ffde266fbe49e8a2a9d4745b4bc1f8ae6069367",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3164,
-     "sha256": "84d986a55b5150f64e3d18335c02672303d2fa5686e7d027181ad14076100674",
+     "sha256": "f62409164faa1df850d36390c63809c08ca7cf7c0c406462f6bd9b122a9bfe1f",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 15078,
-     "sha256": "18dd421d5b475e181c4aa8c0d036f84dcc51d8763fa0830c0c5f49c1fc695e1f",
+     "sha256": "1476075395ce5f82ba0d295b9e6bead6abaade8a7266228f5e7d749dedc077f9",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -7723,7 +7906,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15474,
-     "sha256": "a4df29ac54b8bfb92cef7b246b24c078bb563f513dbfd016d01f4f0f3aa841af",
+     "sha256": "2b9503421db13ce9ba404db601e7c903d1c48516e448835bb9610ed1c25b869f",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -7735,31 +7918,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 629,
-     "sha256": "de525bddef8b55b5325027d75bb85ddcc77cb469600630256fa2ccc494c94ea9",
+     "sha256": "64f855764fc8d86540ec28f2cf042bf2427a24cd90d664620cbe5d525499dd4e",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1082,
-     "sha256": "b8929e330e572127a01b7d31087376bae88843998696845b352434a3bc1a03af",
+     "sha256": "a19491fdb6c8ab2c5a960407425b32188c546460ab99bed0e99ac4b8a3146bed",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 632,
-     "sha256": "00d6f133e10dc0c88df92c319851a16b412e214009197dd7c61b771afb31c649",
+     "sha256": "de878f93073d679042604ffc4624e8c1fdce7511061091fa75bf680a82b346c5",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1087,
-     "sha256": "e734ebb1da00538a8da6486f1b785226d0ce78f5f9fd32c0ccdc884e512e8c43",
+     "sha256": "fa9fd0d2d456ab9d4298dc821deee91111745334aaaa5861165bccd9cd1f84fb",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2521,
-     "sha256": "c8149b819fde9ad1a8128d07db09f175ee1fba6037aad25a5852d0deaad199e1",
+     "sha256": "c22a7b4ca27e016cc4f195554d3931c0d83c5dfb9054bfaf13837e056174e942",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -8216,7 +8399,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 399,
-     "sha256": "448f39fe1d254388f13e571c33db5cd3c76ee2f4c075eca16c2f32f63b2e7cb7",
+     "sha256": "e56a1c9b9a46893dd254c71944ab33ca34e1cb6b093ca556b42c8392e4472fc8",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -8228,19 +8411,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 3414,
-     "sha256": "83ed86a76d63e13e6b6d778495f47528a180250e29ab1e54e40e03671c621a79",
+     "sha256": "c5e5413067e6c21297c68bade744a02fb7585abdf3bba0eb8192f75c096edcaa",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3493,
-     "sha256": "098c3e8f5f7ce75376b4e99c1b954bde0760e81c9f3c3375ce3136c49616799a",
+     "sha256": "c4428c72ec197bf59e1935f50393b218a5cbd5a8bd052eda5dfdfcaa5bdcd51d",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 46463,
-     "sha256": "54731a762ef588dfe73a43a6fd06631772fee2862f6754b69ce9b429e52350af",
+     "sha256": "608e9159481cdee88a230f53cdef2ed0a9e2c648de2ab21962768b1210dd101f",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -8252,7 +8435,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 44601,
-     "sha256": "fbd424372da5470e5bdad3a32af55ad43bc48c60f7c158754f56f8f4b9e6724f",
+     "sha256": "a6f15bed66241589794b64d1a3b511e396dbbf5c8686370bdc3e6e875c9c1034",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -8264,31 +8447,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 691,
-     "sha256": "025be1a48ea69c192d5243b3c484c857e0f5b3956f69684f89cc0adc9296b092",
+     "sha256": "28e6d91fec8899345f3a9a383c44ba3cf971d279d20bb926e879e7e5ccfa4ea7",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1144,
-     "sha256": "2a93890e074a9e79e031728f79a2eae8b8dfc0054d4e717e879386a8e7845290",
+     "sha256": "5890d86a635f9a929a16ce58a562ec88c914dc51c688501730eaa3fa91abe637",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 696,
-     "sha256": "1d720ca57907f01904dc4e62363bd6dc9fd01ba4503525602498b74a7c469714",
+     "sha256": "b7ad723e63780f0dd9d832c30f788a6432eae53952caae3c0c7e18976beeedae",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1151,
-     "sha256": "33f8009d700169613d192ee9c4f7828f8cf28a988ed5e25f786fa62c57e0982a",
+     "sha256": "228ece490c078ea9f383c19b961e734ab3f5e9f7275012a88004f990851b206c",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2651,
-     "sha256": "7924928eb814461c152641058e3170d9fb15093dd574fa1ffcbbe6cdbbd9dddb",
+     "sha256": "5cb6c909a24a3c296a73b92069cfd15c931a8d510366e6f464b530bc8ac11d8f",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -8727,7 +8910,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 399,
-     "sha256": "0e9a2117e97664efa81c7a30c665c04200b77b9a426c19b573492387468b2e73",
+     "sha256": "61d89316448166664e149abf98dc85cd5537bc1a28b552cb84f5d625feedd8c3",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -8739,19 +8922,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 3409,
-     "sha256": "fc1127360e76432be9fde18c401343c8dde29a1d2388cf5ecfb5b64671a24274",
+     "sha256": "920f37e245352dddf3155642a58e3fa1f146510c16250b45bdfe601c5c3b0d72",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3488,
-     "sha256": "0d14b2856647f4aaaa7a296782d74995304a0b021f5517778b4efc6949b1cf19",
+     "sha256": "43dfde957d4be15915e5b4b86643a7e9a6fa6ca732d042ba5f605ef20a73b34b",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 44320,
-     "sha256": "1d7bf7e123a621a8fecb44696979b3498d7ab3eb965059cc143670e7e5f6da38",
+     "sha256": "aa410f15b7ae1c43a5bdfb193e0ebaae50095f1bd2cd06ba52bacb8d5f09dcc7",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -8763,7 +8946,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 45222,
-     "sha256": "686995a37a5b84286a9b3fb20fea077ee1e1a08ae8014f9c47e44c8745978141",
+     "sha256": "bb0266b84de2780d85c7ec1460d6dae60a727b43e287774a6d428d455e11aa02",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -8775,31 +8958,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 692,
-     "sha256": "de59e2ff96fd57bd459103e0c6e44688d68c66093040a47503c17071da475cce",
+     "sha256": "b394ebb7e264e9b9efff62f0b07d4600148a510667bc49239bd934cc8f67d749",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1145,
-     "sha256": "465b2b39dc8a1b36da1e2467de03453d6002f88af1e106067e795c1ad33272c9",
+     "sha256": "17918c3b2bd3fd2cb36c00ccaf382c6918b72cf7da192f849bd5244b8ddfc634",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 702,
-     "sha256": "e180871bd8e8f926499ac0f02e44af1b51e22f56de4978f772703433eb9e16e3",
+     "sha256": "7468cba6435eb7097cc13eaa4755fbd07396a601b26d1260a0522addeab463f4",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1157,
-     "sha256": "4b3c3d11bcfea508857a84da8b640c37e62aa8e7569fb319b8dfdca201ca4d69",
+     "sha256": "a88a9c52af1d4de91891010c84fcb0c36a382d0f11968fde45c6d5525015af8b",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2660,
-     "sha256": "3b425360ed0de7261953d91a0d7dd66ec41ad8850dbd09c148a98af9ad4ceaa4",
+     "sha256": "4ea18d7f756aca9736674162c21bbe80e68910afd81bd376cd6a505aabe672d5",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]

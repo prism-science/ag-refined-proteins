@@ -1,0 +1,3 @@
+T cycle 3 (k=8) {'r_free_full': 0.09206, 'r_free_select': 0.08973, 'r_free_report': 0.09441, 'r_gap': 0.00882} cycle2 0.09232 -> -0.00026 | paired: E035f loop 5 0.09567
+T_r2 cycle 3 (k=8) {'r_free_full': 0.09233, 'r_free_select': 0.08982, 'r_free_report': 0.09487, 'r_gap': 0.00908} cycle2 0.09225 -> +0.00008 | paired: E035f loop 5 0.09501
+T_r3 cycle 3 (k=8) {'r_free_full': 0.09218, 'r_free_select': 0.09004, 'r_free_report': 0.09435, 'r_gap': 0.00972} cycle2 0.09217 -> +0.00001 | paired: E035f loop 5 0.09397

@@ -71,6 +71,13 @@ def export(table, where, args, dst):
 
 # ---------- per-target staging ----------
 targets = sorted(os.path.basename(p)[:-5] for p in glob.glob(f"{CUR}/*.json"))
+# AGRP_TARGETS limits the release to the listed targets (pull_from_pod.sh passes the targets already in the release;
+# state/current also holds onboarded donor and new targets that are not released).
+if os.environ.get("AGRP_TARGETS"):
+    want = os.environ["AGRP_TARGETS"].split()
+    missing = sorted(set(want) - set(targets))
+    if missing: raise SystemExit(f"no standing record for {missing}")
+    targets = sorted(want)
 records = {}
 for T in targets:
     rec = json.load(open(f"{CUR}/{T}.json")); records[T] = rec

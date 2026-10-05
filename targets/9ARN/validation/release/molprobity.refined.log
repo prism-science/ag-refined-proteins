@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20260929T1606Z/targets/9ARN/model/9ARN_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/9ARN/model/9ARN_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -64,7 +64,7 @@
     residue:
       pdb=" O   HOH A 214 " occ=0.85
     ... (remaining 14 not shown)
-  Time building chain proxies: 0.20, per 1000 atoms: 0.31
+  Time building chain proxies: 0.19, per 1000 atoms: 0.29
   Number of scatterers: 654
   At special positions: 0
   Unit cell: (44.783, 44.783, 220.058, 90, 90, 120)
@@ -143,12 +143,12 @@
   Number of custom bonds: simple=0, symmetry=0
   Time building additional restraints: 0.03
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 19.2 milliseconds
+  Conformation dependent library (CDL) restraints added in 19.1 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  142
 
-  Time building geometry restraints manager: 0.03 seconds
+  Time building geometry restraints manager: 0.04 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

@@ -1,6 +1,6 @@
-# phenix.model_vs_data /home/dev/runs/agrp_export_20260929T1606Z/targets/1L6X/model/1L6X_refined.cif /home/dev/runs/agrp_export_20260929T1606Z/_work/1L6X/merged.mtz
+# phenix.model_vs_data /home/dev/runs/agrp_export_20261003T1834Z/targets/1L6X/model/1L6X_refined.cif /home/dev/runs/agrp_export_20261003T1834Z/_work/1L6X/merged.mtz
 Data: --------------------------------------------------------------------------
-  Miller array info: /home/dev/runs/agrp_export_20260929T1606Z/_work/1L6X/merged.mtz:FP,SIGFP,systematic_absences_eliminated
+  Miller array info: /home/dev/runs/agrp_export_20261003T1834Z/_work/1L6X/merged.mtz:FP,SIGFP,systematic_absences_eliminated
   Observation type: xray.amplitude
   Type of data: double, size=35198
   Type of sigmas: double, size=35198
