@@ -5,10 +5,11 @@ Crystallographic models re-refined by an autonomous agent (the *autoresearch* ca
 and free-reflection flags it was scored on, the deposited model it started from, the verbatim refinement command, a
 uniform release-time validation, and the campaign's complete per-target decision log.
 
-Sixteen PDB entries. Seven released models have a lower R-free than the deposited file on the same free set; one is
-credited but still above the deposited file; eight are plain Phenix re-refinements of the deposited file because the
-campaign credited no change on them. The table says which is which. Nothing here is a ceiling: the campaign is still
-running and this repository is a dated snapshot of its standing records.
+Three PDB entries, the campaign's canonical set: 3TC7 (1.5 Å), 3QUE (2.7 Å) and 7KR0 (0.77 Å). All three released models
+have a lower R-free than the deposited file on the same free set. Two more ultra-high-resolution entries, 7R2H (cyclophilin D,
+0.79 Å) and 8C5N (CbpD, 0.75 Å), are being onboarded for the six-copy ensemble line and will be added with their baselines.
+The thirteen other targets of the August–September campaign are in the 2026-10-03 release (branch `release-20261003`).
+Nothing here is a ceiling: the campaign is still running and this repository is a dated snapshot of its standing records.
 
 ## Results
 
@@ -22,22 +23,9 @@ decisions (see *Method*). Every number is read from a file in `targets/<ID>/` by
 <!-- results-table:begin -->
 | Target | Res. (Å) | Entry | Deposited, our flags (full / report) | Re-refined, no changes (mean of 10) | This release (full / report) | Δ full: vs deposited / beyond re-refinement | Clashscore, rotamer outliers % (deposited → ours) | Status |
 |---|---|---|---|---|---|---|---|---|
-| [6CDX](targets/6CDX/README.md) | 1.0 | High-resolution crystal structure of fluoropropylated cystine… | 0.2258 / 0.2233 | 0.1901 | **0.1716 / 0.1725** | -0.0542 / -0.0184 (-36.9σ) | 9.6, 1.8 → 20.7, 1.7 | improved |
 | [3TC7](targets/3TC7/README.md) | 1.5 | Crystal Structure of Engineered Protein. Northeast Structural… | 0.1916 / 0.1893 | 0.1885 | **0.1717 / 0.1677** | -0.0200 / -0.0168 (-8.2σ) | 2.9, 1.4 → 2.5, 1.6 | improved |
 | [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP Kinase in Complex with Skepinone-L | 0.2879 / 0.2901 | 0.2668 | **0.2533 / 0.2642** | -0.0346 / -0.0135 (-8.0σ) | 10.6, 7.6 → 2.8, 4.3 | improved |
-| [6UDY](targets/6UDY/README.md) | 1.7 | X-ray co-crystal structure of compound 5 with Mcl-1 | 0.2592 / 0.2655 | 0.2567 | **0.2479 / 0.2555** | -0.0113 / -0.0088 (-1.1σ) | 12.9, 1.1 → 4.2, 0.8 | improved |
 | [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal… | 0.1174 / 0.1189 | 0.1163 | **0.1125 / 0.1147** | -0.0048 / -0.0038 (-15.9σ) | 4.7, 0.9 → 6.7, 1.3 | improved |
-| [1N7E](targets/1N7E/README.md) | 1.5 | Crystal structure of the sixth PDZ domain of GRIP1 | 0.2746 / 0.2620 | 0.2474 | **0.2447 / 0.2437** | -0.0299 / -0.0027 (-3.0σ) | 13.3, 1.3 → 8.4, 1.3 | improved |
-| [9D5U](targets/9D5U/README.md) | 1.35 | Nitrile hydratase S112A mutant | 0.2853 / 0.2917 | 0.2549 | **0.2532 / 0.2580** | -0.0321 / -0.0016 (-6.2σ) | 10.1, 0.3 → 4.5, 0.3 | improved |
-| [4QO4](targets/4QO4/README.md) | 1.7 | co-crystal structure of MDM2 (17-111) with compound 16,… | 0.3128 / 0.3175 | 0.3502 | 0.3243 / 0.3307 | 0.0114 / -0.0259 (-6.4σ) | 16.0, 6.0 → 4.5, 2.4 | credited, not below deposited |
-| [1L6X](targets/1L6X/README.md) | 1.65 | FC FRAGMENT OF RITUXIMAB BOUND TO A MINIMIZED VERSION OF THE… | 0.2794 / 0.2848 | 0.2427 | 0.2390 / 0.2410 | -0.0403 / -0.0037 (-0.6σ) | 11.8, 5.3 → 3.5, 3.1 | re-refined baseline, nothing credited |
-| [9ARN](targets/9ARN/README.md) | 1.41 | Structure and interactions of HIV-1 gp41 CHR-NHR reverse… | 0.2952 / 0.2875 | 0.2983 | 0.2962 / 0.2908 | 0.0010 / -0.0021 (-0.6σ) | 1.6, 0.0 → 1.6, 1.5 | re-refined baseline, nothing credited |
-| [9D5Y](targets/9D5Y/README.md) | 1.35 | Nitrile hydratase S112T mutant | 0.2888 / 0.2936 | 0.2347 | 0.2342 / 0.2412 | -0.0546 / -0.0005 (-2.6σ) | 11.1, 0.3 → 3.5, 1.1 | re-refined baseline, nothing credited |
-| [8IS2](targets/8IS2/README.md) | 1.32 | Crystal structure of a polyketide aromatase/cyclase Abx(+)D… | 0.2756 / 0.2900 | 0.2666 | 0.2668 / 0.2827 | -0.0088 / 0.0002 (+0.3σ) | 1.5, 0.6 → 2.7, 0.6 | re-refined baseline, nothing credited |
-| [7DVR](targets/7DVR/README.md) | 1.7 | Crystal structure of heme sensor protein PefR from… | 0.2948 / 0.2698 | 0.2871 | 0.2873 / 0.2710 | -0.0075 / 0.0003 (+0.4σ) | 7.0, 1.5 → 3.1, 0.7 | re-refined baseline, nothing credited |
-| [3DUT](targets/3DUT/README.md) | 1.55 | The high salt (phosphate) crystal structure of deoxy hemoglobin… | 0.2881 / 0.2794 | 0.2532 | 0.2537 / 0.2442 | -0.0344 / 0.0005 (+1.3σ) | 15.9, 4.3 → 3.5, 2.6 | re-refined baseline, nothing credited |
-| [1V2X](targets/1V2X/README.md) | 1.5 | TrmH | 0.2559 / 0.2658 | 0.2347 | 0.2354 / 0.2450 | -0.0204 / 0.0007 (+1.0σ) | 31.3, 5.7 → 13.1, 5.7 | re-refined baseline, nothing credited |
-| [1LZ9](targets/1LZ9/README.md) | 1.7 | ANOMALOUS SIGNAL OF SOLVENT BROMINES USED FOR PHASING OF… | 0.2738 / 0.2649 | 0.2758 | 0.2822 / 0.2690 | 0.0084 / 0.0064 (+1.2σ) | 7.6, 2.8 → 3.5, 1.9 | re-refined baseline, nothing credited |
 <!-- results-table:end -->
 
 Status meanings:
@@ -60,8 +48,7 @@ the unbiased estimate, improved little or not at all; the full-set gain sits mos
   outliers 4.29 % at release time (3.96 % in the previous model, 7.59 % deposited; the campaign calls them pre-existing).
 
 Read each target's card (`targets/<ID>/README.md`) before quoting it. The cards carry the caveats the campaign attached to
-its own numbers: 7KR0's geometry is above the campaign's own caps, 6UDY's gain is within its noise floor, 3QUE's deposited
-header R-free is a REFMAC number, and so on.
+its own numbers: 7KR0's geometry is above the campaign's own caps, 3QUE's deposited header R-free is a REFMAC number, and so on.
 
 ## Ensemble representations
 
