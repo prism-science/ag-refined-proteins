@@ -1,0 +1,1 @@
+E035d step 2: two stage-3 cycles (hygiene -> main-chain pass -> harness pick -> untangling loop) from the anisotropic finals; STAGE3_PICK=own; seeds /home/dev/runs/7KR0/experiments/e035d_aniso/seeds (aniso_final.pdb of T/T_r2/T_r3 as current0)

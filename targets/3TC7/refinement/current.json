@@ -1,12 +1,12 @@
 {
  "target": "3TC7",
- "model": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/candidate_arm/refine_001.cif",
- "maps_mtz": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/candidate_arm/refine_001.mtz",
- "cycle_index": 57,
+ "model": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.cif",
+ "maps_mtz": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.mtz",
+ "cycle_index": 913,
  "stage": "rerefine",
- "r_free_select": 0.17814869528687724,
- "r_free_report": 0.16726042463813334,
- "r_free_full": 0.17276394500804818,
- "r_work": 0.1351496281935661,
- "updated_at": "2026-09-09T16:55:12+00:00"
+ "r_free_select": 0.1754544204245543,
+ "r_free_report": 0.16768523222205486,
+ "r_free_full": 0.17161219977360884,
+ "r_work": 0.13499200013114948,
+ "updated_at": "2026-10-03T05:45:25+00:00"
 }

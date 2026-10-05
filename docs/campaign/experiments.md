@@ -746,6 +746,25 @@ before run)
   loop 3: C2 0.09757 (+0.00003 from loop 2), C1_r2 0.09693 (+0.0001): flat, with gaps 0.0102–0.0105 against the T arms'
   0.0089–0.0091. T−C1 at matched loop: −0.0014 (T vs C1 0.09819), −0.0011 (T_r2 vs C1_r2 0.09682), −0.0021 (T_r3 vs
   C1_r3 0.09681); the third pick adds only 2–17 sites. Best six-copy model so far: T_r3 loop 2, 0.09467.
+- **Interim 5 (2026-09-29T17:20Z): loop 3 (T) / loops 3–4 (controls), after the resume.** T **0.09617** (select 0.09445,
+  report 0.09791; gap 0.0088), T_r2 **0.09526** (0.09275 / 0.09779; 0.0091), T_r3 **0.09452** (0.09228 / 0.09679; 0.0093):
+  −0.0006 / −0.0004 / −0.0002 from loop 2, with picks of 5 or fewer sites — the descent is now the connectivity loop's,
+  not the picker's. Controls: C1 loop 3 0.09800, C2 loop 4 0.09738, C1_r2 loop 4 0.09658, C1_r3 loop 3 0.09666 (−0.0002
+  to −0.0004 per loop, plain refinement). T−C1 at matched loop: −0.0018, −0.0013, −0.0021. Best model: T_r3 loop 3, 0.09452.
+- **Interim 6 (2026-09-29T20:00Z): loop 4.** T **0.09582** (select 0.09428, report 0.09738; gap 0.0090), T_r2 **0.09494**
+  (0.09283 / 0.09708; 0.0093), T_r3 **0.09413** (0.09211 / 0.09618; 0.0092): −0.0003 to −0.0004 per loop, steady. Controls
+  (scorer endpoints, provisional): C1 loop 5 0.09757, C2 loop 7 0.09711, C1_r2 loop 6 0.09620, C1_r3 loop 5 0.09663.
+  The stage-3 cycle on these models (E035c second run) beats the plain loop from the same seed by 0.0017–0.0023 (E035c
+  interim 4).
+- **Interim 7 (2026-09-29T21:45Z): loop 5 — the plain loop is flattening.** T 0.09567 (−0.0002), T_r2 0.09501 (+0.0001,
+  first non-improvement), T_r3 0.09397 (−0.0002); gaps 0.0090–0.0095. Controls: C1 loop 7, C2 loop 8, C1_r2 loop 7 in the
+  rescorer's tables. The endpoint rule has not triggered on any arm.
+- **Interim 8 (2026-09-30T00:00Z): loop 6.** T 0.09544 (−0.0002), T_r2 0.09504 (+0.00003, second flat loop), T_r3 0.09385
+  (−0.0001). The plain loop is at its plateau at 0.094–0.095; the arms run on to the 12-loop cap for the paired tables.
+- **Interim 9 (2026-09-30T02:10Z): loop 7.** T 0.09531 (−0.0001), T_r2 0.09460 (−0.0004), T_r3 0.09387 (0.0000). C2 has
+  reached the 12-loop cap.
+- **Interim 10 (2026-09-30T05:10Z): loop 8.** T 0.09501 (−0.0003), T_r2 0.09455 (0.0000), T_r3 0.09388 (0.0000). All four
+  control arms have reached the 12-loop cap; the T arms run on to theirs.
 - **Result:** pending.
 
 ### E035c — automated stand-in for the authors' stage 3 on 7KR0 (registered 2026-09-28, rationale before run)
@@ -822,6 +841,40 @@ before run)
   closing-loop outputs at k = 3i−1. The paired reading is against the same arm continuing in E035f (pick → untangling loop
   from the same model), i.e. the E035f T arm at loop 2+i: any difference is what hygiene and the main-chain pass add on a
   model that picking has changed, which is the authors' stated reason for stage 3. Launched from a per-run script copy.
+- **Environment note 7 (2026-09-29T17:05Z): picker call failed once.** Hygiene is free on these seeds (T 0.09677 → 0.09673,
+  T_r2 0.09568 → 0.09571, T_r3 0.09467 → 0.09458; 980–1 081 near-zero copies deleted, 0 merges) and the main-chain pass ran
+  (T: 0.09680 after it), but the `STAGE3_PICK=own` branch passed its default picker arguments as one quoted word, so the
+  picker exited on "unrecognized arguments" and the arms stopped. Fixed (word-split like stage2p) and a resume-at-pick-step
+  added (`RESUME=1` picks up from the main-chain output, slot 3i−2); T and T_r2 resumed 16:58–16:59Z (T's first pick: 18
+  sites, 0.09680 → 0.09612 before refinement), T_r3 resumes automatically when its main-chain pass ends.
+- **Interim 4 (2026-09-29T20:00Z): cycle 1 — the stage-3 cycle beats the plain picking loop from the same model.** Seeds
+  are the E035f loop-2 models; the paired reference is E035f loop 3 (pick → untangling loop from the same model). Full
+  R-free (select / report; gap), cycle 1 vs E035f loop 3: T **0.09389** (0.09178 / 0.09603; 0.0086) vs 0.09617 (0.09445 /
+  0.09791; 0.0088) → −0.0023; T_r2 **0.09354** (0.09096 / 0.09615; 0.0092) vs 0.09526 → −0.0017; T_r3 **0.09285** (0.09036
+  / 0.09537; 0.0097) vs 0.09452 → −0.0017. Select −0.0027 / −0.0018 / −0.0019 (≈ 6–10σ_select), report −0.0019 / −0.0016 /
+  −0.0014: the same sign on every subset, gaps comparable. What differs from the plain loop: hygiene removed ~1 000
+  near-zero water copies before the connectivity solve (a smaller ILP within the same 3-min limit), the main-chain-only
+  pass, and a pick on the cleaned model (18 sites for T against 5 in the plain loop). Best six-copy model: T_r3, 0.09285.
+  Cycles 2–3 running.
+- **Interim 5 (2026-09-29T23:30Z): cycle 2.** T **0.09232** (select 0.08973, report 0.09494; gap 0.0088), T_r2 **0.09225**
+  (0.08999 / 0.09454; 0.0088), T_r3 **0.09217** (0.09005 / 0.09432; 0.0096): −0.0016 / −0.0013 / −0.0007 from cycle 1.
+  Paired against the plain loop at the same depth (E035f loop 4: 0.09582 / 0.09494 / 0.09413): −0.0035 / −0.0027 / −0.0020
+  full, select −0.0046 / −0.0028 / −0.0021, report −0.0024 / −0.0025 / −0.0019 — every subset, every replicate. The
+  stage-3 cycle is worth ≈ 0.001–0.0016 per cycle where the plain loop is worth ≈ 0.0002. Best six-copy model: T_r3
+  cycle 2, 0.09217 full. Cycle 3 running; if it still moves by more than 2σ_full the run is extended to six cycles with
+  `RESUME=1` (time box 2026-09-30T12:00Z).
+- **Interim 6 (2026-09-30T03:40Z): cycle 3 — converged.** T **0.09206** (select 0.08973, report 0.09441; gap 0.0088), T_r2
+  0.09233 (0.08982 / 0.09487; 0.0091), T_r3 0.09218 (0.09004 / 0.09435; 0.0097): −0.0003 / +0.0001 / 0.0000 from cycle 2,
+  all within 2σ_full, so the run is not extended. The third pick added 2 sites. Against the plain loop at the same depth
+  (E035f loop 5: 0.09567 / 0.09501 / 0.09397): −0.0036 / −0.0027 / −0.0018.
+- **Result (second run, 2026-09-30):** the automated stage-3 cycle (hygiene with the 0.02 floor and same-altloc merge →
+  main-chain-only connectivity pass → harness pick → full untangling loop) takes the six-copy model from the E035f loop-2
+  state (0.0947–0.0968 full) to **0.0921–0.0923** in three cycles on all three randomized starts, 0.002–0.0036 below the plain
+  picking loop from the same models at the same depth, on every subset, with R-gaps 0.0088–0.0097 (plain loop 0.0090–0.0097).
+  It converges at cycle 3. Best six-copy model: T cycle 3, `e035c2_stage3/arms/T/Untangler/output/7KR0_6conf_B0_current8.pdb`,
+  full 0.09206 / select 0.08973 / report 0.09441 (R-work 0.0832). The manual part of the authors' stage 3 (identity
+  mix-ups fixed by hand) is not in this cycle; what remains between 0.092 and the paper's 0.064 is that, the anisotropic
+  finish (E035d), and whatever their two further rounds delivered. Representation-level result (§18.1); nothing promoted.
 
 ### E035d — the authors' anisotropic-B finish on 7KR0 (registered 2026-09-28, rationale before run)
 - **Rationale.** App. D: for Mac1 the B factors were converted to anisotropic and refined with restraints until convergence, then
@@ -840,4 +893,150 @@ before run)
   above the authors' 0.30, so by their rule the conversion is kept; under thresholds_v6 (D495) a Δgap beyond +2σ_gap is
   `overfit_suspect` and would not be adopted for a deliverable. Both verdicts stand on record; the number is
   representation-level (§18.1: six copies, anisotropic B on 17 616 atoms at 0.77 Å). `e035d_dryrun/aniso/T_r3_k1_aniso/`.
-- **Result:** pending.
+- **Environment note 2 (2026-09-30T03:50Z): run on the stage-3 finals.** The three E035c-2 cycle-3 models (T 0.09206, T_r2
+  0.09233, T_r3 0.09218 full) each: convert to anisotropic (0 mc), 10 macro-cycles B-only (`-x -N -W`, seed 42), scored before
+  and after by the harness; `e035d_aniso/aniso/<arm>_aniso/`. Judged by the authors' 30 % rule and by the R-gap gate
+  (+2σ_gap), both quoted. If kept, the authors' "two additional times" (two more stage-3 cycles on the anisotropic model)
+  follow as E035d's second step.
+- **Result, step 1 (2026-09-30T04:30Z): the conversion passes the authors' rule on all three finals and fails the campaign's
+  gate on all three.** Harness, iso → aniso (full; select / report; R-work; gap): T 0.09206 → **0.08792** (0.08973 →
+  0.08580 / 0.09441 → 0.09007; R-work 0.08324 → 0.07505; gap 0.0088 → 0.0129), T_r2 0.09233 → **0.08796** (0.08982 →
+  0.08560 / 0.09487 → 0.09035; 0.08325 → 0.07532; 0.0091 → 0.0127), T_r3 0.09218 → **0.08812** (0.09004 → 0.08611 /
+  0.09434 → 0.09015; 0.08246 → 0.07476; 0.0097 → 0.0134). ΔR-free / ΔR-work = 0.50 / 0.55 / 0.53, above the authors' 0.30:
+  kept by their rule. Δgap +0.0041 / +0.0036 / +0.0036 = 22–25σ_gap: `overfit_suspect` under thresholds_v6 (D495), so the
+  campaign would not adopt it for a deliverable. Both verdicts stand; the number is representation-level (six copies,
+  8 997 ANISOU records). Step 2 (two more stage-3 cycles on the anisotropic models, the authors' "two additional times")
+  runs in `e035d_post/` (`STAGE3_PICK=own`, N = 2; the wrapper's template leaves the ADP type to the model, so the loops
+  refine anisotropic B). Best six-copy model so far: T aniso, `e035d_aniso/aniso/T_aniso/aniso_final.pdb`, 0.08792 full.
+
+### E036 — one generation of the graph search on 3QUE: does the restricted-pair ranking predict the combined full pair? (registered 2026-10-01, rationale before run)
+- **Rationale.** The serial driver judges one change at a time, five per cycle, and 64 of its 70 credits were water edits
+  (`state/exports/changes.csv`, 2026-09-18). `docs/md/SPEC_GRAPH_SEARCH.md` §2 replaces the cycle with a generation: every
+  proposer runs on one base, every candidate is judged by its own site-restricted pair concurrently, the accepted set is
+  corrected for multiplicity (PROTOCOL §4.4(b), D507), non-conflicting winners are combined, and the combinations are judged by
+  full pairs against shared null arms. The design rests on one assumption that has never been measured: that a candidate's
+  restricted-pair attributable (8 macro-cycles, selection only) predicts its contribution to a combined full refinement. If
+  it does not, the generation adopts the wrong subsets and the leave-one-out table says so.
+- **Design.** Base: the standing 3QUE model (`state/current/3QUE.json`, 0.2589 full), the D421/D485 water-occupancy override
+  on every arm. `scripts/run_graph.sh 3QUE --max-generations 1 --beam 1 --max-candidates 60 --n-null 5` under
+  `thresholds_v9` with the sham nulls of E037 measured first (`--measure-nulls`); every stage (correction, solvent,
+  protein_altloc, gaps, zone) plus the protocol toggles of SPEC §2.6. Lane `graph`, 28 slots. Readout, pre-registered: (1) the
+  rank correlation (Spearman) between each winner's restricted attributable and its leave-one-out contribution
+  (full_delta − loo_delta) in the combined set; (2) whether the "all winners" set is credited (≤ −2σ_select against the
+  shared null, no R-gap or divergence flag) and whether its report half agrees in sign; (3) wall-clock of the generation
+  against the serial driver's last 3QUE cycle (D492: ≈ 25–40 min per 5 kept changes). Negative outcome = (1) below 0.3 or
+  (2) regressed with `interaction_only`; then the combination step is redesigned (pairwise pairs) before any wider run.
+- **Not claimed.** Nothing is promoted by this run (`--no-promote`); the deliverable moves only under the D484/D499/D508
+  rules from a later run.
+
+### E037 — per-class sham nulls on the canonical trio (PROTOCOL §4.4(b), the D507 measurement) (registered 2026-10-01, rationale before run)
+- **Rationale.** Every verdict on record is a k·σ_abs verdict; §4.4(b) requires the acceptance null to be measured per change
+  class from ≥ 50 unsupported changes through the identical restricted pair. D507 priced it at 15 h wall for thirteen targets
+  at 20 slots; with the pool it is one wave per class. The result sets the `thresholds_v9` bars and lets every recorded
+  verdict be re-judged (`scripts/experiments/exp_retro_v9.py`, the D442 procedure).
+- **Design.** `autoref sham-null --target T --classes water_add,water_remove,protein_altloc_add,rotamer_fix,peptide_flip,zone_rsr
+  --n 50` on the standing model of 3QUE, 3TC7 and 7KR0 (`stages/sham_null.py`, draws deterministic from
+  sha256(target, node, class, i), standing `refine_extra` per target, weights frozen, 8 macro-cycles, selection only). Rows:
+  `sham_null` (values, 99th-percentile threshold per class) and one `changes` row per instance (`control_random_*`).
+  Readout: per target × class the threshold against the standing −2σ_select bar, and the retro table (how many recorded
+  credits survive). Expected from D497: on 3TC7 (σ_select 0.00008) the sham thresholds are far wider than 2σ and most of the
+  sub-0.001 water credits of 3TC7.20260910v6 do not survive; on 3QUE the two bars should be close.
+- **Not claimed.** No verdict on record changes until a D-row adopts v9 (D515 registers the file; adoption is the operator's).
+
+### E038 — transfer proposals into 3QUE from isomorphous 1.6 Å p38α entries (registered 2026-10-01, rationale before run)
+- **Rationale.** 3QUE is the one canonical target where per-residue conformers are weakly determined (2.7 Å). 108 deposited
+  p38α entries share its cell (`targets/canonical.yaml`, p38a tier B); 6Y4X (1.60 Å) and 9MHB (1.65 Å) are the best. A
+  water, an alternate conformation or a rotamer seen at 1.6 Å in the same lattice is a proposal, not evidence: judged on
+  3QUE's own flags it uses none of 3QUE's reflections (PROTOCOL §3 untouched). E033's reference-model restraints from 6SP9
+  (+0.0006, null) were the restraint form of the same information; a per-site proposal can be rejected per site.
+- **Design.** Onboard 6Y4X and 9MHB (`scripts/onboard_series.sh --anchor 3QUE 6Y4X 9MHB`) so their models are refined on
+  their own data under the campaign protocol first (a transfer source is the re-refined model, not the header model).
+  Then one generation on 3QUE with `--stages transfer` only (`stages/proposers.py::transfer_*`, superposition stats in every
+  `tool_params`), judged exactly as E036. Readout: number of transfer proposals by kind, how many pass the local gates, how
+  many are BH-accepted, the credited combined set with Δreport, and the per-kind acceptance rate against the native proposers
+  of E036 on the same base.
+- **Smoke (2026-10-01T17:16–17:26Z, `runs/3QUE/graph/3QUE.graph-smoke-20261001/`, thresholds_v9, `--no-measure-nulls
+  --no-promote`, solvent only, 8 candidates, 2 null seeds, lane graph 20 / untangler 8).** Machinery check, not the E036
+  readout. All 8 local evaluations ran concurrently (≈ 20 s wall); 6 adds and 1 removal failed RSCC; A5012 (+0.00180) and
+  A5015 (−0.00048) through the restricted pair, judged on the k·σ fallback (no null for the class): none accepted, nothing
+  combined. Base continued as its re-refined null arm (Δselect +0.0013, inside the band). Consultations: select 2. Measured:
+  restricted arm ≈ 118 s, full arm ≈ 10 min, peak RSS ≈ 1.3 GB per 3QUE refinement (`jobs.max_rss_mb`). A concurrent
+  `autoref sham-null --n 4 --node-id SMOKE-20261001` measured water_add values +0.0011/+0.0030/+0.0005/+0.0012 (too few to use;
+  kept under its own node id so no real generation reads it).
+
+### E039 — is D512's 3TC7 gain plain phenix.refine? Phenix water picking on the standing model, paired (registered 2026-10-02, rationale before run)
+- **Rationale.** D512 lists the operator's 3TC7 components as qFit residue build + connectivity optimisation, water picking
+  (−0.018), riding H with a fixed ADP weight (−0.007) and XYZ weight optimisation (−0.006). The standing model (0.1728 full,
+  `state/current/3TC7.json`, E028b c057) already carries riding H with the fixed ADP weight (D496) and the wrapper optimises
+  the XYZ weight by default (`RefineParams.optimize_xyz_weight=True`). The largest component, Phenix's in-refinement water
+  picking (`main.ordered_solvent`), has never been run on that model: the campaign's waters come from the discrete solvent
+  stage. If most of 0.1728 → 0.1583 is ordered_solvent, a plain refinement reproduces it on our frozen flags. A second
+  possibility is checked by the same numbers: if 0.1583 came from a refinement that generated its own free set (the D430
+  precedent: the Dynamic PDB 3TC7 model was on 1993 free reflections against our 2075), no arm here approaches it.
+- **Design.** `scripts/experiments/exp_refine_param.py 3TC7 <c> --knob ordered_solvent` and `--knob ordered_solvent+macro_cycles:10`,
+  seeds 1–3 each, standing 3TC7 overrides on both arms (`{"optimize_adp_weight": false, "wxu_scale": 0.03}`), thresholds_v8
+  (k·σ, σ_select 0.000084 — the D497 caveat: on 3TC7 the divergence and R-gap gates are the guards that matter), cycle
+  indices 901–906 (a block clear of the graph run). Lane `zz_e039` (6 slots taken from 7KR0's 22). Readout: attributable
+  ΔR-free-select per seed, report/full sign, Δgap, water count before/after, and the full R-free each arm reaches against
+  0.1583. Nothing is promoted by this script; a credited arm would become a graph-search base by a later D-row.
+- **Result 2026-10-02 (`runs/3TC7/experiments/e039_ordered_solvent/`, 6/6 paired, thresholds_v8): Phenix water picking does
+  not reproduce D512; nothing credited.** Null arms full 0.1730–0.1733 / report 0.1680–0.1686 / select 0.1779–0.1780 /
+  R-work 0.1348. `ordered_solvent`: attributable −0.0051/−0.0062/−0.0056 select, full 0.1710/0.1709/0.1714, report
+  0.1691/0.1700/0.1705 (worse than null by +0.0011 to +0.0019), R-work 0.126–0.130, Δgap +0.0025 to +0.0065 (16–42σ_gap).
+  `+macro_cycles:10`: attributable −0.0064/−0.0066/−0.0066, full 0.1706/0.1702/0.1704, report 0.1695/0.1691/0.1694, Δgap
+  +0.0016 to +0.0044. Every arm `overfit_suspect` (D495 gate): the select half falls 0.006 while the report half rises and
+  R-work falls twice as far as R-free — not adopted. Best full R-free from plain refinement: 0.1702, 0.012 above 0.1583. The
+  operator's number is therefore not plain phenix.refine on these flags: either the manual qFit/connectivity work (the
+  graph search's altloc and transfer proposers) or a different free set (D430). The model file is still needed. File searches
+  2026-10-02 (local home, pod home, `/mnt/diffuse-shared`, `prism-science` repos incl. `ag-refined-proteins`) found no copy.
+
+### Untangler relabel on single-model nodes (graph candidate, PROTOCOL §18) — pod smoke 2026-10-02/03
+- `autoref/tools/untangler.relabel` on the standing 3TC7 model (`runs/3TC7/experiments/untangle_smoke_20261002/`): after four
+  fixes (patch script on the pod; REMARK 3 header 'n/d'; hydrogens out of the ensemble view, riding H follow their parent;
+  ligands/ions out — 3TC7's acetate broke Untangler's H-parent lookup), the ILP step completes: preparation ≈ 90 s, HiGHS
+  subproblems at 120 s each, 3197 s wall, **697 ILP moves, none changes a label of the single model** (the moves swap the
+  duplicated copies of unsplit atoms in the ensemble view). Reading: 3TC7's deposited-plus-campaign altloc labelling is already
+  connectivity-consistent; no candidate to judge. Enabled for the 7KR0 graph run (`state/untangle.enabled`, 89 split
+  residues) where E035 found tangles in the six-copy representation. Cost per node ≤ 3600 s on 4 slots, in parallel with g.0–g.4.
+
+### E040 — 3QUE fixed XYZ weight wxc_scale 0.1, seeded (registered 2026-10-03, rationale before run)
+- **Rationale.** In `3QUE.graph-weekend-20261002b` generation 1 the toggle `wxc_scale_0p1` (fixed coordinate-restraint weight
+  0.1, optimisation off) moved select −0.0026 (1.8σ_select) and report −0.0046 (2.1σ_report): both halves improved, just inside
+  the credit bar, and the edge was refused. One seed cannot separate that from noise; three can.
+- **Design.** `exp_refine_param.py 3QUE 911..913 --knob wxc:0.1 --seed 1..3`, standing 3QUE override on both arms
+  (D421/D485), thresholds_v8, lane common. Readout: attributable per seed, report/full sign, Δgap. Credited on all three with
+  agreeing halves → the next 3QUE graph run starts from that protocol (a D-row).
+- **E040 result 2026-10-03 (`runs/3QUE/experiments/e040_wxc01/`, 3/3, thresholds_v8): a real paired gain that does not beat
+  the record.** Attributable select −0.00256 / −0.00378 / −0.00376 (seeds 1–3); seeds 2 and 3 **credited** (2.6σ), seed 1
+  refused by the R-gap gate (Δgap +0.0099). Report half improves in all three (−0.0047 / −0.0030 / −0.0035); seeds 2–3 narrow the
+  gap (−0.0041 / −0.0046). Full R-free null → candidate: 0.2619 → 0.2583, 0.2649 → 0.2615, 0.2658 → 0.2622. The null arms re-refine
+  the standing model 0.003–0.007 above its recorded 0.2589 (the D423 best-base effect), so neither credited arm is below the
+  deliverable; promotion would be refused (D499). Reading: wxc_scale 0.1 (fixed) is a better 3QUE protocol than optimised XYZ
+  weights by ≈ 0.0036 against matched nulls; adopting it means re-measuring 3QUE's sham nulls under it (≈ 7 h at 8 slots) — a
+  D-row decision, not made mid-campaign.
+
+### E041 — replicate 44PS (Passmore et al. 2026) on 7KR0's data with this harness (registered 2026-10-03, operator: "go all in")
+- **Target, verified this session.** 44PS (RCSB, released 2026-09-30) is the paper's deposited six-conformation re-refinement of
+  7KR0's dataset (`pdbx_database_related`: "44PS is a re-refined structure, which uses the dataset of entry 7KR0"). Its
+  deposited free set is IDENTICAL to our frozen flags (`scripts/verify/flag_identity.py`: 8712 free, 0 differing; the header's
+  8709 is the depositors' count). Scored on our flags (`runs/7KR0/experiments/score_44PS/44PS_on_our_flags.json`): **R-free
+  0.06566 full / 0.06533 select / 0.06600 report, R-work 0.04845**; 17 995 atoms, 7 722 H, six altlocs, 2 581 water atoms
+  (summed occupancy 454, median 0.15, 24 % below 0.1).
+- **Where we stand.** Best six-copy models: E035d aniso finals 0.0879–0.0881 full (fail the R-gap gate); E035c2 cycle 3
+  0.0921 (1 305 water atoms, summed occupancy 248); E035d step-2 loopEnd4 0.0913–0.0922 (no better than the finals).
+- **The paper's recipe (Appendix D, read 2026-10-03):** six copies shaken 0.5 Å, ≥ 20 restrained mc; connectivity loop (1
+  unrestrained mc → ILP → 10 restrained mc at wc 0.5) to convergence; then the loop with conformation-aware Phenix water picking
+  in the second half of the restrained step (12 mc), new waters occupancy 0.33, minimum occupancy 0.02, minimum separation from
+  other altlocs 0.03 Å, `ordered_solvent.ignore_final_filtering_step=True`, water occupancies refined; ~30 manual Coot changes
+  (side chains displaced from density; merging low-occupancy bulk-solvent waters to make room at adjacent features; residues
+  moved to their own conformation, refit, reassigned, then ILP), 1–3 loops between manual rounds; anisotropic B near the end, then
+  loop + water addition + manual twice more. "Unable to achieve R free below 10 % without the additional treatment for the bulk
+  solvent."
+- **Design.** Phase A (diagnostics, decompose the 0.022 gap): A1 44PS through one restrained step of our loop (does our pipeline
+  hold 0.066?); A2 our best protein + 44PS's waters; A3 44PS's protein + our waters; each one restrained step, same settings,
+  scored by the campaign evaluator. Phase B (production, from the best model): the paper's water treatment at scale with our own
+  picker (E035b showed Phenix 2.1's picker wrecks six-copy models in our hands; E035f's own picker works) — repeated picking at
+  falling thresholds into the bulk solvent with per-copy waters, occupancy refinement, merging of near-coincident low-occupancy
+  waters, untangling loop between rounds; an automated stand-in for the manual pass (per-conformer side-chain refits where
+  difference density is large, each followed at once by the ILP); anisotropic B late; repeated. Every model scored on the frozen
+  flags; quoted with the R-gap and the select/report halves; ensembles are the PROTOCOL §18.1 column, never the deliverable.

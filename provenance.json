@@ -1,17 +1,17 @@
 {
- "exported_at": "2026-09-29T16:09:02Z",
+ "exported_at": "2026-10-03T18:36:33Z",
  "pod_hostname": "actl-ws-xraymemory-autoresearch-devspace-8597768cc8-sqmlj",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "ledger_sqlite_sha256": "debed45855544555d78514beb2c9aedabcd5bae324033bad3ac0dc087fb68b57",
+ "ledger_sqlite_sha256": "637c9ff584b62b9323f4fa4abd06b4d1252041337ced4b71b4c7dfcbdc5f3253",
  "ledger_counts": {
-  "cycles": 215,
-  "changes": 2393,
-  "jobs": 16790,
-  "deviations": 220,
-  "noise_floor": 16,
-  "checks": 142,
+  "cycles": 276,
+  "changes": 6229,
+  "jobs": 38999,
+  "deviations": 235,
+  "noise_floor": 21,
+  "checks": 195,
   "bisections": 34,
-  "defects": 500
+  "defects": 1061
  },
  "state_current": {
   "1L6X": {
@@ -76,27 +76,27 @@
   },
   "3QUE": {
    "target": "3QUE",
-   "model": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.cif",
-   "maps_mtz": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.mtz",
-   "cycle_index": 62,
+   "model": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.cif",
+   "maps_mtz": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.mtz",
+   "cycle_index": 922,
    "stage": "rerefine",
-   "r_free_select": 0.2536515243015218,
-   "r_free_report": 0.26440837191730937,
-   "r_free_full": 0.25891058999407407,
-   "r_work": 0.21131427444753276,
-   "updated_at": "2026-08-28T17:28:38+00:00"
+   "r_free_select": 0.24204807816133822,
+   "r_free_report": 0.26333571119801324,
+   "r_free_full": 0.25245568683792774,
+   "r_work": 0.21036592843005836,
+   "updated_at": "2026-10-03T09:13:23+00:00"
   },
   "3TC7": {
    "target": "3TC7",
-   "model": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/candidate_arm/refine_001.cif",
-   "maps_mtz": "/home/dev/runs/3TC7/experiments/e028b_riding_h_pre/paired/candidate_arm/refine_001.mtz",
-   "cycle_index": 57,
+   "model": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.cif",
+   "maps_mtz": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.mtz",
+   "cycle_index": 913,
    "stage": "rerefine",
-   "r_free_select": 0.17814869528687724,
-   "r_free_report": 0.16726042463813334,
-   "r_free_full": 0.17276394500804818,
-   "r_work": 0.1351496281935661,
-   "updated_at": "2026-09-09T16:55:12+00:00"
+   "r_free_select": 0.1754544204245543,
+   "r_free_report": 0.16768523222205486,
+   "r_free_full": 0.17161219977360884,
+   "r_work": 0.13499200013114948,
+   "updated_at": "2026-10-03T05:45:25+00:00"
   },
   "4QO4": {
    "target": "4QO4",
@@ -211,7 +211,8 @@
   "/home/dev/runs/verify_20260907",
   "/home/dev/runs/verify_20260909",
   "/home/dev/runs/verify_20260910",
-  "/home/dev/runs/verify_20260917"
+  "/home/dev/runs/verify_20260917",
+  "/home/dev/runs/verify_20261003"
  ],
  "targets": [
   "1L6X",

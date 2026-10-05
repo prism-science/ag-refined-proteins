@@ -1,0 +1,26 @@
+{
+ "model": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g002/N1.0/combined/g002.N1.0.loo3/candidate_arm/refine_001.cif",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 4834,
+ "n_hydrogen": 2294,
+ "altlocs": [
+  "A",
+  "B",
+  "C"
+ ],
+ "n_water_residues": 231,
+ "n_reflections": 41052,
+ "n_free": 2075,
+ "n_select": 1037,
+ "n_report": 1038,
+ "n_work": 38977,
+ "d_min": 1.4999525524595603,
+ "r_work_fmodel": 0.13494557062201468,
+ "r_free_fmodel": 0.17183178692079418,
+ "r_work_manual": 0.13494574125239736,
+ "r_free_manual": 0.17187773981974425,
+ "r_free_select_manual": 0.17618514892280412,
+ "r_free_report_manual": 0.16747532327065384,
+ "wall_s": 1.3
+}

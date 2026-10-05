@@ -1,12 +1,12 @@
 {
  "target": "3QUE",
- "model": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.cif",
- "maps_mtz": "/home/dev/runs/3QUE/experiments/water_occupancy/candidate_arm/refine_001.mtz",
- "cycle_index": 62,
+ "model": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.cif",
+ "maps_mtz": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.mtz",
+ "cycle_index": 922,
  "stage": "rerefine",
- "r_free_select": 0.2536515243015218,
- "r_free_report": 0.26440837191730937,
- "r_free_full": 0.25891058999407407,
- "r_work": 0.21131427444753276,
- "updated_at": "2026-08-28T17:28:38+00:00"
+ "r_free_select": 0.24204807816133822,
+ "r_free_report": 0.26333571119801324,
+ "r_free_full": 0.25245568683792774,
+ "r_work": 0.21036592843005836,
+ "updated_at": "2026-10-03T09:13:23+00:00"
 }
