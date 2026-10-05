@@ -1,6 +1,6 @@
 # ag-refined-proteins
 
-Crystallographic models re-refined by an autonomous agent (the *autoresearch* campaign, Astera Institute, August–September
+Crystallographic models re-refined by an autonomous agent (the *autoresearch* campaign, Astera Institute, August–October
 2026), released with everything needed to use, check and extend them: the model, the map coefficients, the frozen data
 and free-reflection flags it was scored on, the deposited model it started from, the verbatim refinement command, a
 uniform release-time validation, and the campaign's complete per-target decision log.
@@ -31,11 +31,9 @@ decisions (see *Method*). Every number is read from a file in `targets/<ID>/` by
 Status meanings:
 
 - **improved**: a credited change moved the standing model and its full R-free is below the deposited model's.
-- **credited, not below deposited**: a change was credited against the run's own paired null, but the model is still
-  above the deposited file recomputed on these flags (4QO4: Phenix's default re-refinement of a CNS model costs more
-  than the run recovers; a program artifact, not a result).
 - **re-refined baseline, nothing credited**: the released model is one Phenix re-refinement of the deposited file. The
-  gain over the deposited value is what phenix.refine does on its own, not the agent's work.
+  gain over the deposited value is what phenix.refine does on its own, not the agent's work. 7R2H and 8C5N will enter
+  with this status.
 
 Changed on 2026-10-03 (3TC7 and 3QUE; records written by the campaign's graph search). On both, the held-back report half,
 the unbiased estimate, improved little or not at all; the full-set gain sits mostly on the select half the search consults
@@ -52,13 +50,29 @@ its own numbers: 7KR0's geometry is above the campaign's own caps, 3QUE's deposi
 
 ## Ensemble representations
 
-`representations/7KR0/` holds six-copy ensemble models of the 7KR0 data from the campaign's replication of Passmore et al.
-2026 (connectivity optimization with Untangler; experiment line E035). They are a second representation of the same data, not
-a released model and not comparable column for column with the table above (campaign PROTOCOL §18.1). Best on the same frozen
-flags: 0.0920 full R-free isotropic, 0.0879 anisotropic (the anisotropic models fail the campaign's R-gap gate), against
-0.0657 for the authors' deposited 44PS and 0.1125 for the released single model. Each copy writes occupancy 0.17, so protein
-sites sum to 1.02 in these PDB files. The section's README has the per-stage table, the paired-control results and the
-caveats.
+Six-copy ensemble models of the 7KR0 data, from the campaign's replication of Passmore et al. 2026 (connectivity optimization
+with Untangler). They are a second representation of the same data, not a released model, and not comparable column for column
+with the table above (campaign PROTOCOL §18.1). All numbers are full R-free on the same frozen flags (8 712 free reflections, identical
+to the deposited sets of 7KR0 and 44PS).
+
+| Model | Full / report R-free | R-work | Water atoms | Clashscore | Rotamer outliers |
+|---|---|---|---|---|---|
+| 7KR0 deposited, single model | 0.1174 / 0.1189 | | | 4.7 | 0.9 % |
+| 7KR0 released, single model (`targets/7KR0/`) | 0.1125 / 0.1147 | | | 6.7 | 1.3 % |
+| E035d, six copies, anisotropic (`representations/7KR0/`) | 0.0879 / 0.0901 | 0.0751 | 1 305 | | |
+| E041 line R, six copies (best, not in this release) | 0.0680 / 0.0694 | 0.0457 | 3 198 | 26.7 | 3.0 % |
+| E041 line X, 44PS extended (not in this release) | 0.0643 / 0.0649 | 0.0445 | | 5.2 | 2.0 % |
+| 44PS deposited (Passmore et al.) | 0.0657 / 0.0660 | 0.0485 | 2 581 | 2.2 | 2.0 % |
+
+- **E035** ran the paper's pipeline as published. Its models are in `representations/7KR0/`, with their own README, per-stage table
+  and caveats.
+- **E041 line R** starts from the deposited 7KR0 model. Water is the main lever: conformation-aware water picking, where each
+  water copy has to clear only its own conformer, then anisotropic waters, then a looser geometry weight with a weaker B-factor
+  restraint. Each gain was measured against a paired control from the same model. Line R ends 0.0023 above 44PS.
+- **Line R's geometry is not depositable yet.** Its clashscore of 26.7 comes mostly from water copies touching riding hydrogens of
+  their own conformer. A clash cleanup is running. The line R models will be added here once they pass the geometry caps.
+- **E041 line X** starts from 44PS itself, so it extends the authors' model and does not count as a replication.
+- Numbers for E041 come from the campaign ledger, scored by the harness evaluator, not yet by this release's independent scorer.
 
 ## What is in a target directory
 
