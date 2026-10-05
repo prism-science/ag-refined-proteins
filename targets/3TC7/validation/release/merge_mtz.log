@@ -1,2 +1,2 @@
-# phenix.python /home/dev/runs/agrp_export_20261003T1834Z/_helpers/merge_mtz.py /home/dev/runs/agrp_export_20261003T1834Z/targets/3TC7/data/3TC7_data.mtz /home/dev/runs/agrp_export_20261003T1834Z/targets/3TC7/data/3TC7_flags.mtz /home/dev/runs/agrp_export_20261003T1834Z/_work/3TC7/merged.mtz
-wrote /home/dev/runs/agrp_export_20261003T1834Z/_work/3TC7/merged.mtz FP 41052 reflections; 2075 free
+# phenix.python /home/dev/runs/agrp_export_20261005T0813Z/_helpers/merge_mtz.py /home/dev/runs/agrp_export_20261005T0813Z/targets/3TC7/data/3TC7_data.mtz /home/dev/runs/agrp_export_20261005T0813Z/targets/3TC7/data/3TC7_flags.mtz /home/dev/runs/agrp_export_20261005T0813Z/_work/3TC7/merged.mtz
+wrote /home/dev/runs/agrp_export_20261005T0813Z/_work/3TC7/merged.mtz FP 41052 reflections; 2075 free

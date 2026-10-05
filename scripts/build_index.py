@@ -90,6 +90,20 @@ CAVEATS: dict[str, list[str]] = {
     ],
     "1N7E": ["One credit: five waters removed. −0.003 beyond re-refinement at 3σ (D509)."],
     "9D5U": ["Two credits, waters removed and added; −0.002 beyond re-refinement at 6σ. The run stopped with its escape ladder exhausted (D510)."],
+    "7R2H": [
+        "The released model is one Phenix re-refinement of the deposited file; nothing the agent proposed has been credited yet (E044). "
+        "The −0.026 over the deposited file is the campaign's re-refinement protocol on its own, and it is mostly an ADP-model change: the "
+        "deposited file carries ANISOU on 1 258 of its 1 597 non-hydrogen atoms (the isotropic ones are the 335 waters and the DMSO), the campaign's protocol refines "
+        "every non-hydrogen atom anisotropically. R-work falls further than R-free, so the R-free − R-work gap widens from 0.011 to 0.014.",
+        "Rotamer outliers rise from 0.00 % to 0.73 % (one residue) and clashscore from 0.8 to 1.2 on re-refinement.",
+    ],
+    "8C5N": [
+        "Refined and scored against the deposited amplitudes (F_meas_au), not the merged intensities: French–Wilson conversion of the "
+        "intensities drops 44 of the 9 968 inherited free reflections (D540). The free set itself (status 'f') is unchanged.",
+        "The released model is one Phenix re-refinement of the deposited file; nothing the agent proposed has been credited yet (E044). "
+        "Rotamer outliers 2.3 % in both the deposited and the released model, above the campaign's 1.5 % cap (pre-existing).",
+        "The deposited model carries 665 hydrogens, an incomplete riding set; the released model keeps the deposited hydrogens.",
+    ],
 }
 LEGACY_NOTE = (
     "Nothing was credited on this target; the released model is the single Phenix re-refinement of the deposited file "

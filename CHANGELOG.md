@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-10-05c — E041 line R six-copy models added
+
+`representations/7KR0/models/` gains the E041 line R models built from 7KR0: `E041_R4_S.pdb` (0.0680 full R-free, clashscore 26.7),
+`E041_CJ_R4_p2.pdb` (after two clash-cleanup passes: 0.0689, clashscore 4.5) and `E041_CJ_R4_polish.pdb` (0.0690, clashscore 4.4), each
+scored by the independent scorer on the frozen flags. `scripts/indep_rfree.py` updated to the campaign's split-aware scorer (E047);
+the staging guard pins its new checksum. No single-model target changed.
+
+## 2026-10-05 (b) — 7R2H and 8C5N added
+
+Snapshot exported from the pod at 2026-10-05T08:15:10Z (`provenance.json`); release-time validation re-run on all five targets.
+New: 7R2H (cyclophilin D, 0.79 Å) and 8C5N (CbpD, 0.75 Å), onboarded 2026-10-05 for the campaign's six-copy ensemble line (E044).
+Both are released as their re-refined baselines, nothing credited:
+
+- 7R2H: deposited 0.1546 → 0.1290 full R-free on the deposited free set (independent scorer); ten-seed re-refinement mean 0.1289.
+  The gain is the protocol refining the 335 isotropic deposited waters anisotropically; the gap widens 0.011 → 0.014; rotamer
+  outliers 0.00 → 0.73 %.
+- 8C5N: deposited 0.1570 → 0.1533 (independent scorer); ten-seed mean 0.1533. Scored against the deposited amplitudes, not the
+  intensities (campaign row D540). Rotamer outliers 2.3 % in both, above the campaign's cap.
+
+3TC7, 3QUE and 7KR0: models unchanged; their ledger extracts and 3QUE's campaign noise floors refreshed (E043's fixed-weight
+floor added under `validation/campaign/`).
+
 ## 2026-10-05 — canonical set only
 
 The release now holds the campaign's canonical set: 3TC7, 3QUE and 7KR0. The other thirteen targets (1L6X, 1LZ9, 1N7E, 1V2X,

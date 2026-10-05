@@ -6,7 +6,7 @@
    "model_sha256": "cf8d319f191839f9b7f27fcf05af1ff60ae9d832e0ded8d428e6f806cce79286",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3TC7/deposited/3TC7.cif",
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/3TC7/deposited/3TC7.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 2220,
@@ -51,7 +51,7 @@
    "model_sha256": "0b3d85debe8d7a7ce6aea80febcbbf6853a9c904dee5221ba61eae1ab9f1ea92",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3TC7/model/3TC7_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/3TC7/model/3TC7_refined.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 4804,

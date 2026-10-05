@@ -1,0 +1,261 @@
+{
+  "model_name": "/home/dev/runs/7R2H/c000/baseline_rerefine/refine_001.cif",
+  "time_analyzed": "2026-10-05 07:38:21.862482",
+  "params": {
+    "fast": false,
+    "condensed_probe": false,
+    "keep_hydrogens": false,
+    "nuclear": false,
+    "b_factor_cutoff": null,
+    "do_flips": false
+  },
+  "validation_type": "clashscore",
+  "flat_results": [
+    {
+      "atom_selection": null,
+      "xyz": [
+        -19.734,
+        8.864,
+        1.655
+      ],
+      "outlier": true,
+      "score": null,
+      "overlap": -0.424,
+      "probe_type": "bo",
+      "max_b_factor": 18.6,
+      "chain_id": " A",
+      "resseq": " 113",
+      "icode": " ",
+      "resname": "PHE",
+      "altloc": " ",
+      "segid": null,
+      "name": " CD1",
+      "element": null,
+      "symop": null,
+      "occupancy": null,
+      "b_iso": null,
+      "model_id": "",
+      "target_chain_id": " A",
+      "target_resseq": " 201",
+      "target_icode": " ",
+      "target_resname": "DMS",
+      "target_altloc": " ",
+      "target_segid": null,
+      "target_name": " H21",
+      "target_element": null,
+      "target_symop": null,
+      "target_occupancy": null,
+      "target_b_iso": null,
+      "target_model_id": ""
+    },
+    {
+      "atom_selection": null,
+      "xyz": [
+        -29.233,
+        14.136,
+        -6.7
+      ],
+      "outlier": true,
+      "score": null,
+      "overlap": -0.408,
+      "probe_type": "bo",
+      "max_b_factor": 6.65,
+      "chain_id": " A",
+      "resseq": "  82",
+      "icode": " ",
+      "resname": "ARG",
+      "altloc": " ",
+      "segid": null,
+      "name": " HA ",
+      "element": null,
+      "symop": null,
+      "occupancy": null,
+      "b_iso": null,
+      "model_id": "",
+      "target_chain_id": " A",
+      "target_resseq": " 108",
+      "target_icode": " ",
+      "target_resname": "ASN",
+      "target_altloc": " ",
+      "target_segid": null,
+      "target_name": " O  ",
+      "target_element": null,
+      "target_symop": null,
+      "target_occupancy": null,
+      "target_b_iso": null,
+      "target_model_id": ""
+    },
+    {
+      "atom_selection": null,
+      "xyz": [
+        -20.825,
+        10.253,
+        4.459
+      ],
+      "outlier": true,
+      "score": null,
+      "overlap": -0.401,
+      "probe_type": "bo",
+      "max_b_factor": 18.6,
+      "chain_id": " A",
+      "resseq": "  63",
+      "icode": " ",
+      "resname": "GLN",
+      "altloc": " ",
+      "segid": null,
+      "name": " OE1",
+      "element": null,
+      "symop": null,
+      "occupancy": null,
+      "b_iso": null,
+      "model_id": "",
+      "target_chain_id": " A",
+      "target_resseq": " 201",
+      "target_icode": " ",
+      "target_resname": "DMS",
+      "target_altloc": " ",
+      "target_segid": null,
+      "target_name": " H22",
+      "target_element": null,
+      "target_symop": null,
+      "target_occupancy": null,
+      "target_b_iso": null,
+      "target_model_id": ""
+    }
+  ],
+  "hierarchical_results": {
+    "": {
+      " A": {
+        " 113 ": {
+          " ": [
+            {
+              "atom_selection": null,
+              "xyz": [
+                -19.734,
+                8.864,
+                1.655
+              ],
+              "outlier": true,
+              "score": null,
+              "overlap": -0.424,
+              "probe_type": "bo",
+              "max_b_factor": 18.6,
+              "chain_id": " A",
+              "resseq": " 113",
+              "icode": " ",
+              "resname": "PHE",
+              "altloc": " ",
+              "segid": null,
+              "name": " CD1",
+              "element": null,
+              "symop": null,
+              "occupancy": null,
+              "b_iso": null,
+              "model_id": "",
+              "target_chain_id": " A",
+              "target_resseq": " 201",
+              "target_icode": " ",
+              "target_resname": "DMS",
+              "target_altloc": " ",
+              "target_segid": null,
+              "target_name": " H21",
+              "target_element": null,
+              "target_symop": null,
+              "target_occupancy": null,
+              "target_b_iso": null,
+              "target_model_id": ""
+            }
+          ]
+        },
+        "  82 ": {
+          " ": [
+            {
+              "atom_selection": null,
+              "xyz": [
+                -29.233,
+                14.136,
+                -6.7
+              ],
+              "outlier": true,
+              "score": null,
+              "overlap": -0.408,
+              "probe_type": "bo",
+              "max_b_factor": 6.65,
+              "chain_id": " A",
+              "resseq": "  82",
+              "icode": " ",
+              "resname": "ARG",
+              "altloc": " ",
+              "segid": null,
+              "name": " HA ",
+              "element": null,
+              "symop": null,
+              "occupancy": null,
+              "b_iso": null,
+              "model_id": "",
+              "target_chain_id": " A",
+              "target_resseq": " 108",
+              "target_icode": " ",
+              "target_resname": "ASN",
+              "target_altloc": " ",
+              "target_segid": null,
+              "target_name": " O  ",
+              "target_element": null,
+              "target_symop": null,
+              "target_occupancy": null,
+              "target_b_iso": null,
+              "target_model_id": ""
+            }
+          ]
+        },
+        "  63 ": {
+          " ": [
+            {
+              "atom_selection": null,
+              "xyz": [
+                -20.825,
+                10.253,
+                4.459
+              ],
+              "outlier": true,
+              "score": null,
+              "overlap": -0.401,
+              "probe_type": "bo",
+              "max_b_factor": 18.6,
+              "chain_id": " A",
+              "resseq": "  63",
+              "icode": " ",
+              "resname": "GLN",
+              "altloc": " ",
+              "segid": null,
+              "name": " OE1",
+              "element": null,
+              "symop": null,
+              "occupancy": null,
+              "b_iso": null,
+              "model_id": "",
+              "target_chain_id": " A",
+              "target_resseq": " 201",
+              "target_icode": " ",
+              "target_resname": "DMS",
+              "target_altloc": " ",
+              "target_segid": null,
+              "target_name": " H22",
+              "target_element": null,
+              "target_symop": null,
+              "target_occupancy": null,
+              "target_b_iso": null,
+              "target_model_id": ""
+            }
+          ]
+        }
+      }
+    }
+  },
+  "summary_results": {
+    "": {
+      "clashscore": 1.2014417300760913,
+      "num_clashes": 3
+    }
+  }
+}

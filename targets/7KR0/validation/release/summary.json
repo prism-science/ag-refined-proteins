@@ -6,7 +6,7 @@
    "model_sha256": "009f875a14b8f498ae33a1d867a666dbeb1cfbe561bad49f132c1a8f561d0629",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/7KR0/deposited/7KR0.cif",
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/7KR0/deposited/7KR0.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 4300,
@@ -30,7 +30,7 @@
     "r_free_manual": 0.11735487856221846,
     "r_free_select_manual": 0.11586962519840933,
     "r_free_report_manual": 0.11885661033532181,
-    "wall_s": 5.3
+    "wall_s": 5.6
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {
@@ -53,7 +53,7 @@
    "model_sha256": "0a65b7cdcf444ef36f153a268199c83e74144bbbc3743bf636379dbc774e9cdd",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/7KR0/model/7KR0_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/7KR0/model/7KR0_refined.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 4298,
@@ -77,7 +77,7 @@
     "r_free_manual": 0.11254302618983536,
     "r_free_select_manual": 0.11037832572636504,
     "r_free_report_manual": 0.11473174331006344,
-    "wall_s": 4.9
+    "wall_s": 5.0
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {

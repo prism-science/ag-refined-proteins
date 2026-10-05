@@ -57,7 +57,7 @@ Refinement protocol of the released model: phenix.refine 2.1-6048, 5 macro-cycle
 
 The released model was written by cycle 913 (`graph`, run `3TC7.graph-weekend-20261002c`), verdict **accepted**, attributable ΔR-free-select -0.00101 against its paired null, ΔR-gap -0.00026; geometry flag: rota_outliers 1.59 > 1.5.
 
-Cycles on record for this target: 55; credited: 10; changes proposed: 2004 (`ledger/cycles.csv`, `ledger/changes.csv`).
+Cycles on record for this target: 74; credited: 13; changes proposed: 2053 (`ledger/cycles.csv`, `ledger/changes.csv`).
 
 Credited cycles on record, all runs and experiment lines. A credit is relative to that cycle's own paired null; not every credit moved the standing model (promotion rules D484/D499/D508), and experiment-line cycles judged candidates against their own base.
 
@@ -73,6 +73,9 @@ Credited cycles on record, all runs and experiment lines. A credit is relative t
 | 915 | `3TC7.graph-weekend-20261002c` | -0.00172 | 0.1706 | -0.00015 | rota_outliers 1.62 > 1.5 |
 | 917 | `3TC7.graph-weekend-20261002c` | -0.00047 | 0.1705 | -0.00014 |  |
 | 919 | `3TC7.graph-weekend-20261002c` | -0.00051 | 0.1706 | -0.00024 |  |
+| 957 | `3TC7.E042` | -0.00034 | 0.1709 | -0.00075 |  |
+| 965 | `3TC7.E042` | -0.00043 | 0.1709 | -0.00064 |  |
+| 966 | `3TC7.E042` | -0.00022 | 0.1710 | -0.00087 |  |
 
 ## Caveats
 
@@ -118,13 +121,13 @@ coot targets/3TC7/model/3TC7_refined.pdb --auto targets/3TC7/maps/3TC7_refined_m
 | `deposited/fetch_manifest.sha256` | 756 | SHA-256 of the raw files at fetch time. |
 | `deposited/rcsb_entry.json` | 13,974 | The RCSB entry record (title, citation, experimental details) as fetched. |
 | `ledger/bisections.csv` | 246 | Bisection steps when a cycle regressed. |
-| `ledger/changes.csv` | 5,883,505 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
+| `ledger/changes.csv` | 6,025,594 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
 | `ledger/checks.csv` | 1,799 | Gate results G0–G8. |
-| `ledger/cycles.csv` | 30,976 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
-| `ledger/defects.csv` | 115,898 | Values that could not be computed, with the reason (never a sentinel). |
-| `ledger/deviations.csv` | 123,445 | Decision-log rows that name this target. |
+| `ledger/cycles.csv` | 38,391 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
+| `ledger/defects.csv` | 118,347 | Values that could not be computed, with the reason (never a sentinel). |
+| `ledger/deviations.csv` | 130,841 | Decision-log rows that name this target. |
 | `ledger/noise_floor.csv` | 1,352 | The noise-floor row that set the credit bar: σ of R-free on every set. |
-| `ledger/rfree_consultations.csv` | 232 | How many times R-free-select was consulted (PROTOCOL §3.6). |
+| `ledger/rfree_consultations.csv` | 228 | How many times R-free-select was consulted (PROTOCOL §3.6). |
 | `ledger/runs/3TC7.20260908v5/DECISIONS.md` | 1,351 | The per-run human-readable decision log written by the driver. |
 | `ledger/runs/3TC7.20260908v5b/DECISIONS.md` | 18,282 | The per-run human-readable decision log written by the driver. |
 | `ledger/runs/3TC7.20260908v5b/run_summary.json` | 3,140 | The per-run summary (cycles, credits, stop reason). |

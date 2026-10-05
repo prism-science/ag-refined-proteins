@@ -65,6 +65,16 @@ sel_select = sel_free & (code == 1)
 sel_report = sel_free & (code == 2)
 assert (sel_free & (code == 0)).count(True) == 0, "free reflections marked work in split"
 assert (~sel_free & (code != 0)).count(True) == 0, "work reflections marked select/report in split"
+# E047: a split v2 MTZ marks a sleep third (code 3); it is removed before fmodel is built and never scored here
+# (`autoref sleep-score` is the only sleep scorer). r_free_* then cover select + report.
+n_sleep_withheld = (code == 3).count(True)
+if n_sleep_withheld:
+    keep = ~(code == 3)
+    fobs, free, split = fobs.select(keep), free.select(keep), split.select(keep)
+    code = split.data()
+    sel_free = free.data()
+    sel_select = sel_free & (code == 1)
+    sel_report = sel_free & (code == 2)
 
 pdb_inp = iotbx.pdb.input(file_name=model_path)
 model = mmtbx.model.manager(model_input=pdb_inp, crystal_symmetry=fobs.crystal_symmetry(), log=null_out())
@@ -91,6 +101,9 @@ res = {
     "r_free_select_manual": manual_r(fo, fc, sel_select), "r_free_report_manual": manual_r(fo, fc, sel_report),
     "wall_s": round(time.time() - t0, 1),
 }
+if n_sleep_withheld:
+    res.update({"split_version": 2, "n_sleep_withheld": n_sleep_withheld,
+                "r_free_scope": "select + report; the sleep third is withheld (split v2)"})
 with open(out_path, "w") as fh:
     json.dump(res, fh, indent=1)
 print(json.dumps(res))

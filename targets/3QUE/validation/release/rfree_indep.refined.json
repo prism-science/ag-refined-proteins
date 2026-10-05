@@ -1,5 +1,5 @@
 {
- "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3QUE/model/3QUE_refined.cif",
+ "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/3QUE/model/3QUE_refined.cif",
  "data": "amplitudes (FP,SIGFP)",
  "n_dropped_french_wilson": 0,
  "n_atoms": 2881,
@@ -18,5 +18,5 @@
  "r_free_manual": 0.2532972768792094,
  "r_free_select_manual": 0.2428663802372678,
  "r_free_report_manual": 0.26420164627744946,
- "wall_s": 0.5
+ "wall_s": 0.6
 }

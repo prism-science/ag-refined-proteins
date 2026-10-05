@@ -1,0 +1,96 @@
+{
+ "target": "7R2H",
+ "merge_exit": 0,
+ "models": {
+  "deposited": {
+   "model_sha256": "254ed93f8fe79009f4066f633ab78e0962b5469ad79b736db73c4f68464aac40",
+   "indep_exit": 0,
+   "indep": {
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/7R2H/deposited/7R2H.cif",
+    "data": "amplitudes (FP,SIGFP)",
+    "n_dropped_french_wilson": 0,
+    "n_atoms": 2850,
+    "n_hydrogen": 1253,
+    "altlocs": [
+     "A",
+     "B"
+    ],
+    "n_water_residues": 335,
+    "n_reflections": 149186,
+    "n_free": 7538,
+    "n_select": 3769,
+    "n_report": 3769,
+    "n_work": 141648,
+    "d_min": 0.7892010840196567,
+    "r_work_fmodel": 0.14396147803149542,
+    "r_free_fmodel": 0.15467152023458614,
+    "r_work_manual": 0.14396128689680188,
+    "r_free_manual": 0.15464621782255247,
+    "r_free_select_manual": 0.1527364294768157,
+    "r_free_report_manual": 0.15654673759444293,
+    "wall_s": 4.5
+   },
+   "model_vs_data_exit": 0,
+   "model_vs_data": {
+    "r_work": 0.1437,
+    "r_free": 0.1545
+   },
+   "molprobity_exit": 0,
+   "molprobity": {
+    "ramachandran_outliers_pct": 0.0,
+    "ramachandran_favored_pct": 96.91,
+    "rotamer_outliers_pct": 0.0,
+    "cbeta_deviations": 0.0,
+    "clashscore": 0.8,
+    "rms_bonds": 0.0054,
+    "rms_angles": 0.91,
+    "molprobity_score": 0.93
+   }
+  },
+  "refined": {
+   "model_sha256": "e94470a33950e17defd5572adc45812c1a18f0e6470b08fa85dc95081892222d",
+   "indep_exit": 0,
+   "indep": {
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/7R2H/model/7R2H_refined.cif",
+    "data": "amplitudes (FP,SIGFP)",
+    "n_dropped_french_wilson": 0,
+    "n_atoms": 2850,
+    "n_hydrogen": 1253,
+    "altlocs": [
+     "A",
+     "B"
+    ],
+    "n_water_residues": 335,
+    "n_reflections": 149186,
+    "n_free": 7538,
+    "n_select": 3769,
+    "n_report": 3769,
+    "n_work": 141648,
+    "d_min": 0.7892010840196567,
+    "r_work_fmodel": 0.11456221749224399,
+    "r_free_fmodel": 0.12903754436990097,
+    "r_work_manual": 0.11456217696546948,
+    "r_free_manual": 0.1290463661821597,
+    "r_free_select_manual": 0.12873236692644793,
+    "r_free_report_manual": 0.12935884153848218,
+    "wall_s": 4.4
+   },
+   "model_vs_data_exit": 0,
+   "model_vs_data": {
+    "r_work": 0.1143,
+    "r_free": 0.1289
+   },
+   "molprobity_exit": 0,
+   "molprobity": {
+    "ramachandran_outliers_pct": 0.0,
+    "ramachandran_favored_pct": 96.91,
+    "rotamer_outliers_pct": 0.73,
+    "cbeta_deviations": 0.0,
+    "clashscore": 1.2,
+    "rms_bonds": 0.0106,
+    "rms_angles": 1.29,
+    "molprobity_score": 1.02
+   }
+  }
+ }
+}

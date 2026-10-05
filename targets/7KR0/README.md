@@ -113,7 +113,7 @@ coot targets/7KR0/model/7KR0_refined.pdb --auto targets/7KR0/maps/7KR0_refined_m
 | `ledger/checks.csv` | 3,596 | Gate results G0–G8. |
 | `ledger/cycles.csv` | 17,604 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
 | `ledger/defects.csv` | 58,848 | Values that could not be computed, with the reason (never a sentinel). |
-| `ledger/deviations.csv` | 93,320 | Decision-log rows that name this target. |
+| `ledger/deviations.csv` | 98,157 | Decision-log rows that name this target. |
 | `ledger/noise_floor.csv` | 1,350 | The noise-floor row that set the credit bar: σ of R-free on every set. |
 | `ledger/rfree_consultations.csv` | 227 | How many times R-free-select was consulted (PROTOCOL §3.6). |
 | `ledger/runs/7KR0.20260908v5/DECISIONS.md` | 696 | The per-run human-readable decision log written by the driver. |

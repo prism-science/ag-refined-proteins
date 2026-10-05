@@ -1,0 +1,429 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 2433
+     H or D atoms   : 665
+     chains         : 2
+     a.a. residues  : 186
+     nucleotides    : 0
+     water          : 161
+     other (ligands): 1
+   Ligands: CL:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   A 129  HIS  ND1
+   A 129  HIS  CE1         1.32     1.39    -0.07  1.00e-02  5.37e+01   7.3*sigma
+
+  Min. delta:    0.000 (Z=  0.001)
+  Max. delta:    0.073 (Z=  7.330)
+  Mean delta:    0.015 (Z=  0.785)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 132 AARG  CD
+   A 132 AARG  NE
+   A 132 AARG  CZ        124.40   136.26   -11.86  1.40e+00  7.18e+01   8.5*sigma
+   A  71 AASN  CA
+   A  71 AASN  CB
+   A  71 AASN  CG        112.60   118.90    -6.30  1.00e+00  3.96e+01   6.3*sigma
+   A  79  HIS  CA
+   A  79  HIS  CB
+   A  79  HIS  CG        113.80   108.59     5.21  1.00e+00  2.72e+01   5.2*sigma
+   A  46 AASN  CA
+   A  46 AASN  CB
+   A  46 AASN  CG        112.60   117.56    -4.96  1.00e+00  2.46e+01   5.0*sigma
+   A 185 CLYS  CD
+   A 185 CLYS  CE
+   A 185 CLYS  NZ        111.90   127.56   -15.66  3.20e+00  2.39e+01   4.9*sigma
+   A 132 BARG  CD
+   A 132 BARG  NE
+   A 132 BARG  CZ        124.40   130.98    -6.58  1.40e+00  2.21e+01   4.7*sigma
+   A  79  HIS  ND1
+   A  79  HIS  CG
+   A  79  HIS  CD2       106.10   110.76    -4.66  1.00e+00  2.17e+01   4.7*sigma
+   A  97 ALYS  CG
+   A  97 ALYS  CD
+   A  97 ALYS  CE        111.30   121.83   -10.53  2.30e+00  2.10e+01   4.6*sigma
+   A  97 ALYS  CD
+   A  97 ALYS  CE
+   A  97 ALYS  NZ        111.90   125.93   -14.03  3.20e+00  1.92e+01   4.4*sigma
+   A 185 CLYS  C
+   A 186  HIS  N
+   A 186  HIS  CA        121.70   129.39    -7.69  1.80e+00  1.83e+01   4.3*sigma
+   A 186  HIS  ND1
+   A 186  HIS  CG
+   A 186  HIS  CD2       106.10   110.34    -4.24  1.00e+00  1.80e+01   4.2*sigma
+   A 185 CLYS  CG
+   A 185 CLYS  CD
+   A 185 CLYS  CE        111.30   120.83    -9.53  2.30e+00  1.72e+01   4.1*sigma
+   A  93 ALYS  CA
+   A  93 ALYS  CB
+   A  93 ALYS  CG        114.10   105.93     8.17  2.00e+00  1.67e+01   4.1*sigma
+   A 114  ASP  CA
+   A 114  ASP  CB
+   A 114  ASP  CG        112.60   116.67    -4.07  1.00e+00  1.65e+01   4.1*sigma
+   A  97 BLYS  CG
+   A  97 BLYS  CD
+   A  97 BLYS  CE        111.30   120.63    -9.33  2.30e+00  1.65e+01   4.1*sigma
+   A  68 AASN  CB
+   A  68 AASN  CG
+   A  68 AASN  ND2       116.40   110.36     6.04  1.50e+00  1.62e+01   4.0*sigma
+
+  Min. delta:    0.003 (Z=  0.002)
+  Max. delta:   15.658 (Z=  8.473)
+  Mean delta:    2.017 (Z=  1.063)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 132 BARG  CG
+   A 132 BARG  CD
+   A 132 BARG  NE
+   A 132 BARG  CZ         90.00     0.64    89.36  1.50e+01  2.13e+01   6.0*sigma
+   A 133  TYR  CA
+   A 133  TYR  C
+   A 134  PHE  N
+   A 134  PHE  CA        180.00   154.68    25.32  5.00e+00  2.56e+01   5.1*sigma
+   A 132 BARG  CD
+   A 132 BARG  NE
+   A 132 BARG  CZ
+   A 132 BARG  NH1         0.00    48.55   -48.55  1.00e+01  3.25e+01   4.9*sigma
+   A  71 AASN  CA
+   A  71 AASN  C
+   A  72  GLN  N
+   A  72  GLN  CA        180.00   158.83    21.17  5.00e+00  1.79e+01   4.2*sigma
+   A  31  THR  CA
+   A  31  THR  C
+   A  32  PRO  N
+   A  32  PRO  CA          0.00   -20.63    20.63  5.00e+00  1.70e+01   4.1*sigma
+
+  Min. delta:    0.005 (Z=  0.001)
+  Max. delta:   89.597 (Z=  5.958)
+  Mean delta:   14.240 (Z=  1.144)
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.410
+  Mean delta:    0.106
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.308
+  Mean delta:    0.021
+
+============================= Hydrogen validation =============================
+
+
+                ----------H/D atoms in the input model----------               
+
+  Total number of hydrogen atoms : 665
+  Total number of deuterium atoms: 0
+  Number of H atoms (protein)    : 665
+  Number of D atoms (protein)    : 0
+  Number of H atoms (water)      : 0
+  Number of D atoms (water)      : 0
+  Number of H atoms (other)      : 0
+  Number of D atoms (other)      : 0
+
+                      ----------Water molecules----------                      
+
+  Number of water                            : 161
+  Number of water with 0 H (or D)            : 161
+  Number of water with 1 H (or D)            : 0
+  Number of water with 2 H (or D)            : 0
+  Number of water in alternative conformation: 0
+  Number of water without oxygen atom        : 0
+
+                    ----------MISSING H or D atoms----------                   
+
+  HIS A  26  conformer  : H, HB2, HD1, HE1, HE2, HD2 
+  GLY A  27  conformer  : H, HA3 
+  SER A  28  conformer  : H, HB2, HG 
+  MET A  29  conformer  : H, HB3, HG3 
+  GLU A  30  conformer  : H, HB2, HG2 
+  THR A  31  conformer  : H, HG1, HG21, HG22, HG23 
+  PRO A  32  conformer  : HB2, HG2, HD2 
+  PRO A  33  conformer A : HD2, HB3, HG3 
+  PRO A  33  conformer B : HA, HB2, HG2, HD3 
+  SER A  34  conformer A : H, HB2, HG 
+  SER A  34  conformer B : H, HA, HG, HB3 
+  ARG A  35  conformer  : H, HB2, HD2, HH11, HH12, HH21, HH22, HG3 
+  VAL A  36  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  TYR A  37  conformer  : H, HB2, HH 
+  GLY A  38  conformer  : H, HA3 
+  CYS A  39  conformer  : H, HG, HB3 
+  PHE A  40  conformer  : H, HB3 
+  LEU A  41  conformer  : H, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLU A  42  conformer  : H, HB2, HG3 
+  GLY A  43  conformer  : H, HA3 
+  PRO A  44  conformer  : HB2, HD2, HG3 
+  GLU A  45  conformer  : H, HG2, HB3 
+  ASN A  46  conformer A : H, HB2, HD21, HD22 
+  ASN A  46  conformer B : H, HA, HD21, HD22, HB3 
+  PRO A  47  conformer  : HB2, HG2, HD2 
+  LYS A  48  conformer  : H, HB2, HE2, HZ1, HZ2, HZ3, HG3, HD3 
+  SER A  49  conformer  : H, HB2, HG 
+  ALA A  50  conformer  : H 
+  ALA A  51  conformer  : H 
+  CYS A  52  conformer  : H, HG, HB3 
+  LYS A  53  conformer A : H, HB2, HG2, HE2, HZ1, HZ2, HZ3, HD3 
+  LYS A  53  conformer B : H, HA, HD2, HZ1, HZ2, HZ3, HB3, HG3, HE3 
+  ALA A  54  conformer  : H 
+  ALA A  55  conformer  : H 
+  VAL A  56  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  ALA A  57  conformer  : H 
+  ALA A  58  conformer  : H 
+  GLY A  59  conformer  : H, HA3 
+  GLY A  60  conformer  : H, HA3 
+  THR A  61  conformer  : H, HG1, HG21, HG22, HG23 
+  GLN A  62  conformer  : H, HB2, HG2, HE21, HE22 
+  ALA A  63  conformer  : H 
+  LEU A  64  conformer  : H, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  TYR A  65  conformer  : H, HB2, HH 
+  ASP A  66  conformer  : H, HB2 
+  TRP A  67  conformer  : H, HB2 
+  ASN A  68  conformer A : H, HB2, HD21, HD22 
+  ASN A  68  conformer B : H, HA, HD21, HD22, HB3 
+  GLY A  69  conformer  : H, HA3 
+  VAL A  70  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  ASN A  71  conformer A : H, HA, HB2, HD21, HD22 
+  ASN A  71  conformer B : H, HD21, HD22, HB3 
+  GLN A  72  conformer  : H, HG2, HE21, HE22, HB3 
+  GLY A  73  conformer  : H, HA3 
+  ASN A  74  conformer  : H, HD21, HD22, HB3 
+  ALA A  75  conformer  : H 
+  ASN A  76  conformer  : H, HB2, HD21, HD22 
+  GLY A  77  conformer  : H, HA3 
+  ASN A  78  conformer  : H, HB2, HD21, HD22 
+  HIS A  79  conformer  : H, HB2, HD1, HE1, HE2, HD2 
+  GLN A  80  conformer  : H, HG2, HE21, HE22, HB3 
+  ALA A  81  conformer  : H 
+  VAL A  82  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  VAL A  83  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  PRO A  84  conformer A : HG2, HD2, HB3 
+  PRO A  84  conformer B : HA, HB2, HG3, HD3 
+  ASP A  85  conformer  : H, HB2 
+  GLY A  86  conformer  : H, HA3 
+  GLN A  87  conformer A : H, HA, HE21, HE22, HB3, HG3 
+  GLN A  87  conformer B : H, HB2, HG2, HE21, HE22 
+  LEU A  88  conformer  : H, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  CYS A  89  conformer  : H, HG, HB3 
+  GLY A  90  conformer  : H, HA3 
+  ALA A  91  conformer  : H 
+  GLY A  92  conformer  : H, HA3 
+  LYS A  93  conformer A : H, HA, HG2, HD2, HZ1, HZ2, HZ3, HB3, HE3 
+  LYS A  93  conformer B : H, HB2, HZ1, HZ2, HZ3, HG3, HD3, HE3 
+  ALA A  94  conformer  : H 
+  LEU A  95  conformer  : H, HB2, HD11, HD12, HD13, HD21, HD22, HD23 
+  PHE A  96  conformer  : H, HB2 
+  LYS A  97  conformer A : H, HB2, HD2, HZ1, HZ2, HZ3, HG3, HE3 
+  LYS A  97  conformer B : H, HA, HG2, HE2, HZ1, HZ2, HZ3, HB3, HD3 
+  GLY A  98  conformer  : H, HA3 
+  LEU A  99  conformer  : H, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ASN A 100  conformer  : H, HD21, HD22, HB3 
+  LEU A 101  conformer  : H, HB2, HD11, HD12, HD13, HD21, HD22, HD23 
+  ALA A 102  conformer  : H 
+  ARG A 103  conformer  : H, HB2, HG2, HD2, HH11, HH12, HH21, HH22 
+  SER A 104  conformer  : H, HB2, HG 
+  ASP A 105  conformer  : H, HB2 
+  TRP A 106  conformer  : H, HB2 
+  PRO A 107  conformer  : HB2, HD2, HG3 
+  SER A 108  conformer  : H, HB2, HG 
+  THR A 109  conformer  : H, HG1, HG21, HG22, HG23 
+  ALA A 110  conformer  : H 
+  ILE A 111  conformer  : H, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  ALA A 112  conformer  : H 
+  PRO A 113  conformer A : HA, HB2, HD2, HG3 
+  PRO A 113  conformer B : HB2, HG2, HD3 
+  ASP A 114  conformer  : H, HB2 
+  ALA A 115  conformer  : H 
+  SER A 116  conformer  : H, HB2, HG 
+  GLY A 117  conformer  : H, HA3 
+  ASN A 118  conformer  : H, HB2, HD21, HD22 
+  PHE A 119  conformer  : H, HB2 
+  GLN A 120  conformer  : H, HE21, HE22, HB3, HG3 
+  PHE A 121  conformer  : H, HB3 
+  VAL A 122  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  TYR A 123  conformer  : H, HB2, HH 
+  LYS A 124  conformer A : H, HA, HG2, HZ1, HZ2, HZ3, HB3, HD3, HE3 
+  LYS A 124  conformer B : H, HG2, HD2, HZ1, HZ2, HZ3, HB3, HE3 
+  ALA A 125  conformer  : H 
+  SER A 126  conformer A : H, HA, HG, HB3 
+  SER A 126  conformer B : H, HB2, HG 
+  ALA A 127  conformer  : H 
+  PRO A 128  conformer A : HA, HB2, HG3, HD3 
+  PRO A 128  conformer B : HG2, HD2, HB3 
+  HIS A 129  conformer  : H, HB2, HD1, HE1, HE2, HD2 
+  ALA A 130  conformer  : H 
+  THR A 131  conformer  : H, HG1, HG21, HG22, HG23 
+  ARG A 132  conformer A : H, HB2, HD2, HE, HH11, HH12, HH21, HH22, HG3 
+  ARG A 132  conformer B : H, HA, HH11, HH12, HH21, HH22, HB3, HG3, HD3 
+  TYR A 133  conformer  : H, HB2, HH 
+  PHE A 134  conformer  : H, HB2 
+  ASP A 135  conformer  : H, HB2 
+  PHE A 136  conformer  : H, HB3 
+  TYR A 137  conformer  : H, HB2, HH 
+  ILE A 138  conformer  : H, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  THR A 139  conformer  : H, HG1, HG21, HG22, HG23 
+  LYS A 140  conformer  : H, HB2, HE2, HZ1, HZ2, HZ3, HG3, HD3 
+  ASP A 141  conformer  : H, HB3 
+  GLY A 142  conformer  : H, HA3 
+  TYR A 143  conformer  : H, HB2, HH 
+  ASN A 144  conformer A : H, HD21, HD22, HB3 
+  ASN A 144  conformer B : H, HA, HD21, HD22, HB3 
+  PRO A 145  conformer  : HB2, HD2, HG3 
+  GLU A 146  conformer  : H, HG2, HB3 
+  LYS A 147  conformer  : H, HB2, HG2, HZ1, HZ2, HZ3, HD3, HE3 
+  PRO A 148  conformer  : HB2, HD2, HG3 
+  LEU A 149  conformer  : H, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  ALA A 150  conformer  : H 
+  TRP A 151  conformer  : H, HB2 
+  SER A 152  conformer A : H, HB2, HG 
+  SER A 152  conformer B : H, HA, HG, HB3 
+  ASP A 153  conformer  : H, HB2 
+  LEU A 154  conformer  : H, HB2, HD11, HD12, HD13, HD21, HD22, HD23 
+  GLU A 155  conformer  : H, HG2, HB3 
+  PRO A 156  conformer A : HD2, HB3, HG3 
+  PRO A 156  conformer B : HA, HB2, HG2, HD3 
+  ALA A 157  conformer  : H 
+  PRO A 158  conformer  : HB2, HD2, HG3 
+  PHE A 159  conformer  : H, HB3 
+  CYS A 160  conformer  : H, HG, HB3 
+  SER A 161  conformer A : H, HA, HG, HB3 
+  SER A 161  conformer B : H, HB2, HG 
+  ILE A 162  conformer  : H, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  THR A 163  conformer  : H, HG1, HG21, HG22, HG23 
+  SER A 164  conformer  : H, HB2, HG 
+  VAL A 165  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  LYS A 166  conformer  : H, HB2, HD2, HE2, HZ1, HZ2, HZ3, HG3 
+  LEU A 167  conformer  : H, HD11, HD12, HD13, HD21, HD22, HD23, HB3 
+  GLU A 168  conformer  : H, HB2, HG3 
+  ASN A 169  conformer  : H, HB2, HD21, HD22 
+  GLY A 170  conformer  : H, HA3 
+  THR A 171  conformer  : H, HG1, HG21, HG22, HG23 
+  TYR A 172  conformer  : H, HB2, HH 
+  ARG A 173  conformer  : H, HG2, HD2, HH11, HH12, HH21, HH22, HB3 
+  MET A 174  conformer A : H, HB2, HG2 
+  MET A 174  conformer B : H, HA, HE1, HE2, HE3, HB3, HG3 
+  ASN A 175  conformer  : H, HB2, HD21, HD22 
+  CYS A 176  conformer  : H, HG, HB3 
+  PRO A 177  conformer  : HB2, HD2, HG3 
+  LEU A 178  conformer  : H, HB2, HD11, HD12, HD13, HD21, HD22, HD23 
+  PRO A 179  conformer  : HG2, HD2, HB3 
+  GLN A 180  conformer  : H, HG2, HE21, HE22, HB3 
+  GLY A 181  conformer  : H, HA3 
+  LYS A 182  conformer A : H, HA, HB2, HD2, HE2, HZ1, HZ2, HZ3, HG3 
+  LYS A 182  conformer B : H, HG2, HE2, HZ1, HZ2, HZ3, HB3, HD3 
+  THR A 183  conformer A : H, HA, HG1, HG21, HG22, HG23 
+  THR A 183  conformer B : H, HB, HG1, HG21, HG22, HG23 
+  GLY A 184  conformer  : H, HA3 
+  LYS A 185  conformer A : H, HA, HB2, HG2, HD2, HE2, HZ1, HZ2, HZ3, HD3 
+  LYS A 185  conformer B : H, HB2, HD2, HZ1, HZ2, HZ3, HB3, HG3, HE3 
+  LYS A 185  conformer C : H, HA, HG2, HD2, HE2, HZ1, HZ2, HZ3, HB3, HG3, HE3 
+  HIS A 186  conformer  : H, HB2, HD1, HE1, HE2, HD2 
+  VAL A 187  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  ILE A 188  conformer  : H, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  TYR A 189  conformer  : H, HH, HB3 
+  ASN A 190  conformer  : H, HB2, HD21, HD22 
+  VAL A 191  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  TRP A 192  conformer  : H, HB2 
+  GLN A 193  conformer  : H, HB2, HE21, HE22, HG3 
+  ARG A 194  conformer  : H, HB2, HD2, HH11, HH12, HH21, HH22, HG3 
+  SER A 195  conformer  : H, HB2, HG 
+  ASP A 196  conformer  : H, HB2 
+  SER A 197  conformer  : H, HB2, HG 
+  PRO A 198  conformer  : HD2, HB3, HG3 
+  GLU A 199  conformer  : H, HB3, HG3 
+  ALA A 200  conformer  : H 
+  PHE A 201  conformer  : H, HB2 
+  TYR A 202  conformer  : H, HB2, HH 
+  ALA A 203  conformer  : H 
+  CYS A 204  conformer  : H, HG, HB3 
+  ILE A 205  conformer  : H, HG12, HD11, HD12, HD13, HG21, HG22, HG23, HG13 
+  ASP A 206  conformer  : H, HB3 
+  VAL A 207  conformer  : H, HG11, HG12, HG13, HG21, HG22, HG23 
+  SER A 208  conformer A : H, HG, HB3 
+  SER A 208  conformer B : H, HA, HB2, HG 
+  PHE A 209  conformer  : H, HB2 
+  SER A 210  conformer  : H, HB2, HG 
+  GLY A 211  conformer  : H, HA3 
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values - rmsd, rmsZ for bonds and angles.
+    Bond      :  0.015   0.073   1681  Z= 0.786
+    Angle     :  2.017  15.658   2327  Z= 1.063
+    Chirality :  0.106   0.410    227
+    Planarity :  0.021   0.308    327
+    Dihedral  : 14.240  89.597    630
+    Min Nonbonded Distance : 1.505
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 6.33
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  0.54 %
+      Favored  : 99.46 %
+    Rotamer:
+      Outliers :  2.34 %
+      Allowed  :  2.34 %
+      Favored  : 95.32 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 4.55 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z values with (uncertainties):
+  Interpretation: poor |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores below are scaled independently, so they are not related in a simple way.
+    whole:  0.30 (0.49), residues: 251
+    helix: -0.73 (0.73), residues: 31
+    sheet:  0.16 (0.68), residues: 46
+    loop :  0.53 (0.46), residues: 174
+  
+  Max deviation from planes:
+     Type  MaxDev  MeanDev LineInFile
+   ARG   0.014   0.004   ARG A 194 
+   TYR   0.064   0.012   TYR A 189 
+   PHE   0.044   0.014   PHE A 201 
+   TRP   0.026   0.009   TRP A  67 
+   HIS   0.022   0.006   HIS A  26 
+  
+  Details of bonding type rmsd
+    covalent geometry    : bond        0.01494 ( 1678)
+    covalent geometry    : angle       2.01730 ( 2321)
+    SS BOND              : bond        0.02149 (    3)
+    SS BOND              : angle       1.73240 (    6)
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A  46 AASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  99.46 %
+  Rotamer outliers      =   2.34 %
+  C-beta deviations     =     0
+  Clashscore            =   6.33
+  RMS(bonds)            =   0.0150
+  RMS(angles)           =   2.02
+  MolProbity score      =   1.63
+  Refinement program    = SHELXL

@@ -1,0 +1,12 @@
+{
+ "target": "7R2H",
+ "model": "/home/dev/runs/7R2H/c000/baseline_rerefine/refine_001.cif",
+ "maps_mtz": null,
+ "cycle_index": 0,
+ "stage": "baseline_rerefine",
+ "r_free_select": 0.12873237135377238,
+ "r_free_report": 0.12934123632209701,
+ "r_free_full": 0.12903754436990097,
+ "r_work": 0.11456221749224399,
+ "updated_at": "2026-10-05T07:38:38+00:00"
+}
