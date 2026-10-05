@@ -11,8 +11,7 @@ from RCSB (`targets/<ID>/deposited/`), and built two frozen reflection files fro
 (`targets/<ID>/data/`, with `prep.json` recording every choice):
 
 - `data.mtz`: the observed data. Amplitudes (`FP,SIGFP` from `_refln.F_meas_au`) where the deposition carries them;
-  merged intensities (`IMEAN,SIGIMEAN`) for the five entries that deposited only intensities (4QO4, 6UDY, 7DVR, 9D5U,
-  9D5Y). Rows the depositor marked unmeasured are dropped.
+  merged intensities (`IMEAN,SIGIMEAN`) where the entry deposited only intensities. Rows the depositor marked unmeasured are dropped.
 - `flags.mtz`: the free-reflection flags, inherited unchanged from `_refln.status` (`f` = free). Column
   `R-free-flags`, test value 0. The campaign verified that the free set is identical to the deposited one
   (`validation/campaign/checks/`, gate G3, and `scripts/flag_identity.py`).
@@ -61,7 +60,7 @@ Kept changes are judged in a paired cycle: the same base model refined twice wit
 The standing model (`refinement/current.json`) moves only on a credit (D484), and only if the credited model is not
 worse than the standing record on select and not worse on report beyond 2σ_report (D499, D508). A credit is relative
 to the run's own null arm, not to the deposited file: a target can be credited and still be above the deposited model
-recomputed on these flags (4QO4).
+recomputed on these flags (4QO4 in the 2026-10-03 release).
 
 ## What "re-refined, no changes" measures
 

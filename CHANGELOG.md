@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-05 — canonical set only
+
+The release now holds the campaign's canonical set: 3TC7, 3QUE and 7KR0. The other thirteen targets (1L6X, 1LZ9, 1N7E, 1V2X,
+3DUT, 4QO4, 6CDX, 6UDY, 7DVR, 8IS2, 9ARN, 9D5U, 9D5Y) were removed from `targets/`; they remain in the 2026-10-03 release
+(branch `release-20261003`). 7R2H and 8C5N, two ultra-high-resolution entries for the six-copy ensemble line, will be added
+once onboarded. No model or number of the three kept targets changed.
+
 ## 2026-10-03 — 3TC7 and 3QUE refreshed; 7KR0 ensemble representations added
 
 Snapshot of the standing records exported from the pod at 2026-10-03T18:36:33Z (`provenance.json`); release-time validation re-run

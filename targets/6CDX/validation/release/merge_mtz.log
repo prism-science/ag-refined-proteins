@@ -1,2 +1,0 @@
-# phenix.python /home/dev/runs/agrp_export_20261003T1834Z/_helpers/merge_mtz.py /home/dev/runs/agrp_export_20261003T1834Z/targets/6CDX/data/6CDX_data.mtz /home/dev/runs/agrp_export_20261003T1834Z/targets/6CDX/data/6CDX_flags.mtz /home/dev/runs/agrp_export_20261003T1834Z/_work/6CDX/merged.mtz
-wrote /home/dev/runs/agrp_export_20261003T1834Z/_work/6CDX/merged.mtz FP 27006 reflections; 1341 free
