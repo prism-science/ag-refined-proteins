@@ -14,7 +14,7 @@ OUT = os.path.join(STAGE, "representations", "7KR0")
 E = "/home/dev/runs/7KR0/experiments"
 T = "/home/dev/data/targets/7KR0"
 SCORER = "/home/dev/workspace/scripts/verify/indep_rfree.py"
-SCORER_SHA = "1899241e4e1da2b8281b47fa6e144eabcdc411b4602e9237710c2f4b1e76de46"  # == scripts/indep_rfree.py in the release
+SCORER_SHA = "c6a4a73973b6574703713e4ea4692c3c1acd860c752385c30471aae6177cf32b"  # == scripts/indep_rfree.py in the release
 UNTANGLER = "/home/dev/tools/Untangler"
 for d in ("models", "scores", "trajectories", "_work"):
     os.makedirs(os.path.join(OUT, d), exist_ok=True)
@@ -78,6 +78,15 @@ for arm in ("T", "T_r2", "T_r3"):
                      what="anisotropic-B finish on the E035c cycle-3 model (convert, 10 mc B only)",
                      model=f"{E}/e035d_aniso/aniso/{arm}_aniso/aniso_final.pdb",
                      mtz=f"{E}/e035d_aniso/arms/{arm}_aniso/Untangler/output/aniso_{arm}_aniso.mtz", freeze=True))
+# E041 line R (replication from 7KR0: conformation-aware per-copy waters, anisotropic waters, weight stack, clash cleanup).
+# Occupancies already 0.1667 x4 + 0.1666 x2 in these files (E041 environment note 1), freeze=True copies the files into the release.
+E41 = f"{E}/e041_44ps/phaseA"
+for rid, what in (("R4_S", "line R best R-free: H2_T r1s7 loop + weight stack (wc 0.3, -u 0.25), 10 mc; clashscore 26.7"),
+                  ("CJ_R4_p2", "line R after two clash-cleanup passes on R4_S (water copies on own-conformer H removed, 6 mc each); clashscore 4.5"),
+                  ("CJ_R4_polish", "CJ_R4_p2 after a 10 mc polish at wc 0.5, -u 0.25; clashscore 4.4")):
+    p = f"{E41}/{rid}/e041_{rid}.pdb"
+    if os.path.exists(p):
+        rows.append(dict(id=f"E041_{rid}", stage="E041", arm="R", what=what, model=p, mtz=None, freeze=True))
 for arm in ("T", "T_r2", "T_r3"):
     o = f"{E}/e035d_post/arms/{arm}/Untangler/output"
     if os.path.exists(f"{o}/7KR0_6conf_B0_loopEnd4.pdb"):
