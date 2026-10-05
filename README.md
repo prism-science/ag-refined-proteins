@@ -5,9 +5,11 @@ Crystallographic models re-refined by an autonomous agent (the *autoresearch* ca
 and free-reflection flags it was scored on, the deposited model it started from, the verbatim refinement command, a
 uniform release-time validation, and the campaign's complete per-target decision log.
 
-Three PDB entries, the campaign's canonical set: 3TC7 (1.5 Å), 3QUE (2.7 Å) and 7KR0 (0.77 Å). All three released models
-have a lower R-free than the deposited file on the same free set. Two more ultra-high-resolution entries, 7R2H (cyclophilin D,
-0.79 Å) and 8C5N (CbpD, 0.75 Å), are being onboarded for the six-copy ensemble line and will be added with their baselines.
+Five PDB entries: the campaign's canonical set, 3TC7 (1.5 Å), 3QUE (2.7 Å) and 7KR0 (0.77 Å), whose released models have a
+lower R-free than the deposited file on the same free set beyond what re-refinement alone gives; and two ultra-high-resolution
+entries added on 2026-10-05 for the six-copy ensemble line, 7R2H (cyclophilin D, 0.79 Å) and 8C5N (CbpD, 0.75 Å), released as
+their re-refined baselines with nothing credited yet. On 7R2H that baseline is 0.026 below the deposited R-free; the gain is
+the re-refinement protocol (anisotropic waters), not the agent's work, and it widens the R-free − R-work gap (see the card).
 The thirteen other targets of the August–September campaign are in the 2026-10-03 release (branch `release-20261003`).
 Nothing here is a ceiling: the campaign is still running and this repository is a dated snapshot of its standing records.
 
@@ -26,14 +28,16 @@ decisions (see *Method*). Every number is read from a file in `targets/<ID>/` by
 | [3TC7](targets/3TC7/README.md) | 1.5 | Crystal Structure of Engineered Protein. Northeast Structural… | 0.1916 / 0.1893 | 0.1885 | **0.1717 / 0.1677** | -0.0200 / -0.0168 (-8.2σ) | 2.9, 1.4 → 2.5, 1.6 | improved |
 | [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP Kinase in Complex with Skepinone-L | 0.2879 / 0.2901 | 0.2668 | **0.2533 / 0.2642** | -0.0346 / -0.0135 (-8.0σ) | 10.6, 7.6 → 2.8, 4.3 | improved |
 | [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal… | 0.1174 / 0.1189 | 0.1163 | **0.1125 / 0.1147** | -0.0048 / -0.0038 (-15.9σ) | 4.7, 0.9 → 6.7, 1.3 | improved |
+| [8C5N](targets/8C5N/README.md) | 0.75 | Sub-atomic resolution structure of the chitin-binding protein D… | 0.1570 / 0.1608 | 0.1533 | 0.1533 / 0.1575 | -0.0037 / -0.0000 (-0.1σ) | 6.3, 2.3 → 5.7, 2.3 | re-refined baseline, nothing credited |
+| [7R2H](targets/7R2H/README.md) | 0.79 | 0.79A resolution structure of DMSO bound Cyclophilin D | 0.1546 / 0.1565 | 0.1289 | 0.1290 / 0.1294 | -0.0256 / 0.0001 (+0.9σ) | 0.8, 0.0 → 1.2, 0.7 | re-refined baseline, nothing credited |
 <!-- results-table:end -->
 
 Status meanings:
 
 - **improved**: a credited change moved the standing model and its full R-free is below the deposited model's.
 - **re-refined baseline, nothing credited**: the released model is one Phenix re-refinement of the deposited file. The
-  gain over the deposited value is what phenix.refine does on its own, not the agent's work. 7R2H and 8C5N will enter
-  with this status.
+  gain over the deposited value is what phenix.refine does on its own, not the agent's work. 7R2H and 8C5N have
+  this status.
 
 Changed on 2026-10-03 (3TC7 and 3QUE; records written by the campaign's graph search). On both, the held-back report half,
 the unbiased estimate, improved little or not at all; the full-set gain sits mostly on the select half the search consults

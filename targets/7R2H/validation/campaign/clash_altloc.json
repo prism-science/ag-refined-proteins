@@ -1,0 +1,224 @@
+{
+ "clashscore": 1.2014417300760913,
+ "raw_count": 3,
+ "invocation": {
+  "argv": [
+   "phenix.clashscore",
+   "/home/dev/runs/7R2H/c000/baseline_rerefine/refine_001.cif",
+   "--json",
+   "--json-filename=/home/dev/runs/7R2H/c000/baseline_rerefine/clashscore.json",
+   "keep_hydrogens=False",
+   "nuclear=False"
+  ],
+  "job_id": "7R2H.baseline_rerefine.phenix.clashscore.1791185900855.2498766.21",
+  "exit_code": 0,
+  "wall_clock_s": 2.7,
+  "json": "/home/dev/runs/7R2H/c000/baseline_rerefine/clashscore.json",
+  "log": "/home/dev/runs/7R2H/c000/baseline_rerefine/phenix.clashscore.stdout.log"
+ },
+ "parse_notes": [],
+ "complete_count": 7,
+ "complete_passes": 4,
+ "clashscore_altloc_aware": 1.2014,
+ "kept_count": 3,
+ "dropped_count": 4,
+ "occ_weighted_count": 1.0,
+ "rules_applied": {
+  "R2_blank_shared": 3,
+  "R1_same_residue_cross_letter": 4
+ },
+ "altloc_filter": "autoref.model+complete_pairs",
+ "kept": [
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 113,
+    "icode": "",
+    "resname": "PHE",
+    "name": "CD1",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 201,
+    "icode": "",
+    "resname": "DMS",
+    "name": "H21",
+    "altloc": "",
+    "occ": 0.0
+   },
+   "overlap": 0.424,
+   "source": "raw",
+   "rule": "R2_blank_shared",
+   "weight": 0.0,
+   "network1": null,
+   "network2": null,
+   "occ_source": "input"
+  },
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 82,
+    "icode": "",
+    "resname": "ARG",
+    "name": "HA",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 108,
+    "icode": "",
+    "resname": "ASN",
+    "name": "O",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "overlap": 0.408,
+   "source": "raw",
+   "rule": "R2_blank_shared",
+   "weight": 1.0,
+   "network1": null,
+   "network2": null,
+   "occ_source": "input"
+  },
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 63,
+    "icode": "",
+    "resname": "GLN",
+    "name": "OE1",
+    "altloc": "",
+    "occ": 1.0
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 201,
+    "icode": "",
+    "resname": "DMS",
+    "name": "H22",
+    "altloc": "",
+    "occ": 0.0
+   },
+   "overlap": 0.401,
+   "source": "raw",
+   "rule": "R2_blank_shared",
+   "weight": 0.0,
+   "network1": null,
+   "network2": null,
+   "occ_source": "input"
+  }
+ ],
+ "dropped": [
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "CD2",
+    "altloc": "B",
+    "occ": 0.36000001430511475
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "CD2",
+    "altloc": "A",
+    "occ": 0.6399999856948853
+   },
+   "overlap": 0.91,
+   "source": "PAB",
+   "rule": "R1_same_residue_cross_letter",
+   "weight": 0.0,
+   "network1": 1,
+   "network2": 1,
+   "occ_source": "input"
+  },
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "CD2",
+    "altloc": "B",
+    "occ": 0.36000001430511475
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "HD2",
+    "altloc": "A",
+    "occ": 0.6399999856948853
+   },
+   "overlap": 0.705,
+   "source": "PAB",
+   "rule": "R1_same_residue_cross_letter",
+   "weight": 0.0,
+   "network1": 1,
+   "network2": 1,
+   "occ_source": "input"
+  },
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "HD2",
+    "altloc": "B",
+    "occ": 0.36000001430511475
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "HD2",
+    "altloc": "A",
+    "occ": 0.6399999856948853
+   },
+   "overlap": 0.617,
+   "source": "PAB",
+   "rule": "R1_same_residue_cross_letter",
+   "weight": 0.0,
+   "network1": 1,
+   "network2": 1,
+   "occ_source": "input"
+  },
+  {
+   "atom1": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "HD2",
+    "altloc": "B",
+    "occ": 0.36000001430511475
+   },
+   "atom2": {
+    "chain": "A",
+    "resseq": 131,
+    "icode": "",
+    "resname": "HIS",
+    "name": "CD2",
+    "altloc": "A",
+    "occ": 0.6399999856948853
+   },
+   "overlap": 0.602,
+   "source": "PAB",
+   "rule": "R1_same_residue_cross_letter",
+   "weight": 0.0,
+   "network1": 1,
+   "network2": 1,
+   "occ_source": "input"
+  }
+ ]
+}

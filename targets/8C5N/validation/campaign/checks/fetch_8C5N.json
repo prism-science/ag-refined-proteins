@@ -1,0 +1,43 @@
+{
+ "target": "8C5N",
+ "pdb_id": "8C5N",
+ "dest": "/home/dev/data/raw/8C5N",
+ "urls": {
+  "model_cif": "https://files.rcsb.org/download/8C5N.cif",
+  "model_pdb": "https://files.rcsb.org/download/8C5N.pdb",
+  "sf": "https://files.rcsb.org/download/8C5N-sf.cif",
+  "fasta": "https://www.rcsb.org/fasta/entry/8C5N",
+  "entry_json": "https://data.rcsb.org/rest/v1/core/entry/8C5N",
+  "pdbredo.final_cif": "https://pdb-redo.eu/db/8c5n/8c5n_final.cif",
+  "pdbredo.final_pdb": "https://pdb-redo.eu/db/8c5n/8c5n_final.pdb",
+  "pdbredo.final_mtz": "https://pdb-redo.eu/db/8c5n/8c5n_final.mtz",
+  "pdbredo.data_json": "https://pdb-redo.eu/db/8c5n/data.json"
+ },
+ "files": {
+  "model_cif": "/home/dev/data/raw/8C5N/8C5N.cif",
+  "model_pdb": "/home/dev/data/raw/8C5N/8C5N.pdb",
+  "sf": "/home/dev/data/raw/8C5N/8C5N-sf.cif",
+  "fasta": "/home/dev/data/raw/8C5N/8C5N.fasta",
+  "entry_json": "/home/dev/data/raw/8C5N/rcsb_entry.json",
+  "pdbredo.final_cif": "/home/dev/data/raw/8C5N/pdbredo/8c5n_final.cif",
+  "pdbredo.final_pdb": "/home/dev/data/raw/8C5N/pdbredo/8c5n_final.pdb",
+  "pdbredo.final_mtz": "/home/dev/data/raw/8C5N/pdbredo/8c5n_final.mtz",
+  "pdbredo.data_json": "/home/dev/data/raw/8C5N/pdbredo/data.json"
+ },
+ "errors": {},
+ "manifest": {
+  "./8C5N-sf.cif": "cc11957c6dd43d76fdb111eac90d206921c4809df310923d9b70fc8c4f79d0ff",
+  "./8C5N.cif": "abda46e2185866df21b10a5cd70e4548c5cc62faf5fdb89e03706631378073bb",
+  "./8C5N.fasta": "6dc9e5d2dbb18a6d5d9d280ffe2c4f17e1793ab2e532978e4ee1c406a72da707",
+  "./8C5N.pdb": "e1ad5c29b3228732b6a7071563fb50e372afd201664702a832605d59ccfca77d",
+  "./pdbredo/8c5n_final.cif": "e0d3653d29aed1f88a3615b483e1ef71461331545e97aec897271ebaaf88bc44",
+  "./pdbredo/8c5n_final.mtz": "55a7e2913382458859b5c8051357ac300cb3702138e1785daa6100c5740fa31a",
+  "./pdbredo/8c5n_final.pdb": "5a921b76d166f192893608308911b408c2ec38cf361bea389adb91af8f17cf1f",
+  "./pdbredo/data.json": "35a5721953c6028686ae0a5cedbb70c9b81c27640682c3a8982ef95fdd9113a7",
+  "./rcsb_entry.json": "0614b72157598157f1339ee5c1b410e370fc8918796451f3a2938aa7c4ab3152"
+ },
+ "manifest_path": "/home/dev/data/raw/8C5N/MANIFEST.sha256",
+ "missing_required": {},
+ "status": "PASS",
+ "ran_at": "2026-10-05T02:54:05+00:00"
+}

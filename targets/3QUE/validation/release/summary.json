@@ -6,7 +6,7 @@
    "model_sha256": "67bbe98159bdb43ef40a652cc809a5a3cbe5117b0229508c5204a91ff6459fcc",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3QUE/deposited/3QUE.cif",
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/3QUE/deposited/3QUE.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 2849,
@@ -25,7 +25,7 @@
     "r_free_manual": 0.2879387469032084,
     "r_free_select_manual": 0.2858317299003983,
     "r_free_report_manual": 0.290141404308002,
-    "wall_s": 0.6
+    "wall_s": 0.7
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {
@@ -48,7 +48,7 @@
    "model_sha256": "b6f8a498124cb18dcb7c740c8148b3574e60020f46a0c3283c96d0d99dca1d34",
    "indep_exit": 0,
    "indep": {
-    "model": "/home/dev/runs/agrp_export_20261003T1834Z/targets/3QUE/model/3QUE_refined.cif",
+    "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/3QUE/model/3QUE_refined.cif",
     "data": "amplitudes (FP,SIGFP)",
     "n_dropped_french_wilson": 0,
     "n_atoms": 2881,
@@ -67,7 +67,7 @@
     "r_free_manual": 0.2532972768792094,
     "r_free_select_manual": 0.2428663802372678,
     "r_free_report_manual": 0.26420164627744946,
-    "wall_s": 0.5
+    "wall_s": 0.6
    },
    "model_vs_data_exit": 0,
    "model_vs_data": {

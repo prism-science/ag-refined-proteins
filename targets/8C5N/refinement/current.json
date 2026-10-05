@@ -1,0 +1,12 @@
+{
+ "target": "8C5N",
+ "model": "/home/dev/runs/8C5N/c000/baseline_rerefine/refine_001.cif",
+ "maps_mtz": null,
+ "cycle_index": 0,
+ "stage": "baseline_rerefine",
+ "r_free_select": 0.1490656819849942,
+ "r_free_report": 0.15777807434113233,
+ "r_free_full": 0.15349500137457536,
+ "r_work": 0.14705566973306927,
+ "updated_at": "2026-10-05T05:48:44+00:00"
+}

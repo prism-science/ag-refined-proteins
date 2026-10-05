@@ -1,13 +1,13 @@
 {
  "name": "ag-refined-proteins",
  "generated_by": "scripts/build_index.py",
- "exported_from_pod_at": "2026-10-03T18:36:33Z",
+ "exported_from_pod_at": "2026-10-05T08:15:10Z",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "n_targets": 3,
+ "n_targets": 5,
  "summary": {
   "improved": 3,
   "credited, not below deposited": 0,
-  "re-refined baseline, nothing credited": 0
+  "re-refined baseline, nothing credited": 2
  },
  "representations": [
   "representations/7KR0"
@@ -76,12 +76,12 @@
      "floor_file": "noise_floor.json"
     },
     "credit_bar": {
-     "protocol": "noise_floor",
-     "sigma_full": 0.001679,
-     "sigma_select": 0.00144,
-     "sigma_report": 0.002186,
+     "protocol": "noise_floor_e043_wxc01",
+     "sigma_full": 0.002729,
+     "sigma_select": 0.002051,
+     "sigma_report": 0.003518,
      "k_multiple": 2.0,
-     "accept_threshold_select": -0.00288
+     "accept_threshold_select": -0.004102
     },
     "released": {
      "r_work": 0.21037121083959606,
@@ -190,7 +190,7 @@
     "stage": "rerefine",
     "updated_at": "2026-10-03T09:13:23+00:00",
     "model_on_pod": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 49,
+    "n_cycles_on_record": 68,
     "n_credited_cycles": 9,
     "writing_cycle": {
      "cycle_index": 921,
@@ -286,7 +286,7 @@
       "accepted_changes": 8.0
      }
     ],
-    "n_changes_proposed": 2130,
+    "n_changes_proposed": 2855,
     "thresholds_version": "thresholds_v9",
     "run_summary": null,
     "refinement": {
@@ -377,8 +377,8 @@
     },
     {
      "path": "ledger/changes.csv",
-     "bytes": 6829908,
-     "sha256": "8334eedb588f856d27c16e248b60b399d96446c0f2a98a006f050ef98eb316bb",
+     "bytes": 8717661,
+     "sha256": "fa4a91b38663b2dbef7abb08152cdb06d7dd893f25a6a622e16115d70adcdadc",
      "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
     },
     {
@@ -389,32 +389,32 @@
     },
     {
      "path": "ledger/cycles.csv",
-     "bytes": 29276,
-     "sha256": "693b5cf409b95ae3a7cc8b03cab0f5ae9254f72d4e060bd180cb8e2c3140d542",
+     "bytes": 36822,
+     "sha256": "bf0db822441b2f9f7b1fbdc97425cac5a71b7fa6c6383f71ef107e3280427031",
      "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
     },
     {
      "path": "ledger/defects.csv",
-     "bytes": 112815,
-     "sha256": "df1d2623ffb99f8cb8bf702fcc14ce16ca28f0982aa911faecbeaaabd83b2570",
+     "bytes": 120938,
+     "sha256": "68fcb489266264635418733e661447b63fdc7d330d27d7c6f94c89d03504e2d9",
      "description": "Values that could not be computed, with the reason (never a sentinel)."
     },
     {
      "path": "ledger/deviations.csv",
-     "bytes": 112095,
-     "sha256": "544008d181b4a702a880acfb1d37df07a2265946781d0eaaf3dda5ad7881b201",
+     "bytes": 121458,
+     "sha256": "3b39168eb7c8d89217dedb51663278ed7a3529b2f171fc233f5fc2a1345cd163",
      "description": "Decision-log rows that name this target."
     },
     {
      "path": "ledger/noise_floor.csv",
-     "bytes": 1341,
-     "sha256": "d7c2cec96f6bb27ce7e747783fc78deae2a4854863bc22038c34576e7358ab40",
+     "bytes": 1346,
+     "sha256": "5be144305ee6d192b7f4cebe2eec79f4d9a9fabe0388492cb28b907a9c53d928",
      "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
     },
     {
      "path": "ledger/rfree_consultations.csv",
-     "bytes": 232,
-     "sha256": "a2e9cabf16dbc48484ff8002f172e90f46fdeb62ca6327c0a9197ef57ee1e139",
+     "bytes": 228,
+     "sha256": "5e1b37ef4739acc32ba0fac2b05426f9f94bb591232c9d0e22c4949ce4cacd18",
      "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
     },
     {
@@ -580,6 +580,12 @@
      "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
     },
     {
+     "path": "validation/campaign/noise_floor_e043_wxc01.json",
+     "bytes": 8041,
+     "sha256": "8fa56b46e1ffba2b2988d092a95a2a88f42a1d0950ec9808d43f6a4ef9450c56",
+     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
+    },
+    {
      "path": "validation/campaign/verify_20260907/3QUE_deposited.indep.json",
      "bytes": 509,
      "sha256": "78392b0a354ed77f2ab184a9c914e603afbf6dd93c940a853dcf5b1c7ddc645b",
@@ -618,7 +624,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 394,
-     "sha256": "661332b0f5787b617230fe183de78ed9f1c112c711a434d9eab19fc3242727c9",
+     "sha256": "8c2850f0466d92ab71158c0bbe6bf4d8294772062d700dfea8101929d9cf2c92",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -630,19 +636,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2996,
-     "sha256": "3543cff51c6020b9dee7cf34f4d6f96dc5d28efe894ee9cf2ad548d73b691be8",
+     "sha256": "6beeb41e9c7cb6969cb55997bde7b96dc056d64ac7186827e4d849cca36657ca",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 3001,
-     "sha256": "b673821fb6c2f8fa07f9c1d40363a73bdac00407a7a97adef9a9790a9bb45daa",
+     "sha256": "c5e983df03f33a2cb5de5efcc330b0eace8e66774bcb769ec6699b590df61058",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 16072,
-     "sha256": "d36cc1b41db996c2435a8be292d75a28671f53657f4de297a55a327be2c15bf1",
+     "sha256": "c2325a1d48702349e4b81fa116a0324801774ba8409fa1aa42b32e05f34e4a39",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -654,7 +660,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 15055,
-     "sha256": "e3c3c2586c7fbc702150bc22c2dc8bf404ea18c8f7c8f90eca210b0187843740",
+     "sha256": "28625fbecca16c2669c1f6bf70a60efc574389ff3abad4b9a0244f00616f95e8",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -666,31 +672,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 615,
-     "sha256": "cd3626c3bfb8b5f1101de77fbed1d4f75c61eb5550801adabe0d65be778bb411",
+     "sha256": "85dd5f4813f789454b2b1ac5d51379a81c471c818774a9683ed501db51564166",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1075,
-     "sha256": "b20390d9b1c0275dc8d2accf0849504b15239a260883e6e2da9631a6726b1b71",
+     "sha256": "18034aa98892576cd69fd9c9ac12606b4287863d83d6cc4f32dad74bd2db807a",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 621,
-     "sha256": "6594406bffc4952fa7689edbde2856a4cb0713701f8defa7eba039dc78729157",
+     "sha256": "24251438831534779a22a05f82ff57d10ee8405099b40f4adc417e34a9aa243f",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1083,
-     "sha256": "2dfb1dbbd2a5a6bbf16c6af8b9184a881dd0e73dc209478b6849dd213264c96c",
+     "sha256": "bba2cb953030c92e9644c052f0841cb43b49cb84f3f66b70dc6d6b7b693852d8",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2483,
-     "sha256": "0bc8255f213a27e1938218867cadb3a510f36ee8d510d622ab8d7d904c0f5fa6",
+     "sha256": "4bc59bed0d9dae4a7195d3f96f4b8ccaeb695c601a29d0eecd9f5bb2d601464b",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -1047,8 +1053,8 @@
     "stage": "rerefine",
     "updated_at": "2026-10-03T05:45:25+00:00",
     "model_on_pod": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 55,
-    "n_credited_cycles": 10,
+    "n_cycles_on_record": 74,
+    "n_credited_cycles": 13,
     "writing_cycle": {
      "cycle_index": 913,
      "stage": "graph",
@@ -1150,9 +1156,36 @@
       "delta_r_gap": -0.00024,
       "geometry_flag": null,
       "accepted_changes": 2.0
+     },
+     {
+      "cycle_index": 957,
+      "run_id": "3TC7.E042",
+      "attributable_delta_select": -0.000343,
+      "r_free_full": 0.17094083732944196,
+      "delta_r_gap": -0.00075,
+      "geometry_flag": null,
+      "accepted_changes": 1.0
+     },
+     {
+      "cycle_index": 965,
+      "run_id": "3TC7.E042",
+      "attributable_delta_select": -0.000429,
+      "r_free_full": 0.17090311341454603,
+      "delta_r_gap": -0.00064,
+      "geometry_flag": null,
+      "accepted_changes": 1.0
+     },
+     {
+      "cycle_index": 966,
+      "run_id": "3TC7.E042",
+      "attributable_delta_select": -0.00022,
+      "r_free_full": 0.17102281480972137,
+      "delta_r_gap": -0.00087,
+      "geometry_flag": null,
+      "accepted_changes": 1.0
      }
     ],
-    "n_changes_proposed": 2004,
+    "n_changes_proposed": 2053,
     "thresholds_version": "thresholds_v9",
     "run_summary": null,
     "refinement": {
@@ -1242,8 +1275,8 @@
     },
     {
      "path": "ledger/changes.csv",
-     "bytes": 5883505,
-     "sha256": "d64367941c60fc397d057ae04d376e25c436eaee559ba6971a027f7ba4a3a525",
+     "bytes": 6025594,
+     "sha256": "1fdfb08cfac0b8b46374b0bd36740832fa2ac78e22c81f43c2fd89a7ebae78d3",
      "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
     },
     {
@@ -1254,20 +1287,20 @@
     },
     {
      "path": "ledger/cycles.csv",
-     "bytes": 30976,
-     "sha256": "fdc62a35116334c0e1b5c35a227416b4bf3702c84a871205f2e2409653ebc6e2",
+     "bytes": 38391,
+     "sha256": "13154af68e5081d34d876c341f99dbf10d6df80c03cd80817309394036188fd2",
      "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
     },
     {
      "path": "ledger/defects.csv",
-     "bytes": 115898,
-     "sha256": "778a5e3d504dec0269a696ae7bc3bb43d28988f4b60b54b5ae6353516ed9a6a9",
+     "bytes": 118347,
+     "sha256": "e0fcf9a1c8a2d4b46d8156205f957eea4c4ab66012dc2c19dfd7a46f4ffccefd",
      "description": "Values that could not be computed, with the reason (never a sentinel)."
     },
     {
      "path": "ledger/deviations.csv",
-     "bytes": 123445,
-     "sha256": "9b0412d57b606ef38460093eecb96f617a8bb183f336e5993e27b268d9e297bd",
+     "bytes": 130841,
+     "sha256": "198c203f48fe35fa82f92d5cb1572d76c92ebfbd7327afc9fd79733609184bf3",
      "description": "Decision-log rows that name this target."
     },
     {
@@ -1278,8 +1311,8 @@
     },
     {
      "path": "ledger/rfree_consultations.csv",
-     "bytes": 232,
-     "sha256": "5ba1b7eb565eb144626e1c427ab3b91b065159ed5fc1ddb17a1428cde4e53110",
+     "bytes": 228,
+     "sha256": "1e81dc6597594ba0c79ad0651244796012f51a431d0f80fee2fa5bc0638e319e",
      "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
     },
     {
@@ -1549,7 +1582,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 395,
-     "sha256": "62d5cff952cdf9be31714a062efc343fc66a4bf5e0e2d927f064440833e0f8e7",
+     "sha256": "5d6631d30afb0434a229d5607a909c8e15661e5d288cc9bc5bf3184a2495656c",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -1561,19 +1594,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 3316,
-     "sha256": "17fe338e32211c36cee0c614e42970c56d0ac329cb78d68472ec17421ba6025e",
+     "sha256": "39d2f63555ad94df545c31530d34903478aa8e2e2a05d4c5c3a1c47bcb16dcca",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2293,
-     "sha256": "7b1ff294e2916eee6e197bb7f113fcc0848e605c8b08fa1960b9cefaacdc8ec0",
+     "sha256": "4ec64f59be89dc9a35f52dcaf6637a2648b70c319f66dcb2306f2e66c866c671",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 16206,
-     "sha256": "61ac93858dbfc216403d5b9d725b83a5dd01ef2ca0a021d5233f63f309c7ea7d",
+     "sha256": "e728edf3fb650c3c32352e0d23ce1fceca391caf3613a04bd715e8179e488ee7",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -1585,7 +1618,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 24270,
-     "sha256": "bb7be4f20b21d4a5036b58986a55de1f1cdfe2743f8bc054a2baf8588abcfafd",
+     "sha256": "e3a914300abc65a9d713d1237cbec8a00f587909ee54cc51376f26ed3507f2d5",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -1597,31 +1630,31 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 636,
-     "sha256": "2b3245e9254896e27cf5a85b5a78355de75b7b8953a4109250bf9a2cc4ace469",
+     "sha256": "6cd4675aeefd1b2e0251b7f460ffac50163363c5895bf9eeff93c52a98453309",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1089,
-     "sha256": "5211e38dd78cda3e73f6c24f0fe748890e106ea76e4a1622cf3d6aa617691be7",
+     "sha256": "b6da200e86f24f5e1f418fd9604d6c0a4129d85cfba9e12ac6eba7d46caa553f",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 653,
-     "sha256": "d7322cbbf8add0762a36f4a5092f92d777db702b22dac52514c7a0ac41439fe2",
+     "sha256": "da0e65f7ca1862b30998f3520d88cba3acb8d6ee1742e1c4a5f1537f9f2ac43a",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1106,
-     "sha256": "a7e80e5324df5c090fb3ce032f1bf2bd4bfdd8e6f4180ad51b668555632d5f0e",
+     "sha256": "aecaaec72bea75ed3c29aed18b814ef15b1b52253b6006d3905461ec223905c7",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2553,
-     "sha256": "0dd8c1e45079094550b11fe29fdb4ad05f1577f6886952bfe5b2a16426e8291b",
+     "sha256": "1ac4eb7a906dc87f6300edd5d8aac1bdd888202aa654d605514cfa5e3f7c4e18",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]
@@ -1959,8 +1992,8 @@
     },
     {
      "path": "ledger/deviations.csv",
-     "bytes": 93320,
-     "sha256": "0effa7975bd2a43530d1958a63c550df3b2e2fa0d3099ac3c56d4c4e78a5cdc0",
+     "bytes": 98157,
+     "sha256": "a9b04d3c711a05ba948608fc1b8e5c0859eb628c3b12d7ba5e6d8ca782ae84c3",
      "description": "Decision-log rows that name this target."
     },
     {
@@ -2206,7 +2239,7 @@
     {
      "path": "validation/release/merge_mtz.log",
      "bytes": 396,
-     "sha256": "f84d5f377f9714ace95eb46cc0ede28eac8a15a9ff0a4b82b07c4d125b913eec",
+     "sha256": "b866ba9cb3283044ade0ba9d830ff94f755073f8a4b1ca64caffc45bc73664e9",
      "description": "Log of the data+flags merge used by model_vs_data."
     },
     {
@@ -2218,19 +2251,19 @@
     {
      "path": "validation/release/model_vs_data.deposited.log",
      "bytes": 2451,
-     "sha256": "0b73a2576399dd9031ff3d29c4c454aad4931fcc51aafefe7fc604b107397305",
+     "sha256": "e1cc0b4409461e698943c356cdeed9a3ff627200ac0c0cab39582f2712f159b8",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/model_vs_data.refined.log",
      "bytes": 2453,
-     "sha256": "f3a9efc2810472329c93f8432f49423af299d4662047dad005687c66650a9c30",
+     "sha256": "355bfb113238216a751edc8cddceab534e162c7fff06fc3a4c1f01090979b5b2",
      "description": "phenix.model_vs_data on the merged data+flags MTZ."
     },
     {
      "path": "validation/release/molprobity.deposited.log",
      "bytes": 19545,
-     "sha256": "461a2d4955638f645fb15d2c9b8c2460656c1516f3a8c130a1c1eeed5229e168",
+     "sha256": "d3d551bb6cf4363489b4b605720712e56ec386cfe7f8bcafe440b53913cd4ccd",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -2242,7 +2275,7 @@
     {
      "path": "validation/release/molprobity.refined.log",
      "bytes": 20375,
-     "sha256": "e668f1f8a62dc66b83dbdd6ba8c6dc7e7dde70096d5bbe607de7368fe7256ba4",
+     "sha256": "00d2ae68cbefa769a0da6876928ff796644b6b50d090992d6fd2e654ed4627a5",
      "description": "phenix.molprobity with default settings."
     },
     {
@@ -2254,31 +2287,999 @@
     {
      "path": "validation/release/rfree_indep.deposited.json",
      "bytes": 657,
-     "sha256": "ae71499eec3a6fbd2107f5f291fda10f5d6185810312ed30c4375ab702c20edc",
+     "sha256": "46a9a0c8d6b2f027f13f3efb1fa6f3ba4b38d82218893a4d5d981c0264fe11d0",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.deposited.log",
      "bytes": 1106,
-     "sha256": "ed6933f65e5c1002cfcf7360dedbd9b477dd39c2c6fcc7b12e78901842b38297",
+     "sha256": "173f92a1371e905bed1fb32d74af79d1e3fb24d46684e8e601df4723097a900d",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.json",
      "bytes": 661,
-     "sha256": "5398a0630d962589946ff58d6a513db70e8cc6af0c07614e759a0f3d0367168b",
+     "sha256": "61edb2a3edcaed5b4d01b40b7f12992ec8df11f7aa3a4a427efa6d132f670db9",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/rfree_indep.refined.log",
      "bytes": 1112,
-     "sha256": "b98fbe38f877fb12c0653363288bc8b3881b9e60b3aaf039f566b081bc274d78",
+     "sha256": "70f58f962d496f199e0943cc13fed8ac1d2d337060649b16b7c8833eba87ad13",
      "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
     },
     {
      "path": "validation/release/summary.json",
      "bytes": 2590,
-     "sha256": "03b8e95a1ac2ce49e6dd02fc8479a1f0d8f1e57b15fc66ac19a53bebfec92593",
+     "sha256": "0e98d859e0e70e98267895ed01438dc19f6f6b38aaad5c1ce62b93cac56731e4",
+     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
+    }
+   ]
+  },
+  {
+   "id": "7R2H",
+   "title": "0.79A resolution structure of DMSO bound Cyclophilin D",
+   "status": "re-refined baseline, nothing credited",
+   "resolution_a": 0.79,
+   "space_group": "P 41 21 2",
+   "unit_cell": [
+    57.348,
+    57.348,
+    87.562,
+    90.0,
+    90.0,
+    90.0
+   ],
+   "deposited_refinement_software": [
+    "PHENIX"
+   ],
+   "primary_citation": {
+    "title": "Structure-based design of pyrazole derivatives targeting the human Cyclophilin D binding site",
+    "journal_abbrev": "Int.J.Biol.Macromol.",
+    "year": 2026,
+    "pdbx_database_id_DOI": "10.1016/j.ijbiomac.2026.151496",
+    "pdbx_database_id_PubMed": null
+   },
+   "initial_release_date": "2023-02-15T00:00:00.000+00:00",
+   "data": {
+    "kind": "amplitudes",
+    "labels": "FP,SIGFP",
+    "n_reflections": 149186,
+    "n_free": 7538,
+    "fraction_free": 0.050528,
+    "n_select": 3769,
+    "n_report": 3769,
+    "flags_source": "inherited",
+    "data_mtz_sha256": "5871418b32ac4d56b3fd5d7ae0274f1f178c6efbecfb74e29343883c26f3e854",
+    "flags_mtz_sha256": "88357d540ed5245a7901c89b387ba53290f1965535ed9b2eaf60a17bae067c07",
+    "sf_source_sha256": "15f9cf6c1c2ad9585e0f0d80e7a138ecdaec6b02b0b70a7ef02a3ceb3c42ab70",
+    "header_claim": {
+     "r_work": 0.1434,
+     "r_free": 0.1549,
+     "n_free": 7538,
+     "pct_free": 5.05,
+     "n_obs": 148902,
+     "cross_valid_method": "FREE R-VALUE",
+     "sf_status": "REL"
+    }
+   },
+   "r_free": {
+    "deposited_on_our_flags": {
+     "r_work": 0.14396128689680188,
+     "full": 0.15464621782255247,
+     "select": 0.1527364294768157,
+     "report": 0.15654673759444293,
+     "model_vs_data": {
+      "r_work": 0.1437,
+      "r_free": 0.1545
+     }
+    },
+    "rerefined_no_changes": {
+     "mean_full": 0.12893081293259098,
+     "sd_full": 0.00013333498148769904,
+     "n_seeds": 10,
+     "floor_file": "noise_floor.json"
+    },
+    "credit_bar": {
+     "protocol": "noise_floor",
+     "sigma_full": 0.000133,
+     "sigma_select": 0.00021,
+     "sigma_report": 0.00019,
+     "k_multiple": 2.0,
+     "accept_threshold_select": -0.00042
+    },
+    "released": {
+     "r_work": 0.11456217696546948,
+     "full": 0.1290463661821597,
+     "select": 0.12873236692644793,
+     "report": 0.12935884153848218,
+     "model_vs_data": {
+      "r_work": 0.1143,
+      "r_free": 0.1289
+     },
+     "ledger": {
+      "r_work": 0.11456221749224399,
+      "r_free_full": 0.12903754436990097,
+      "r_free_select": 0.12873237135377238,
+      "r_free_report": 0.12934123632209701
+     }
+    },
+    "delta_full_vs_deposited": -0.025599851640392773,
+    "delta_full_beyond_rerefinement": 0.00011555324956871726,
+    "delta_beyond_in_sd_full": 0.8666386591082083
+   },
+   "composition": {
+    "deposited": {
+     "n_atoms": 2850,
+     "n_hydrogen": 1253,
+     "n_water_residues": 335,
+     "altlocs": [
+      "A",
+      "B"
+     ]
+    },
+    "released": {
+     "n_atoms": 2850,
+     "n_hydrogen": 1253,
+     "n_water_residues": 335,
+     "altlocs": [
+      "A",
+      "B"
+     ]
+    }
+   },
+   "coordinate_diff": {
+    "waters_added": [],
+    "waters_removed": [],
+    "nonwater_residues_added": [],
+    "nonwater_residues_removed": [],
+    "altloc_changes": [],
+    "hydrogens_delta": 0
+   },
+   "molprobity": {
+    "deposited": {
+     "ramachandran_outliers_pct": 0.0,
+     "ramachandran_favored_pct": 96.91,
+     "rotamer_outliers_pct": 0.0,
+     "cbeta_deviations": 0.0,
+     "clashscore": 0.8,
+     "rms_bonds": 0.0054,
+     "rms_angles": 0.91,
+     "molprobity_score": 0.93
+    },
+    "released": {
+     "ramachandran_outliers_pct": 0.0,
+     "ramachandran_favored_pct": 96.91,
+     "rotamer_outliers_pct": 0.73,
+     "cbeta_deviations": 0.0,
+     "clashscore": 1.2,
+     "rms_bonds": 0.0106,
+     "rms_angles": 1.29,
+     "molprobity_score": 1.02
+    }
+   },
+   "campaign": {
+    "cycle_index": 0,
+    "stage": "baseline_rerefine",
+    "updated_at": "2026-10-05T07:38:38+00:00",
+    "model_on_pod": "/home/dev/runs/7R2H/c000/baseline_rerefine/refine_001.cif",
+    "n_cycles_on_record": 4,
+    "n_credited_cycles": 0,
+    "writing_cycle": {
+     "cycle_index": 0,
+     "stage": "baseline_rerefine",
+     "run_id": "",
+     "verdict": "",
+     "attributable_delta_select": null,
+     "delta_r_gap": null,
+     "geometry_flag": null,
+     "run_dir": "/home/dev/runs/7R2H/c000/baseline_rerefine"
+    },
+    "bisect_step": null,
+    "credited_cycles": [],
+    "n_changes_proposed": 0,
+    "thresholds_version": "thresholds_v8",
+    "run_summary": null,
+    "refinement": {
+     "phenix_version": "2.1-6048",
+     "macro_cycles": 5,
+     "adp_model": "anisotropic",
+     "n_tls_groups": 0,
+     "riding_hydrogens": true,
+     "seed": 1,
+     "adp_decision": "n_refl/n_atoms(non-H)=93.42 >= 5.0 and d_min=0.7892 <= 1.5"
+    }
+   },
+   "caveats": [
+    "The released model is one Phenix re-refinement of the deposited file; nothing the agent proposed has been credited yet (E044). The \u22120.026 over the deposited file is the campaign's re-refinement protocol on its own, and it is mostly an ADP-model change: the deposited file carries ANISOU on 1 258 of its 1 597 non-hydrogen atoms (the isotropic ones are the 335 waters and the DMSO), the campaign's protocol refines every non-hydrogen atom anisotropically. R-work falls further than R-free, so the R-free \u2212 R-work gap widens from 0.011 to 0.014.",
+    "Rotamer outliers rise from 0.00 % to 0.73 % (one residue) and clashscore from 0.8 to 1.2 on re-refinement.",
+    "Nothing was credited on this target; the released model is the single Phenix re-refinement of the deposited file (D484). For CNS/REFMAC/X-PLOR-era depositions the campaign's noise floor measures convergence variance rather than test-set noise, so its credit bar was effectively unreachable (D506). The gain over the deposited file is what phenix.refine does on its own."
+   ],
+   "files": [
+    {
+     "path": "data/7R2H_data.mtz",
+     "bytes": 2986520,
+     "sha256": "5871418b32ac4d56b3fd5d7ae0274f1f178c6efbecfb74e29343883c26f3e854",
+     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
+    },
+    {
+     "path": "data/7R2H_flags.mtz",
+     "bytes": 2389696,
+     "sha256": "88357d540ed5245a7901c89b387ba53290f1965535ed9b2eaf60a17bae067c07",
+     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
+    },
+    {
+     "path": "data/7R2H_split.mtz",
+     "bytes": 2389696,
+     "sha256": "6370a2e00ab8658468046f5ba957c010af503c301c43fb370f55dd9c93db4ea3",
+     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
+    },
+    {
+     "path": "data/prep.json",
+     "bytes": 3740,
+     "sha256": "71b08f93ac33a9dc06562839d7e92f2a92e6e755c4e967769080936a1645f790",
+     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
+    },
+    {
+     "path": "data/split.json",
+     "bytes": 215394,
+     "sha256": "d9c34075de457b7cdec17a87d2e1e04d4079560920c7ebd9540d71f84970bc23",
+     "description": "The same split as a list of reflections, with the seed that made it."
+    },
+    {
+     "path": "deposited/7R2H.cif",
+     "bytes": 495732,
+     "sha256": "254ed93f8fe79009f4066f633ab78e0962b5469ad79b736db73c4f68464aac40",
+     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
+    },
+    {
+     "path": "deposited/7R2H.fasta",
+     "bytes": 255,
+     "sha256": "902e2297035d5eba919afda35bbfc669d3f29febed310ec57b1933cc6156f469",
+     "description": "The entry's sequence as fetched from RCSB."
+    },
+    {
+     "path": "deposited/FETCHED",
+     "bytes": 37,
+     "sha256": "3d4c8e28a76ee8826004ea8586a1c74596b70685c855f66d6d6451f12be2cb73",
+     "description": "When the raw files were fetched."
+    },
+    {
+     "path": "deposited/fetch_manifest.sha256",
+     "bytes": 756,
+     "sha256": "18319ba338a4e76d14ace1addd10c29a27d10a12841dc12641ee9bd8389f6e7e",
+     "description": "SHA-256 of the raw files at fetch time."
+    },
+    {
+     "path": "deposited/rcsb_entry.json",
+     "bytes": 12086,
+     "sha256": "6521f5a2bfe7ffd4cf54de3bad6aea2c82c79432924c774766a5df12638a50cc",
+     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
+    },
+    {
+     "path": "ledger/bisections.csv",
+     "bytes": 246,
+     "sha256": "8c31a7c401cd50a03b229cb094cb749ebf14079358828fc0e833970fdb12b8be",
+     "description": "Bisection steps when a cycle regressed."
+    },
+    {
+     "path": "ledger/changes.csv",
+     "bytes": 510,
+     "sha256": "59428eebe18da0fc02c7edbf410bddba0455674956979fba831cf55e0d444781",
+     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
+    },
+    {
+     "path": "ledger/checks.csv",
+     "bytes": 3061,
+     "sha256": "76e77bf48897043ddbb79f99ac782b438d0938d43b2530090c2a949f88cfe348",
+     "description": "Gate results G0\u2013G8."
+    },
+    {
+     "path": "ledger/cycles.csv",
+     "bytes": 3466,
+     "sha256": "f86f5316726cf91b37dafb5fb74b6680b81886ebe6ee13b998e603eacd2c3b14",
+     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
+    },
+    {
+     "path": "ledger/defects.csv",
+     "bytes": 97,
+     "sha256": "5a5f455228a6374b44931af84c251c30bbec573e1d16e071dddfd98dca30be68",
+     "description": "Values that could not be computed, with the reason (never a sentinel)."
+    },
+    {
+     "path": "ledger/deviations.csv",
+     "bytes": 126,
+     "sha256": "3964db2b379d59efb1e7cd8527e16d8ad58f2739cf30028df46970687c6a1848",
+     "description": "Decision-log rows that name this target."
+    },
+    {
+     "path": "ledger/noise_floor.csv",
+     "bytes": 1335,
+     "sha256": "4bffcc30b75852afb400e838a0fedc6bcd5a50a51672f8539cb091f60ccff459",
+     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
+    },
+    {
+     "path": "ledger/rfree_consultations.csv",
+     "bytes": 77,
+     "sha256": "0ff92cbe121805e3f07fbda673bd7f561245c1b5e6b3813615c23d170606d771",
+     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
+    },
+    {
+     "path": "ledger/solvent_disagreements.csv",
+     "bytes": 120,
+     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
+     "description": "Phenix/Coot disagreements on solvent sites."
+    },
+    {
+     "path": "maps/7R2H_refined_map_coeffs.mtz",
+     "bytes": 10232640,
+     "sha256": "4511fa380232d002df97d9abcd11384568c88b3893e93a77f19d97518e3f324d",
+     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
+    },
+    {
+     "path": "model/7R2H_refined.cif",
+     "bytes": 380401,
+     "sha256": "e94470a33950e17defd5572adc45812c1a18f0e6470b08fa85dc95081892222d",
+     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
+    },
+    {
+     "path": "model/7R2H_refined.pdb",
+     "bytes": 359913,
+     "sha256": "de806717a328f26d182ab680cda42c370fee3ca1ac31c2635cb8bdae52bf2bb6",
+     "description": "The same model in PDB format, from the same run."
+    },
+    {
+     "path": "refinement/command.txt",
+     "bytes": 3688,
+     "sha256": "9bcc7bb7f0f6809229e4daef5caac8753d90e9b4765fa040594262bc9272e16b",
+     "description": "The verbatim phenix.refine argv that wrote the model."
+    },
+    {
+     "path": "refinement/current.json",
+     "bytes": 352,
+     "sha256": "a33863de82266e36e78d122c8f1b7d4ff5f8d1b472f3f49b644638024b8bf46f",
+     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
+    },
+    {
+     "path": "refinement/refine_001.eff",
+     "bytes": 42674,
+     "sha256": "412ea9f18eed528d621b34a496ffc58039299fac7fe80fb1752c6b49a3082b99",
+     "description": "The effective parameters of that run."
+    },
+    {
+     "path": "refinement/refine_001.log",
+     "bytes": 76676,
+     "sha256": "ae55372dce44e3a6e002fa80dd8c30fde924b7d5687907b7983a4057b3fd45d8",
+     "description": "The phenix.refine log of that run."
+    },
+    {
+     "path": "refinement/refine_decisions.json",
+     "bytes": 2135,
+     "sha256": "4de947cbce05294cb587e61dcc5b211c94c17f973f37d9b16a1abd067275c1cf",
+     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
+    },
+    {
+     "path": "refinement/refine_result.json",
+     "bytes": 2775,
+     "sha256": "d90d266eb23dea7304912049b6ad5af1cd24a8fbd736e3de6e9ce3afd75ec259",
+     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
+    },
+    {
+     "path": "validation/campaign/checks/G3_7R2H.json",
+     "bytes": 4667,
+     "sha256": "5088593a8cf2687ed8fe9038be2468a47e4d9f373b6c513cabab03a8348b276f",
+     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
+    },
+    {
+     "path": "validation/campaign/checks/fetch_7R2H.json",
+     "bytes": 2207,
+     "sha256": "2c1fe04d2ad7b1c524c1834ed844f98d28890283c3860eafb14684beb0cb330f",
+     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
+    },
+    {
+     "path": "validation/campaign/clash_altloc.json",
+     "bytes": 4311,
+     "sha256": "d32b5c15de4f21c2b4eb2e90a4e52cd109fd7acbacba435c216652f2a2611ddb",
+     "description": "The campaign's clashscore runs (standard and altloc-aware)."
+    },
+    {
+     "path": "validation/campaign/clashscore.json",
+     "bytes": 6728,
+     "sha256": "723adf972e17fd202ef3ad76f03588faf3fb39f4b78e07f3f87ab6a92e321ece",
+     "description": "The campaign's clashscore runs (standard and altloc-aware)."
+    },
+    {
+     "path": "validation/campaign/cycle_row.json",
+     "bytes": 1266,
+     "sha256": "d5bc9de6c2ec307e9116a010e987259fc2464b5b43b923ee388f4e38bf39567c",
+     "description": "The campaign's per-cycle record for this model (PROTOCOL \u00a77)."
+    },
+    {
+     "path": "validation/campaign/dossier.json",
+     "bytes": 147106,
+     "sha256": "1e48654f802a806fbc45d4f2ea23c2fa5d5b80611bcbf62180a4f4b0c0341ec4",
+     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
+    },
+    {
+     "path": "validation/campaign/molprobity.out",
+     "bytes": 34626,
+     "sha256": "7e4b24d407e5f3d87a1a9cc65618eca7b8c2d77f7d70ae1a1021fae27206c39c",
+     "description": "The campaign's MolProbity run on this model."
+    },
+    {
+     "path": "validation/campaign/molprobity_result.json",
+     "bytes": 9083,
+     "sha256": "b81e016e23592b75ad47968d1dc010bfc300e318bbc104bae9be71efdbd5bfba",
+     "description": "The campaign's MolProbity run on this model."
+    },
+    {
+     "path": "validation/campaign/noise_floor.json",
+     "bytes": 7498,
+     "sha256": "7ecbd38f3ac80444bb04fdc534a806927f8186f5537c2d93803301015f407dd0",
+     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
+    },
+    {
+     "path": "validation/release/merge_mtz.log",
+     "bytes": 396,
+     "sha256": "22d67424be03acb81528411b2d871dd4a42ce65b75840be3778e7002a97c6b82",
+     "description": "Log of the data+flags merge used by model_vs_data."
+    },
+    {
+     "path": "validation/release/model_diff.json",
+     "bytes": 458,
+     "sha256": "42dc8c29934d8a970edb7ee87b230ef0a6deeb7b601864b71c91fd5bf5171f8f",
+     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
+    },
+    {
+     "path": "validation/release/model_vs_data.deposited.log",
+     "bytes": 2535,
+     "sha256": "29782bf5763d4220418922947e94682d8173ab11e1130b43c7ca1f71b697681a",
+     "description": "phenix.model_vs_data on the merged data+flags MTZ."
+    },
+    {
+     "path": "validation/release/model_vs_data.refined.log",
+     "bytes": 2538,
+     "sha256": "126a5aa2dfd4ec551bd135cfb5e53e652f7c8c7748fde2c0964d2538d80699d8",
+     "description": "phenix.model_vs_data on the merged data+flags MTZ."
+    },
+    {
+     "path": "validation/release/molprobity.deposited.log",
+     "bytes": 49735,
+     "sha256": "9f3ab040fe05ef1054a015215a6085fe047f9c118760fcc54098b502d048ddd6",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/molprobity.deposited.out",
+     "bytes": 37271,
+     "sha256": "11af2bb198aa56d7d30c5f2932b25e439580cfa559afa43677f4e65654c071f8",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/molprobity.refined.log",
+     "bytes": 44921,
+     "sha256": "8fe72a3623d2ad564dc679bb51c50a2d628b5520a191f368682106eb3e3574c3",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/molprobity.refined.out",
+     "bytes": 31828,
+     "sha256": "48446bb31e451922a9c264d2fe1e2fc975632484949c3691cf697ce65d2719ec",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/rfree_indep.deposited.json",
+     "bytes": 643,
+     "sha256": "8c1f27540fb6e46c1f5cf30800716132cbc9b3ae7c2c223b7de437e6754b4a46",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/rfree_indep.deposited.log",
+     "bytes": 1096,
+     "sha256": "667cf26e52b8bf54be944b316f8d61bc0cbcfd7b468adea4440852b4af918643",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/rfree_indep.refined.json",
+     "bytes": 647,
+     "sha256": "05908a880df7bce0462c35542a1decf349457c001dbfaaed8aefcfcd053615fb",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/rfree_indep.refined.log",
+     "bytes": 1102,
+     "sha256": "34655f3b623763c90456557bec22f47cb4c12dc70186b2eeb2cfb037efc278da",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/summary.json",
+     "bytes": 2550,
+     "sha256": "478f6396e6888675e2f43e1cc83f8d3d6ac0101cd112b54d46650d066519e3c7",
+     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
+    }
+   ]
+  },
+  {
+   "id": "8C5N",
+   "title": "Sub-atomic resolution structure of the chitin-binding protein D (CbpD) from Pseudomonas aeruginosa",
+   "status": "re-refined baseline, nothing credited",
+   "resolution_a": 0.75,
+   "space_group": "P 1 21 1",
+   "unit_cell": [
+    31.6,
+    54.56,
+    47.98,
+    90.0,
+    99.246,
+    90.0
+   ],
+   "deposited_refinement_software": [
+    "PHENIX",
+    "SHELXL"
+   ],
+   "primary_citation": {
+    "title": "Immunization with lytic polysaccharide monooxygenase CbpD induces protective immunity against Pseudomonas aeruginosa pneumonia.",
+    "journal_abbrev": "Proc.Natl.Acad.Sci.USA",
+    "year": 2023,
+    "pdbx_database_id_DOI": "10.1073/pnas.2301538120",
+    "pdbx_database_id_PubMed": 37459522
+   },
+   "initial_release_date": "2023-06-28T00:00:00.000+00:00",
+   "data": {
+    "kind": "amplitudes",
+    "labels": "FP,SIGFP",
+    "n_reflections": 198461,
+    "n_free": 9968,
+    "fraction_free": 0.050226,
+    "n_select": 4984,
+    "n_report": 4984,
+    "flags_source": "inherited",
+    "data_mtz_sha256": "c8b5afe5ac57978cdd1668e88e51aa9efb14db53cf23506080576de12e6529e6",
+    "flags_mtz_sha256": "d42d38db669cc6f6f286bbe2075b52e07a110251664fadd2de15521913f722df",
+    "sf_source_sha256": "cc11957c6dd43d76fdb111eac90d206921c4809df310923d9b70fc8c4f79d0ff",
+    "header_claim": {
+     "r_work": 0.1537,
+     "r_free": 0.1634,
+     "n_free": 9879,
+     "pct_free": 5.026,
+     "n_obs": 196572,
+     "cross_valid_method": "FREE R-VALUE",
+     "sf_status": "REL"
+    }
+   },
+   "r_free": {
+    "deposited_on_our_flags": {
+     "r_work": 0.14801759709582987,
+     "full": 0.15704629209471901,
+     "select": 0.15313900328101712,
+     "report": 0.1608245707914149,
+     "model_vs_data": {
+      "r_work": 0.1478,
+      "r_free": 0.1571
+     }
+    },
+    "rerefined_no_changes": {
+     "mean_full": 0.15334181946270145,
+     "sd_full": 0.0001308047309752223,
+     "n_seeds": 10,
+     "floor_file": "noise_floor.json"
+    },
+    "credit_bar": {
+     "protocol": "noise_floor",
+     "sigma_full": 0.000131,
+     "sigma_select": 0.000191,
+     "sigma_report": 0.000114,
+     "k_multiple": 2.0,
+     "accept_threshold_select": -0.000382
+    },
+    "released": {
+     "r_work": 0.1470599207267983,
+     "full": 0.15333482109286353,
+     "select": 0.1490213226190197,
+     "report": 0.1575058972965947,
+     "model_vs_data": {
+      "r_work": 0.1468,
+      "r_free": 0.1533
+     },
+     "ledger": {
+      "r_work": 0.14705566973306927,
+      "r_free_full": 0.15349500137457536,
+      "r_free_select": 0.1490656819849942,
+      "r_free_report": 0.15777807434113233
+     }
+    },
+    "delta_full_vs_deposited": -0.003711471001855482,
+    "delta_full_beyond_rerefinement": -6.99836983791835e-06,
+    "delta_beyond_in_sd_full": -0.05350242140128722
+   },
+   "composition": {
+    "deposited": {
+     "n_atoms": 2433,
+     "n_hydrogen": 665,
+     "n_water_residues": 161,
+     "altlocs": [
+      "A",
+      "B",
+      "C"
+     ]
+    },
+    "released": {
+     "n_atoms": 2433,
+     "n_hydrogen": 665,
+     "n_water_residues": 161,
+     "altlocs": [
+      "A",
+      "B",
+      "C"
+     ]
+    }
+   },
+   "coordinate_diff": {
+    "waters_added": [],
+    "waters_removed": [],
+    "nonwater_residues_added": [],
+    "nonwater_residues_removed": [],
+    "altloc_changes": [],
+    "hydrogens_delta": 0
+   },
+   "molprobity": {
+    "deposited": {
+     "ramachandran_outliers_pct": 0.0,
+     "ramachandran_favored_pct": 99.46,
+     "rotamer_outliers_pct": 2.34,
+     "cbeta_deviations": 0.0,
+     "clashscore": 6.33,
+     "rms_bonds": 0.015,
+     "rms_angles": 2.02,
+     "molprobity_score": 1.63
+    },
+    "released": {
+     "ramachandran_outliers_pct": 0.0,
+     "ramachandran_favored_pct": 99.46,
+     "rotamer_outliers_pct": 2.34,
+     "cbeta_deviations": 0.0,
+     "clashscore": 5.69,
+     "rms_bonds": 0.0117,
+     "rms_angles": 1.41,
+     "molprobity_score": 1.59
+    }
+   },
+   "campaign": {
+    "cycle_index": 0,
+    "stage": "baseline_rerefine",
+    "updated_at": "2026-10-05T05:48:44+00:00",
+    "model_on_pod": "/home/dev/runs/8C5N/c000/baseline_rerefine/refine_001.cif",
+    "n_cycles_on_record": 4,
+    "n_credited_cycles": 0,
+    "writing_cycle": {
+     "cycle_index": 0,
+     "stage": "baseline_rerefine",
+     "run_id": "",
+     "verdict": "",
+     "attributable_delta_select": null,
+     "delta_r_gap": null,
+     "geometry_flag": null,
+     "run_dir": "/home/dev/runs/8C5N/c000/baseline_rerefine"
+    },
+    "bisect_step": null,
+    "credited_cycles": [],
+    "n_changes_proposed": 20,
+    "thresholds_version": "thresholds_v8",
+    "run_summary": null,
+    "refinement": {
+     "phenix_version": "2.1-6048",
+     "macro_cycles": 5,
+     "adp_model": "anisotropic",
+     "n_tls_groups": 0,
+     "riding_hydrogens": true,
+     "seed": 1,
+     "adp_decision": "n_refl/n_atoms(non-H)=112.25 >= 5.0 and d_min=0.7499 <= 1.5"
+    }
+   },
+   "caveats": [
+    "Refined and scored against the deposited amplitudes (F_meas_au), not the merged intensities: French\u2013Wilson conversion of the intensities drops 44 of the 9 968 inherited free reflections (D540). The free set itself (status 'f') is unchanged.",
+    "The released model is one Phenix re-refinement of the deposited file; nothing the agent proposed has been credited yet (E044). Rotamer outliers 2.3 % in both the deposited and the released model, above the campaign's 1.5 % cap (pre-existing).",
+    "The deposited model carries 665 hydrogens, an incomplete riding set; the released model keeps the deposited hydrogens.",
+    "Nothing was credited on this target; the released model is the single Phenix re-refinement of the deposited file (D484). For CNS/REFMAC/X-PLOR-era depositions the campaign's noise floor measures convergence variance rather than test-set noise, so its credit bar was effectively unreachable (D506). The gain over the deposited file is what phenix.refine does on its own."
+   ],
+   "files": [
+    {
+     "path": "data/8C5N_data.mtz",
+     "bytes": 3971540,
+     "sha256": "c8b5afe5ac57978cdd1668e88e51aa9efb14db53cf23506080576de12e6529e6",
+     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
+    },
+    {
+     "path": "data/8C5N_flags.mtz",
+     "bytes": 3177616,
+     "sha256": "d42d38db669cc6f6f286bbe2075b52e07a110251664fadd2de15521913f722df",
+     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
+    },
+    {
+     "path": "data/8C5N_split.mtz",
+     "bytes": 3177616,
+     "sha256": "bdf553612ad52b290d7283dc164cb0774b17bfeebb675f58897ecb702de944c2",
+     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
+    },
+    {
+     "path": "data/prep.json",
+     "bytes": 4931,
+     "sha256": "40e41a94e38c1a2a97c94ec2bd36e9152719364fc4e598aab87b53187938066d",
+     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
+    },
+    {
+     "path": "data/split.json",
+     "bytes": 287300,
+     "sha256": "275bab4653eb004bb46afd5f8ada4c8fe12908ae0a2a7bafb17796a3d01d4556",
+     "description": "The same split as a list of reflections, with the seed that made it."
+    },
+    {
+     "path": "deposited/8C5N.cif",
+     "bytes": 520623,
+     "sha256": "abda46e2185866df21b10a5cd70e4548c5cc62faf5fdb89e03706631378073bb",
+     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
+    },
+    {
+     "path": "deposited/8C5N.fasta",
+     "bytes": 275,
+     "sha256": "6dc9e5d2dbb18a6d5d9d280ffe2c4f17e1793ab2e532978e4ee1c406a72da707",
+     "description": "The entry's sequence as fetched from RCSB."
+    },
+    {
+     "path": "deposited/FETCHED",
+     "bytes": 76,
+     "sha256": "9f605c751717d1881e91a81c21137bc377ba98ede25a3f5c52c466470551756a",
+     "description": "When the raw files were fetched."
+    },
+    {
+     "path": "deposited/fetch_manifest.sha256",
+     "bytes": 756,
+     "sha256": "29738101dc05f58e3537786d9564c308417ff3624eb12b4a200d46024bbb8ca9",
+     "description": "SHA-256 of the raw files at fetch time."
+    },
+    {
+     "path": "deposited/rcsb_entry.json",
+     "bytes": 17900,
+     "sha256": "0614b72157598157f1339ee5c1b410e370fc8918796451f3a2938aa7c4ab3152",
+     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
+    },
+    {
+     "path": "ledger/bisections.csv",
+     "bytes": 246,
+     "sha256": "8c31a7c401cd50a03b229cb094cb749ebf14079358828fc0e833970fdb12b8be",
+     "description": "Bisection steps when a cycle regressed."
+    },
+    {
+     "path": "ledger/changes.csv",
+     "bytes": 66077,
+     "sha256": "e86fe7109bd351ee02abc9c3761cf037ea4849bee1063fe854cd5c4daa22e96a",
+     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
+    },
+    {
+     "path": "ledger/checks.csv",
+     "bytes": 3466,
+     "sha256": "a1fc29b7f51efa2ecbf1e54927924f34748fa84db53362a81303fee750fbdc0c",
+     "description": "Gate results G0\u2013G8."
+    },
+    {
+     "path": "ledger/cycles.csv",
+     "bytes": 3504,
+     "sha256": "e1e5492cb60cc73b40035a409479810663be7bbe6f5f230dc4dc9122ef834f8c",
+     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
+    },
+    {
+     "path": "ledger/defects.csv",
+     "bytes": 3157,
+     "sha256": "8068f579a6cf9875cecd08fd9215f7464bfa5c8f24653e02876f39b9e5787a6e",
+     "description": "Values that could not be computed, with the reason (never a sentinel)."
+    },
+    {
+     "path": "ledger/deviations.csv",
+     "bytes": 924,
+     "sha256": "6c30c2e853cc786fc37cf44eed368814e24f4fbff5cb750fc36d50580bd16533",
+     "description": "Decision-log rows that name this target."
+    },
+    {
+     "path": "ledger/noise_floor.csv",
+     "bytes": 1333,
+     "sha256": "a3a83a697fb108dbb0c40a2fd433c6fa3b602f08bdc63812edf26981e3827caf",
+     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
+    },
+    {
+     "path": "ledger/rfree_consultations.csv",
+     "bytes": 226,
+     "sha256": "0a58aded038df276af9357b87fc4f70b1f5ccb5a64e98666c7a26b7737c52a48",
+     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
+    },
+    {
+     "path": "ledger/solvent_disagreements.csv",
+     "bytes": 120,
+     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
+     "description": "Phenix/Coot disagreements on solvent sites."
+    },
+    {
+     "path": "maps/8C5N_refined_map_coeffs.mtz",
+     "bytes": 13112672,
+     "sha256": "35b10ad18ad4410b3766fe3b2c60ff0835753d38242c1afbb472acf850b501ae",
+     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
+    },
+    {
+     "path": "model/8C5N_refined.cif",
+     "bytes": 358972,
+     "sha256": "4a4a31d01b66f915c73e74e864167808b1ea6707b9c83dfb55f5e48d65ec8f63",
+     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
+    },
+    {
+     "path": "model/8C5N_refined.pdb",
+     "bytes": 341096,
+     "sha256": "b978c137c845245fe776cac0dcfd64e80ec815d51d66fa3227e813cc24b18441",
+     "description": "The same model in PDB format, from the same run."
+    },
+    {
+     "path": "refinement/command.txt",
+     "bytes": 3688,
+     "sha256": "3a35fe42277096c5d0a5519d63714ee6e0a61ce8b89cd407e543dccb8113ae7b",
+     "description": "The verbatim phenix.refine argv that wrote the model."
+    },
+    {
+     "path": "refinement/current.json",
+     "bytes": 351,
+     "sha256": "bf29977de1303071ba11eb0a610d5a0626ac6db9076052a4540a8c4876ccca80",
+     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
+    },
+    {
+     "path": "refinement/refine_001.eff",
+     "bytes": 42674,
+     "sha256": "9bc39b232efba8f58ba5da6b2773566fb26dabf3a6b5dbdab7673df6af8bbc09",
+     "description": "The effective parameters of that run."
+    },
+    {
+     "path": "refinement/refine_001.log",
+     "bytes": 79900,
+     "sha256": "b5a9cc7618321833f38c8df8209729cc1b5e60d3fa3b6bcab31fe90534fdb024",
+     "description": "The phenix.refine log of that run."
+    },
+    {
+     "path": "refinement/refine_decisions.json",
+     "bytes": 2145,
+     "sha256": "dcd4cd86ea5865a3cdaea75541f001885f3102713bec234dfdfaf53ac834d2a2",
+     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
+    },
+    {
+     "path": "refinement/refine_result.json",
+     "bytes": 2774,
+     "sha256": "5f70b04d7d3e2734eccead8e3bdf10dffbb466b16e70accacc82d45a3a46a95a",
+     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
+    },
+    {
+     "path": "validation/campaign/checks/G3_8C5N.json",
+     "bytes": 6499,
+     "sha256": "acc2530df0b87dc3c863d8188e2081cf92d1a991cfe2e04a1cd35e2e9283e0b8",
+     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
+    },
+    {
+     "path": "validation/campaign/checks/fetch_8C5N.json",
+     "bytes": 2207,
+     "sha256": "7d254a72fc2ac0da82c594eb4917badc1e016dba4669c75eeaee9c44a5a029cf",
+     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
+    },
+    {
+     "path": "validation/campaign/clash_altloc.json",
+     "bytes": 11220,
+     "sha256": "536201abb094f38678d9964a4dfc99b23e68f3084a27bd8dc7882f7243e0d5b3",
+     "description": "The campaign's clashscore runs (standard and altloc-aware)."
+    },
+    {
+     "path": "validation/campaign/clashscore.json",
+     "bytes": 37238,
+     "sha256": "42db9425d296688780e6d28d7df6f0c99bd502e306d8066964b9e3c4a632f6eb",
+     "description": "The campaign's clashscore runs (standard and altloc-aware)."
+    },
+    {
+     "path": "validation/campaign/cycle_row.json",
+     "bytes": 1267,
+     "sha256": "23d13e5bc6d149408fbdedf55150054ca7596e20445ca98245eee6e9d640cb03",
+     "description": "The campaign's per-cycle record for this model (PROTOCOL \u00a77)."
+    },
+    {
+     "path": "validation/campaign/dossier.json",
+     "bytes": 107694,
+     "sha256": "33261f08741ac7ca4b202b9c16bbaeb905c97e1cfd658a4bab9d0a706e04c057",
+     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
+    },
+    {
+     "path": "validation/campaign/molprobity.out",
+     "bytes": 18378,
+     "sha256": "1befb7e3c3af7c2259c05582f656b3280a0150909db1c83a85d0357e3937b104",
+     "description": "The campaign's MolProbity run on this model."
+    },
+    {
+     "path": "validation/campaign/molprobity_result.json",
+     "bytes": 7630,
+     "sha256": "5fbbc3d5c5ae6f2891f6ebc290b608811cb811c1ac0079c3ffda7fecbaa2ef64",
+     "description": "The campaign's MolProbity run on this model."
+    },
+    {
+     "path": "validation/campaign/noise_floor.json",
+     "bytes": 7564,
+     "sha256": "6490f9426419ecd26664949e5c0f929d152af4c64f28422d7dd3cc74dbf35c60",
+     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
+    },
+    {
+     "path": "validation/release/merge_mtz.log",
+     "bytes": 396,
+     "sha256": "324cea168bc674f0c886f7c873d6ddd31c1eb4ce1d2055b157e2623e8fcd762e",
+     "description": "Log of the data+flags merge used by model_vs_data."
+    },
+    {
+     "path": "validation/release/model_diff.json",
+     "bytes": 458,
+     "sha256": "efc13c35a7e2ca733d7a38f6cd6e308e768bc7d511281581d1a6e0324d264db6",
+     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
+    },
+    {
+     "path": "validation/release/model_vs_data.deposited.log",
+     "bytes": 2454,
+     "sha256": "b4764cbc293862623b9fc630d355704e500e7492d270c1f3dcbdb5fb82f0589d",
+     "description": "phenix.model_vs_data on the merged data+flags MTZ."
+    },
+    {
+     "path": "validation/release/model_vs_data.refined.log",
+     "bytes": 3646,
+     "sha256": "6b568ffb146477baa11077791626e863ec52f08c7006a59b89dfe32f12124f47",
+     "description": "phenix.model_vs_data on the merged data+flags MTZ."
+    },
+    {
+     "path": "validation/release/molprobity.deposited.log",
+     "bytes": 31033,
+     "sha256": "8ed2c7cb809a37a5e60d3e076b3b0d7a3569841b726a414d6d72057625ee048d",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/molprobity.deposited.out",
+     "bytes": 17155,
+     "sha256": "3ba89bbbedca817996d4c97c8d08883eea31818d839328a28df7cf2d851b4c08",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/molprobity.refined.log",
+     "bytes": 30501,
+     "sha256": "3d4bf794b44b13733c25813e8912668d8fd69ac7f92cdc13c85f778a794214b0",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/molprobity.refined.out",
+     "bytes": 15860,
+     "sha256": "26399b3d712724c178410ed52348710df369598a1f48f0ef3fa92259fca983e8",
+     "description": "phenix.molprobity with default settings."
+    },
+    {
+     "path": "validation/release/rfree_indep.deposited.json",
+     "bytes": 647,
+     "sha256": "79f6426ffe2f2d43983beef6fbf74abb35bc62a59e94f80a059891336d1fd817",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/rfree_indep.deposited.log",
+     "bytes": 1098,
+     "sha256": "95fa316f999db01fc1a4f2aa6a1c8d05ce88425ba1cd47428c9958b5b357c3c9",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/rfree_indep.refined.json",
+     "bytes": 650,
+     "sha256": "ae5c0a44badee2f9b92f53e57d9df11dfc5bfc87e6579078b3e9cb6c170e94f4",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/rfree_indep.refined.log",
+     "bytes": 1103,
+     "sha256": "0dcbf7e12f6358b5fa1ef91edf04f0056d2bb64786973180eaf59691a93bafbb",
+     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
+    },
+    {
+     "path": "validation/release/summary.json",
+     "bytes": 2565,
+     "sha256": "d852ec5c24ae849e178cb9596d97ab861244c09d9f7e803d7b7274be5c6b6093",
      "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
     }
    ]

@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/7KR0/deposited/7KR0.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261005T0813Z/targets/7KR0/deposited/7KR0.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -105,7 +105,7 @@
       ... (26 atoms not shown)
       pdb="HD22BASN A  20 " occ=0.24
     ... (remaining 83 not shown)
-  Time building chain proxies: 0.69, per 1000 atoms: 0.16
+  Time building chain proxies: 0.68, per 1000 atoms: 0.16
   Number of scatterers: 4300
   At special positions: 0
   Unit cell: (139.82, 29.63, 37.96, 90, 103.56, 90)
@@ -183,11 +183,11 @@
         Amino acid - RNA/DNA : False
       
   Number of custom bonds: simple=0, symmetry=0
-  Time building additional restraints: 0.20
+  Time building additional restraints: 0.24
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  486
 
-  Time building geometry restraints manager: 0.28 seconds
+  Time building geometry restraints manager: 0.27 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

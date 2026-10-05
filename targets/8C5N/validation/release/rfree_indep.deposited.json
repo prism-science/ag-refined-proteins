@@ -1,0 +1,26 @@
+{
+ "model": "/home/dev/runs/agrp_export_20261005T0813Z/targets/8C5N/deposited/8C5N.cif",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 2433,
+ "n_hydrogen": 665,
+ "altlocs": [
+  "A",
+  "B",
+  "C"
+ ],
+ "n_water_residues": 161,
+ "n_reflections": 198461,
+ "n_free": 9968,
+ "n_select": 4984,
+ "n_report": 4984,
+ "n_work": 188493,
+ "d_min": 0.749888742952205,
+ "r_work_fmodel": 0.1480133612185291,
+ "r_free_fmodel": 0.15721298625176205,
+ "r_work_manual": 0.14801759709582987,
+ "r_free_manual": 0.15704629209471901,
+ "r_free_select_manual": 0.15313900328101712,
+ "r_free_report_manual": 0.1608245707914149,
+ "wall_s": 5.4
+}

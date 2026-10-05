@@ -1,0 +1,49 @@
+# phenix.model_vs_data /home/dev/runs/agrp_export_20261005T0813Z/targets/7R2H/model/7R2H_refined.cif /home/dev/runs/agrp_export_20261005T0813Z/_work/7R2H/merged.mtz
+Data: --------------------------------------------------------------------------
+  Miller array info: /home/dev/runs/agrp_export_20261005T0813Z/_work/7R2H/merged.mtz:FP,SIGFP,systematic_absences_eliminated
+  Observation type: xray.amplitude
+  Type of data: double, size=149186
+  Type of sigmas: double, size=149186
+  Number of Miller indices: 149186
+  Anomalous flag: False
+  Unit cell: (57.348, 57.348, 87.562, 90, 90, 90)
+  Space group: P 41 21 2 (No. 92)
+  Systematic absences: 0
+  Centric reflections: 10663
+  Resolution range: 36.7967 0.789201
+  Completeness in resolution range: 0.93362
+  Completeness with d_max=infinity: 0.933609
+  Wavelength: 1.0000
+R-free-flags: ------------------------------------------------------------------
+  flag value: 0
+Model vs Data: -----------------------------------------------------------------
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 36.797-9.832    85.22    93     5 0.2085   397.577   342.671 0.780 0.909 0.324
+  9.774-7.811    94.39    92     9 0.1332   432.512   427.238 0.952 0.908 0.320
+  7.753-6.261   100.00   171     8 0.1731   316.079   306.814 0.970 0.910 0.313
+  6.230-4.992    98.89   337    18 0.1379   366.461   358.210 1.007 0.910 0.307
+  4.983-3.987    97.47   628    28 0.1086   508.697   504.411 1.068 0.911 0.300
+  3.987-3.187    97.24  1179    55 0.1098   515.301   510.310 1.130 0.914 0.144
+  3.187-2.547    98.38  2318   105 0.1289   347.611   342.576 1.107 0.916 0.120
+  2.547-2.036    97.82  4387   229 0.1166   279.225   274.820 1.140 0.919 0.000
+  2.035-1.627    98.27  8499   469 0.1139   176.534   174.386 1.166 0.924 0.000
+  1.627-1.300    98.04 16375   923 0.1009   107.083   106.381 1.189 0.931 0.000
+  1.300-1.039    96.67 31462  1647 0.0891    72.691    72.736 1.244 0.938 0.000
+  1.039-0.830    93.67 59190  3133 0.1296    29.276    28.819 1.232 0.940 0.000
+  0.830-0.789    79.74 16915   909 0.2476    14.954    13.313 1.062 0.934 0.000
+
+  r_work: 0.1143
+  r_free: 0.1289
+
+  Number of F-obs outliers: 2
+Information extracted from PDB file header: ------------------------------------
+  program_name    : Phenix
+  year            : None
+  r_work          : 0.1142
+  r_free          : 0.1289
+  high_resolution : 0.79
+  low_resolution  : 36.8
+  sigma_cutoff    : 0.31
+  matthews_coeff  : None
+  solvent_cont    : None
+  exptl_method    : X-RAY DIFFRACTION

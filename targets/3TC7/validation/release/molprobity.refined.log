@@ -1,4 +1,4 @@
-# phenix.molprobity /home/dev/runs/agrp_export_20261003T1834Z/targets/3TC7/model/3TC7_refined.cif output.prefix=mp
+# phenix.molprobity /home/dev/runs/agrp_export_20261005T0813Z/targets/3TC7/model/3TC7_refined.cif output.prefix=mp
 
 **Starting phenix.molprobity **
 
@@ -108,7 +108,7 @@
       ... (20 atoms not shown)
       pdb=" NH2BARG A 175 " occ=0.58
     ... (remaining 105 not shown)
-  Time building chain proxies: 0.88, per 1000 atoms: 0.18
+  Time building chain proxies: 0.89, per 1000 atoms: 0.19
   Number of scatterers: 4804
   At special positions: 0
   Unit cell: (60.96, 60.96, 118.663, 90, 90, 120)
@@ -189,12 +189,12 @@
   Number of custom bonds: simple=0, symmetry=0
   Time building additional restraints: 0.18
   Switching to conformation-dependent library
-  Conformation dependent library (CDL) restraints added in 135.0 milliseconds
+  Conformation dependent library (CDL) restraints added in 196.4 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  540
 
-  Time building geometry restraints manager: 0.26 seconds
+  Time building geometry restraints manager: 0.27 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.

@@ -1,0 +1,23 @@
+{
+ "target": "7R2H",
+ "deposited": {
+  "n_atoms": 2850,
+  "n_hydrogen": 1253,
+  "n_waters": 335,
+  "n_nonwater_residues": 165,
+  "n_residues_with_altlocs": 2
+ },
+ "released": {
+  "n_atoms": 2850,
+  "n_hydrogen": 1253,
+  "n_waters": 335,
+  "n_nonwater_residues": 165,
+  "n_residues_with_altlocs": 2
+ },
+ "waters_added": [],
+ "waters_removed": [],
+ "nonwater_residues_added": [],
+ "nonwater_residues_removed": [],
+ "altloc_changes": [],
+ "hydrogens_delta": 0
+}
