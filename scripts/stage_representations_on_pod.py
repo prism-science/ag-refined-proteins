@@ -94,6 +94,21 @@ for arm in ("T", "T_r2", "T_r3"):
                          what="two stage-3 cycles after the anisotropic finish (last closing loop)",
                          model=f"{o}/7KR0_6conf_B0_loopEnd4.pdb", mtz=None, freeze=False))
 
+# E048 / E049 (2026-10-09): blind replications of line R from the deposited 7KR0 qFit model, no reference (44PS never an input).
+# E048 = the E044 harness driver; E049 = scripts/portable/sixcopy_waters.py (one phenix.python file). Both runs were still
+# going when staged; the rows are the model in force at staging time, labelled with the round. freeze=True copies the files.
+E49 = f"{E}/e049_portable/steps"
+for rid, p, what in (("E049_r1_aniso_water", f"{E49}/r1_aniso_water/cand_s2.pdb", "portable script, end of round 1 (3 sigma pick 224 sites + anisotropic waters); clashscore 4.7, rotamers 1.3 %"),
+                     ("E049_r2_aniso_water", f"{E49}/r2_aniso_water/cand_s1.pdb", "portable script, end of round 2 (2.5 sigma pick + clash cleanup, anisotropic waters); clashscore 4.5, rotamers 1.3 %"),
+                     ("E049_r3_pick_cleanup", f"{E49}/r3_pick_cleanup/cand_s2.pdb", "portable script, end of round 3 (2.5 sigma pick + clash cleanup; aniso refused); clashscore 4.6, rotamers 1.2 %"),
+                     ("E049_r4_pick", f"{E49}/r4_pick/cand_s2.pdb", "portable script, end of round 4 (2.5 sigma pick, 99 sites; aniso refused), run still going; clashscore 4.9, rotamers 1.2 %")):
+    if os.path.exists(p):
+        rows.append(dict(id=rid, stage="E049", arm="portable", what=what, model=p, mtz=None, freeze=True))
+E48 = f"{E}/e048_autosix/shaken_s02_dep/steps"
+for rid, p, what in (("E048_r2_aniso_water", f"{E48}/r2_aniso_water/cand_s3.pdb", "E044 driver, end of round 2 (cleanup, 2.5 sigma pick, anisotropic waters; connectivity loop refused), run still going; clashscore 4.6"),):
+    if os.path.exists(p):
+        rows.append(dict(id=rid, stage="E048", arm="driver", what=what, model=p, mtz=None, freeze=True))
+
 # ---------- composition helper (phenix.python) ----------
 COMP_PY = r'''
 import json, sys, collections
@@ -181,6 +196,8 @@ for stage, files in {
     "e035c2_stage3": ["README.txt", "logs/cycle3_scores.txt"],
     "e035d_aniso": ["README.txt", "logs/aniso_scores.txt", "aniso/T_aniso/command.txt"],
     "e035d_post": ["README.txt"],
+    "e049_portable": ["TRAJECTORY.md", "launch.log", "run.json", "scripts/sixcopy_waters.py", "verify/r2_pick_cleanup_s1.summary.txt"],
+    "e048_autosix/shaken_s02_dep": ["TRAJECTORY.md", "DECISIONS.md", "state.json"],
 }.items():
     for f in files:
         p = f"{E}/{stage}/{f}"

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-09 — E048 / E049 blind replications (runs in progress)
+
+`representations/7KR0/models/` gains the model in force at the end of each round of E049 (`scripts/portable/sixcopy_waters.py`
+in the campaign repository, one phenix.python file, run blind from the deposited 7KR0): `E049_r1_aniso_water.pdb` 0.0856,
+`E049_r2_aniso_water.pdb` 0.0789, `E049_r3_pick_cleanup.pdb` 0.0756, `E049_r4_pick.pdb` 0.0749 full R-free (independent scorer,
+frozen flags), all with clashscore ≤ 4.9 and rotamer outliers ≤ 1.3 %; and `E048_r2_aniso_water.pdb` (the E044 harness driver
+on the same start, 0.0838 after round 2). Trajectories under `representations/7KR0/trajectories/{e049_portable,e048_autosix}`.
+Both runs were still going; the rows will be replaced by the final models. Every earlier row re-scored by the same scorer
+(unchanged to five decimals). No single-model target changed.
+
 ## 2026-10-05c — E041 line R six-copy models added
 
 `representations/7KR0/models/` gains the E041 line R models built from 7KR0: `E041_R4_S.pdb` (0.0680 full R-free, clashscore 26.7),

@@ -67,6 +67,8 @@ to the deposited sets of 7KR0 and 44PS).
 | E041 line R, six copies, best R-free (`representations/7KR0/models/E041_R4_S.pdb`) | 0.0680 / 0.0694 | 0.0457 | 3 198 | 26.7 | 3.0 % |
 | E041 line R after clash cleanup (`representations/7KR0/models/E041_CJ_R4_p2.pdb`) | 0.0689 / 0.0709 | 0.0456 | 2 577 | 4.5 | |
 | E041 line X, 44PS extended (pod only) | 0.0643 / 0.0649 | 0.0445 | | 5.2 | 2.0 % |
+| E049 portable script, six copies, round 4 of a run in progress (`representations/7KR0/models/E049_r4_pick.pdb`) | 0.0749 / 0.0771 | 0.0566 | 2 203 | 4.9 | 1.2 % |
+| E048 harness driver, six copies, round 2 of a run in progress (`representations/7KR0/models/E048_r2_aniso_water.pdb`) | 0.0838 / 0.0854 | 0.0688 | 1 447 | 4.6 | |
 | 44PS deposited (Passmore et al.) | 0.0657 / 0.0660 | 0.0485 | 2 581 | 2.2 | 2.0 % |
 
 - **E035** ran the paper's pipeline as published. Its models are in `representations/7KR0/`, with their own README, per-stage table
@@ -78,6 +80,11 @@ to the deposited sets of 7KR0 and 44PS).
   their own conformer. Two cleanup passes bring the clashscore to 4.5 at R-free 0.0689, about 0.0004 above the
   no-cleanup control; that model and the uncleaned best are in `representations/7KR0/models/`.
 - **E041 line X** starts from 44PS itself, so it extends the authors' model and does not count as a replication.
+- **E048 and E049** (2026-10-09, runs still going when this release was staged) are blind replications of line R from the
+  deposited 7KR0 with no reference: E048 by the E044 harness driver, E049 by `scripts/portable/sixcopy_waters.py`, one
+  phenix.python file that needs nothing but Phenix. E049 reached 0.0749 full R-free after four rounds, under both geometry
+  caps (clashscore 4.9, rotamer outliers 1.2 %), where line R by hand reached 0.0689 at clashscore 4.5 and 2.8 % rotamer
+  outliers. Every round's model in force and the full trajectory are under `representations/7KR0/` (its README, last section).
 - Numbers for E041 come from the campaign ledger, scored by the harness evaluator, not yet by this release's independent scorer.
 
 ## What is in a target directory

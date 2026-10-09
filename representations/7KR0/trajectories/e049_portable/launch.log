@@ -1,0 +1,38 @@
+[2026-10-09T01:19:48Z] start sixcopy_waters 1.0 (E049, 2026-10-09) 7KR0; argv /home/dev/runs/7KR0/experiments/e049_portable/scripts/sixcopy_waters.py 7KR0 --out /home/dev/runs/7KR0/experiments/e049_portable --model deposited --frozen-dir /home/dev/data/targets/7KR0 --nproc 6
+[2026-10-09T01:19:49Z] fetch: model /home/dev/runs/7KR0/experiments/e049_portable/fetch/7KR0.cif (009f875a14b8) sf /home/dev/data/raw/7KR0/7KR0-sf.cif
+[2026-10-09T01:19:55Z] prep: amplitudes FP,SIGFP, 178324 reflections, 8712 free (inherited (frozen set taken as is from /home/dev/data/targets/7KR0)), select 4356 / report 4356 / sleep 0, d_min 0.770; flags.mtz sha256 31939295cafa
+[2026-10-09T01:19:55Z] prep: frozen-set check {"n_free_flags_mtz": 8712, "n_reflections_data_mtz": 178324, "n_rows_flags_mtz": 178324, "n_status_f_in_sf": 8712, "n_free_differing": 0, "identical_to_status_f": true, "n_data_values_compared": 178324, "n_data_values_differing": 0}
+[2026-10-09T01:50:20Z] baseline: deposited 0.11752 full; re-refined mean 0.11633 full / 0.11459 select / 0.11809 report, gap 0.0082, sigma select 0.00027 (N 3)
+[2026-10-09T04:47:28Z] build: S0 0.10798 full / 0.10586 select / 0.11013 report, R-work 0.09726, clashscore 4.41, rotamers 2.01%
+[2026-10-09T04:47:28Z] r0_weights: start (weights) base /home/dev/runs/7KR0/experiments/e049_portable/build/S0.pdb
+[2026-10-09T06:20:17Z] r0_weights: not adopted - gap widens +0.00252 > 0.002 (d_select -0.00036, d_report -0.00060, d_gap +0.00252; clash 4.02 / 3.7; rota 1.42 / 1.54)
+[2026-10-09T06:20:17Z] r1_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/build/S0.pdb
+[2026-10-09T06:20:28Z] r1_pick: pick at 3.0 sigma: 296 peaks, 224 sites, 904 copies
+[2026-10-09T07:59:14Z] r1_pick: ADOPTED - all criteria met (d_select -0.01816, d_report -0.02113, d_gap +0.00155; clash 4.22 / 3.7; rota 1.54 / 1.54)
+[2026-10-09T07:59:14Z] r1_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r1_pick/cand_s2.pdb
+[2026-10-09T09:40:35Z] r1_aniso_water: ADOPTED - all criteria met (d_select -0.00361, d_report -0.00235, d_gap -0.00003; clash 4.67 / 4.74; rota 1.3 / 1.18)
+[2026-10-09T09:40:35Z] r1_cleanup: clashscore of M 4.67 <= 5: no cleanup
+[2026-10-09T09:40:35Z] r2_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r1_aniso_water/cand_s2.pdb
+[2026-10-09T09:40:46Z] r2_pick: pick at 2.5 sigma: 526 peaks, 291 sites, 978 copies
+[2026-10-09T11:18:43Z] r2_pick: not adopted - clashscore 5.58 > 5 and above control 4.61 (d_select -0.00768, d_report -0.00304, d_gap +0.00001; clash 5.58 / 4.61; rota 1.3 / 1.3)
+[2026-10-09T11:18:43Z] r2_pick_cleanup: start (composite pick + cleanup of r2_pick) seeds [1, 2, 3]
+[2026-10-09T12:54:29Z] r2_pick_cleanup: ADOPTED - all criteria met (d_select -0.00738, d_report -0.00214, d_gap +0.00028; clash 4.28 / 5.06; rota 1.3 / 1.3)
+[2026-10-09T12:54:29Z] r2_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r2_pick_cleanup/cand_s1.pdb
+[2026-10-09T14:36:13Z] r2_aniso_water: ADOPTED - all criteria met (d_select -0.00088, d_report -0.00078, d_gap +0.00028; clash 4.48 / 4.41; rota 1.3 / 1.3)
+[2026-10-09T14:36:13Z] r2_cleanup: clashscore of M 4.48 <= 5: no cleanup
+[2026-10-09T14:36:13Z] r3_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r2_aniso_water/cand_s1.pdb
+[2026-10-09T14:36:25Z] r3_pick: pick at 2.5 sigma: 411 peaks, 169 sites, 506 copies
+[2026-10-09T16:11:30Z] r3_pick: not adopted - clashscore 5.19 > 5 and above control 4.54 (d_select -0.00388, d_report -0.00336, d_gap -0.00215; clash 5.19 / 4.54; rota 1.3 / 1.3)
+[2026-10-09T16:11:30Z] r3_pick_cleanup: start (composite pick + cleanup of r3_pick) seeds [1, 2, 3]
+[2026-10-09T17:47:32Z] r3_pick_cleanup: ADOPTED - all criteria met (d_select -0.00362, d_report -0.00364, d_gap -0.00212; clash 4.61 / 4.67; rota 1.18 / 1.18)
+[2026-10-09T17:47:32Z] r3_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r3_pick_cleanup/cand_s2.pdb
+[2026-10-09T19:28:33Z] r3_aniso_water: not adopted - select -0.00008 not <= -2 sigma (0.00006) (d_select -0.00008, d_report -0.00021, d_gap +0.00011; clash 4.41 / 4.35; rota 1.18 / 1.18)
+[2026-10-09T19:28:33Z] r3_cleanup: clashscore of M 4.61 <= 5: no cleanup
+[2026-10-09T19:28:33Z] r4_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r3_pick_cleanup/cand_s2.pdb
+[2026-10-09T19:28:45Z] r4_pick: pick at 2.5 sigma: 334 peaks, 99 sites, 256 copies
+[2026-10-09T21:06:54Z] r4_pick: ADOPTED - all criteria met (d_select -0.00074, d_report -0.00128, d_gap -0.00063; clash 4.87 / 4.35; rota 1.18 / 1.18)
+[2026-10-09T21:06:54Z] r4_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r4_pick/cand_s2.pdb
+[2026-10-09T22:47:24Z] r4_aniso_water: not adopted - select -0.00008 not <= -2 sigma (0.00008) (d_select -0.00008, d_report -0.00032, d_gap +0.00008; clash 5.0 / 5.06; rota 1.18 / 1.18)
+[2026-10-09T22:47:24Z] r4_cleanup: clashscore of M 4.87 <= 5: no cleanup
+[2026-10-09T22:47:24Z] r5_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r4_pick/cand_s2.pdb
+[2026-10-09T22:47:36Z] r5_pick: pick at 2.5 sigma: 306 peaks, 71 sites, 175 copies

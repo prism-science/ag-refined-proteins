@@ -93,6 +93,11 @@ converged. "pod only" rows are scored here but their files are not in this relea
 | E035d step 2 | T | two stage-3 cycles after the anisotropic finish (last closing loop) | 0.09193 | 0.08945 | 0.09443 | 0.08281 | 0.00912 | 16,718 (7,722) | 6 × 0.170 | 1,304 | 254.5 | 0 | pod only |
 | E035d step 2 | T_r2 | two stage-3 cycles after the anisotropic finish (last closing loop) | 0.09127 | 0.08886 | 0.09371 | 0.08237 | 0.00890 | 16,779 (7,722) | 6 × 0.170 | 1,365 | 253.6 | 0 | pod only |
 | E035d step 2 | T_r3 | two stage-3 cycles after the anisotropic finish (last closing loop) | 0.09222 | 0.08996 | 0.09450 | 0.08237 | 0.00985 | 16,790 (7,722) | 6 × 0.170 | 1,376 | 255.9 | 0 | pod only |
+| E049 | portable | portable script, end of round 1 (3 sigma pick 224 sites + anisotropic waters); clashscore 4.7, rotamers 1.3 % | 0.08557 | 0.08529 | 0.08585 | 0.07033 | 0.01523 | 16,815 (7,722) | 6 × 0.167 | 1,401 | 411.3 | 9,093 | [E049_r1_aniso_water.pdb](models/E049_r1_aniso_water.pdb) |
+| E049 | portable | portable script, end of round 2 (2.5 sigma pick + clash cleanup, anisotropic waters); clashscore 4.5, rotamers 1.3 % | 0.07885 | 0.07647 | 0.08125 | 0.06060 | 0.01825 | 17,211 (7,722) | 6 × 0.167 | 1,797 | 478.3 | 9,489 | [E049_r2_aniso_water.pdb](models/E049_r2_aniso_water.pdb) |
+| E049 | portable | portable script, end of round 3 (2.5 sigma pick + clash cleanup; aniso refused); clashscore 4.6, rotamers 1.2 % | 0.07562 | 0.07303 | 0.07823 | 0.05760 | 0.01801 | 17,425 (7,722) | 6 × 0.167 | 2,011 | 508.1 | 9,338 | [E049_r3_pick_cleanup.pdb](models/E049_r3_pick_cleanup.pdb) |
+| E049 | portable | portable script, end of round 4 (2.5 sigma pick, 99 sites; aniso refused), run still going; clashscore 4.9, rotamers 1.2 % | 0.07493 | 0.07276 | 0.07712 | 0.05660 | 0.01832 | 17,617 (7,722) | 6 × 0.167 | 2,203 | 528.5 | 9,309 | [E049_r4_pick.pdb](models/E049_r4_pick.pdb) |
+| E048 | driver | E044 driver, end of round 2 (cleanup, 2.5 sigma pick, anisotropic waters; connectivity loop refused), run still going; clashscore 4.6 | 0.08378 | 0.08222 | 0.08536 | 0.06879 | 0.01499 | 16,861 (7,722) | 6 × 0.167 | 1,447 | 442.8 | 9,139 | [E048_r2_aniso_water.pdb](models/E048_r2_aniso_water.pdb) |
 <!-- rep-table:end -->
 
 The harness's own evaluator (phenix.refine's Wilson outlier rejection) gives the same numbers to within 0.0001; its values
@@ -166,3 +171,21 @@ phenix.python scripts/indep_rfree.py representations/7KR0/models/E035d_T_aniso.p
 ```
 
 Refresh from the pod: `scripts/pull_representations.sh` (see `docs/HOW_TO_USE.md`).
+
+## E048 and E049 — blind replications from the deposited 7KR0 (2026-10-09, runs in progress)
+
+Both start from `7KR0.cif` as deposited (the qFit multiconformer single model), build six complete copies at 1/6
+occupancy with a 0.2 Å per-atom shake, and run rounds of per-copy water picking, anisotropic waters and clash cleanup.
+Every move is judged against the same model refined without it (Δselect ≤ −2σ, Δreport < 0, Δgap ≤ +0.002, clashscore
+≤ 5 or ≤ control, rotamer outliers ≤ 1.5 % or ≤ control). 44PS was never an input to either; the replication criterion
+was stated before launch (within 0.003 full R-free of E041's 0.0689 with clashscore ≤ 5 and rotamer outliers ≤ 1.5 %).
+
+- **E049** runs `scripts/portable/sixcopy_waters.py` from the campaign repository: one phenix.python file (cctbx + numpy,
+  no harness). Rows `E049_r1_aniso_water` … `E049_r4_pick` are the model in force at the end of each round; the run was in
+  round 5 when this release was staged (deposited 0.1175 → S0 0.1080 → 0.0857 → 0.0790 → 0.0757 → 0.0750 full R-free, all
+  under both geometry caps). Trajectory: `trajectories/e049_portable/`.
+- **E048** runs the E044 harness driver on the same start. `E048_r2_aniso_water` is its model in force after round 2
+  (0.0840 full); its round-1 pick was refused on the gap bound (+0.0021), which is where the two runs diverge.
+  Trajectory: `trajectories/e048_autosix/shaken_s02_dep/`.
+
+The rows will be replaced by the final models when the runs stop; the numbers in the table are the independent scorer's.
