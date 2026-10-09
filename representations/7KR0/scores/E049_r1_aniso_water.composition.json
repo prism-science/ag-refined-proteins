@@ -1,0 +1,26 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e049_portable/steps/r1_aniso_water/cand_s2.pdb",
+ "n_atoms": 16815,
+ "n_hydrogen": 7722,
+ "n_anisou": 9093,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_atoms": 1401,
+ "water_occupancy_sum": 411.34,
+ "protein_occupancy_per_copy": {
+  "A": 0.1667,
+  "B": 0.1667,
+  "C": 0.1667,
+  "D": 0.1667,
+  "E": 0.1666,
+  "F": 0.1666
+ },
+ "protein_site_occupancy_sum_min": 1.0,
+ "protein_site_occupancy_sum_max": 1.0
+}

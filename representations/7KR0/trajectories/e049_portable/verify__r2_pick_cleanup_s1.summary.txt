@@ -1,0 +1,2 @@
+model /home/dev/runs/7KR0/experiments/e049_portable/steps/r2_pick_cleanup/cand_s1.pdb sha256 1fb84a3c4bed82fc scorer sha256 c6a4a73973b65747
+indep: n_atoms=17301 n_hydrogen=7722 n_water_residues=1887 r_free_fmodel=0.07970855516440174 r_free_manual=0.07954936223558429 r_free_report_manual=0.0816700745576161 r_free_select_manual=0.07745192035789034 r_work_fmodel=0.06258035564544172 r_work_manual=0.06258231358665525 | clashscore=4.28 rotamer_outliers_pct=1.3

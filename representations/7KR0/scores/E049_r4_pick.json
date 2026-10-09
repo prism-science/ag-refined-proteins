@@ -1,0 +1,29 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e049_portable/steps/r4_pick/cand_s2.pdb",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 17617,
+ "n_hydrogen": 7722,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_residues": 2203,
+ "n_reflections": 178324,
+ "n_free": 8712,
+ "n_select": 4356,
+ "n_report": 4356,
+ "n_work": 169612,
+ "d_min": 0.7700003403620237,
+ "r_work_fmodel": 0.056603770832060384,
+ "r_free_fmodel": 0.07498258289921256,
+ "r_work_manual": 0.05660483944747979,
+ "r_free_manual": 0.07492885462891649,
+ "r_free_select_manual": 0.0727577935414796,
+ "r_free_report_manual": 0.07712400294219253,
+ "wall_s": 6.2
+}
