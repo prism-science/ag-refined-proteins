@@ -85,6 +85,13 @@ to the deposited sets of 7KR0 and 44PS).
   phenix.python file that needs nothing but Phenix. E049 reached 0.0749 full R-free after four rounds, under both geometry
   caps (clashscore 4.9, rotamer outliers 1.2 %), where line R by hand reached 0.0689 at clashscore 4.5 and 2.8 % rotamer
   outliers. Every round's model in force and the full trajectory are under `representations/7KR0/` (its README, last section).
+- **Free reflections in the maps (D582, 2026-10-10).** Every water in the E035, E041, E044, E048 and E049 ensembles was picked from
+  an mFo−DFc map that included the free reflections (the mmtbx and phenix default), and the single-model lines read peaks, RSCC and
+  Coot zones from phenix.refine maps with the same property. Measured on the largest single move (E050): +0.0016 R-free per pick
+  with R-work unchanged, i.e. a genuine leak. The fix is in the campaign repository (every decision map from work reflections only,
+  guard test). Until the clean reruns land (E051 7KR0, E052 7R2H, E053 8C5N, running), every ensemble R-free in this repository is an
+  "all-data maps" number: a lower bound on the clean value, not a result to quote without this caveat. 44PS was built into standard
+  all-data maps as well; its own channel is unknown.
 - Numbers for E041 come from the campaign ledger, scored by the harness evaluator, not yet by this release's independent scorer.
 
 ## What is in a target directory

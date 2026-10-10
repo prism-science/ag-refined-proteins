@@ -189,3 +189,13 @@ was stated before launch (within 0.003 full R-free of E041's 0.0689 with clashsc
   Trajectory: `trajectories/e048_autosix/shaken_s02_dep/`.
 
 The rows will be replaced by the final models when the runs stop; the numbers in the table are the independent scorer's.
+
+## Caveat on every number above (D582, 2026-10-10)
+
+The water pickers of E035, E041, E048 and E049 computed their mFo−DFc maps with the free reflections' amplitudes in them
+(`mmtbx` default `exclude_free_r_reflections=False`). E050 repeated E049's round-1 pick from a work-only map on the same base,
+seeds and control: full R-free 0.0912 against 0.0896, R-work unchanged — the all-data map placed waters that fit the test
+reflections specifically. Every R-free in this directory is therefore an "all-data maps" value with at least +0.0016 of
+free-reflection leakage per pick. The campaign code now excludes the free reflections from every decision map (guard test);
+the clean reruns are E051 (7KR0, with a sleep third of the free set that nothing reads until the end), E052 (7R2H) and E053
+(8C5N). Their models replace these rows when they finish. 44PS was built into standard all-data maps too.
