@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-10 (b) — D582 caveat: free reflections in the decision maps
+
+No file changes beyond text. Every ensemble R-free in `representations/7KR0/` (E035, E041, E048, E049) and the campaign's
+single-model numbers were obtained with maps that included the free reflections (the mmtbx / phenix default). E050 measured
++0.0016 R-free of genuine leakage on one pick with R-work unchanged. Caveat added to the README tables; clean reruns E051–E053
+are running and will replace the rows.
+
 ## 2026-10-09 — E048 / E049 blind replications (runs in progress)
 
 `representations/7KR0/models/` gains the model in force at the end of each round of E049 (`scripts/portable/sixcopy_waters.py`
