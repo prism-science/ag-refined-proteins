@@ -131,9 +131,9 @@ for rid, p, what in (
     ("E062_final", f"{E}/e062_halfmap/models/final.pdb",
      "clean rerun with the bunker, six light copies per peak with a site-occupancy cap, end of round 3 (3 sigma picks; the 2.5 sigma composite pick + clash cleanup refused at z -1.3); R-free here = select + report thirds; sleep third 0.0837, bunker R 0.0902 (one logged read); clashscore 4.9, rotamers 1.3 %"),
     ("E063_final", f"{E}/e063_single/models/final.pdb",
-     "clean rerun with the bunker, one labelled water per peak, end of round 2 (3 sigma pick of 235 waters on the E059 round-1 model; every later rung refused: 2.5 sigma, a second 3 sigma pass, 4 sigma, at start occupancy 0.33 and 0.10); R-free here = select + report thirds; sleep third 0.0856, bunker R 0.0874 (one logged read); clashscore 4.6, rotamers 1.2 %"),
-    ("E066_r3_aniso_water", f"{E}/e066_mc20/steps/r3_aniso_water/cand_s2.pdb",
-     "clean rerun with the bunker: E063's round-2 model with anisotropic waters refined for twenty macro-cycles per arm (the same step refused at ten cycles, z -1.9; adopted at twenty, z -2.7), run still going (round 4 at 4 sigma running); R-free here = select + report thirds; no sleep read yet (one read when the run stops); clashscore 5.0, rotamers 1.2 %"),
+     "clean rerun with the bunker, one labelled water per peak, end of round 2 (3 sigma pick of 235 waters on the E059 round-1 model; every later rung refused: 2.5 sigma, a second 3 sigma pass, 4 sigma, at start occupancy 0.33 and 0.10); R-free here = select + report thirds; sleep third 0.0856, bunker R 0.0874 (one logged read); clashscore 4.6, rotamers 1.2 %; the record until D607"),
+    ("E066_final", f"{E}/e066_mc20/models/final.pdb",
+     "clean rerun with the bunker: E063's round-2 model with anisotropic waters refined for twenty macro-cycles per arm (the same step refused at ten cycles, z -1.9; adopted at twenty, z -2.7), end of round 3 (a 4 sigma pick at twenty cycles refused, z -0.2; stopped after three rounds without adoption); R-free here = select + report thirds; sleep third 0.0824, bunker R 0.0836 (one logged read, 2026-10-12T11:05Z); clashscore 5.0, rotamers 1.2 % - the clean record (D607)"),
     ("E049_r5_pick_clean_basis", f"{E}/e049_portable/models/r5_pick.pdb",
      "the E049 final model (same file as E049_r5_pick) scored on the clean rows' reflections (select + report thirds, 5 808) for the like-for-like: the all-data maps' advantage on identical reflections"),
 ):

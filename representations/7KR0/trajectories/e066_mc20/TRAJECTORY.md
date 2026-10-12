@@ -1,6 +1,6 @@
 # 7KR0 - six-copy water treatment trajectory (sixcopy_waters 1.8 (2026-10-11): single-copy picks - one labelled water per peak (E063); work-only decision maps (D582); sleep third absent from phenix input (D584); sparse-first schedule (D586); bunker set held outside every working file (D587); half-map peak agreement and water-site occupancy cap (E062); step memo (a step already judged on the same base is not re-run); floor sigma from ten r0 refinements (D594))
 
-Rewritten 2026-10-12T07:56:02Z. Evaluator: cctbx fmodel on the frozen data and inherited flags (flags.mtz sha256 5f47d255934d), R-free on the full free set and on the select / report halves (sleep withheld: 2904). Gap = R-free(full) - R-work. Clashscore: phenix.clashscore keep_hydrogens=True. Rotamers: phenix.rotalyze. The six-copy model is a representation (PROTOCOL 18.1), never a deliverable. Bunker (D587): 3400 work reflections in vault/, absent from every working file.
+Rewritten 2026-10-12T11:05:31Z. Evaluator: cctbx fmodel on the frozen data and inherited flags (flags.mtz sha256 5f47d255934d), R-free on the full free set and on the select / report halves (sleep withheld: 2904). Gap = R-free(full) - R-work. Clashscore: phenix.clashscore keep_hydrogens=True. Rotamers: phenix.rotalyze. The six-copy model is a representation (PROTOCOL 18.1), never a deliverable. Bunker (D587): 3400 work reflections in vault/, absent from every working file.
 
 ## Baseline (single model, standing recipe, 5 macro-cycles, N = 3)
 
@@ -68,6 +68,24 @@ Rewritten 2026-10-12T07:56:02Z. Evaluator: cctbx fmodel on the frozen data and i
 | r3_aniso_water | ctrl | 1 | 0.06586 | 0.08336 | 0.08568 | 0.08114 | 0.0175 | 1281 | 8738 |  |  |
 | r3_aniso_water | ctrl | 2 | 0.06574 | 0.08337 | 0.08583 | 0.08101 | 0.0176 | 1281 | 8738 | 5.25 | 1.18 |
 | r3_aniso_water | ctrl | 3 | 0.06588 | 0.08346 | 0.08589 | 0.08113 | 0.0176 | 1281 | 8738 |  |  |
+| r4_pick | cand | 1 | 0.06258 | 0.08152 | 0.08303 | 0.08006 | 0.0189 | 1266 | 8938 |  |  |
+| r4_pick | cand | 2 | 0.06258 | 0.08149 | 0.08289 | 0.08016 | 0.0189 | 1266 | 8938 | 4.80 | 1.30 |
+| r4_pick | cand | 3 | 0.06240 | 0.08135 | 0.08281 | 0.07995 | 0.0189 | 1266 | 8938 |  |  |
+| r4_pick | ctrl | 1 | 0.06276 | 0.08135 | 0.08293 | 0.07984 | 0.0186 | 1246 | 8938 |  |  |
+| r4_pick | ctrl | 2 | 0.06296 | 0.08164 | 0.08305 | 0.08029 | 0.0187 | 1246 | 8938 | 4.67 | 1.18 |
+| r4_pick | ctrl | 3 | 0.06296 | 0.08154 | 0.08323 | 0.07993 | 0.0186 | 1246 | 8938 |  |  |
+| r5_pick | cand | 1 | 0.06258 | 0.08152 | 0.08303 | 0.08006 | 0.0189 | 1266 | 8938 |  |  |
+| r5_pick | cand | 2 | 0.06258 | 0.08149 | 0.08289 | 0.08016 | 0.0189 | 1266 | 8938 | 4.80 | 1.30 |
+| r5_pick | cand | 3 | 0.06240 | 0.08135 | 0.08281 | 0.07995 | 0.0189 | 1266 | 8938 |  |  |
+| r5_pick | ctrl | 1 | 0.06276 | 0.08135 | 0.08293 | 0.07984 | 0.0186 | 1246 | 8938 |  |  |
+| r5_pick | ctrl | 2 | 0.06296 | 0.08164 | 0.08305 | 0.08029 | 0.0187 | 1246 | 8938 | 4.67 | 1.18 |
+| r5_pick | ctrl | 3 | 0.06296 | 0.08154 | 0.08323 | 0.07993 | 0.0186 | 1246 | 8938 |  |  |
+| r6_pick | cand | 1 | 0.06258 | 0.08152 | 0.08303 | 0.08006 | 0.0189 | 1266 | 8938 |  |  |
+| r6_pick | cand | 2 | 0.06258 | 0.08149 | 0.08289 | 0.08016 | 0.0189 | 1266 | 8938 | 4.80 | 1.30 |
+| r6_pick | cand | 3 | 0.06240 | 0.08135 | 0.08281 | 0.07995 | 0.0189 | 1266 | 8938 |  |  |
+| r6_pick | ctrl | 1 | 0.06276 | 0.08135 | 0.08293 | 0.07984 | 0.0186 | 1246 | 8938 |  |  |
+| r6_pick | ctrl | 2 | 0.06296 | 0.08164 | 0.08305 | 0.08029 | 0.0187 | 1246 | 8938 | 4.67 | 1.18 |
+| r6_pick | ctrl | 3 | 0.06296 | 0.08154 | 0.08323 | 0.07993 | 0.0186 | 1246 | 8938 |  |  |
 
 ## Decisions
 
@@ -78,6 +96,12 @@ Rewritten 2026-10-12T07:56:02Z. Evaluator: cctbx fmodel on the frozen data and i
 - **r2_aniso_water** (aniso_water, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 10 mc): **not adopted** - select -0.00162 not <= -2 sigma (0.00085). dselect -0.00162 (sigma 0.00085), dreport -0.00052, dfull -0.00106, dgap +0.00045; cand mean full 0.08321 / ctrl 0.08427; clashscore 5.00 / 5.00; rotamers 1.30 / 1.30. {"n_water_iso": 235}
 - **r3_pick** (pick, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - select -0.00046 not <= -2 sigma (0.00085); report +0.00061 does not agree in sign; clashscore 5.38 > 5 and above control 5.25; gap widens +0.00232 > 0.002. dselect -0.00046 (sigma 0.00085), dreport +0.00061, dfull +0.00008, dgap +0.00232; cand mean full 0.08348 / ctrl 0.08340; clashscore 5.38 / 5.25; rotamers 1.18 / 1.18. {"sigma": 3.0, "n_peaks": 265, "n_sites": 157, "n_copies": 157}
 - **r3_aniso_water** (aniso_water, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **ADOPTED** - all criteria met. dselect -0.00227 (sigma 0.00085), dreport -0.00064, dfull -0.00144, dgap +0.00019; cand mean full 0.08196 / ctrl 0.08340; clashscore 5.00 / 5.25; rotamers 1.18 / 1.18. {"n_water_iso": 235}. Adopted model `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb`
+- **r4_pick** (pick, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - select -0.00016 not <= -2 sigma (0.00085); report +0.00004 does not agree in sign. dselect -0.00016 (sigma 0.00085), dreport +0.00004, dfull -0.00006, dgap +0.00031; cand mean full 0.08145 / ctrl 0.08151; clashscore 4.80 / 4.67; rotamers 1.30 / 1.18. {"sigma": 4.0, "n_peaks": 48, "n_sites": 20, "n_copies": 20}
+- **r4_aniso_water** (aniso_water, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - every water already anisotropic. {"n_water_iso": 0}
+- **r5_pick** (pick, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - select -0.00016 not <= -2 sigma (0.00085); report +0.00004 does not agree in sign. dselect -0.00016 (sigma 0.00085), dreport +0.00004, dfull -0.00006, dgap +0.00031; cand mean full 0.08145 / ctrl 0.08151; clashscore 4.80 / 4.67; rotamers 1.30 / 1.18. {"sigma": 4.0, "n_peaks": 48, "n_sites": 20, "n_copies": 20}
+- **r5_aniso_water** (aniso_water, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - every water already anisotropic. {"n_water_iso": 0}
+- **r6_pick** (pick, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - select -0.00016 not <= -2 sigma (0.00085); report +0.00004 does not agree in sign. dselect -0.00016 (sigma 0.00085), dreport +0.00004, dfull -0.00006, dgap +0.00031; cand mean full 0.08145 / ctrl 0.08151; clashscore 4.80 / 4.67; rotamers 1.30 / 1.18. {"sigma": 4.0, "n_peaks": 48, "n_sites": 20, "n_copies": 20}
+- **r6_aniso_water** (aniso_water, weights cand [0.5, 1.0] / ctrl [0.5, 1.0], 20 mc): **not adopted** - every water already anisotropic. {"n_water_iso": 0}
 
 ## Rounds
 
@@ -86,3 +110,21 @@ Rewritten 2026-10-12T07:56:02Z. Evaluator: cctbx fmodel on the frozen data and i
 | 1 | True | `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r1_aniso_water/cand_s1.pdb` | 0.09004 | 4.02 | 1.18 | 2026-10-11T20:53:07Z |
 | 2 | True | `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r2_pick/cand_s3.pdb` | 0.08485 | 4.61 | 1.18 | 2026-10-12T00:08:53Z |
 | 3 | True | `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb` | 0.08198 | 5.00 | 1.18 | 2026-10-12T07:56:02Z |
+| 4 | False | `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb` | 0.08198 | 5.00 | 1.18 | 2026-10-12T10:57:10Z |
+| 5 | False | `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb` | 0.08198 | 5.00 | 1.18 | 2026-10-12T10:57:21Z |
+| 6 | False | `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb` | 0.08198 | 5.00 | 1.18 | 2026-10-12T10:57:33Z |
+
+**Stopped** 2026-10-12T10:57:33Z: 3 consecutive rounds without an adopted step. Final model `/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb`.
+
+## Final (independent scorer: fmodel on all reflections, no outlier rejection, manual R)
+
+| model | R-work | R-free | select | report | clashscore | rotamers % | atoms |
+|---|---|---|---|---|---|---|---|
+| final | 0.06417 | 0.08198 | 0.08365 | 0.08043 | 5.00 | 1.18 | 16695 |
+| S0 | 0.09699 | 0.10955 | 0.11153 | 0.10763 | 3.83 | 2.01 | 17310 |
+| baseline_median | 0.10621 | 0.11614 | 0.11807 | 0.11431 | 4.77 | 1.33 | 4300 |
+| deposited | 0.11020 | 0.11826 | 0.12135 | 0.11531 |  |  | 4300 |
+
+## Sleep-third consultations (PROTOCOL 3.8)
+
+- 2026-10-12T11:05:26Z root: R-free sleep 0.08239 (E066 stopped 2026-10-12T10:57:33Z (three rounds without adoption: r4 pick at 4 sigma refused, r5/r6 memo copies); final model steps/r3_aniso_water/cand_s2.pdb sha256 9668a04f052a4b9e differs from every model already consulted (E059 = E059b 45b42ffd8ee51e71, E062 e5341bf8296d3aa6, E063 e2bb296b4ca9a6ee, E051b e237e03f7a619a70; checked on the pod 2026-10-12T11:02Z, D605 remedy b); one logged read for the promotion decision under D603/D606 (D607))

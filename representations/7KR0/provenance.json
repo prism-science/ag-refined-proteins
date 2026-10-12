@@ -1,5 +1,5 @@
 {
- "exported_at": "2026-10-12T08:04:44Z",
+ "exported_at": "2026-10-12T11:14:47Z",
  "pod_hostname": "actl-ws-xraymemory-autoresearch-devspace-8597768cc8-sqmlj",
  "phenix_version": "Version: 2.1 Release tag: 6048",
  "untangler": {
@@ -45,7 +45,7 @@
  },
  "campaign": {
   "repository": "prism-science/agentic-refinement",
-  "commit": "1df2246dd96950430fdb1bc0c28dbea7eec2d9ab",
+  "commit": "4268f46be33a028a3a598740dbb73b0ceb6d5075",
   "branch": "graph-search",
   "note": "local checkout the pod workspace syncs from; the pod copy is not a git repository"
  },
@@ -684,7 +684,7 @@
    "id": "E063_final",
    "stage": "clean",
    "arm": "portable",
-   "what": "clean rerun with the bunker, one labelled water per peak, end of round 2 (3 sigma pick of 235 waters on the E059 round-1 model; every later rung refused: 2.5 sigma, a second 3 sigma pass, 4 sigma, at start occupancy 0.33 and 0.10); R-free here = select + report thirds; sleep third 0.0856, bunker R 0.0874 (one logged read); clashscore 4.6, rotamers 1.2 %",
+   "what": "clean rerun with the bunker, one labelled water per peak, end of round 2 (3 sigma pick of 235 waters on the E059 round-1 model; every later rung refused: 2.5 sigma, a second 3 sigma pass, 4 sigma, at start occupancy 0.33 and 0.10); R-free here = select + report thirds; sleep third 0.0856, bunker R 0.0874 (one logged read); clashscore 4.6, rotamers 1.2 %; the record until D607",
    "model": "/home/dev/runs/7KR0/experiments/e063_single/models/final.pdb",
    "model_sha256": "e2bb296b4ca9a6ee4e3474a6a8053df70b29856ef83333e7f6796447895dc337",
    "model_bytes": 2018922,
@@ -698,21 +698,21 @@
    "composition_json": "scores/E063_final.composition.json"
   },
   {
-   "id": "E066_r3_aniso_water",
+   "id": "E066_final",
    "stage": "clean",
    "arm": "portable",
-   "what": "clean rerun with the bunker: E063's round-2 model with anisotropic waters refined for twenty macro-cycles per arm (the same step refused at ten cycles, z -1.9; adopted at twenty, z -2.7), run still going (round 4 at 4 sigma running); R-free here = select + report thirds; no sleep read yet (one read when the run stops); clashscore 5.0, rotamers 1.2 %",
-   "model": "/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb",
+   "what": "clean rerun with the bunker: E063's round-2 model with anisotropic waters refined for twenty macro-cycles per arm (the same step refused at ten cycles, z -1.9; adopted at twenty, z -2.7), end of round 3 (a 4 sigma pick at twenty cycles refused, z -0.2; stopped after three rounds without adoption); R-free here = select + report thirds; sleep third 0.0824, bunker R 0.0836 (one logged read, 2026-10-12T11:05Z); clashscore 5.0, rotamers 1.2 % - the clean record (D607)",
+   "model": "/home/dev/runs/7KR0/experiments/e066_mc20/models/final.pdb",
    "model_sha256": "9668a04f052a4b9e5c7d658103537727dba4a010ad2e65c3df043fa4e586cbb7",
    "model_bytes": 2028007,
-   "frozen_model": "models/E066_r3_aniso_water.pdb",
+   "frozen_model": "models/E066_final.pdb",
    "mtz": null,
    "mtz_sha256": null,
    "mtz_bytes": null,
    "frozen_mtz": null,
    "mtz_columns": null,
-   "score_json": "scores/E066_r3_aniso_water.json",
-   "composition_json": "scores/E066_r3_aniso_water.composition.json"
+   "score_json": "scores/E066_final.json",
+   "composition_json": "scores/E066_final.composition.json"
   },
   {
    "id": "E049_r5_pick_clean_basis",
@@ -859,14 +859,14 @@
    "sha256": "e2bb296b4ca9a6ee4e3474a6a8053df70b29856ef83333e7f6796447895dc337"
   },
   {
-   "path": "models/E066_r3_aniso_water.pdb",
+   "path": "models/E066_final.pdb",
    "bytes": 2028007,
    "sha256": "9668a04f052a4b9e5c7d658103537727dba4a010ad2e65c3df043fa4e586cbb7"
   },
   {
    "path": "provenance_pod.json",
-   "bytes": 58982,
-   "sha256": "c573f1a6be134e46af01c9821b20172b48eb97c4ce6d5a91ae00b62d8fa1788a"
+   "bytes": 59043,
+   "sha256": "811c8501448f55028156f684956985065796a2ede9b11813235b60216d944f58"
   },
   {
    "path": "scores/E035_T_loop14.composition.json",
@@ -876,7 +876,7 @@
   {
    "path": "scores/E035_T_loop14.json",
    "bytes": 698,
-   "sha256": "c0283abda0c3280ddd709703d53b586095d2ad1263ce4aee5b63b57b17c54b61"
+   "sha256": "f8f68b2e25ff2be39c32eaf9db5189f2bc923196dae3f17876a4aa7a5039cef2"
   },
   {
    "path": "scores/E035_T_r2_loop10.composition.json",
@@ -896,7 +896,7 @@
   {
    "path": "scores/E035_T_r3_loop14.json",
    "bytes": 700,
-   "sha256": "41742242bf83f6dfc13f67fcebc113c0943ab4293996a69c03bfd9d927ad15af"
+   "sha256": "33c92d7161ddf7e97644488e43e881066fa246d51069243280942f05db7dd42d"
   },
   {
    "path": "scores/E035c2_T_cycle3.composition.json",
@@ -936,7 +936,7 @@
   {
    "path": "scores/E035d_T_aniso.json",
    "bytes": 672,
-   "sha256": "d2422653fee10f40d848f6917bae497e209808d5e12b7569f03c7b91d29593d0"
+   "sha256": "cf45a4954919dc0b3e9ab3ac57be4b0b572851d22a11677be8abcc9f074174b5"
   },
   {
    "path": "scores/E035d_T_r2_aniso.composition.json",
@@ -956,7 +956,7 @@
   {
    "path": "scores/E035d_T_r3_aniso.json",
    "bytes": 676,
-   "sha256": "41502ea98151834c844af7804707e8e2d938c76e8c6e3b7fe2ea580da0fb3537"
+   "sha256": "ca7c4f810821a28e88ffa3146886385211b65f1937d2d7f043d0ff99090fc17f"
   },
   {
    "path": "scores/E035d_post_T_loopEnd4.composition.json",
@@ -986,7 +986,7 @@
   {
    "path": "scores/E035d_post_T_r3_loopEnd4.json",
    "bytes": 697,
-   "sha256": "e967544ffed172e2f66e9d12fbbf5458daa2b7df0ca342f26cdc3c3f233143a3"
+   "sha256": "efdce04bce7bc305452b8c47d4db5d15a04c9ec61a485ce4f91ff9f3533e5442"
   },
   {
    "path": "scores/E035f_T_k15.composition.json",
@@ -996,7 +996,7 @@
   {
    "path": "scores/E035f_T_k15.json",
    "bytes": 696,
-   "sha256": "a35378f9fb479f62686cdd89fb4d1aff6cb75460d1c0beff3b3ccf7e48e8b640"
+   "sha256": "a2fa42f0b501db70ee0ea83687beaf31ab7c50a8d8069d19e577f868db7a3184"
   },
   {
    "path": "scores/E035f_T_r2_k5.composition.json",
@@ -1016,7 +1016,7 @@
   {
    "path": "scores/E035f_T_r3_k11.json",
    "bytes": 698,
-   "sha256": "b1bef60dad710b0060f43ad9ca066dd09239d73bbde5e39f42de37e271c75b6e"
+   "sha256": "754423df84b76cbf4df73da6868969dde0f650d369a31744c2f78edc5492578e"
   },
   {
    "path": "scores/E041_CJ_R4_p2.composition.json",
@@ -1026,7 +1026,7 @@
   {
    "path": "scores/E041_CJ_R4_p2.json",
    "bytes": 676,
-   "sha256": "afa159c9e9b8a77332ec97eaac1bfb3093819b8b839214fd9b6a8c3d7bdb7650"
+   "sha256": "7c96e2738e3d3af4de74347617a264e1b26f009f06f7c0542c4b9f0adba4d400"
   },
   {
    "path": "scores/E041_CJ_R4_polish.composition.json",
@@ -1086,7 +1086,7 @@
   {
    "path": "scores/E049_r3_pick_cleanup.json",
    "bytes": 678,
-   "sha256": "117c29bff05160eea294c46f5d540680817590641f4caabb997d2ee5e318fd81"
+   "sha256": "9bd02f6817dd27856fe0b3ac023d42eb900197053fc723e3f532bd862360bf09"
   },
   {
    "path": "scores/E049_r4_pick.composition.json",
@@ -1096,7 +1096,7 @@
   {
    "path": "scores/E049_r4_pick.json",
    "bytes": 672,
-   "sha256": "d67351bb8cbb0722918090500dddaefcfbab3ce1231acffc056f0d7722e61b7e"
+   "sha256": "48543cbaa8c9b01538657ea0330cec3b1fc61edb3dc54ae2f616b6ba0e93de7b"
   },
   {
    "path": "scores/E049_r5_pick.composition.json",
@@ -1136,7 +1136,7 @@
   {
    "path": "scores/E059_final.json",
    "bytes": 661,
-   "sha256": "66527d799cd08012fa24f6b991222d80b5b22b298225386aa3167e2751351b1a"
+   "sha256": "3256f91306067a86ad4ed44083d940a48420b0b7c3fb426921d38694b646b1c0"
   },
   {
    "path": "scores/E062_final.composition.json",
@@ -1156,17 +1156,17 @@
   {
    "path": "scores/E063_final.json",
    "bytes": 660,
-   "sha256": "7029bb8beb46f6eca2bc82b788ef6cc9f1061ca864ac947f6b1f1a2d5e3220fa"
+   "sha256": "0aa17573ac51ceebb3f994fef91be63854cf76564ec20e3f6883e93d4a6919c6"
   },
   {
-   "path": "scores/E066_r3_aniso_water.composition.json",
-   "bytes": 470,
-   "sha256": "3135fc8ce1c4eebdd4ad931f16c1890d4c8479bb722ea337682acfc1cdf71ba2"
+   "path": "scores/E066_final.composition.json",
+   "bytes": 454,
+   "sha256": "404cb9c0523eace0f990430908a383f6e96323f4a4765e11ef509b59c5d826f8"
   },
   {
-   "path": "scores/E066_r3_aniso_water.json",
-   "bytes": 675,
-   "sha256": "6b8e878fdefcbe70272d7a93899ca343291c5991339530c4255bf25b866f6111"
+   "path": "scores/E066_final.json",
+   "bytes": 659,
+   "sha256": "4dee7452c2239d72f593c3b44b8fda226b499d09206d6d9fe42ea6990d6a60ed"
   },
   {
    "path": "scores/ctx_7KR0_deliverable.composition.json",
@@ -1186,7 +1186,7 @@
   {
    "path": "scores/ctx_7KR0_deposited.json",
    "bytes": 616,
-   "sha256": "7b50fb38c02c16706c98cf71373dd75988a894ea793705c9c894f32e788da311"
+   "sha256": "5e1e39af88dd87f2d61381ef8bc1fb47e84753ab4b41cf2359abbf9455f3e01c"
   },
   {
    "path": "scores/ref_44PS.composition.json",
@@ -1201,7 +1201,7 @@
   {
    "path": "scores/ref_44PS.json",
    "bytes": 633,
-   "sha256": "cffc5656dbd9e510141bf43114b39c0ea9424de01c4297b85724e541f57b5fe6"
+   "sha256": "bb8c86929d53f80424f576a1ccba28cc5309e31e4bbd8a6e4cb73e6e6d3efdf0"
   },
   {
    "path": "trajectories/e035_untangler/PROVENANCE.txt",
@@ -1420,18 +1420,18 @@
   },
   {
    "path": "trajectories/e066_mc20/TRAJECTORY.md",
-   "bytes": 9949,
-   "sha256": "60b7a9d43272dd0b37a50f1cb11429a5e9e6ae04ba2d0348c54c62483d2aeea4"
+   "bytes": 14958,
+   "sha256": "d294fa70116e724d2f718f8d593a3dd5baa2ffe45c89dbb81b0e6b6aa060de7e"
   },
   {
    "path": "trajectories/e066_mc20/launch.out",
-   "bytes": 1869,
-   "sha256": "b96267aa3db9c2026c88162ca08c85fe3fb57e9c52b6ef10709aa1283984d064"
+   "bytes": 4070,
+   "sha256": "d2db6b383265c04c73059a06fae000577eb37fbe6b3967faec76c82158049c31"
   },
   {
    "path": "trajectories/e066_mc20/run.json",
-   "bytes": 235949,
-   "sha256": "736dbde0f24fecf2929be952386ba4f196e0213399518b4a186790470aab1ecd"
+   "bytes": 286819,
+   "sha256": "03caa68084c59050f8e65094f72d3fc43f3ae5d3802db099469d230614d95f3c"
   },
   {
    "path": "trajectories/e066_mc20/scripts__sixcopy_waters.py",

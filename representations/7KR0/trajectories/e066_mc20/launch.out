@@ -7,3 +7,22 @@
 [2026-10-12T07:56:02Z] r3_cleanup: clashscore of M 5.00 <= 5: no cleanup
 [2026-10-12T07:56:02Z] r4_pick: start (pick) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
 [2026-10-12T07:56:13Z] r4_pick: pick at 4.0 sigma (plain, single copy): 48 peaks, 20 sites, 20 copies
+[2026-10-12T10:57:09Z] r4_pick: not adopted - select -0.00016 not <= -2 sigma (0.00085); report +0.00004 does not agree in sign (d_select -0.00016, d_report +0.00004, d_gap +0.00031; clash 4.8 / 4.67; rota 1.3 / 1.18)
+[2026-10-12T10:57:09Z] r4_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T10:57:10Z] r4_aniso_water: skipped (every water already anisotropic)
+[2026-10-12T10:57:10Z] r4_cleanup: clashscore of M 5.00 <= 5: no cleanup
+[2026-10-12T10:57:10Z] r5_pick: start (pick) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T10:57:20Z] r5_pick: pick at 4.0 sigma (plain, single copy): 48 peaks, 20 sites, 20 copies
+[2026-10-12T10:57:21Z] r5_pick: not adopted - verdict of r4_pick reused (same base sha256, kind, weights, macro-cycles, sigma 4.0); not re-run
+[2026-10-12T10:57:21Z] r5_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T10:57:21Z] r5_aniso_water: skipped (every water already anisotropic)
+[2026-10-12T10:57:21Z] r5_cleanup: clashscore of M 5.00 <= 5: no cleanup
+[2026-10-12T10:57:21Z] r6_pick: start (pick) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T10:57:32Z] r6_pick: pick at 4.0 sigma (plain, single copy): 48 peaks, 20 sites, 20 copies
+[2026-10-12T10:57:32Z] r6_pick: not adopted - verdict of r4_pick reused (same base sha256, kind, weights, macro-cycles, sigma 4.0); not re-run
+[2026-10-12T10:57:32Z] r6_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T10:57:32Z] r6_aniso_water: skipped (every water already anisotropic)
+[2026-10-12T10:57:33Z] r6_cleanup: clashscore of M 5.00 <= 5: no cleanup
+[2026-10-12T10:57:33Z] STOP: 3 consecutive rounds without an adopted step; final model /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T10:57:53Z] final: independent R-work 0.06417 / R-free 0.08198 (select 0.08365 / report 0.08043), clashscore 5.0, rotamers 1.18%
+[2026-10-12T10:57:53Z] stopped after stage run (--stop-after)

@@ -1,5 +1,5 @@
 {
- "model": "/home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb",
+ "model": "/home/dev/runs/7KR0/experiments/e066_mc20/models/final.pdb",
  "n_atoms": 16695,
  "n_hydrogen": 7722,
  "n_anisou": 8973,

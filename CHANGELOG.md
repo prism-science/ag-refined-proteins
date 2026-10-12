@@ -1,12 +1,21 @@
 # Changelog
 
-## 2026-10-12 — clean 7KR0 six-copy reruns; the record moves to E063 (D606)
+## 2026-10-12 — clean 7KR0 six-copy reruns; the record moves to E063 (D606), then to E066 (D607)
+
+`E066_final.pdb` (E063's model with its waters refined anisotropically for twenty macro-cycles per arm, where ten cycles had
+refused the step; 0.0820 R-free over the run's select + report thirds, sleep third 0.0824, bunker 0.0836 on one logged read,
+clashscore 5.0 at the cap, rotamer outliers 1.2 %) is the clean six-copy record (D607). It is the file staged earlier the same day as
+`E066_r3_aniso_water.pdb` (same SHA-256), now with the run finished (a 4σ pick at twenty cycles refused, three rounds without an
+adoption) and read: on the sleep third and the bunker it is the lowest of the family, the first within-family order those channels
+agree on. A convergence test on it (E068, forty refinement cycles against twenty, judged like a pick) is running and is not in this
+release.
 
 `representations/7KR0/models/` gains the clean reruns of the portable script under the leak-free protocol (work-only decision maps,
 sleep third withheld, bunker): `E063_final.pdb` (one labelled water per peak; 0.0847 R-free over the run's select + report thirds,
-sleep third 0.0856, bunker 0.0874, clashscore 4.6, rotamer outliers 1.2 %) is the clean six-copy record; `E062_final.pdb` (0.0855,
+sleep third 0.0856, bunker 0.0874, clashscore 4.6, rotamer outliers 1.2 %) was the clean six-copy record under D606 and is the record
+until D607; `E062_final.pdb` (0.0855,
 sleep 0.0837), `E051b_final.pdb` (0.0873, sleep 0.0850), `E059_final.pdb` (0.0897, sleep 0.0886, bunker 0.0946) and
-`E066_r3_aniso_water.pdb` (0.0820, run in progress, no sleep read yet). The clean rows are scored on the runs' own no-sleep thirds
+`E066_final.pdb` (above). The clean rows are scored on the runs' own no-sleep thirds
 (D605; `clean_rows_scoring_inputs` in `provenance.json`), not on the frozen target files, and `E049_r5_pick` (the all-data endpoint)
 is scored on both bases: 0.0745 on all 8 712 free reflections, 0.0753 on the clean rows' 5 808 — the free-reflection channel is about
 0.009 on this target. Every earlier row re-scored by the same scorer (unchanged to five decimals). Trajectories under
