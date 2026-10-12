@@ -1,0 +1,29 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e059_bunker/models/final.pdb",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 16571,
+ "n_hydrogen": 7722,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_residues": 1157,
+ "n_reflections": 172020,
+ "n_free": 5808,
+ "n_select": 2904,
+ "n_report": 2904,
+ "n_work": 166212,
+ "d_min": 0.7700003403620237,
+ "r_work_fmodel": 0.07471211654562752,
+ "r_free_fmodel": 0.09003856372517938,
+ "r_work_manual": 0.07471665910115899,
+ "r_free_manual": 0.08973605421045355,
+ "r_free_select_manual": 0.09160968730051768,
+ "r_free_report_manual": 0.08794140783471112,
+ "wall_s": 6.1
+}

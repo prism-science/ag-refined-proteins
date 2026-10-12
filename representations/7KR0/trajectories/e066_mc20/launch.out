@@ -1,0 +1,9 @@
+[2026-10-12T01:54:03Z] start sixcopy_waters 1.8 (2026-10-11): single-copy picks - one labelled water per peak (E063); work-only decision maps (D582); sleep third absent from phenix input (D584); sparse-first schedule (D586); bunker set held outside every working file (D587); half-map peak agreement and water-site occupancy cap (E062); step memo (a step already judged on the same base is not re-run); floor sigma from ten r0 refinements (D594) 7KR0; argv scripts/sixcopy_waters.py 7KR0 --out /home/dev/runs/7KR0/experiments/e066_mc20 --model deposited --data /home/dev/runs/7KR0/experiments/e049_portable/prep/data_flags.mtz --flag-label R-free-flags --test-flag-value 0 --sleep --bunker 0.02 --nproc 6 --resume --water-mode single --cap-site-occ 0 --mc-step 20
+[2026-10-12T01:54:03Z] r3_pick: start (pick) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r2_pick/cand_s3.pdb
+[2026-10-12T01:54:16Z] r3_pick: pick at 3.0 sigma (plain, single copy): 265 peaks, 157 sites, 157 copies
+[2026-10-12T04:53:37Z] r3_pick: not adopted - select -0.00046 not <= -2 sigma (0.00085); report +0.00061 does not agree in sign; clashscore 5.38 > 5 and above control 5.25; gap widens +0.00232 > 0.002 (d_select -0.00046, d_report +0.00061, d_gap +0.00232; clash 5.38 / 5.25; rota 1.18 / 1.18)
+[2026-10-12T04:53:37Z] r3_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r2_pick/cand_s3.pdb
+[2026-10-12T07:56:02Z] r3_aniso_water: ADOPTED - all criteria met (d_select -0.00227, d_report -0.00064, d_gap +0.00019; clash 5.0 / 5.25; rota 1.18 / 1.18)
+[2026-10-12T07:56:02Z] r3_cleanup: clashscore of M 5.00 <= 5: no cleanup
+[2026-10-12T07:56:02Z] r4_pick: start (pick) base /home/dev/runs/7KR0/experiments/e066_mc20/steps/r3_aniso_water/cand_s2.pdb
+[2026-10-12T07:56:13Z] r4_pick: pick at 4.0 sigma (plain, single copy): 48 peaks, 20 sites, 20 copies

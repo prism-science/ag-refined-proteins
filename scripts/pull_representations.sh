@@ -20,7 +20,7 @@ TAR_SHA=$(grep -E '^DONE [0-9a-f]{64}$' "$TMP/done.txt" | cut -d' ' -f2) || { ec
 
 echo "transferring"
 B64=/home/dev/runs/agrp_rep_b64
-"${POD[@]}" bash -lc "rm -rf $B64 && mkdir $B64 && base64 -w 76 $STAGE.tar.gz > $B64/all.b64 && cd $B64 && split -l 100000 -d all.b64 part_ && sha256sum part_*" 2>/dev/null | filter > "$TMP/parts.txt"
+"${POD[@]}" bash -lc "rm -rf $B64 && mkdir $B64 && base64 -w 76 $STAGE.tar.gz > $B64/all.b64 && cd $B64 && split -l 40000 -d -a 3 all.b64 part_ && sha256sum part_*" 2>/dev/null | filter > "$TMP/parts.txt"
 while read -r want name; do
   for try in 1 2 3; do
     "${POD[@]}" bash -lc "cat $B64/$name" < /dev/null 2>/dev/null | grep -E '^[A-Za-z0-9+/=]+$' > "$TMP/$name" || true

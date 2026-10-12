@@ -1,6 +1,6 @@
 # E044 trajectory — 7KR0 (six-copy representation, PROTOCOL 18.1; never a deliverable)
 
-Rewritten 2026-10-09T22:22:26Z. Harness evaluator on the frozen flags (consult=True). Gap = R-free(full) − R-work. Clashscore: phenix.clashscore keep_hydrogens=True. Protocol flags: `-c 0.5 -u 1 -n 10 -s 0.0 -q 0.1 -W -N`. Floor sigma: {"r_free_select": 0.001145, "r_free_report": 0.001195, "r_free_full": 0.001164}.
+Rewritten 2026-10-10T07:46:31Z. Harness evaluator on the frozen flags (consult=True). Gap = R-free(full) − R-work. Clashscore: phenix.clashscore keep_hydrogens=True. Protocol flags: `-c 0.5 -u 1 -n 10 -s 0.0 -q 0.1 -W -N`. Floor sigma: {"r_free_select": 0.001145, "r_free_report": 0.001195, "r_free_full": 0.001164}.
 
 ## References
 
@@ -81,6 +81,36 @@ Rewritten 2026-10-09T22:22:26Z. Harness evaluator on the frozen flags (consult=T
 | r4_pick_cleanup | ctrl | 1 | 0.08046 | 0.08012 | 0.08079 | 0.06157 | 0.0189 | 1684 | 8866 | 4.87 |
 | r4_pick_cleanup | ctrl | 2 | 0.08045 | 0.08022 | 0.08069 | 0.06158 | 0.0189 | 1690 | 8879 | 4.87 |
 | r4_pick_cleanup | ctrl | 3 | 0.08061 | 0.08026 | 0.08095 | 0.06156 | 0.0191 | 1689 | 8868 | 4.80 |
+| r4_aniso_water | cand | 1 | 0.07782 | 0.07726 | 0.07838 | 0.05914 | 0.0187 | 1924 | 9616 | 4.93 |
+| r4_aniso_water | cand | 2 | 0.07768 | 0.07702 | 0.07835 | 0.05901 | 0.0187 | 1924 | 9616 | 4.87 |
+| r4_aniso_water | cand | 3 | 0.07772 | 0.07711 | 0.07834 | 0.05898 | 0.0187 | 1924 | 9616 | 5.00 |
+| r4_aniso_water | ctrl | 1 | 0.07800 | 0.07734 | 0.07866 | 0.05995 | 0.0181 | 1924 | 8846 | 4.80 |
+| r4_aniso_water | ctrl | 2 | 0.07819 | 0.07760 | 0.07879 | 0.06007 | 0.0181 | 1924 | 8846 | 4.67 |
+| r4_aniso_water | ctrl | 3 | 0.07807 | 0.07746 | 0.07870 | 0.06007 | 0.0180 | 1924 | 8846 | 4.74 |
+| r4_loop | cand | 1 | 0.07793 | 0.07707 | 0.07881 | 0.06041 | 0.0175 | 1924 | 8846 | 3.11 |
+| r4_loop | cand | 2 | 0.07808 | 0.07718 | 0.07899 | 0.06041 | 0.0177 | 1924 | 8846 | 3.50 |
+| r4_loop | cand | 3 | 0.07789 | 0.07686 | 0.07894 | 0.06030 | 0.0176 | 1924 | 8846 | 3.24 |
+| r4_loop | ctrl | 1 | 0.07786 | 0.07710 | 0.07864 | 0.05988 | 0.0180 | 1924 | 8846 | 4.93 |
+| r4_loop | ctrl | 2 | 0.07793 | 0.07733 | 0.07853 | 0.05994 | 0.0180 | 1924 | 8846 | 5.06 |
+| r4_loop | ctrl | 3 | 0.07789 | 0.07718 | 0.07861 | 0.06002 | 0.0179 | 1924 | 8846 | 4.87 |
+| r5_pick | cand | 1 | 0.07608 | 0.07508 | 0.07708 | 0.05841 | 0.0177 | 2412 | 8846 | 5.32 |
+| r5_pick | cand | 2 | 0.07607 | 0.07508 | 0.07706 | 0.05855 | 0.0175 | 2412 | 8846 | 5.45 |
+| r5_pick | cand | 3 | 0.07588 | 0.07484 | 0.07693 | 0.05824 | 0.0176 | 2412 | 8846 | 5.19 |
+| r5_pick | ctrl | 1 | 0.07800 | 0.07734 | 0.07866 | 0.05995 | 0.0181 | 1924 | 8846 | 4.80 |
+| r5_pick | ctrl | 2 | 0.07819 | 0.07760 | 0.07879 | 0.06007 | 0.0181 | 1924 | 8846 | 4.67 |
+| r5_pick | ctrl | 3 | 0.07807 | 0.07746 | 0.07870 | 0.06007 | 0.0180 | 1924 | 8846 | 4.74 |
+| r5_pick_cleanup | cand | 1 | 0.07689 | 0.07625 | 0.07754 | 0.05817 | 0.0187 | 2133 | 8831 | 4.41 |
+| r5_pick_cleanup | cand | 2 | 0.07677 | 0.07611 | 0.07743 | 0.05819 | 0.0186 | 2118 | 8828 | 4.35 |
+| r5_pick_cleanup | cand | 3 | 0.07686 | 0.07616 | 0.07756 | 0.05816 | 0.0187 | 2105 | 8829 | 4.54 |
+| r5_pick_cleanup | ctrl | 1 | 0.07806 | 0.07742 | 0.07870 | 0.05956 | 0.0185 | 1878 | 8847 | 4.67 |
+| r5_pick_cleanup | ctrl | 2 | 0.07811 | 0.07748 | 0.07874 | 0.05951 | 0.0186 | 1881 | 8854 | 4.74 |
+| r5_pick_cleanup | ctrl | 3 | 0.07814 | 0.07751 | 0.07877 | 0.05945 | 0.0187 | 1880 | 8832 | 4.74 |
+| r5_aniso_water | cand | 1 | 0.07782 | 0.07726 | 0.07838 | 0.05914 | 0.0187 | 1924 | 9616 | 4.93 |
+| r5_aniso_water | cand | 2 | 0.07768 | 0.07702 | 0.07835 | 0.05901 | 0.0187 | 1924 | 9616 | 4.87 |
+| r5_aniso_water | cand | 3 | 0.07772 | 0.07711 | 0.07834 | 0.05898 | 0.0187 | 1924 | 9616 | 5.00 |
+| r5_aniso_water | ctrl | 1 | 0.07800 | 0.07734 | 0.07866 | 0.05995 | 0.0181 | 1924 | 8846 | 4.80 |
+| r5_aniso_water | ctrl | 2 | 0.07819 | 0.07760 | 0.07879 | 0.06007 | 0.0181 | 1924 | 8846 | 4.67 |
+| r5_aniso_water | ctrl | 3 | 0.07807 | 0.07746 | 0.07870 | 0.06007 | 0.0180 | 1924 | 8846 | 4.74 |
 
 ## Rounds
 
@@ -89,3 +119,5 @@ Rewritten 2026-10-09T22:22:26Z. Harness evaluator on the frozen flags (consult=T
 | 1 | True | `/home/dev/runs/7KR0/experiments/e048_autosix/shaken_s02_dep/steps/r1_cleanup/cand_s1.pdb` | 1.30 | 2026-10-09T07:58:03Z |
 | 2 | True | `/home/dev/runs/7KR0/experiments/e048_autosix/shaken_s02_dep/steps/r2_aniso_water/cand_s3.pdb` | 0.95 | 2026-10-09T14:02:56Z |
 | 3 | True | `/home/dev/runs/7KR0/experiments/e048_autosix/shaken_s02_dep/steps/r3_pick_cleanup/cand_s2.pdb` | 1.18 | 2026-10-09T19:07:24Z |
+| 4 | True | `/home/dev/runs/7KR0/experiments/e048_autosix/shaken_s02_dep/steps/r4_pick_cleanup/cand_s3.pdb` | 1.42 | 2026-10-10T02:47:24Z |
+| 5 | False | `/home/dev/runs/7KR0/experiments/e048_autosix/shaken_s02_dep/steps/r4_pick_cleanup/cand_s3.pdb` | 1.42 | 2026-10-10T07:46:31Z |

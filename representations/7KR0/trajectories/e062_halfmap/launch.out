@@ -1,0 +1,67 @@
+[2026-10-11T17:54:36Z] start sixcopy_waters 1.7 (2026-10-11): work-only decision maps (D582); sleep third absent from phenix input (D584); sparse-first schedule (D586); bunker set held outside every working file (D587); half-map peak agreement and water-site occupancy cap (E062); step memo (a step already judged on the same base is not re-run); floor sigma from ten r0 refinements (D594) 7KR0; argv scripts/sixcopy_waters.py 7KR0 --out /home/dev/runs/7KR0/experiments/e062_halfmap --model deposited --data /home/dev/runs/7KR0/experiments/e049_portable/prep/data_flags.mtz --flag-label R-free-flags --test-flag-value 0 --sleep --bunker 0.02 --nproc 6 --resume --pick-mode halfmap --start-sigma 3.0
+[2026-10-11T17:54:36Z] r1_pick: start (pick) base /home/dev/runs/7KR0/experiments/e062_halfmap/build/S0.pdb
+[2026-10-11T17:54:36Z] hygiene steps/r1_pick/base_hyg.pdb: 151 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 2.37): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-11T17:55:01Z] r1_pick: pick at 3.0 sigma (halfmap:1.5:0.7:7): 243 peaks = 243 of 311 full-map peaks reproduced in both half-work-set maps (2092 / 2091 half peaks above 1.5 sigma), 199 sites, 779 copies
+[2026-10-11T19:37:07Z] r1_pick: not adopted - gap widens +0.00283 > 0.002 (d_select -0.01449, d_report -0.01595, d_gap +0.00283; clash 4.09 / 3.83; rota 1.54 / 1.54)
+[2026-10-11T19:37:07Z] r1_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e062_halfmap/build/S0.pdb
+[2026-10-11T19:37:07Z] hygiene steps/r1_aniso_water/base_hyg.pdb: 151 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 2.37): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-11T19:37:07Z] r1_aniso_water: skipped (every water already anisotropic)
+[2026-10-11T19:37:07Z] r1_cleanup: clashscore of M 3.83 <= 5: no cleanup
+[2026-10-11T19:37:07Z] r2_pick: start (pick) base /home/dev/runs/7KR0/experiments/e062_halfmap/build/S0.pdb
+[2026-10-11T19:37:08Z] hygiene steps/r2_pick/base_hyg.pdb: 151 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 2.37): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-11T19:37:31Z] r2_pick: pick at 4.0 sigma (halfmap:1.5:0.7:7): 140 peaks = 140 of 150 full-map peaks reproduced in both half-work-set maps (2092 / 2091 half peaks above 1.5 sigma), 126 sites, 505 copies
+[2026-10-11T21:14:35Z] r2_pick: ADOPTED - all criteria met (d_select -0.01468, d_report -0.01588, d_gap +0.00061; clash 3.96 / 3.83; rota 1.54 / 1.54)
+[2026-10-11T21:14:35Z] r2_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r2_pick/cand_s2.pdb
+[2026-10-11T21:14:35Z] hygiene steps/r2_aniso_water/base_hyg.pdb: 144 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-11T22:53:59Z] r2_aniso_water: ADOPTED - all criteria met (d_select -0.00338, d_report -0.00342, d_gap -0.00076; clash 4.48 / 4.41; rota 1.18 / 1.18)
+[2026-10-11T22:53:59Z] r2_cleanup: clashscore of M 4.48 <= 5: no cleanup
+[2026-10-11T22:53:59Z] r3_pick: start (pick) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r2_aniso_water/cand_s3.pdb
+[2026-10-11T22:53:59Z] hygiene steps/r3_pick/base_hyg.pdb: 150 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-11T22:54:23Z] r3_pick: pick at 3.0 sigma (halfmap:1.5:0.7:7): 238 peaks = 238 of 328 full-map peaks reproduced in both half-work-set maps (2065 / 1966 half peaks above 1.5 sigma), 185 sites, 625 copies
+[2026-10-12T00:31:30Z] r3_pick: ADOPTED - all criteria met (d_select -0.00357, d_report -0.00423, d_gap +0.00162; clash 4.87 / 4.48; rota 1.3 / 1.3)
+[2026-10-12T00:31:30Z] r3_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T00:31:31Z] hygiene steps/r3_aniso_water/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T02:14:15Z] r3_aniso_water: not adopted - select -0.00098 not <= -2 sigma (0.00085) (d_select -0.00098, d_report -0.00024, d_gap +0.00025; clash 5.0 / 5.19; rota 1.3 / 1.42)
+[2026-10-12T02:14:15Z] r3_cleanup: clashscore of M 4.87 <= 5: no cleanup
+[2026-10-12T02:14:15Z] r4_pick: start (pick) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T02:14:15Z] hygiene steps/r4_pick/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T02:14:40Z] r4_pick: pick at 2.5 sigma (halfmap:1.5:0.7:7): 278 peaks = 278 of 537 full-map peaks reproduced in both half-work-set maps (2034 / 2066 half peaks above 1.5 sigma), 165 sites, 496 copies
+[2026-10-12T03:51:23Z] r4_pick: not adopted - clashscore 5.71 > 5 and above control 5.19 (d_select -0.00305, d_report -0.00132, d_gap +0.00050; clash 5.71 / 5.19; rota 1.42 / 1.42)
+[2026-10-12T03:51:23Z] r4_pick_cleanup: start (composite pick + cleanup of r4_pick) seeds [1, 2, 3]
+[2026-10-12T03:51:23Z] hygiene steps/r4_pick_cleanup/s1/cand_base_hyg.pdb: 143 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.35): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:24Z] hygiene steps/r4_pick_cleanup/s1/ctrl_base_hyg.pdb: 150 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.41): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:29Z] hygiene steps/r4_pick_cleanup/s1/clean.pdb: 13 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.00): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:30Z] hygiene steps/r4_pick_cleanup/s2/cand_base_hyg.pdb: 141 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.37): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:30Z] hygiene steps/r4_pick_cleanup/s2/ctrl_base_hyg.pdb: 152 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.40): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:36Z] hygiene steps/r4_pick_cleanup/s2/clean.pdb: 17 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.00): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:37Z] hygiene steps/r4_pick_cleanup/s3/cand_base_hyg.pdb: 139 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.37): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:37Z] hygiene steps/r4_pick_cleanup/s3/ctrl_base_hyg.pdb: 149 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.42): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T03:51:43Z] hygiene steps/r4_pick_cleanup/s3/clean.pdb: 15 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.00): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T05:27:16Z] r4_pick_cleanup: not adopted - select -0.00112 not <= -2 sigma (0.00085) (d_select -0.00112, d_report -0.00049, d_gap +0.00109; clash 3.96 / 5.19; rota 1.42 / 1.54)
+[2026-10-12T05:27:16Z] r4_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T05:27:16Z] hygiene steps/r4_aniso_water/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T05:31:36Z] r4_aniso_water: not adopted - verdict of r3_aniso_water reused (same base sha256, kind, weights, macro-cycles); not re-run
+[2026-10-12T05:31:36Z] r4_cleanup: clashscore of M 4.87 <= 5: no cleanup
+[2026-10-12T05:31:37Z] r5_pick: start (pick) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T05:31:37Z] hygiene steps/r5_pick/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T05:32:01Z] r5_pick: pick at 2.5 sigma (halfmap:1.5:0.7:7): 278 peaks = 278 of 537 full-map peaks reproduced in both half-work-set maps (2034 / 2066 half peaks above 1.5 sigma), 165 sites, 496 copies
+[2026-10-12T05:32:01Z] r5_pick: not adopted - verdict of r4_pick reused (same base sha256, kind, weights, macro-cycles, sigma 2.5); not re-run
+[2026-10-12T05:32:01Z] r5_pick_cleanup: start (composite pick + cleanup of r5_pick) seeds [1, 2, 3]
+[2026-10-12T05:32:01Z] r5_pick_cleanup: not adopted - verdict of r4_pick_cleanup reused (same base sha256, kind, weights, macro-cycles, sigma 2.5); not re-run
+[2026-10-12T05:32:01Z] r5_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T05:32:02Z] hygiene steps/r5_aniso_water/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T05:36:19Z] r5_aniso_water: not adopted - verdict of r3_aniso_water reused (same base sha256, kind, weights, macro-cycles); not re-run
+[2026-10-12T05:36:19Z] r5_cleanup: clashscore of M 4.87 <= 5: no cleanup
+[2026-10-12T05:36:19Z] r6_pick: start (pick) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T05:36:19Z] hygiene steps/r6_pick/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T05:36:44Z] r6_pick: pick at 2.5 sigma (halfmap:1.5:0.7:7): 278 peaks = 278 of 537 full-map peaks reproduced in both half-work-set maps (2034 / 2066 half peaks above 1.5 sigma), 165 sites, 496 copies
+[2026-10-12T05:36:44Z] r6_pick: not adopted - verdict of r4_pick reused (same base sha256, kind, weights, macro-cycles, sigma 2.5); not re-run
+[2026-10-12T05:36:44Z] r6_pick_cleanup: start (composite pick + cleanup of r6_pick) seeds [1, 2, 3]
+[2026-10-12T05:36:44Z] r6_pick_cleanup: not adopted - verdict of r4_pick_cleanup reused (same base sha256, kind, weights, macro-cycles, sigma 2.5); not re-run
+[2026-10-12T05:36:44Z] r6_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T05:36:44Z] hygiene steps/r6_aniso_water/base_hyg.pdb: 146 water sites summed above the occupancy cap 1.00 (any altloc within 0.6 A; largest sum 1.39): copies scaled down, 0.00 occupancy removed (PROTOCOL 5.4(8): over-occupancy is a defect, applied to both arms, not judged)
+[2026-10-12T05:41:03Z] r6_aniso_water: not adopted - verdict of r3_aniso_water reused (same base sha256, kind, weights, macro-cycles); not re-run
+[2026-10-12T05:41:03Z] r6_cleanup: clashscore of M 4.87 <= 5: no cleanup
+[2026-10-12T05:41:03Z] STOP: 3 consecutive rounds without an adopted step; final model /home/dev/runs/7KR0/experiments/e062_halfmap/steps/r3_pick/cand_s3.pdb
+[2026-10-12T05:41:23Z] final: independent R-work 0.06905 / R-free 0.08585 (select 0.08822 / report 0.08297), clashscore 4.87, rotamers 1.3%
+[2026-10-12T05:41:23Z] stopped after stage run (--stop-after)

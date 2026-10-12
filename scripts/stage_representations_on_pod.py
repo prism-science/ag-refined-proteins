@@ -109,6 +109,38 @@ for rid, p, what in (("E048_r2_aniso_water", f"{E48}/r2_aniso_water/cand_s3.pdb"
     if os.path.exists(p):
         rows.append(dict(id=rid, stage="E048", arm="driver", what=what, model=p, mtz=None, freeze=True))
 
+# E049 final (round 5): the all-data endpoint of the portable script, scored on the same basis as the rows above (data.mtz, 8 712 free).
+for rid, p, what in (("E049_r5_pick", f"{E}/e049_portable/models/r5_pick.pdb", "portable script, final model (end of round 5, 2.5 sigma pick; run ended at three rounds without an adoption after it); maps included the free reflections (D582); clashscore 4.9, rotamers 1.2 %"),):
+    if os.path.exists(p):
+        rows.append(dict(id=rid, stage="E049", arm="portable", what=what, model=p, mtz=None, freeze=True))
+
+# Clean reruns of the portable script (2026-10-11/12; D582 work-only decision maps, D584/D585 no sleep reflection in any program's
+# input, D587 bunker = 2 % of the work reflections held outside every working file). These runs were judged on the portable script's
+# own select / report / sleep thirds (sixcopy_waters.py split_seed; NOT the harness's split_v2 partition, D605). They are scored here
+# on the run's own no-sleep working file — e063_single/prep/data_flags.mtz (172 020 rows: FP, SIGFP, R-free-flags; sleep and bunker
+# rows absent) as data and flags, with split.mtz restricted to those rows (score_clean_runsplit/split_nosleep.mtz: SPLIT 1 and 2 only).
+# "R-free full" for these rows is therefore R over the select + report thirds (5 808 reflections); the sleep-third value quoted in the
+# row text is the run's one logged read (run.json sleep_consultations). The sleep third is never scored here.
+CLEAN = dict(data=f"{E}/e063_single/prep/data_flags.mtz", flags=f"{E}/e063_single/prep/data_flags.mtz",
+             split=f"{E}/score_clean_runsplit/split_nosleep.mtz")
+for rid, p, what in (
+    ("E051b_final", f"{E}/e051b_workonly/models/final.pdb",
+     "clean rerun (work-only maps, sleep third withheld), end of round 3: 4 sigma picks of 121 and 90 sites + anisotropic waters, every 3 sigma pick refused on the R-gap bound; R-free here = select + report thirds (5 808); sleep third 0.0850 (one logged read); clashscore 4.7, rotamers 1.4 %"),
+    ("E059_final", f"{E}/e059_bunker/models/final.pdb",
+     "clean rerun with the bunker, end of round 1 (4 sigma pick of 121 sites + anisotropic waters; the round-3 pick refused under a three-seed sigma, D594); R-free here = select + report thirds; sleep third 0.0886, bunker R 0.0946 (one logged read); clashscore 4.0, rotamers 1.2 %"),
+    ("E062_final", f"{E}/e062_halfmap/models/final.pdb",
+     "clean rerun with the bunker, six light copies per peak with a site-occupancy cap, end of round 3 (3 sigma picks; the 2.5 sigma composite pick + clash cleanup refused at z -1.3); R-free here = select + report thirds; sleep third 0.0837, bunker R 0.0902 (one logged read); clashscore 4.9, rotamers 1.3 %"),
+    ("E063_final", f"{E}/e063_single/models/final.pdb",
+     "clean rerun with the bunker, one labelled water per peak, end of round 2 (3 sigma pick of 235 waters on the E059 round-1 model; every later rung refused: 2.5 sigma, a second 3 sigma pass, 4 sigma, at start occupancy 0.33 and 0.10); R-free here = select + report thirds; sleep third 0.0856, bunker R 0.0874 (one logged read); clashscore 4.6, rotamers 1.2 %"),
+    ("E066_r3_aniso_water", f"{E}/e066_mc20/steps/r3_aniso_water/cand_s2.pdb",
+     "clean rerun with the bunker: E063's round-2 model with anisotropic waters refined for twenty macro-cycles per arm (the same step refused at ten cycles, z -1.9; adopted at twenty, z -2.7), run still going (round 4 at 4 sigma running); R-free here = select + report thirds; no sleep read yet (one read when the run stops); clashscore 5.0, rotamers 1.2 %"),
+    ("E049_r5_pick_clean_basis", f"{E}/e049_portable/models/r5_pick.pdb",
+     "the E049 final model (same file as E049_r5_pick) scored on the clean rows' reflections (select + report thirds, 5 808) for the like-for-like: the all-data maps' advantage on identical reflections"),
+):
+    if os.path.exists(p):
+        rows.append(dict(id=rid, stage="clean" if rid != "E049_r5_pick_clean_basis" else "E049", arm="portable", what=what,
+                         model=p, mtz=None, freeze=(rid != "E049_r5_pick_clean_basis"), **CLEAN))
+
 # ---------- composition helper (phenix.python) ----------
 COMP_PY = r'''
 import json, sys, collections
@@ -160,7 +192,8 @@ for r in rows:
     log("scoring", r["id"], r["model"])
     src_sha = sha(r["model"])
     sj = os.path.join(OUT, "scores", r["id"] + ".json")
-    rc = run(["phenix.python", SCORER, r["model"], f"{T}/data.mtz", f"{T}/flags.mtz", f"{T}/split.mtz", sj],
+    data, flags, split = r.get("data", f"{T}/data.mtz"), r.get("flags", f"{T}/flags.mtz"), r.get("split", f"{T}/split.mtz")
+    rc = run(["phenix.python", SCORER, r["model"], data, flags, split, sj],
              os.path.join(OUT, "_work", r["id"] + ".indep.log"))
     if rc != 0: raise SystemExit(f"scorer failed on {r['model']}")
     cj = os.path.join(OUT, "scores", r["id"] + ".composition.json")
@@ -168,7 +201,9 @@ for r in rows:
              os.path.join(OUT, "_work", r["id"] + ".comp.log"))
     if rc != 0: raise SystemExit(f"composition failed on {r['model']}")
     entry = dict(r, model_sha256=src_sha, model_bytes=os.path.getsize(r["model"]),
-                 score_json=f"scores/{r['id']}.json", composition_json=f"scores/{r['id']}.composition.json")
+                 score_json=f"scores/{r['id']}.json", composition_json=f"scores/{r['id']}.composition.json",
+                 scored_on={"data": data, "flags": flags, "split": split,
+                            "basis": "run thirds, sleep withheld (5 808 free)" if "data" in r else "frozen target files (8 712 free)"})
     if r["freeze"]:
         ext = os.path.splitext(r["model"])[1]
         dst = os.path.join(OUT, "models", r["id"] + ext); cp(r["model"], dst)
@@ -198,6 +233,11 @@ for stage, files in {
     "e035d_post": ["README.txt"],
     "e049_portable": ["TRAJECTORY.md", "launch.log", "run.json", "scripts/sixcopy_waters.py", "verify/r2_pick_cleanup_s1.summary.txt"],
     "e048_autosix/shaken_s02_dep": ["TRAJECTORY.md", "DECISIONS.md", "state.json"],
+    "e051b_workonly": ["TRAJECTORY.md", "launch.log", "launch.out", "run.json", "scripts/sixcopy_waters.py"],
+    "e059_bunker": ["TRAJECTORY.md", "launch.log", "launch.out", "run.json", "scripts/sixcopy_waters.py", "vault/bunker.json"],
+    "e062_halfmap": ["TRAJECTORY.md", "launch.out", "run.json", "scripts/sixcopy_waters.py", "vault/bunker.json"],
+    "e063_single": ["TRAJECTORY.md", "launch.out", "run.json", "run.json.e059b_snapshot", "scripts/sixcopy_waters.py", "vault/bunker.json"],
+    "e066_mc20": ["TRAJECTORY.md", "launch.out", "run.json", "scripts/sixcopy_waters.py", "vault/bunker.json"],
 }.items():
     for f in files:
         p = f"{E}/{stage}/{f}"
@@ -226,6 +266,7 @@ prov = {
     "untangler_patch_scripts_sha256": patches,
     "independent_scorer": {"path": SCORER, "sha256": SCORER_SHA, "argv": "phenix.python indep_rfree.py <model> data.mtz flags.mtz split.mtz <out.json>"},
     "frozen_data": {n: {"path": f"{T}/{n}", "sha256": sha(f"{T}/{n}")} for n in ("data.mtz", "flags.mtz", "split.mtz")},
+    "clean_rows_scoring_inputs": {k: {"path": v, "sha256": sha(v)} for k, v in CLEAN.items() if os.path.exists(v)},
     "merged_data_flags_mtz_used_by_untangler": {"path": f"{E}/e035_untangler/data/7KR0_data_flags.mtz",
                                                  "sha256": sha(f"{E}/e035_untangler/data/7KR0_data_flags.mtz")},
     "rows": table,

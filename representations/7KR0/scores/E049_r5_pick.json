@@ -1,0 +1,29 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e049_portable/models/r5_pick.pdb",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 17701,
+ "n_hydrogen": 7722,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_residues": 2287,
+ "n_reflections": 178324,
+ "n_free": 8712,
+ "n_select": 4356,
+ "n_report": 4356,
+ "n_work": 169612,
+ "d_min": 0.7700003403620237,
+ "r_work_fmodel": 0.05585210539284173,
+ "r_free_fmodel": 0.07454557650876871,
+ "r_work_manual": 0.05585315632388779,
+ "r_free_manual": 0.0745365389256442,
+ "r_free_select_manual": 0.07287999808207606,
+ "r_free_report_manual": 0.07621145855811075,
+ "wall_s": 6.2
+}

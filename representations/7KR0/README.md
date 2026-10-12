@@ -98,6 +98,13 @@ converged. "pod only" rows are scored here but their files are not in this relea
 | E049 | portable | portable script, end of round 3 (2.5 sigma pick + clash cleanup; aniso refused); clashscore 4.6, rotamers 1.2 % | 0.07562 | 0.07303 | 0.07823 | 0.05760 | 0.01801 | 17,425 (7,722) | 6 × 0.167 | 2,011 | 508.1 | 9,338 | [E049_r3_pick_cleanup.pdb](models/E049_r3_pick_cleanup.pdb) |
 | E049 | portable | portable script, end of round 4 (2.5 sigma pick, 99 sites; aniso refused), run still going; clashscore 4.9, rotamers 1.2 % | 0.07493 | 0.07276 | 0.07712 | 0.05660 | 0.01832 | 17,617 (7,722) | 6 × 0.167 | 2,203 | 528.5 | 9,309 | [E049_r4_pick.pdb](models/E049_r4_pick.pdb) |
 | E048 | driver | E044 driver, end of round 2 (cleanup, 2.5 sigma pick, anisotropic waters; connectivity loop refused), run still going; clashscore 4.6 | 0.08378 | 0.08222 | 0.08536 | 0.06879 | 0.01499 | 16,861 (7,722) | 6 × 0.167 | 1,447 | 442.8 | 9,139 | [E048_r2_aniso_water.pdb](models/E048_r2_aniso_water.pdb) |
+| E049 | portable | portable script, final model (end of round 5, 2.5 sigma pick; run ended at three rounds without an adoption after it); maps included the free reflections (D582); clashscore 4.9, rotamers 1.2 % | 0.07454 | 0.07288 | 0.07621 | 0.05585 | 0.01868 | 17,701 (7,722) | 6 × 0.167 | 2,287 | 540.7 | 9,287 | [E049_r5_pick.pdb](models/E049_r5_pick.pdb) |
+| clean | portable | clean rerun (work-only maps, sleep third withheld), end of round 3: 4 sigma picks of 121 and 90 sites + anisotropic waters, every 3 sigma pick refused on the R-gap bound; R-free here = select + report thirds (5 808); sleep third 0.0850 (one logged read); clashscore 4.7, rotamers 1.4 % | 0.08733 | 0.09126 | 0.08356 | 0.07054 | 0.01679 | 16,877 (7,722) | 6 × 0.167 | 1,463 | 440.3 | 8,783 | [E051b_final.pdb](models/E051b_final.pdb) |
+| clean | portable | clean rerun with the bunker, end of round 1 (4 sigma pick of 121 sites + anisotropic waters; the round-3 pick refused under a three-seed sigma, D594); R-free here = select + report thirds; sleep third 0.0886, bunker R 0.0946 (one logged read); clashscore 4.0, rotamers 1.2 % | 0.08974 | 0.09161 | 0.08794 | 0.07472 | 0.01502 | 16,571 (7,722) | 6 × 0.167 | 1,157 | 395.4 | 8,849 | [E059_final.pdb](models/E059_final.pdb) |
+| clean | portable | clean rerun with the bunker, six light copies per peak with a site-occupancy cap, end of round 3 (3 sigma picks; the 2.5 sigma composite pick + clash cleanup refused at z -1.3); R-free here = select + report thirds; sleep third 0.0837, bunker R 0.0902 (one logged read); clashscore 4.9, rotamers 1.3 % | 0.08554 | 0.08822 | 0.08297 | 0.06906 | 0.01648 | 17,126 (7,722) | 6 × 0.167 | 1,712 | 408.1 | 8,779 | [E062_final.pdb](models/E062_final.pdb) |
+| clean | portable | clean rerun with the bunker, one labelled water per peak, end of round 2 (3 sigma pick of 235 waters on the E059 round-1 model; every later rung refused: 2.5 sigma, a second 3 sigma pass, 4 sigma, at start occupancy 0.33 and 0.10); R-free here = select + report thirds; sleep third 0.0856, bunker R 0.0874 (one logged read); clashscore 4.6, rotamers 1.2 % | 0.08468 | 0.08744 | 0.08203 | 0.06775 | 0.01693 | 16,755 (7,722) | 6 × 0.167 | 1,341 | 486.5 | 8,798 | [E063_final.pdb](models/E063_final.pdb) |
+| clean | portable | clean rerun with the bunker: E063's round-2 model with anisotropic waters refined for twenty macro-cycles per arm (the same step refused at ten cycles, z -1.9; adopted at twenty, z -2.7), run still going (round 4 at 4 sigma running); R-free here = select + report thirds; no sleep read yet (one read when the run stops); clashscore 5.0, rotamers 1.2 % | 0.08201 | 0.08365 | 0.08043 | 0.06417 | 0.01783 | 16,695 (7,722) | 6 × 0.167 | 1,281 | 488.3 | 8,973 | [E066_r3_aniso_water.pdb](models/E066_r3_aniso_water.pdb) |
+| E049 | portable | the E049 final model (same file as E049_r5_pick) scored on the clean rows' reflections (select + report thirds, 5 808) for the like-for-like: the all-data maps' advantage on identical reflections | 0.07534 | 0.07863 | 0.07218 | 0.05590 | 0.01944 | 17,701 (7,722) | 6 × 0.167 | 2,287 | 540.7 | 9,287 | pod only |
 <!-- rep-table:end -->
 
 The harness's own evaluator (phenix.refine's Wilson outlier rejection) gives the same numbers to within 0.0001; its values
@@ -199,3 +206,35 @@ reflections specifically. Every R-free in this directory is therefore an "all-da
 free-reflection leakage per pick. The campaign code now excludes the free reflections from every decision map (guard test);
 the clean reruns are E051 (7KR0, with a sleep third of the free set that nothing reads until the end), E052 (7R2H) and E053
 (8C5N). Their models replace these rows when they finish. 44PS was built into standard all-data maps too.
+
+## Clean reruns (2026-10-11/12, D582–D587, D605, D606)
+
+The rows marked `clean` are runs of `scripts/portable/sixcopy_waters.py` (campaign repository; the run's own copy is in
+`trajectories/<run>/scripts__sixcopy_waters.py`) from the deposited 7KR0 under the leak-free protocol: every decision map from work
+reflections only (D582); a third of the free set (the "sleep" third) absent from every program's input and read once, at the end,
+by a logged call (D584, D585); and, for the bunkered runs, 2 % of the work reflections removed from every working file at prep and
+read once with the sleep third (D587). Each change is judged against a paired null arm (the same base re-refined without the change,
+three seeds each) on the select third; the report third must agree; the R-work/R-free gap may not widen by more than 0.002; the
+clashscore and rotamer caps apply.
+
+These runs were judged on the portable script's own select / report / sleep thirds, which are not the harness's `split_v2` partition
+(D605). The clean rows are therefore scored on the run's own no-sleep working file — `e063_single/prep/data_flags.mtz` as data and
+flags (172 020 reflections: sleep and bunker rows absent) with `split.mtz` restricted to those rows (`clean_rows_scoring_inputs` in
+`provenance.json`) — so their "R-free full" is R over the select + report thirds (5 808 reflections), and their sleep-third and bunker
+values, quoted in the row text, come from the run's one logged read (`trajectories/<run>/run.json`, `sleep_consultations`). The sleep
+third is never scored by this release. `E049_r5_pick_clean_basis` is the all-data E049 endpoint scored on the same reflections for
+the like-for-like: 0.0753 against the clean record's 0.0847, the size of the free-reflection channel on this target.
+
+| Run | Water treatment | R-free (select + report) | Sleep third | Bunker | Status |
+|---|---|---|---|---|---|
+| E051b | 4σ picks, anisotropic waters; every 3σ pick refused on the gap bound | 0.0873 | 0.0850 | — | finished; the record until D606 |
+| E059 | E051b with the bunker; round 1 only (D594) | 0.0897 | 0.0886 | 0.0946 | finished |
+| E062 | six light copies per peak + site-occupancy cap; half-map thinning (uninformative, D604) | 0.0855 | 0.0837 | 0.0902 | finished |
+| **E063** | **one labelled water per peak; one 3σ pass, every denser rung refused** | **0.0847** | 0.0856 | 0.0874 | **finished; the clean record (D606)** |
+| E066 | E063's model, anisotropic waters at twenty macro-cycles per arm | 0.0820 | not read | not read | running (round 4 at 4σ) |
+
+Read with the caveat the campaign ledger states first: on the never-consulted sleep third E063 (0.0856) does not beat E051b (0.0850)
+or E062 (0.0837), on the bunker it leads, and the three differ by 0.001–0.002 where subsets of this size differ among themselves by
+about ±0.003; the gains over the E059 endpoint hold on every channel. Two breaches of the one-read rule by the agent are disclosed in
+D605 (a duplicate logged read of E059's file through E059b, and a scorer run on the harness split that mixed two thirds of each run's
+sleep third into an unquoted number); neither number informs any decision in this release.

@@ -1,0 +1,29 @@
+{
+ "model": "/home/dev/runs/7KR0/experiments/e051b_workonly/models/final.pdb",
+ "data": "amplitudes (FP,SIGFP)",
+ "n_dropped_french_wilson": 0,
+ "n_atoms": 16877,
+ "n_hydrogen": 7722,
+ "altlocs": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "n_water_residues": 1463,
+ "n_reflections": 172020,
+ "n_free": 5808,
+ "n_select": 2904,
+ "n_report": 2904,
+ "n_work": 166212,
+ "d_min": 0.7700003403620237,
+ "r_work_fmodel": 0.07053377362948303,
+ "r_free_fmodel": 0.08768498951811386,
+ "r_work_manual": 0.07053722839334386,
+ "r_free_manual": 0.08733069844983773,
+ "r_free_select_manual": 0.09126316450749367,
+ "r_free_report_manual": 0.08356401328851704,
+ "wall_s": 6.1
+}

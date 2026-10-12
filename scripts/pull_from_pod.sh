@@ -22,7 +22,7 @@ echo "targets: $TARGETS"
 TAR_SHA=$(grep -E '^DONE [0-9a-f]{64}$' "$TMP/done.txt" | cut -d' ' -f2) || { echo "staging failed; see $STAGE/driver.log on the pod" >&2; exit 1; }
 
 echo "transferring"
-"${POD[@]}" bash -lc "cd /home/dev/runs && rm -rf agrp_b64 && mkdir agrp_b64 && base64 -w 76 $STAGE.tar.gz > agrp_b64/all.b64 && cd agrp_b64 && split -l 100000 -d all.b64 part_ && sha256sum part_*" 2>/dev/null | filter > "$TMP/parts.txt"
+"${POD[@]}" bash -lc "cd /home/dev/runs && rm -rf agrp_b64 && mkdir agrp_b64 && base64 -w 76 $STAGE.tar.gz > agrp_b64/all.b64 && cd agrp_b64 && split -l 40000 -d -a 3 all.b64 part_ && sha256sum part_*" 2>/dev/null | filter > "$TMP/parts.txt"
 while read -r want name; do
   for try in 1 2 3; do
     "${POD[@]}" bash -lc "cat /home/dev/runs/agrp_b64/$name" < /dev/null 2>/dev/null | grep -E '^[A-Za-z0-9+/=]+$' > "$TMP/$name" || true

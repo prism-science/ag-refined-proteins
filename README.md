@@ -70,6 +70,11 @@ to the deposited sets of 7KR0 and 44PS).
 | E049 portable script, six copies, round 4 of a run in progress (`representations/7KR0/models/E049_r4_pick.pdb`) | 0.0749 / 0.0771 | 0.0566 | 2 203 | 4.9 | 1.2 % |
 | E048 harness driver, six copies, round 2 of a run in progress (`representations/7KR0/models/E048_r2_aniso_water.pdb`) | 0.0838 / 0.0854 | 0.0688 | 1 447 | 4.6 | |
 | 44PS deposited (Passmore et al.) | 0.0657 / 0.0660 | 0.0485 | 2 581 | 2.2 | 2.0 % |
+| **E063 clean rerun, one labelled water per peak — the clean record, D606** (`representations/7KR0/models/E063_final.pdb`; R-free over the run's select + report thirds, sleep withheld; sleep third 0.0856, bunker 0.0874) | **0.0847 / 0.0820** | 0.0678 | 1 341 | 4.6 | 1.2 % |
+| E066 clean rerun, E063's model with anisotropic waters at twenty cycles, run in progress (`representations/7KR0/models/E066_r3_aniso_water.pdb`; same basis; no sleep read yet) | 0.0820 / 0.0804 | 0.0642 | 1 281 | 5.0 | 1.2 % |
+| E062 clean rerun, six light copies per peak with a site-occupancy cap (`representations/7KR0/models/E062_final.pdb`; same basis; sleep 0.0837, bunker 0.0902) | 0.0855 / 0.0830 | 0.0691 | 1 712 | 4.9 | 1.3 % |
+| E051b clean rerun, the record until D606 (`representations/7KR0/models/E051b_final.pdb`; same basis; sleep 0.0850) | 0.0873 / 0.0836 | 0.0705 | 1 463 | 4.7 | 1.4 % |
+| E049 final model scored on the clean rows' reflections (the all-data maps' advantage on identical reflections) | 0.0753 / 0.0722 | 0.0559 | 2 287 | 4.9 | 1.2 % |
 
 - **E035** ran the paper's pipeline as published. Its models are in `representations/7KR0/`, with their own README, per-stage table
   and caveats.
@@ -89,9 +94,11 @@ to the deposited sets of 7KR0 and 44PS).
   an mFo−DFc map that included the free reflections (the mmtbx and phenix default), and the single-model lines read peaks, RSCC and
   Coot zones from phenix.refine maps with the same property. Measured on the largest single move (E050): +0.0016 R-free per pick
   with R-work unchanged, i.e. a genuine leak. The fix is in the campaign repository (every decision map from work reflections only,
-  guard test). Until the clean reruns land (E051 7KR0, E052 7R2H, E053 8C5N, running), every ensemble R-free in this repository is an
-  "all-data maps" number: a lower bound on the clean value, not a result to quote without this caveat. 44PS was built into standard
-  all-data maps as well; its own channel is unknown.
+  guard test). The 7KR0 clean reruns are in this release (rows marked clean, scored on the runs' own select + report thirds with the
+  sleep third withheld, D605): the clean record is E063 at 0.0847 (D606; sleep third 0.0856, bunker 0.0874 on one logged read), and
+  the all-data E049 endpoint scored on the same reflections is 0.0753, so the free reflections in the maps were worth about 0.009 on
+  this target. Every E035, E041, E048 and E049 number stays an "all-data maps" number. 44PS was built into standard all-data maps as
+  well; its own channel is unknown.
 - Numbers for E041 come from the campaign ledger, scored by the harness evaluator, not yet by this release's independent scorer.
 
 ## What is in a target directory

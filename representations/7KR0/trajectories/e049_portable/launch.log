@@ -36,3 +36,17 @@
 [2026-10-09T22:47:24Z] r4_cleanup: clashscore of M 4.87 <= 5: no cleanup
 [2026-10-09T22:47:24Z] r5_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r4_pick/cand_s2.pdb
 [2026-10-09T22:47:36Z] r5_pick: pick at 2.5 sigma: 306 peaks, 71 sites, 175 copies
+[2026-10-10T00:24:30Z] r5_pick: ADOPTED - all criteria met (d_select -0.00033, d_report -0.00146, d_gap -0.00060; clash 5.06 / 5.06; rota 1.18 / 1.18)
+[2026-10-10T00:24:30Z] r5_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r5_pick/cand_s3.pdb
+[2026-10-10T02:07:01Z] r5_aniso_water: not adopted - select -0.00001 not <= -2 sigma (0.00010) (d_select -0.00001, d_report -0.00045, d_gap +0.00003; clash 5.25 / 5.25; rota 1.18 / 1.18)
+[2026-10-10T02:07:01Z] r5_cleanup: start (cleanup) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r5_pick/cand_s3.pdb
+[2026-10-10T03:45:28Z] r5_cleanup: not adopted - select worse by +0.00041 > 2 sigma (0.00010) (d_select +0.00041, d_report -0.00002, d_gap -0.00010; clash 4.41 / 5.25; rota 1.18 / 1.18)
+[2026-10-10T03:45:28Z] r6_pick: start (pick) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r5_pick/cand_s3.pdb
+[2026-10-10T03:45:40Z] r6_pick: pick at 2.5 sigma: 270 peaks, 42 sites, 121 copies
+[2026-10-10T05:24:33Z] r6_pick: not adopted - clashscore 5.38 > 5 and above control 5.25 (d_select -0.00042, d_report -0.00048, d_gap -0.00045; clash 5.38 / 5.25; rota 1.18 / 1.18)
+[2026-10-10T05:24:33Z] r6_pick_cleanup: start (composite pick + cleanup of r6_pick) seeds [1, 2, 3]
+[2026-10-10T07:03:34Z] r6_pick_cleanup: not adopted - select +0.00000 not <= -2 sigma (0.00010) (d_select +0.00000, d_report -0.00055, d_gap -0.00054; clash 4.67 / 5.38; rota 1.42 / 1.18)
+[2026-10-10T07:03:34Z] r6_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r5_pick/cand_s3.pdb
+[2026-10-10T08:47:27Z] r6_aniso_water: not adopted - select -0.00001 not <= -2 sigma (0.00010) (d_select -0.00001, d_report -0.00045, d_gap +0.00003; clash 5.25 / 5.25; rota 1.18 / 1.18)
+[2026-10-10T08:47:27Z] r6_cleanup: start (cleanup) base /home/dev/runs/7KR0/experiments/e049_portable/steps/r5_pick/cand_s3.pdb
+[2026-10-10T09:05:00Z] STOPPED by operator decision (D583 c): converged, nothing kept since round 5; model in force steps/r5_pick/cand_s3.pdb 0.07455 full; all-data-maps reference run (D582)

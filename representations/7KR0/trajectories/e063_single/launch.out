@@ -1,0 +1,28 @@
+[2026-10-11T20:55:43Z] start sixcopy_waters 1.8 (2026-10-11): single-copy picks - one labelled water per peak (E063); work-only decision maps (D582); sleep third absent from phenix input (D584); sparse-first schedule (D586); bunker set held outside every working file (D587); half-map peak agreement and water-site occupancy cap (E062); step memo (a step already judged on the same base is not re-run); floor sigma from ten r0 refinements (D594) 7KR0; argv scripts/sixcopy_waters.py 7KR0 --out /home/dev/runs/7KR0/experiments/e063_single --model deposited --data /home/dev/runs/7KR0/experiments/e049_portable/prep/data_flags.mtz --flag-label R-free-flags --test-flag-value 0 --sleep --bunker 0.02 --nproc 6 --resume --water-mode single --cap-site-occ 0
+[2026-10-11T20:55:43Z] r2_pick: start (pick) base /home/dev/runs/7KR0/experiments/e063_single/steps/r1_aniso_water/cand_s1.pdb
+[2026-10-11T20:55:56Z] r2_pick: pick at 3.0 sigma (plain, single copy): 316 peaks, 235 sites, 235 copies
+[2026-10-11T22:31:39Z] r2_pick: ADOPTED - all criteria met (d_select -0.00380, d_report -0.00466, d_gap +0.00147; clash 4.61 / 4.15; rota 1.18 / 1.3)
+[2026-10-11T22:31:39Z] r2_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T00:08:53Z] r2_aniso_water: not adopted - select -0.00162 not <= -2 sigma (0.00085) (d_select -0.00162, d_report -0.00052, d_gap +0.00045; clash 5.0 / 5.0; rota 1.3 / 1.3)
+[2026-10-12T00:08:53Z] r2_cleanup: clashscore of M 4.61 <= 5: no cleanup
+[2026-10-12T00:08:54Z] r3_pick: start (pick) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T00:09:05Z] r3_pick: pick at 2.5 sigma (plain, single copy): 578 peaks, 323 sites, 323 copies
+[2026-10-12T01:44:19Z] r3_pick: not adopted - select +0.00096 not <= -2 sigma (0.00085); report +0.00024 does not agree in sign; clashscore 5.38 > 5 and above control 5.00; gap widens +0.00357 > 0.002 (d_select +0.00096, d_report +0.00024, d_gap +0.00357; clash 5.38 / 5.0; rota 1.3 / 1.3)
+[2026-10-12T01:44:19Z] r3_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T01:48:36Z] r3_aniso_water: not adopted - verdict of r2_aniso_water reused (same base sha256, kind, weights, macro-cycles); not re-run
+[2026-10-12T01:48:36Z] r3_cleanup: clashscore of M 4.61 <= 5: no cleanup
+[2026-10-12T01:48:36Z] r4_pick: start (pick) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T01:48:47Z] r4_pick: pick at 3.0 sigma (plain, single copy): 265 peaks, 157 sites, 157 copies
+[2026-10-12T03:24:31Z] r4_pick: not adopted - select -0.00094 not <= -2 sigma (0.00085); report +0.00037 does not agree in sign; clashscore 5.25 > 5 and above control 5.00; gap widens +0.00201 > 0.002 (d_select -0.00094, d_report +0.00037, d_gap +0.00201; clash 5.25 / 5.0; rota 1.3 / 1.3)
+[2026-10-12T03:24:31Z] r4_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T03:28:49Z] r4_aniso_water: not adopted - verdict of r2_aniso_water reused (same base sha256, kind, weights, macro-cycles); not re-run
+[2026-10-12T03:28:49Z] r4_cleanup: clashscore of M 4.61 <= 5: no cleanup
+[2026-10-12T03:28:49Z] r5_pick: start (pick) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T03:29:00Z] r5_pick: pick at 4.0 sigma (plain, single copy): 49 peaks, 26 sites, 26 copies
+[2026-10-12T05:02:40Z] r5_pick: not adopted - select +0.00015 not <= -2 sigma (0.00085); report +0.00126 does not agree in sign (d_select +0.00015, d_report +0.00126, d_gap +0.00126; clash 4.87 / 5.0; rota 1.3 / 1.3)
+[2026-10-12T05:02:40Z] r5_aniso_water: start (aniso_water) base /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T05:06:58Z] r5_aniso_water: not adopted - verdict of r2_aniso_water reused (same base sha256, kind, weights, macro-cycles); not re-run
+[2026-10-12T05:06:58Z] r5_cleanup: clashscore of M 4.61 <= 5: no cleanup
+[2026-10-12T05:06:58Z] STOP: 3 consecutive rounds without an adopted step; final model /home/dev/runs/7KR0/experiments/e063_single/steps/r2_pick/cand_s3.pdb
+[2026-10-12T05:07:19Z] final: independent R-work 0.06775 / R-free 0.08485 (select 0.08744 / report 0.08203), clashscore 4.61, rotamers 1.18%
+[2026-10-12T05:07:19Z] stopped after stage run (--stop-after)
