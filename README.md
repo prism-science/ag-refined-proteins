@@ -57,7 +57,8 @@ its own numbers: 7KR0's geometry is above the campaign's own caps, 3QUE's deposi
 Six-copy ensemble models of the 7KR0 data, from the campaign's replication of Passmore et al. 2026 (connectivity optimization
 with Untangler). They are a second representation of the same data, not a released model, and not comparable column for column
 with the table above (campaign PROTOCOL §18.1). All numbers are full R-free on the same frozen flags (8 712 free reflections, identical
-to the deposited sets of 7KR0 and 44PS).
+to the deposited sets of 7KR0 and 44PS), except the rows marked clean, which are scored over the runs' select + report thirds (5 808
+free reflections) with the sleep third withheld (D605).
 
 | Model | Full / report R-free | R-work | Water atoms | Clashscore | Rotamer outliers |
 |---|---|---|---|---|---|
