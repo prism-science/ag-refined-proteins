@@ -1,1 +1,0 @@
-E035c second run: stage-3 cycle (hygiene -> main-chain pass -> harness pick -> untangling loop) from the E035f T loop-2 models; STAGE3_PICK=own; N=3; per-run copy /home/dev/runs/7KR0/experiments/e035c2_stage3/scripts/run_20260929T145733Z

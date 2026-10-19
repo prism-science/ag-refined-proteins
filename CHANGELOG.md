@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-19 — branch manzuoni/refinement: the hierarchical line starts here
+
+One target, 7KR0, from the hierarchical refinement harness (`prism-science/autoresearch`, branch
+`manzuoni/hierarchical_refinement`): the six-copy ensemble in force at step S0053 (R-free 0.0726 on the deposited flags;
+the deposited model 0.1175 on the same flags), with its map coefficients from the work reflections, the working data and
+flags, the deposited model, the full step record (54 steps, 15 accepted) and the validation logs. The earlier campaign's
+five targets, the ensemble representations, the campaign documents and the pod scripts are removed from this branch;
+they stay on `main` and the `release-*` branches. New `scripts/build_index.py` writes `index.json` and the manifest from
+the new layout. README, METHOD and HOW_TO_USE rewritten for the new line.
+
 ## 2026-10-10 (b) — D582 caveat: free reflections in the decision maps
 
 No file changes beyond text. Every ensemble R-free in `representations/7KR0/` (E035, E041, E048, E049) and the campaign's

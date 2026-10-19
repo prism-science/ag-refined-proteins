@@ -1,95 +1,20 @@
 {
- "exported_at": "2026-10-05T08:15:10Z",
- "pod_hostname": "actl-ws-xraymemory-autoresearch-devspace-8597768cc8-sqmlj",
+ "line": "hierarchical refinement (C-copy ensembles)",
+ "harness": {
+  "repository": "prism-science/autoresearch",
+  "branch": "manzuoni/hierarchical_refinement",
+  "commit_of_the_model": "bd972d3",
+  "commit_at_release": "790894b"
+ },
+ "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directory /home/dev/runs/hr/Tff1b3f",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "ledger_sqlite_sha256": "4f43c4000cf35c8d48ea7c9af6d029dd6868dbf1e3597695d70fc1da2dc501ef",
- "ledger_counts": {
-  "cycles": 322,
-  "changes": 7033,
-  "jobs": 44418,
-  "deviations": 247,
-  "noise_floor": 23,
-  "checks": 213,
-  "bisections": 34,
-  "defects": 1100
- },
- "state_current": {
-  "3QUE": {
-   "target": "3QUE",
-   "model": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.cif",
-   "maps_mtz": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.mtz",
-   "cycle_index": 922,
-   "stage": "rerefine",
-   "r_free_select": 0.24204807816133822,
-   "r_free_report": 0.26333571119801324,
-   "r_free_full": 0.25245568683792774,
-   "r_work": 0.21036592843005836,
-   "updated_at": "2026-10-03T09:13:23+00:00"
-  },
-  "3TC7": {
-   "target": "3TC7",
-   "model": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.cif",
-   "maps_mtz": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.mtz",
-   "cycle_index": 913,
-   "stage": "rerefine",
-   "r_free_select": 0.1754544204245543,
-   "r_free_report": 0.16768523222205486,
-   "r_free_full": 0.17161219977360884,
-   "r_work": 0.13499200013114948,
-   "updated_at": "2026-10-03T05:45:25+00:00"
-  },
+ "exported_at": "2026-10-19T07:00:00Z",
+ "released": {
   "7KR0": {
-   "target": "7KR0",
-   "model": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.cif",
-   "maps_mtz": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.mtz",
-   "cycle_index": 37,
-   "stage": "rerefine",
-   "r_free_select": 0.11033595761519327,
-   "r_free_report": 0.11482593627366146,
-   "r_free_full": 0.1125685619303301,
-   "r_work": 0.10360832962303718,
-   "updated_at": "2026-09-09T19:41:05+00:00"
-  },
-  "7R2H": {
-   "target": "7R2H",
-   "model": "/home/dev/runs/7R2H/c000/baseline_rerefine/refine_001.cif",
-   "maps_mtz": null,
-   "cycle_index": 0,
-   "stage": "baseline_rerefine",
-   "r_free_select": 0.12873237135377238,
-   "r_free_report": 0.12934123632209701,
-   "r_free_full": 0.12903754436990097,
-   "r_work": 0.11456221749224399,
-   "updated_at": "2026-10-05T07:38:38+00:00"
-  },
-  "8C5N": {
-   "target": "8C5N",
-   "model": "/home/dev/runs/8C5N/c000/baseline_rerefine/refine_001.cif",
-   "maps_mtz": null,
-   "cycle_index": 0,
-   "stage": "baseline_rerefine",
-   "r_free_select": 0.1490656819849942,
-   "r_free_report": 0.15777807434113233,
-   "r_free_full": 0.15349500137457536,
-   "r_work": 0.14705566973306927,
-   "updated_at": "2026-10-05T05:48:44+00:00"
+   "run_handle": "Tff1b3f",
+   "step": "S0053",
+   "utc": "2026-10-18T23:06:47Z",
+   "vault_last_read": "S0011 (R-vault 0.07692, R-free 0.08086)"
   }
- },
- "verify_dirs": [
-  "/home/dev/runs/verify_20260907",
-  "/home/dev/runs/verify_20260909",
-  "/home/dev/runs/verify_20260910",
-  "/home/dev/runs/verify_20260917",
-  "/home/dev/runs/verify_20261003"
- ],
- "targets": [
-  "3QUE",
-  "3TC7",
-  "7KR0",
-  "7R2H",
-  "8C5N"
- ],
- "molprobity_invocation": "phenix.molprobity <model> output.prefix=mp (defaults)",
- "model_vs_data_invocation": "phenix.model_vs_data <model> <merged data+flags mtz>",
- "indep_rfree_source": "/home/dev/runs/verify_20260917/indep_rfree.py (== scripts/verify/indep_rfree.py)"
+ }
 }

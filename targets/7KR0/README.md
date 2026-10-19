@@ -1,169 +1,101 @@
 # 7KR0 — Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K)
 
-**Status: improved.** This model has a lower R-free than the deposited file on the same free set.
+**Status: improved.** The released model is a six-copy ensemble with an R-free of 0.0726 on the deposited free set.
+The deposited model scores 0.1175 on the same reflections.
 
 | | |
 |---|---|
 | Resolution | 0.77 Å |
 | Space group | C 1 2 1 |
-| Data | amplitudes (FP,SIGFP), 178324 reflections |
-| Free set | 8712 reflections (4.9 %), inherited unchanged from the deposition; select / report halves 4356 / 4356 |
+| Data | amplitudes (FP,SIGFP); 174 924 reflections in the working files, 166 212 work and 8 712 free |
+| Free set | the deposition's own flags, inherited unchanged (4.98 %); select / report halves 4 356 / 4 356 |
+| Vault | 3 400 work reflections (2 %) removed from every working file at preprocessing; read one time, at S0011 |
 | Deposited refinement program | PHENIX |
-| Released | 2020-12-09 |
-| Primary citation | Fragment binding to the Nsp3 macrodomain of SARS-CoV-2 identified through crystallographic screening and computational docking. (Sci Adv 2021), DOI 10.1126/sciadv.abf8711 |
-| Thresholds version that judged the writing cycle | thresholds_v5 |
+| Released by the PDB | 2020-12-09 |
+| Primary citation | Fragment binding to the Nsp3 macrodomain of SARS-CoV-2 identified through crystallographic screening and computational docking (Sci Adv 2021), DOI 10.1126/sciadv.abf8711 |
+| Harness | prism-science/autoresearch, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; this card: 790894b) |
+| Run | handle Tff1b3f, step S0053, 2026-10-18 23:07 UTC |
 | Phenix | 2.1-6048 |
 
-## R-free on the frozen flags
+## The two models on the same flags
 
-Both models scored at release time with the independent scorer (`scripts/indep_rfree.py`, cctbx fmodel on all reflections, no outlier rejection) and with `phenix.model_vs_data`. "Re-refined, no changes" is the mean of the campaign's ten noise-floor seeds: phenix.refine on the deposited file with nothing changed, under the campaign's protocol.
+Both models are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
+rejection. phenix.refine's own log value sits 0.0003 to 0.0007 below the gate's on these models.
 
-| Model | R-work | R-free full | select | report | model_vs_data R-work / R-free |
-|---|---|---|---|---|---|
-| Deposited, our flags | 0.1103 | 0.1174 | 0.1159 | 0.1189 | 0.1102 / 0.1175 |
-| Re-refined, no changes (10 seeds) | — | 0.1163 ± 0.00024 | — | — | — |
-| **This release** | **0.1036** | **0.1125** | 0.1104 | 0.1147 | 0.1036 / 0.1125 |
-
-Δ full R-free vs deposited: **-0.0048**; beyond re-refinement alone: **-0.0038** (-15.9 × the floor's own spread).
-Credit bar used by the campaign on this target (`ledger/noise_floor.csv`, protocol `noise_floor`): σ_select 0.00040, σ_report 0.00009, σ_full 0.00024; a cycle is credited at ΔR-free-select ≤ -0.00081 (k = 2.0).
-Campaign ledger for this model (`refinement/current.json`): R-work 0.1036, R-free full 0.1126, select 0.1103, report 0.1148.
-
-## Geometry and composition (phenix.molprobity, release time, default settings)
-
-| | Deposited | This release |
+| | Deposited, our flags (S0000) | This release (S0053) |
 |---|---|---|
-| Atoms (hydrogens) | 4300 (1990) | 4298 (1990) |
-| Waters | 312 | 310 |
-| Altloc letters | A, B, C, D | A, B, C, D |
-| Clashscore | 4.73 | 6.72 |
-| Ramachandran outliers / favored (%) | 0.00 / 99.4 | 0.00 / 98.8 |
-| Rotamer outliers (%) | 0.89 | 1.33 |
-| Cβ deviations | 0 | 0 |
-| RMS bonds (Å) / angles (°) | 0.0301 / 1.50 | 0.0126 / 1.61 |
-| MolProbity score | 1.24 | 1.47 |
+| R-free | 0.1175 | **0.0726** |
+| R-work | 0.1104 | 0.0467 |
+| Gap R-free − R-work | 0.0071 | 0.0259 |
+| R-free on the select / report halves | 0.1159 / 0.1189 | 0.0712 / 0.0740 |
+| Clashscore (phenix.clashscore, hydrogens kept) | 4.3 | 7.7 |
+| Rotamer outliers | 0.89 % | 1.54 % |
+| Ramachandran outliers / favoured | 0.0 % / 99.4 % | 0.0 % / 97.0 % |
+| Bond RMSD / angle RMSD | 0.021 Å / 0.99° | 0.007 Å / 0.99° |
+| MolProbity score | 1.21 | 1.74 |
+| Copies | 1 (altlocs A to D on some residues) | 6, altlocs A to F |
+| Atoms (of which H) | 4 300 (1 990) | 17 372 (7 722) |
+| Waters, occupancy sum | 316, 309 | 1 958, 687 |
+| ANISOU records | 2 310 | 9 173 |
 
-## What changed in the coordinates
+The entry's own header reports R-free 0.1172 and R-work 0.1099 on its own flags.
 
-From `validation/release/model_diff.json` (deposited vs released, by chain and residue number):
+## What the model is
 
-- Waters removed (2): A 246, A 381
+Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working data
+with riding hydrogens, anisotropic ADPs on every protein atom and on most waters, restraint weights wc 0.3 / wu 0.25,
+and individual water occupancies. Every water is one atom: a lettered water belongs to one copy (its occupancy is
+refined; the mean is 0.30), a water with a blank altloc is shared by all six (mean 0.93). Ligands and ions are single.
+The ensemble is the deliverable; it is not merged back into one model.
 
-## What the campaign did
-
-Refinement protocol of the released model: phenix.refine 2.1-6048, 15 macro-cycles, anisotropic ADPs, 1990 riding hydrogens, seed 1. ADP decision: n_refl/n_atoms(non-H)=77.26 >= 5.0 and d_min=0.77 <= 1.5. The verbatim command is `refinement/command.txt`.
-
-The released model was written by cycle 37 (`rerefine`, run `7KR0.E030c`), verdict **accepted**, attributable ΔR-free-select -0.00101 against its paired null, ΔR-gap -0.00039; geometry flag: clashscore 10.7098 > 5.
-
-Cycles on record for this target: 32; credited: 6; changes proposed: 1009 (`ledger/cycles.csv`, `ledger/changes.csv`).
-
-Credited cycles on record, all runs and experiment lines. A credit is relative to that cycle's own paired null; not every credit moved the standing model (promotion rules D484/D499/D508), and experiment-line cycles judged candidates against their own base.
-
-| Cycle | Run | Attributable ΔR-free-select | R-free full after | ΔR-gap vs null | Geometry flag |
-|---|---|---|---|---|---|
-| 17 | `7KR0.exp_sw_distill` | -0.00672 | 0.2261 | — |  |
-| 19 | `7KR0.exp_sw_distill` | -0.01784 | 0.1239 | — |  |
-| 21 | `7KR0.exp_sw_distill` | -0.01490 | 0.1262 | — |  |
-| 33 | `7KR0.E030` | -0.00085 | 0.1130 | -0.00024 | rota_outliers 1.78 > 1.5; clashscore 9.7136 > 5 |
-| 35 | `7KR0.E030b` | -0.00082 | 0.1128 | -0.00025 | clashscore 10.2117 > 5 |
-| 37 | `7KR0.E030c` | -0.00101 | 0.1126 | -0.00039 | clashscore 10.7098 > 5 |
+The model came from the deposited file in 54 recorded steps (S0000 to S0053), 15 of them accepted. The gate judged every change against
+a control, the parent refined with the same command and seeds, and accepted a change only when R-free fell by at least
+2σ of the run's noise floor (σ = 0.00016 from three seeds of the first refinement) with the gap and the geometry inside
+their caps. The accepted levers, in order: anisotropic water ADPs; the six-copy split (a representation change, scored
+and recorded but not judged); water picks at 4, 3, 3, 2.5, 2.5, 2.5 and 2.5σ on work-only difference maps; anisotropic
+water ADPs again; restraint weights 0.3 / 0.25; 20-cycle convergence steps; altloc occupancies; and, last, waters in
+own-copy clashes moved to a copy they clear. `refinement/steps.md` lists every step with its verdict and
+`refinement/score_history.txt` is the hash-chained record the gate wrote.
 
 ## Caveats
 
-- MolProbity rotamer outliers and the altloc-aware clashscore of this model exceed the campaign's own frozen caps (1.5 % and 5.0); the deposited multiconformer model already exceeds the clashscore cap by construction (D451, D474). Depositable by ordinary standards, not by the campaign's own bar.
-- The changes carried by this model are two waters removed plus three 15-macro-cycle refinement passes credited at 2.1σ, 2.0σ and 2.5σ (D489, D493, D494): continued refinement, not remodelling. The deposited model was already near-optimal as a single-conformer representation.
-- Three credited cycles on record (run `7KR0.exp_sw_distill`) belong to the ensemble-distillation line, which judged its candidates against its own base and was closed as a negative result (D463, D466); they are not in this model's lineage.
-- Ensemble representations of the same data score far lower (44PS, the six-conformation model of Passmore et al. 2026 on this dataset, 0.0657 on these flags; the campaign's own six-copy models 0.088–0.092). They are a second representation, not a deliverable (PROTOCOL §18.1); the campaign's are released separately in `representations/7KR0/`.
-
-## Verify it yourself
-
-```bash
-# independent scorer (cctbx; needs Phenix)
-phenix.python scripts/indep_rfree.py targets/7KR0/model/7KR0_refined.cif targets/7KR0/data/7KR0_data.mtz \
-  targets/7KR0/data/7KR0_flags.mtz targets/7KR0/data/7KR0_split.mtz out.json
-# standard tool
-phenix.python scripts/merge_mtz.py targets/7KR0/data/7KR0_data.mtz targets/7KR0/data/7KR0_flags.mtz 7KR0_merged.mtz
-phenix.model_vs_data targets/7KR0/model/7KR0_refined.cif 7KR0_merged.mtz
-# look at it
-coot targets/7KR0/model/7KR0_refined.pdb --auto targets/7KR0/maps/7KR0_refined_map_coeffs.mtz
-```
-
-## Provenance
-
-- Campaign record `refinement/current.json`: cycle 37, stage `rerefine`, updated 2026-09-09T19:41:05+00:00.
-- Model on the campaign pod: `/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.cif`.
-- Data: `data.mtz` SHA-256 `ae703738dc52b3e3597d4ca641d98bfb88f1793dee88ca8a24176d3d3fd378fe`, `flags.mtz` SHA-256 `31939295cafaf855a01545c567b5b6763ef8365a63246ae5a29639e7561b202f`; built from the deposited structure-factor file with SHA-256 `e243c56935c5c86a1bd79b7f3630ac16276eef3194d59c3c274f01b8afc06a54` (`data/prep.json`).
-- Deposited header claim: R-work 0.110, R-free 0.117, 8711 free reflections.
+- **The vault was read once, at S0011** (R-vault 0.0769 against R-free 0.0809, no leak signature). The 42 steps after it
+  used no held-out reflections of any kind in a decision, and every map that placed a water excluded the free set, but
+  the gains since S0011 have not yet been checked against the vault. That read is the operator's.
+- **The gap is 0.0259**, against 0.0071 for the deposited model: the six copies and the free water occupancies fit the
+  work set better than the free set. The run's cap is 0.030. A reference six-copy ensemble of this entry built earlier
+  with maps that may have included the free reflections scores 0.0676 / 0.0507 on these flags; its advantage over this
+  model is entirely in its solvent, and that comparison is in the harness plan, not in this release.
+- **Clashscore 7.7** against 4.3 deposited; 40 waters sit in own-copy clashes that no other copy can take. Rotamer
+  outliers 1.54 % are just above the gate's 1.5 % cap and passed because the control had the same.
+- Three mmtbx sub-reports (C-beta deviations, omega, Rama-Z) fail on a six-copy model; the geometry numbers above come
+  from phenix.clashscore, rotalyze and ramalyze.
 
 ## Files
 
-| File | Size | What it is |
-|---|---|---|
-| `data/7KR0_data.mtz` | 3,568,960 | The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors. |
-| `data/7KR0_flags.mtz` | 2,855,584 | The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free). |
-| `data/7KR0_split.mtz` | 2,855,584 | The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work). |
-| `data/prep.json` | 3,519 | How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims. |
-| `data/split.json` | 253,981 | The same split as a list of reflections, with the seed that made it. |
-| `deposited/7KR0.cif` | 668,616 | The deposited coordinate file as fetched from RCSB (the starting point). |
-| `deposited/7KR0.fasta` | 273 | The entry's sequence as fetched from RCSB. |
-| `deposited/FETCHED` | 154 | When the raw files were fetched. |
-| `deposited/fetch_manifest.sha256` | 756 | SHA-256 of the raw files at fetch time. |
-| `deposited/rcsb_entry.json` | 19,808 | The RCSB entry record (title, citation, experimental details) as fetched. |
-| `ledger/bisections.csv` | 7,105 | Bisection steps when a cycle regressed. |
-| `ledger/changes.csv` | 2,309,293 | Every proposed change: type, selection, local density and geometry gates, ΔR-free-select, verdict. |
-| `ledger/checks.csv` | 3,596 | Gate results G0–G8. |
-| `ledger/cycles.csv` | 17,604 | Every paired cycle on this target: R-free on every set, verdict, attributable Δ, R-gap, geometry. |
-| `ledger/defects.csv` | 58,848 | Values that could not be computed, with the reason (never a sentinel). |
-| `ledger/deviations.csv` | 98,157 | Decision-log rows that name this target. |
-| `ledger/noise_floor.csv` | 1,350 | The noise-floor row that set the credit bar: σ of R-free on every set. |
-| `ledger/rfree_consultations.csv` | 227 | How many times R-free-select was consulted (PROTOCOL §3.6). |
-| `ledger/runs/7KR0.20260908v5/DECISIONS.md` | 696 | The per-run human-readable decision log written by the driver. |
-| `ledger/runs/7KR0.20260908v5b/DECISIONS.md` | 13,123 | The per-run human-readable decision log written by the driver. |
-| `ledger/runs/7KR0.20260908v5b/run_summary.json` | 2,154 | The per-run summary (cycles, credits, stop reason). |
-| `ledger/runs/7KR0.20260910v6/DECISIONS.md` | 707 | The per-run human-readable decision log written by the driver. |
-| `ledger/runs/7KR0.20260910v7/DECISIONS.md` | 12,701 | The per-run human-readable decision log written by the driver. |
-| `ledger/runs/7KR0.20260910v7/run_summary.json` | 2,412 | The per-run summary (cycles, credits, stop reason). |
-| `ledger/runs/7KR0.run1/DECISIONS.md` | 1,839 | The per-run human-readable decision log written by the driver. |
-| `ledger/runs/7KR0.run2/DECISIONS.md` | 51,346 | The per-run human-readable decision log written by the driver. |
-| `ledger/runs/7KR0.run2/run_summary.json` | 1,892 | The per-run summary (cycles, credits, stop reason). |
-| `ledger/solvent_disagreements.csv` | 120 | Phenix/Coot disagreements on solvent sites. |
-| `maps/7KR0_refined_map_coeffs.mtz` | 11,450,112 | Map coefficients from that run (2mFo−DFc and mFo−DFc; open with the model in Coot). |
-| `model/7KR0_refined.cif` | 551,296 | The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json. |
-| `model/7KR0_refined.pdb` | 529,555 | The same model in PDB format, from the same run. |
-| `refinement/command.txt` | 1,527 | The verbatim phenix.refine argv that wrote the model. |
-| `refinement/current.json` | 460 | The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index. |
-| `refinement/experiment_header.json` | 458 | Record of the experiment cycle that produced this model (paired null control, geometry of both arms). |
-| `refinement/experiment_paired_cycle.json` | 6,176 | Record of the experiment cycle that produced this model (paired null control, geometry of both arms). |
-| `refinement/experiment_result.json` | 2,100 | Record of the experiment cycle that produced this model (paired null control, geometry of both arms). |
-| `refinement/model_vs_data.campaign.log` | 2,261 | phenix.model_vs_data as run by the campaign on this model. |
-| `refinement/refine_001.eff` | 42,787 | The effective parameters of that run. |
-| `refinement/refine_001.log` | 144,413 | The phenix.refine log of that run. |
-| `refinement/refine_decisions.json` | 2,089 | The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels). |
-| `refinement/refine_result.json` | 4,215 | The parsed result of that run (R factors, geometry, seed, wall clock). |
-| `validation/campaign/checks/G3_7KR0-6conf_flags.json` | 3,745 | Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check. |
-| `validation/campaign/checks/G3_7KR0.json` | 4,575 | Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check. |
-| `validation/campaign/checks/fetch_7KR0.json` | 2,207 | Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check. |
-| `validation/campaign/dossier.json` | 164,515 | The campaign dossier: xtriage, model audit, composition hypothesis, baselines. |
-| `validation/campaign/noise_floor.json` | 7,454 | A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model). |
-| `validation/campaign/verify_20260907/7KR0_deposited.indep.json` | 551 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260907/7KR0_operator6conf.indep.json` | 654 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260907/7KR0_ours.indep.json` | 597 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260907/7KR0_pdbredo.indep.json` | 562 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260909/7KR0_e030_candidate.indep.json` | 606 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260909/7KR0_e030_null.indep.json` | 600 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260909/7KR0_e030b_candidate.indep.json` | 608 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260909/7KR0_e030b_null.indep.json` | 603 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260909/7KR0_e030c_candidate.indep.json` | 607 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/campaign/verify_20260909/7KR0_e030c_null.indep.json` | 601 | The campaign's independent verification runs (same scorer, earlier dates). |
-| `validation/release/merge_mtz.log` | 396 | Log of the data+flags merge used by model_vs_data. |
-| `validation/release/model_diff.json` | 483 | Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens. |
-| `validation/release/model_vs_data.deposited.log` | 2,451 | phenix.model_vs_data on the merged data+flags MTZ. |
-| `validation/release/model_vs_data.refined.log` | 2,453 | phenix.model_vs_data on the merged data+flags MTZ. |
-| `validation/release/molprobity.deposited.log` | 19,545 | phenix.molprobity with default settings. |
-| `validation/release/molprobity.deposited.out` | 5,528 | phenix.molprobity with default settings. |
-| `validation/release/molprobity.refined.log` | 20,375 | phenix.molprobity with default settings. |
-| `validation/release/molprobity.refined.out` | 6,040 | phenix.molprobity with default settings. |
-| `validation/release/rfree_indep.deposited.json` | 657 | Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts. |
-| `validation/release/rfree_indep.deposited.log` | 1,106 | Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts. |
-| `validation/release/rfree_indep.refined.json` | 661 | Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts. |
-| `validation/release/rfree_indep.refined.log` | 1,112 | Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts. |
-| `validation/release/summary.json` | 2,590 | Release-time validation of the deposited and refined models (parsed from the logs beside it). |
+| Path | Content |
+|---|---|
+| `model/7KR0_S0053.pdb` | the released model, PDB, occupancies at four decimals, as the gate wrote it |
+| `model/7KR0_S0053.cif` | the same model as mmCIF (gemmi conversion) |
+| `maps/7KR0_S0053_map_coeffs.mtz` | phenix.maps coefficients from the work reflections only: `2FOFCWT/PH2FOFCWT` and `FOFCWT/PHFOFCWT` |
+| `data/7KR0_data.mtz`, `7KR0_flags.mtz`, `7KR0_split.mtz` | the working data, the inherited flags, the select/report split; the 2 % vault is absent from all three |
+| `data/prep.json`, `split.json` | how the files were built, with checksums and counts |
+| `deposited/7KR0.cif`, `rcsb_entry.json` | the deposited model and the RCSB entry record, as fetched |
+| `refinement/score_history.txt`, `score_history.jsonl`, `scorecard.csv` | every step: the facts line, the full metrics, the scorecard row |
+| `refinement/steps.md` | the step table |
+| `refinement/S0053/` | the released step: facts line, change record, score record |
+| `refinement/metaparams.yaml`, `run.json` | the metaparameters of the run and its state (noise floor, standing weights) |
+| `refinement/chains/` | the chain scripts that scheduled the steps on the pod, as run |
+| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model |
+
+## Reproduce
+
+In the harness checkout on the pod (`docs/POD.md` there):
+
+```
+bash tools/preprocessing.sh 7KR0 --runs /home/dev/runs/hr --seeds 3 --nproc 3
+bash scripts/chain_target.sh /home/dev/runs/hr/Tff1b3f 6
+```
+
+The second command runs the lever order that produced this model without an agent; the chain scripts under
+`refinement/chains/` are the hand-scheduled originals. Seeds are fixed; the same inputs give the same trajectory.
