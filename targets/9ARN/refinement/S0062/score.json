@@ -1,0 +1,932 @@
+{
+ "after": {
+  "altlocs": "AB",
+  "angle_rmsd": 0.521,
+  "bond_rmsd": 0.004,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0436,
+  "clashscore": 1.59,
+  "clashscore_mmtbx": 1.5936,
+  "copies": 1,
+  "dihedral_rmsd": 13.5081,
+  "gap": 0.03800605296039719,
+  "geometry": {
+   "angle": {
+    "max": 3.4051,
+    "mean": 0.5221,
+    "min": 0.0001,
+    "n": 832,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 1.11,
+    "mean": 0.2887,
+    "min": 0.0001,
+    "n": 832,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0222,
+    "mean": 0.0037,
+    "min": 0.0,
+    "n": 619,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 0.6582,
+    "mean": 0.1873,
+    "min": 0.0002,
+    "n": 619,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.0,
+    "disfavored": 0.0,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": []
+    },
+    "outliers": 0.0
+   },
+   "chirality": {
+    "max": 0.143,
+    "mean": 0.0436,
+    "min": 0.0006,
+    "n": 95,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 1.5936
+   },
+   "dihedral": {
+    "max": 56.1095,
+    "mean": 13.5081,
+    "min": 0.007,
+    "n": 251,
+    "outliers": []
+   },
+   "molprobity_score": 0.906,
+   "nonbonded": {
+    "max": 4.8994,
+    "mean": 4.1092,
+    "min": 2.6667,
+    "n": 6466
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0234,
+    "mean": 0.004,
+    "min": 0.0,
+    "n": 109,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A  67 ",
+      "max_dev": 0.0024,
+      "mean_dev": 0.0004,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  74 ",
+      "max_dev": 0.002,
+      "mean_dev": 0.0009,
+      "resname": "TYR"
+     },
+     {
+      "id": " TRP A  59 ",
+      "max_dev": 0.0058,
+      "mean_dev": 0.0019,
+      "resname": "TRP"
+     },
+     {
+      "id": " HIS A  52 ",
+      "max_dev": 0.0005,
+      "mean_dev": 0.0003,
+      "resname": "HIS"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 0.0,
+    "favored": 100.0,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 3.0303,
+    "favored": 96.9697,
+    "outliers": 0.0,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 8.2944,
+   "Cl": 1.59,
+   "Mp": 0.91,
+   "Rf": 27.69,
+   "Rw": 23.89,
+   "ang": null,
+   "avangle": 0.0833243,
+   "avbond": 0.0350721,
+   "avchir": 0.0474748,
+   "avnb": 0.135486,
+   "avomega": 0.568479,
+   "avplane": 0.0096099,
+   "avrama": 0.0140453,
+   "avrot": 0.475364,
+   "avtor": 0.610525,
+   "bond": null,
+   "chir": null,
+   "energy": 31.1535,
+   "nb_e": 0.277589,
+   "om": 7.36,
+   "ra": 0.13622,
+   "ro": 4.14191,
+   "score": 196.148,
+   "vdw": 0.0,
+   "wang": 1.23,
+   "wbond": 0.433,
+   "wchir": 0.511,
+   "wdihe": 8.71,
+   "wplane": 0.4225
+  },
+  "holton_score": 196.148,
+  "holton_we": 31.1535,
+  "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/cand_s1.pdb",
+  "n_anisou": 649,
+  "n_atoms": 654,
+  "n_free": 772,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 5,
+  "n_reflections": 15310,
+  "n_residues_nonwater": 73,
+  "n_water_atoms": 38,
+  "n_water_iso": 0,
+  "n_work": 14538,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.004,
+  "r_free": 0.27694662806562076,
+  "r_free_report": 0.28560168638691213,
+  "r_free_select": 0.2679894086772908,
+  "r_work": 0.23894057510522357,
+  "rama_favored_pct": 100.0,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 68,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 0,
+  "rota_pct": 0.0,
+  "rota_pct_mmtbx": 0.0,
+  "scored_utc": "2026-10-20T02:10:28Z",
+  "sha256": "f19e8b52d02a869da2fc1ea815d3269bbed2495585db7cba04c59c446a3bb481",
+  "water_occ_sum": 35.56
+ },
+ "before": {
+  "altlocs": "AB",
+  "angle_rmsd": 0.536,
+  "bond_rmsd": 0.004,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0438,
+  "clashscore": 2.39,
+  "clashscore_mmtbx": 2.3904,
+  "copies": 1,
+  "dihedral_rmsd": 13.6397,
+  "gap": 0.05271182811318559,
+  "geometry": {
+   "angle": {
+    "max": 4.5122,
+    "mean": 0.5366,
+    "min": 0.0003,
+    "n": 832,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 1.2892,
+    "mean": 0.2959,
+    "min": 0.0001,
+    "n": 832,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0264,
+    "mean": 0.0038,
+    "min": 0.0,
+    "n": 619,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 0.8064,
+    "mean": 0.1928,
+    "min": 0.0005,
+    "n": 619,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.0,
+    "disfavored": 0.0,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": []
+    },
+    "outliers": 0.0
+   },
+   "chirality": {
+    "max": 0.1441,
+    "mean": 0.0438,
+    "min": 0.0004,
+    "n": 95,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 2.3904
+   },
+   "dihedral": {
+    "max": 59.6177,
+    "mean": 13.6397,
+    "min": 0.0303,
+    "n": 251,
+    "outliers": []
+   },
+   "molprobity_score": 1.0201,
+   "nonbonded": {
+    "max": 4.8999,
+    "mean": 4.11,
+    "min": 2.6717,
+    "n": 6469
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0214,
+    "mean": 0.0043,
+    "min": 0.0,
+    "n": 109,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A  67 ",
+      "max_dev": 0.0032,
+      "mean_dev": 0.0006,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  74 ",
+      "max_dev": 0.0017,
+      "mean_dev": 0.0008,
+      "resname": "TYR"
+     },
+     {
+      "id": " TRP A  59 ",
+      "max_dev": 0.0045,
+      "mean_dev": 0.0013,
+      "resname": "TRP"
+     },
+     {
+      "id": " HIS A  52 ",
+      "max_dev": 0.0004,
+      "mean_dev": 0.0002,
+      "resname": "HIS"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 0.0,
+    "favored": 100.0,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 3.0303,
+    "favored": 96.9697,
+    "outliers": 0.0,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 8.8804,
+   "Cl": 2.39,
+   "Mp": 1.02,
+   "Rf": 28.73,
+   "Rw": 23.46,
+   "ang": null,
+   "avangle": 0.0875752,
+   "avbond": 0.0371632,
+   "avchir": 0.0480564,
+   "avnb": 0.18746,
+   "avomega": 0.589402,
+   "avplane": 0.00983085,
+   "avrama": 0.0135576,
+   "avrot": 0.498156,
+   "avtor": 0.62741,
+   "bond": null,
+   "chir": null,
+   "energy": 31.3907,
+   "nb_e": 0.899369,
+   "om": 8.49,
+   "ra": 0.120628,
+   "ro": 3.93972,
+   "score": 210.014,
+   "vdw": 0.0,
+   "wang": 1.66,
+   "wbond": 0.65,
+   "wchir": 0.519,
+   "wdihe": 8.0,
+   "wplane": 0.3025
+  },
+  "holton_score": 210.014,
+  "holton_we": 31.3907,
+  "model": "/home/dev/runs/hr/Tba97f6/trajectory/S0060/model.pdb",
+  "n_anisou": 649,
+  "n_atoms": 654,
+  "n_free": 772,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 5,
+  "n_reflections": 15310,
+  "n_residues_nonwater": 73,
+  "n_water_atoms": 38,
+  "n_water_iso": 0,
+  "n_work": 14538,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.0043,
+  "r_free": 0.28733024258493534,
+  "r_free_report": 0.2958247114497027,
+  "r_free_select": 0.27853921907191076,
+  "r_work": 0.23461841447174975,
+  "rama_favored_pct": 100.0,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 68,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 0,
+  "rota_pct": 0.0,
+  "rota_pct_mmtbx": 0.0,
+  "scored_utc": "2026-10-20T01:57:03Z",
+  "sha256": "b46bbad7fcbdcb45a78354920be6cc57cc23f30a311e7a8b29f72f04aa0d8344",
+  "water_occ_sum": 36.42
+ },
+ "cand": [
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 0.521,
+   "bond_rmsd": 0.004,
+   "clashscore": 1.59,
+   "copies": 1,
+   "gap": 0.03800605296039719,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/cand_s1.pdb",
+   "n_anisou": 649,
+   "n_atoms": 654,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 38,
+   "n_water_iso": 0,
+   "n_work": 14538,
+   "r_free": 0.27694662806562076,
+   "r_free_report": 0.28560168638691213,
+   "r_free_select": 0.2679894086772908,
+   "r_work": 0.23894057510522357,
+   "rama_favored_pct": 100.0,
+   "rama_n_outliers": 0,
+   "rama_n_residues": 68,
+   "rama_outliers_pct": 0.0,
+   "rota_n_outliers": 0,
+   "rota_n_residues": null,
+   "rota_pct": 0.0,
+   "scored_utc": "2026-10-20T02:10:28Z",
+   "seed": 1,
+   "sha256": "f19e8b52d02a869da2fc1ea815d3269bbed2495585db7cba04c59c446a3bb481",
+   "water_occ_sum": 35.56
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 0.514,
+   "bond_rmsd": 0.004,
+   "copies": 1,
+   "gap": 0.03851259403457863,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/cand_s2.pdb",
+   "n_anisou": 649,
+   "n_atoms": 654,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 38,
+   "n_water_iso": 0,
+   "n_work": 14538,
+   "r_free": 0.2781065559294765,
+   "r_free_report": 0.287398478050956,
+   "r_free_select": 0.2684902388705097,
+   "r_work": 0.23959396189489784,
+   "scored_utc": "2026-10-20T02:10:29Z",
+   "seed": 2,
+   "sha256": "cb8839804bbc456e001bef4a83a50470a43a5ae2ad411df02d753d31d2d39d74",
+   "water_occ_sum": 35.53
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 0.524,
+   "bond_rmsd": 0.004,
+   "copies": 1,
+   "gap": 0.03620305626528636,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/cand_s3.pdb",
+   "n_anisou": 649,
+   "n_atoms": 654,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 38,
+   "n_water_iso": 0,
+   "n_work": 14538,
+   "r_free": 0.27607208708836184,
+   "r_free_report": 0.28325606857768776,
+   "r_free_select": 0.2686373020305526,
+   "r_work": 0.23986903082307548,
+   "scored_utc": "2026-10-20T02:10:29Z",
+   "seed": 3,
+   "sha256": "11a88bb42437346931517858f786afedf8f1cc69897b4fd2ae8c7315cb736605",
+   "water_occ_sum": 35.68
+  }
+ ],
+ "ctrl": [
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 0.518,
+   "bond_rmsd": 0.004,
+   "copies": 1,
+   "gap": 0.05178625670178383,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/ctrl_s1.pdb",
+   "n_anisou": 649,
+   "n_atoms": 654,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 38,
+   "n_water_iso": 0,
+   "n_work": 14538,
+   "r_free": 0.2871911109044279,
+   "r_free_report": 0.29608358269864044,
+   "r_free_select": 0.27798818958275845,
+   "r_work": 0.23540485420264406,
+   "scored_utc": "2026-10-20T02:02:53Z",
+   "seed": 1,
+   "sha256": "eef1fc2d3d3cc5fc0156973ae826a63c4462a7262e7902825fcb69bd787475c1",
+   "water_occ_sum": 36.0
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 0.52,
+   "bond_rmsd": 0.004,
+   "copies": 1,
+   "gap": 0.05141863795001311,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/ctrl_s2.pdb",
+   "n_anisou": 649,
+   "n_atoms": 654,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 38,
+   "n_water_iso": 0,
+   "n_work": 14538,
+   "r_free": 0.28650804172270034,
+   "r_free_report": 0.2961798800157634,
+   "r_free_select": 0.27649854504879484,
+   "r_work": 0.23508940377268722,
+   "scored_utc": "2026-10-20T02:02:54Z",
+   "seed": 2,
+   "sha256": "8993deccad59f35f21484a6a53420ba74ef80a2b9c646df120792ac4480de7f7",
+   "water_occ_sum": 36.0
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 0.537,
+   "bond_rmsd": 0.004,
+   "cbeta_outliers": 0.0,
+   "chirality_rmsd": 0.0441,
+   "clashscore": 2.39,
+   "clashscore_mmtbx": 2.3904,
+   "copies": 1,
+   "dihedral_rmsd": 13.723,
+   "gap": 0.05307790513464,
+   "geometry": {
+    "angle": {
+     "max": 4.3055,
+     "mean": 0.5372,
+     "min": 0.0002,
+     "n": 832,
+     "outliers": []
+    },
+    "angle_z": {
+     "max": 1.2325,
+     "mean": 0.2966,
+     "min": 0.0001,
+     "n": 832,
+     "outliers": []
+    },
+    "bond": {
+     "max": 0.0268,
+     "mean": 0.004,
+     "min": 0.0,
+     "n": 619,
+     "outliers": []
+    },
+    "bond_z": {
+     "max": 0.7955,
+     "mean": 0.1991,
+     "min": 0.0002,
+     "n": 619,
+     "outliers": []
+    },
+    "c_beta": {
+     "cbetadev": "ERROR",
+     "outliers": 0.0
+    },
+    "cablam": {
+     "ca_outliers": 0.0,
+     "disfavored": 0.0,
+     "gui_table": {
+      "column_formats": [
+       "%s",
+       "%s",
+       "%s",
+       "%.5f",
+       "%.5f",
+       "%s",
+       "%.5f",
+       "%.5f",
+       "%.5f"
+      ],
+      "column_labels": [
+       "Chain",
+       "Residue",
+       "Evaluation",
+       "CaBLAM Score",
+       "CA Geometry Score",
+       "Secondary Structure",
+       "Helix Score",
+       "Beta Score",
+       "3-10 Score"
+      ],
+      "column_widths": [
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125
+      ],
+      "data": []
+     },
+     "outliers": 0.0
+    },
+    "chirality": {
+     "max": 0.1396,
+     "mean": 0.0441,
+     "min": 0.0001,
+     "n": 95,
+     "outliers": []
+    },
+    "clash": {
+     "clashes": "ERROR",
+     "score": 2.3904
+    },
+    "dihedral": {
+     "max": 60.435,
+     "mean": 13.723,
+     "min": 0.0058,
+     "n": 251,
+     "outliers": []
+    },
+    "molprobity_score": 1.0201,
+    "nonbonded": {
+     "max": 4.8999,
+     "mean": 4.1082,
+     "min": 2.6655,
+     "n": 6447
+    },
+    "omega": {
+     "cis_general": 0.0,
+     "cis_proline": 0,
+     "n_twisted_general": 0,
+     "omegalyze": "ERROR",
+     "twisted_general": 0.0,
+     "twisted_proline": 0
+    },
+    "parallelity": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 0
+    },
+    "planarity": {
+     "max": 0.0232,
+     "mean": 0.0044,
+     "min": 0.0,
+     "n": 109,
+     "protein_planes_max_dev": [
+      {
+       "id": " ARG A  67 ",
+       "max_dev": 0.004,
+       "mean_dev": 0.0007,
+       "resname": "ARG"
+      },
+      {
+       "id": " TYR A  74 ",
+       "max_dev": 0.0018,
+       "mean_dev": 0.001,
+       "resname": "TYR"
+      },
+      {
+       "id": " TRP A  59 ",
+       "max_dev": 0.0049,
+       "mean_dev": 0.0015,
+       "resname": "TRP"
+      },
+      {
+       "id": " HIS A  52 ",
+       "max_dev": 0.0006,
+       "mean_dev": 0.0004,
+       "resname": "HIS"
+      }
+     ]
+    },
+    "rama_z": "ERROR",
+    "ramachandran": {
+     "allowed": 0.0,
+     "favored": 100.0,
+     "outliers": 0.0,
+     "ramalyze": "ERROR"
+    },
+    "rotamer": {
+     "allowed": 3.0303,
+     "favored": 96.9697,
+     "outliers": 0.0,
+     "rotalyze": "ERROR"
+    }
+   },
+   "holton": {
+    "CB": 9.1204,
+    "Cl": 2.39,
+    "Mp": 1.02,
+    "Rf": 28.69,
+    "Rw": 23.38,
+    "ang": null,
+    "avangle": 0.0879436,
+    "avbond": 0.0396607,
+    "avchir": 0.0486376,
+    "avnb": 0.255346,
+    "avomega": 0.573326,
+    "avplane": 0.0103841,
+    "avrama": 0.0136108,
+    "avrot": 0.514506,
+    "avtor": 0.631929,
+    "bond": null,
+    "chir": null,
+    "energy": 31.2956,
+    "nb_e": 0.970044,
+    "om": 7.87,
+    "ra": 0.119797,
+    "ro": 3.93972,
+    "score": 209.385,
+    "vdw": 0.0,
+    "wang": 1.52,
+    "wbond": 0.633,
+    "wchir": 0.487,
+    "wdihe": 8.22,
+    "wplane": 0.36
+   },
+   "holton_score": 209.385,
+   "holton_we": 31.2956,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/ctrl_s3.pdb",
+   "n_anisou": 649,
+   "n_atoms": 654,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 38,
+   "n_water_iso": 0,
+   "n_work": 14538,
+   "omega_cis_general": 0.0,
+   "omega_cis_proline": 0,
+   "omega_twisted_general": 0.0,
+   "planarity_rmsd": 0.0044,
+   "r_free": 0.28686655377095455,
+   "r_free_report": 0.29506250451872273,
+   "r_free_select": 0.278384470090117,
+   "r_work": 0.23378864863631454,
+   "rama_favored_pct": 100.0,
+   "rama_n_outliers": 0,
+   "rama_n_residues": 68,
+   "rama_outliers_pct": 0.0,
+   "rota_n_outliers": 0,
+   "rota_n_residues": null,
+   "rota_pct": 0.0,
+   "rota_pct_mmtbx": 0.0,
+   "scored_utc": "2026-10-20T02:02:54Z",
+   "seed": 3,
+   "sha256": "b5259b9875940b87ecd4532d3b6b060a03b5d1d564d44cde269f25dff06ce169",
+   "water_occ_sum": 35.95
+  }
+ ],
+ "median_cand": {
+  "altlocs": "AB",
+  "angle_rmsd": 0.521,
+  "bond_rmsd": 0.004,
+  "clashscore": 1.59,
+  "copies": 1,
+  "gap": 0.03800605296039719,
+  "holton_we": null,
+  "model": "/home/dev/runs/hr/Tba97f6/pending/tls_find_b/cand_s1.pdb",
+  "n_anisou": 649,
+  "n_atoms": 654,
+  "n_free": 772,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 5,
+  "n_reflections": 15310,
+  "n_residues_nonwater": 73,
+  "n_water_atoms": 38,
+  "n_water_iso": 0,
+  "n_work": 14538,
+  "r_free": 0.27694662806562076,
+  "r_free_report": 0.28560168638691213,
+  "r_free_select": 0.2679894086772908,
+  "r_work": 0.23894057510522357,
+  "rama_favored_pct": 100.0,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 68,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 0,
+  "rota_n_residues": null,
+  "rota_pct": 0.0,
+  "scored_utc": "2026-10-20T02:10:28Z",
+  "seed": 1,
+  "sha256": "f19e8b52d02a869da2fc1ea815d3269bbed2495585db7cba04c59c446a3bb481",
+  "water_occ_sum": 35.56
+ },
+ "verdict": {
+  "cand": {
+   "angle_rmsd": 0.5196666666666667,
+   "bond_rmsd": 0.004,
+   "clashscore": 1.59,
+   "gap": 0.03757390108675406,
+   "r_free": 0.2770417570278197,
+   "r_work": 0.23946785594106565,
+   "rama_outliers_pct": 0.0,
+   "rota_pct": 0.0
+  },
+  "clash_cap": 15.0,
+  "ctrl": {
+   "angle_rmsd": 0.525,
+   "bond_rmsd": 0.004,
+   "clashscore": 2.39,
+   "gap": 0.05209426659547898,
+   "r_free": 0.2868552354660276,
+   "r_work": 0.23476096887054862,
+   "rama_outliers_pct": 0.0,
+   "rota_pct": 0.0
+  },
+  "d_gap": -0.014520365508724917,
+  "d_r_free": -0.009813478438207901,
+  "gap_max": 0.06744185030792796,
+  "k_sigma": 2.0,
+  "kind": "improving",
+  "n_cand": 3,
+  "n_ctrl": 3,
+  "notes": [],
+  "outlier_counts": {
+   "rama_n_outliers": {
+    "cand": 0.0,
+    "ctrl": 0.0
+   },
+   "rota_n_outliers": {
+    "cand": 0.0,
+    "ctrl": 0.0
+   }
+  },
+  "reasons": [
+   "all criteria met"
+  ],
+  "sigma": 0.0009295867276710657,
+  "verdict": "ACCEPT",
+  "z": -10.556818579794097
+ }
+}

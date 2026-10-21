@@ -1,0 +1,4 @@
+[2026-10-20T01:39:15Z] chain_after start on /home/dev/runs/hr/Tba97f6: rotamer_restraints_n = refine_step.py fix-rotamers
+[2026-10-20T01:39:15Z] rotamer_restraints_n (1) from S0056
+S0058 2026-10-20T01:44:29Z refinement refine_step parent S0056 | rotamer restraints (side-chain torsions restrained to the nearest rotamer, refinement.main.rotamer_restraints) against none | R-free 0.29338 -> 0.29851 (+3.1 sigma) R-work 0.2
+[2026-10-20T01:44:29Z] chain_after end on /home/dev/runs/hr/Tba97f6 (rotamer_restraints_n); best model S0056

@@ -1,0 +1,4 @@
+[2026-10-19T11:27:41Z] chain_weights start on /home/dev/runs/hr/T40560e from S0017, standing weights 0.3 0.25
+[2026-10-19T11:27:41Z] weights_tight (1) wc 1.0 wu 1.0 from S0017
+S0026 2026-10-19T11:30:38Z refinement refine_step parent S0017 | restraint weights wc 1 wu 1 against 0.3 0.25 | R-free 0.30156 -> 0.31875 (+9.4 sigma) R-work 0.23418 -> 0.24458 gap +0.0068 clash 3.9 rota 1.2 % | atoms 844 waters 77 altlocs 
+[2026-10-19T11:30:39Z] chain_weights end on /home/dev/runs/hr/T40560e; best model S0017

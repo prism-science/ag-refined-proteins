@@ -1,35 +1,127 @@
 {
  "name": "ag-refined-proteins",
  "generated_by": "scripts/build_index.py",
- "exported_from_pod_at": "2026-10-05T08:15:10Z",
- "phenix_version": "Version: 2.1 Release tag: 6048",
- "n_targets": 5,
- "summary": {
-  "improved": 3,
-  "credited, not below deposited": 0,
-  "re-refined baseline, nothing credited": 2
- },
- "representations": [
-  "representations/7KR0"
- ],
+ "n_targets": 8,
+ "line": "hierarchical refinement (C-copy ensembles), prism-science/autoresearch branch manzuoni/hierarchical_refinement",
  "targets": [
+  {
+   "id": "1LZ8",
+   "title": "LYSOZYME PHASED ON ANOMALOUS SIGNAL OF SULFURS AND CHLORINES",
+   "resolution_a": 1.53,
+   "initial_release_date": "1999-05-26T00:00:00.000+00:00",
+   "primary_citation": {
+    "title": "Can anomalous signal of sulfur become a tool for solving protein crystal structures?",
+    "journal_abbrev": "J.Mol.Biol.",
+    "year": 1999,
+    "pdbx_database_id_DOI": "10.1006/jmbi.1999.2743",
+    "pdbx_database_id_PubMed": 10339407
+   },
+   "data": {
+    "data_labels": "FP,SIGFP",
+    "n_reflections": 13004,
+    "n_free": 656,
+    "n_work": 12348,
+    "n_select": 328,
+    "n_report": 328,
+    "d_min": 1.7000760984892174,
+    "data_mtz_sha256": "13d4c4223c89d54a53c36044ba60a15a65cb56d5c5077b53461a3d1624559ca8",
+    "flags_mtz_sha256": "8392b83d91c5ff9c45114a857b95ca5aa4752777cba1d508440668ba676aff3e"
+   },
+   "released_step": "S0073",
+   "facts": "S0073 2026-10-20T07:22:22Z solvent place_ions parent S0070 | CL at the mFo-DFc peaks of 4.0 sigma and above that no atom explains, next to a nitrogen (occupancy 1) | R-free 0.24271 -> 0.24079 (-4.5 sigma) R-work 0.16707 -> 0.16622 gap -0.0011 clash 1.3 rota 0.5 % | atoms 4346 waters 419 altlocs AB anisou 2009 | ACCEPT",
+   "released": {
+    "r_free": 0.24079256190368986,
+    "r_work": 0.16621578501397294,
+    "gap": 0.07457677688971692,
+    "r_free_select": 0.24405886719783096,
+    "r_free_report": 0.23747272713123285,
+    "clashscore": 1.27,
+    "rota_pct": 0.48,
+    "rama_outliers_pct": 0.0,
+    "rama_favored_pct": 93.7008,
+    "bond_rmsd": 0.005,
+    "angle_rmsd": 0.748,
+    "n_atoms": 4346,
+    "n_h": 1916,
+    "n_water_atoms": 419,
+    "water_occ_sum": 257.13,
+    "n_anisou": 2009,
+    "copies": 2,
+    "altlocs": "AB"
+   },
+   "deposited_on_our_flags": {
+    "r_free": 0.2825611999764318,
+    "r_work": 0.20238441125710585,
+    "gap": 0.08017678871932596,
+    "r_free_select": 0.2847422715302644,
+    "r_free_report": 0.2803443841758345,
+    "clashscore": 5.13,
+    "rota_pct": 1.9,
+    "n_atoms": 1234,
+    "n_water_atoms": 224
+   },
+   "status": "improved",
+   "files": {
+    "targets/1LZ8/README.md": "6e7fb133750c2fd5fc0d5f32513b0c3ced3922ce6d5b06bfbb383cc729d093a9",
+    "targets/1LZ8/data/1LZ8_data.mtz": "13d4c4223c89d54a53c36044ba60a15a65cb56d5c5077b53461a3d1624559ca8",
+    "targets/1LZ8/data/1LZ8_flags.mtz": "8392b83d91c5ff9c45114a857b95ca5aa4752777cba1d508440668ba676aff3e",
+    "targets/1LZ8/data/1LZ8_split.mtz": "9427d44b5c67e9ab6da0359ce0bb965c6ede20f8b80a2fdd319cbc5d6d45df49",
+    "targets/1LZ8/data/prep.json": "77008ca6cb08f5c4aade1454c4ca9e83fb1018479e2faf4d79748ebe1c43b5a5",
+    "targets/1LZ8/data/split.json": "6be6e18e9c83f66a3a32fb61afbca3997ad39bfd15b74cd01ce6a8bc1bfbb85d",
+    "targets/1LZ8/deposited/1LZ8.cif": "fd8e3b5f7c20f0a7c3fb007f35af2f69780b6b79d81cb72217ce866ac61ff488",
+    "targets/1LZ8/deposited/rcsb_entry.json": "0987b3a8d6bc90ef3a6b7c8907511b6cc858ec682fc0963e4673364b6a9f2c6c",
+    "targets/1LZ8/maps/1LZ8_S0073_map_coeffs.mtz": "dc5fb35c2e2fcb21f935848067d492e6719f752482d2411b638270a422dfe60c",
+    "targets/1LZ8/model/1LZ8_S0073.cif": "5517dd7ebd3b87877019f209480aeb392d301d60d91330e29651c3baec08c28c",
+    "targets/1LZ8/model/1LZ8_S0073.pdb": "df829acafbda8cd677c3adff5e78e5a57e50232636bb6c1bb3bd49554860d10f",
+    "targets/1LZ8/refinement/S0073/FACTS.txt": "bc913bd69cddb079a8edeca3177352d183b25ac0e88f346c1cf642a3b034557b",
+    "targets/1LZ8/refinement/S0073/change.json": "10acad568aace5e6d24c499913ac9fb6c9d0dfbc9c142956d9533853453be32a",
+    "targets/1LZ8/refinement/S0073/score.json": "0d4ce008b801c8476ab74e1d5e202052c9b544207d1863af3ca6ee7e8f8df276",
+    "targets/1LZ8/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/1LZ8/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/1LZ8/refinement/chains/chain_anneal.sh": "56393eba05d5b7872058a90cc7ae0a5e5f5f09bd48053f552460b03c38bc8610",
+    "targets/1LZ8/refinement/chains/chain_anneal_Tee73c5.log": "2390dde493ab7baa7671adbe52bf167378cca296329926d63c4d8aacb01b7b60",
+    "targets/1LZ8/refinement/chains/chain_coot.sh": "03897b58076a4abe6a18714a9d47e60fcb7f261e61af3429b4adb4873f2f138c",
+    "targets/1LZ8/refinement/chains/chain_coot_Tee73c5.log": "183c2749bd7484162a153cbd40989edb69dc8817814ac3238b49d639cd6ab5f5",
+    "targets/1LZ8/refinement/chains/chain_ens.sh": "86b698299506eb72fa4bc9984cfa291ff566f1d82aba240b7c8b58bbf6700bad",
+    "targets/1LZ8/refinement/chains/chain_ens_Tee73c5.log": "e02d2cb51c1cd6d5b73e0045cfcdc5d6d84b291d9e53d4eaac02c958a30fd67b",
+    "targets/1LZ8/refinement/chains/chain_ions.sh": "f2bfd3d75c4563599a7e1adf7bbd87c7990e57f08876fb5c5f2965f5933223b9",
+    "targets/1LZ8/refinement/chains/chain_ions_Tee73c5.log": "f8b3fb88423337558ff091de86175df9203f25495f5829fcdc103ee76aa07952",
+    "targets/1LZ8/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/1LZ8/refinement/chains/chain_lz2.sh": "af6b80d97f9e48db59ce06d46b389ae76aa5405a150d859007f06b7a871661f8",
+    "targets/1LZ8/refinement/chains/chain_lz2_Tee73c5.log": "7054c99843b3a8a17b2332c6983ef768f34c2f418b6a57f36af02dbc466ece39",
+    "targets/1LZ8/refinement/chains/chain_more.sh": "47a53ed04a3eac148ab4533bc9ec0201330feae7bb1e76de9893c7841e933968",
+    "targets/1LZ8/refinement/chains/chain_more_Tee73c5.log": "5708335d1fe5dc7bb04e8e01eeb0d9d75768bf51abc5dafce5c1001ed4303c90",
+    "targets/1LZ8/refinement/chains/chain_occhet_Tee73c5.log": "59b710b8f38a5d32026ce6568cb69d3b85bbb38580aa5b56c775040e2b8c344a",
+    "targets/1LZ8/refinement/chains/chain_qfit.sh": "c212fc345455bb4a6d724d65406fc817dda0cba65f4dfa7448f62844d75097c9",
+    "targets/1LZ8/refinement/chains/chain_qfit3_Tee73c5.log": "866adc89d268156c902a40ed7b10f206a3072b02fe2897d91a50e563b6dbccad",
+    "targets/1LZ8/refinement/chains/chain_qfit_Tee73c5.log": "77f7a0fc85b684569eb36cce207e8c098c1b8fe54289697a4aa354f9668a6da3",
+    "targets/1LZ8/refinement/chains/chain_reference_Tee73c5.log": "f130cb3efa3770f46d3b42a3304be98cdc580219d54e8cafa1c863aa78b257f8",
+    "targets/1LZ8/refinement/chains/chain_six3_Tee73c5.log": "dfe6b24ef230983909ce0351a1c5c9f8aeff84170077ee0244b9b753bd826979",
+    "targets/1LZ8/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/1LZ8/refinement/chains/chain_target_Tee73c5.log": "b49c8ce445b6a7a968a9606074fce391fe5bf36263fceb70c6fab1e2e7c8b637",
+    "targets/1LZ8/refinement/chains/chain_tight.sh": "59d2a1ff2fe71ed94dfa4c8720f81f4880c858995534678ce71ad644ff1bb7b7",
+    "targets/1LZ8/refinement/chains/chain_tight_Tee73c5.log": "491d5ad13aab82f39535f649d0ed8d84c2f16161e9354e0cabae3e56b7d31957",
+    "targets/1LZ8/refinement/chains/chain_weights.sh": "b49c01118885191d71a9d512e89f26279670cdb2e0a9c373b051f7fe3f96a454",
+    "targets/1LZ8/refinement/chains/chain_weights_Tee73c5.log": "7a90cfd1ee31c05f37445697b85d69ae536006d66d17916ec1ee93c4fc155254",
+    "targets/1LZ8/refinement/chains/followup_Tee73c5.log": "3492036e46b77a3100d1d6ac3925688d599a8ead2b52a02ed4f7cc23d742c075",
+    "targets/1LZ8/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/1LZ8/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/1LZ8/refinement/metaparams.yaml": "da375bcf43953ad4a75e914ec851a2a4ed2ae7a90dff51f845a12c0cd3b906e2",
+    "targets/1LZ8/refinement/run.json": "b36f202ef6c2cfaaabcb95a88cc39be57dce19e4ad9d3358ba3c3fff9572b3f5",
+    "targets/1LZ8/refinement/score_history.jsonl": "93d7b1e9c43ea5c14f49eade89c1f6acf42bae72303d09b77c81c4b8880eec66",
+    "targets/1LZ8/refinement/score_history.txt": "6bec214e010564a6770c45636b77b51a0d463c2ba9dfd78788510ab825004146",
+    "targets/1LZ8/refinement/scorecard.csv": "eb2a9029a935b7edba135d1b199f6f666be43ca08ea6fb463c40d46bb6421951",
+    "targets/1LZ8/refinement/steps.md": "eda60399d4887e4531cf5a8e11cca9f6eef44653afdb2a697eba7fb06e9daec3",
+    "targets/1LZ8/validation/1LZ8_S0073.clashscore.log": "4c6b0b2059f491a5e95b797ab5a498de331ae6123aa65b0ac52e7d34ed75f29e",
+    "targets/1LZ8/validation/1LZ8_S0073.ramalyze.log": "a0f58132cc8210eec960c3aec2d121e5436b69dcc7745056c8d3200917467e5b",
+    "targets/1LZ8/validation/1LZ8_S0073.rotalyze.log": "ce6cb5eefda3703653dd03289a423982f4622185fcb79eb3874c0b183e55b3d5"
+   }
+  },
   {
    "id": "3QUE",
    "title": "Human p38 MAP Kinase in Complex with Skepinone-L",
-   "status": "improved",
    "resolution_a": 2.7,
-   "space_group": "P 21 21 21",
-   "unit_cell": [
-    65.408,
-    74.016,
-    77.47,
-    90.0,
-    90.0,
-    90.0
-   ],
-   "deposited_refinement_software": [
-    "REFMAC"
-   ],
+   "initial_release_date": "2012-01-18T00:00:00.000+00:00",
    "primary_citation": {
     "title": "Skepinone-L is a selective p38 mitogen-activated protein kinase inhibitor.",
     "journal_abbrev": "Nat.Chem.Biol.",
@@ -37,687 +129,104 @@
     "pdbx_database_id_DOI": "10.1038/nchembio.761",
     "pdbx_database_id_PubMed": 22198732
    },
-   "initial_release_date": "2012-01-18T00:00:00.000+00:00",
    "data": {
-    "kind": "amplitudes",
-    "labels": "FP,SIGFP",
-    "n_reflections": 10793,
+    "data_labels": "FP,SIGFP",
+    "n_reflections": 10593,
     "n_free": 864,
-    "fraction_free": 0.080052,
+    "n_work": 9729,
     "n_select": 432,
     "n_report": 432,
-    "flags_source": "inherited",
-    "data_mtz_sha256": "46e775eaef62e9ea6ba161189332747b22e18d456bb52f6eff759fdf3bb7d3c9",
-    "flags_mtz_sha256": "389672087b3a3ca53fea456853e5df57ae38c009636c80fd5685679361721bd2",
-    "sf_source_sha256": "7dca2e602c18bdef3c708cd5d41354cda0ea63daddb6f0089bdb4081c84314cf",
-    "header_claim": {
-     "r_work": 0.2225,
-     "r_free": 0.3109,
-     "n_free": 863,
-     "pct_free": 8.0,
-     "sigma_f": 0.0
-    }
+    "d_min": 2.700166696768957,
+    "data_mtz_sha256": "ddfc0f8e3ddf64221895839397d05cf03e5880b53ae263cf0ac6ef0330d76813",
+    "flags_mtz_sha256": "64d2a022b8a0bef35c4c163102792f15351c47a580b5d209f595c91dd6ecf328"
    },
-   "r_free": {
-    "deposited_on_our_flags": {
-     "r_work": 0.21508670837679753,
-     "full": 0.2879387469032084,
-     "select": 0.2858317299003983,
-     "report": 0.290141404308002,
-     "model_vs_data": {
-      "r_work": 0.2132,
-      "r_free": 0.2856
-     }
-    },
-    "rerefined_no_changes": {
-     "mean_full": 0.26680119653148116,
-     "sd_full": 0.0016786228362890786,
-     "n_seeds": 10,
-     "floor_file": "noise_floor.json"
-    },
-    "credit_bar": {
-     "protocol": "noise_floor_e043_wxc01",
-     "sigma_full": 0.002729,
-     "sigma_select": 0.002051,
-     "sigma_report": 0.003518,
-     "k_multiple": 2.0,
-     "accept_threshold_select": -0.004102
-    },
-    "released": {
-     "r_work": 0.21037121083959606,
-     "full": 0.2532972768792094,
-     "select": 0.2428663802372678,
-     "report": 0.26420164627744946,
-     "model_vs_data": {
-      "r_work": 0.2103,
-      "r_free": 0.2525
-     },
-     "ledger": {
-      "r_work": 0.21036592843005836,
-      "r_free_full": 0.25245568683792774,
-      "r_free_select": 0.24204807816133822,
-      "r_free_report": 0.26333571119801324
-     }
-    },
-    "delta_full_vs_deposited": -0.03464147002399903,
-    "delta_full_beyond_rerefinement": -0.013503919652271767,
-    "delta_beyond_in_sd_full": -8.04464192928818
+   "released_step": "S0057",
+   "facts": "S0057 2026-10-21T03:58:49Z refinement refine_step parent S0052 | reference-model torsion restraints to reference_model.pdb (phenix reference_model, sigma 1.0, limit 15; the sequences aligned by phenix) against none | R-free 0.26852 -> 0.26419 (-3.4 sigma) R-work 0.19625 -> 0.21236 gap -0.0204 clash 6.3 rota 3.6 % | atoms 2896 waters 61 altlocs - anisou 2764 | ACCEPT",
+   "released": {
+    "r_free": 0.26418968873805626,
+    "r_work": 0.21235555897837666,
+    "gap": 0.051834129759679604,
+    "r_free_select": 0.27017313441063207,
+    "r_free_report": 0.25846016374037434,
+    "clashscore": 6.35,
+    "rota_pct": 3.63,
+    "rama_outliers_pct": 0.295,
+    "rama_favored_pct": 96.7552,
+    "bond_rmsd": 0.006,
+    "angle_rmsd": 1.26,
+    "n_atoms": 2896,
+    "n_h": 0,
+    "n_water_atoms": 61,
+    "water_occ_sum": 60.44,
+    "n_anisou": 2764,
+    "copies": 1,
+    "altlocs": ""
    },
-   "composition": {
-    "deposited": {
-     "n_atoms": 2849,
-     "n_hydrogen": 0,
-     "n_water_residues": 14,
-     "altlocs": []
-    },
-    "released": {
-     "n_atoms": 2881,
-     "n_hydrogen": 0,
-     "n_water_residues": 46,
-     "altlocs": []
-    }
+   "deposited_on_our_flags": {
+    "r_free": 0.29007506267631405,
+    "r_work": 0.22308223864771098,
+    "gap": 0.06699282402860307,
+    "r_free_select": 0.2919230102386708,
+    "r_free_report": 0.2883055368324591,
+    "clashscore": 10.58,
+    "rota_pct": 7.59,
+    "n_atoms": 2849,
+    "n_water_atoms": 14
    },
-   "coordinate_diff": {
-    "waters_added": [
-     "A 5001",
-     "A 5007",
-     "A 5008",
-     "A 5139",
-     "A 5140",
-     "A 5141",
-     "A 5159",
-     "A 5167",
-     "A 5172",
-     "A 5177",
-     "A 5185",
-     "A 5187",
-     "A 5188",
-     "A 5192",
-     "A 5195",
-     "A 5201",
-     "A 5204",
-     "A 5210",
-     "A 5217",
-     "A 5224",
-     "A 5226",
-     "A 5253",
-     "A 5255",
-     "A 5258",
-     "A 5260",
-     "A 5307",
-     "A 5322",
-     "A 5323",
-     "A 5326",
-     "A 5331",
-     "A 5340",
-     "A 5354",
-     "A 5356",
-     "A 5357"
-    ],
-    "waters_removed": [
-     "A 365",
-     "A 376"
-    ],
-    "nonwater_residues_added": [],
-    "nonwater_residues_removed": [],
-    "altloc_changes": [],
-    "hydrogens_delta": 0
-   },
-   "molprobity": {
-    "deposited": {
-     "ramachandran_outliers_pct": 0.29,
-     "ramachandran_favored_pct": 94.99,
-     "rotamer_outliers_pct": 7.59,
-     "cbeta_deviations": 2.0,
-     "clashscore": 10.58,
-     "rms_bonds": 0.0156,
-     "rms_angles": 1.66,
-     "molprobity_score": 2.56
-    },
-    "released": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 98.53,
-     "rotamer_outliers_pct": 4.29,
-     "cbeta_deviations": 0.0,
-     "clashscore": 2.82,
-     "rms_bonds": 0.0039,
-     "rms_angles": 0.62,
-     "molprobity_score": 1.55
-    }
-   },
-   "campaign": {
-    "cycle_index": 922,
-    "stage": "rerefine",
-    "updated_at": "2026-10-03T09:13:23+00:00",
-    "model_on_pod": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0/combined/g006.N5.0.loo3/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 68,
-    "n_credited_cycles": 9,
-    "writing_cycle": {
-     "cycle_index": 921,
-     "stage": "graph",
-     "run_id": "3QUE.graph-weekend-20261002d",
-     "verdict": "accepted",
-     "attributable_delta_select": -0.00869,
-     "delta_r_gap": -0.00059,
-     "geometry_flag": "rota_outliers 4.29 > 1.5",
-     "run_dir": "/home/dev/runs/3QUE/graph/3QUE.graph-weekend-20261002d/g006/N5.0"
-    },
-    "bisect_step": null,
-    "credited_cycles": [
-     {
-      "cycle_index": 31,
-      "run_id": "3QUE.run3",
-      "attributable_delta_select": -0.007271,
-      "r_free_full": 0.25985654441952555,
-      "delta_r_gap": null,
-      "geometry_flag": null,
-      "accepted_changes": 5.0
-     },
-     {
-      "cycle_index": 41,
-      "run_id": "3QUE.exp_water_occ",
-      "attributable_delta_select": -0.005568,
-      "r_free_full": 0.25891058999407407,
-      "delta_r_gap": null,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 912,
-      "run_id": "3QUE.E040",
-      "attributable_delta_select": -0.003778,
-      "r_free_full": 0.2615352878953992,
-      "delta_r_gap": -0.00414,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 913,
-      "run_id": "3QUE.E040",
-      "attributable_delta_select": -0.003757,
-      "r_free_full": 0.262228956565101,
-      "delta_r_gap": -0.00458,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 915,
-      "run_id": "3QUE.graph-weekend-20261002d",
-      "attributable_delta_select": -0.006609,
-      "r_free_full": 0.25711806606710697,
-      "delta_r_gap": -0.00724,
-      "geometry_flag": "rota_outliers 3.96 > 1.5",
-      "accepted_changes": 9.0
-     },
-     {
-      "cycle_index": 916,
-      "run_id": "3QUE.graph-weekend-20261002d",
-      "attributable_delta_select": -0.005137,
-      "r_free_full": 0.2565374001896503,
-      "delta_r_gap": -0.01013,
-      "geometry_flag": "rota_outliers 3.96 > 1.5",
-      "accepted_changes": 8.0
-     },
-     {
-      "cycle_index": 917,
-      "run_id": "3QUE.graph-weekend-20261002d",
-      "attributable_delta_select": -0.004789,
-      "r_free_full": 0.2528286021169598,
-      "delta_r_gap": 0.00546,
-      "geometry_flag": "rota_outliers 3.96 > 1.5",
-      "accepted_changes": 7.0
-     },
-     {
-      "cycle_index": 921,
-      "run_id": "3QUE.graph-weekend-20261002d",
-      "attributable_delta_select": -0.00869,
-      "r_free_full": 0.25245568683792774,
-      "delta_r_gap": -0.00059,
-      "geometry_flag": "rota_outliers 4.29 > 1.5",
-      "accepted_changes": 9.0
-     },
-     {
-      "cycle_index": 922,
-      "run_id": "3QUE.graph-weekend-20261002d",
-      "attributable_delta_select": -0.004381,
-      "r_free_full": 0.2583842363697152,
-      "delta_r_gap": 0.00384,
-      "geometry_flag": "rota_outliers 3.96 > 1.5",
-      "accepted_changes": 8.0
-     }
-    ],
-    "n_changes_proposed": 2855,
-    "thresholds_version": "thresholds_v9",
-    "run_summary": null,
-    "refinement": {
-     "phenix_version": "2.1-6048",
-     "macro_cycles": 5,
-     "adp_model": "isotropic",
-     "n_tls_groups": 4,
-     "riding_hydrogens": true,
-     "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=3.75 / d_min=2.7002: isotropic; TLS (d_min>=2.0 or chain>200 res)"
-    }
-   },
-   "caveats": [
-    "The held-back report half, the unbiased estimate (PROTOCOL \u00a73.6), improved much less than the full set. Ledger values, previous record (2026-08-28) \u2192 this model: full 0.25891 \u2192 0.25246, report 0.26441 \u2192 0.26334, select 0.25365 \u2192 0.24205 (independent scorer: full 0.25968 \u2192 0.25330, report 0.26517 \u2192 0.26420). Most of the full-set gain sits on the select half, the half the search consults (D519).",
-    "This model is the graph search's third 3QUE promotion on 2026-10-03 (`3QUE.graph-weekend-20261002d`, generation 6). The one before it (generation 4, D520) had report 0.25983, better on both halves than the 2026-08-28 record; this promotion lowered full by 0.0004 and raised report by 0.0035. It passed the promotion rules (report inside 2\u03c3_report of the record it replaced); no decision row covers it yet. The first promotion (generation 2, D518) had made report worse (0.26725).",
-    "The gain is water sites transferred from 9MHB, the 1.65 \u00c5 isomorphous p38\u03b1 entry, combined in credited batches against matched null arms (D518, D520). Waters 15 \u2192 46 against the previous release (deposited 14).",
-    "Rotamer outliers are above the campaign's 1.5 % cap: 4.29 % at release time (phenix.molprobity; previous released model 3.96 %, deposited 7.59 %). The campaign records 3.96 % for both records and calls it pre-existing (D518, D520).",
-    "The deposited header R-free (0.311) is a REFMAC number; Phenix recomputes the same model at 0.287 on these flags (D008). Only the recomputed value is comparable.",
-    "Most of the gain over the deposited file is Phenix re-refinement of a REFMAC-refined model (TLS, weight optimisation); the campaign's own credited changes are water edits: three added, two removed, water occupancies refined (D421/D485), then the 9MHB transfer waters.",
-    "The model carries no riding hydrogens: adding them was tested and rejected at 2.7 \u00c5 (D490)."
-   ],
-   "files": [
-    {
-     "path": "data/3QUE_data.mtz",
-     "bytes": 218340,
-     "sha256": "46e775eaef62e9ea6ba161189332747b22e18d456bb52f6eff759fdf3bb7d3c9",
-     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
-    },
-    {
-     "path": "data/3QUE_flags.mtz",
-     "bytes": 175088,
-     "sha256": "389672087b3a3ca53fea456853e5df57ae38c009636c80fd5685679361721bd2",
-     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
-    },
-    {
-     "path": "data/3QUE_split.mtz",
-     "bytes": 175088,
-     "sha256": "ce4af54870d53d09be398e85a520ced3e6b48d69cd93614c4a6f5f15a2a64d7f",
-     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
-    },
-    {
-     "path": "data/prep.json",
-     "bytes": 2805,
-     "sha256": "f36609c81df376bf30a78519c1a4d1a3a6cea6e1944f20cf2c2163fa2d42c2d0",
-     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
-    },
-    {
-     "path": "data/split.json",
-     "bytes": 24274,
-     "sha256": "9581a6d4cd4ae4dd0817ac5e29d81a8551c949d990859937de8ad2e7191e68b0",
-     "description": "The same split as a list of reflections, with the seed that made it."
-    },
-    {
-     "path": "deposited/3QUE.cif",
-     "bytes": 350945,
-     "sha256": "67bbe98159bdb43ef40a652cc809a5a3cbe5117b0229508c5204a91ff6459fcc",
-     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
-    },
-    {
-     "path": "deposited/3QUE.fasta",
-     "bytes": 433,
-     "sha256": "a65e96a0408569adc070bb78beacf7c98e938c6192a3f34e6c07dccd83762bad",
-     "description": "The entry's sequence as fetched from RCSB."
-    },
-    {
-     "path": "deposited/FETCHED",
-     "bytes": 76,
-     "sha256": "10a2b282541eb0dcb5f8757ad2a4c778e158b48d01a0788fda3fb9539c5a0c98",
-     "description": "When the raw files were fetched."
-    },
-    {
-     "path": "deposited/fetch_manifest.sha256",
-     "bytes": 935,
-     "sha256": "f246d9931f85a16ece9cf9acc54c37ad160e30336f1b6368840fce64358f6ff0",
-     "description": "SHA-256 of the raw files at fetch time."
-    },
-    {
-     "path": "deposited/rcsb_entry.json",
-     "bytes": 18418,
-     "sha256": "3b47e4eb5a70f531bd0bd5af2048373c675a79ba5e98a75eac85a071279a3798",
-     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
-    },
-    {
-     "path": "ledger/bisections.csv",
-     "bytes": 1268,
-     "sha256": "4cd710657830d4eb30e6e0e036ee725adbd64f07f1cb608455e10be61191c786",
-     "description": "Bisection steps when a cycle regressed."
-    },
-    {
-     "path": "ledger/changes.csv",
-     "bytes": 8717661,
-     "sha256": "fa4a91b38663b2dbef7abb08152cdb06d7dd893f25a6a622e16115d70adcdadc",
-     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
-    },
-    {
-     "path": "ledger/checks.csv",
-     "bytes": 1693,
-     "sha256": "8a48836e478aa98132f5fa43077f7c8bf769faf4440481addd725c96b1a42b77",
-     "description": "Gate results G0\u2013G8."
-    },
-    {
-     "path": "ledger/cycles.csv",
-     "bytes": 36822,
-     "sha256": "bf0db822441b2f9f7b1fbdc97425cac5a71b7fa6c6383f71ef107e3280427031",
-     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
-    },
-    {
-     "path": "ledger/defects.csv",
-     "bytes": 120938,
-     "sha256": "68fcb489266264635418733e661447b63fdc7d330d27d7c6f94c89d03504e2d9",
-     "description": "Values that could not be computed, with the reason (never a sentinel)."
-    },
-    {
-     "path": "ledger/deviations.csv",
-     "bytes": 121458,
-     "sha256": "3b39168eb7c8d89217dedb51663278ed7a3529b2f171fc233f5fc2a1345cd163",
-     "description": "Decision-log rows that name this target."
-    },
-    {
-     "path": "ledger/noise_floor.csv",
-     "bytes": 1346,
-     "sha256": "5be144305ee6d192b7f4cebe2eec79f4d9a9fabe0388492cb28b907a9c53d928",
-     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
-    },
-    {
-     "path": "ledger/rfree_consultations.csv",
-     "bytes": 228,
-     "sha256": "5e1b37ef4739acc32ba0fac2b05426f9f94bb591232c9d0e22c4949ce4cacd18",
-     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
-    },
-    {
-     "path": "ledger/runs/3QUE.20260908v5/DECISIONS.md",
-     "bytes": 1361,
-     "sha256": "0be6dcc886958a47eb048d7c49de7f03e16aac174e38ae12a54eb402e0405fe8",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.20260908v5b/DECISIONS.md",
-     "bytes": 31862,
-     "sha256": "2382f3ccb8c7a7813e84eb481f3c5ed51ee1f8875dee1708af6d0d7317459e4f",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.20260908v5b/run_summary.json",
-     "bytes": 2855,
-     "sha256": "2f510f0cdbd6cf818aa7a4a8623df30330259ecb4d047278ae11932d9c8d22cd",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3QUE.20260909corr/DECISIONS.md",
-     "bytes": 19318,
-     "sha256": "58a7b91427ef6b9eadc6f0d4c95fb03bab2f4ae6c07a56ac3e21f74bd41e4d1c",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.20260909corr/run_summary.json",
-     "bytes": 2934,
-     "sha256": "1c2285dfd58a5258a68659cb3de64f76992f9f66caf3bd969c09698234b837b6",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3QUE.run1/DECISIONS.md",
-     "bytes": 901,
-     "sha256": "714910e204ffd6c1002a9f028b9d5e488c7421503fc34340c056ef39ef28f648",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.run2/DECISIONS.md",
-     "bytes": 901,
-     "sha256": "184b8ac553803ab8206e150e29075f3b8b8932fb5c7947d65e234b2a59fec688",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.run3/DECISIONS.md",
-     "bytes": 82973,
-     "sha256": "e1007c07ded869cde543a2f9b934586c4aa11ab5474e71b88a84579d37848c66",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.run3/run_summary.json",
-     "bytes": 2630,
-     "sha256": "32e0fa8c42ab490bdaa7e1edc0550f6d5b26e5c3319294b74ffc48795cde72be",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3QUE.run5/DECISIONS.md",
-     "bytes": 3329,
-     "sha256": "2371a4f064f6b8d38c26e073ec203319b99b873fbcf5e11db271a57042d6cda6",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3QUE.run5/run_summary.json",
-     "bytes": 2298,
-     "sha256": "8b9b0d50ba60ed44406feb00075fa847fd4c44eecab7d9b2feba35d3d7432434",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/solvent_disagreements.csv",
-     "bytes": 120,
-     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
-     "description": "Phenix/Coot disagreements on solvent sites."
-    },
-    {
-     "path": "maps/3QUE_refined_map_coeffs.mtz",
-     "bytes": 697408,
-     "sha256": "3896232efda16bc1b5698fce618abb19b065a629d458c38bca667136830fe0c7",
-     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
-    },
-    {
-     "path": "model/3QUE_refined.cif",
-     "bytes": 510111,
-     "sha256": "b6f8a498124cb18dcb7c740c8148b3574e60020f46a0c3283c96d0d99dca1d34",
-     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
-    },
-    {
-     "path": "model/3QUE_refined.pdb",
-     "bytes": 457646,
-     "sha256": "4ba43e27b8301a58ad7b720bec33613061d7ae65b77cccf087bfd55a41bfb84b",
-     "description": "The same model in PDB format, from the same run."
-    },
-    {
-     "path": "refinement/command.txt",
-     "bytes": 1933,
-     "sha256": "1d97620c5a7a0effe8255ac910040a7e1f306e15c6a1b05c83ec0d87484c5707",
-     "description": "The verbatim phenix.refine argv that wrote the model."
-    },
-    {
-     "path": "refinement/current.json",
-     "bytes": 520,
-     "sha256": "a14b1449a900551d1b3ad9e770fd77ba27e2601dba6b1e76f5de2f50ede694a5",
-     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
-    },
-    {
-     "path": "refinement/experiment_paired_cycle.json",
-     "bytes": 7428,
-     "sha256": "23334b542ec737bc854a8518a6331f720804f7ee5fc9f01c4ad980b7513f3295",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
-     "path": "refinement/model_vs_data.campaign.log",
-     "bytes": 2809,
-     "sha256": "8da8d67a12c678c04e3aba4b22f1f42771ab3faca2c346e193ceefd071252b1d",
-     "description": "phenix.model_vs_data as run by the campaign on this model."
-    },
-    {
-     "path": "refinement/refine_001.eff",
-     "bytes": 52224,
-     "sha256": "de188e68c7d0637c2ec77d65ba21255eb91d091dc6ac0cdbc80243dbb9d2bada",
-     "description": "The effective parameters of that run."
-    },
-    {
-     "path": "refinement/refine_001.log",
-     "bytes": 152624,
-     "sha256": "9ccbff19f3d5248f68747d46d1156e5fa1d853f3765beae4a757a7dfed163877",
-     "description": "The phenix.refine log of that run."
-    },
-    {
-     "path": "refinement/refine_decisions.json",
-     "bytes": 2350,
-     "sha256": "999616bb69d48c029be61b645e408b2533bf19cdb7501798a8fce981b060b950",
-     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
-    },
-    {
-     "path": "refinement/refine_result.json",
-     "bytes": 3662,
-     "sha256": "9e5bed78d693677380db7a868a88e6a5bf113a67105e52b6f1a1378b139f39c0",
-     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
-    },
-    {
-     "path": "validation/campaign/checks/G3_3QUE.json",
-     "bytes": 6300,
-     "sha256": "d1e1866282fa3b06453732087416adf65589371a81d42ce8e0bfd8d537c435f5",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/checks/fetch_3QUE.json",
-     "bytes": 2400,
-     "sha256": "3d96c95955a1aa64a3f8dc59481e0d5202782b0c0fa06aafd22e74d5da95fba9",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/dossier.json",
-     "bytes": 108647,
-     "sha256": "b7f8178a0fce65d9022915b5fb5c622f5429586099ece2380677d8ace093b084",
-     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
-    },
-    {
-     "path": "validation/campaign/noise_floor.json",
-     "bytes": 7468,
-     "sha256": "d2b85e362de9b6d69a936dcc4d2535fdacd04ac309d920df49ace211eb366801",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/noise_floor_e043_wxc01.json",
-     "bytes": 8041,
-     "sha256": "8fa56b46e1ffba2b2988d092a95a2a88f42a1d0950ec9808d43f6a4ef9450c56",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/3QUE_deposited.indep.json",
-     "bytes": 509,
-     "sha256": "78392b0a354ed77f2ab184a9c914e603afbf6dd93c940a853dcf5b1c7ddc645b",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/3QUE_ours.indep.json",
-     "bytes": 555,
-     "sha256": "e99c8f2899289ac79ffe8c7cf42fe905dfc529470a8f48e36d6adcec5eb55944",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/3QUE_pdbredo.indep.json",
-     "bytes": 525,
-     "sha256": "795a5348c0222dff9c7007cdc14825be839ca29572c5a519cda7e84491fd690e",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20261003/3QUE_d_g002.json",
-     "bytes": 661,
-     "sha256": "d23920703e076871d52248d68fc75887c0bff5b4d2195fa15f58d580c47972d1",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20261003/3QUE_now.json",
-     "bytes": 658,
-     "sha256": "5e786b5b992dde63ec869ab6e03603a8a6a0d51bdd60aab539698dfa88b7e670",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20261003/3QUE_old.json",
-     "bytes": 620,
-     "sha256": "5942ba77808e1d9fc097f161bba0baab3bb94233f7d38ffced05d36acdb27e37",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/release/merge_mtz.log",
-     "bytes": 394,
-     "sha256": "8c2850f0466d92ab71158c0bbe6bf4d8294772062d700dfea8101929d9cf2c92",
-     "description": "Log of the data+flags merge used by model_vs_data."
-    },
-    {
-     "path": "validation/release/model_diff.json",
-     "bytes": 882,
-     "sha256": "9c47e0cc50295c2b62e8b9af03d83bc7a4d7632e7c30a78719ed70e3140762e1",
-     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
-    },
-    {
-     "path": "validation/release/model_vs_data.deposited.log",
-     "bytes": 2996,
-     "sha256": "6beeb41e9c7cb6969cb55997bde7b96dc056d64ac7186827e4d849cca36657ca",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/model_vs_data.refined.log",
-     "bytes": 3001,
-     "sha256": "c5e983df03f33a2cb5de5efcc330b0eace8e66774bcb769ec6699b590df61058",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.log",
-     "bytes": 16072,
-     "sha256": "c2325a1d48702349e4b81fa116a0324801774ba8409fa1aa42b32e05f34e4a39",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.out",
-     "bytes": 4766,
-     "sha256": "f50945a0c63385466c338b7eaab724d729535b767eed10056b8d79daada56b07",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.log",
-     "bytes": 15055,
-     "sha256": "28625fbecca16c2669c1f6bf70a60efc574389ff3abad4b9a0244f00616f95e8",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.out",
-     "bytes": 3732,
-     "sha256": "e2a5ce777d3e0483623fe6ec5dfc19df7a483a7dd48a3e2814498437e5d61a77",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.json",
-     "bytes": 615,
-     "sha256": "85dd5f4813f789454b2b1ac5d51379a81c471c818774a9683ed501db51564166",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.log",
-     "bytes": 1075,
-     "sha256": "18034aa98892576cd69fd9c9ac12606b4287863d83d6cc4f32dad74bd2db807a",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.json",
-     "bytes": 621,
-     "sha256": "24251438831534779a22a05f82ff57d10ee8405099b40f4adc417e34a9aa243f",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.log",
-     "bytes": 1083,
-     "sha256": "bba2cb953030c92e9644c052f0841cb43b49cb84f3f66b70dc6d6b7b693852d8",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/summary.json",
-     "bytes": 2483,
-     "sha256": "4bc59bed0d9dae4a7195d3f96f4b8ccaeb695c601a29d0eecd9f5bb2d601464b",
-     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
-    }
-   ]
+   "status": "improved",
+   "files": {
+    "targets/3QUE/README.md": "53af9dbbe014f27620eef3a7724c68552f8a0281e3d0cc50989079113b3f14c4",
+    "targets/3QUE/data/3QUE_data.mtz": "ddfc0f8e3ddf64221895839397d05cf03e5880b53ae263cf0ac6ef0330d76813",
+    "targets/3QUE/data/3QUE_flags.mtz": "64d2a022b8a0bef35c4c163102792f15351c47a580b5d209f595c91dd6ecf328",
+    "targets/3QUE/data/3QUE_split.mtz": "b271f05b8b273e16707ace63a011d489f80136d21a1f99d9bda6069387e59a2a",
+    "targets/3QUE/data/prep.json": "b4b5e6dbe4e011544d2ff0598e6dfb96613a7ffd22c94dca1aa7a6329c1c7a78",
+    "targets/3QUE/data/split.json": "9490fbf655010eb5541772532b4af3ed65dfdcbea9c9f95685b83a607164a02a",
+    "targets/3QUE/deposited/3QUE.cif": "67bbe98159bdb43ef40a652cc809a5a3cbe5117b0229508c5204a91ff6459fcc",
+    "targets/3QUE/deposited/rcsb_entry.json": "c4be6c3ecbb80916d26910ca05dbe3ce457f957cff8e24419cdc06f3d492560d",
+    "targets/3QUE/maps/3QUE_S0057_map_coeffs.mtz": "3d33c8538da5af37e0d298e33c4fbb1f1ff0c5b269c89c7bce76e06c1c156a56",
+    "targets/3QUE/model/3QUE_S0057.cif": "a7a6e974b70eb4f6c7a7e44b4219cd9e87393a1af2f3eed10d0335df41556783",
+    "targets/3QUE/model/3QUE_S0057.pdb": "5467aa5e08c18f2d0a020a085ad52d380eeb3213ff9643451398370fb1e0d109",
+    "targets/3QUE/refinement/S0057/FACTS.txt": "5d5641781e4b42497637f3b9661932b54aa4a256d8e53a83689c233e8184d6d5",
+    "targets/3QUE/refinement/S0057/change.json": "138d59d1acdaf7206d13b9e4ea48168a6ec0b5165daab1e73f91db3c0f194572",
+    "targets/3QUE/refinement/S0057/reference_model_3LFF.pdb": "032cf7c97097033e73b4c539fc432af6ce0598da0e9b4650ee8db628774a0c72",
+    "targets/3QUE/refinement/S0057/score.json": "6e6a9d0be54f99d057087e5039300224358648a96fba0f56cfd9c623641a918a",
+    "targets/3QUE/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/3QUE/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/3QUE/refinement/chains/chain_after_mask_T9884ae.log": "8cc9177a01fc4241e887fffba3da791dc304772ba1d11ab7f6a397eede4c1477",
+    "targets/3QUE/refinement/chains/chain_after_tls_T9884ae.log": "ebde1e164c3f0b10c7942bb185962cf125bb83a417ca92bd9d73e13e28ce9469",
+    "targets/3QUE/refinement/chains/chain_anneal.sh": "56393eba05d5b7872058a90cc7ae0a5e5f5f09bd48053f552460b03c38bc8610",
+    "targets/3QUE/refinement/chains/chain_anneal_T9884ae.log": "f5add27f4dfba2fda059025409738ffa50c8f81a00b60302ea59f58a5cd1dce2",
+    "targets/3QUE/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/3QUE/refinement/chains/chain_lowres.sh": "d0ed126a0ba153514fb7023a835e6e123f670d258a6bdd85374b62dd9eb0b6c1",
+    "targets/3QUE/refinement/chains/chain_lowres_T9884ae.log": "60f60ca644d387b5fa69240d9d4ba5e0146015c076607165bd33d11ebfb0ef48",
+    "targets/3QUE/refinement/chains/chain_occhet_T9884ae.log": "a7fd888d3a3a14afd6ae8aa63679e1286cfbf2aef4913b4acf8c3b26480f5324",
+    "targets/3QUE/refinement/chains/chain_que2.sh": "e59d878f9eae3d04f40096d8a0feb77e2aa72cd1b9b0cf2c8ff5bd9d483f967b",
+    "targets/3QUE/refinement/chains/chain_que2_T9884ae.log": "7570b424e85eb649640b08fbf387a7c301c7ba7a2f7367a7f0555e1b70472558",
+    "targets/3QUE/refinement/chains/chain_que3.sh": "caecada1de86a8d67ddf58a70a4ecfcf929b8f7c2ab46a4084ce6afc67c1d299",
+    "targets/3QUE/refinement/chains/chain_que3_T9884ae.log": "8aa36cdc53ebd76ad868c9beac4990c353266f3bc9d99df1d51d42edec64b94f",
+    "targets/3QUE/refinement/chains/chain_reference_T9884ae.log": "62ea4549279198c627e029c9840c3b79e3904127be9046cac427cf1d1855d7d9",
+    "targets/3QUE/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/3QUE/refinement/chains/chain_target_T9884ae.log": "de3c6a1d2f670ede6a022207392c783d6cefda8d1adb3b529bdfe8e3076b794f",
+    "targets/3QUE/refinement/chains/chain_wref_T9884ae.log": "e12b9ea24238c64e705b3739acb01b66a84ec449e49d9187cee4b2004021a792",
+    "targets/3QUE/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/3QUE/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/3QUE/refinement/chains/target_3QUE.log": "299b3bd96cc90833fcf2fc36647787be21260a3a26b7ee4197adce452b7b18d4",
+    "targets/3QUE/refinement/metaparams.yaml": "1771e681e828d407e2cc57ddcac9349011e730115e6f786fa6edff459982015f",
+    "targets/3QUE/refinement/run.json": "6638eaeb19b8e564f8841ee94b50dc1eae33e1af91a372e16925499a11861353",
+    "targets/3QUE/refinement/score_history.jsonl": "52237efaaf39ee999852ec85416db10c903e8de69c32905bc03be5055bb9eb24",
+    "targets/3QUE/refinement/score_history.txt": "3f425515338c2507ee5a5850d2c15241adf82a28a34e1fbb3fdea16a767f66e2",
+    "targets/3QUE/refinement/scorecard.csv": "1d50802a57017a0cc14fc82964e66cfd60f817eee924ace4f2ab41565d78a443",
+    "targets/3QUE/refinement/steps.md": "73ce7d7c18d07e86edbe66903016bfa53c0cab6e198313e321775aac8def0abd",
+    "targets/3QUE/validation/3QUE_S0057.clashscore.log": "6071449a02d2468eb261738c22cf962a7871b980ac1b413525d1f7c3503173b7",
+    "targets/3QUE/validation/3QUE_S0057.ramalyze.log": "4fc3c81a10e56968c751e2d321842ea4393cb7147f917419002ac38cd84ceed2",
+    "targets/3QUE/validation/3QUE_S0057.rotalyze.log": "d6d4a56aa23c6ac406bf42ba90fda1daa3091a027e9d99f3e8f880d4ccbfce9e"
+   }
   },
   {
    "id": "3TC7",
    "title": "Crystal Structure of Engineered Protein. Northeast Structural Genomics Consortium Target OR62.",
-   "status": "improved",
    "resolution_a": 1.5,
-   "space_group": "P 31 2 1",
-   "unit_cell": [
-    60.96,
-    60.96,
-    118.663,
-    90.0,
-    90.0,
-    120.0
-   ],
-   "deposited_refinement_software": [
-    "PHENIX"
-   ],
+   "initial_release_date": "2011-08-24T00:00:00.000+00:00",
    "primary_citation": {
     "title": "Exploration of alternate catalytic mechanisms and optimization strategies for retroaldolase design.",
     "journal_abbrev": "J.Mol.Biol.",
@@ -725,957 +234,232 @@
     "pdbx_database_id_DOI": "10.1016/j.jmb.2013.10.012",
     "pdbx_database_id_PubMed": 24161950
    },
-   "initial_release_date": "2011-08-24T00:00:00.000+00:00",
    "data": {
-    "kind": "amplitudes",
-    "labels": "FP,SIGFP",
-    "n_reflections": 41052,
+    "data_labels": "FP,SIGFP",
+    "n_reflections": 40272,
     "n_free": 2075,
-    "fraction_free": 0.050546,
-    "n_select": 1037,
-    "n_report": 1038,
-    "flags_source": "inherited",
-    "data_mtz_sha256": "999787e4c6ac7bf92b42aff1be61f56f14488d1b3b4f0bc77f6bb004ef2f2ead",
-    "flags_mtz_sha256": "411b1d1b86f0371724302b3513d1423aa380cb67812d20d3a36eed19b9ea36e3",
-    "sf_source_sha256": "2f6c3f1a97718bcff16047b959f54eafc08a6f85e1df7855d4057eca0f47e236",
-    "header_claim": {
-     "r_work": 0.158,
-     "r_free": 0.193,
-     "n_free": 2075,
-     "pct_free": 5.05,
-     "sigma_f": 1.34
-    }
+    "n_work": 38197,
+    "n_select": 1038,
+    "n_report": 1037,
+    "d_min": 1.4999525363353188,
+    "data_mtz_sha256": "5ddb980eeb8ee13881d4eb73e18db7dbfa85206dd113de2d03e243ab56af32b4",
+    "flags_mtz_sha256": "586823458cad43181e3c4f901ade2b44dfbc44c9e016d54e6151680fca8b991f"
    },
-   "r_free": {
-    "deposited_on_our_flags": {
-     "r_work": 0.1535434323695697,
-     "full": 0.19160274966622695,
-     "select": 0.19382719313336474,
-     "report": 0.1893292422054908,
-     "model_vs_data": {
-      "r_work": 0.1535,
-      "r_free": 0.1914
-     }
-    },
-    "rerefined_no_changes": {
-     "mean_full": 0.188470858737866,
-     "sd_full": 0.002043105071001623,
-     "n_seeds": 10,
-     "floor_file": "noise_floor.json"
-    },
-    "credit_bar": {
-     "protocol": "noise_floor_h_wxu003",
-     "sigma_full": 0.000149,
-     "sigma_select": 8.4e-05,
-     "sigma_report": 0.000269,
-     "k_multiple": 2.0,
-     "accept_threshold_select": -0.000168
-    },
-    "released": {
-     "r_work": 0.13499229799227888,
-     "full": 0.17165068327632663,
-     "select": 0.17549515686556866,
-     "report": 0.16772141309398073,
-     "model_vs_data": {
-      "r_work": 0.135,
-      "r_free": 0.1717
-     },
-     "ledger": {
-      "r_work": 0.13499200013114948,
-      "r_free_full": 0.17161219977360884,
-      "r_free_select": 0.1754544204245543,
-      "r_free_report": 0.16768523222205486
-     }
-    },
-    "delta_full_vs_deposited": -0.019952066389900325,
-    "delta_full_beyond_rerefinement": -0.016820175461539383,
-    "delta_beyond_in_sd_full": -8.232653180824112
+   "released_step": "S0061",
+   "facts": "S0061 2026-10-21T01:52:30Z refinement refine_step parent S0050 | restraint weights wc 0.3 wu 0.25 against 1 1 | R-free 0.14797 -> 0.14746 (-1.9 sigma) R-work 0.08328 -> 0.08064 gap +0.0021 clash 6.8 rota 2.7 % | atoms 25909 waters 1425 altlocs ABCDEF anisou 12109 | ACCEPT",
+   "released": {
+    "r_free": 0.14745672404315993,
+    "r_work": 0.08064106504192174,
+    "gap": 0.06681565900123819,
+    "r_free_select": 0.14829385372185977,
+    "r_free_report": 0.14664467454968266,
+    "clashscore": 6.82,
+    "rota_pct": 2.74,
+    "rama_outliers_pct": 0.4016,
+    "rama_favored_pct": 97.1888,
+    "bond_rmsd": 0.015,
+    "angle_rmsd": 1.4,
+    "n_atoms": 25909,
+    "n_h": 12375,
+    "n_water_atoms": 1425,
+    "water_occ_sum": 696.66,
+    "n_anisou": 12109,
+    "copies": 6,
+    "altlocs": "ABCDEF"
    },
-   "composition": {
-    "deposited": {
-     "n_atoms": 2220,
-     "n_hydrogen": 0,
-     "n_water_residues": 180,
-     "altlocs": [
-      "A",
-      "B"
-     ]
-    },
-    "released": {
-     "n_atoms": 4804,
-     "n_hydrogen": 2274,
-     "n_water_residues": 236,
-     "altlocs": [
-      "A",
-      "B",
-      "C"
-     ]
-    }
+   "deposited_on_our_flags": {
+    "r_free": 0.19183679748255203,
+    "r_work": 0.15359888697107912,
+    "gap": 0.038237910511472906,
+    "r_free_select": 0.19038787246902056,
+    "r_free_report": 0.19324231308337703,
+    "clashscore": 2.92,
+    "rota_pct": 1.36,
+    "n_atoms": 2220,
+    "n_water_atoms": 180
    },
-   "coordinate_diff": {
-    "waters_added": [
-     "A 5001",
-     "A 5002",
-     "A 5003",
-     "A 5004",
-     "A 5005",
-     "A 5006",
-     "A 5007",
-     "A 5008",
-     "A 5009",
-     "A 5010",
-     "A 5011",
-     "A 5012",
-     "A 5013",
-     "A 5014",
-     "A 5015",
-     "A 5016",
-     "A 5017",
-     "A 5018",
-     "A 5019",
-     "A 5020",
-     "A 5021",
-     "A 5022",
-     "A 5023",
-     "A 5024",
-     "A 5025",
-     "A 5026",
-     "A 5027",
-     "A 5028",
-     "A 5029",
-     "A 5030",
-     "A 5031",
-     "A 5032",
-     "A 5033",
-     "A 5034",
-     "A 5035",
-     "A 5036",
-     "A 5037",
-     "A 5038",
-     "A 5039",
-     "A 5040",
-     "A 5041",
-     "A 5042",
-     "A 5043",
-     "A 5044",
-     "A 5045",
-     "A 5046",
-     "A 5047",
-     "A 5048",
-     "A 5049",
-     "A 5050",
-     "A 5051",
-     "A 5052",
-     "A 5054",
-     "A 5056",
-     "A 5057",
-     "A 5059",
-     "A 5060"
-    ],
-    "waters_removed": [
-     "A 782"
-    ],
-    "nonwater_residues_added": [],
-    "nonwater_residues_removed": [],
-    "altloc_changes": [
-     {
-      "residue": "A 107 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 11 ASP",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 129 THR",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 133 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 147 GLU",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 152 TYR",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 155 GLU",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 158 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 159 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 166 LEU",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 167 ASP",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 168 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 175 ARG",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 177 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 179 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 201 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 206 VAL",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 208 VAL",
-      "before": "-",
-      "after": "ABC"
-     },
-     {
-      "residue": "A 250 SER",
-      "before": "-",
-      "after": "ABC"
-     },
-     {
-      "residue": "A 30 ILE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 34 ASN",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 40 PHE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 46 THR",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 61 ASP",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 65 ASP",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 72 PHE",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 74 GLU",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 78 VAL",
-      "before": "-",
-      "after": "AB"
-     },
-     {
-      "residue": "A 82 ILE",
-      "before": "-",
-      "after": "AB"
-     }
-    ],
-    "hydrogens_delta": 2274
+   "status": "improved",
+   "files": {
+    "targets/3TC7/README.md": "7a3eabb22fc4a86ab7ac914d1c47608f2d86b5a8e9c73479aa1a2b1087680b28",
+    "targets/3TC7/data/3TC7_data.mtz": "5ddb980eeb8ee13881d4eb73e18db7dbfa85206dd113de2d03e243ab56af32b4",
+    "targets/3TC7/data/3TC7_flags.mtz": "586823458cad43181e3c4f901ade2b44dfbc44c9e016d54e6151680fca8b991f",
+    "targets/3TC7/data/3TC7_split.mtz": "eef053ab823a1be057a1302f56ed8fe152867db30f1bbc1d4eb9f98a552e5552",
+    "targets/3TC7/data/prep.json": "2af89eb9ed9c49f60f3f622f96cf231cfcace35efb20feb135f288f43c2c656c",
+    "targets/3TC7/data/split.json": "01aa421a7b4c2a192012b53b93723ab41fb591027a1df7d70e54b6c66acc3fca",
+    "targets/3TC7/deposited/3TC7.cif": "cf8d319f191839f9b7f27fcf05af1ff60ae9d832e0ded8d428e6f806cce79286",
+    "targets/3TC7/deposited/rcsb_entry.json": "759e1cc7ffa5a7d0934f7fd5f37ca0c48f0888ae23e7e73cf81e91bb30557b9c",
+    "targets/3TC7/maps/3TC7_S0061_map_coeffs.mtz": "20c5f323c830fa5a804c7b50b44a141bcbacd2a5fcf6d386dce075c940dd622b",
+    "targets/3TC7/model/3TC7_S0061.cif": "5defcb166e77aeab1471f0131a17f8da905c0a19a3cb47dc0f8c5412ef87ba35",
+    "targets/3TC7/model/3TC7_S0061.pdb": "c2132a8446db8443566b6788bd57d02b7064b52479ffca59ecac6675c942a1b8",
+    "targets/3TC7/refinement/S0061/FACTS.txt": "917a79e46202becccffc0610e7ad5f97d1a15e064157504cda3ad4f02c2d608f",
+    "targets/3TC7/refinement/S0061/change.json": "709ad7174526bac1c0c735aab3df870f85d6c7743b88e2217f1ec3e56ca0e916",
+    "targets/3TC7/refinement/S0061/score.json": "2be8ff3f76ab23654b6bef68ae2a58e6528bb37ab7450fb61f559685f5db7af8",
+    "targets/3TC7/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/3TC7/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/3TC7/refinement/chains/chain_after_settle2_T431c8e.log": "57ce32936f84bd29347b2232353b203852729d45f820d671782e9e453bb7abc4",
+    "targets/3TC7/refinement/chains/chain_after_settle_T431c8e.log": "35bd8cfb14eaa8295eb5d342db414c93b11b55181e3d366640d999e38ceb2c46",
+    "targets/3TC7/refinement/chains/chain_anisogb_T431c8e_gap.log": "4beaa787247790fcbd71451edc1da4db19ae0e9109ba7693a3780fad54b414aa",
+    "targets/3TC7/refinement/chains/chain_gap.sh": "a121f33ec6bc19e0fb1bb4b9a8042a6464fd5a9147b7302c05d36658d43206ee",
+    "targets/3TC7/refinement/chains/chain_gap_T431c8e_gap.log": "1b41882af25f2ccc5dddd27de44bd9c5bc3a91957be25e3eb58a08acba9fffa8",
+    "targets/3TC7/refinement/chains/chain_gb_T431c8e.log": "d4bcbc8f73aea5714d37fecaecfbea42d2ade34f208f96981fa6d4224cf64445",
+    "targets/3TC7/refinement/chains/chain_ions.sh": "f2bfd3d75c4563599a7e1adf7bbd87c7990e57f08876fb5c5f2965f5933223b9",
+    "targets/3TC7/refinement/chains/chain_ions_T431c8e.log": "353393c01169296251d3e3176618a585c255048a637109bfae0c8a2d13cea4b2",
+    "targets/3TC7/refinement/chains/chain_ions_T431c8e_gap.log": "86cea42a81bfe93d1b59127bf94c5ecbcb2767d151329070568af4fe00519f22",
+    "targets/3TC7/refinement/chains/chain_iso_T431c8e.log": "6f40231ad0ec679105f1df4eddd91c41036682ca3ed5f912183f88e2adb2c6c2",
+    "targets/3TC7/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/3TC7/refinement/chains/chain_qfit.sh": "c212fc345455bb4a6d724d65406fc817dda0cba65f4dfa7448f62844d75097c9",
+    "targets/3TC7/refinement/chains/chain_qfit_T431c8e.log": "270e5bde54c92660aaf940af59f161c4c8ff8faaa4cbb190475950daf6bd2cc2",
+    "targets/3TC7/refinement/chains/chain_semet_T431c8e.log": "0d7f0785d7bedb8f1fb6391370b3e1476d0fdc1d4f9bcf2683f6f5f407697e1e",
+    "targets/3TC7/refinement/chains/chain_semet_T431c8e_gap.log": "ac631e2cc0484ef4dfff47467e9ee7524c092ca54e782bde6e9b3c01f8c6d024",
+    "targets/3TC7/refinement/chains/chain_settle_r_T431c8e.log": "50bb7c6303a1e136827cf36ffeb24d0ebbb6558e5c49aec91b65467d5474d37c",
+    "targets/3TC7/refinement/chains/chain_settle_r_T431c8e_gap.log": "ebf57cbddb574a344fe4c2128c995b90e6b7c8df1e7c22ba12701c5c498457a0",
+    "targets/3TC7/refinement/chains/chain_six.sh": "f70f38d29b7a0a7b760473f599097a307923bfa1b189bc1ee6c98638aa9d268a",
+    "targets/3TC7/refinement/chains/chain_six_T431c8e.log": "90aebe68b23de79337e383b6a9fc4b8a646b07e818e588804bc8ea619be82351",
+    "targets/3TC7/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/3TC7/refinement/chains/chain_target_T431c8e.log": "9bd0ec1dcdeccc3eb6aee39ec5a9ad0863e456bfc7998ace0f5befa6431e34b4",
+    "targets/3TC7/refinement/chains/chain_target_T431c8e_gap.log": "e3fc7e83a996506e8d225cf50da614f63df61cdd92cd40585d10f9220f8481a2",
+    "targets/3TC7/refinement/chains/chain_weights.sh": "b49c01118885191d71a9d512e89f26279670cdb2e0a9c373b051f7fe3f96a454",
+    "targets/3TC7/refinement/chains/chain_weights_T431c8e.log": "3f53aab5b08f1027890025b03e6c14fdf07999cd07100d0c471f03def0185d11",
+    "targets/3TC7/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/3TC7/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/3TC7/refinement/chains/target_3TC7.log": "48071b54e761ffaffcb3eb486fada945981efa76e2fdfd09cb12f34f98dd61b4",
+    "targets/3TC7/refinement/main_run_T431c8e/metaparams.yaml": "4531350997ebe73f2dc9effa8544725107f9a8b4ffd2eba7e5b63a29cdb6cf9c",
+    "targets/3TC7/refinement/main_run_T431c8e/run.json": "53a1d17b23fb3e47122dc5cd5d8191dbaa607a2e6c60035b2092f1dd3091d935",
+    "targets/3TC7/refinement/main_run_T431c8e/score_history.jsonl": "4645efecd7b54f64189d83fd702f6a5cb29449099b9ae03a01dffd8082bc5855",
+    "targets/3TC7/refinement/main_run_T431c8e/score_history.txt": "31b41811a38e69414ae30d23055d3fe849ec8d1f35685ad346664a6e082dd753",
+    "targets/3TC7/refinement/main_run_T431c8e/scorecard.csv": "ca4d01c7323cd876b764eef65d3e5f1a8dd52549c74f55ba1cdd500aa4b8fb71",
+    "targets/3TC7/refinement/metaparams.yaml": "e37ed882c1967e1e7fe139eea80216e7eab02c2679bb77f669556a045ccd8ed7",
+    "targets/3TC7/refinement/run.json": "5593f233bf8b5ab69cf9958b644bf0b98ea5abf9b17163e8e75e7f021f3ba8a9",
+    "targets/3TC7/refinement/score_history.jsonl": "10194f5525bf73b9fd68d4e70a62b50fba7f05a50de0a55e0e7356f7ec653e7a",
+    "targets/3TC7/refinement/score_history.txt": "067e3907453a36da9369f2961868a42020fd426403dd7f38aef79b05b82e737b",
+    "targets/3TC7/refinement/scorecard.csv": "101a4b6be48c88313af0fa709c8b9e1bedce5f3db660f4856e3c7c009e7bc326",
+    "targets/3TC7/refinement/steps.md": "d5c589960d2a7a56171263385e6a699ee1a459999b66c3192a65f18c4439dbd3",
+    "targets/3TC7/validation/3TC7_S0061.clashscore.log": "3dca4d8d3e023787c30688c558b5b1225a182f2aaa971e17cc350c78fa0d9f29",
+    "targets/3TC7/validation/3TC7_S0061.ramalyze.log": "d120c196ba6c39980c8558923801b8557732cd7adb21f0c3e5d3017d877ebb40",
+    "targets/3TC7/validation/3TC7_S0061.rotalyze.log": "b0f57352c35832f367c39d64f0654c7f421edd9a8cb3f83f2f4b1e1387a86509"
+   }
+  },
+  {
+   "id": "4QO4",
+   "title": "co-crystal structure of MDM2 (17-111) with compound 16, {(3R,5R,6S)-5-(3-CHLOROPHENYL)-6-(4-CHLOROPHENYL)-1-[(1S)-1-(6-CYCLOPROPYLPYRIDIN-2-YL)PROPYL]-3-METHYL-2-OXOPIPERIDIN-3-YL}ACETIC ACID",
+   "resolution_a": 1.7,
+   "initial_release_date": "2014-07-16T00:00:00.000+00:00",
+   "primary_citation": {
+    "title": "Discovery of Potent and Simplified Piperidinone-Based Inhibitors of the MDM2-p53 Interaction.",
+    "journal_abbrev": "ACS Med Chem Lett",
+    "year": 2014,
+    "pdbx_database_id_DOI": "10.1021/ml500142b",
+    "pdbx_database_id_PubMed": 25147610
    },
-   "molprobity": {
-    "deposited": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 97.99,
-     "rotamer_outliers_pct": 1.36,
-     "cbeta_deviations": 0.0,
-     "clashscore": 2.92,
-     "rms_bonds": 0.0075,
-     "rms_angles": 1.12,
-     "molprobity_score": 1.19
-    },
-    "released": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 97.99,
-     "rotamer_outliers_pct": 1.59,
-     "cbeta_deviations": 1.0,
-     "clashscore": 2.55,
-     "rms_bonds": 0.0066,
-     "rms_angles": 1.04,
-     "molprobity_score": 1.2
-    }
+   "data": {
+    "data_labels": "IMEAN,SIGIMEAN",
+    "n_reflections": 10811,
+    "n_free": 528,
+    "n_work": 10283,
+    "n_select": 264,
+    "n_report": 264,
+    "d_min": 1.7003590181767632,
+    "data_mtz_sha256": "18b3a17270ee0095586b08e4e735b2049145532985363f166919497d59dd5696",
+    "flags_mtz_sha256": "5832a8935cd6545714513e4175ebd5267cca241af678212735eb6d05989c7893"
    },
-   "campaign": {
-    "cycle_index": 913,
-    "stage": "rerefine",
-    "updated_at": "2026-10-03T05:45:25+00:00",
-    "model_on_pod": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0/combined/g003.N2.0.loo5/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 74,
-    "n_credited_cycles": 13,
-    "writing_cycle": {
-     "cycle_index": 913,
-     "stage": "graph",
-     "run_id": "3TC7.graph-weekend-20261002c",
-     "verdict": "accepted",
-     "attributable_delta_select": -0.001013,
-     "delta_r_gap": -0.00026,
-     "geometry_flag": "rota_outliers 1.59 > 1.5",
-     "run_dir": "/home/dev/runs/3TC7/graph/3TC7.graph-weekend-20261002c/g003/N2.0"
-    },
-    "bisect_step": null,
-    "credited_cycles": [
-     {
-      "cycle_index": 11,
-      "run_id": "3TC7.run1",
-      "attributable_delta_select": -0.004597,
-      "r_free_full": 0.18490707304719667,
-      "delta_r_gap": null,
-      "geometry_flag": null,
-      "accepted_changes": 14.0
-     },
-     {
-      "cycle_index": 57,
-      "run_id": "3TC7.E028b",
-      "attributable_delta_select": -0.009941,
-      "r_free_full": 0.17276394500804818,
-      "delta_r_gap": 0.00077,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 58,
-      "run_id": "3TC7.E029",
-      "attributable_delta_select": -0.010409,
-      "r_free_full": 0.17514549700021165,
-      "delta_r_gap": -0.00926,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 64,
-      "run_id": "3TC7.20260910v6",
-      "attributable_delta_select": -0.000844,
-      "r_free_full": 0.17323967124612574,
-      "delta_r_gap": 0.00026,
-      "geometry_flag": null,
-      "accepted_changes": 5.0
-     },
-     {
-      "cycle_index": 68,
-      "run_id": "3TC7.20260910v7",
-      "attributable_delta_select": -0.00149,
-      "r_free_full": 0.1726909303197506,
-      "delta_r_gap": -0.00113,
-      "geometry_flag": null,
-      "accepted_changes": 5.0
-     },
-     {
-      "cycle_index": 912,
-      "run_id": "3TC7.graph-weekend-20261002c",
-      "attributable_delta_select": -0.001642,
-      "r_free_full": 0.17183178692079418,
-      "delta_r_gap": -0.00155,
-      "geometry_flag": "rota_outliers 1.58 > 1.5",
-      "accepted_changes": 3.0
-     },
-     {
-      "cycle_index": 913,
-      "run_id": "3TC7.graph-weekend-20261002c",
-      "attributable_delta_select": -0.001013,
-      "r_free_full": 0.17161219977360884,
-      "delta_r_gap": -0.00026,
-      "geometry_flag": "rota_outliers 1.59 > 1.5",
-      "accepted_changes": 7.0
-     },
-     {
-      "cycle_index": 915,
-      "run_id": "3TC7.graph-weekend-20261002c",
-      "attributable_delta_select": -0.001724,
-      "r_free_full": 0.1705703151497331,
-      "delta_r_gap": -0.00015,
-      "geometry_flag": "rota_outliers 1.62 > 1.5",
-      "accepted_changes": 5.0
-     },
-     {
-      "cycle_index": 917,
-      "run_id": "3TC7.graph-weekend-20261002c",
-      "attributable_delta_select": -0.000467,
-      "r_free_full": 0.17052156534399573,
-      "delta_r_gap": -0.00014,
-      "geometry_flag": null,
-      "accepted_changes": 3.0
-     },
-     {
-      "cycle_index": 919,
-      "run_id": "3TC7.graph-weekend-20261002c",
-      "attributable_delta_select": -0.000507,
-      "r_free_full": 0.17057866790171486,
-      "delta_r_gap": -0.00024,
-      "geometry_flag": null,
-      "accepted_changes": 2.0
-     },
-     {
-      "cycle_index": 957,
-      "run_id": "3TC7.E042",
-      "attributable_delta_select": -0.000343,
-      "r_free_full": 0.17094083732944196,
-      "delta_r_gap": -0.00075,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 965,
-      "run_id": "3TC7.E042",
-      "attributable_delta_select": -0.000429,
-      "r_free_full": 0.17090311341454603,
-      "delta_r_gap": -0.00064,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 966,
-      "run_id": "3TC7.E042",
-      "attributable_delta_select": -0.00022,
-      "r_free_full": 0.17102281480972137,
-      "delta_r_gap": -0.00087,
-      "geometry_flag": null,
-      "accepted_changes": 1.0
-     }
-    ],
-    "n_changes_proposed": 2053,
-    "thresholds_version": "thresholds_v9",
-    "run_summary": null,
-    "refinement": {
-     "phenix_version": "2.1-6048",
-     "macro_cycles": 5,
-     "adp_model": "anisotropic",
-     "n_tls_groups": 0,
-     "riding_hydrogens": true,
-     "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=16.23 >= 5.0 and d_min=1.5 <= 1.5"
-    }
+   "released_step": "S0064",
+   "facts": "S0064 2026-10-20T08:38:01Z rotamer-finder build_loop parent S0052 | residues 69 to 72 of chain A built by phenix.fit_loops into the work-only 2mFo-DFc map, their rotamers fitted by Coot and inserted (the deposited model has none); a side chain with a correlation under 0.3 cut to CB | R-free 0.28374 -> 0.27468 (-13.1 sigma) R-work 0.22551 -> 0.22292 gap -0.0065 clash 7.3 rota 3.5 % | atoms 892 waters 77 altlocs - anisou 0 | ACCEPT",
+   "released": {
+    "r_free": 0.27468204163065274,
+    "r_work": 0.2229154232315039,
+    "gap": 0.05176661839914884,
+    "r_free_select": 0.28740824149371647,
+    "r_free_report": 0.26253338729562076,
+    "clashscore": 7.34,
+    "rota_pct": 3.53,
+    "rama_outliers_pct": 0.0,
+    "rama_favored_pct": 95.6044,
+    "bond_rmsd": 0.016,
+    "angle_rmsd": 1.634,
+    "n_atoms": 892,
+    "n_h": 0,
+    "n_water_atoms": 77,
+    "water_occ_sum": 65.04,
+    "n_anisou": 0,
+    "copies": 1,
+    "altlocs": ""
    },
-   "caveats": [
-    "The held-back report half did not improve with the 2026-10-03 promotions: ledger 0.16726 \u2192 0.16769 (independent scorer 0.16730 \u2192 0.16772, +1.6\u03c3_report, D519). The full-set gain 0.17276 \u2192 0.17161 is carried by the select half (0.17815 \u2192 0.17545), the half the search consults. Each promotion passed the promotion rules; D519 proposes a cumulative report bound that would have refused the second one.",
-    "Rotamer outliers 1.59 % at release time (campaign monitor 1.58 %) exceed the campaign's 1.5 % cap (D517); the previous released model had 0.8 %. Depositable by ordinary standards, not by the campaign's own bar.",
-    "What the 2026-10-03 promotions added: qFit alternate conformers at A175, A250 and A30 in a credited batch (`3TC7.graph-weekend-20261002c` generation 2, D517), then a second credited batch (generation 3, node N3.0, D519).",
-    "The largest single credited change on record is riding hydrogens on a model that never had any (no new parameters), \u22120.011 on every R-free set with the R-free \u2212 R-work gap unchanged (D488). Earlier credits added waters and alternate conformations.",
-    "The refinement protocol uses a fixed ADP weight (wxu_scale 0.03) because Phenix's weight optimiser widens the R-gap on the hydrogen-bearing model (D491/D496); a re-refinement with default weights will not reproduce the R-gap. The credit bar (\u03c3_select) quoted below is from the noise floor re-measured under that protocol.",
-    "Campaign records after 2026-09-28 report a lower R-free on this target from manual Coot\u2013refinement alternation (0.1583, D512). That model was never scored on the frozen flags and no copy of it was found (E039); plain Phenix water picking on these flags reaches 0.1702 and fails the R-gap gate. It is not in this release."
-   ],
-   "files": [
-    {
-     "path": "data/3TC7_data.mtz",
-     "bytes": 823680,
-     "sha256": "999787e4c6ac7bf92b42aff1be61f56f14488d1b3b4f0bc77f6bb004ef2f2ead",
-     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
-    },
-    {
-     "path": "data/3TC7_flags.mtz",
-     "bytes": 659392,
-     "sha256": "411b1d1b86f0371724302b3513d1423aa380cb67812d20d3a36eed19b9ea36e3",
-     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
-    },
-    {
-     "path": "data/3TC7_split.mtz",
-     "bytes": 659392,
-     "sha256": "221eb16c71fc822943ad5c7b233ec8addb7684b6dfd0f53842f99492662893fb",
-     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
-    },
-    {
-     "path": "data/prep.json",
-     "bytes": 3874,
-     "sha256": "adce363a6a17e0b971aaad34ec1f12a232da01bd10db975088fee83af1b1cf99",
-     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
-    },
-    {
-     "path": "data/split.json",
-     "bytes": 59391,
-     "sha256": "04673f7d976633f4c0119008fe0e84bfe32c95750cb3c428149913a24e3b2e4b",
-     "description": "The same split as a list of reflections, with the seed that made it."
-    },
-    {
-     "path": "deposited/3TC7.cif",
-     "bytes": 444839,
-     "sha256": "cf8d319f191839f9b7f27fcf05af1ff60ae9d832e0ded8d428e6f806cce79286",
-     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
-    },
-    {
-     "path": "deposited/3TC7.fasta",
-     "bytes": 348,
-     "sha256": "8d8305d142e58af9390eea90ffb889f3439bda8b16a8c9d4a79b901760c8ad78",
-     "description": "The entry's sequence as fetched from RCSB."
-    },
-    {
-     "path": "deposited/FETCHED",
-     "bytes": 76,
-     "sha256": "12b8d61029ad39906d95b80b2b6857921d7564795f935fec23485f9662d935c2",
-     "description": "When the raw files were fetched."
-    },
-    {
-     "path": "deposited/fetch_manifest.sha256",
-     "bytes": 756,
-     "sha256": "3da23dd628aa5f5fd6aaa842a77b5bc7449691c816722eec31f84bf73905a490",
-     "description": "SHA-256 of the raw files at fetch time."
-    },
-    {
-     "path": "deposited/rcsb_entry.json",
-     "bytes": 13974,
-     "sha256": "7d8ddfaf00a74ba0f0ab1e5dded65caee00f2f84d91262fa260ff776b55a0a96",
-     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
-    },
-    {
-     "path": "ledger/bisections.csv",
-     "bytes": 246,
-     "sha256": "8c31a7c401cd50a03b229cb094cb749ebf14079358828fc0e833970fdb12b8be",
-     "description": "Bisection steps when a cycle regressed."
-    },
-    {
-     "path": "ledger/changes.csv",
-     "bytes": 6025594,
-     "sha256": "1fdfb08cfac0b8b46374b0bd36740832fa2ac78e22c81f43c2fd89a7ebae78d3",
-     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
-    },
-    {
-     "path": "ledger/checks.csv",
-     "bytes": 1799,
-     "sha256": "f902f1c162695968f0ad6a65b01a5f604c590eea86cbc61a9a62cf567c99e6cf",
-     "description": "Gate results G0\u2013G8."
-    },
-    {
-     "path": "ledger/cycles.csv",
-     "bytes": 38391,
-     "sha256": "13154af68e5081d34d876c341f99dbf10d6df80c03cd80817309394036188fd2",
-     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
-    },
-    {
-     "path": "ledger/defects.csv",
-     "bytes": 118347,
-     "sha256": "e0fcf9a1c8a2d4b46d8156205f957eea4c4ab66012dc2c19dfd7a46f4ffccefd",
-     "description": "Values that could not be computed, with the reason (never a sentinel)."
-    },
-    {
-     "path": "ledger/deviations.csv",
-     "bytes": 130841,
-     "sha256": "198c203f48fe35fa82f92d5cb1572d76c92ebfbd7327afc9fd79733609184bf3",
-     "description": "Decision-log rows that name this target."
-    },
-    {
-     "path": "ledger/noise_floor.csv",
-     "bytes": 1352,
-     "sha256": "2a076d691eb908bfcfe40bdc0bb70e1c6c7dbcbbb28371416c2d1c2d5f4aa2a3",
-     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
-    },
-    {
-     "path": "ledger/rfree_consultations.csv",
-     "bytes": 228,
-     "sha256": "1e81dc6597594ba0c79ad0651244796012f51a431d0f80fee2fa5bc0638e319e",
-     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260908v5/DECISIONS.md",
-     "bytes": 1351,
-     "sha256": "b74b19e40d8b0d6af80ef12ecd741f9844f056f31aa456ae1646831b64b3d61c",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260908v5b/DECISIONS.md",
-     "bytes": 18282,
-     "sha256": "0241b3321624f904448126b1b57e5401620e66ef03d01f44e8f071aa082ffae7",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260908v5b/run_summary.json",
-     "bytes": 3140,
-     "sha256": "856f9377519bfe79639314f27daa5418341ebd8d6fbaf9aba3a41ae1fe55de4f",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260909corr/DECISIONS.md",
-     "bytes": 1324,
-     "sha256": "7d26cb682ac33ac07091e7a57f1fe7b4116f376d56303f2639edfc48db46f1a0",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260909corr_h/DECISIONS.md",
-     "bytes": 1335,
-     "sha256": "59425ea5093ac1c642eb98bc7ecb1c481da452c94e80a9c8506cb169d59bae1c",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260909corr_h2/DECISIONS.md",
-     "bytes": 5217,
-     "sha256": "76bc5fb54a2c5fb25779ec8f1b46808568c5db0e263267c2ebaaf7b1efd10413",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260909corr_h2/run_summary.json",
-     "bytes": 2642,
-     "sha256": "1329cc8a47f23bb8e4737cbbde9a2e39e5e6409b8c3e70d2fa52f2b94219a87b",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260910v6/DECISIONS.md",
-     "bytes": 18259,
-     "sha256": "7d2c97b239d5b663c4d2f69ce4316951b5e8b74a01c047ce4733e85cda6ba894",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260910v7/DECISIONS.md",
-     "bytes": 28859,
-     "sha256": "90ae51d17ba8f9af63addee6bd1ce3e4e903bced2cfe31ff0d37d504f3417a98",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.20260910v7/run_summary.json",
-     "bytes": 2845,
-     "sha256": "44a9f0477e56903949f890c5b11738da1d9657ea8ed6558abc4a8dd528393b0d",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3TC7.run1/DECISIONS.md",
-     "bytes": 58975,
-     "sha256": "df35e64988350660d8b255b4023393d6d1dc2e8b994a3daf8ff8bebf073cadd1",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.run1/run_summary.json",
-     "bytes": 4174,
-     "sha256": "873bf4482703f7939def7617212a99088002886cd1279419bf9207084882b3e0",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3TC7.run2/DECISIONS.md",
-     "bytes": 62516,
-     "sha256": "874488b4dd65a1d6e4a9bf4471e136029176b06463b60a6d360397457c2cd448",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.run2/run_summary.json",
-     "bytes": 5315,
-     "sha256": "2b9b3b6e2f5a7cf71cd5f727e5ba71863840aceba94c9191dc456be1098b0fe8",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/3TC7.smoke1/DECISIONS.md",
-     "bytes": 5796,
-     "sha256": "1cc5814715541a444b4ff5298011c9bdefab4e706d3891d5e0ead4703eb21185",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/3TC7.smoke1/run_summary.json",
-     "bytes": 1514,
-     "sha256": "d27d7d0bd290f6033058c53250b70a0ebb8c4fa6e16654ed1fa84a9928f1a584",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/solvent_disagreements.csv",
-     "bytes": 120,
-     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
-     "description": "Phenix/Coot disagreements on solvent sites."
-    },
-    {
-     "path": "maps/3TC7_refined_map_coeffs.mtz",
-     "bytes": 2674208,
-     "sha256": "25e21800baee9f10c6a9fe15aa96007f6ee446296177a4c5e4c5e0a75d666d27",
-     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
-    },
-    {
-     "path": "model/3TC7_refined.cif",
-     "bytes": 629537,
-     "sha256": "0b3d85debe8d7a7ce6aea80febcbbf6853a9c904dee5221ba61eae1ab9f1ea92",
-     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
-    },
-    {
-     "path": "model/3TC7_refined.pdb",
-     "bytes": 585859,
-     "sha256": "2c8098e379adb2378a4c4e70921803bc668538500ba340dc0637c739b9f540c3",
-     "description": "The same model in PDB format, from the same run."
-    },
-    {
-     "path": "refinement/command.txt",
-     "bytes": 1615,
-     "sha256": "dbd48f95ce3249c6b50d0396bdb5c578c85791aa084161dbcc8e738cd48d2769",
-     "description": "The verbatim phenix.refine argv that wrote the model."
-    },
-    {
-     "path": "refinement/current.json",
-     "bytes": 519,
-     "sha256": "2a93b0f4b454ed711e0b4c216c88a26a22fdd352813778fe8e540b485ba2a6d8",
-     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
-    },
-    {
-     "path": "refinement/experiment_paired_cycle.json",
-     "bytes": 7266,
-     "sha256": "018d1e8568fc33b9922d44d03c7ad3bb27e5fe822a294f1f7de4f424f619f615",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
-     "path": "refinement/model_vs_data.campaign.log",
-     "bytes": 2101,
-     "sha256": "d7575108cdc8e51c7bffb77f280e4177ed6baf077902c52da656ef244e406cc9",
-     "description": "phenix.model_vs_data as run by the campaign on this model."
-    },
-    {
-     "path": "refinement/refine_001.eff",
-     "bytes": 42818,
-     "sha256": "60e70cd9d464bb798976fff58942fbae2c1e8c34e63c18edafd8f07c8305add8",
-     "description": "The effective parameters of that run."
-    },
-    {
-     "path": "refinement/refine_001.log",
-     "bytes": 73146,
-     "sha256": "917fbcb2c907fcd9aa38e4c78b07e955c31356307e6480427cf2e04d2512d2d7",
-     "description": "The phenix.refine log of that run."
-    },
-    {
-     "path": "refinement/refine_decisions.json",
-     "bytes": 2108,
-     "sha256": "d8216b0d0cc3accc2d7c654e0b408ae445bc46d2646464bd8462fafcb452a826",
-     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
-    },
-    {
-     "path": "refinement/refine_result.json",
-     "bytes": 3180,
-     "sha256": "91a422eef0fa991c68fa1709c4c8f5dc5001249295fdea1a7170d230e45b98f8",
-     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
-    },
-    {
-     "path": "validation/campaign/checks/G3_3TC7.json",
-     "bytes": 4551,
-     "sha256": "fc38944ae5d5866da233beb41a2948530c45229421e1bd5559bc811887a90f71",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/checks/fetch_3TC7.json",
-     "bytes": 2207,
-     "sha256": "34396a2a91a0f222c46542b3e99846ab842f264b2fc80e6f196e2e6c8e379cb4",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/dossier.json",
-     "bytes": 108085,
-     "sha256": "bf3ad6accee9e75d51e12f9c630efc09cf90263ecab23b81ddee6371613ab9aa",
-     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
-    },
-    {
-     "path": "validation/campaign/noise_floor.json",
-     "bytes": 7472,
-     "sha256": "cf6f4c248ed35dd163ca96e7caf758364fa6fbfc85edefe83306b8bff80f0058",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/noise_floor_h.json",
-     "bytes": 7664,
-     "sha256": "ba8a47fc46a7c17d595dea724d3d75f833ba186c5449810a04237faed1037060",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/noise_floor_h_fixedadp.json",
-     "bytes": 7984,
-     "sha256": "f948cb29be1d51af27cf33a45c1a1e3f00f9652d43680e215328bc2c79e738f3",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/noise_floor_h_input.json",
-     "bytes": 7834,
-     "sha256": "36224fb3492c84bbe387cfc60d3de33f5ac15cdc1b5437d6ffc88d6a15321bd0",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/noise_floor_h_wxu003.json",
-     "bytes": 7859,
-     "sha256": "db5ec0f1ad4c1588fe703de460bb3443bd4f5889a59ba600666a07e70216d6de",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/3TC7_deposited.indep.json",
-     "bytes": 530,
-     "sha256": "b668ae5804a3ac31950fa726254bf90725d79ed860ee31bd9b5613c9c1d096e2",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/3TC7_ours.indep.json",
-     "bytes": 585,
-     "sha256": "62d65cb60dc5527628b3a5d42e869cc5febd59405038926eec2ef59bb5a4abbf",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/3TC7_pdbredo.indep.json",
-     "bytes": 544,
-     "sha256": "beca2d9676f76350ed2aa9bf2785936bfef6cda33d2f9096ceacc8dddd882240",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/3TC7_e028b_candidate.indep.json",
-     "bytes": 595,
-     "sha256": "bb8f0b6f0af8d8de816d6903f93cbef096df1996ecba6e061b91fa3466740519",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/3TC7_e028b_null.indep.json",
-     "bytes": 587,
-     "sha256": "ca98180bc441a208f308005f9e123bc738bbbf105fdeb9339cce144ae59b9723",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20261003/3TC7_N2.0.json",
-     "bytes": 693,
-     "sha256": "466f3bde2f97adfe39b5317c4f70842ce5ce0b2f6b8ead2a011bc4fdae4732d4",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20261003/3TC7_N3.0.json",
-     "bytes": 693,
-     "sha256": "c541d38cca1716a298bf49d1830bb5a2e0246024de6ecc307eda26aa4379d5c9",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20261003/3TC7_start.json",
-     "bytes": 660,
-     "sha256": "b9cdd13d6c47d7006b5fed5756fed0c9a980e8363d72a18455cfa6a098019ab2",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/release/merge_mtz.log",
-     "bytes": 395,
-     "sha256": "5d6631d30afb0434a229d5607a909c8e15661e5d288cc9bc5bf3184a2495656c",
-     "description": "Log of the data+flags merge used by model_vs_data."
-    },
-    {
-     "path": "validation/release/model_diff.json",
-     "bytes": 3207,
-     "sha256": "dca0daf812582fa6a1d4216310e2c46f316d0f27325e40aad09228cf2fb62e13",
-     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
-    },
-    {
-     "path": "validation/release/model_vs_data.deposited.log",
-     "bytes": 3316,
-     "sha256": "39d2f63555ad94df545c31530d34903478aa8e2e2a05d4c5c3a1c47bcb16dcca",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/model_vs_data.refined.log",
-     "bytes": 2293,
-     "sha256": "4ec64f59be89dc9a35f52dcaf6637a2648b70c319f66dcb2306f2e66c866c671",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.log",
-     "bytes": 16206,
-     "sha256": "e728edf3fb650c3c32352e0d23ce1fceca391caf3613a04bd715e8179e488ee7",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.out",
-     "bytes": 3899,
-     "sha256": "105d5601faec004f571b359982d3beb8c2c665496b08a0f546d81252207e2d93",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.log",
-     "bytes": 24270,
-     "sha256": "e3a914300abc65a9d713d1237cbec8a00f587909ee54cc51376f26ed3507f2d5",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.out",
-     "bytes": 9272,
-     "sha256": "e9b9b79e540d70591f0403eade90f571f87f5ce3019945868a5c56565ab1a8bf",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.json",
-     "bytes": 636,
-     "sha256": "6cd4675aeefd1b2e0251b7f460ffac50163363c5895bf9eeff93c52a98453309",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.log",
-     "bytes": 1089,
-     "sha256": "b6da200e86f24f5e1f418fd9604d6c0a4129d85cfba9e12ac6eba7d46caa553f",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.json",
-     "bytes": 653,
-     "sha256": "da0e65f7ca1862b30998f3520d88cba3acb8d6ee1742e1c4a5f1537f9f2ac43a",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.log",
-     "bytes": 1106,
-     "sha256": "aecaaec72bea75ed3c29aed18b814ef15b1b52253b6006d3905461ec223905c7",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/summary.json",
-     "bytes": 2553,
-     "sha256": "1ac4eb7a906dc87f6300edd5d8aac1bdd888202aa654d605514cfa5e3f7c4e18",
-     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
-    }
-   ]
+   "deposited_on_our_flags": {
+    "r_free": 0.3133276812332859,
+    "r_work": 0.2631063452191526,
+    "gap": 0.05022133601413331,
+    "r_free_select": 0.33682424380449477,
+    "r_free_report": 0.2908974491286057,
+    "clashscore": 16.02,
+    "rota_pct": 6.02,
+    "n_atoms": 845,
+    "n_water_atoms": 78
+   },
+   "status": "improved",
+   "files": {
+    "targets/4QO4/README.md": "e23c7ade859adcd4aa90905552412ad06f2fe0cbf132d244a3730a57ff4e007e",
+    "targets/4QO4/data/4QO4_data.mtz": "18b3a17270ee0095586b08e4e735b2049145532985363f166919497d59dd5696",
+    "targets/4QO4/data/4QO4_flags.mtz": "5832a8935cd6545714513e4175ebd5267cca241af678212735eb6d05989c7893",
+    "targets/4QO4/data/4QO4_split.mtz": "00a74cbccf531092a0afa14a78b8b4e698c40dc7fd50a62cfb07a1d397d33fa2",
+    "targets/4QO4/data/prep.json": "90df9a09dae899cb2235b8e280969f582784f982888bc81db182b7c29a27adbc",
+    "targets/4QO4/data/split.json": "a8eae9ccefc59d263eea67093d78ceef3b99c901851f09430e778b5e4fcb3e52",
+    "targets/4QO4/deposited/4QO4.cif": "cd9350e8612cc333da723cce0d0ce7e1418b9b57b6273ec10c18b95a8a499f29",
+    "targets/4QO4/deposited/rcsb_entry.json": "1907d7c6fbc867a3425ffdaa92b6ad49740e2c8e8a8b6730efbe2a0b1b294080",
+    "targets/4QO4/maps/4QO4_S0064_map_coeffs.mtz": "25e9b50dcbc757269f36f4cfe47d9dd18239707eaaf3d22c466916f90d9265dc",
+    "targets/4QO4/model/4QO4_S0064.cif": "645c9653a10058f820d71f8a8e221710d4f16c0f99811e95f0b2895c835565b7",
+    "targets/4QO4/model/4QO4_S0064.pdb": "4464dba6f58d68b1a00514e011c8c84af2a9ac71f78cf13941e0c39f5c3805e1",
+    "targets/4QO4/refinement/S0064/FACTS.txt": "c26c8d30d295bec11ed917f975e854dbefb064cf742c58ae0f61f727c065c265",
+    "targets/4QO4/refinement/S0064/change.json": "b0b181d6f771e2ea34f7ec171cbf0cd23e17f7865b5db7ba31abc82122d241b9",
+    "targets/4QO4/refinement/S0064/score.json": "9a5d5614580a7ce02728770d2d67c6c7759a40ab3fbf2b806c9bd98c904bbced",
+    "targets/4QO4/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/4QO4/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/4QO4/refinement/chains/chain_anneal.sh": "56393eba05d5b7872058a90cc7ae0a5e5f5f09bd48053f552460b03c38bc8610",
+    "targets/4QO4/refinement/chains/chain_anneal_T40560e.log": "936efb31a858eef04b347c951dd0cee375d2c5d4867e266f3a4bc8a20e3e38d4",
+    "targets/4QO4/refinement/chains/chain_coot.sh": "03897b58076a4abe6a18714a9d47e60fcb7f261e61af3429b4adb4873f2f138c",
+    "targets/4QO4/refinement/chains/chain_coot_T40560e.log": "faeb7ba264ec4088b4ee987879ab279b19e49cd4b3d5f5ad08a6f48b5e5023bb",
+    "targets/4QO4/refinement/chains/chain_ens.sh": "86b698299506eb72fa4bc9984cfa291ff566f1d82aba240b7c8b58bbf6700bad",
+    "targets/4QO4/refinement/chains/chain_ens_T40560e.log": "9f9c0d317859bc68ca358027e8fe52e74fdc0cb918d22b337fe3590722476cb3",
+    "targets/4QO4/refinement/chains/chain_ions.sh": "f2bfd3d75c4563599a7e1adf7bbd87c7990e57f08876fb5c5f2965f5933223b9",
+    "targets/4QO4/refinement/chains/chain_ions_T40560e.log": "b0b55c7769db45a0ffe3e4eea1614ed59f05459d5e52938ebfabd56def717f5c",
+    "targets/4QO4/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/4QO4/refinement/chains/chain_loop.sh": "23253b97f5b15283cb9f6c6b2a04dda76cc83fd96af205693fe14448f9a70e1f",
+    "targets/4QO4/refinement/chains/chain_loop2_T40560e.log": "fab6132318352d1182b8f4ff31229b5ca91c64cc70ef8763465d24cb504806fc",
+    "targets/4QO4/refinement/chains/chain_loop3_T40560e.log": "862584b34ad098157ec941b72f2c1bc57fb8a0e31bf4bedff4af93da88c5e749",
+    "targets/4QO4/refinement/chains/chain_loop_T40560e.log": "f22b2a0caed7b64616170696ad08348dd70f6b4bee2a87d99d3ee106111c77c1",
+    "targets/4QO4/refinement/chains/chain_more.sh": "47a53ed04a3eac148ab4533bc9ec0201330feae7bb1e76de9893c7841e933968",
+    "targets/4QO4/refinement/chains/chain_more_T40560e.log": "dc4d4e6242f65a0c6bb43db3acfbaf1db298da69060d5d03e538b484a2a361f5",
+    "targets/4QO4/refinement/chains/chain_occhet_T40560e.log": "ed5fd21164f584e8434f889a019053078f95cfaac28b939442f1f655e82c8b7a",
+    "targets/4QO4/refinement/chains/chain_peaks.sh": "9421638f06dfa14502ce7efe653b9c6f75bea3128513a1e7720d81420b30bb24",
+    "targets/4QO4/refinement/chains/chain_peaks_T40560e.log": "20f44ca35512d08a459448e99e45fca87b71c20a71c7736b7516b2ac95f0b42f",
+    "targets/4QO4/refinement/chains/chain_qfit.sh": "c212fc345455bb4a6d724d65406fc817dda0cba65f4dfa7448f62844d75097c9",
+    "targets/4QO4/refinement/chains/chain_qfit2_T40560e.log": "19e11b742cb32e20108e1d0d14d9aa5e58e870f54f4605659b2103351514acaf",
+    "targets/4QO4/refinement/chains/chain_qfit_T40560e.log": "cd1ba1d6c2b7e4b75bc639cb1f68708b20fc80a88ee906155ea2a705c083803e",
+    "targets/4QO4/refinement/chains/chain_reference2_T40560e.log": "81b6a6f4ea80439b81f36fee16d2ad8594ccf2be91779d64ee7a038619fdd339",
+    "targets/4QO4/refinement/chains/chain_reference_T40560e.log": "ce96e852df34943cbbf84368d0a3f8bc27a70c620ca44f1ca621d8c9333d131e",
+    "targets/4QO4/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/4QO4/refinement/chains/chain_target_T40560e.log": "169b89b5a0457ecda8ced41e83012ee39821cf1614ff5db3386da345bc451e7a",
+    "targets/4QO4/refinement/chains/chain_weights.sh": "b49c01118885191d71a9d512e89f26279670cdb2e0a9c373b051f7fe3f96a454",
+    "targets/4QO4/refinement/chains/chain_weights_T40560e.log": "17351a9280e5c6efa74691ba63fc8452cee102887d23086b298ee3b666d451e6",
+    "targets/4QO4/refinement/chains/chain_zones_T40560e.log": "1d4a82235cd012bc1dde10b12bde1dbf6f409ce635d554eeba977b4f250413b0",
+    "targets/4QO4/refinement/chains/followup_T40560e.log": "16446ae0022998ff85466802a7ff7f3845b95b6c173a449bf8e17b39b1c87508",
+    "targets/4QO4/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/4QO4/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/4QO4/refinement/metaparams.yaml": "949cfb224b21ef2433a5491e8397df1b6299de806b5397a5d0addc46b8d35799",
+    "targets/4QO4/refinement/run.json": "9b2f93c49e2bd430c2db51bcf7f579acfbf465c8a879b24bc16a0b762bc58a01",
+    "targets/4QO4/refinement/score_history.jsonl": "1fecc0093a477da8429947a36400cae50c10c2882c8a94260b17dc3f3d2f069e",
+    "targets/4QO4/refinement/score_history.txt": "59cc43efbb3f8631a1e846bea8d69f54617e89d016e60f8667c0491010782d13",
+    "targets/4QO4/refinement/scorecard.csv": "3f07523800f0aba4d895c97a82658d48c5944d761b4fddcbe514ccbb87ae2a78",
+    "targets/4QO4/refinement/steps.md": "cb93d9d21fdbfce9843a1db0081aa2bee47f38739c6e886c9415325580c642e8",
+    "targets/4QO4/validation/4QO4_S0064.clashscore.log": "0968719d51b21580b7c9790177ccb93b4482c4b38a4bc1f8d9785c3aeebceb2d",
+    "targets/4QO4/validation/4QO4_S0064.ramalyze.log": "db01ad5992099f49e6e070b8a3fadb64f3eddd0db67406e271576ca34c3bfba5",
+    "targets/4QO4/validation/4QO4_S0064.rotalyze.log": "9cec1eb3475e484f8c190fcef1b8967c250974383fb60d1703fbee7b662bd0bc"
+   }
   },
   {
    "id": "7KR0",
    "title": "Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K)",
-   "status": "improved",
    "resolution_a": 0.77,
-   "space_group": "C 1 2 1",
-   "unit_cell": [
-    139.82,
-    29.63,
-    37.96,
-    90.0,
-    103.56,
-    90.0
-   ],
-   "deposited_refinement_software": [
-    "PHENIX"
-   ],
+   "initial_release_date": "2020-12-09T00:00:00.000+00:00",
    "primary_citation": {
     "title": "Fragment binding to the Nsp3 macrodomain of SARS-CoV-2 identified through crystallographic screening and computational docking.",
     "journal_abbrev": "Sci Adv",
@@ -1683,656 +467,104 @@
     "pdbx_database_id_DOI": "10.1126/sciadv.abf8711",
     "pdbx_database_id_PubMed": 33853786
    },
-   "initial_release_date": "2020-12-09T00:00:00.000+00:00",
    "data": {
-    "kind": "amplitudes",
-    "labels": "FP,SIGFP",
-    "n_reflections": 178324,
+    "data_labels": "FP,SIGFP",
+    "n_reflections": 174924,
     "n_free": 8712,
-    "fraction_free": 0.048855,
+    "n_work": 166212,
     "n_select": 4356,
     "n_report": 4356,
-    "flags_source": "inherited",
-    "data_mtz_sha256": "ae703738dc52b3e3597d4ca641d98bfb88f1793dee88ca8a24176d3d3fd378fe",
-    "flags_mtz_sha256": "31939295cafaf855a01545c567b5b6763ef8365a63246ae5a29639e7561b202f",
-    "sf_source_sha256": "e243c56935c5c86a1bd79b7f3630ac16276eef3194d59c3c274f01b8afc06a54",
-    "header_claim": {
-     "r_work": 0.1099,
-     "r_free": 0.1172,
-     "n_free": 8711,
-     "pct_free": 4.89,
-     "sigma_f": 1.35
-    }
+    "d_min": 0.7700003615996039,
+    "data_mtz_sha256": "0a8fdef1e4c5184cf11f93de372c640a61b2a72c6506d49cebaa656865a73438",
+    "flags_mtz_sha256": "bd3dbf9af8805a25c4fdaf7de6a42ebcb3f9045d8c383e8c6db6974324391ca9"
    },
-   "r_free": {
-    "deposited_on_our_flags": {
-     "r_work": 0.1103020212830842,
-     "full": 0.11735487856221846,
-     "select": 0.11586962519840933,
-     "report": 0.11885661033532181,
-     "model_vs_data": {
-      "r_work": 0.1102,
-      "r_free": 0.1175
-     }
-    },
-    "rerefined_no_changes": {
-     "mean_full": 0.11632561984312588,
-     "sd_full": 0.0002380839794761814,
-     "n_seeds": 10,
-     "floor_file": "noise_floor.json"
-    },
-    "credit_bar": {
-     "protocol": "noise_floor",
-     "sigma_full": 0.000238,
-     "sigma_select": 0.000405,
-     "sigma_report": 9.4e-05,
-     "k_multiple": 2.0,
-     "accept_threshold_select": -0.00081
-    },
-    "released": {
-     "r_work": 0.10360940524902973,
-     "full": 0.11254302618983536,
-     "select": 0.11037832572636504,
-     "report": 0.11473174331006344,
-     "model_vs_data": {
-      "r_work": 0.1036,
-      "r_free": 0.1125
-     },
-     "ledger": {
-      "r_work": 0.10360832962303718,
-      "r_free_full": 0.1125685619303301,
-      "r_free_select": 0.11033595761519327,
-      "r_free_report": 0.11482593627366146
-     }
-    },
-    "delta_full_vs_deposited": -0.004811852372383102,
-    "delta_full_beyond_rerefinement": -0.0037825936532905197,
-    "delta_beyond_in_sd_full": -15.887644610161352
+   "released_step": "S0053",
+   "facts": "S0053 2026-10-18T23:06:47Z solvent water_addition parent S0042 | waters in own-copy clashes moved to a copy they clear; nothing deleted | R-free 0.07261 -> 0.07255 (-0.3 sigma) R-work 0.04718 -> 0.04667 gap +0.0005 clash 7.7 rota 1.5 % | atoms 17372 waters 1958 altlocs ABCDEF anisou 9173 | ACCEPT",
+   "released": {
+    "r_free": 0.07255035781480305,
+    "r_work": 0.04667404296804613,
+    "gap": 0.025876314846756926,
+    "r_free_select": 0.07117504965245308,
+    "r_free_report": 0.0739657285175426,
+    "clashscore": 7.72,
+    "rota_pct": 1.54,
+    "rama_outliers_pct": 0.0,
+    "rama_favored_pct": 97.006,
+    "bond_rmsd": 0.007,
+    "angle_rmsd": 0.99,
+    "n_atoms": 17372,
+    "n_h": 7722,
+    "n_water_atoms": 1958,
+    "water_occ_sum": 686.99,
+    "n_anisou": 9173,
+    "copies": 6,
+    "altlocs": "ABCDEF"
    },
-   "composition": {
-    "deposited": {
-     "n_atoms": 4300,
-     "n_hydrogen": 1990,
-     "n_water_residues": 312,
-     "altlocs": [
-      "A",
-      "B",
-      "C",
-      "D"
-     ]
-    },
-    "released": {
-     "n_atoms": 4298,
-     "n_hydrogen": 1990,
-     "n_water_residues": 310,
-     "altlocs": [
-      "A",
-      "B",
-      "C",
-      "D"
-     ]
-    }
+   "deposited_on_our_flags": {
+    "r_free": 0.11753,
+    "r_work": 0.11038,
+    "gap": 0.0071,
+    "r_free_select": null,
+    "r_free_report": null,
+    "clashscore": 4.3,
+    "rota_pct": 0.9,
+    "n_atoms": null,
+    "n_water_atoms": null
    },
-   "coordinate_diff": {
-    "waters_added": [],
-    "waters_removed": [
-     "A 246",
-     "A 381"
-    ],
-    "nonwater_residues_added": [],
-    "nonwater_residues_removed": [],
-    "altloc_changes": [],
-    "hydrogens_delta": 0
-   },
-   "molprobity": {
-    "deposited": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 99.4,
-     "rotamer_outliers_pct": 0.89,
-     "cbeta_deviations": 0.0,
-     "clashscore": 4.73,
-     "rms_bonds": 0.0301,
-     "rms_angles": 1.5,
-     "molprobity_score": 1.24
-    },
-    "released": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 98.8,
-     "rotamer_outliers_pct": 1.33,
-     "cbeta_deviations": 0.0,
-     "clashscore": 6.72,
-     "rms_bonds": 0.0126,
-     "rms_angles": 1.61,
-     "molprobity_score": 1.47
-    }
-   },
-   "campaign": {
-    "cycle_index": 37,
-    "stage": "rerefine",
-    "updated_at": "2026-09-09T19:41:05+00:00",
-    "model_on_pod": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired/candidate_arm/refine_001.cif",
-    "n_cycles_on_record": 32,
-    "n_credited_cycles": 6,
-    "writing_cycle": {
-     "cycle_index": 37,
-     "stage": "rerefine",
-     "run_id": "7KR0.E030c",
-     "verdict": "accepted",
-     "attributable_delta_select": -0.001005,
-     "delta_r_gap": -0.00039,
-     "geometry_flag": "clashscore 10.7098 > 5",
-     "run_dir": "/home/dev/runs/7KR0/experiments/e030c_macro_cycles15/paired"
-    },
-    "bisect_step": null,
-    "credited_cycles": [
-     {
-      "cycle_index": 17,
-      "run_id": "7KR0.exp_sw_distill",
-      "attributable_delta_select": -0.006719,
-      "r_free_full": 0.22609896564037862,
-      "delta_r_gap": null,
-      "geometry_flag": null,
-      "accepted_changes": 54.0
-     },
-     {
-      "cycle_index": 19,
-      "run_id": "7KR0.exp_sw_distill",
-      "attributable_delta_select": -0.017838,
-      "r_free_full": 0.12390003908298759,
-      "delta_r_gap": null,
-      "geometry_flag": null,
-      "accepted_changes": 169.0
-     },
-     {
-      "cycle_index": 21,
-      "run_id": "7KR0.exp_sw_distill",
-      "attributable_delta_select": -0.014905,
-      "r_free_full": 0.12620695385964728,
-      "delta_r_gap": null,
-      "geometry_flag": null,
-      "accepted_changes": 169.0
-     },
-     {
-      "cycle_index": 33,
-      "run_id": "7KR0.E030",
-      "attributable_delta_select": -0.000845,
-      "r_free_full": 0.1130323268642114,
-      "delta_r_gap": -0.00024,
-      "geometry_flag": "rota_outliers 1.78 > 1.5; clashscore 9.7136 > 5",
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 35,
-      "run_id": "7KR0.E030b",
-      "attributable_delta_select": -0.000817,
-      "r_free_full": 0.11281273793095284,
-      "delta_r_gap": -0.00025,
-      "geometry_flag": "clashscore 10.2117 > 5",
-      "accepted_changes": 1.0
-     },
-     {
-      "cycle_index": 37,
-      "run_id": "7KR0.E030c",
-      "attributable_delta_select": -0.001005,
-      "r_free_full": 0.1125685619303301,
-      "delta_r_gap": -0.00039,
-      "geometry_flag": "clashscore 10.7098 > 5",
-      "accepted_changes": 1.0
-     }
-    ],
-    "n_changes_proposed": 1009,
-    "thresholds_version": "thresholds_v5",
-    "run_summary": null,
-    "refinement": {
-     "phenix_version": "2.1-6048",
-     "macro_cycles": 15,
-     "adp_model": "anisotropic",
-     "n_tls_groups": 0,
-     "riding_hydrogens": true,
-     "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=77.26 >= 5.0 and d_min=0.77 <= 1.5"
-    }
-   },
-   "caveats": [
-    "MolProbity rotamer outliers and the altloc-aware clashscore of this model exceed the campaign's own frozen caps (1.5 % and 5.0); the deposited multiconformer model already exceeds the clashscore cap by construction (D451, D474). Depositable by ordinary standards, not by the campaign's own bar.",
-    "The changes carried by this model are two waters removed plus three 15-macro-cycle refinement passes credited at 2.1\u03c3, 2.0\u03c3 and 2.5\u03c3 (D489, D493, D494): continued refinement, not remodelling. The deposited model was already near-optimal as a single-conformer representation.",
-    "Three credited cycles on record (run `7KR0.exp_sw_distill`) belong to the ensemble-distillation line, which judged its candidates against its own base and was closed as a negative result (D463, D466); they are not in this model's lineage.",
-    "Ensemble representations of the same data score far lower (44PS, the six-conformation model of Passmore et al. 2026 on this dataset, 0.0657 on these flags; the campaign's own six-copy models 0.088\u20130.092). They are a second representation, not a deliverable (PROTOCOL \u00a718.1); the campaign's are released separately in `representations/7KR0/`."
-   ],
-   "files": [
-    {
-     "path": "data/7KR0_data.mtz",
-     "bytes": 3568960,
-     "sha256": "ae703738dc52b3e3597d4ca641d98bfb88f1793dee88ca8a24176d3d3fd378fe",
-     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
-    },
-    {
-     "path": "data/7KR0_flags.mtz",
-     "bytes": 2855584,
-     "sha256": "31939295cafaf855a01545c567b5b6763ef8365a63246ae5a29639e7561b202f",
-     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
-    },
-    {
-     "path": "data/7KR0_split.mtz",
-     "bytes": 2855584,
-     "sha256": "6021169761e145e79fe0396271312d8456317d2367e1a4b49e1f6f8c1613cfc5",
-     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
-    },
-    {
-     "path": "data/prep.json",
-     "bytes": 3519,
-     "sha256": "dced0600a7f7229c8650bbdc4295d0606efb86a44ffd96441cbbc3ba2b14ad79",
-     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
-    },
-    {
-     "path": "data/split.json",
-     "bytes": 253981,
-     "sha256": "2dfb87871b48f6d77d667c7a0dc09f25246823d7f93bb0f4272a9abc9684cfec",
-     "description": "The same split as a list of reflections, with the seed that made it."
-    },
-    {
-     "path": "deposited/7KR0.cif",
-     "bytes": 668616,
-     "sha256": "009f875a14b8f498ae33a1d867a666dbeb1cfbe561bad49f132c1a8f561d0629",
-     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
-    },
-    {
-     "path": "deposited/7KR0.fasta",
-     "bytes": 273,
-     "sha256": "6973778b94165e721e279859477a82c38d4558b9b13c5b6175f590852701a1c7",
-     "description": "The entry's sequence as fetched from RCSB."
-    },
-    {
-     "path": "deposited/FETCHED",
-     "bytes": 154,
-     "sha256": "6e09e8f903466668d0a6f1ae91732666121a6d4bdf25d41d54c1f0240f83eea2",
-     "description": "When the raw files were fetched."
-    },
-    {
-     "path": "deposited/fetch_manifest.sha256",
-     "bytes": 756,
-     "sha256": "f4de45550beff4d592f4bf3ddcede68505a091b5dfbaebceff1e4e0e2863b332",
-     "description": "SHA-256 of the raw files at fetch time."
-    },
-    {
-     "path": "deposited/rcsb_entry.json",
-     "bytes": 19808,
-     "sha256": "2ad19452939ec6dbe55506254f2edf2eb29ddd18aaf852f3d91f3b50fd61b964",
-     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
-    },
-    {
-     "path": "ledger/bisections.csv",
-     "bytes": 7105,
-     "sha256": "490613f197f40f9b619ccd910b1b46760935de3e5ee044e3f72d04cc2ac56355",
-     "description": "Bisection steps when a cycle regressed."
-    },
-    {
-     "path": "ledger/changes.csv",
-     "bytes": 2309293,
-     "sha256": "04ce89bb0e06c9f7f01c61bc4065f98f63ecfeded36a9a9fe0b7b75d8c938f3a",
-     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
-    },
-    {
-     "path": "ledger/checks.csv",
-     "bytes": 3596,
-     "sha256": "895163c8beab8765d38d7c360f838614def2064fbb3af0b59526db4387c62b19",
-     "description": "Gate results G0\u2013G8."
-    },
-    {
-     "path": "ledger/cycles.csv",
-     "bytes": 17604,
-     "sha256": "768a978eae3fdd2e4c81a25044e6eb714dc06d6c7d2fb0be90018d6effe6228b",
-     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
-    },
-    {
-     "path": "ledger/defects.csv",
-     "bytes": 58848,
-     "sha256": "c0e4b3d8119132504ade2f052bbb466e479b25b1a6b3de980b0129320d98f1df",
-     "description": "Values that could not be computed, with the reason (never a sentinel)."
-    },
-    {
-     "path": "ledger/deviations.csv",
-     "bytes": 98157,
-     "sha256": "a9b04d3c711a05ba948608fc1b8e5c0859eb628c3b12d7ba5e6d8ca782ae84c3",
-     "description": "Decision-log rows that name this target."
-    },
-    {
-     "path": "ledger/noise_floor.csv",
-     "bytes": 1350,
-     "sha256": "2c0b6f5e49779a1eefc33c5d73de651b55a0781c7f07561c51e08192121fcd19",
-     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
-    },
-    {
-     "path": "ledger/rfree_consultations.csv",
-     "bytes": 227,
-     "sha256": "afdf1c5f4d4bcf9b8fd7e15ee0d8855ac88ab78a987ede3c9cc60317c503ab49",
-     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
-    },
-    {
-     "path": "ledger/runs/7KR0.20260908v5/DECISIONS.md",
-     "bytes": 696,
-     "sha256": "a578a671cac266f76c08c60a915494d812feab770bbcaaae86ecb1c64e65e7ed",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/7KR0.20260908v5b/DECISIONS.md",
-     "bytes": 13123,
-     "sha256": "dca5013c999c046c458e5f0e4a65398d1aa797a347c19f2b74980a1a548cea16",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/7KR0.20260908v5b/run_summary.json",
-     "bytes": 2154,
-     "sha256": "38b36cd32e53ea846c4f229ba10f97c099bab8c1787d69418e0f739005dd1311",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/7KR0.20260910v6/DECISIONS.md",
-     "bytes": 707,
-     "sha256": "7be849f74cf955646ddb146002ddf9a086ffeddba59ead0aa524d72144592c12",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/7KR0.20260910v7/DECISIONS.md",
-     "bytes": 12701,
-     "sha256": "968a9de716be82b001ea932e951faae2e64ccf9a296f9adcc836c60f339eecdc",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/7KR0.20260910v7/run_summary.json",
-     "bytes": 2412,
-     "sha256": "c24b60f6fb1cf4ecdd4010d58c11850ddd2190531213e16d4ab4dec4d4e08d7e",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/runs/7KR0.run1/DECISIONS.md",
-     "bytes": 1839,
-     "sha256": "24c176bcc8ef16bf42db8f1700dd256752101f741533fb9e98aacbbf8d26a3e3",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/7KR0.run2/DECISIONS.md",
-     "bytes": 51346,
-     "sha256": "78161674936519dd58ec0f997bda10384a174e3e843872e533c7776b9a3ce29a",
-     "description": "The per-run human-readable decision log written by the driver."
-    },
-    {
-     "path": "ledger/runs/7KR0.run2/run_summary.json",
-     "bytes": 1892,
-     "sha256": "25a487ff42acaacc6cf320a759cff43260a84aba1bc2daaabee2a2c7ed572f86",
-     "description": "The per-run summary (cycles, credits, stop reason)."
-    },
-    {
-     "path": "ledger/solvent_disagreements.csv",
-     "bytes": 120,
-     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
-     "description": "Phenix/Coot disagreements on solvent sites."
-    },
-    {
-     "path": "maps/7KR0_refined_map_coeffs.mtz",
-     "bytes": 11450112,
-     "sha256": "eba35fbb57156f603aa25cc1a38ddabc35b7852c6cec91582798ad84449395bc",
-     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
-    },
-    {
-     "path": "model/7KR0_refined.cif",
-     "bytes": 551296,
-     "sha256": "0a65b7cdcf444ef36f153a268199c83e74144bbbc3743bf636379dbc774e9cdd",
-     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
-    },
-    {
-     "path": "model/7KR0_refined.pdb",
-     "bytes": 529555,
-     "sha256": "93b03220ab0871dcb0e63b27b1b35986def9e9fa7bb9d73b75d40cd40924e60f",
-     "description": "The same model in PDB format, from the same run."
-    },
-    {
-     "path": "refinement/command.txt",
-     "bytes": 1527,
-     "sha256": "009fcac73097806171c76f3b4dece4bb7c695c4d728eee73a009dcf1463c1a5c",
-     "description": "The verbatim phenix.refine argv that wrote the model."
-    },
-    {
-     "path": "refinement/current.json",
-     "bytes": 460,
-     "sha256": "73c052be6873c062795efbc13b879ed9caadb19ea783d7a1785dd0edaa77c82c",
-     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
-    },
-    {
-     "path": "refinement/experiment_header.json",
-     "bytes": 458,
-     "sha256": "b4bb941b26facf28bf5cc72bc24c50a07cb406564c4caa6525cda941477c2b3f",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
-     "path": "refinement/experiment_paired_cycle.json",
-     "bytes": 6176,
-     "sha256": "a501c3ec2aaa55a7d13f00f88ee406336217c31af90034541b05065a559a1105",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
-     "path": "refinement/experiment_result.json",
-     "bytes": 2100,
-     "sha256": "6c59bddcd58d7d74d4bb64aae093a0d2b1ae5f4c4e3cb681709edbfc692ffd7e",
-     "description": "Record of the experiment cycle that produced this model (paired null control, geometry of both arms)."
-    },
-    {
-     "path": "refinement/model_vs_data.campaign.log",
-     "bytes": 2261,
-     "sha256": "603acff18eef7b6aae5d754ce1f44b2f68f052cd03cb072336584cac46417a3b",
-     "description": "phenix.model_vs_data as run by the campaign on this model."
-    },
-    {
-     "path": "refinement/refine_001.eff",
-     "bytes": 42787,
-     "sha256": "ac3e45826aafa21ea8e52c21919fa68caa3eb7d17c3631a1c66ce6d6a5580bf5",
-     "description": "The effective parameters of that run."
-    },
-    {
-     "path": "refinement/refine_001.log",
-     "bytes": 144413,
-     "sha256": "be9271d84b974cd769288e228b9a713246aac8c3467f5af18dd1977e9b67b784",
-     "description": "The phenix.refine log of that run."
-    },
-    {
-     "path": "refinement/refine_decisions.json",
-     "bytes": 2089,
-     "sha256": "9aeaeb9c211d96190d77f87d2935ef5928f4e2929e5c11c58f7a6448b9c8bbec",
-     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
-    },
-    {
-     "path": "refinement/refine_result.json",
-     "bytes": 4215,
-     "sha256": "a521157c3ec80ad9f3712f213b6d6d90d532a68ce9f341844a5d4d292ceab6f2",
-     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
-    },
-    {
-     "path": "validation/campaign/checks/G3_7KR0-6conf_flags.json",
-     "bytes": 3745,
-     "sha256": "4f92ebf072e5543ece14e33f5693be3ed06ac15133559f8f2c7813f97d986575",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/checks/G3_7KR0.json",
-     "bytes": 4575,
-     "sha256": "79d8230fb73f47b0938e008185c81ad860064ae9e886174a287bae79b8a2e9b4",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/checks/fetch_7KR0.json",
-     "bytes": 2207,
-     "sha256": "8ec06e84a88b77153becfecd88831aab1ebb73ce093aa2e9b989f8f580aa6934",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/dossier.json",
-     "bytes": 164515,
-     "sha256": "3a00380e115556cba644cb736da4f68a7f51dc080aea6b0a4ad5566c3b08a854",
-     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
-    },
-    {
-     "path": "validation/campaign/noise_floor.json",
-     "bytes": 7454,
-     "sha256": "707fb396e4919e2dbc5ca164956a733dfdf3a7e5328c4806d4f5dec3b19567d0",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/7KR0_deposited.indep.json",
-     "bytes": 551,
-     "sha256": "231609f8ac5ed7f3670641eaf666e6cbd7f124f3f550dce4b6940fb11b0e27cc",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/7KR0_operator6conf.indep.json",
-     "bytes": 654,
-     "sha256": "f97e290bb873ca56acedc4726a22b6182c4dc58c81eee4ba9885e74894bf760a",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/7KR0_ours.indep.json",
-     "bytes": 597,
-     "sha256": "256080a962694423b6203a814d0e8b3ec827239d2c521d605c924f53977a0e99",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260907/7KR0_pdbredo.indep.json",
-     "bytes": 562,
-     "sha256": "77962a39fed8a8e1944f470c20f82e02b348c3c6d34b19b99470a27807caefd3",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/7KR0_e030_candidate.indep.json",
-     "bytes": 606,
-     "sha256": "a8a68699ed2a04f667a8ec5b703421b0b71b4f69429f2a81fae3e90299de6da9",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/7KR0_e030_null.indep.json",
-     "bytes": 600,
-     "sha256": "046d9c2c9732d2d4598840d2bada09acd095404aae7baa567f8077abc96106d1",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/7KR0_e030b_candidate.indep.json",
-     "bytes": 608,
-     "sha256": "de377a9dc5f1e67f71feb1620df927b6199209c9482be0d8bef3944f54213daa",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/7KR0_e030b_null.indep.json",
-     "bytes": 603,
-     "sha256": "75573644e79c280fec0e8e4c8ce02f3fd28a5e3f479605a0b3c2d82c66f9ffaf",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/7KR0_e030c_candidate.indep.json",
-     "bytes": 607,
-     "sha256": "305bfbaf7d1437889e006419bbc90892bbc15d572d60e11106dda3b5cc88c3c8",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/campaign/verify_20260909/7KR0_e030c_null.indep.json",
-     "bytes": 601,
-     "sha256": "534d3c2864a81ba16bbc20cf2224de6b71d40b68c1f13b422a65d020a9528454",
-     "description": "The campaign's independent verification runs (same scorer, earlier dates)."
-    },
-    {
-     "path": "validation/release/merge_mtz.log",
-     "bytes": 396,
-     "sha256": "b866ba9cb3283044ade0ba9d830ff94f755073f8a4b1ca64caffc45bc73664e9",
-     "description": "Log of the data+flags merge used by model_vs_data."
-    },
-    {
-     "path": "validation/release/model_diff.json",
-     "bytes": 483,
-     "sha256": "0532bf1aeff608d0be317acfff7d5cdbb19b08e63aae358e0ee972ebdce61fc1",
-     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
-    },
-    {
-     "path": "validation/release/model_vs_data.deposited.log",
-     "bytes": 2451,
-     "sha256": "e1cc0b4409461e698943c356cdeed9a3ff627200ac0c0cab39582f2712f159b8",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/model_vs_data.refined.log",
-     "bytes": 2453,
-     "sha256": "355bfb113238216a751edc8cddceab534e162c7fff06fc3a4c1f01090979b5b2",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.log",
-     "bytes": 19545,
-     "sha256": "d3d551bb6cf4363489b4b605720712e56ec386cfe7f8bcafe440b53913cd4ccd",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.out",
-     "bytes": 5528,
-     "sha256": "3a3917000c958ebd60fafbfbe045d40e1e197d67f9f2633753e2f51491b896aa",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.log",
-     "bytes": 20375,
-     "sha256": "00d2ae68cbefa769a0da6876928ff796644b6b50d090992d6fd2e654ed4627a5",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.out",
-     "bytes": 6040,
-     "sha256": "ce15709457a0b4d8de6377ff85b7b3c00c09c0875583bdf2b9a060c9727a1a82",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.json",
-     "bytes": 657,
-     "sha256": "46a9a0c8d6b2f027f13f3efb1fa6f3ba4b38d82218893a4d5d981c0264fe11d0",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.log",
-     "bytes": 1106,
-     "sha256": "173f92a1371e905bed1fb32d74af79d1e3fb24d46684e8e601df4723097a900d",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.json",
-     "bytes": 661,
-     "sha256": "61edb2a3edcaed5b4d01b40b7f12992ec8df11f7aa3a4a427efa6d132f670db9",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.log",
-     "bytes": 1112,
-     "sha256": "70f58f962d496f199e0943cc13fed8ac1d2d337060649b16b7c8833eba87ad13",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/summary.json",
-     "bytes": 2590,
-     "sha256": "0e98d859e0e70e98267895ed01438dc19f6f6b38aaad5c1ce62b93cac56731e4",
-     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
-    }
-   ]
+   "status": "improved",
+   "files": {
+    "targets/7KR0/README.md": "b545781898eb6230a091cf8cb0485898d8e4aae615b3a1a6547aed2acae02927",
+    "targets/7KR0/data/7KR0_data.mtz": "0a8fdef1e4c5184cf11f93de372c640a61b2a72c6506d49cebaa656865a73438",
+    "targets/7KR0/data/7KR0_flags.mtz": "bd3dbf9af8805a25c4fdaf7de6a42ebcb3f9045d8c383e8c6db6974324391ca9",
+    "targets/7KR0/data/7KR0_split.mtz": "e2b642c35aa787850e9ee062697a6a5fbe948b908bd911d8306e69020050a78a",
+    "targets/7KR0/data/prep.json": "483795aade228ae354b11b2af2103ec15cac46ccd23982ac2d448d07b8c55765",
+    "targets/7KR0/data/split.json": "b0aa5907899009897fb7238b0b6cc4807b93a7ee6f01f562887c71fa1976a378",
+    "targets/7KR0/deposited/7KR0.cif": "009f875a14b8f498ae33a1d867a666dbeb1cfbe561bad49f132c1a8f561d0629",
+    "targets/7KR0/deposited/rcsb_entry.json": "08268b905232c3c13e0f3611d433f062f066fad7d396fdb4cbce766bc253e1c3",
+    "targets/7KR0/maps/7KR0_S0053_map_coeffs.mtz": "843bbdb044b597921021e424331eba9d6b8c73cda72feb47ba0a2faf0f7970a2",
+    "targets/7KR0/model/7KR0_S0053.cif": "ba9cf4150c23d93942a482f69c8a076195af204b697e5049dacc42d071ae6aae",
+    "targets/7KR0/model/7KR0_S0053.pdb": "81f1a2ab661db5df2db42801f50c1809fc4a8c12d3dacce339d0e5091d783d5d",
+    "targets/7KR0/refinement/S0053/FACTS.txt": "acef7329961aafd2ee7ef811cc8f407a89daacfc6af1eaf8110a1e055267d039",
+    "targets/7KR0/refinement/S0053/change.json": "a9ada8c47c5a36ae17ef92e69add86f502046c1a9116bb0172bab4b079f4dd68",
+    "targets/7KR0/refinement/S0053/score.json": "8d45e61bb3799ca3b3df0a53479975e8c3d9adb4f6a27e171d471c4d4091d7a6",
+    "targets/7KR0/refinement/chains/chain10_7KR0.sh": "aa076c607f11dddaa34b7e73a2986c81ce5698480b6c0fd3a455c3b2f9745786",
+    "targets/7KR0/refinement/chains/chain11_7KR0.sh": "5ba9bbe4e834580f14a184482dce08c4d393219e8ecf4b7a2ad69684fe5fe5c6",
+    "targets/7KR0/refinement/chains/chain12_7KR0.sh": "b39a5070b06352ec798973d5becf3e0265cd8f34e21a5b4d33b2083c920398cd",
+    "targets/7KR0/refinement/chains/chain13_7KR0.sh": "bb4345006f209a142eb576c18a7b535eb8af2a7149367b65975e89b84efd1898",
+    "targets/7KR0/refinement/chains/chain14_7KR0.sh": "37e2e574e6fc0e5d29d98931a893241b3b263f5de374da0d02d7ba567b3f169d",
+    "targets/7KR0/refinement/chains/chain15_7KR0.sh": "427d28de46b2449918af0e2d7ec33b9453b6dd8f9f46006e591bae0ba537a41b",
+    "targets/7KR0/refinement/chains/chain16_7KR0.sh": "239bf150515cf5e63261d40242403a968c24eba1e4da5d41f70baac53b9d20af",
+    "targets/7KR0/refinement/chains/chain17_7KR0.sh": "87d7dc16abd9e1b30e9ae2e3d1cee72acaa9994b2149ba7b232c7a2e57360cb4",
+    "targets/7KR0/refinement/chains/chain18_7KR0.sh": "d067d817a17955a536df0d5a750514b34a47aecf43b11ca7fda646da9d359a50",
+    "targets/7KR0/refinement/chains/chain19_7KR0.sh": "984df8ea25adb7c5ce4e6864ad355859eeedbc2602d1dd9aead0f47e78b60fb2",
+    "targets/7KR0/refinement/chains/chain20_7KR0.sh": "1e060c9456e3317bc1dcda5967719173bf7b01b7a46ba050ecc9b727248d3cc3",
+    "targets/7KR0/refinement/chains/chain21_7KR0.sh": "3b391f345b48f3602ed154fabc2c0f5322cf0fea9d99b439de7cff2961d8aab1",
+    "targets/7KR0/refinement/chains/chain22_7KR0.sh": "29c90ea3dc9c78cceaab2a0482ad48b277d7f325c3a444fe8f790eb6d87a5cae",
+    "targets/7KR0/refinement/chains/chain23_7KR0.sh": "5574e16ac725859633dac8b707e0789b7048fc101ebb354e47ac84c3b09cea92",
+    "targets/7KR0/refinement/chains/chain2_7KR0.sh": "77d043255f4a8742aa6c10677022a9d00053cf21863de1fed178816feb4087f0",
+    "targets/7KR0/refinement/chains/chain4_7KR0.sh": "227278d62d65820fdd73db7690ce6303cebb34faccf664bdcdd99d6554a31f17",
+    "targets/7KR0/refinement/chains/chain5_7KR0.sh": "41a3543515c4804881e91c320c917391e42b7ecf82742808e35280ba4df862bb",
+    "targets/7KR0/refinement/chains/chain6_7KR0.sh": "da3fbef2910a96d48e93dfafa91305ad1d0b188080787d55459f13a5221bb612",
+    "targets/7KR0/refinement/chains/chain7_7KR0.sh": "b5853f97c7ee26bafecba835f085e2aab0974d2d8df0292549377bca95a2d735",
+    "targets/7KR0/refinement/chains/chain8_7KR0.sh": "1229d715d9a945f15be0e0bb2174e24b4c69abd0cf3fe71ba50c490d164631d1",
+    "targets/7KR0/refinement/chains/chain9_7KR0.sh": "cf47b7c24a1f57ad4889da787a8781d2247bacf294a1eceddfe58a7a3db57c44",
+    "targets/7KR0/refinement/chains/chain_7KR0.sh": "bc4f32c95b8e135ce854b1d3a01c3a2fa0402b2b772bf2ccfd92db02066459af",
+    "targets/7KR0/refinement/metaparams.yaml": "b92c7e123b95eb0078d4fafc764db0079f254f01b5570098be9ab8178d4684b2",
+    "targets/7KR0/refinement/run.json": "76e437717ed9bcf6c4307fd6bdc39223876d60347c123ce33e76bb3e4319d71f",
+    "targets/7KR0/refinement/score_history.jsonl": "aa58a867e040110d7e704df69fb1e2410c3e394a951ecbad005f2e054a2cef53",
+    "targets/7KR0/refinement/score_history.txt": "482d939403a522eeebd1fdf10546752c24335eb104ef16afca100057a989b260",
+    "targets/7KR0/refinement/scorecard.csv": "e7ba4304e35e2002a19f3fef33e31e5ec749cd83138cb7f4fbaef6c8ed608ce4",
+    "targets/7KR0/refinement/steps.md": "41a61df6b8942f81823574cd713a3b8ad5cd7dd8279e9f54b8ae99408b1b2f4b",
+    "targets/7KR0/validation/7KR0_S0053.clashscore.log": "9e100a896d85d9f0ae7b630fdaf998c3eec572226025cc95db54c7ffcb6497b2",
+    "targets/7KR0/validation/7KR0_S0053.ramalyze.log": "d5de4fc9f2a99828ee46126635c25d899539c39f7ff524c9b840e2756355de89",
+    "targets/7KR0/validation/7KR0_S0053.rotalyze.log": "47d371c18b3bb858d7a37bfd8fbb5756d160b574cd48e7ad6cd7969eef85da31"
+   }
   },
   {
    "id": "7R2H",
    "title": "0.79A resolution structure of DMSO bound Cyclophilin D",
-   "status": "re-refined baseline, nothing credited",
    "resolution_a": 0.79,
-   "space_group": "P 41 21 2",
-   "unit_cell": [
-    57.348,
-    57.348,
-    87.562,
-    90.0,
-    90.0,
-    90.0
-   ],
-   "deposited_refinement_software": [
-    "PHENIX"
-   ],
+   "initial_release_date": "2023-02-15T00:00:00.000+00:00",
    "primary_citation": {
     "title": "Structure-based design of pyrazole derivatives targeting the human Cyclophilin D binding site",
     "journal_abbrev": "Int.J.Biol.Macromol.",
@@ -2340,482 +572,90 @@
     "pdbx_database_id_DOI": "10.1016/j.ijbiomac.2026.151496",
     "pdbx_database_id_PubMed": null
    },
-   "initial_release_date": "2023-02-15T00:00:00.000+00:00",
    "data": {
-    "kind": "amplitudes",
-    "labels": "FP,SIGFP",
-    "n_reflections": 149186,
+    "data_labels": "FP,SIGFP",
+    "n_reflections": 147186,
     "n_free": 7538,
-    "fraction_free": 0.050528,
+    "n_work": 139648,
     "n_select": 3769,
     "n_report": 3769,
-    "flags_source": "inherited",
-    "data_mtz_sha256": "5871418b32ac4d56b3fd5d7ae0274f1f178c6efbecfb74e29343883c26f3e854",
-    "flags_mtz_sha256": "88357d540ed5245a7901c89b387ba53290f1965535ed9b2eaf60a17bae067c07",
-    "sf_source_sha256": "15f9cf6c1c2ad9585e0f0d80e7a138ecdaec6b02b0b70a7ef02a3ceb3c42ab70",
-    "header_claim": {
-     "r_work": 0.1434,
-     "r_free": 0.1549,
-     "n_free": 7538,
-     "pct_free": 5.05,
-     "n_obs": 148902,
-     "cross_valid_method": "FREE R-VALUE",
-     "sf_status": "REL"
-    }
+    "d_min": 0.7892011037712083,
+    "data_mtz_sha256": "471b7d0c6ad368f8da08deaded840c0e68c9e0f3967e53aac575c8e28fc6bc9c",
+    "flags_mtz_sha256": "873fa8517c5e5dcef175c37d2a713d00f6845b35377279fe0d620dec5214cd89"
    },
-   "r_free": {
-    "deposited_on_our_flags": {
-     "r_work": 0.14396128689680188,
-     "full": 0.15464621782255247,
-     "select": 0.1527364294768157,
-     "report": 0.15654673759444293,
-     "model_vs_data": {
-      "r_work": 0.1437,
-      "r_free": 0.1545
-     }
-    },
-    "rerefined_no_changes": {
-     "mean_full": 0.12893081293259098,
-     "sd_full": 0.00013333498148769904,
-     "n_seeds": 10,
-     "floor_file": "noise_floor.json"
-    },
-    "credit_bar": {
-     "protocol": "noise_floor",
-     "sigma_full": 0.000133,
-     "sigma_select": 0.00021,
-     "sigma_report": 0.00019,
-     "k_multiple": 2.0,
-     "accept_threshold_select": -0.00042
-    },
-    "released": {
-     "r_work": 0.11456217696546948,
-     "full": 0.1290463661821597,
-     "select": 0.12873236692644793,
-     "report": 0.12935884153848218,
-     "model_vs_data": {
-      "r_work": 0.1143,
-      "r_free": 0.1289
-     },
-     "ledger": {
-      "r_work": 0.11456221749224399,
-      "r_free_full": 0.12903754436990097,
-      "r_free_select": 0.12873237135377238,
-      "r_free_report": 0.12934123632209701
-     }
-    },
-    "delta_full_vs_deposited": -0.025599851640392773,
-    "delta_full_beyond_rerefinement": 0.00011555324956871726,
-    "delta_beyond_in_sd_full": 0.8666386591082083
+   "released_step": "S0019",
+   "facts": "S0019 2026-10-21T04:20:51Z solvent water_addition parent S0017 | waters at 2.5 sigma, mode single | R-free 0.10107 -> 0.09928 (-11.3 sigma) R-work 0.07243 -> 0.06932 gap +0.0013 clash 7.8 rota 1.0 % | atoms 16461 waters 1637 altlocs ABCDEF anisou 8890 | ACCEPT",
+   "released": {
+    "r_free": 0.09928292402107972,
+    "r_work": 0.06932443615999073,
+    "gap": 0.029958487861088984,
+    "r_free_select": 0.09846830649367251,
+    "r_free_report": 0.10009781459353982,
+    "clashscore": 7.83,
+    "rota_pct": 0.99,
+    "rama_outliers_pct": 0.0,
+    "rama_favored_pct": 93.8272,
+    "bond_rmsd": 0.009,
+    "angle_rmsd": 1.103,
+    "n_atoms": 16461,
+    "n_h": 7380,
+    "n_water_atoms": 1637,
+    "water_occ_sum": 523.59,
+    "n_anisou": 8890,
+    "copies": 6,
+    "altlocs": "ABCDEF"
    },
-   "composition": {
-    "deposited": {
-     "n_atoms": 2850,
-     "n_hydrogen": 1253,
-     "n_water_residues": 335,
-     "altlocs": [
-      "A",
-      "B"
-     ]
-    },
-    "released": {
-     "n_atoms": 2850,
-     "n_hydrogen": 1253,
-     "n_water_residues": 335,
-     "altlocs": [
-      "A",
-      "B"
-     ]
-    }
+   "deposited_on_our_flags": {
+    "r_free": 0.15513302372218016,
+    "r_work": 0.14454259526538205,
+    "gap": 0.010590428456798112,
+    "r_free_select": 0.1513278660903577,
+    "r_free_report": 0.15893945677398436,
+    "clashscore": 0.0,
+    "rota_pct": 0.0,
+    "n_atoms": 2850,
+    "n_water_atoms": 335
    },
-   "coordinate_diff": {
-    "waters_added": [],
-    "waters_removed": [],
-    "nonwater_residues_added": [],
-    "nonwater_residues_removed": [],
-    "altloc_changes": [],
-    "hydrogens_delta": 0
-   },
-   "molprobity": {
-    "deposited": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 96.91,
-     "rotamer_outliers_pct": 0.0,
-     "cbeta_deviations": 0.0,
-     "clashscore": 0.8,
-     "rms_bonds": 0.0054,
-     "rms_angles": 0.91,
-     "molprobity_score": 0.93
-    },
-    "released": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 96.91,
-     "rotamer_outliers_pct": 0.73,
-     "cbeta_deviations": 0.0,
-     "clashscore": 1.2,
-     "rms_bonds": 0.0106,
-     "rms_angles": 1.29,
-     "molprobity_score": 1.02
-    }
-   },
-   "campaign": {
-    "cycle_index": 0,
-    "stage": "baseline_rerefine",
-    "updated_at": "2026-10-05T07:38:38+00:00",
-    "model_on_pod": "/home/dev/runs/7R2H/c000/baseline_rerefine/refine_001.cif",
-    "n_cycles_on_record": 4,
-    "n_credited_cycles": 0,
-    "writing_cycle": {
-     "cycle_index": 0,
-     "stage": "baseline_rerefine",
-     "run_id": "",
-     "verdict": "",
-     "attributable_delta_select": null,
-     "delta_r_gap": null,
-     "geometry_flag": null,
-     "run_dir": "/home/dev/runs/7R2H/c000/baseline_rerefine"
-    },
-    "bisect_step": null,
-    "credited_cycles": [],
-    "n_changes_proposed": 0,
-    "thresholds_version": "thresholds_v8",
-    "run_summary": null,
-    "refinement": {
-     "phenix_version": "2.1-6048",
-     "macro_cycles": 5,
-     "adp_model": "anisotropic",
-     "n_tls_groups": 0,
-     "riding_hydrogens": true,
-     "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=93.42 >= 5.0 and d_min=0.7892 <= 1.5"
-    }
-   },
-   "caveats": [
-    "The released model is one Phenix re-refinement of the deposited file; nothing the agent proposed has been credited yet (E044). The \u22120.026 over the deposited file is the campaign's re-refinement protocol on its own, and it is mostly an ADP-model change: the deposited file carries ANISOU on 1 258 of its 1 597 non-hydrogen atoms (the isotropic ones are the 335 waters and the DMSO), the campaign's protocol refines every non-hydrogen atom anisotropically. R-work falls further than R-free, so the R-free \u2212 R-work gap widens from 0.011 to 0.014.",
-    "Rotamer outliers rise from 0.00 % to 0.73 % (one residue) and clashscore from 0.8 to 1.2 on re-refinement.",
-    "Nothing was credited on this target; the released model is the single Phenix re-refinement of the deposited file (D484). For CNS/REFMAC/X-PLOR-era depositions the campaign's noise floor measures convergence variance rather than test-set noise, so its credit bar was effectively unreachable (D506). The gain over the deposited file is what phenix.refine does on its own."
-   ],
-   "files": [
-    {
-     "path": "data/7R2H_data.mtz",
-     "bytes": 2986520,
-     "sha256": "5871418b32ac4d56b3fd5d7ae0274f1f178c6efbecfb74e29343883c26f3e854",
-     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
-    },
-    {
-     "path": "data/7R2H_flags.mtz",
-     "bytes": 2389696,
-     "sha256": "88357d540ed5245a7901c89b387ba53290f1965535ed9b2eaf60a17bae067c07",
-     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
-    },
-    {
-     "path": "data/7R2H_split.mtz",
-     "bytes": 2389696,
-     "sha256": "6370a2e00ab8658468046f5ba957c010af503c301c43fb370f55dd9c93db4ea3",
-     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
-    },
-    {
-     "path": "data/prep.json",
-     "bytes": 3740,
-     "sha256": "71b08f93ac33a9dc06562839d7e92f2a92e6e755c4e967769080936a1645f790",
-     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
-    },
-    {
-     "path": "data/split.json",
-     "bytes": 215394,
-     "sha256": "d9c34075de457b7cdec17a87d2e1e04d4079560920c7ebd9540d71f84970bc23",
-     "description": "The same split as a list of reflections, with the seed that made it."
-    },
-    {
-     "path": "deposited/7R2H.cif",
-     "bytes": 495732,
-     "sha256": "254ed93f8fe79009f4066f633ab78e0962b5469ad79b736db73c4f68464aac40",
-     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
-    },
-    {
-     "path": "deposited/7R2H.fasta",
-     "bytes": 255,
-     "sha256": "902e2297035d5eba919afda35bbfc669d3f29febed310ec57b1933cc6156f469",
-     "description": "The entry's sequence as fetched from RCSB."
-    },
-    {
-     "path": "deposited/FETCHED",
-     "bytes": 37,
-     "sha256": "3d4c8e28a76ee8826004ea8586a1c74596b70685c855f66d6d6451f12be2cb73",
-     "description": "When the raw files were fetched."
-    },
-    {
-     "path": "deposited/fetch_manifest.sha256",
-     "bytes": 756,
-     "sha256": "18319ba338a4e76d14ace1addd10c29a27d10a12841dc12641ee9bd8389f6e7e",
-     "description": "SHA-256 of the raw files at fetch time."
-    },
-    {
-     "path": "deposited/rcsb_entry.json",
-     "bytes": 12086,
-     "sha256": "6521f5a2bfe7ffd4cf54de3bad6aea2c82c79432924c774766a5df12638a50cc",
-     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
-    },
-    {
-     "path": "ledger/bisections.csv",
-     "bytes": 246,
-     "sha256": "8c31a7c401cd50a03b229cb094cb749ebf14079358828fc0e833970fdb12b8be",
-     "description": "Bisection steps when a cycle regressed."
-    },
-    {
-     "path": "ledger/changes.csv",
-     "bytes": 510,
-     "sha256": "59428eebe18da0fc02c7edbf410bddba0455674956979fba831cf55e0d444781",
-     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
-    },
-    {
-     "path": "ledger/checks.csv",
-     "bytes": 3061,
-     "sha256": "76e77bf48897043ddbb79f99ac782b438d0938d43b2530090c2a949f88cfe348",
-     "description": "Gate results G0\u2013G8."
-    },
-    {
-     "path": "ledger/cycles.csv",
-     "bytes": 3466,
-     "sha256": "f86f5316726cf91b37dafb5fb74b6680b81886ebe6ee13b998e603eacd2c3b14",
-     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
-    },
-    {
-     "path": "ledger/defects.csv",
-     "bytes": 97,
-     "sha256": "5a5f455228a6374b44931af84c251c30bbec573e1d16e071dddfd98dca30be68",
-     "description": "Values that could not be computed, with the reason (never a sentinel)."
-    },
-    {
-     "path": "ledger/deviations.csv",
-     "bytes": 126,
-     "sha256": "3964db2b379d59efb1e7cd8527e16d8ad58f2739cf30028df46970687c6a1848",
-     "description": "Decision-log rows that name this target."
-    },
-    {
-     "path": "ledger/noise_floor.csv",
-     "bytes": 1335,
-     "sha256": "4bffcc30b75852afb400e838a0fedc6bcd5a50a51672f8539cb091f60ccff459",
-     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
-    },
-    {
-     "path": "ledger/rfree_consultations.csv",
-     "bytes": 77,
-     "sha256": "0ff92cbe121805e3f07fbda673bd7f561245c1b5e6b3813615c23d170606d771",
-     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
-    },
-    {
-     "path": "ledger/solvent_disagreements.csv",
-     "bytes": 120,
-     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
-     "description": "Phenix/Coot disagreements on solvent sites."
-    },
-    {
-     "path": "maps/7R2H_refined_map_coeffs.mtz",
-     "bytes": 10232640,
-     "sha256": "4511fa380232d002df97d9abcd11384568c88b3893e93a77f19d97518e3f324d",
-     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
-    },
-    {
-     "path": "model/7R2H_refined.cif",
-     "bytes": 380401,
-     "sha256": "e94470a33950e17defd5572adc45812c1a18f0e6470b08fa85dc95081892222d",
-     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
-    },
-    {
-     "path": "model/7R2H_refined.pdb",
-     "bytes": 359913,
-     "sha256": "de806717a328f26d182ab680cda42c370fee3ca1ac31c2635cb8bdae52bf2bb6",
-     "description": "The same model in PDB format, from the same run."
-    },
-    {
-     "path": "refinement/command.txt",
-     "bytes": 3688,
-     "sha256": "9bcc7bb7f0f6809229e4daef5caac8753d90e9b4765fa040594262bc9272e16b",
-     "description": "The verbatim phenix.refine argv that wrote the model."
-    },
-    {
-     "path": "refinement/current.json",
-     "bytes": 352,
-     "sha256": "a33863de82266e36e78d122c8f1b7d4ff5f8d1b472f3f49b644638024b8bf46f",
-     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
-    },
-    {
-     "path": "refinement/refine_001.eff",
-     "bytes": 42674,
-     "sha256": "412ea9f18eed528d621b34a496ffc58039299fac7fe80fb1752c6b49a3082b99",
-     "description": "The effective parameters of that run."
-    },
-    {
-     "path": "refinement/refine_001.log",
-     "bytes": 76676,
-     "sha256": "ae55372dce44e3a6e002fa80dd8c30fde924b7d5687907b7983a4057b3fd45d8",
-     "description": "The phenix.refine log of that run."
-    },
-    {
-     "path": "refinement/refine_decisions.json",
-     "bytes": 2135,
-     "sha256": "4de947cbce05294cb587e61dcc5b211c94c17f973f37d9b16a1abd067275c1cf",
-     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
-    },
-    {
-     "path": "refinement/refine_result.json",
-     "bytes": 2775,
-     "sha256": "d90d266eb23dea7304912049b6ad5af1cd24a8fbd736e3de6e9ce3afd75ec259",
-     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
-    },
-    {
-     "path": "validation/campaign/checks/G3_7R2H.json",
-     "bytes": 4667,
-     "sha256": "5088593a8cf2687ed8fe9038be2468a47e4d9f373b6c513cabab03a8348b276f",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/checks/fetch_7R2H.json",
-     "bytes": 2207,
-     "sha256": "2c1fe04d2ad7b1c524c1834ed844f98d28890283c3860eafb14684beb0cb330f",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/clash_altloc.json",
-     "bytes": 4311,
-     "sha256": "d32b5c15de4f21c2b4eb2e90a4e52cd109fd7acbacba435c216652f2a2611ddb",
-     "description": "The campaign's clashscore runs (standard and altloc-aware)."
-    },
-    {
-     "path": "validation/campaign/clashscore.json",
-     "bytes": 6728,
-     "sha256": "723adf972e17fd202ef3ad76f03588faf3fb39f4b78e07f3f87ab6a92e321ece",
-     "description": "The campaign's clashscore runs (standard and altloc-aware)."
-    },
-    {
-     "path": "validation/campaign/cycle_row.json",
-     "bytes": 1266,
-     "sha256": "d5bc9de6c2ec307e9116a010e987259fc2464b5b43b923ee388f4e38bf39567c",
-     "description": "The campaign's per-cycle record for this model (PROTOCOL \u00a77)."
-    },
-    {
-     "path": "validation/campaign/dossier.json",
-     "bytes": 147106,
-     "sha256": "1e48654f802a806fbc45d4f2ea23c2fa5d5b80611bcbf62180a4f4b0c0341ec4",
-     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
-    },
-    {
-     "path": "validation/campaign/molprobity.out",
-     "bytes": 34626,
-     "sha256": "7e4b24d407e5f3d87a1a9cc65618eca7b8c2d77f7d70ae1a1021fae27206c39c",
-     "description": "The campaign's MolProbity run on this model."
-    },
-    {
-     "path": "validation/campaign/molprobity_result.json",
-     "bytes": 9083,
-     "sha256": "b81e016e23592b75ad47968d1dc010bfc300e318bbc104bae9be71efdbd5bfba",
-     "description": "The campaign's MolProbity run on this model."
-    },
-    {
-     "path": "validation/campaign/noise_floor.json",
-     "bytes": 7498,
-     "sha256": "7ecbd38f3ac80444bb04fdc534a806927f8186f5537c2d93803301015f407dd0",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/release/merge_mtz.log",
-     "bytes": 396,
-     "sha256": "22d67424be03acb81528411b2d871dd4a42ce65b75840be3778e7002a97c6b82",
-     "description": "Log of the data+flags merge used by model_vs_data."
-    },
-    {
-     "path": "validation/release/model_diff.json",
-     "bytes": 458,
-     "sha256": "42dc8c29934d8a970edb7ee87b230ef0a6deeb7b601864b71c91fd5bf5171f8f",
-     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
-    },
-    {
-     "path": "validation/release/model_vs_data.deposited.log",
-     "bytes": 2535,
-     "sha256": "29782bf5763d4220418922947e94682d8173ab11e1130b43c7ca1f71b697681a",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/model_vs_data.refined.log",
-     "bytes": 2538,
-     "sha256": "126a5aa2dfd4ec551bd135cfb5e53e652f7c8c7748fde2c0964d2538d80699d8",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.log",
-     "bytes": 49735,
-     "sha256": "9f3ab040fe05ef1054a015215a6085fe047f9c118760fcc54098b502d048ddd6",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.out",
-     "bytes": 37271,
-     "sha256": "11af2bb198aa56d7d30c5f2932b25e439580cfa559afa43677f4e65654c071f8",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.log",
-     "bytes": 44921,
-     "sha256": "8fe72a3623d2ad564dc679bb51c50a2d628b5520a191f368682106eb3e3574c3",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.out",
-     "bytes": 31828,
-     "sha256": "48446bb31e451922a9c264d2fe1e2fc975632484949c3691cf697ce65d2719ec",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.json",
-     "bytes": 643,
-     "sha256": "8c1f27540fb6e46c1f5cf30800716132cbc9b3ae7c2c223b7de437e6754b4a46",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.log",
-     "bytes": 1096,
-     "sha256": "667cf26e52b8bf54be944b316f8d61bc0cbcfd7b468adea4440852b4af918643",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.json",
-     "bytes": 647,
-     "sha256": "05908a880df7bce0462c35542a1decf349457c001dbfaaed8aefcfcd053615fb",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.log",
-     "bytes": 1102,
-     "sha256": "34655f3b623763c90456557bec22f47cb4c12dc70186b2eeb2cfb037efc278da",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/summary.json",
-     "bytes": 2550,
-     "sha256": "478f6396e6888675e2f43e1cc83f8d3d6ac0101cd112b54d46650d066519e3c7",
-     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
-    }
-   ]
+   "status": "improved",
+   "files": {
+    "targets/7R2H/README.md": "1bf80e6f0ac4feeb522fc2b115f2f200d64b8c864f5aaa5f2718d51f599de522",
+    "targets/7R2H/data/7R2H_data.mtz": "471b7d0c6ad368f8da08deaded840c0e68c9e0f3967e53aac575c8e28fc6bc9c",
+    "targets/7R2H/data/7R2H_flags.mtz": "873fa8517c5e5dcef175c37d2a713d00f6845b35377279fe0d620dec5214cd89",
+    "targets/7R2H/data/7R2H_split.mtz": "50a69d3f79deebf942ffcf86fb55ff5ae85b7b33c548220b390475322729c63a",
+    "targets/7R2H/data/prep.json": "5f888ebbc8f4d5db7406ec7704373b31e60c31f581ab9fc420190b9e45031b9b",
+    "targets/7R2H/data/split.json": "798c0b52258dd889b4a2159c30d90f383034af2e113bb5b34219bbffa1306d28",
+    "targets/7R2H/deposited/7R2H.cif": "254ed93f8fe79009f4066f633ab78e0962b5469ad79b736db73c4f68464aac40",
+    "targets/7R2H/deposited/rcsb_entry.json": "6521f5a2bfe7ffd4cf54de3bad6aea2c82c79432924c774766a5df12638a50cc",
+    "targets/7R2H/maps/7R2H_S0019_map_coeffs.mtz": "a5208a6e0f8bf6dfe9407aa37fd6a35f457c669ef0ce54058880ed0d764fc437",
+    "targets/7R2H/model/7R2H_S0019.cif": "d43467f336450f2d079f9a0d14c7ccf3286baa83d640dc295423f4efdfbc0ec5",
+    "targets/7R2H/model/7R2H_S0019.pdb": "4b508a18541428cd6aefae4407af841aea37775b17f50fc975e684e79393a364",
+    "targets/7R2H/refinement/S0019/FACTS.txt": "fcacd114642356e49420f94e9ca64b47b6a2a2ccc46bb03f945cbfb40b9f5ae5",
+    "targets/7R2H/refinement/S0019/change.json": "fd827616a4b5dedd8f5e235a261dd6dd2ed1b63df327f38b33ce85e0578d05d4",
+    "targets/7R2H/refinement/S0019/score.json": "2d2101ac9ad7af46c91e04b9f90c86eb96c257eed85ce7b22dd93702f55df9f1",
+    "targets/7R2H/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/7R2H/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/7R2H/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/7R2H/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/7R2H/refinement/chains/chain_target_Ta4f3f9.log": "4a8542e30534c0c0b3f108718c8db81610cd86a102385200c5c7a9852a2daacb",
+    "targets/7R2H/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/7R2H/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/7R2H/refinement/chains/target_7R2H.log": "9d432ff45c977daff5c850e65e899e17abf0183934eda39da128ca85b05ae3ee",
+    "targets/7R2H/refinement/metaparams.yaml": "d917ddb43462267dce90cb304169b0e694b3565c88161e2e70944bed3780b6b4",
+    "targets/7R2H/refinement/run.json": "dfeebb243ed644d7b3d7bd8e63ac03f6f81357d8d19beb1bf39f699162837932",
+    "targets/7R2H/refinement/score_history.jsonl": "bf6b56e294cdd43cd2e98f25d7611b244c1f1717d5d3d5070f0595bd1c20cf20",
+    "targets/7R2H/refinement/score_history.txt": "7b132184c7f22b3317b58c14318cf6d47e049c3edcb79e74ce9fcdea16d2fefb",
+    "targets/7R2H/refinement/scorecard.csv": "1736db0d47daa191a891c302cf6e6ec05574029a247479356b26838ae3b81238",
+    "targets/7R2H/refinement/steps.md": "63362ff2c9f488ebc7ebe325bb6668b122cf4998dda1efcfcfc83a6c5f0843a8",
+    "targets/7R2H/validation/7R2H_S0019.clashscore.log": "67fa8bb845abf297c35577465aac73379fd9891dfa9aa91d0d8973feba3776b5",
+    "targets/7R2H/validation/7R2H_S0019.ramalyze.log": "e8cb1c310529937a15253e0f8340538ede10bff0713d3eff66c13c6c14f82504",
+    "targets/7R2H/validation/7R2H_S0019.rotalyze.log": "bb3782282327cd897040b992359d3c567c71ddf0c8940ac644328a6966fe2e6c"
+   }
   },
   {
    "id": "8C5N",
    "title": "Sub-atomic resolution structure of the chitin-binding protein D (CbpD) from Pseudomonas aeruginosa",
-   "status": "re-refined baseline, nothing credited",
    "resolution_a": 0.75,
-   "space_group": "P 1 21 1",
-   "unit_cell": [
-    31.6,
-    54.56,
-    47.98,
-    90.0,
-    99.246,
-    90.0
-   ],
-   "deposited_refinement_software": [
-    "PHENIX",
-    "SHELXL"
-   ],
+   "initial_release_date": "2023-06-28T00:00:00.000+00:00",
    "primary_citation": {
     "title": "Immunization with lytic polysaccharide monooxygenase CbpD induces protective immunity against Pseudomonas aeruginosa pneumonia.",
     "journal_abbrev": "Proc.Natl.Acad.Sci.USA",
@@ -2823,466 +663,193 @@
     "pdbx_database_id_DOI": "10.1073/pnas.2301538120",
     "pdbx_database_id_PubMed": 37459522
    },
-   "initial_release_date": "2023-06-28T00:00:00.000+00:00",
    "data": {
-    "kind": "amplitudes",
-    "labels": "FP,SIGFP",
-    "n_reflections": 198461,
-    "n_free": 9968,
-    "fraction_free": 0.050226,
-    "n_select": 4984,
-    "n_report": 4984,
-    "flags_source": "inherited",
-    "data_mtz_sha256": "c8b5afe5ac57978cdd1668e88e51aa9efb14db53cf23506080576de12e6529e6",
-    "flags_mtz_sha256": "d42d38db669cc6f6f286bbe2075b52e07a110251664fadd2de15521913f722df",
-    "sf_source_sha256": "cc11957c6dd43d76fdb111eac90d206921c4809df310923d9b70fc8c4f79d0ff",
-    "header_claim": {
-     "r_work": 0.1537,
-     "r_free": 0.1634,
-     "n_free": 9879,
-     "pct_free": 5.026,
-     "n_obs": 196572,
-     "cross_valid_method": "FREE R-VALUE",
-     "sf_status": "REL"
-    }
+    "data_labels": "IMEAN,SIGIMEAN",
+    "n_reflections": 195643,
+    "n_free": 9924,
+    "n_work": 185719,
+    "n_select": 4960,
+    "n_report": 4964,
+    "d_min": 0.7498887251544579,
+    "data_mtz_sha256": "253761cd49491b3810df5124d25d3c04e20dfdd7800b6bae7ac883e18495bdd7",
+    "flags_mtz_sha256": "0cd16adf109f3527ab79f9db7c5acbae0e7c81f540820866ba3003a808a6f4de"
    },
-   "r_free": {
-    "deposited_on_our_flags": {
-     "r_work": 0.14801759709582987,
-     "full": 0.15704629209471901,
-     "select": 0.15313900328101712,
-     "report": 0.1608245707914149,
-     "model_vs_data": {
-      "r_work": 0.1478,
-      "r_free": 0.1571
-     }
-    },
-    "rerefined_no_changes": {
-     "mean_full": 0.15334181946270145,
-     "sd_full": 0.0001308047309752223,
-     "n_seeds": 10,
-     "floor_file": "noise_floor.json"
-    },
-    "credit_bar": {
-     "protocol": "noise_floor",
-     "sigma_full": 0.000131,
-     "sigma_select": 0.000191,
-     "sigma_report": 0.000114,
-     "k_multiple": 2.0,
-     "accept_threshold_select": -0.000382
-    },
-    "released": {
-     "r_work": 0.1470599207267983,
-     "full": 0.15333482109286353,
-     "select": 0.1490213226190197,
-     "report": 0.1575058972965947,
-     "model_vs_data": {
-      "r_work": 0.1468,
-      "r_free": 0.1533
-     },
-     "ledger": {
-      "r_work": 0.14705566973306927,
-      "r_free_full": 0.15349500137457536,
-      "r_free_select": 0.1490656819849942,
-      "r_free_report": 0.15777807434113233
-     }
-    },
-    "delta_full_vs_deposited": -0.003711471001855482,
-    "delta_full_beyond_rerefinement": -6.99836983791835e-06,
-    "delta_beyond_in_sd_full": -0.05350242140128722
+   "released_step": "S0027",
+   "facts": "S0027 2026-10-21T14:13:07Z solvent water_addition parent S0021 | waters in own-copy clashes moved to a copy they clear; nothing deleted | R-free 0.09163 -> 0.09084 (-1.7 sigma) R-work 0.06922 -> 0.06749 gap +0.0009 clash 8.8 rota 1.3 % | atoms 17842 waters 1443 altlocs ABCDEF anisou 9910 | ACCEPT",
+   "released": {
+    "r_free": 0.09083658957064106,
+    "r_work": 0.06749162759285071,
+    "gap": 0.023344961977790346,
+    "r_free_select": 0.09068587780570717,
+    "r_free_report": 0.09098517397494665,
+    "clashscore": 8.84,
+    "rota_pct": 1.26,
+    "rama_outliers_pct": 0.0,
+    "rama_favored_pct": 98.3696,
+    "bond_rmsd": 0.01,
+    "angle_rmsd": 1.193,
+    "n_atoms": 17842,
+    "n_h": 7932,
+    "n_water_atoms": 1443,
+    "water_occ_sum": 471.69,
+    "n_anisou": 9910,
+    "copies": 6,
+    "altlocs": "ABCDEF"
    },
-   "composition": {
-    "deposited": {
-     "n_atoms": 2433,
-     "n_hydrogen": 665,
-     "n_water_residues": 161,
-     "altlocs": [
-      "A",
-      "B",
-      "C"
-     ]
-    },
-    "released": {
-     "n_atoms": 2433,
-     "n_hydrogen": 665,
-     "n_water_residues": 161,
-     "altlocs": [
-      "A",
-      "B",
-      "C"
-     ]
-    }
+   "deposited_on_our_flags": {
+    "r_free": 0.15714577806036614,
+    "r_work": 0.14797060024053854,
+    "gap": 0.009175177819827601,
+    "r_free_select": 0.1560765301140688,
+    "r_free_report": 0.158199933117364,
+    "clashscore": 7.04,
+    "rota_pct": 2.34,
+    "n_atoms": 2433,
+    "n_water_atoms": 161
    },
-   "coordinate_diff": {
-    "waters_added": [],
-    "waters_removed": [],
-    "nonwater_residues_added": [],
-    "nonwater_residues_removed": [],
-    "altloc_changes": [],
-    "hydrogens_delta": 0
+   "status": "improved",
+   "files": {
+    "targets/8C5N/README.md": "496dd805c5cc885bd227a2b46056e8bbb7408ca53136c32c794c686f1e2e890b",
+    "targets/8C5N/data/8C5N_data.mtz": "253761cd49491b3810df5124d25d3c04e20dfdd7800b6bae7ac883e18495bdd7",
+    "targets/8C5N/data/8C5N_flags.mtz": "0cd16adf109f3527ab79f9db7c5acbae0e7c81f540820866ba3003a808a6f4de",
+    "targets/8C5N/data/8C5N_split.mtz": "4ed3af076a3792df58753df38384bb91ec00e8afe1b38d00a13e14f08eeb0574",
+    "targets/8C5N/data/prep.json": "4b9c104c832667c2be2393e6bd24657ed86a19b1cf1e3e0cd9c6221d3d7f34e1",
+    "targets/8C5N/data/split.json": "b18c0f61a61fc6fa5287c092b564d66e4b43899253047558910d961db6b8fe5b",
+    "targets/8C5N/deposited/8C5N.cif": "abda46e2185866df21b10a5cd70e4548c5cc62faf5fdb89e03706631378073bb",
+    "targets/8C5N/deposited/rcsb_entry.json": "0614b72157598157f1339ee5c1b410e370fc8918796451f3a2938aa7c4ab3152",
+    "targets/8C5N/maps/8C5N_S0027_map_coeffs.mtz": "305565b91b5d2f8151b4e1f1d5f2cffcb24a8c1739824f574ecaebe636d85cb0",
+    "targets/8C5N/model/8C5N_S0027.cif": "7eea5a397ee4f068cc904dc6f42a020d812836a553ac052734321599732ce210",
+    "targets/8C5N/model/8C5N_S0027.pdb": "d1bfe97844aa08e26f4e8b6284979333f2c7e81f35b301f20f343ae70c9776e7",
+    "targets/8C5N/refinement/S0027/FACTS.txt": "759ac557bb8412aec84a7ba7f78fd0c301619aa426855c3ad4b9832b646c2ad6",
+    "targets/8C5N/refinement/S0027/change.json": "310d61a93148b162d4d9c7f24dc7ac8a51d222272efe422533bd0660762c2c03",
+    "targets/8C5N/refinement/S0027/score.json": "8d2754969fa865d12fd8956d6ce8e7280ea7eb85a483801b3d75a85cf3201e83",
+    "targets/8C5N/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/8C5N/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/8C5N/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/8C5N/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/8C5N/refinement/chains/chain_target_T5f59f1.log": "014b4f2527056941dd320bf4100c1ce2aa4a7886e60babe2dedc1c95a90fb586",
+    "targets/8C5N/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/8C5N/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/8C5N/refinement/chains/target_8C5N.log": "50d8078ee6083d84d27d1dc86634e5bb600df6544ea79aed45f009e43cc7de65",
+    "targets/8C5N/refinement/metaparams.yaml": "e0f150768aeeeda424c3d58ba36289796b27c2a7d4f7b024ef6ebf442d14d313",
+    "targets/8C5N/refinement/run.json": "d925bf129fc758ca1047ef08151736ea6d1843a10d3c1826280113e6925e9c20",
+    "targets/8C5N/refinement/score_history.jsonl": "eef3d63e03ffe17baf1c51881c336b088a4852b8b27a36b51727fcc3eb03f73a",
+    "targets/8C5N/refinement/score_history.txt": "463382344d5849dd8880ffc181d8f72a80297ff2d5778f7e009e3bb9adb00728",
+    "targets/8C5N/refinement/scorecard.csv": "ecf7b46248b7b4c1d57b9a392ed875cab1c575efde48777ebbeda3669d87c175",
+    "targets/8C5N/refinement/steps.md": "f7cbc12a690ff59d545bbd8aba9ca4440d02fd628908bc26af55dc8a19916277",
+    "targets/8C5N/validation/8C5N_S0027.clashscore.log": "821047313cab3209be89c56b9ee4aabbbde39af924b52e8581c062c22b3d01b2",
+    "targets/8C5N/validation/8C5N_S0027.ramalyze.log": "568f5047cab9afec4c26306136035bfd2f0711aeedf11d9fdf1aef4ef95d7cf2",
+    "targets/8C5N/validation/8C5N_S0027.rotalyze.log": "a978cb1199bd1f06f4dc233362e2a4f6fba4f0dc2ae93f74972baedbd8b0af8a"
+   }
+  },
+  {
+   "id": "9ARN",
+   "title": "Structure and interactions of HIV-1 gp41 CHR-NHR reverse hairpin constructs reveal molecular determinants of antiviral activity",
+   "resolution_a": 1.41,
+   "initial_release_date": "2025-03-05T00:00:00.000+00:00",
+   "primary_citation": {
+    "title": "Structure and Interactions of HIV-1 gp41 CHR-NHR Reverse Hairpin Constructs Reveal Molecular Determinants of Antiviral Activity.",
+    "journal_abbrev": "J.Mol.Biol.",
+    "year": 2024,
+    "pdbx_database_id_DOI": "10.1016/j.jmb.2024.168650",
+    "pdbx_database_id_PubMed": 38866091
    },
-   "molprobity": {
-    "deposited": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 99.46,
-     "rotamer_outliers_pct": 2.34,
-     "cbeta_deviations": 0.0,
-     "clashscore": 6.33,
-     "rms_bonds": 0.015,
-     "rms_angles": 2.02,
-     "molprobity_score": 1.63
-    },
-    "released": {
-     "ramachandran_outliers_pct": 0.0,
-     "ramachandran_favored_pct": 99.46,
-     "rotamer_outliers_pct": 2.34,
-     "cbeta_deviations": 0.0,
-     "clashscore": 5.69,
-     "rms_bonds": 0.0117,
-     "rms_angles": 1.41,
-     "molprobity_score": 1.59
-    }
+   "data": {
+    "data_labels": "IMEAN,SIGIMEAN",
+    "n_reflections": 15310,
+    "n_free": 772,
+    "n_work": 14538,
+    "n_select": 384,
+    "n_report": 388,
+    "d_min": 1.370032433044185,
+    "data_mtz_sha256": "8640ea3357641af627fb7ee5cb2ffd9bbf1282efb842c5e89afd6c42b3a4e4e8",
+    "flags_mtz_sha256": "dd55f1943df4dd2012968726891d814a933c657522e04fd3c95c4ea77b7167fa"
    },
-   "campaign": {
-    "cycle_index": 0,
-    "stage": "baseline_rerefine",
-    "updated_at": "2026-10-05T05:48:44+00:00",
-    "model_on_pod": "/home/dev/runs/8C5N/c000/baseline_rerefine/refine_001.cif",
-    "n_cycles_on_record": 4,
-    "n_credited_cycles": 0,
-    "writing_cycle": {
-     "cycle_index": 0,
-     "stage": "baseline_rerefine",
-     "run_id": "",
-     "verdict": "",
-     "attributable_delta_select": null,
-     "delta_r_gap": null,
-     "geometry_flag": null,
-     "run_dir": "/home/dev/runs/8C5N/c000/baseline_rerefine"
-    },
-    "bisect_step": null,
-    "credited_cycles": [],
-    "n_changes_proposed": 20,
-    "thresholds_version": "thresholds_v8",
-    "run_summary": null,
-    "refinement": {
-     "phenix_version": "2.1-6048",
-     "macro_cycles": 5,
-     "adp_model": "anisotropic",
-     "n_tls_groups": 0,
-     "riding_hydrogens": true,
-     "seed": 1,
-     "adp_decision": "n_refl/n_atoms(non-H)=112.25 >= 5.0 and d_min=0.7499 <= 1.5"
-    }
+   "released_step": "S0062",
+   "facts": "S0062 2026-10-20T02:10:55Z refinement refine_step parent S0060 | TLS, 2 groups (phenix.find_tls_groups) | R-free 0.28733 -> 0.27695 (-11.2 sigma) R-work 0.23462 -> 0.23894 gap -0.0147 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 649 | ACCEPT",
+   "released": {
+    "r_free": 0.27694662806562076,
+    "r_work": 0.23894057510522357,
+    "gap": 0.03800605296039719,
+    "r_free_select": 0.2679894086772908,
+    "r_free_report": 0.28560168638691213,
+    "clashscore": 1.59,
+    "rota_pct": 0.0,
+    "rama_outliers_pct": 0.0,
+    "rama_favored_pct": 100.0,
+    "bond_rmsd": 0.004,
+    "angle_rmsd": 0.521,
+    "n_atoms": 654,
+    "n_h": 0,
+    "n_water_atoms": 38,
+    "water_occ_sum": 35.56,
+    "n_anisou": 649,
+    "copies": 1,
+    "altlocs": "AB"
    },
-   "caveats": [
-    "Refined and scored against the deposited amplitudes (F_meas_au), not the merged intensities: French\u2013Wilson conversion of the intensities drops 44 of the 9 968 inherited free reflections (D540). The free set itself (status 'f') is unchanged.",
-    "The released model is one Phenix re-refinement of the deposited file; nothing the agent proposed has been credited yet (E044). Rotamer outliers 2.3 % in both the deposited and the released model, above the campaign's 1.5 % cap (pre-existing).",
-    "The deposited model carries 665 hydrogens, an incomplete riding set; the released model keeps the deposited hydrogens.",
-    "Nothing was credited on this target; the released model is the single Phenix re-refinement of the deposited file (D484). For CNS/REFMAC/X-PLOR-era depositions the campaign's noise floor measures convergence variance rather than test-set noise, so its credit bar was effectively unreachable (D506). The gain over the deposited file is what phenix.refine does on its own."
-   ],
-   "files": [
-    {
-     "path": "data/8C5N_data.mtz",
-     "bytes": 3971540,
-     "sha256": "c8b5afe5ac57978cdd1668e88e51aa9efb14db53cf23506080576de12e6529e6",
-     "description": "The frozen observed data (FP,SIGFP or IMEAN,SIGIMEAN) built from the deposited structure factors."
-    },
-    {
-     "path": "data/8C5N_flags.mtz",
-     "bytes": 3177616,
-     "sha256": "d42d38db669cc6f6f286bbe2075b52e07a110251664fadd2de15521913f722df",
-     "description": "The frozen R-free flags, inherited unchanged from the deposited _refln.status ('f' = free; column R-free-flags, 0 = free)."
-    },
-    {
-     "path": "data/8C5N_split.mtz",
-     "bytes": 3177616,
-     "sha256": "bdf553612ad52b290d7283dc164cb0774b17bfeebb675f58897ecb702de944c2",
-     "description": "The select/report halves of the free set (column SPLIT: 1 = select, 2 = report, 0 = work)."
-    },
-    {
-     "path": "data/prep.json",
-     "bytes": 4931,
-     "sha256": "40e41a94e38c1a2a97c94ec2bd36e9152719364fc4e598aab87b53187938066d",
-     "description": "How data.mtz and flags.mtz were built: source file SHA-256, columns, counts, conventions, header claims."
-    },
-    {
-     "path": "data/split.json",
-     "bytes": 287300,
-     "sha256": "275bab4653eb004bb46afd5f8ada4c8fe12908ae0a2a7bafb17796a3d01d4556",
-     "description": "The same split as a list of reflections, with the seed that made it."
-    },
-    {
-     "path": "deposited/8C5N.cif",
-     "bytes": 520623,
-     "sha256": "abda46e2185866df21b10a5cd70e4548c5cc62faf5fdb89e03706631378073bb",
-     "description": "The deposited coordinate file as fetched from RCSB (the starting point)."
-    },
-    {
-     "path": "deposited/8C5N.fasta",
-     "bytes": 275,
-     "sha256": "6dc9e5d2dbb18a6d5d9d280ffe2c4f17e1793ab2e532978e4ee1c406a72da707",
-     "description": "The entry's sequence as fetched from RCSB."
-    },
-    {
-     "path": "deposited/FETCHED",
-     "bytes": 76,
-     "sha256": "9f605c751717d1881e91a81c21137bc377ba98ede25a3f5c52c466470551756a",
-     "description": "When the raw files were fetched."
-    },
-    {
-     "path": "deposited/fetch_manifest.sha256",
-     "bytes": 756,
-     "sha256": "29738101dc05f58e3537786d9564c308417ff3624eb12b4a200d46024bbb8ca9",
-     "description": "SHA-256 of the raw files at fetch time."
-    },
-    {
-     "path": "deposited/rcsb_entry.json",
-     "bytes": 17900,
-     "sha256": "0614b72157598157f1339ee5c1b410e370fc8918796451f3a2938aa7c4ab3152",
-     "description": "The RCSB entry record (title, citation, experimental details) as fetched."
-    },
-    {
-     "path": "ledger/bisections.csv",
-     "bytes": 246,
-     "sha256": "8c31a7c401cd50a03b229cb094cb749ebf14079358828fc0e833970fdb12b8be",
-     "description": "Bisection steps when a cycle regressed."
-    },
-    {
-     "path": "ledger/changes.csv",
-     "bytes": 66077,
-     "sha256": "e86fe7109bd351ee02abc9c3761cf037ea4849bee1063fe854cd5c4daa22e96a",
-     "description": "Every proposed change: type, selection, local density and geometry gates, \u0394R-free-select, verdict."
-    },
-    {
-     "path": "ledger/checks.csv",
-     "bytes": 3466,
-     "sha256": "a1fc29b7f51efa2ecbf1e54927924f34748fa84db53362a81303fee750fbdc0c",
-     "description": "Gate results G0\u2013G8."
-    },
-    {
-     "path": "ledger/cycles.csv",
-     "bytes": 3504,
-     "sha256": "e1e5492cb60cc73b40035a409479810663be7bbe6f5f230dc4dc9122ef834f8c",
-     "description": "Every paired cycle on this target: R-free on every set, verdict, attributable \u0394, R-gap, geometry."
-    },
-    {
-     "path": "ledger/defects.csv",
-     "bytes": 3157,
-     "sha256": "8068f579a6cf9875cecd08fd9215f7464bfa5c8f24653e02876f39b9e5787a6e",
-     "description": "Values that could not be computed, with the reason (never a sentinel)."
-    },
-    {
-     "path": "ledger/deviations.csv",
-     "bytes": 924,
-     "sha256": "6c30c2e853cc786fc37cf44eed368814e24f4fbff5cb750fc36d50580bd16533",
-     "description": "Decision-log rows that name this target."
-    },
-    {
-     "path": "ledger/noise_floor.csv",
-     "bytes": 1333,
-     "sha256": "a3a83a697fb108dbb0c40a2fd433c6fa3b602f08bdc63812edf26981e3827caf",
-     "description": "The noise-floor row that set the credit bar: \u03c3 of R-free on every set."
-    },
-    {
-     "path": "ledger/rfree_consultations.csv",
-     "bytes": 226,
-     "sha256": "0a58aded038df276af9357b87fc4f70b1f5ccb5a64e98666c7a26b7737c52a48",
-     "description": "How many times R-free-select was consulted (PROTOCOL \u00a73.6)."
-    },
-    {
-     "path": "ledger/solvent_disagreements.csv",
-     "bytes": 120,
-     "sha256": "653031d4d76f1ad37adfe00d3578a01ec22ef143c408bd835173f8a1c7252dff",
-     "description": "Phenix/Coot disagreements on solvent sites."
-    },
-    {
-     "path": "maps/8C5N_refined_map_coeffs.mtz",
-     "bytes": 13112672,
-     "sha256": "35b10ad18ad4410b3766fe3b2c60ff0835753d38242c1afbb472acf850b501ae",
-     "description": "Map coefficients from that run (2mFo\u2212DFc and mFo\u2212DFc; open with the model in Coot)."
-    },
-    {
-     "path": "model/8C5N_refined.cif",
-     "bytes": 358972,
-     "sha256": "4a4a31d01b66f915c73e74e864167808b1ea6707b9c83dfb55f5e48d65ec8f63",
-     "description": "The released model, mmCIF, as written by the phenix.refine run named in refinement/current.json."
-    },
-    {
-     "path": "model/8C5N_refined.pdb",
-     "bytes": 341096,
-     "sha256": "b978c137c845245fe776cac0dcfd64e80ec815d51d66fa3227e813cc24b18441",
-     "description": "The same model in PDB format, from the same run."
-    },
-    {
-     "path": "refinement/command.txt",
-     "bytes": 3688,
-     "sha256": "3a35fe42277096c5d0a5519d63714ee6e0a61ce8b89cd407e543dccb8113ae7b",
-     "description": "The verbatim phenix.refine argv that wrote the model."
-    },
-    {
-     "path": "refinement/current.json",
-     "bytes": 351,
-     "sha256": "bf29977de1303071ba11eb0a610d5a0626ac6db9076052a4540a8c4876ccca80",
-     "description": "The campaign's standing-deliverable record: pod path of the model, R-free on every set, cycle index."
-    },
-    {
-     "path": "refinement/refine_001.eff",
-     "bytes": 42674,
-     "sha256": "9bc39b232efba8f58ba5da6b2773566fb26dabf3a6b5dbdab7673df6af8bbc09",
-     "description": "The effective parameters of that run."
-    },
-    {
-     "path": "refinement/refine_001.log",
-     "bytes": 79900,
-     "sha256": "b5a9cc7618321833f38c8df8209729cc1b5e60d3fa3b6bcab31fe90534fdb024",
-     "description": "The phenix.refine log of that run."
-    },
-    {
-     "path": "refinement/refine_decisions.json",
-     "bytes": 2145,
-     "sha256": "dcd4cd86ea5865a3cdaea75541f001885f3102713bec234dfdfaf53ac834d2a2",
-     "description": "The harness's protocol decisions for that run (ADP model, TLS, restraints, data labels)."
-    },
-    {
-     "path": "refinement/refine_result.json",
-     "bytes": 2774,
-     "sha256": "5f70b04d7d3e2734eccead8e3bdf10dffbb466b16e70accacc82d45a3a46a95a",
-     "description": "The parsed result of that run (R factors, geometry, seed, wall clock)."
-    },
-    {
-     "path": "validation/campaign/checks/G3_8C5N.json",
-     "bytes": 6499,
-     "sha256": "acc2530df0b87dc3c863d8188e2081cf92d1a991cfe2e04a1cd35e2e9283e0b8",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/checks/fetch_8C5N.json",
-     "bytes": 2207,
-     "sha256": "7d254a72fc2ac0da82c594eb4917badc1e016dba4669c75eeaee9c44a5a029cf",
-     "description": "Gate records: G3 (deposited R-free reproduced on the frozen flags) and the fetch check."
-    },
-    {
-     "path": "validation/campaign/clash_altloc.json",
-     "bytes": 11220,
-     "sha256": "536201abb094f38678d9964a4dfc99b23e68f3084a27bd8dc7882f7243e0d5b3",
-     "description": "The campaign's clashscore runs (standard and altloc-aware)."
-    },
-    {
-     "path": "validation/campaign/clashscore.json",
-     "bytes": 37238,
-     "sha256": "42db9425d296688780e6d28d7df6f0c99bd502e306d8066964b9e3c4a632f6eb",
-     "description": "The campaign's clashscore runs (standard and altloc-aware)."
-    },
-    {
-     "path": "validation/campaign/cycle_row.json",
-     "bytes": 1267,
-     "sha256": "23d13e5bc6d149408fbdedf55150054ca7596e20445ca98245eee6e9d640cb03",
-     "description": "The campaign's per-cycle record for this model (PROTOCOL \u00a77)."
-    },
-    {
-     "path": "validation/campaign/dossier.json",
-     "bytes": 107694,
-     "sha256": "33261f08741ac7ca4b202b9c16bbaeb905c97e1cfd658a4bab9d0a706e04c057",
-     "description": "The campaign dossier: xtriage, model audit, composition hypothesis, baselines."
-    },
-    {
-     "path": "validation/campaign/molprobity.out",
-     "bytes": 18378,
-     "sha256": "1befb7e3c3af7c2259c05582f656b3280a0150909db1c83a85d0357e3937b104",
-     "description": "The campaign's MolProbity run on this model."
-    },
-    {
-     "path": "validation/campaign/molprobity_result.json",
-     "bytes": 7630,
-     "sha256": "5fbbc3d5c5ae6f2891f6ebc290b608811cb811c1ac0079c3ffda7fecbaa2ef64",
-     "description": "The campaign's MolProbity run on this model."
-    },
-    {
-     "path": "validation/campaign/noise_floor.json",
-     "bytes": 7564,
-     "sha256": "6490f9426419ecd26664949e5c0f929d152af4c64f28422d7dd3cc74dbf35c60",
-     "description": "A campaign noise floor: ten re-refinements of a model with different seeds (start_model says which model)."
-    },
-    {
-     "path": "validation/release/merge_mtz.log",
-     "bytes": 396,
-     "sha256": "324cea168bc674f0c886f7c873d6ddd31c1eb4ce1d2055b157e2623e8fcd762e",
-     "description": "Log of the data+flags merge used by model_vs_data."
-    },
-    {
-     "path": "validation/release/model_diff.json",
-     "bytes": 458,
-     "sha256": "efc13c35a7e2ca733d7a38f6cd6e308e768bc7d511281581d1a6e0324d264db6",
-     "description": "Coordinate-level diff, deposited vs released: waters added/removed, residues whose altloc set changed, hydrogens."
-    },
-    {
-     "path": "validation/release/model_vs_data.deposited.log",
-     "bytes": 2454,
-     "sha256": "b4764cbc293862623b9fc630d355704e500e7492d270c1f3dcbdb5fb82f0589d",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/model_vs_data.refined.log",
-     "bytes": 3646,
-     "sha256": "6b568ffb146477baa11077791626e863ec52f08c7006a59b89dfe32f12124f47",
-     "description": "phenix.model_vs_data on the merged data+flags MTZ."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.log",
-     "bytes": 31033,
-     "sha256": "8ed2c7cb809a37a5e60d3e076b3b0d7a3569841b726a414d6d72057625ee048d",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.deposited.out",
-     "bytes": 17155,
-     "sha256": "3ba89bbbedca817996d4c97c8d08883eea31818d839328a28df7cf2d851b4c08",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.log",
-     "bytes": 30501,
-     "sha256": "3d4bf794b44b13733c25813e8912668d8fd69ac7f92cdc13c85f778a794214b0",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/molprobity.refined.out",
-     "bytes": 15860,
-     "sha256": "26399b3d712724c178410ed52348710df369598a1f48f0ef3fa92259fca983e8",
-     "description": "phenix.molprobity with default settings."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.json",
-     "bytes": 647,
-     "sha256": "79f6426ffe2f2d43983beef6fbf74abb35bc62a59e94f80a059891336d1fd817",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.deposited.log",
-     "bytes": 1098,
-     "sha256": "95fa316f999db01fc1a4f2aa6a1c8d05ce88425ba1cd47428c9958b5b357c3c9",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.json",
-     "bytes": 650,
-     "sha256": "ae5c0a44badee2f9b92f53e57d9df11dfc5bfc87e6579078b3e9cb6c170e94f4",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/rfree_indep.refined.log",
-     "bytes": 1103,
-     "sha256": "0dcbf7e12f6358b5fa1ef91edf04f0056d2bb64786973180eaf59691a93bafbb",
-     "description": "Independent R-free scorer (scripts/indep_rfree.py): work/free/select/report, atom counts."
-    },
-    {
-     "path": "validation/release/summary.json",
-     "bytes": 2565,
-     "sha256": "d852ec5c24ae849e178cb9596d97ab861244c09d9f7e803d7b7274be5c6b6093",
-     "description": "Release-time validation of the deposited and refined models (parsed from the logs beside it)."
-    }
-   ]
+   "deposited_on_our_flags": {
+    "r_free": 0.29440255417373173,
+    "r_work": 0.25417360934303956,
+    "gap": 0.04022894483069217,
+    "r_free_select": 0.29474099365536593,
+    "r_free_report": 0.2940755315426253,
+    "clashscore": 1.59,
+    "rota_pct": 0.0,
+    "n_atoms": 654,
+    "n_water_atoms": 38
+   },
+   "status": "improved",
+   "files": {
+    "targets/9ARN/README.md": "c74b15dabc24e80c0a154d549412a23a2bb04246d63cea5257d3d4241f432646",
+    "targets/9ARN/data/9ARN_data.mtz": "8640ea3357641af627fb7ee5cb2ffd9bbf1282efb842c5e89afd6c42b3a4e4e8",
+    "targets/9ARN/data/9ARN_flags.mtz": "dd55f1943df4dd2012968726891d814a933c657522e04fd3c95c4ea77b7167fa",
+    "targets/9ARN/data/9ARN_split.mtz": "7b29732a64681404178cc366a826514b0ffacea671c40b2561a1651b4b9643ef",
+    "targets/9ARN/data/prep.json": "9444ed48a2650f0c0a73f67c27025273ef1765fdc23f5532a251c4b0b97aa431",
+    "targets/9ARN/data/split.json": "06251f6159bc6dc5a154da9d7915abc067bc0f59ca63c3168bf6f0884b31ea61",
+    "targets/9ARN/deposited/9ARN.cif": "aff7a4a4aab96fcc95c4bc7f679f9376fcb4455b449ec8d30f6b7cf6c891d77b",
+    "targets/9ARN/deposited/rcsb_entry.json": "0cf2efa6251aaa059487355acb2551d018d4305e5c64583a7a34fb06b041eaea",
+    "targets/9ARN/maps/9ARN_S0062_map_coeffs.mtz": "2f38b5970e97c37e4000a573bccb26b9fc786af64e6d535cc65ef8feecc22fee",
+    "targets/9ARN/model/9ARN_S0062.cif": "1693efe1fb5785e7de7ebdad744245b9a5ef04f63888dedf2e20684bff046a13",
+    "targets/9ARN/model/9ARN_S0062.pdb": "f19e8b52d02a869da2fc1ea815d3269bbed2495585db7cba04c59c446a3bb481",
+    "targets/9ARN/refinement/S0062/FACTS.txt": "805e3c9d92e0af04ae5f73e8e15a7390b195f2d16b12f7e3ab137e5a100620f7",
+    "targets/9ARN/refinement/S0062/change.json": "ec4632eb2b2947cf68074f397612fcb2e1258452dfadca405bd874d0fa06dcf0",
+    "targets/9ARN/refinement/S0062/score.json": "471a190de5169cc3fdfdaba853dc8a291886cc08e9bf9b617d3050494c5c61f0",
+    "targets/9ARN/refinement/chains/after_pid.sh": "845e78f14dc46a82a1e3c0f9d18987c8c464f7ed6f187c1259d45abced55ca1e",
+    "targets/9ARN/refinement/chains/chain_after.sh": "5201f5f1a53fe1a7010879bf073ebff8d159a3cd79211910ad948e01743274bd",
+    "targets/9ARN/refinement/chains/chain_after_rota_Tba97f6.log": "2d665b2d8beb14f7211ef1954e4f34c3f497c12948e6c151568dd175d11748eb",
+    "targets/9ARN/refinement/chains/chain_arn2.sh": "bcb1effefd420499b8d83cff5d1443047d5640c474c4ac2e5fa527efbd24e4ec",
+    "targets/9ARN/refinement/chains/chain_arn2_Tba97f6.log": "24d95cc95929108464ee575aab1e477bcb10b65ac006100fb371ada9a85507e9",
+    "targets/9ARN/refinement/chains/chain_arn3.sh": "ab1e5cbee909537219d5b1a9ed7a2c517739317ce7b07885558b36f4b31a75ca",
+    "targets/9ARN/refinement/chains/chain_arn3_Tba97f6.log": "ef01b03e73884992520890fc15584b2a9c906edd029518b028887e5e9ee34c3a",
+    "targets/9ARN/refinement/chains/chain_coot.sh": "03897b58076a4abe6a18714a9d47e60fcb7f261e61af3429b4adb4873f2f138c",
+    "targets/9ARN/refinement/chains/chain_coot_Tba97f6.log": "c1998ebf1a786ac69797576f115c3beafa2f7d597fab17284f83e1df0ef77f4a",
+    "targets/9ARN/refinement/chains/chain_ions.sh": "f2bfd3d75c4563599a7e1adf7bbd87c7990e57f08876fb5c5f2965f5933223b9",
+    "targets/9ARN/refinement/chains/chain_ions_Tba97f6.log": "3cdab737250cdd22f9ebdf0b7ec24f24286ae6b1ab962920211c5d2297b6973b",
+    "targets/9ARN/refinement/chains/chain_lib.sh": "9fa9c3ba86826c3c36e8974106975dd144730da727d172d51f84f2035f644e31",
+    "targets/9ARN/refinement/chains/chain_more.sh": "47a53ed04a3eac148ab4533bc9ec0201330feae7bb1e76de9893c7841e933968",
+    "targets/9ARN/refinement/chains/chain_more_Tba97f6.log": "07d7613125120768ff0455f264c4b3b19dbf4684fc6f5a856e2709f9104e2109",
+    "targets/9ARN/refinement/chains/chain_noise.sh": "400d251b2fd9e50f6e066b3064d10ffd1739e3238c5c0819fedf524d3a2062be",
+    "targets/9ARN/refinement/chains/chain_noise_Tba97f6.log": "184d3b1dddac703cc26ebaac395f8458d1df22b1392311fcbf57806df5ca6e7d",
+    "targets/9ARN/refinement/chains/chain_qfit.sh": "c212fc345455bb4a6d724d65406fc817dda0cba65f4dfa7448f62844d75097c9",
+    "targets/9ARN/refinement/chains/chain_qfit_Tba97f6.log": "889f1d3f0e8d06f7b8780dd488542aa8263384756731eaab7f4f7f5e79106a15",
+    "targets/9ARN/refinement/chains/chain_target.sh": "d262b239cd1b4687c46a0447957b01ca8650bbc394b39185cf428839bccf3c56",
+    "targets/9ARN/refinement/chains/chain_target_Tba97f6.log": "8f1b3b44e11b6cc9944c1df510486d338afba7728bfb0140847bdc220306f875",
+    "targets/9ARN/refinement/chains/chain_tls.sh": "a425aa68f4aa910305cd3cac642f1da088f2e0eb6e78fdece6c89d52fef2d000",
+    "targets/9ARN/refinement/chains/chain_tls_Tba97f6.log": "158f603106f9a43785722e355cf17ff4ec5dd340b44ac786c1ca6972eba0a5f6",
+    "targets/9ARN/refinement/chains/followup_Tba97f6.log": "19a553b2f1a1176cce9653d4e60a9ba017798df423e89ffa0eed6c117e0024f4",
+    "targets/9ARN/refinement/chains/fork_gap_after.sh": "e983885e2108fd2d602d900c4d8d7c4a4211a1da33821fa0161c9dc280be6e06",
+    "targets/9ARN/refinement/chains/fork_run.sh": "7e4368c3a628dd1a8a53e013c66b128cd1263e7c20fd0b3a26d4fe4e13bfa8d1",
+    "targets/9ARN/refinement/chains/target_9ARNcut.log": "92f892204e8e11458e2b41da8170b105842e1beda254aefc6a1eb2c3131a805b",
+    "targets/9ARN/refinement/metaparams.yaml": "66d1496ef382bbe326a0fb591963eec5471f7819ea609778a3c589e0185d93a8",
+    "targets/9ARN/refinement/run.json": "fc08a6fe77c659ec00eb5b9e50f7593c46336e1fffe440cc4313d24c82505eea",
+    "targets/9ARN/refinement/score_history.jsonl": "103da1fee768454b06ede9f202664507d7807a8e2388ee89916ee6b9b6a7c8b0",
+    "targets/9ARN/refinement/score_history.txt": "f3dbe6283440d8785bd56593d4e5731eeeb2eb3ec039b4ac3ba047fa86493963",
+    "targets/9ARN/refinement/scorecard.csv": "a39444f91d48ca6dc5cde806af2c7d3b9db8d54d05ffb338afd45c36c4b2b341",
+    "targets/9ARN/refinement/steps.md": "2c6c8477e73c46aaa0550b01453f3e063d34a6f0cc3f890370c03bc2df40e437",
+    "targets/9ARN/validation/9ARN_S0062.clashscore.log": "4ea3870e63a0b71a7807612249a9666ac5bf4d4daf3066b08c3c802aeeb802ae",
+    "targets/9ARN/validation/9ARN_S0062.ramalyze.log": "07fac0bf35c59100691d39b2b0901be85e65523165f28367b138e36d5f60bbd1",
+    "targets/9ARN/validation/9ARN_S0062.rotalyze.log": "2ced1ab92b5d5db730c5871cc42316b27e5ebe3c4d6ac95b82360c177af1a133"
+   }
   }
  ]
 }

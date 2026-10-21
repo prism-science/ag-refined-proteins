@@ -1,0 +1,12 @@
+[2026-10-20T18:51:32Z] chain_after start on /home/dev/runs/hr/T431c8e: group_adp_m = refine_step.py group-adp --groups 1
+[2026-10-20T18:51:32Z] group_adp_m (1) from S0042
+S0056 2026-10-20T20:06:20Z refinement refine_step parent S0042 | 1 group B factor for each residue (strategy group_adp) against individual ADPs | R-free 0.15402 -> 0.15465 (+2.0 sigma) R-work 0.09278 -> 0.09101 gap +0.0024 clash 3.0 rota 2.
+[2026-10-20T20:06:21Z] chain_after end on /home/dev/runs/hr/T431c8e (group_adp_m); best model S0042
+[2026-10-20T20:06:21Z] chain_after start on /home/dev/runs/hr/T431c8e: tls_m = refine_step.py tls
+[2026-10-20T20:06:21Z] tls_m (1) from S0042
+S0057 2026-10-20T21:25:12Z refinement refine_step parent S0042 | TLS, 1 group (one for each protein chain) | R-free 0.15402 -> 0.15529 (+4.0 sigma) R-work 0.09278 -> 0.09309 gap +0.0010 clash 3.5 rota 2.2 % | atoms 28156 waters 3672 altlocs
+[2026-10-20T21:25:13Z] chain_after end on /home/dev/runs/hr/T431c8e (tls_m); best model S0042
+[2026-10-20T21:25:13Z] chain_after start on /home/dev/runs/hr/T431c8e: pick_4.0_m = water_addition.py pick --sigma 4.0
+[2026-10-20T21:25:13Z] pick_4.0_m (1) from S0042
+S0058 2026-10-20T22:44:01Z solvent water_addition parent S0042 | waters at 4.0 sigma, mode single | R-free 0.15402 -> 0.15155 (-9.3 sigma) R-work 0.09278 -> 0.08821 gap +0.0021 clash 2.7 rota 2.2 % | atoms 25830 waters 1346 altlocs ABCDEF a
+[2026-10-20T22:44:02Z] chain_after end on /home/dev/runs/hr/T431c8e (pick_4.0_m); best model S0042

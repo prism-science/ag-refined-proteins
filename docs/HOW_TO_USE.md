@@ -4,126 +4,67 @@ Three levels, cheapest first: look at a model, check a number, continue the work
 
 ## Look
 
-Each target ships the model with the map coefficients its refinement wrote, so no recalculation is needed:
+Each target ships the model with map coefficients computed from the work reflections only, so no recalculation is
+needed:
 
 ```bash
-coot targets/<ID>/model/<ID>_refined.pdb --auto targets/<ID>/maps/<ID>_refined_map_coeffs.mtz
+coot targets/7KR0/model/7KR0_S0053.pdb --auto targets/7KR0/maps/7KR0_S0053_map_coeffs.mtz
 ```
 
-The MTZ carries `2FOFCWT/PH2FOFCWT` (2mFo−DFc) and `FOFCWT/PHFOFCWT` (mFo−DFc) as written by phenix.refine. To compare
-with the starting point, load `targets/<ID>/deposited/<ID>.cif` alongside; both are in the same frame.
+The MTZ carries `2FOFCWT/PH2FOFCWT` (2mFo−DFc) and `FOFCWT/PHFOFCWT` (mFo−DFc). A six-copy ensemble shows as altlocs A
+to F on every protein residue, each at occupancy 1/6; a lettered water belongs to one copy, a blank one to all six. To
+compare with the starting point, load `targets/7KR0/deposited/7KR0.cif` alongside; both are in the same frame.
 
-To see what the agent changed, `targets/<ID>/ledger/changes.csv` lists every proposed change with its selection
-(chain, residue), type, gate values and verdict, and `ledger/cycles.csv` says which cycles were credited. The atom
-and water counts on the card give the net effect.
+To see what the run changed, `targets/7KR0/refinement/steps.md` lists every step with its verdict, and
+`refinement/score_history.txt` is the gate's own record: one line per step with the change, R-free before and after,
+the margin in σ, R-work, gap, clashscore, rotamer outliers, atom and water counts and the verdict.
 
 ## Check
 
-### R-free on the frozen flags (needs Phenix)
+### R-free on the inherited flags (needs Phenix)
+
+The released number comes from the harness gate. The same quantity from Phenix's own tool:
 
 ```bash
-phenix.python scripts/indep_rfree.py targets/<ID>/model/<ID>_refined.cif \
-  targets/<ID>/data/<ID>_data.mtz targets/<ID>/data/<ID>_flags.mtz targets/<ID>/data/<ID>_split.mtz out.json
+phenix.model_vs_data targets/7KR0/model/7KR0_S0053.pdb targets/7KR0/data/7KR0_data.mtz \
+  f_obs_label=FP r_free_flags_label=R-free-flags
 ```
 
-`out.json` reports R-work and R-free on the full, select and report sets, computed with cctbx on all reflections and
-no outlier rejection; it should match `validation/release/rfree_indep.refined.json` to the digit and the campaign
-ledger (`refinement/current.json`) to within 0.001 (the harness applies phenix.refine's Wilson outlier rejection; the
-scorer does not). Run the same command on `deposited/<ID>.cif` for the deposited value on the same flags.
-
-With the standard tool instead:
-
-```bash
-phenix.python scripts/merge_mtz.py targets/<ID>/data/<ID>_data.mtz targets/<ID>/data/<ID>_flags.mtz <ID>_merged.mtz
-phenix.model_vs_data targets/<ID>/model/<ID>_refined.cif <ID>_merged.mtz
-```
-
-### The free set is the deposited one
-
-`scripts/flag_identity.py` (needs gemmi and numpy) compares the free set in `<ID>_flags.mtz` with the `_refln.status
-== 'f'` set of the deposited structure-factor file, and the amplitudes with `F_meas_au`. The deposited structure-factor
-file is not in this repository (it is at RCSB; its SHA-256 is in `data/prep.json` as `sf_sha256`):
-
-```bash
-python scripts/flag_identity.py <ID> <ID>-sf.cif targets/<ID>/data/<ID>_data.mtz targets/<ID>/data/<ID>_flags.mtz
-```
+Expect a value a few 10⁻⁴ below the card's: Phenix rejects outliers and reports its own scales; the gate keeps every
+reflection. Both the released model and the deposited model (`deposited/7KR0.cif`, on the same files) move by the same
+offset. The flags file carries the deposition's flags unchanged; `data/prep.json` has the checksums of the source file
+and the counts.
 
 ### Geometry
 
-`validation/release/molprobity.refined.out` is the full `phenix.molprobity` report; the card shows its summary lines.
-Re-run with `phenix.molprobity targets/<ID>/model/<ID>_refined.cif`.
-
-### File integrity
+`validation/` holds the phenix.clashscore, rotalyze and ramalyze logs of the released file (hydrogens kept). To rerun:
 
 ```bash
-scripts/verify_checksums.sh
+phenix.clashscore targets/7KR0/model/7KR0_S0053.pdb keep_hydrogens=True
+phenix.rotalyze  targets/7KR0/model/7KR0_S0053.pdb
+```
+
+On a six-copy model phenix.clashscore's reduce step can exceed Phenix's built-in 120-second limit for larger ensembles;
+the harness runs it through a wrapper that raises that limit (`tools/lib/phenix_wrap.py` in the harness).
+
+### Checksums
+
+```bash
+bash scripts/verify_checksums.sh
 ```
 
 ## Continue
 
-### Refine further on the same free set
-
-Any comparison with the numbers here needs the same flags. Merge the frozen data and flags into one file and pass the
-flag column explicitly:
-
-```bash
-phenix.python scripts/merge_mtz.py targets/<ID>/data/<ID>_data.mtz targets/<ID>/data/<ID>_flags.mtz <ID>.mtz
-phenix.refine targets/<ID>/model/<ID>_refined.cif <ID>.mtz \
-  refinement.input.xray_data.r_free_flags.label=R-free-flags \
-  refinement.input.xray_data.r_free_flags.test_flag_value=0 \
-  refinement.input.xray_data.r_free_flags.generate=False
-```
-
-Start from `refinement/command.txt` to reproduce the released model's protocol exactly. Two targets have standing
-per-target overrides that matter: 3QUE refines water occupancies (`refinement.refine.occupancies.individual=water`)
-and 3TC7 uses a fixed ADP weight (`optimize_adp_weight=False`, `wxu_scale=0.03`); both are in their `command.txt`.
-Reproducing the R-free − R-work gap of 3TC7 needs that weight.
-
-Judge a change the way the campaign did: refine the same base with and without it, same seed, and compare R-free on
-the select half against σ_select in `ledger/noise_floor.csv`; confirm the sign on report.
-
-### Reproduce a run from raw data
-
-The harness and its documentation are in the campaign repository (`prism-science/agentic-refinement`); the
-reproduction levels are described in `docs/campaign/REPRODUCE.md`. Level 0 (verify a number) needs only this
-repository and Phenix. Levels 1–2 need the harness: `autoref prep` rebuilds `data.mtz` and `flags.mtz` from the RCSB
-files and halts if their SHA-256 differ from the values in `data/prep.json`, so a rerun is on byte-identical data and
-the identical free set.
-
-## Machine-readable index
-
-`index.json` has one record per target: entry metadata from RCSB, data and flag hashes, R-free of the deposited,
-re-refined and released models on every set, composition, MolProbity summary, the credited cycles with their
-attributable deltas, the thresholds version, the refinement protocol, the caveats and the file list with SHA-256.
-
-## Ensemble representations (`representations/7KR0/`)
-
-Six-copy ensemble models from the campaign's Untangler line (E035), with their map coefficients, independent-scorer JSONs,
-composition JSONs and each stage's trajectory. They are not released models (see the section README). Look and check exactly
-as for a target:
+The harness is `prism-science/autoresearch`, branch `manzuoni/hierarchical_refinement`. On its pod
+(`docs/POD.md` there), with the run directory restored from `refinement/` and `data/`, every tool takes `--run RUN
+--parent S0053` and prints the facts line of the step it judged:
 
 ```bash
-coot representations/7KR0/models/E035d_T_aniso.pdb --auto representations/7KR0/models/E035d_T_aniso_map_coeffs.mtz
-phenix.python scripts/indep_rfree.py representations/7KR0/models/E035d_T_aniso.pdb targets/7KR0/data/7KR0_data.mtz \
-  targets/7KR0/data/7KR0_flags.mtz targets/7KR0/data/7KR0_split.mtz out.json
+source /opt/phenix/phenix_env.sh
+phenix.python tools/water_addition.py pick --run RUN --parent S0053 --sigma 2.5 --nproc 6
+phenix.python tools/refine_step.py converge --run RUN --parent S0053 --nproc 6
 ```
 
-The output should match `representations/7KR0/scores/E035d_T_aniso.json` to the digit.
-
-## Refreshing from the campaign pod
-
-Both scripts need an `actl` login that can exec into the campaign pod. They are read-only on the campaign: everything is staged
-under a new `/home/dev/runs/agrp_export_<UTC>[_rep]/` directory, transferred as line-wrapped base64 in 100 000-line chunks (each
-chunk and the whole tarball checked by SHA-256 on both ends), and every file is checked against the pod-side manifest.
-
-```bash
-scripts/pull_from_pod.sh          # targets/: the standing deliverables, release-time validation, cards, index, manifest
-scripts/pull_representations.sh   # representations/7KR0/: frozen six-copy models, fresh scores, trajectories, provenance
-```
-
-`pull_from_pod.sh` releases the targets already under `targets/` (the pod also holds records of onboarded targets that are
-not released); set `AGRP_TARGETS="ID ID …"` to change the list. `pull_representations.sh` takes its model list from
-`scripts/stage_representations_on_pod.py`: add a row there when a stage produces a model worth freezing, then re-run. It keeps
-`representations/7KR0/README.md` and rewrites only the table between its markers (`scripts/build_representations.py`); update
-the prose by hand when the numbers change its reading. Afterwards run `scripts/verify_checksums.sh`, add a `CHANGELOG.md` entry
-and commit.
+`scripts/chain_target.sh RUN` runs the whole lever order that produced this model on any preprocessed run. The vault
+read (`score_model.py vault-read`) is the operator's: it scores the model in force against the held-out reflections and
+logs the read; the harness denies it to agents and a file `RUN/VAULT_HOLD` blocks it.

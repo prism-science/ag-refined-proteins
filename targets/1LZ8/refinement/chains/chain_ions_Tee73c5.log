@@ -1,0 +1,12 @@
+[2026-10-20T07:10:56Z] chain_ions start on /home/dev/runs/hr/Tee73c5 from S0070: CL at 4.0 sigma
+[2026-10-20T07:10:56Z] ions_CL (1) from S0070
+S0073 2026-10-20T07:22:22Z solvent place_ions parent S0070 | CL at the mFo-DFc peaks of 4.0 sigma and above that no atom explains, next to a nitrogen (occupancy 1) | R-free 0.24271 -> 0.24079 (-4.5 sigma) R-work 0.16707 -> 0.16622 gap -0.00
+[2026-10-20T07:22:22Z] ions_CL (2) from S0073
+S0074 2026-10-20T07:22:25Z solvent place_ions parent S0073 | no peak at 4.0 sigma clear of the model with a nitrogen within 4.5 A | R-free 0.24079 -> 0.24079 R-work 0.16622 -> 0.16622 gap +0.0000 clash 1.3 rota 0.5 % | atoms 4346 waters 419
+[2026-10-20T07:22:25Z] settle_i (1) from S0073
+S0075 2026-10-20T07:34:30Z refinement refine_step parent S0073 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.24079 -> 0.24344 (+6.4 sigma) R-work 0.16622 -> 0.16648 gap +0.0024 clash 1.5
+[2026-10-20T07:34:30Z] pick_4.0_i (1) from S0073
+S0076 2026-10-20T07:46:52Z solvent water_addition parent S0073 | waters at 4.0 sigma, mode single | R-free 0.24079 -> 0.24216 (+3.0 sigma) R-work 0.16622 -> 0.16559 gap +0.0020 clash 1.8 rota 0.5 % | atoms 4317 waters 390 altlocs AB anisou 
+[2026-10-20T07:46:52Z] converge_i (1) from S0073
+S0077 2026-10-20T08:07:52Z refinement refine_step parent S0073 | 20 macro-cycles against 10 | R-free 0.24079 -> 0.24527 (+6.1 sigma) R-work 0.16622 -> 0.16786 gap +0.0028 clash 1.3 rota 0.5 % | atoms 4346 waters 419 altlocs AB anisou 2009 |
+[2026-10-20T08:07:52Z] chain_ions end on /home/dev/runs/hr/Tee73c5; best model S0073

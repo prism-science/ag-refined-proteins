@@ -1,0 +1,155 @@
+{
+ "cc_half": null,
+ "completeness_pct": 98.4,
+ "created": "2026-10-19T23:28:07Z",
+ "d_min": 1.4999525363353188,
+ "data_mtz_sha256": "5ddb980eeb8ee13881d4eb73e18db7dbfa85206dd113de2d03e243ab56af32b4",
+ "deposited_r_free": 0.193,
+ "deposited_r_work": 0.158,
+ "flags_mtz_sha256": "586823458cad43181e3c4f901ade2b44dfbc44c9e016d54e6151680fca8b991f",
+ "gap_max": 0.04931439676520657,
+ "gap_s0001": 0.04431439676520657,
+ "handle": "T431c8e",
+ "i_over_sigma": 29.3,
+ "n_free": 2075,
+ "n_vault": 780,
+ "n_work": 38197,
+ "noise_floor": {
+  "mean_r_free": 0.18435565608867965,
+  "measured_from": "S0001",
+  "median_seed": 2,
+  "n_seeds": 3,
+  "pending": "noise_floor_S0001",
+  "recipe": "common",
+  "seeds": [
+   {
+    "gap": 0.045367421682579984,
+    "r_free": 0.18419656780906915,
+    "r_work": 0.13882914612648917,
+    "seed": 1,
+    "sha256": "b7cf645ebd6069dd0c36a5d634fb8c0e1cf519b3b80cb3112444520253d187f9"
+   },
+   {
+    "gap": 0.045480761592375296,
+    "r_free": 0.18420702112549173,
+    "r_work": 0.13872625953311643,
+    "seed": 2,
+    "sha256": "51cb0289c8523535ae01e6cda46bd2fb38e4e0dd0f104c8b9ca9b858e2a66fea"
+   },
+   {
+    "gap": 0.045797041799210236,
+    "r_free": 0.18466337933147814,
+    "r_work": 0.1388663375322679,
+    "seed": 3,
+    "sha256": "de6e0c7b61f20b0e9293b87fbb13b4176808550d77b7dc0ea9924e899a874f79"
+   }
+  ],
+  "sigma_gap": 0.000222655394800034,
+  "sigma_r_free": 0.0002665473946127796,
+  "sigma_r_work": 7.256112090957667e-05,
+  "utc": "2026-10-19T23:43:36Z"
+ },
+ "noise_floor_history": [
+  {
+   "mean_r_free": 0.18564878398855014,
+   "median_seed": 2,
+   "n_seeds": 3,
+   "seeds": [
+    {
+     "gap": 0.04591776753536497,
+     "r_free": 0.18637746833365765,
+     "r_work": 0.14045970079829267,
+     "seed": 1,
+     "sha256": "9b740b559978e1a5d35a0ab06a979295c8e630ca0e0b53df141a5ffee97c6614"
+    },
+    {
+     "gap": 0.04431439676520657,
+     "r_free": 0.1855534548242694,
+     "r_work": 0.14123905805906284,
+     "seed": 2,
+     "sha256": "030031d524838406f1e3314b2b0499d4120278d9c006cf8b23986df62639f0e1"
+    },
+    {
+     "gap": 0.04409326800959518,
+     "r_free": 0.18501542880772343,
+     "r_work": 0.14092216079812825,
+     "seed": 3,
+     "sha256": "7a5904411446dc995fa891fd73c1c8f37c7d5370c75b37f4e0349462e9ca6591"
+    }
+   ],
+   "sigma_gap": 0.0009956986050583447,
+   "sigma_r_free": 0.0006860055792219404,
+   "sigma_r_work": 0.0003919376790066965
+  }
+ ],
+ "phenix_version": "Version: 2.1; Release tag: 6048",
+ "r_meas": null,
+ "r_merge": 0.073,
+ "r_pim": null,
+ "redundancy": 7.2,
+ "stages": {
+  "fetch": {
+   "model": "/home/dev/runs/hr/T431c8e/vault/_source/3TC7.cif",
+   "model_sha256": "cf8d319f191839f9b7f27fcf05af1ff60ae9d832e0ded8d428e6f806cce79286",
+   "sf": "/home/dev/runs/hr/T431c8e/vault/_source/3TC7-sf.cif",
+   "sf_sha256": "2f6c3f1a97718bcff16047b959f54eafc08a6f85e1df7855d4057eca0f47e236",
+   "utc": "2026-10-19T23:28:07Z"
+  },
+  "floor": {
+   "utc": "2026-10-19T23:43:36Z"
+  },
+  "prep": {
+   "d_min": 1.4999525363353188,
+   "n_free": 2075,
+   "n_vault": 780,
+   "utc": "2026-10-19T23:28:09Z"
+  },
+  "s0000": {
+   "utc": "2026-10-19T23:28:47Z"
+  },
+  "s0001": {
+   "utc": "2026-10-19T23:38:29Z"
+  }
+ },
+ "standing": {
+  "since": "S0057",
+  "tls": [
+   "chain A and not water"
+  ],
+  "utc": "2026-10-20T21:25:12Z",
+  "wc": 1.0,
+  "wu": 1.0
+ },
+ "standing_history": [
+  {
+   "since": "S0033",
+   "utc": "2026-10-20T06:57:44Z",
+   "wc": 1.0,
+   "wu": 1.0
+  },
+  {
+   "since": "S0057",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-20T21:25:12Z",
+   "wc": 1.0,
+   "wu": 1.0
+  }
+ ],
+ "steps": {
+  "S0000": {
+   "label": "deposited",
+   "utc": "2026-10-19T23:28:10Z"
+  },
+  "S0001": {
+   "label": "first_refinement",
+   "utc": "2026-10-19T23:37:51Z"
+  }
+ },
+ "vault_sealed": {
+  "pubkey_sha256": "b07e0cb5edb19a02a2e15e782864311394930faf09ef21913782613345096bf5",
+  "sealed_tar_enc_sha256": "3b8cd6259c0e65ff4fae84ccacbc10793d1282e182d2346b818fd4b9c11953a5",
+  "utc": "2026-10-19T23:28:09Z"
+ }
+}

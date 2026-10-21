@@ -1,0 +1,8 @@
+[2026-10-20T01:22:27Z] chain_after start on /home/dev/runs/hr/T431c8e: settle_2c = refine_step.py settle
+[2026-10-20T01:22:27Z] settle_2c (1) from S0013
+S0016 2026-10-20T01:24:11Z refinement refine_step parent S0013 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.17343 -> 0.17059 (-10.7 sigma) R-work 0.11126 -> 0.10839 gap +0.0000 clash 4.
+[2026-10-20T01:24:12Z] settle_2c (2) from S0016
+S0018 2026-10-20T01:38:36Z refinement refine_step parent S0016 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.17059 -> 0.16966 (-3.3 sigma) R-work 0.10839 -> 0.10807 gap -0.0006 clash 4.9
+[2026-10-20T01:38:36Z] settle_2c (3) from S0018
+S0020 2026-10-20T01:53:08Z refinement refine_step parent S0018 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.16966 -> 0.16878 (-3.3 sigma) R-work 0.10807 -> 0.10784 gap -0.0007 clash 4.5
+[2026-10-20T01:53:08Z] chain_after end on /home/dev/runs/hr/T431c8e (settle_2c); best model S0020

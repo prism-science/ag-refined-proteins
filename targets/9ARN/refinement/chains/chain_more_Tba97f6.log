@@ -1,0 +1,20 @@
+[2026-10-19T15:09:58Z] chain_more start on /home/dev/runs/hr/Tba97f6 from S0000, d_min 1.370032433044185, standing weights 0.5 1
+[2026-10-19T15:09:58Z] prune_a from S0000
+S0036 2026-10-19T15:14:41Z solvent water_addition parent S0000 | waters below 1.0 sigma in the work-only 2mFo-DFc map removed | R-free 0.29440 -> 0.30138 (+7.3 sigma) R-work 0.25417 -> 0.23473 gap +0.0264 clash 4.0 rota 3.0 % | atoms 651 wa
+[2026-10-19T15:14:42Z] cleanup_a from S0000
+S0037 2026-10-19T15:14:44Z solvent water_addition parent S0000 | no water in an own-conformer clash | R-free 0.29440 -> 0.29440 R-work 0.25417 -> 0.25417 gap +0.0000 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 611 | REFUSE
+[2026-10-19T15:14:44Z] tls_find_a from S0000
+S0038 2026-10-19T15:21:48Z refinement refine_step parent S0000 | TLS, 2 groups (phenix.find_tls_groups) | R-free 0.29440 -> 0.30984 (+14.0 sigma) R-work 0.25417 -> 0.25718 gap +0.0124 clash 2.4 rota 3.0 % | atoms 654 waters 38 altlocs AB an
+[2026-10-19T15:21:48Z] weights_0.5_0.5 from S0000
+S0039 2026-10-19T15:26:28Z refinement refine_step parent S0000 | restraint weights wc 0.5 wu 0.5 against 0.5 1 | R-free 0.29440 -> 0.30591 (+12.4 sigma) R-work 0.25417 -> 0.23070 gap +0.0350 clash 2.4 rota 3.0 % | atoms 654 waters 38 altloc
+[2026-10-19T15:26:28Z] weights_0.5_2.0 from S0000
+S0040 2026-10-19T15:31:16Z refinement refine_step parent S0000 | restraint weights wc 0.5 wu 2 against 0.5 1 | R-free 0.29440 -> 0.30271 (+5.1 sigma) R-work 0.25417 -> 0.23911 gap +0.0234 clash 1.6 rota 1.5 % | atoms 654 waters 38 altlocs A
+[2026-10-19T15:31:16Z] weights_0.4_1.0 from S0000
+S0041 2026-10-19T15:35:56Z refinement refine_step parent S0000 | restraint weights wc 0.4 wu 1 against 0.5 1 | R-free 0.29440 -> 0.30732 (+13.9 sigma) R-work 0.25417 -> 0.23280 gap +0.0343 clash 3.2 rota 1.5 % | atoms 654 waters 38 altlocs 
+[2026-10-19T15:35:57Z] settle_d (1) from S0000
+S0042 2026-10-19T15:35:57Z refinement refine_step parent S0000 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.29440 -> 0.30393 (+10.2 sigma) R-work 0.25417 -> 0.23256 gap +0.0311 clash 4.
+[2026-10-19T15:35:57Z] split 2 copies from S0000, source qfit
+[2026-10-19T15:36:01Z] after the split the best model is S0000
+[2026-10-19T15:36:01Z] converge_e (1) from S0000
+S0043 2026-10-19T15:36:02Z refinement refine_step parent S0000 | 20 macro-cycles against 10 | R-free 0.29440 -> 0.31033 (+17.1 sigma) R-work 0.25417 -> 0.23877 gap +0.0313 clash 2.4 rota 1.5 % | atoms 654 waters 38 altlocs AB anisou 611 | R
+[2026-10-19T15:36:02Z] chain_more end on /home/dev/runs/hr/Tba97f6; best model S0000

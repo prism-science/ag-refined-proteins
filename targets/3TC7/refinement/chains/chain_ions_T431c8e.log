@@ -1,0 +1,12 @@
+[2026-10-20T07:10:56Z] chain_ions start on /home/dev/runs/hr/T431c8e from S0033: PO4 at 5.0 sigma
+[2026-10-20T07:10:56Z] ions_PO4 (1) from S0033
+S0035 2026-10-20T08:24:54Z solvent place_ions parent S0033 | PO4 at the mFo-DFc peaks of 5.0 sigma and above that no atom explains, next to a nitrogen (occupancy 1, a tetrahedron the refinement turns) | R-free 0.16232 -> 0.16426 (+7.3 sigma
+[2026-10-20T08:24:55Z] settle_i (1) from S0033
+S0036 2026-10-20T08:34:18Z refinement refine_step parent S0033 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.16232 -> 0.16116 (-4.3 sigma) R-work 0.08786 -> 0.08500 gap +0.0017 clash 2.8
+[2026-10-20T08:34:19Z] pick_4.0_i (1) from S0033
+S0040 2026-10-20T09:32:12Z solvent water_addition parent S0033 | waters at 4.0 sigma, mode single | R-free 0.16232 -> 0.15798 (-16.3 sigma) R-work 0.08786 -> 0.08340 gap +0.0001 clash 2.2 rota 1.8 % | atoms 25861 waters 1377 altlocs ABCDEF 
+[2026-10-20T09:32:12Z] converge_i (1) from S0033
+S0045 2026-10-20T11:42:58Z refinement refine_step parent S0033 | 20 macro-cycles against 10 | R-free 0.16232 -> 0.16349 (+4.4 sigma) R-work 0.08786 -> 0.08471 gap +0.0043 clash 2.3 rota 2.4 % | atoms 28156 waters 3672 altlocs ABCDEF anisou 
+[2026-10-20T11:43:00Z] converge_i (2) from S0042
+S0047 2026-10-20T14:02:02Z refinement refine_step parent S0042 | 20 macro-cycles against 10 | R-free 0.15402 -> 0.15632 (+7.8 sigma) R-work 0.09278 -> 0.09208 gap +0.0030 clash 3.6 rota 2.7 % | atoms 28156 waters 3672 altlocs ABCDEF anisou 
+[2026-10-20T14:02:03Z] chain_ions end on /home/dev/runs/hr/T431c8e; best model S0042

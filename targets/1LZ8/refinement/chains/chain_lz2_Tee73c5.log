@@ -1,0 +1,18 @@
+[2026-10-20T02:13:35Z] chain_lz2 start on /home/dev/runs/hr/Tee73c5 from S0060, standing weights 2 2
+[2026-10-20T02:13:35Z] restraints_lz from S0060
+S0065 2026-10-20T02:24:56Z refinement refine_step parent S0060 | secondary-structure restraints and Ramachandran restraints against none (the low-resolution restraints) | R-free 0.24403 -> 0.24255 (-3.1 sigma) R-work 0.16675 -> 0.16833 gap 
+[2026-10-20T02:24:57Z] group_adp_lz1 from S0060
+S0066 2026-10-20T02:36:06Z refinement refine_step parent S0060 | 1 group B factor for each residue (strategy group_adp) against individual ADPs | R-free 0.24403 -> 0.24492 (+1.7 sigma) R-work 0.16675 -> 0.17416 gap -0.0065 clash 1.0 rota 0.
+[2026-10-20T02:36:06Z] group_adp_lz2 from S0060
+S0067 2026-10-20T02:47:22Z refinement refine_step parent S0060 | 2 group B factors (main chain, side chain) for each residue (strategy group_adp) against individual ADPs | R-free 0.24403 -> 0.24283 (-1.9 sigma) R-work 0.16675 -> 0.17278 gap
+[2026-10-20T02:47:22Z] tls_find_lz from S0060
+S0068 2026-10-20T02:58:28Z refinement refine_step parent S0060 | TLS, 6 groups (phenix.find_tls_groups) against the standing 1 group(s) | R-free 0.24403 -> 0.24237 (-3.6 sigma) R-work 0.16675 -> 0.16603 gap -0.0009 clash 1.3 rota 0.5 % | at
+[2026-10-20T02:58:29Z] weights_3_3_lz from S0060
+S0069 2026-10-20T03:09:16Z refinement refine_step parent S0060 | restraint weights wc 3 wu 3 against 2 2 | R-free 0.24403 -> 0.24355 (-0.9 sigma) R-work 0.16675 -> 0.17059 gap -0.0043 clash 0.5 rota 0.5 % | atoms 4347 waters 422 altlocs AB 
+[2026-10-20T03:09:17Z] settle_lz (1) from S0060
+S0070 2026-10-20T03:10:45Z refinement refine_step parent S0060 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.24403 -> 0.24271 (-3.0 sigma) R-work 0.16675 -> 0.16707 gap -0.0016 clash 1.0
+[2026-10-20T03:10:45Z] settle_lz (2) from S0070
+S0071 2026-10-20T03:22:26Z refinement refine_step parent S0070 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.24271 -> 0.24273 (+0.1 sigma) R-work 0.16707 -> 0.16738 gap -0.0003 clash 1.0
+[2026-10-20T03:22:26Z] converge_lz (1) from S0070
+S0072 2026-10-20T03:42:23Z refinement refine_step parent S0070 | 20 macro-cycles against 10 | R-free 0.24271 -> 0.24495 (+6.3 sigma) R-work 0.16707 -> 0.16786 gap +0.0015 clash 1.3 rota 0.5 % | atoms 4347 waters 422 altlocs AB anisou 2009 |
+[2026-10-20T03:42:23Z] chain_lz2 end on /home/dev/runs/hr/Tee73c5; best model S0070

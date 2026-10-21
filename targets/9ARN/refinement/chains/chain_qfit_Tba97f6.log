@@ -1,0 +1,5 @@
+[2026-10-19T15:48:46Z] chain_qfit start on /home/dev/runs/hr/Tba97f6 from S0000, 2 copies from qFit
+[2026-10-19T15:48:46Z] split 2 copies from S0000, source qfit
+S0044 2026-10-19T16:22:12Z rotamer-finder split_conformations parent S0000 | 2 copies from qfit, riding H, 20 macro-cycles | R-free 0.29440 -> 0.30840 R-work 0.25417 -> 0.22796 gap +0.0402 clash 8.1 rota 7.7 % | atoms 2539 waters 76 altlocs
+[2026-10-19T16:22:13Z] after the split the best model is S0000
+[2026-10-19T16:22:13Z] chain_qfit end on /home/dev/runs/hr/Tba97f6; best model S0000

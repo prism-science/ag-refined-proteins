@@ -1,0 +1,5 @@
+[2026-10-20T09:05:24Z] chain_six start on /home/dev/runs/hr/Tee73c5 from S0073: 3 copies from shake
+[2026-10-20T09:05:24Z] split 3 copies from S0073
+S0079 2026-10-20T09:57:56Z rotamer-finder split_conformations parent S0073 | 3 copies from shake, riding H, 20 macro-cycles | R-free 0.24079 -> 0.25633 R-work 0.16622 -> 0.16200 gap +0.0197 clash 2.5 rota 0.9 % | atoms 7142 waters 1257 altl
+[2026-10-20T09:57:56Z] after the split the best model is S0073
+[2026-10-20T09:57:56Z] chain_six end on /home/dev/runs/hr/Tee73c5; best model S0073

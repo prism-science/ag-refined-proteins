@@ -1,0 +1,14 @@
+[2026-10-20T01:47:59Z] chain_arn2 start on /home/dev/runs/hr/Tba97f6 from S0056, standing weights 2 2
+[2026-10-20T01:47:59Z] prune_b from S0056
+S0059 2026-10-20T01:53:07Z solvent water_addition parent S0056 | waters below 1.0 sigma in the work-only 2mFo-DFc map removed | R-free 0.29338 -> 0.29944 (+4.1 sigma) R-work 0.23881 -> 0.24358 gap +0.0013 clash 2.4 rota 0.0 % | atoms 651 wa
+[2026-10-20T01:53:07Z] aniso_water_b2 (1) from S0056
+S0060 2026-10-20T01:57:29Z refinement refine_step parent S0056 | water ADPs anisotropic | R-free 0.29338 -> 0.28733 (-3.7 sigma) R-work 0.23881 -> 0.23462 gap -0.0019 clash 2.4 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 649 | ACCEPT
+[2026-10-20T01:57:29Z] aniso_water_b2 (2) from S0060
+S0061 2026-10-20T02:03:20Z refinement refine_step parent S0060 | water ADPs anisotropic | R-free 0.28733 -> 0.28640 (-1.0 sigma) R-work 0.23462 -> 0.23446 gap -0.0008 clash 2.4 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 649 | REFUSE
+[2026-10-20T02:03:21Z] tls_find_b from S0060
+S0062 2026-10-20T02:10:55Z refinement refine_step parent S0060 | TLS, 2 groups (phenix.find_tls_groups) | R-free 0.28733 -> 0.27695 (-11.2 sigma) R-work 0.23462 -> 0.23894 gap -0.0147 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB an
+[2026-10-20T02:10:56Z] mask_b from S0062
+S0063 2026-10-20T02:20:43Z refinement refine_step parent S0062 | bulk-solvent mask radii optimised (refinement.main.optimize_mask) against the fixed defaults | R-free 0.27695 -> 0.28126 (+3.5 sigma) R-work 0.23894 -> 0.23966 gap +0.0036 cla
+[2026-10-20T02:20:43Z] anneal_b from S0062
+S0064 2026-10-20T02:30:54Z refinement refine_step parent S0062 | simulated annealing (Cartesian) in the candidate's refinement against the recipe without it | R-free 0.27695 -> 0.31162 (+3.0 sigma) R-work 0.23894 -> 0.25957 gap +0.0140 clas
+[2026-10-20T02:30:54Z] chain_arn2 end on /home/dev/runs/hr/Tba97f6; best model S0062

@@ -1,0 +1,6 @@
+[2026-10-20T00:30:31Z] chain_after start on /home/dev/runs/hr/T9884ae: tls_find_b = refine_step.py tls --groups find --replace
+[2026-10-20T00:30:31Z] tls_find_b (1) from S0001
+S0027 2026-10-20T00:30:42Z refinement refine_step parent S0001 | TLS, 3 groups (phenix.find_tls_groups) | R-free 0.28528 -> 0.27687 (-5.6 sigma) R-work 0.18947 -> 0.18016 gap +0.0009 clash 8.6 rota 13.2 % | atoms 2896 waters 61 altlocs - an
+[2026-10-20T00:30:43Z] tls_find_b (2) from S0027
+S0029 2026-10-20T00:36:01Z refinement refine_step parent S0027 | TLS, 4 groups (phenix.find_tls_groups) against the standing 3 group(s) | R-free 0.27687 -> 0.28024 (+1.1 sigma) R-work 0.18016 -> 0.18170 gap +0.0018 clash 7.9 rota 14.5 % | a
+[2026-10-20T00:36:01Z] chain_after end on /home/dev/runs/hr/T9884ae (tls_find_b); best model S0027

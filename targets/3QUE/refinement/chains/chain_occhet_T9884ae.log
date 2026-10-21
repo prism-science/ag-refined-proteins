@@ -1,0 +1,4 @@
+[2026-10-20T09:07:05Z] chain_after start on /home/dev/runs/hr/T9884ae: occ_hetero = refine_step.py occupancies --hetero
+[2026-10-20T09:07:05Z] occ_hetero (1) from S0052
+S0056 2026-10-20T09:12:18Z refinement refine_step parent S0052 | the occupancy of each ligand, ion and buffer molecule refined as one group (waters as before) against the recipe (held at their values) | R-free 0.26852 -> 0.27217 (+4.6 sigma
+[2026-10-20T09:12:19Z] chain_after end on /home/dev/runs/hr/T9884ae (occ_hetero); best model S0052

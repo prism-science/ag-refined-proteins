@@ -1,0 +1,6 @@
+[2026-10-19T17:38:25Z] chain_coot start on /home/dev/runs/hr/Tee73c5 from S0035
+{"step": "S0035", "n_residues": 9, "n_worklist": 0, "n_waters_flagged": 0, "file": "/home/dev/runs/hr/Tee73c5/trajectory/WORKLIST_S0035.md"}
+[2026-10-19T17:38:30Z] zones: none
+[2026-10-19T17:38:30Z] converge_z (1) from S0035
+S0045 2026-10-19T17:38:31Z refinement refine_step parent S0035 | 20 macro-cycles against 10 | R-free 0.24820 -> 0.24921 (+4.0 sigma) R-work 0.16179 -> 0.16058 gap +0.0022 clash 4.6 rota 1.4 % | atoms 4347 waters 422 altlocs AB anisou 2009 |
+[2026-10-19T17:38:31Z] chain_coot end on /home/dev/runs/hr/Tee73c5; best model S0035

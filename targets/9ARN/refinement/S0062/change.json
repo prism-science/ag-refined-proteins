@@ -1,0 +1,56 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/Tba97f6/trajectory/S0060/model.pdb",
+ "cand_input_sha256": "b46bbad7fcbdcb45a78354920be6cc57cc23f30a311e7a8b29f72f04aa0d8344",
+ "ctrl_input": "/home/dev/runs/hr/Tba97f6/trajectory/S0060/model.pdb",
+ "ctrl_input_sha256": "b46bbad7fcbdcb45a78354920be6cc57cc23f30a311e7a8b29f72f04aa0d8344",
+ "ctrl_options": {
+  "standing": {
+   "rama": true,
+   "since": "S0056",
+   "ss": true,
+   "utc": "2026-10-20T01:16:44Z",
+   "wc": 2.0,
+   "wu": 2.0
+  }
+ },
+ "description": "TLS, 2 groups (phenix.find_tls_groups)",
+ "kind": "improving",
+ "metaparams_sha256": "66d1496ef382bbe326a0fb591963eec5471f7819ea609778a3c589e0185d93a8",
+ "model_after": "/home/dev/runs/hr/Tba97f6/trajectory/S0062/model.pdb",
+ "model_after_sha256": "f19e8b52d02a869da2fc1ea815d3269bbed2495585db7cba04c59c446a3bb481",
+ "model_before_sha256": "b46bbad7fcbdcb45a78354920be6cc57cc23f30a311e7a8b29f72f04aa0d8344",
+ "parent": "S0060",
+ "prepare": {
+  "tls_groups": [
+   "chain 'A' and (resid    1  through   31 )",
+   "chain 'A' and (resid   32  through   80 )"
+  ],
+  "tls_source": "find"
+ },
+ "refine_options": {
+  "standing": {
+   "rama": true,
+   "since": "S0056",
+   "ss": true,
+   "utc": "2026-10-20T01:16:44Z",
+   "wc": 2.0,
+   "wu": 2.0
+  },
+  "tls": [
+   "chain 'A' and (resid    1  through   31 )",
+   "chain 'A' and (resid   32  through   80 )"
+  ]
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "refinement",
+ "step": "S0062",
+ "tool": "refine_step",
+ "utc": "2026-10-20T02:10:55Z",
+ "worker": "refinement"
+}

@@ -1,0 +1,135 @@
+{
+ "cc_half": null,
+ "completeness_pct": 97.1,
+ "created": "2026-10-19T06:41:56Z",
+ "d_min": 1.7003590181767632,
+ "data_mtz_sha256": "18b3a17270ee0095586b08e4e735b2049145532985363f166919497d59dd5696",
+ "deposited_r_free": 0.302,
+ "deposited_r_work": 0.264,
+ "flags_mtz_sha256": "5832a8935cd6545714513e4175ebd5267cca241af678212735eb6d05989c7893",
+ "gap_max": 0.07038663654993807,
+ "gap_s0001": 0.06538663654993807,
+ "handle": "T40560e",
+ "i_over_sigma": null,
+ "n_free": 528,
+ "n_vault": 200,
+ "n_work": 10283,
+ "noise_floor": {
+  "mean_r_free": 0.30129226594788827,
+  "measured_from": "S0009",
+  "median_seed": 3,
+  "n_seeds": 3,
+  "pending": "noise_floor_S0009",
+  "recipe": "common",
+  "seeds": [
+   {
+    "gap": 0.06670023864615826,
+    "r_free": 0.30166639231216186,
+    "r_work": 0.2349661536660036,
+    "seed": 1,
+    "sha256": "0fd1021f93b2fff87564187d9f6537656cb816e50703edaec811dc9d1eb427af"
+   },
+   {
+    "gap": 0.06623468003385541,
+    "r_free": 0.30064622375909356,
+    "r_work": 0.23441154372523815,
+    "seed": 2,
+    "sha256": "8318fa9d1d5bd6af3f908c2dc56947767e033b13f2520813c5cf567b1c9b0bbd"
+   },
+   {
+    "gap": 0.06738532003883271,
+    "r_free": 0.3015641817724094,
+    "r_work": 0.2341788617335767,
+    "seed": 3,
+    "sha256": "89b6815f81792622fdce11c0739a2937364353b7e5896c85d19f02216e3b7755"
+   }
+  ],
+  "sigma_gap": 0.0005787995849359684,
+  "sigma_r_free": 0.0005618181475229526,
+  "sigma_r_work": 0.00040446707375341347,
+  "utc": "2026-10-19T10:41:49Z"
+ },
+ "noise_floor_history": [
+  {
+   "mean_r_free": 0.30912030323883344,
+   "median_seed": 2,
+   "n_seeds": 3,
+   "seeds": [
+    {
+     "gap": 0.061681789812241705,
+     "r_free": 0.30648171656935025,
+     "r_work": 0.24479992675710854,
+     "seed": 1,
+     "sha256": "fd5d13535057b4f7e45d04d3592a0855586ce3b91cd1c6d9c2ed22dc51893085"
+    },
+    {
+     "gap": 0.06538663654993807,
+     "r_free": 0.3097134476920511,
+     "r_work": 0.24432681114211305,
+     "seed": 2,
+     "sha256": "88bedb4c4c0aaca1d228ee64c501304706128fa86fba058728e566c8805f9406"
+    },
+    {
+     "gap": 0.06543249823304312,
+     "r_free": 0.311165745455099,
+     "r_work": 0.2457332472220559,
+     "seed": 3,
+     "sha256": "b6a6d491a208fb8233f5f41c3d28d8c2b8a7933bfad62332aafc6a2a4a77b83f"
+    }
+   ],
+   "sigma_gap": 0.002152355543029823,
+   "sigma_r_free": 0.0023976857399207563,
+   "sigma_r_work": 0.0007156567988460067
+  }
+ ],
+ "phenix_version": "Version: 2.1; Release tag: 6048",
+ "r_meas": null,
+ "r_merge": 0.032,
+ "r_pim": null,
+ "redundancy": null,
+ "stages": {
+  "fetch": {
+   "model": "/home/dev/runs/hr/T40560e/vault/_source/4QO4.cif",
+   "model_sha256": "cd9350e8612cc333da723cce0d0ce7e1418b9b57b6273ec10c18b95a8a499f29",
+   "sf": "/home/dev/runs/hr/T40560e/vault/_source/4QO4-sf.cif",
+   "sf_sha256": "f62ef89b85ffd72aeb08d942fe49ba0ef503d0dded4450c5f77df2fb1d8a6cb3",
+   "utc": "2026-10-19T06:41:57Z"
+  },
+  "prep": {
+   "d_min": 1.7003590181767632,
+   "n_free": 528,
+   "n_vault": 200,
+   "utc": "2026-10-19T06:41:58Z"
+  },
+  "s0000": {
+   "utc": "2026-10-19T06:42:26Z"
+  },
+  "s0001": {
+   "utc": "2026-10-19T06:46:03Z"
+  }
+ },
+ "standing": {
+  "since": "S0009",
+  "utc": "2026-10-19T09:29:32Z",
+  "wc": 0.3,
+  "wu": 0.25
+ },
+ "standing_history": [
+  {
+   "since": "S0009",
+   "utc": "2026-10-19T09:29:32Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ ],
+ "steps": {
+  "S0000": {
+   "label": "deposited",
+   "utc": "2026-10-19T06:41:58Z"
+  },
+  "S0001": {
+   "label": "first_refinement",
+   "utc": "2026-10-19T06:45:36Z"
+  }
+ }
+}

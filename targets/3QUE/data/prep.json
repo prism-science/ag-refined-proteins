@@ -1,21 +1,266 @@
 {
- "target": "3QUE",
- "pdb_id": "3QUE",
- "sf_source": "/home/dev/data/raw/3QUE/3QUE-sf.cif",
- "sf_sha256": "7dca2e602c18bdef3c708cd5d41354cda0ea63daddb6f0089bdb4081c84314cf",
- "sf_block": "r3quesf",
+ "bunker": {
+  "applied_after_frozen_check": false,
+  "applied_at": "2026-10-19T23:28:07Z",
+  "fraction": 0.02,
+  "n": 200,
+  "pre_bunker_sha256": {
+   "data_flags_mtz": "2eba4a334d61f0cc57b485aef94c3d0140ff13450da03ca5aa90a2fe803bfc08",
+   "data_mtz": "42450a5839503ffd69bab17541990c4e52f9fd58c6b0b1ffc75fd23bc5014514",
+   "flags_mtz": "41f1df00578563904df1fcc076d0fa6358c0430174778109af11dc6a7472d520",
+   "split_mtz": "52a96b5bf46f7a6e8af32beb82896ae1389ca57c99dfefc274574da02277e010"
+  },
+  "seed": 392383832,
+  "vault_json": "/home/dev/runs/hr/T9884ae/vault/bunker.json",
+  "vault_json_sha256": "bcd12f8c994e8f09091844d1de462256cd70082a139f38979178830ec7e1df13",
+  "vault_mtz": "/home/dev/runs/hr/T9884ae/vault/bunker.mtz",
+  "vault_mtz_sha256": "15f4ad989f4e4280ba8aed218a957a6c7e7764270e73a056bfcf2db21f8508bf"
+ },
+ "chain_aliases": {},
  "columns_present": [
-  "_refln.crystal_id",
-  "_refln.wavelength_id",
-  "_refln.scale_group_code",
-  "_refln.index_h",
-  "_refln.index_k",
-  "_refln.index_l",
-  "_refln.status",
-  "_refln.F_meas_au",
-  "_refln.F_meas_sigma_au"
+  "F_meas_au",
+  "F_meas_sigma_au",
+  "status"
  ],
+ "convention": {
+  "free_symbol": "f",
+  "source": "_refln.status"
+ },
+ "d_min": 2.700166696768957,
+ "data_choice": {
+  "coverage": {
+   "amplitudes": {
+    "n_measured_rows": 10793,
+    "n_null": 0,
+    "n_usable": 10793,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   },
+   "intensities": null
+  },
+  "kind": "amplitudes",
+  "labels": [
+   "FP",
+   "SIGFP"
+  ],
+  "reason": "no merged intensities; amplitudes are all there is",
+  "sigma_tag": "F_meas_sigma_au",
+  "value_tag": "F_meas_au"
+ },
+ "data_flags_mtz": "/home/dev/runs/hr/T9884ae/prep/data_flags.mtz",
+ "data_flags_mtz_sha256": "9c9aecb3beade2576a7637b2367b57fe3a4f00ca07ecddfa7306eaa67e53fe35",
+ "data_labels": "FP,SIGFP",
+ "data_mtz": "/home/dev/runs/hr/T9884ae/prep/data.mtz",
+ "data_mtz_sha256": "ddfc0f8e3ddf64221895839397d05cf03e5880b53ae263cf0ac6ef0330d76813",
+ "deposited_tls": {
+  "n_groups": 0,
+  "n_rows": 0,
+  "rows": [],
+  "selections": []
+ },
+ "flag_label": "R-free-flags",
+ "flags_mtz": "/home/dev/runs/hr/T9884ae/prep/flags.mtz",
+ "flags_mtz_sha256": "64d2a022b8a0bef35c4c163102792f15351c47a580b5d209f595c91dd6ecf328",
+ "flags_source": "inherited",
+ "fraction_free": 0.081563,
+ "intensities_or_amplitudes": "amplitudes",
+ "ligand_cifs": [],
+ "model_pdb": "/home/dev/runs/hr/T9884ae/prep/model.pdb",
+ "model_pdb_sha256": "773e57dc9cb554a8670f46ef5a2a9e5bf00336b7218948cd89d36ecc2b0f7dcb",
+ "n_dropped_missing_value": 0,
+ "n_dropped_unmeasured": 0,
+ "n_dropped_zero_amplitude": 0,
+ "n_free": 864,
+ "n_free_in_file": 864,
+ "n_reflections": 10593,
+ "n_reflections_in_file": 10593,
+ "n_report": 432,
+ "n_report_in_file": 432,
+ "n_rows_in_sf": 10793,
+ "n_select": 432,
+ "n_select_in_file": 432,
+ "n_sleep": 0,
+ "n_sleep_hidden_from_phenix": 0,
+ "n_work": 9729,
+ "n_work_in_file": 9729,
+ "residue_aliases": {},
+ "sf_block": "r3quesf",
+ "sf_sha256": "7dca2e602c18bdef3c708cd5d41354cda0ea63daddb6f0089bdb4081c84314cf",
+ "sf_source": "vault/_source (sha256 7dca2e602c18bdef3c708cd5d41354cda0ea63daddb6f0089bdb4081c84314cf)",
  "space_group": "P 21 21 21",
+ "split": {
+  "method": "free reflections sorted by (-d, h, k, l), 20 equal-count shells, random.Random(1305390232).shuffle per shell (one generator), dealt round robin to select/report",
+  "n_parts": 2,
+  "n_shells": 20,
+  "seed": 1305390232,
+  "shells": [
+   {
+    "d_max": 49.0126,
+    "d_min": 7.6874,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 1
+   },
+   {
+    "d_max": 7.6166,
+    "d_min": 5.9946,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 2
+   },
+   {
+    "d_max": 5.9714,
+    "d_min": 5.1952,
+    "n": 44,
+    "n_report": 22,
+    "n_select": 22,
+    "shell": 3
+   },
+   {
+    "d_max": 5.1839,
+    "d_min": 4.6958,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 4
+   },
+   {
+    "d_max": 4.6871,
+    "d_min": 4.3461,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 5
+   },
+   {
+    "d_max": 4.3423,
+    "d_min": 4.0801,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 6
+   },
+   {
+    "d_max": 4.075,
+    "d_min": 3.8722,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 7
+   },
+   {
+    "d_max": 3.8686,
+    "d_min": 3.6944,
+    "n": 44,
+    "n_report": 22,
+    "n_select": 22,
+    "shell": 8
+   },
+   {
+    "d_max": 3.689,
+    "d_min": 3.5505,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 9
+   },
+   {
+    "d_max": 3.5479,
+    "d_min": 3.4253,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 10
+   },
+   {
+    "d_max": 3.4223,
+    "d_min": 3.3144,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 11
+   },
+   {
+    "d_max": 3.3125,
+    "d_min": 3.2157,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 12
+   },
+   {
+    "d_max": 3.2137,
+    "d_min": 3.1259,
+    "n": 44,
+    "n_report": 22,
+    "n_select": 22,
+    "shell": 13
+   },
+   {
+    "d_max": 3.1244,
+    "d_min": 3.051,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 14
+   },
+   {
+    "d_max": 3.0489,
+    "d_min": 2.977,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 15
+   },
+   {
+    "d_max": 2.9753,
+    "d_min": 2.9136,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 16
+   },
+   {
+    "d_max": 2.9125,
+    "d_min": 2.8551,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 17
+   },
+   {
+    "d_max": 2.8533,
+    "d_min": 2.7973,
+    "n": 44,
+    "n_report": 22,
+    "n_select": 22,
+    "shell": 18
+   },
+   {
+    "d_max": 2.7965,
+    "d_min": 2.7454,
+    "n": 43,
+    "n_report": 21,
+    "n_select": 22,
+    "shell": 19
+   },
+   {
+    "d_max": 2.7445,
+    "d_min": 2.7005,
+    "n": 43,
+    "n_report": 22,
+    "n_select": 21,
+    "shell": 20
+   }
+  ]
+ },
+ "split_mtz": "/home/dev/runs/hr/T9884ae/prep/split.mtz",
+ "split_mtz_sha256": "b271f05b8b273e16707ace63a011d489f80136d21a1f99d9bda6069387e59a2a",
+ "split_version": "stratified 2-way (this file's split v2-style)",
+ "target": "T9884ae",
+ "test_flag_value": 0,
  "unit_cell": [
   65.408,
   74.016,
@@ -24,71 +269,5 @@
   90.0,
   90.0
  ],
- "data_mtz": "/home/dev/data/targets/3QUE/data.mtz",
- "flags_mtz": "/home/dev/data/targets/3QUE/flags.mtz",
- "split_mtz": "/home/dev/data/targets/3QUE/split.mtz",
- "split_json": "/home/dev/data/targets/3QUE/split.json",
- "flag_label": "R-free-flags",
- "test_flag_value": 0,
- "data_labels": "FP,SIGFP",
- "intensities_or_amplitudes": "amplitudes",
- "n_free": 864,
- "fraction_free": 0.080052,
- "data_mtz_sha256": "46e775eaef62e9ea6ba161189332747b22e18d456bb52f6eff759fdf3bb7d3c9",
- "flags_mtz_sha256": "389672087b3a3ca53fea456853e5df57ae38c009636c80fd5685679361721bd2",
- "split_mtz_sha256": "ce4af54870d53d09be398e85a520ced3e6b48d69cd93614c4a6f5f15a2a64d7f",
- "split_sha256": "9581a6d4cd4ae4dd0817ac5e29d81a8551c949d990859937de8ad2e7191e68b0",
- "n_select": 432,
- "n_report": 432,
- "split_seed": 1876873434,
- "flags_source": "inherited",
- "convention_note": "Inherited unchanged from _refln.status of 3QUE-sf.cif: 'f' = free. Written to flags.mtz as R-free-flags with test_flag_value=0 (work=1). mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude.",
- "n_reflections": 10793,
- "n_work": 9929,
- "n_rows_in_sf": 10793,
- "n_dropped_unmeasured": 0,
- "n_dropped_missing_value": 0,
- "data_choice": {
-  "kind": "amplitudes",
-  "value_tag": "F_meas_au",
-  "sigma_tag": "F_meas_sigma_au",
-  "labels": [
-   "FP",
-   "SIGFP"
-  ],
-  "types": [
-   "F",
-   "Q"
-  ],
-  "also_available": [],
-  "reason": "no merged intensities in the deposited file; amplitudes are all there is"
- },
- "convention": {
-  "source_tag": "_refln.status",
-  "free_symbol": "f",
-  "work_symbols": [
-   "o"
-  ],
-  "unmeasured_symbols": [],
-  "counts": {
-   "f": 864,
-   "o": 9929
-  },
-  "cross_check": null,
-  "note": "mmCIF _refln.status: 'f' = free/test, 'o' = observed working, everything else is unmeasured/excluded by the depositor and carries no amplitude."
- },
- "header_claim": {
-  "r_work": 0.2225,
-  "r_free": 0.3109,
-  "n_free": 863,
-  "pct_free": 8.0,
-  "sigma_f": 0.0
- },
- "script": "autoref.flags.build",
- "written_at": "2026-08-26T16:57:52+00:00",
- "n_free_vs_header": {
-  "header": 863,
-  "structure_factor_file": 864,
-  "note": "reported verbatim; the inherited flag column is authoritative and unchanged"
- }
+ "written_at": "2026-10-19T23:28:07Z"
 }
