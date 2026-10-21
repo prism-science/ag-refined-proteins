@@ -1,0 +1,1396 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/Ta4f3f9/pending/pick_2.5_a_1/prepare/pick.pdb",
+ "cand_input_sha256": "b657d6f7658705fdff2476cd49e5b83c68b85daea98741dc9fe761783f18b2a1",
+ "ctrl_input": "/home/dev/runs/hr/Ta4f3f9/pending/pick_2.5_a_1/prepare/parent_hygiene.pdb",
+ "ctrl_input_sha256": "479210e6c2847269c400ecd556709776521f2158fb3c6a6431e1c9fb2690b28c",
+ "ctrl_options": null,
+ "description": "waters at 2.5 sigma, mode single",
+ "kind": "improving",
+ "metaparams_sha256": "d917ddb43462267dce90cb304169b0e694b3565c88161e2e70944bed3780b6b4",
+ "model_after": "/home/dev/runs/hr/Ta4f3f9/trajectory/S0019/model.pdb",
+ "model_after_sha256": "4b508a18541428cd6aefae4407af841aea37775b17f50fc975e684e79393a364",
+ "model_before_sha256": "abde1ff606e0aeefe8dbaab563d169f6b4c571fe23287f69c1beac9f77b2df26",
+ "parent": "S0017",
+ "prepare": {
+  "hygiene_base": "/home/dev/runs/hr/Ta4f3f9/pending/pick_2.5_a_1/prepare/parent_hygiene.pdb",
+  "pick": {
+   "added": [
+    {
+     "altloc": "B",
+     "peak_sigma": 5.1,
+     "resseq": 1705,
+     "xyz": [
+      -25.146,
+      15.926,
+      -19.448
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.74,
+     "resseq": 1706,
+     "xyz": [
+      -19.18,
+      20.392,
+      11.375
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 4.62,
+     "resseq": 1707,
+     "xyz": [
+      -17.369,
+      25.409,
+      -22.551
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 4.5,
+     "resseq": 1708,
+     "xyz": [
+      -27.558,
+      3.462,
+      -13.576
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 4.43,
+     "resseq": 1709,
+     "xyz": [
+      -22.07,
+      19.719,
+      -20.617
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.42,
+     "resseq": 1710,
+     "xyz": [
+      -12.087,
+      22.157,
+      -19.657
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.35,
+     "resseq": 1711,
+     "xyz": [
+      -21.644,
+      23.287,
+      18.492
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.29,
+     "resseq": 1712,
+     "xyz": [
+      -4.669,
+      15.986,
+      16.563
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.2,
+     "resseq": 1713,
+     "xyz": [
+      -1.792,
+      5.959,
+      -3.182
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.18,
+     "resseq": 1714,
+     "xyz": [
+      -10.672,
+      31.966,
+      5.22
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.16,
+     "resseq": 1715,
+     "xyz": [
+      -4.457,
+      6.537,
+      -5.368
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.13,
+     "resseq": 1716,
+     "xyz": [
+      -5.389,
+      13.819,
+      -12.984
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 4.11,
+     "resseq": 1717,
+     "xyz": [
+      -18.357,
+      6.762,
+      21.97
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 4.09,
+     "resseq": 1718,
+     "xyz": [
+      -20.111,
+      24.315,
+      14.341
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.07,
+     "resseq": 1719,
+     "xyz": [
+      -10.391,
+      33.514,
+      2.856
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 4.07,
+     "resseq": 1720,
+     "xyz": [
+      -10.574,
+      12.5,
+      21.682
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 4.04,
+     "resseq": 1721,
+     "xyz": [
+      -2.556,
+      3.779,
+      -0.103
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 4.03,
+     "resseq": 1722,
+     "xyz": [
+      3.247,
+      18.519,
+      4.196
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 4.02,
+     "resseq": 1723,
+     "xyz": [
+      -16.539,
+      34.404,
+      -3.752
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 4.01,
+     "resseq": 1724,
+     "xyz": [
+      -9.552,
+      19.175,
+      20.353
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.99,
+     "resseq": 1725,
+     "xyz": [
+      -35.089,
+      25.958,
+      2.236
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.9,
+     "resseq": 1726,
+     "xyz": [
+      -26.055,
+      25.677,
+      9.383
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.89,
+     "resseq": 1727,
+     "xyz": [
+      -11.605,
+      9.453,
+      7.72
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.89,
+     "resseq": 1728,
+     "xyz": [
+      -36.544,
+      4.339,
+      -3.53
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.88,
+     "resseq": 1729,
+     "xyz": [
+      -7.987,
+      19.565,
+      18.823
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.87,
+     "resseq": 1730,
+     "xyz": [
+      1.027,
+      22.575,
+      2.399
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.82,
+     "resseq": 1731,
+     "xyz": [
+      -11.437,
+      -6.826,
+      1.055
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.8,
+     "resseq": 1732,
+     "xyz": [
+      -1.766,
+      11.727,
+      -3.053
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.8,
+     "resseq": 1733,
+     "xyz": [
+      -26.313,
+      11.518,
+      -21.918
+     ]
+    },
+    {
+     "altloc": "F",
+     "peak_sigma": 3.77,
+     "resseq": 1734,
+     "xyz": [
+      -22.729,
+      26.996,
+      1.781
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.74,
+     "resseq": 1735,
+     "xyz": [
+      -9.48,
+      33.453,
+      -1.221
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.73,
+     "resseq": 1736,
+     "xyz": [
+      -23.134,
+      -5.228,
+      -5.192
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.69,
+     "resseq": 1737,
+     "xyz": [
+      -1.975,
+      26.524,
+      14.043
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.67,
+     "resseq": 1738,
+     "xyz": [
+      -5.603,
+      28.889,
+      -8.091
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.66,
+     "resseq": 1739,
+     "xyz": [
+      -20.076,
+      12.858,
+      18.967
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.64,
+     "resseq": 1740,
+     "xyz": [
+      -31.3,
+      1.72,
+      -12.402
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.6,
+     "resseq": 1741,
+     "xyz": [
+      -4.903,
+      2.651,
+      -9.789
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.58,
+     "resseq": 1742,
+     "xyz": [
+      -8.483,
+      18.136,
+      -20.384
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.56,
+     "resseq": 1743,
+     "xyz": [
+      -5.368,
+      19.125,
+      -21.367
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.55,
+     "resseq": 1744,
+     "xyz": [
+      -26.033,
+      4.162,
+      3.654
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.54,
+     "resseq": 1745,
+     "xyz": [
+      -4.209,
+      -0.036,
+      15.147
+     ]
+    },
+    {
+     "altloc": "F",
+     "peak_sigma": 3.53,
+     "resseq": 1746,
+     "xyz": [
+      -5.534,
+      31.807,
+      9.971
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.53,
+     "resseq": 1747,
+     "xyz": [
+      -9.555,
+      -3.094,
+      5.599
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.53,
+     "resseq": 1748,
+     "xyz": [
+      4.721,
+      16.646,
+      3.741
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.51,
+     "resseq": 1749,
+     "xyz": [
+      -18.292,
+      30.918,
+      -5.254
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.47,
+     "resseq": 1750,
+     "xyz": [
+      -5.888,
+      -0.657,
+      8.875
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.43,
+     "resseq": 1751,
+     "xyz": [
+      -3.491,
+      24.653,
+      14.516
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.42,
+     "resseq": 1752,
+     "xyz": [
+      -32.151,
+      22.984,
+      -13.307
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.38,
+     "resseq": 1753,
+     "xyz": [
+      -25.765,
+      0.743,
+      -14.822
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.37,
+     "resseq": 1754,
+     "xyz": [
+      -21.35,
+      6.527,
+      18.58
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.37,
+     "resseq": 1755,
+     "xyz": [
+      -11.373,
+      14.589,
+      19.582
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 3.36,
+     "resseq": 1756,
+     "xyz": [
+      -20.728,
+      25.882,
+      12.286
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.35,
+     "resseq": 1757,
+     "xyz": [
+      -32.929,
+      23.771,
+      8.562
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.32,
+     "resseq": 1758,
+     "xyz": [
+      -4.732,
+      4.778,
+      -12.059
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 3.32,
+     "resseq": 1759,
+     "xyz": [
+      -5.849,
+      -5.802,
+      -2.942
+     ]
+    },
+    {
+     "altloc": "E",
+     "peak_sigma": 3.31,
+     "resseq": 1760,
+     "xyz": [
+      -13.124,
+      17.451,
+      21.604
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.29,
+     "resseq": 1761,
+     "xyz": [
+      -18.837,
+      20.572,
+      20.378
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.27,
+     "resseq": 1762,
+     "xyz": [
+      -17.079,
+      30.902,
+      5.267
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.27,
+     "resseq": 1763,
+     "xyz": [
+      -20.268,
+      -6.517,
+      -1.424
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.27,
+     "resseq": 1764,
+     "xyz": [
+      -19.987,
+      7.295,
+      -20.553
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.26,
+     "resseq": 1765,
+     "xyz": [
+      -8.284,
+      9.048,
+      19.358
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.25,
+     "resseq": 1766,
+     "xyz": [
+      -22.806,
+      31.079,
+      1.064
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.25,
+     "resseq": 1767,
+     "xyz": [
+      -24.47,
+      2.443,
+      3.128
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.25,
+     "resseq": 1768,
+     "xyz": [
+      -14.726,
+      10.574,
+      -20.821
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 3.23,
+     "resseq": 1769,
+     "xyz": [
+      -22.526,
+      15.565,
+      -17.292
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.21,
+     "resseq": 1770,
+     "xyz": [
+      -18.459,
+      19.803,
+      -20.764
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.21,
+     "resseq": 1771,
+     "xyz": [
+      -14.957,
+      15.98,
+      20.257
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.21,
+     "resseq": 1772,
+     "xyz": [
+      -22.318,
+      9.482,
+      -20.959
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.2,
+     "resseq": 1773,
+     "xyz": [
+      -25.028,
+      24.897,
+      13.204
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.19,
+     "resseq": 1774,
+     "xyz": [
+      -17.102,
+      36.318,
+      0.027
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.18,
+     "resseq": 1775,
+     "xyz": [
+      -20.313,
+      36.007,
+      -2.866
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.17,
+     "resseq": 1776,
+     "xyz": [
+      -0.398,
+      4.46,
+      -2.516
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.17,
+     "resseq": 1777,
+     "xyz": [
+      1.63,
+      5.21,
+      -1.434
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.16,
+     "resseq": 1778,
+     "xyz": [
+      -0.773,
+      26.017,
+      1.423
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.14,
+     "resseq": 1779,
+     "xyz": [
+      -6.585,
+      22.53,
+      22.521
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.13,
+     "resseq": 1780,
+     "xyz": [
+      -22.203,
+      9.903,
+      11.586
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.13,
+     "resseq": 1781,
+     "xyz": [
+      -22.588,
+      -4.566,
+      -7.273
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.12,
+     "resseq": 1782,
+     "xyz": [
+      -4.387,
+      28.796,
+      0.102
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.12,
+     "resseq": 1783,
+     "xyz": [
+      -22.611,
+      7.29,
+      13.206
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.11,
+     "resseq": 1784,
+     "xyz": [
+      -0.711,
+      25.179,
+      -4.342
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.11,
+     "resseq": 1785,
+     "xyz": [
+      -30.889,
+      25.696,
+      -17.09
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.07,
+     "resseq": 1786,
+     "xyz": [
+      -32.474,
+      23.399,
+      1.827
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.07,
+     "resseq": 1787,
+     "xyz": [
+      -1.285,
+      19.342,
+      0.426
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 3.06,
+     "resseq": 1788,
+     "xyz": [
+      -13.557,
+      -9.574,
+      0.778
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 3.06,
+     "resseq": 1789,
+     "xyz": [
+      -33.079,
+      22.527,
+      -10.635
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 3.04,
+     "resseq": 1790,
+     "xyz": [
+      -31.724,
+      26.921,
+      -12.757
+     ]
+    },
+    {
+     "altloc": "E",
+     "peak_sigma": 3.01,
+     "resseq": 1791,
+     "xyz": [
+      -9.055,
+      -3.54,
+      -3.326
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 3.0,
+     "resseq": 1792,
+     "xyz": [
+      -6.232,
+      7.544,
+      -4.222
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 3.0,
+     "resseq": 1793,
+     "xyz": [
+      -10.726,
+      7.109,
+      17.214
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.99,
+     "resseq": 1794,
+     "xyz": [
+      -16.16,
+      32.858,
+      1.533
+     ]
+    },
+    {
+     "altloc": "E",
+     "peak_sigma": 2.98,
+     "resseq": 1795,
+     "xyz": [
+      -7.536,
+      -5.624,
+      -0.705
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 2.95,
+     "resseq": 1796,
+     "xyz": [
+      -7.242,
+      13.939,
+      17.397
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.95,
+     "resseq": 1797,
+     "xyz": [
+      -1.85,
+      25.372,
+      11.667
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.95,
+     "resseq": 1798,
+     "xyz": [
+      -13.032,
+      -5.446,
+      3.182
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.94,
+     "resseq": 1799,
+     "xyz": [
+      -26.254,
+      0.513,
+      -12.683
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.91,
+     "resseq": 1800,
+     "xyz": [
+      -28.879,
+      -1.051,
+      -5.005
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.89,
+     "resseq": 1801,
+     "xyz": [
+      -21.868,
+      5.07,
+      -17.908
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 2.88,
+     "resseq": 1802,
+     "xyz": [
+      -17.865,
+      36.321,
+      1.959
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 2.88,
+     "resseq": 1803,
+     "xyz": [
+      -24.922,
+      28.204,
+      -22.071
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 2.87,
+     "resseq": 1804,
+     "xyz": [
+      0.541,
+      18.694,
+      -1.193
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 2.86,
+     "resseq": 1805,
+     "xyz": [
+      -20.454,
+      20.473,
+      21.929
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.85,
+     "resseq": 1806,
+     "xyz": [
+      -24.239,
+      27.273,
+      8.523
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.85,
+     "resseq": 1807,
+     "xyz": [
+      -14.735,
+      35.863,
+      -2.818
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.84,
+     "resseq": 1808,
+     "xyz": [
+      -26.367,
+      30.394,
+      -1.215
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.83,
+     "resseq": 1809,
+     "xyz": [
+      -19.946,
+      21.474,
+      -18.921
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 2.83,
+     "resseq": 1810,
+     "xyz": [
+      -9.765,
+      8.299,
+      -21.042
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 2.81,
+     "resseq": 1811,
+     "xyz": [
+      -19.036,
+      28.699,
+      -21.5
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 2.81,
+     "resseq": 1812,
+     "xyz": [
+      -19.778,
+      34.662,
+      -1.006
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.8,
+     "resseq": 1813,
+     "xyz": [
+      -28.019,
+      2.403,
+      -15.355
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.8,
+     "resseq": 1814,
+     "xyz": [
+      -28.772,
+      22.525,
+      10.737
+     ]
+    },
+    {
+     "altloc": "",
+     "peak_sigma": 2.78,
+     "resseq": 1815,
+     "xyz": [
+      -8.093,
+      4.66,
+      18.075
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.77,
+     "resseq": 1816,
+     "xyz": [
+      -13.183,
+      6.044,
+      15.303
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.77,
+     "resseq": 1817,
+     "xyz": [
+      -2.42,
+      22.246,
+      10.002
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.77,
+     "resseq": 1818,
+     "xyz": [
+      -6.763,
+      31.858,
+      5.477
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.76,
+     "resseq": 1819,
+     "xyz": [
+      1.849,
+      13.079,
+      -1.659
+     ]
+    },
+    {
+     "altloc": "F",
+     "peak_sigma": 2.76,
+     "resseq": 1820,
+     "xyz": [
+      -6.344,
+      7.448,
+      -9.703
+     ]
+    },
+    {
+     "altloc": "F",
+     "peak_sigma": 2.74,
+     "resseq": 1821,
+     "xyz": [
+      -4.662,
+      17.41,
+      -15.8
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.74,
+     "resseq": 1822,
+     "xyz": [
+      -2.435,
+      25.295,
+      0.056
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.73,
+     "resseq": 1823,
+     "xyz": [
+      -5.068,
+      35.236,
+      16.491
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.72,
+     "resseq": 1824,
+     "xyz": [
+      -6.191,
+      31.059,
+      -1.695
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.69,
+     "resseq": 1825,
+     "xyz": [
+      -24.428,
+      18.291,
+      -18.47
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.68,
+     "resseq": 1826,
+     "xyz": [
+      -7.212,
+      1.866,
+      11.979
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 2.68,
+     "resseq": 1827,
+     "xyz": [
+      -16.813,
+      34.243,
+      -1.146
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.64,
+     "resseq": 1828,
+     "xyz": [
+      -25.655,
+      28.457,
+      2.274
+     ]
+    },
+    {
+     "altloc": "D",
+     "peak_sigma": 2.64,
+     "resseq": 1829,
+     "xyz": [
+      0.039,
+      7.204,
+      0.478
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.63,
+     "resseq": 1830,
+     "xyz": [
+      -7.163,
+      33.367,
+      -0.063
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 2.62,
+     "resseq": 1831,
+     "xyz": [
+      -6.138,
+      -4.685,
+      0.587
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.59,
+     "resseq": 1832,
+     "xyz": [
+      -21.514,
+      23.307,
+      -15.859
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.58,
+     "resseq": 1833,
+     "xyz": [
+      -11.372,
+      -2.942,
+      4.33
+     ]
+    },
+    {
+     "altloc": "C",
+     "peak_sigma": 2.57,
+     "resseq": 1834,
+     "xyz": [
+      -20.934,
+      5.625,
+      14.732
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 2.57,
+     "resseq": 1835,
+     "xyz": [
+      -2.923,
+      13.093,
+      11.43
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.56,
+     "resseq": 1836,
+     "xyz": [
+      -23.728,
+      21.608,
+      12.571
+     ]
+    },
+    {
+     "altloc": "B",
+     "peak_sigma": 2.54,
+     "resseq": 1837,
+     "xyz": [
+      -24.577,
+      30.476,
+      -13.791
+     ]
+    },
+    {
+     "altloc": "A",
+     "peak_sigma": 2.52,
+     "resseq": 1838,
+     "xyz": [
+      -10.762,
+      11.859,
+      -22.413
+     ]
+    }
+   ],
+   "b_iso": 17.16,
+   "hbond": false,
+   "hbond_min_partners": null,
+   "hbond_range": null,
+   "jitter": 0.1,
+   "mode": "single",
+   "n_added": 134,
+   "n_blank": 25,
+   "n_few_partners": 0,
+   "n_no_partner": 0,
+   "n_peaks": 415,
+   "occ": 0.16666666666666666,
+   "shared_occ": 1.0,
+   "sigma": 2.5
+  }
+ },
+ "refine_options": {
+  "aniso_water": false,
+  "standing": {
+   "since": "S0008",
+   "utc": "2026-10-20T09:39:41Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "solvent",
+ "step": "S0019",
+ "tool": "water_addition",
+ "utc": "2026-10-21T04:20:51Z",
+ "worker": "solvent"
+}

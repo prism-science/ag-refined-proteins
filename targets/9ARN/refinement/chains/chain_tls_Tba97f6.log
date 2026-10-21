@@ -1,0 +1,17 @@
+[2026-10-19T11:27:41Z] chain_tls start on /home/dev/runs/hr/Tba97f6 from S0000
+[2026-10-19T11:27:41Z] noise floor: measured with the common recipe already
+[2026-10-19T11:27:41Z] tls_deposited_a from S0000
+S0029 2026-10-19T11:35:46Z refinement refine_step parent S0000 | TLS, 2 groups (the deposited groups), protein ADPs isotropic | R-free 0.29440 -> 0.30986 (+11.8 sigma) R-work 0.25417 -> 0.25877 gap +0.0109 clash 4.8 rota 3.0 % | atoms 654 w
+[2026-10-19T11:35:47Z] settle_c (1) from S0000
+S0030 2026-10-19T11:35:47Z refinement refine_step parent S0000 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.29440 -> 0.30393 (+10.2 sigma) R-work 0.25417 -> 0.23256 gap +0.0311 clash 4.
+[2026-10-19T11:35:47Z] add_hydrogens_b from S0000
+S0031 2026-10-19T11:35:50Z refinement refine_step parent S0000 | riding hydrogens added (phenix.ready_set, else mmtbx.reduce2); the control has none | R-free 0.29440 -> 0.30255 (+5.8 sigma) R-work 0.25417 -> 0.22896 gap +0.0334 clash 3.2 ro
+[2026-10-19T11:35:50Z] weights_tight (1) wc 1.0 wu 1.0 from S0000
+S0032 2026-10-19T11:41:05Z refinement refine_step parent S0000 | restraint weights wc 1 wu 1 against 0.5 1 | R-free 0.29440 -> 0.30320 (+4.8 sigma) R-work 0.25417 -> 0.23570 gap +0.0273 clash 2.4 rota 1.5 % | atoms 654 waters 38 altlocs AB 
+[2026-10-19T11:41:05Z] weights_loose (1) wc 0.3 wu 0.25 from S0000
+S0033 2026-10-19T11:41:06Z refinement refine_step parent S0000 | restraint weights wc 0.3 wu 0.25 against 0.5 1 | R-free 0.29440 -> 0.30696 (+13.5 sigma) R-work 0.25417 -> 0.22747 gap +0.0393 clash 4.0 rota 3.0 % | atoms 654 waters 38 altlo
+[2026-10-19T11:41:06Z] aniso_water_c (1) from S0000
+S0034 2026-10-19T11:41:06Z refinement refine_step parent S0000 | water ADPs anisotropic | R-free 0.29440 -> 0.29552 (+1.2 sigma) R-work 0.25417 -> 0.24702 gap +0.0083 clash 3.2 rota 3.0 % | atoms 654 waters 38 altlocs AB anisou 649 | ACCEPT
+[2026-10-19T11:41:07Z] converge_d (1) from S0000
+S0035 2026-10-19T11:41:07Z refinement refine_step parent S0000 | 20 macro-cycles against 10 | R-free 0.29440 -> 0.31033 (+17.1 sigma) R-work 0.25417 -> 0.23877 gap +0.0313 clash 2.4 rota 1.5 % | atoms 654 waters 38 altlocs AB anisou 611 | R
+[2026-10-19T11:41:07Z] chain_tls end on /home/dev/runs/hr/Tba97f6; best model S0000

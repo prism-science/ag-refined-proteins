@@ -1,0 +1,1 @@
+S0019 2026-10-21T04:20:51Z solvent water_addition parent S0017 | waters at 2.5 sigma, mode single | R-free 0.10107 -> 0.09928 (-11.3 sigma) R-work 0.07243 -> 0.06932 gap +0.0013 clash 7.8 rota 1.0 % | atoms 16461 waters 1637 altlocs ABCDEF anisou 8890 | ACCEPT

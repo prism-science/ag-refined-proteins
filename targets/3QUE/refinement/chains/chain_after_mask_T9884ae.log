@@ -1,0 +1,5 @@
+[2026-10-20T00:21:29Z] chain_after (mask_l) waits for pid 1761810
+[2026-10-20T04:09:29Z] chain_after start on /home/dev/runs/hr/T9884ae: mask_l = refine_step.py mask
+[2026-10-20T04:09:29Z] mask_l (1) from S0041
+S0050 2026-10-20T04:17:16Z refinement refine_step parent S0041 | bulk-solvent mask radii optimised (refinement.main.optimize_mask) against the fixed defaults | R-free 0.27055 -> 0.27101 (+0.6 sigma) R-work 0.19578 -> 0.19708 gap -0.0008 cla
+[2026-10-20T04:17:16Z] chain_after end on /home/dev/runs/hr/T9884ae (mask_l); best model S0041

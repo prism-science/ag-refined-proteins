@@ -1,0 +1,50 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/T431c8e_gap/trajectory/S0050/model.pdb",
+ "cand_input_sha256": "d370fde778161c551ec8ba23875479cdb01933a322f3c9cbd2334f3493141153",
+ "ctrl_input": "/home/dev/runs/hr/T431c8e_gap/trajectory/S0050/model.pdb",
+ "ctrl_input_sha256": "d370fde778161c551ec8ba23875479cdb01933a322f3c9cbd2334f3493141153",
+ "ctrl_options": {
+  "standing": {
+   "adp": "group1",
+   "since": "S0047",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-20T12:21:42Z",
+   "wc": 1.0,
+   "wu": 1.0
+  }
+ },
+ "description": "restraint weights wc 0.3 wu 0.25 against 1 1",
+ "kind": "improving",
+ "metaparams_sha256": "e37ed882c1967e1e7fe139eea80216e7eab02c2679bb77f669556a045ccd8ed7",
+ "model_after": "/home/dev/runs/hr/T431c8e_gap/trajectory/S0061/model.pdb",
+ "model_after_sha256": "c2132a8446db8443566b6788bd57d02b7064b52479ffca59ecac6675c942a1b8",
+ "model_before_sha256": "d370fde778161c551ec8ba23875479cdb01933a322f3c9cbd2334f3493141153",
+ "parent": "S0050",
+ "prepare": {},
+ "refine_options": {
+  "standing": {
+   "adp": "group1",
+   "since": "S0047",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-20T12:21:42Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "refinement",
+ "step": "S0061",
+ "tool": "refine_step",
+ "utc": "2026-10-21T01:52:30Z",
+ "worker": "refinement"
+}

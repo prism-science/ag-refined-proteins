@@ -1,0 +1,9 @@
+[2026-10-20T00:19:18Z] chain_anneal waits for pid 1750815
+[2026-10-20T01:35:19Z] chain_anneal start on /home/dev/runs/hr/Tee73c5 from S0060, standing weights 2 2
+[2026-10-20T01:35:19Z] anneal_a (1) from S0060
+S0062 2026-10-20T01:55:15Z refinement refine_step parent S0060 | simulated annealing (Cartesian) in the candidate's refinement against the recipe without it | R-free 0.24403 -> 0.27098 (+3.5 sigma) R-work 0.16675 -> 0.18073 gap +0.0130 clas
+[2026-10-20T01:55:15Z] anneal_torsion_a from S0060
+S0063 2026-10-20T02:11:09Z refinement refine_step parent S0060 | simulated annealing (torsion-angle) in the candidate's refinement against the recipe without it | R-free 0.24403 -> 0.25565 (+7.0 sigma) R-work 0.16675 -> 0.17209 gap +0.0063 
+[2026-10-20T02:11:09Z] converge_sa (1) from S0060
+S0064 2026-10-20T02:11:10Z refinement refine_step parent S0060 | 20 macro-cycles against 10 | R-free 0.24403 -> 0.24284 (-2.6 sigma) R-work 0.16675 -> 0.16765 gap -0.0021 clash 1.3 rota 0.5 % | atoms 4347 waters 422 altlocs AB anisou 2009 |
+[2026-10-20T02:11:10Z] chain_anneal end on /home/dev/runs/hr/Tee73c5; best model S0060

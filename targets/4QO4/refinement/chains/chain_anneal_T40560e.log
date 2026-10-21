@@ -1,0 +1,8 @@
+[2026-10-20T00:19:18Z] chain_anneal start on /home/dev/runs/hr/T40560e from S0017, standing weights 0.3 0.25
+[2026-10-20T00:19:18Z] anneal_a (1) from S0017
+S0047 2026-10-20T00:23:33Z refinement refine_step parent S0017 | simulated annealing (Cartesian) in the candidate's refinement against the recipe without it | R-free 0.30156 -> 0.30421 (+0.9 sigma) R-work 0.23418 -> 0.23613 gap +0.0007 clas
+[2026-10-20T00:23:33Z] anneal_torsion_a from S0017
+S0048 2026-10-20T00:27:23Z refinement refine_step parent S0017 | simulated annealing (torsion-angle) in the candidate's refinement against the recipe without it | R-free 0.30156 -> 0.30714 (+2.5 sigma) R-work 0.23418 -> 0.23594 gap +0.0038 
+[2026-10-20T00:27:24Z] converge_sa (1) from S0017
+S0049 2026-10-20T00:27:24Z refinement refine_step parent S0017 | 20 macro-cycles against 10 | R-free 0.30156 -> 0.30448 (+1.6 sigma) R-work 0.23418 -> 0.23572 gap +0.0014 clash 2.6 rota 2.4 % | atoms 844 waters 77 altlocs - anisou 0 | REFUS
+[2026-10-20T00:27:24Z] chain_anneal end on /home/dev/runs/hr/T40560e; best model S0017

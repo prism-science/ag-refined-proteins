@@ -1,0 +1,196 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/Tee73c5/pending/ions_CL_1/prepare/ions.pdb",
+ "cand_input_sha256": "f7441f5f9199152be580f72ddfe32bdd4ee8684daa7e32c0bf358890c2d32f90",
+ "ctrl_input": "/home/dev/runs/hr/Tee73c5/trajectory/S0070/model.pdb",
+ "ctrl_input_sha256": "ae0d57d7588d5d884da90340ebc553edc8463bf9654c57226e467567e0be9d82",
+ "ctrl_options": null,
+ "description": "CL at the mFo-DFc peaks of 4.0 sigma and above that no atom explains, next to a nitrogen (occupancy 1)",
+ "kind": "improving",
+ "metaparams_sha256": "da375bcf43953ad4a75e914ec851a2a4ed2ae7a90dff51f845a12c0cd3b906e2",
+ "model_after": "/home/dev/runs/hr/Tee73c5/trajectory/S0073/model.pdb",
+ "model_after_sha256": "df829acafbda8cd677c3adff5e78e5a57e50232636bb6c1bb3bd49554860d10f",
+ "model_before_sha256": "ae0d57d7588d5d884da90340ebc553edc8463bf9654c57226e467567e0be9d82",
+ "parent": "S0070",
+ "prepare": {
+  "ions": {
+   "b_iso": 10.74,
+   "clear": 2.8,
+   "min_sep": 3.5,
+   "n_peaks": 12,
+   "n_placed": 2,
+   "n_waters_removed": 3,
+   "partner_range": [
+    2.8,
+    4.5
+   ],
+   "peaks": [
+    {
+     "peak_sigma": 5.08,
+     "xyz": [
+      -18.974,
+      21.842,
+      20.637
+     ]
+    },
+    {
+     "peak_sigma": 4.84,
+     "xyz": [
+      -3.885,
+      27.605,
+      2.515
+     ]
+    },
+    {
+     "peak_sigma": 4.66,
+     "xyz": [
+      16.121,
+      14.809,
+      19.595
+     ]
+    },
+    {
+     "peak_sigma": 4.56,
+     "xyz": [
+      17.86,
+      15.263,
+      22.328
+     ]
+    },
+    {
+     "peak_sigma": 4.45,
+     "xyz": [
+      6.663,
+      20.266,
+      28.034
+     ]
+    },
+    {
+     "peak_sigma": 4.41,
+     "xyz": [
+      -1.85,
+      26.34,
+      11.996
+     ]
+    },
+    {
+     "peak_sigma": 4.41,
+     "xyz": [
+      14.713,
+      25.032,
+      26.47
+     ]
+    },
+    {
+     "peak_sigma": 4.35,
+     "xyz": [
+      14.279,
+      25.207,
+      33.123
+     ]
+    },
+    {
+     "peak_sigma": 4.29,
+     "xyz": [
+      14.005,
+      23.613,
+      35.136
+     ]
+    },
+    {
+     "peak_sigma": 4.24,
+     "xyz": [
+      -4.498,
+      22.35,
+      5.679
+     ]
+    },
+    {
+     "peak_sigma": 4.18,
+     "xyz": [
+      -12.731,
+      34.597,
+      8.609
+     ]
+    },
+    {
+     "peak_sigma": 4.13,
+     "xyz": [
+      16.397,
+      13.259,
+      25.993
+     ]
+    }
+   ],
+   "placed": [
+    {
+     "chain": "S",
+     "n_waters_removed": 1,
+     "partners": [
+      "ARG45 NE A",
+      "ARG45 NH1 A",
+      "ARG45 NH2 A",
+      "ARG45 NE B",
+      "ARG45 NH1 B",
+      "ARG45 NH2 B",
+      "ARG128 NH1 A",
+      "ARG128 NH2 A",
+      "ARG128 NH1 B",
+      "ARG128 NH2 B"
+     ],
+     "peak_sigma": 5.08,
+     "resseq": 1,
+     "xyz": [
+      -18.974,
+      21.842,
+      20.637
+     ]
+    },
+    {
+     "chain": "S",
+     "n_waters_removed": 2,
+     "partners": [
+      "ARG5 NE A",
+      "ARG5 NH1 A",
+      "ARG5 NH2 A",
+      "ARG5 NE B",
+      "ARG5 NH1 B",
+      "ARG5 NH2 B"
+     ],
+     "peak_sigma": 4.84,
+     "resseq": 2,
+     "xyz": [
+      -3.885,
+      27.605,
+      2.515
+     ]
+    }
+   ],
+   "resname": "CL",
+   "sigma": 4.0
+  }
+ },
+ "refine_options": {
+  "standing": {
+   "mask": true,
+   "since": "S0060",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-20T01:13:47Z",
+   "wc": 2.0,
+   "wu": 2.0
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "solvent",
+ "step": "S0073",
+ "tool": "place_ions",
+ "utc": "2026-10-20T07:22:22Z",
+ "worker": "solvent"
+}

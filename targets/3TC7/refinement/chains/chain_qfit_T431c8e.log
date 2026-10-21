@@ -1,0 +1,6 @@
+[2026-10-20T00:36:45Z] after_pid waits for pid 1812083, then: bash scripts/chain_qfit.sh /home/dev/runs/hr/T431c8e 6 2
+[2026-10-20T17:35:46Z] after_pid starts: bash scripts/chain_qfit.sh /home/dev/runs/hr/T431c8e 6 2
+[2026-10-20T17:35:46Z] chain_qfit start on /home/dev/runs/hr/T431c8e: 2 copies from qFit, parent S0042 (best S0042)
+[2026-10-20T17:35:46Z] split 2 copies from S0042, source qfit
+[2026-10-20T18:46:16Z] after the split the best model is S0042
+[2026-10-20T18:46:16Z] chain_qfit end on /home/dev/runs/hr/T431c8e; best model S0042

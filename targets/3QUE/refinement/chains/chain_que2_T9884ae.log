@@ -1,0 +1,12 @@
+[2026-10-20T06:56:39Z] chain_que2 start on /home/dev/runs/hr/T9884ae from S0041, standing weights 2 2
+[2026-10-20T06:56:39Z] add_hydrogens_q from S0041
+S0051 2026-10-20T07:03:44Z refinement refine_step parent S0041 | riding hydrogens added (phenix.ready_set, else mmtbx.reduce2); the control has none | R-free 0.27055 -> 0.27598 (+4.7 sigma) R-work 0.19578 -> 0.18548 gap +0.0157 clash 1.9 ro
+[2026-10-20T07:03:44Z] restraints_q from S0041
+S0052 2026-10-20T07:08:38Z refinement refine_step parent S0041 | secondary-structure restraints and Ramachandran restraints against none (the low-resolution restraints) | R-free 0.27055 -> 0.26852 (-2.5 sigma) R-work 0.19578 -> 0.19625 gap 
+[2026-10-20T07:08:38Z] coot_outliers_q (1) from S0052
+S0053 2026-10-20T07:14:41Z rotamer-finder coot_fix parent S0052 | Coot auto-fit rotamers on the rotamer outliers (phenix.rotalyze) | R-free 0.26852 -> 0.27004 (+1.9 sigma) R-work 0.19625 -> 0.19677 gap +0.0010 clash 5.3 rota 8.2 % | atoms 2
+[2026-10-20T07:14:42Z] settle_q (1) from S0052
+S0054 2026-10-20T07:15:44Z refinement refine_step parent S0052 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.26852 -> 0.27061 (+2.6 sigma) R-work 0.19625 -> 0.19582 gap +0.0025 clash 5.5
+[2026-10-20T07:15:44Z] converge_q from S0052
+S0055 2026-10-20T07:24:51Z refinement refine_step parent S0052 | 20 macro-cycles against 10 | R-free 0.26852 -> 0.27119 (+1.2 sigma) R-work 0.19625 -> 0.19533 gap +0.0036 clash 5.1 rota 8.6 % | atoms 2896 waters 61 altlocs - anisou 2764 | R
+[2026-10-20T07:24:51Z] chain_que2 end on /home/dev/runs/hr/T9884ae; best model S0052

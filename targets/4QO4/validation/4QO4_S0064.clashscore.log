@@ -1,0 +1,56 @@
+Starting phenix.python
+on Wed Oct 21 16:38:09 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/4QO4.d/4QO4/model/4QO4_S0064.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/4QO4.d/4QO4/model/4QO4_S0064.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/4QO4.d/4QO4/model/4QO4_S0064.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 9.97 seconds
+wall clock time: 10.94 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+No H/D atoms detected - forcing hydrogen addition!
+
+
+Adding H/D atoms with reduce...
+
+Bad Clashes >= 0.4 Angstrom:
+ A  24  GLN  HG3  A  51  LYS  HB2 :0.644
+ A  71  GLN  HB3  A 325  HOH  O   :0.636
+ A  92  SER  HB3  A  95  GLU  HG3 :0.527
+ A  44  GLN  NE2  S 418  HOH O    :0.452
+ A  67  TYR  HE1  A  73  HIS  HA  :0.444
+ A  18  GLN  HB3  T   3  SO4  O4  :0.431
+ A  24  GLN  NE2  A 324  HOH  O   :0.427
+ A  37  LEU  HG   A  60  TYR  CE2 :0.425
+ A  43  ALA  HB1  A  48  TYR  OH  :0.408
+ A  18  GLN  HB2  S 378  HOH O    :0.407
+ A  71  GLN  C    A  73  HIS  H   :0.404
+ A  70  LYS  HB3  A  70  LYS  HE3 :0.401
+clashscore = 7.34

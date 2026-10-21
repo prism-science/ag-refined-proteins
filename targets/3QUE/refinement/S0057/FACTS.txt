@@ -1,0 +1,1 @@
+S0057 2026-10-21T03:58:49Z refinement refine_step parent S0052 | reference-model torsion restraints to reference_model.pdb (phenix reference_model, sigma 1.0, limit 15; the sequences aligned by phenix) against none | R-free 0.26852 -> 0.26419 (-3.4 sigma) R-work 0.19625 -> 0.21236 gap -0.0204 clash 6.3 rota 3.6 % | atoms 2896 waters 61 altlocs - anisou 2764 | ACCEPT

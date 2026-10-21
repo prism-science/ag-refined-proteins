@@ -3,18 +3,60 @@
  "harness": {
   "repository": "prism-science/autoresearch",
   "branch": "manzuoni/hierarchical_refinement",
-  "commit_of_the_model": "bd972d3",
-  "commit_at_release": "790894b"
+  "commit_of_the_model": "bd972d3 (7KR0); bfed380 for the seven targets of 2026-10-21",
+  "commit_at_release": "bfed380 (branch manzuoni/hierarchical_refinement; merged into main as 7d62e84)"
  },
- "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directory /home/dev/runs/hr/Tff1b3f",
+ "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "exported_at": "2026-10-19T07:00:00Z",
+ "exported_at": "2026-10-21T16:52:57Z",
  "released": {
   "7KR0": {
    "run_handle": "Tff1b3f",
    "step": "S0053",
    "utc": "2026-10-18T23:06:47Z",
    "vault_last_read": "S0011 (R-vault 0.07692, R-free 0.08086)"
+  },
+  "3TC7": {
+   "run_handle": "T431c8e_gap",
+   "step": "S0061",
+   "utc": "2026-10-21T01:52:30Z",
+   "vault_last_read": "never in this run"
+  },
+  "1LZ8": {
+   "run_handle": "Tee73c5",
+   "step": "S0073",
+   "utc": "2026-10-20T07:22:22Z",
+   "vault_last_read": "never in this run"
+  },
+  "4QO4": {
+   "run_handle": "T40560e",
+   "step": "S0064",
+   "utc": "2026-10-20T08:38:01Z",
+   "vault_last_read": "never in this run"
+  },
+  "3QUE": {
+   "run_handle": "T9884ae",
+   "step": "S0057",
+   "utc": "2026-10-21T03:58:49Z",
+   "vault_last_read": "never in this run"
+  },
+  "9ARN": {
+   "run_handle": "Tba97f6",
+   "step": "S0062",
+   "utc": "2026-10-20T02:10:55Z",
+   "vault_last_read": "never in this run"
+  },
+  "7R2H": {
+   "run_handle": "Ta4f3f9",
+   "step": "S0019",
+   "utc": "2026-10-21T04:20:51Z",
+   "vault_last_read": "never in this run"
+  },
+  "8C5N": {
+   "run_handle": "T5f59f1",
+   "step": "S0027",
+   "utc": "2026-10-21T14:13:07Z",
+   "vault_last_read": "never in this run"
   }
  }
 }

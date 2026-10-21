@@ -1,0 +1,57 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/T9884ae/trajectory/S0052/model.pdb",
+ "cand_input_sha256": "02b83df513b11cfdaa1b222141e62a1d929fcedceb321c448cf86293f975954f",
+ "ctrl_input": "/home/dev/runs/hr/T9884ae/trajectory/S0052/model.pdb",
+ "ctrl_input_sha256": "02b83df513b11cfdaa1b222141e62a1d929fcedceb321c448cf86293f975954f",
+ "ctrl_options": {
+  "standing": {
+   "rama": true,
+   "since": "S0052",
+   "ss": true,
+   "tls": [
+    "chain 'A' and (resid    5  through  102 )",
+    "chain 'A' and (resid  103  through  201 )",
+    "chain 'A' and (resid  202  through  353 )"
+   ],
+   "utc": "2026-10-20T07:08:38Z",
+   "wc": 2.0,
+   "wu": 2.0
+  }
+ },
+ "description": "reference-model torsion restraints to reference_model.pdb (phenix reference_model, sigma 1.0, limit 15; the sequences aligned by phenix) against none",
+ "kind": "improving",
+ "metaparams_sha256": "1771e681e828d407e2cc57ddcac9349011e730115e6f786fa6edff459982015f",
+ "model_after": "/home/dev/runs/hr/T9884ae/trajectory/S0057/model.pdb",
+ "model_after_sha256": "5467aa5e08c18f2d0a020a085ad52d380eeb3213ff9643451398370fb1e0d109",
+ "model_before_sha256": "02b83df513b11cfdaa1b222141e62a1d929fcedceb321c448cf86293f975954f",
+ "parent": "S0052",
+ "prepare": {},
+ "refine_options": {
+  "reference": "/home/dev/runs/hr/T9884ae/prep/reference_model.pdb",
+  "standing": {
+   "rama": true,
+   "since": "S0052",
+   "ss": true,
+   "tls": [
+    "chain 'A' and (resid    5  through  102 )",
+    "chain 'A' and (resid  103  through  201 )",
+    "chain 'A' and (resid  202  through  353 )"
+   ],
+   "utc": "2026-10-20T07:08:38Z",
+   "wc": 2.0,
+   "wu": 2.0
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "refinement",
+ "step": "S0057",
+ "tool": "refine_step",
+ "utc": "2026-10-21T03:58:49Z",
+ "worker": "refinement"
+}

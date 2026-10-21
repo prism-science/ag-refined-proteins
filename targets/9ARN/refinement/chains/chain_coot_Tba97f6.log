@@ -1,0 +1,12 @@
+[2026-10-19T16:22:25Z] chain_coot start on /home/dev/runs/hr/Tba97f6 from S0000
+{"step": "S0000", "n_residues": 110, "n_worklist": 4, "n_waters_flagged": 15, "file": "/home/dev/runs/hr/Tba97f6/trajectory/WORKLIST_S0000.md"}
+[2026-10-19T16:22:31Z] zones: A:1 A:31 A:22
+[2026-10-19T16:22:31Z] coot zone A 0-2 from S0000
+S0045 2026-10-19T16:27:55Z rotamer-finder coot_fix parent S0000 | Coot zone refinement A 0-2 | R-free 0.29440 -> 0.30486 (+11.2 sigma) R-work 0.25417 -> 0.23876 gap +0.0259 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 611 | 
+[2026-10-19T16:27:55Z] coot zone A 30-32 from S0000
+S0046 2026-10-19T16:33:29Z rotamer-finder coot_fix parent S0000 | Coot zone refinement A 30-32 | R-free 0.29440 -> 0.30538 (+11.8 sigma) R-work 0.25417 -> 0.23905 gap +0.0261 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 611 
+[2026-10-19T16:33:30Z] coot zone A 21-23 from S0000
+S0047 2026-10-19T16:38:46Z rotamer-finder coot_fix parent S0000 | Coot zone refinement A 21-23 | R-free 0.29440 -> 0.30321 (+9.5 sigma) R-work 0.25417 -> 0.23785 gap +0.0251 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 611 |
+[2026-10-19T16:38:47Z] converge_z (1) from S0000
+S0048 2026-10-19T16:38:47Z refinement refine_step parent S0000 | 20 macro-cycles against 10 | R-free 0.29440 -> 0.31033 (+17.1 sigma) R-work 0.25417 -> 0.23877 gap +0.0313 clash 2.4 rota 1.5 % | atoms 654 waters 38 altlocs AB anisou 611 | R
+[2026-10-19T16:38:47Z] chain_coot end on /home/dev/runs/hr/Tba97f6; best model S0000

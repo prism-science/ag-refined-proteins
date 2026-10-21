@@ -1,0 +1,20 @@
+[2026-10-19T15:09:58Z] chain_more start on /home/dev/runs/hr/T40560e from S0017, d_min 1.7003590181767632, standing weights 0.3 0.25
+[2026-10-19T15:09:58Z] prune_a from S0017
+S0027 2026-10-19T15:12:35Z solvent water_addition parent S0017 | waters below 1.0 sigma in the work-only 2mFo-DFc map removed | R-free 0.30156 -> 0.30575 (+2.3 sigma) R-work 0.23418 -> 0.23716 gap +0.0012 clash 3.2 rota 3.6 % | atoms 835 wa
+[2026-10-19T15:12:35Z] cleanup_a from S0017
+S0028 2026-10-19T15:15:19Z solvent water_addition parent S0017 | water clash cleanup | R-free 0.30156 -> 0.30115 (-0.2 sigma) R-work 0.23418 -> 0.23542 gap -0.0017 clash 1.9 rota 2.4 % | atoms 843 waters 76 altlocs - anisou 0 | REFUSE
+[2026-10-19T15:15:19Z] tls_find_a from S0017
+S0029 2026-10-19T15:19:42Z refinement refine_step parent S0017 | TLS, 9 groups (phenix.find_tls_groups) | R-free 0.30156 -> 0.30944 (+4.1 sigma) R-work 0.23418 -> 0.22477 gap +0.0173 clash 5.1 rota 1.2 % | atoms 844 waters 77 altlocs - anis
+[2026-10-19T15:19:42Z] weights_0.5_0.5 from S0017
+S0030 2026-10-19T15:22:18Z refinement refine_step parent S0017 | restraint weights wc 0.5 wu 0.5 against 0.3 0.25 | R-free 0.30156 -> 0.30710 (+3.0 sigma) R-work 0.23418 -> 0.23869 gap +0.0010 clash 3.9 rota 3.6 % | atoms 844 waters 77 altl
+[2026-10-19T15:22:19Z] weights_0.5_2.0 from S0017
+S0031 2026-10-19T15:24:50Z refinement refine_step parent S0017 | restraint weights wc 0.5 wu 2 against 0.3 0.25 | R-free 0.30156 -> 0.31862 (+8.7 sigma) R-work 0.23418 -> 0.24691 gap +0.0043 clash 3.9 rota 3.6 % | atoms 844 waters 77 altloc
+[2026-10-19T15:24:50Z] weights_0.4_1.0 from S0017
+S0032 2026-10-19T15:27:24Z refinement refine_step parent S0017 | restraint weights wc 0.4 wu 1 against 0.3 0.25 | R-free 0.30156 -> 0.31450 (+6.2 sigma) R-work 0.23418 -> 0.24274 gap +0.0044 clash 1.9 rota 2.4 % | atoms 844 waters 77 altloc
+[2026-10-19T15:27:24Z] settle_d (1) from S0017
+S0033 2026-10-19T15:27:24Z refinement refine_step parent S0017 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.30156 -> 0.30075 (-0.4 sigma) R-work 0.23418 -> 0.23468 gap -0.0013 clash 2.6
+[2026-10-19T15:27:25Z] split 2 copies from S0017, source qfit
+[2026-10-19T15:27:28Z] after the split the best model is S0017
+[2026-10-19T15:27:28Z] converge_e (1) from S0017
+S0034 2026-10-19T15:27:29Z refinement refine_step parent S0017 | 20 macro-cycles against 10 | R-free 0.30156 -> 0.30448 (+1.6 sigma) R-work 0.23418 -> 0.23572 gap +0.0014 clash 2.6 rota 2.4 % | atoms 844 waters 77 altlocs - anisou 0 | REFUS
+[2026-10-19T15:27:29Z] chain_more end on /home/dev/runs/hr/T40560e; best model S0017

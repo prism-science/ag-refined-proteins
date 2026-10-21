@@ -1,0 +1,45 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/T5f59f1/pending/reletter_a/prepare/relettered.pdb",
+ "cand_input_sha256": "06f2a7bd0dbf9e94069aa2971d8eef034b1b4d6e1bde46890ddc026a6dd3fca9",
+ "ctrl_input": "/home/dev/runs/hr/T5f59f1/trajectory/S0021/model.pdb",
+ "ctrl_input_sha256": "d82b12b1707c8916328dc86e97abb23b93bf1f8ff3b52e6da66830ac5aeb2fc8",
+ "ctrl_options": null,
+ "description": "waters in own-copy clashes moved to a copy they clear; nothing deleted",
+ "kind": "geometry",
+ "metaparams_sha256": "e0f150768aeeeda424c3d58ba36289796b27c2a7d4f7b024ef6ebf442d14d313",
+ "model_after": "/home/dev/runs/hr/T5f59f1/trajectory/S0027/model.pdb",
+ "model_after_sha256": "d1bfe97844aa08e26f4e8b6284979333f2c7e81f35b301f20f343ae70c9776e7",
+ "model_before_sha256": "d82b12b1707c8916328dc86e97abb23b93bf1f8ff3b52e6da66830ac5aeb2fc8",
+ "parent": "S0021",
+ "prepare": {
+  "clashscore_before": 9.45,
+  "reletter": {
+   "h_min": 2.3,
+   "heavy_min": 2.8,
+   "n_blank": 0,
+   "n_clashing": 36,
+   "n_left": 19,
+   "n_relettered": 17
+  }
+ },
+ "refine_options": {
+  "standing": {
+   "since": "S0008",
+   "utc": "2026-10-20T09:32:21Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "solvent",
+ "step": "S0027",
+ "tool": "water_addition",
+ "utc": "2026-10-21T14:13:07Z",
+ "worker": "solvent"
+}
