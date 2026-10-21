@@ -1,0 +1,260 @@
+{
+ "bunker": {
+  "applied_after_frozen_check": false,
+  "applied_at": "2026-10-14T22:51:47Z",
+  "fraction": 0.02,
+  "n": 3400,
+  "pre_bunker_sha256": {
+   "data_flags_mtz": "e87d7c0a3f631e55387e6a65166a51098599f7a7cba7bbb44597de5b0bd5e3aa",
+   "data_mtz": "6fae023870b9cd84d5e8cfb81cba3402ad6bb15016ad016e18815e38f83160ca",
+   "flags_mtz": "056709e4dd24f43d150e43b8c1f92aaa8decdc5f1631bd3a7c843ca2d5f292cb",
+   "split_mtz": "238753479c2392bb1653e1012986cc4538b9736331f8b085f289cfa83a559237"
+  },
+  "seed": 3302914885,
+  "vault_json": "/home/dev/runs/hr/Tff1b3f/vault/bunker.json",
+  "vault_json_sha256": "902e837fd63d6833513a3239e47cb9c291e0189537a5ded39345a6f3a792ad24",
+  "vault_mtz": "/home/dev/runs/hr/Tff1b3f/vault/bunker.mtz",
+  "vault_mtz_sha256": "1d1edccecf605853358eedc0c799e95d7ff8e9fd214bad6c859c0ffe94353913"
+ },
+ "columns_present": [
+  "F_meas_au",
+  "F_meas_sigma_au",
+  "pdbx_r_free_flag",
+  "status"
+ ],
+ "convention": {
+  "free_symbol": "f",
+  "source": "_refln.status"
+ },
+ "d_min": 0.7700003615996039,
+ "data_choice": {
+  "coverage": {
+   "amplitudes": {
+    "n_measured_rows": 178324,
+    "n_null": 0,
+    "n_usable": 178324,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   },
+   "intensities": null
+  },
+  "kind": "amplitudes",
+  "labels": [
+   "FP",
+   "SIGFP"
+  ],
+  "reason": "no merged intensities; amplitudes are all there is",
+  "sigma_tag": "F_meas_sigma_au",
+  "value_tag": "F_meas_au"
+ },
+ "data_flags_mtz": "/home/dev/runs/hr/Tff1b3f/prep/data_flags.mtz",
+ "data_flags_mtz_sha256": "76414e6133c34e4cc73ab15eed5c2260eadb7b97895ec854796ee9dc9e2be833",
+ "data_labels": "FP,SIGFP",
+ "data_mtz": "/home/dev/runs/hr/Tff1b3f/prep/data.mtz",
+ "data_mtz_sha256": "0a8fdef1e4c5184cf11f93de372c640a61b2a72c6506d49cebaa656865a73438",
+ "flag_label": "R-free-flags",
+ "flags_mtz": "/home/dev/runs/hr/Tff1b3f/prep/flags.mtz",
+ "flags_mtz_sha256": "bd3dbf9af8805a25c4fdaf7de6a42ebcb3f9045d8c383e8c6db6974324391ca9",
+ "flags_source": "inherited",
+ "fraction_free": 0.049804,
+ "intensities_or_amplitudes": "amplitudes",
+ "model_pdb": "/home/dev/runs/hr/Tff1b3f/prep/model.pdb",
+ "model_pdb_sha256": "4a96af10034a47793705747f5c2a0882c94e8d9087c7d64d1656ae2a894caea8",
+ "n_dropped_missing_value": 0,
+ "n_dropped_unmeasured": 499,
+ "n_dropped_zero_amplitude": 0,
+ "n_free": 8712,
+ "n_reflections": 174924,
+ "n_report": 4356,
+ "n_rows_in_sf": 178823,
+ "n_select": 4356,
+ "n_sleep": 0,
+ "n_sleep_hidden_from_phenix": 0,
+ "n_work": 166212,
+ "sf_block": "r7kr0sf",
+ "sf_sha256": "e243c56935c5c86a1bd79b7f3630ac16276eef3194d59c3c274f01b8afc06a54",
+ "sf_source": "vault/_source (sha256 e243c56935c5c86a1bd79b7f3630ac16276eef3194d59c3c274f01b8afc06a54)",
+ "space_group": "C 1 2 1",
+ "split": {
+  "method": "free reflections sorted by (-d, h, k, l), 20 equal-count shells, random.Random(2179656035).shuffle per shell (one generator), dealt round robin to select/report",
+  "n_parts": 2,
+  "n_shells": 20,
+  "seed": 2179656035,
+  "shells": [
+   {
+    "d_max": 19.4588,
+    "d_min": 2.1258,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 1
+   },
+   {
+    "d_max": 2.1239,
+    "d_min": 1.638,
+    "n": 435,
+    "n_report": 217,
+    "n_select": 218,
+    "shell": 2
+   },
+   {
+    "d_max": 1.637,
+    "d_min": 1.4506,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 3
+   },
+   {
+    "d_max": 1.4504,
+    "d_min": 1.3259,
+    "n": 435,
+    "n_report": 218,
+    "n_select": 217,
+    "shell": 4
+   },
+   {
+    "d_max": 1.3256,
+    "d_min": 1.23,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 5
+   },
+   {
+    "d_max": 1.2294,
+    "d_min": 1.1562,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 6
+   },
+   {
+    "d_max": 1.1559,
+    "d_min": 1.0962,
+    "n": 435,
+    "n_report": 217,
+    "n_select": 218,
+    "shell": 7
+   },
+   {
+    "d_max": 1.0962,
+    "d_min": 1.0477,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 8
+   },
+   {
+    "d_max": 1.0477,
+    "d_min": 1.0076,
+    "n": 435,
+    "n_report": 218,
+    "n_select": 217,
+    "shell": 9
+   },
+   {
+    "d_max": 1.0075,
+    "d_min": 0.9722,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 10
+   },
+   {
+    "d_max": 0.972,
+    "d_min": 0.9418,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 11
+   },
+   {
+    "d_max": 0.9418,
+    "d_min": 0.9146,
+    "n": 435,
+    "n_report": 217,
+    "n_select": 218,
+    "shell": 12
+   },
+   {
+    "d_max": 0.9146,
+    "d_min": 0.8914,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 13
+   },
+   {
+    "d_max": 0.8913,
+    "d_min": 0.8694,
+    "n": 435,
+    "n_report": 218,
+    "n_select": 217,
+    "shell": 14
+   },
+   {
+    "d_max": 0.8694,
+    "d_min": 0.8489,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 15
+   },
+   {
+    "d_max": 0.8488,
+    "d_min": 0.8304,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 16
+   },
+   {
+    "d_max": 0.8302,
+    "d_min": 0.8145,
+    "n": 435,
+    "n_report": 217,
+    "n_select": 218,
+    "shell": 17
+   },
+   {
+    "d_max": 0.8145,
+    "d_min": 0.7987,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 18
+   },
+   {
+    "d_max": 0.7987,
+    "d_min": 0.7837,
+    "n": 435,
+    "n_report": 218,
+    "n_select": 217,
+    "shell": 19
+   },
+   {
+    "d_max": 0.7837,
+    "d_min": 0.77,
+    "n": 436,
+    "n_report": 218,
+    "n_select": 218,
+    "shell": 20
+   }
+  ]
+ },
+ "split_mtz": "/home/dev/runs/hr/Tff1b3f/prep/split.mtz",
+ "split_mtz_sha256": "e2b642c35aa787850e9ee062697a6a5fbe948b908bd911d8306e69020050a78a",
+ "split_version": "stratified 2-way (this file's split v2-style)",
+ "target": "Tff1b3f",
+ "test_flag_value": 0,
+ "unit_cell": [
+  139.82,
+  29.63,
+  37.96,
+  90.0,
+  103.56,
+  90.0
+ ],
+ "written_at": "2026-10-14T22:51:45Z"
+}

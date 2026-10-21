@@ -1,0 +1,6 @@
+[2026-10-20T09:44:10Z] chain_after start on /home/dev/runs/hr/T431c8e: iso_protein_m = refine_step.py iso-protein
+[2026-10-20T09:44:10Z] iso_protein_m (1) from S0033
+S0042 2026-10-20T11:03:17Z refinement refine_step parent S0033 | protein ADPs isotropic (anisotropic before) | R-free 0.16232 -> 0.15402 (-31.1 sigma) R-work 0.08786 -> 0.09278 gap -0.0132 clash 3.3 rota 1.9 % | atoms 28156 waters 3672 altl
+[2026-10-20T11:03:18Z] iso_protein_m (2) from S0042
+S0043 2026-10-20T11:03:19Z refinement refine_step parent S0042 | no anisotropic protein atom in the model in force | R-free 0.15402 -> 0.15402 R-work 0.09278 -> 0.09278 gap +0.0000 clash 3.3 rota 1.9 % | atoms 28156 waters 3672 altlocs ABCD
+[2026-10-20T11:03:19Z] chain_after end on /home/dev/runs/hr/T431c8e (iso_protein_m); best model S0042

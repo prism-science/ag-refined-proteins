@@ -1,0 +1,52 @@
+Starting phenix.python
+on Wed Oct 21 17:26:29 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/1LZ8.d/1LZ8/model/1LZ8_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/1LZ8.d/1LZ8/model/1LZ8_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/1LZ8.d/1LZ8/model/1LZ8_S0001.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 3.93 seconds
+wall clock time: 5.08 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+No H/D atoms detected - forcing hydrogen addition!
+
+
+Adding H/D atoms with reduce...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 113  ASN  HB2  S 596  HOH O    :0.850
+ A 114  ARG  HG3  S 596  HOH O    :0.721
+ A 110  ALA  HA   S 596  HOH O    :0.650
+ A 108  TRP  HA   S 482  HOH O    :0.628
+ A  61  ARG  HD2  S 603  HOH O    :0.502
+ A 111  TRP  CD1  A 115  CYS  HB2 :0.473
+ A  33  LYS  HG2  A 123  TRP  CH2 :0.415
+ A  45  ARG  HD3  S 494  HOH O    :0.407
+clashscore = 4.10

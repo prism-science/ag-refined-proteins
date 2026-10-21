@@ -1,0 +1,314 @@
+{
+ "after": {
+  "altlocs": "AB",
+  "angle_rmsd": 1.0841,
+  "bond_rmsd": 0.0079,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0797,
+  "clashscore": 2.92,
+  "clashscore_mmtbx": 2.919,
+  "copies": 1,
+  "dihedral_rmsd": 14.5418,
+  "gap": 0.038237910511472906,
+  "geometry": {
+   "angle": {
+    "max": 9.1242,
+    "mean": 1.0841,
+    "min": 0.0001,
+    "n": 2786,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 4.48,
+    "mean": 0.7062,
+    "min": 0.0,
+    "n": 2786,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0645,
+    "mean": 0.0079,
+    "min": 0.0,
+    "n": 2066,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 3.2258,
+    "mean": 0.4403,
+    "min": 0.0003,
+    "n": 2066,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.0,
+    "disfavored": 1.6194,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0493,
+       0.2711,
+       "",
+       0.0456,
+       0.0017,
+       0.0,
+       "ERROR",
+       [
+        34.706,
+        -19.689,
+        9.773
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.0106,
+       0.7853,
+       "",
+       0.3777,
+       0.0,
+       0.0059,
+       "ERROR",
+       [
+        14.584,
+        -21.308,
+        -16.778
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Disfavored",
+       0.0458,
+       0.0441,
+       "",
+       0.0038,
+       0.0,
+       0.0064,
+       "ERROR",
+       [
+        21.754,
+        -36.934,
+        1.06
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0293,
+       0.018,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.794,
+        -35.136,
+        -14.89
+       ]
+      ]
+     ]
+    },
+    "outliers": 0.0
+   },
+   "chirality": {
+    "max": 0.3211,
+    "mean": 0.0797,
+    "min": 0.0002,
+    "n": 314,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 2.919
+   },
+   "dihedral": {
+    "max": 80.1195,
+    "mean": 14.5418,
+    "min": 0.0306,
+    "n": 801,
+    "outliers": [
+     [
+      405,
+      406,
+      413,
+      414
+     ],
+     [
+      655,
+      657,
+      656,
+      659
+     ]
+    ]
+   },
+   "molprobity_score": 1.1862,
+   "nonbonded": {
+    "max": 4.8999,
+    "mean": 4.1161,
+    "min": 2.3982,
+    "n": 22400
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.026,
+    "mean": 0.0047,
+    "min": 0.0,
+    "n": 357,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A 182 ",
+      "max_dev": 0.0074,
+      "mean_dev": 0.0011,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  52 ",
+      "max_dev": 0.0367,
+      "mean_dev": 0.0056,
+      "resname": "TYR"
+     },
+     {
+      "id": " PHE A  81 ",
+      "max_dev": 0.0477,
+      "mean_dev": 0.006,
+      "resname": "PHE"
+     },
+     {
+      "id": " TRP A   8 ",
+      "max_dev": 0.0144,
+      "mean_dev": 0.003,
+      "resname": "TRP"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 2.008,
+    "favored": 97.992,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 4.0909,
+    "favored": 94.5455,
+    "outliers": 1.3636,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 20.6116,
+   "Cl": 2.92,
+   "Mp": 1.19,
+   "Rf": 19.18,
+   "Rw": 15.36,
+   "ang": null,
+   "avangle": 0.498793,
+   "avbond": 0.193831,
+   "avchir": 0.158757,
+   "avnb": 1.36273,
+   "avomega": 1.64993,
+   "avplane": 0.0420568,
+   "avrama": 0.485022,
+   "avrot": 1.52506,
+   "avtor": 0.918659,
+   "bond": null,
+   "chir": null,
+   "energy": 121.763,
+   "nb_e": 18.4435,
+   "om": 20.63,
+   "ra": 5.62062,
+   "ro": 99.0,
+   "score": 195.551,
+   "vdw": 0.0,
+   "wang": 20.1,
+   "wbond": 10.4,
+   "wchir": 2.58,
+   "wdihe": 17.0,
+   "wplane": 5.76
+  },
+  "holton_score": 195.551,
+  "holton_we": 121.763,
+  "model": "/home/dev/runs/hr/T431c8e/prep/model.pdb",
+  "n_anisou": 2020,
+  "n_atoms": 2220,
+  "n_free": 2075,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 20,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 180,
+  "n_water_iso": 180,
+  "n_work": 38197,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.0047,
+  "r_free": 0.19183679748255203,
+  "r_free_report": 0.19324231308337703,
+  "r_free_select": 0.19038787246902056,
+  "r_work": 0.15359888697107912,
+  "rama_favored_pct": 97.992,
+  "rama_outliers_pct": 0.0,
+  "rota_pct": 1.36,
+  "rota_pct_mmtbx": 1.3636,
+  "scored_utc": "2026-10-19T23:28:11Z",
+  "sha256": "57e02ceecfbe1fd2eda8ef0d26e016515c8231bfd115d3f64d1f7237845fa8db",
+  "water_occ_sum": 180.0
+ }
+}

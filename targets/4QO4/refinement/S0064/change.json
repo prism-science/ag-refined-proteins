@@ -1,0 +1,118 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/T40560e/pending/loop_A_69_72/prepare/with_loop_stubbed.pdb",
+ "cand_input_sha256": "2ffd971d73a68375f9bfdca019749152cd03f533f9ffa68b24bb8f5ec22edc78",
+ "ctrl_input": "/home/dev/runs/hr/T40560e/trajectory/S0052/model.pdb",
+ "ctrl_input_sha256": "1b9b7621fad7d516a77d9c280906ee8802779a1d121718757d8a0dc9a99abbac",
+ "ctrl_options": null,
+ "description": "residues 69 to 72 of chain A built by phenix.fit_loops into the work-only 2mFo-DFc map, their rotamers fitted by Coot and inserted (the deposited model has none); a side chain with a correlation under 0.3 cut to CB",
+ "kind": "improving",
+ "metaparams_sha256": "949cfb224b21ef2433a5491e8397df1b6299de806b5397a5d0addc46b8d35799",
+ "model_after": "/home/dev/runs/hr/T40560e/trajectory/S0064/model.pdb",
+ "model_after_sha256": "4464dba6f58d68b1a00514e011c8c84af2a9ac71f78cf13941e0c39f5c3805e1",
+ "model_before_sha256": "1b9b7621fad7d516a77d9c280906ee8802779a1d121718757d8a0dc9a99abbac",
+ "parent": "S0052",
+ "prepare": {
+  "cc": 0.49,
+  "map": "/home/dev/runs/hr/T40560e/pending/loop_A_69_72/prepare/maps/wo_map_coeffs.mtz",
+  "n_atoms_added": 28,
+  "n_residues_added": 4,
+  "residues": [
+   69,
+   70,
+   71,
+   72
+  ],
+  "rotamer_fits": [
+   {
+    "cc_after": 0.2689,
+    "cc_before": 0.0953,
+    "kept": true,
+    "resseq": 69,
+    "status": 1
+   },
+   {
+    "cc_after": 0.5071,
+    "cc_before": 0.484,
+    "kept": true,
+    "resseq": 70,
+    "status": 1
+   },
+   {
+    "cc_after": 0.3933,
+    "cc_before": 0.3072,
+    "kept": true,
+    "resseq": 71,
+    "status": 1
+   },
+   {
+    "cc_after": 0.1443,
+    "cc_before": 0.1219,
+    "kept": true,
+    "resseq": 72,
+    "status": 1
+   }
+  ],
+  "splice": {
+   "max_shift_a": 7.636,
+   "n_missing_in_edit": 0,
+   "n_moved": 36,
+   "n_unchanged": 0,
+   "residues": [
+    [
+     "A",
+     69
+    ],
+    [
+     "A",
+     70
+    ],
+    [
+     "A",
+     71
+    ],
+    [
+     "A",
+     72
+    ]
+   ]
+  },
+  "stubs": {
+   "cc_below": 0.3,
+   "n_atoms_removed": 8,
+   "residues": [
+    69,
+    72
+   ]
+  },
+  "summary": [
+   {
+    "cc": 0.49,
+    "chain": "A",
+    "end": 72,
+    "id": 1,
+    "ok": true,
+    "start": 69
+   }
+  ]
+ },
+ "refine_options": {
+  "standing": {
+   "since": "S0009",
+   "utc": "2026-10-19T09:29:32Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "build",
+ "step": "S0064",
+ "tool": "build_loop",
+ "utc": "2026-10-20T08:38:01Z",
+ "worker": "rotamer-finder"
+}

@@ -1,0 +1,4 @@
+[2026-10-20T07:29:26Z] chain_after start on /home/dev/runs/hr/T431c8e: semet_a = refine_step.py semet --wavelength 0.97915
+[2026-10-20T07:29:26Z] semet_a (1) from S0033
+S0038 2026-10-20T08:44:23Z refinement refine_step parent S0033 | methionine as selenomethionine (MET -> MSE, SD -> SE) with an anomalous group for Se (f' -8, f'' 4, both refined; data at 0.97915 A) against the sulfur model | R-free 0.16232 
+[2026-10-20T08:44:24Z] chain_after end on /home/dev/runs/hr/T431c8e (semet_a); best model S0033

@@ -1,0 +1,282 @@
+{
+ "bunker": {
+  "applied_after_frozen_check": false,
+  "applied_at": "2026-10-20T07:14:36Z",
+  "fraction": 0.02,
+  "n": 2000,
+  "pre_bunker_sha256": {
+   "data_flags_mtz": "f06d739b60f05bd0c0c7d0d53e870e6702948eacd2d2d7f84b07796fb17e5a5f",
+   "data_mtz": "c3df0754ae309fe4bc68bfe3b6e97c87e84828b71cc426ffa2c93eeee900abe7",
+   "flags_mtz": "0dd5617a5d31051173b639fa2656b66ba6f13aed6e4b3348696e0b082c6700d1",
+   "split_mtz": "a04c426b3b34df556c58dec68c7cff7bd0d7c07e5f87032735964e2e1303d7ec"
+  },
+  "seed": 1666875066,
+  "vault_json": "/home/dev/runs/hr/T5f59f1/vault/bunker.json",
+  "vault_json_sha256": "3d2db531947207c26ec93b9ce70ee67eed686ab7e5aa626a00f95c7663b2098b",
+  "vault_mtz": "/home/dev/runs/hr/T5f59f1/vault/bunker.mtz",
+  "vault_mtz_sha256": "11af7f3ee752de69d58675dbed4ca8b14bf30cde8f9fdfbdbd3a4f02eafb76a4"
+ },
+ "chain_aliases": {},
+ "columns_present": [
+  "F_meas_au",
+  "F_meas_sigma_au",
+  "intensity_meas",
+  "intensity_sigma",
+  "pdbx_r_free_flag",
+  "status"
+ ],
+ "convention": {
+  "free_symbol": "f",
+  "source": "_refln.status"
+ },
+ "d_min": 0.7498887251544579,
+ "data_choice": {
+  "coverage": {
+   "amplitudes": {
+    "n_measured_rows": 198464,
+    "n_null": 3,
+    "n_usable": 198461,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   },
+   "intensities": {
+    "n_measured_rows": 198464,
+    "n_null": 0,
+    "n_usable": 198464,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   }
+  },
+  "kind": "intensities",
+  "labels": [
+   "IMEAN",
+   "SIGIMEAN"
+  ],
+  "reason": "merged intensities present and populated; phenix.refine applies French-Wilson",
+  "sigma_tag": "intensity_sigma",
+  "value_tag": "intensity_meas"
+ },
+ "data_flags_mtz": "/home/dev/runs/hr/T5f59f1/prep/data_flags.mtz",
+ "data_flags_mtz_sha256": "d37d09a55371046a360b5ad21a605b31ed9561fc613af4f9b25480b553344e98",
+ "data_labels": "IMEAN,SIGIMEAN",
+ "data_mtz": "/home/dev/runs/hr/T5f59f1/prep/data.mtz",
+ "data_mtz_sha256": "253761cd49491b3810df5124d25d3c04e20dfdd7800b6bae7ac883e18495bdd7",
+ "deposited_tls": {
+  "n_groups": 0,
+  "n_rows": 0,
+  "rows": [],
+  "selections": []
+ },
+ "flag_label": "R-free-flags",
+ "flags_mtz": "/home/dev/runs/hr/T5f59f1/prep/flags.mtz",
+ "flags_mtz_sha256": "0cd16adf109f3527ab79f9db7c5acbae0e7c81f540820866ba3003a808a6f4de",
+ "flags_source": "inherited",
+ "fraction_free": 0.050737,
+ "intensities_or_amplitudes": "intensities",
+ "ligand_cifs": [],
+ "model_pdb": "/home/dev/runs/hr/T5f59f1/prep/model.pdb",
+ "model_pdb_sha256": "f84a34315cafb93e8316cf4fea3f512390c7303672f22670c9904c6a1876fe95",
+ "n_dropped_missing_value": 0,
+ "n_dropped_unmeasured": 63132,
+ "n_dropped_zero_amplitude": 0,
+ "n_free": 9924,
+ "n_free_in_file": 9968,
+ "n_reflections": 195643,
+ "n_reflections_in_file": 196464,
+ "n_report": 4964,
+ "n_report_in_file": 4984,
+ "n_rows_in_sf": 261596,
+ "n_select": 4960,
+ "n_select_in_file": 4984,
+ "n_sleep": 0,
+ "n_sleep_hidden_from_phenix": 0,
+ "n_work": 185719,
+ "n_work_in_file": 186496,
+ "residue_aliases": {},
+ "sf_block": "r8c5nsf",
+ "sf_sha256": "cc11957c6dd43d76fdb111eac90d206921c4809df310923d9b70fc8c4f79d0ff",
+ "sf_source": "vault/_source (sha256 cc11957c6dd43d76fdb111eac90d206921c4809df310923d9b70fc8c4f79d0ff)",
+ "space_group": "P 1 21 1",
+ "split": {
+  "method": "free reflections sorted by (-d, h, k, l), 20 equal-count shells, random.Random(1316570749).shuffle per shell (one generator), dealt round robin to select/report",
+  "n_parts": 2,
+  "n_shells": 20,
+  "seed": 1316570749,
+  "shells": [
+   {
+    "d_max": 25.0608,
+    "d_min": 2.082,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 1
+   },
+   {
+    "d_max": 2.0817,
+    "d_min": 1.6446,
+    "n": 499,
+    "n_report": 249,
+    "n_select": 250,
+    "shell": 2
+   },
+   {
+    "d_max": 1.6438,
+    "d_min": 1.4305,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 3
+   },
+   {
+    "d_max": 1.4305,
+    "d_min": 1.3045,
+    "n": 499,
+    "n_report": 250,
+    "n_select": 249,
+    "shell": 4
+   },
+   {
+    "d_max": 1.3044,
+    "d_min": 1.2116,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 5
+   },
+   {
+    "d_max": 1.2112,
+    "d_min": 1.1402,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 6
+   },
+   {
+    "d_max": 1.1401,
+    "d_min": 1.0829,
+    "n": 499,
+    "n_report": 249,
+    "n_select": 250,
+    "shell": 7
+   },
+   {
+    "d_max": 1.0829,
+    "d_min": 1.0352,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 8
+   },
+   {
+    "d_max": 1.0352,
+    "d_min": 0.997,
+    "n": 499,
+    "n_report": 250,
+    "n_select": 249,
+    "shell": 9
+   },
+   {
+    "d_max": 0.997,
+    "d_min": 0.9609,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 10
+   },
+   {
+    "d_max": 0.9607,
+    "d_min": 0.9272,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 11
+   },
+   {
+    "d_max": 0.9272,
+    "d_min": 0.9015,
+    "n": 499,
+    "n_report": 249,
+    "n_select": 250,
+    "shell": 12
+   },
+   {
+    "d_max": 0.9014,
+    "d_min": 0.8783,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 13
+   },
+   {
+    "d_max": 0.8783,
+    "d_min": 0.8564,
+    "n": 499,
+    "n_report": 250,
+    "n_select": 249,
+    "shell": 14
+   },
+   {
+    "d_max": 0.8564,
+    "d_min": 0.8352,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 15
+   },
+   {
+    "d_max": 0.8352,
+    "d_min": 0.8168,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 16
+   },
+   {
+    "d_max": 0.8167,
+    "d_min": 0.7996,
+    "n": 499,
+    "n_report": 249,
+    "n_select": 250,
+    "shell": 17
+   },
+   {
+    "d_max": 0.7995,
+    "d_min": 0.7821,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 18
+   },
+   {
+    "d_max": 0.7821,
+    "d_min": 0.7657,
+    "n": 499,
+    "n_report": 250,
+    "n_select": 249,
+    "shell": 19
+   },
+   {
+    "d_max": 0.7656,
+    "d_min": 0.75,
+    "n": 498,
+    "n_report": 249,
+    "n_select": 249,
+    "shell": 20
+   }
+  ]
+ },
+ "split_mtz": "/home/dev/runs/hr/T5f59f1/prep/split.mtz",
+ "split_mtz_sha256": "4ed3af076a3792df58753df38384bb91ec00e8afe1b38d00a13e14f08eeb0574",
+ "split_version": "stratified 2-way (this file's split v2-style)",
+ "target": "T5f59f1",
+ "test_flag_value": 0,
+ "unit_cell": [
+  31.6,
+  54.56,
+  47.98,
+  90.0,
+  99.246,
+  90.0
+ ],
+ "written_at": "2026-10-20T07:14:33Z"
+}

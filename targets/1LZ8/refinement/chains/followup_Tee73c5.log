@@ -1,0 +1,23 @@
+[2026-10-19T10:41:48Z] chain_followup start on /home/dev/runs/hr/Tee73c5 from S0001, d_min 1.7000760984892174
+[2026-10-19T10:41:49Z] noise floor from S0001
+[2026-10-19T10:41:49Z] noise floor: sigma R-free 0.00026, sigma gap 0.00057 over 3 seeds of the common recipe from S0001 (was 0.00345)
+[2026-10-19T10:41:49Z] settle_a (1) from S0001
+S0016 2026-10-19T10:42:35Z refinement refine_step parent S0001 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.27121 -> 0.26566 (-21.8 sigma) R-work 0.20480 -> 0.20266 gap -0.0034 clash 4.
+[2026-10-19T10:42:35Z] settle_a (2) from S0016
+S0017 2026-10-19T10:45:53Z refinement refine_step parent S0016 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.26566 -> 0.26521 (-1.1 sigma) R-work 0.20266 -> 0.20219 gap +0.0000 clash 4.1
+[2026-10-19T10:45:54Z] add_hydrogens_a from S0016
+S0018 2026-10-19T10:49:21Z refinement refine_step parent S0016 | riding hydrogens added (phenix.ready_set, else mmtbx.reduce2); the control has none | R-free 0.26566 -> 0.26284 (-6.0 sigma) R-work 0.20266 -> 0.18938 gap +0.0105 clash 5.1 ro
+[2026-10-19T10:49:22Z] iso_protein_a from S0016
+S0019 2026-10-19T10:49:22Z refinement refine_step parent S0016 | no anisotropic protein atom in the model in force | R-free 0.26566 -> 0.26566 R-work 0.20266 -> 0.20266 gap +0.0000 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs - anis
+[2026-10-19T10:49:22Z] tls_a from S0016
+S0020 2026-10-19T10:53:23Z refinement refine_step parent S0016 | TLS, 1 group (one for each protein chain) | R-free 0.26566 -> 0.25994 (-10.6 sigma) R-work 0.20266 -> 0.20387 gap -0.0069 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs 
+[2026-10-19T10:53:23Z] weights (1) wc 0.3 wu 0.25 from S0020
+S0021 2026-10-19T10:58:01Z refinement refine_step parent S0020 | restraint weights wc 0.3 wu 0.25 against 0.5 1 | R-free 0.25994 -> 0.25628 (-6.4 sigma) R-work 0.20387 -> 0.19708 gap +0.0031 clash 5.1 rota 1.9 % | atoms 1221 waters 211 altl
+[2026-10-19T10:58:01Z] ncs_a from S0020
+S0022 2026-10-19T10:58:02Z refinement refine_step parent S0020 | one protein chain: no NCS | R-free 0.25994 -> 0.25994 R-work 0.20387 -> 0.20387 gap +0.0000 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs - anisou 1010 | REFUSE
+[2026-10-19T10:58:02Z] settle_b (1) from S0020
+S0023 2026-10-19T10:58:48Z refinement refine_step parent S0020 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.25994 -> 0.25987 (-0.2 sigma) R-work 0.20387 -> 0.20507 gap -0.0013 clash 3.6
+[2026-10-19T10:58:48Z] no split: d_min 1.7000760984892174 is above 1.5 A
+[2026-10-19T10:58:48Z] converge_c (1) from S0020
+S0024 2026-10-19T11:05:56Z refinement refine_step parent S0020 | 20 macro-cycles against 10 | R-free 0.25994 -> 0.25965 (-0.7 sigma) R-work 0.20387 -> 0.20696 gap -0.0034 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs - anisou 1010 | 
+[2026-10-19T11:05:57Z] chain_followup end on /home/dev/runs/hr/Tee73c5; best model S0020

@@ -1,0 +1,1 @@
+S0053 2026-10-18T23:06:47Z solvent water_addition parent S0042 | waters in own-copy clashes moved to a copy they clear; nothing deleted | R-free 0.07261 -> 0.07255 (-0.3 sigma) R-work 0.04718 -> 0.04667 gap +0.0005 clash 7.7 rota 1.5 % | atoms 17372 waters 1958 altlocs ABCDEF anisou 9173 | ACCEPT

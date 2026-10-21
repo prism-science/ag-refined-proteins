@@ -1,0 +1,6 @@
+[2026-10-19T23:28:06Z] chain_peaks start on /home/dev/runs/hr/T40560e from S0017, credit radius 4.5 A
+[2026-10-19T23:28:06Z] coot_rotamers_near (1) from S0017
+S0045 2026-10-19T23:28:18Z rotamer-finder coot_fix parent S0017 | no rotamer fit raised the residue CC by 0.02 | R-free 0.30156 -> 0.30156 R-work 0.23418 -> 0.23418 gap +0.0000 clash 3.2 rota 2.4 % | atoms 844 waters 77 altlocs - anisou 0 |
+[2026-10-19T23:28:18Z] converge_p (1) from S0017
+S0046 2026-10-19T23:28:19Z refinement refine_step parent S0017 | 20 macro-cycles against 10 | R-free 0.30156 -> 0.30448 (+1.6 sigma) R-work 0.23418 -> 0.23572 gap +0.0014 clash 2.6 rota 2.4 % | atoms 844 waters 77 altlocs - anisou 0 | REFUS
+[2026-10-19T23:28:19Z] chain_peaks end on /home/dev/runs/hr/T40560e; best model S0017

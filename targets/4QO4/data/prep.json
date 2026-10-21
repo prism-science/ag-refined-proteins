@@ -1,0 +1,267 @@
+{
+ "bunker": {
+  "applied_after_frozen_check": false,
+  "applied_at": "2026-10-19T06:41:58Z",
+  "fraction": 0.02,
+  "n": 200,
+  "pre_bunker_sha256": {
+   "data_flags_mtz": "bb25dd42986bc1efbcad54f61785558bdc35b4cc36addac5c3c0a8c61305418f",
+   "data_mtz": "9f091ca693bf7dca034c4eecd7c93343305c8a3d3ff03ecbdfcabf1716a718ae",
+   "flags_mtz": "bf4480099bf4a4d76e009e92f02695a73ada3ef0b33b82cab909df0f292e1617",
+   "split_mtz": "56e5bcc0cb1695551be0a6c28a43b3d3813e38fe764c15d5247485cdedec7c2e"
+  },
+  "seed": 3216124240,
+  "vault_json": "/home/dev/runs/hr/T40560e/vault/bunker.json",
+  "vault_json_sha256": "5cf1adcb10be7dd098445597208bc5a0ca8de3d1a78d09a355facd19559c0ce3",
+  "vault_mtz": "/home/dev/runs/hr/T40560e/vault/bunker.mtz",
+  "vault_mtz_sha256": "8ac6d4e2b19fb05aee19c3daf7cd5595b612928359e88f3b5e26667d6635b226"
+ },
+ "columns_present": [
+  "F_meas_au",
+  "F_meas_sigma_au",
+  "intensity_meas",
+  "intensity_sigma",
+  "status"
+ ],
+ "convention": {
+  "free_symbol": "f",
+  "source": "_refln.status"
+ },
+ "d_min": 1.7003590181767632,
+ "data_choice": {
+  "coverage": {
+   "amplitudes": {
+    "n_measured_rows": 11011,
+    "n_null": 0,
+    "n_usable": 11011,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   },
+   "intensities": {
+    "n_measured_rows": 11011,
+    "n_null": 0,
+    "n_usable": 11011,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   }
+  },
+  "kind": "intensities",
+  "labels": [
+   "IMEAN",
+   "SIGIMEAN"
+  ],
+  "reason": "merged intensities present and populated; phenix.refine applies French-Wilson",
+  "sigma_tag": "intensity_sigma",
+  "value_tag": "intensity_meas"
+ },
+ "data_flags_mtz": "/home/dev/runs/hr/T40560e/prep/data_flags.mtz",
+ "data_flags_mtz_sha256": "a05a71b628a5c0ce6985c63e826cdd81226629498cbf692ccfa65aad9cab141e",
+ "data_labels": "IMEAN,SIGIMEAN",
+ "data_mtz": "/home/dev/runs/hr/T40560e/prep/data.mtz",
+ "data_mtz_sha256": "18b3a17270ee0095586b08e4e735b2049145532985363f166919497d59dd5696",
+ "flag_label": "R-free-flags",
+ "flags_mtz": "/home/dev/runs/hr/T40560e/prep/flags.mtz",
+ "flags_mtz_sha256": "5832a8935cd6545714513e4175ebd5267cca241af678212735eb6d05989c7893",
+ "flags_source": "inherited",
+ "fraction_free": 0.048839,
+ "intensities_or_amplitudes": "intensities",
+ "model_pdb": "/home/dev/runs/hr/T40560e/prep/model.pdb",
+ "model_pdb_sha256": "b817e53fc938c0ba8e2a60225b69439ca5551591bfb01ddc04dcc48c68503a3e",
+ "n_dropped_missing_value": 0,
+ "n_dropped_unmeasured": 0,
+ "n_dropped_zero_amplitude": 0,
+ "n_free": 528,
+ "n_reflections": 10811,
+ "n_report": 264,
+ "n_rows_in_sf": 11011,
+ "n_select": 264,
+ "n_sleep": 0,
+ "n_sleep_hidden_from_phenix": 0,
+ "n_work": 10283,
+ "sf_block": "r4qo4sf",
+ "sf_sha256": "f62ef89b85ffd72aeb08d942fe49ba0ef503d0dded4450c5f77df2fb1d8a6cb3",
+ "sf_source": "vault/_source (sha256 f62ef89b85ffd72aeb08d942fe49ba0ef503d0dded4450c5f77df2fb1d8a6cb3)",
+ "space_group": "P 61 2 2",
+ "split": {
+  "method": "free reflections sorted by (-d, h, k, l), 20 equal-count shells, random.Random(2273982479).shuffle per shell (one generator), dealt round robin to select/report",
+  "n_parts": 2,
+  "n_shells": 20,
+  "seed": 2273982479,
+  "shells": [
+   {
+    "d_max": 28.3635,
+    "d_min": 5.0155,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 1
+   },
+   {
+    "d_max": 4.964,
+    "d_min": 3.9447,
+    "n": 27,
+    "n_report": 13,
+    "n_select": 14,
+    "shell": 2
+   },
+   {
+    "d_max": 3.9225,
+    "d_min": 3.3958,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 3
+   },
+   {
+    "d_max": 3.3832,
+    "d_min": 2.9259,
+    "n": 27,
+    "n_report": 14,
+    "n_select": 13,
+    "shell": 4
+   },
+   {
+    "d_max": 2.9191,
+    "d_min": 2.7553,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 5
+   },
+   {
+    "d_max": 2.7546,
+    "d_min": 2.5891,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 6
+   },
+   {
+    "d_max": 2.5889,
+    "d_min": 2.4489,
+    "n": 27,
+    "n_report": 13,
+    "n_select": 14,
+    "shell": 7
+   },
+   {
+    "d_max": 2.4465,
+    "d_min": 2.3243,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 8
+   },
+   {
+    "d_max": 2.3241,
+    "d_min": 2.2464,
+    "n": 27,
+    "n_report": 14,
+    "n_select": 13,
+    "shell": 9
+   },
+   {
+    "d_max": 2.2443,
+    "d_min": 2.1473,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 10
+   },
+   {
+    "d_max": 2.1459,
+    "d_min": 2.0888,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 11
+   },
+   {
+    "d_max": 2.0887,
+    "d_min": 2.0371,
+    "n": 27,
+    "n_report": 13,
+    "n_select": 14,
+    "shell": 12
+   },
+   {
+    "d_max": 2.0365,
+    "d_min": 1.9736,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 13
+   },
+   {
+    "d_max": 1.9706,
+    "d_min": 1.9237,
+    "n": 27,
+    "n_report": 14,
+    "n_select": 13,
+    "shell": 14
+   },
+   {
+    "d_max": 1.9197,
+    "d_min": 1.8672,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 15
+   },
+   {
+    "d_max": 1.8632,
+    "d_min": 1.8335,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 16
+   },
+   {
+    "d_max": 1.8327,
+    "d_min": 1.7991,
+    "n": 27,
+    "n_report": 13,
+    "n_select": 14,
+    "shell": 17
+   },
+   {
+    "d_max": 1.7988,
+    "d_min": 1.7655,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 18
+   },
+   {
+    "d_max": 1.7655,
+    "d_min": 1.7316,
+    "n": 27,
+    "n_report": 14,
+    "n_select": 13,
+    "shell": 19
+   },
+   {
+    "d_max": 1.7297,
+    "d_min": 1.702,
+    "n": 26,
+    "n_report": 13,
+    "n_select": 13,
+    "shell": 20
+   }
+  ]
+ },
+ "split_mtz": "/home/dev/runs/hr/T40560e/prep/split.mtz",
+ "split_mtz_sha256": "00a74cbccf531092a0afa14a78b8b4e698c40dc7fd50a62cfb07a1d397d33fa2",
+ "split_version": "stratified 2-way (this file's split v2-style)",
+ "target": "T40560e",
+ "test_flag_value": 0,
+ "unit_cell": [
+  56.727,
+  56.727,
+  102.382,
+  90.0,
+  90.0,
+  120.0
+ ],
+ "written_at": "2026-10-19T06:41:58Z"
+}

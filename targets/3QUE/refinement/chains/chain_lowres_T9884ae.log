@@ -1,0 +1,29 @@
+[2026-10-20T00:13:28Z] chain_lowres waits for pid 1682824
+[2026-10-20T02:51:28Z] chain_lowres start on /home/dev/runs/hr/T9884ae from S0027, standing weights 0.5 1
+[2026-10-20T02:51:28Z] weights_tight_l (1) wc 2.0 wu 2.0 from S0027
+S0034 2026-10-20T02:55:59Z refinement refine_step parent S0027 | restraint weights wc 2 wu 2 against 0.5 1 | R-free 0.27687 -> 0.27208 (-4.3 sigma) R-work 0.18016 -> 0.19700 gap -0.0216 clash 5.5 rota 10.2 % | atoms 2896 waters 61 altlocs -
+[2026-10-20T02:55:59Z] weights_tight_l (2) wc 3.0 wu 3.0 from S0034
+S0035 2026-10-20T03:01:12Z refinement refine_step parent S0034 | restraint weights wc 3 wu 3 against 2 2 | R-free 0.27208 -> 0.27303 (+1.1 sigma) R-work 0.19700 -> 0.20309 gap -0.0051 clash 4.2 rota 8.9 % | atoms 2896 waters 61 altlocs - an
+[2026-10-20T03:01:12Z] weights_wu_l (1) wc 0.5 wu 2.0 from S0034
+S0036 2026-10-20T03:05:42Z refinement refine_step parent S0034 | restraint weights wc 0.5 wu 2 against 2 2 | R-free 0.27208 -> 0.28226 (+9.9 sigma) R-work 0.19700 -> 0.18639 gap +0.0208 clash 7.6 rota 14.8 % | atoms 2896 waters 61 altlocs -
+[2026-10-20T03:05:42Z] restraints_ss_rama from S0034
+S0037 2026-10-20T03:10:36Z refinement refine_step parent S0034 | secondary-structure restraints and Ramachandran restraints against none (the low-resolution restraints) | R-free 0.27208 -> 0.27004 (-1.3 sigma) R-work 0.19700 -> 0.19726 gap 
+[2026-10-20T03:10:36Z] group_adp_1 from S0034
+S0038 2026-10-20T03:15:53Z refinement refine_step parent S0034 | 1 group B factor for each residue (strategy group_adp) against individual ADPs | R-free 0.27208 -> 0.28391 (+4.4 sigma) R-work 0.19700 -> 0.20616 gap +0.0027 clash 5.3 rota 9.
+[2026-10-20T03:15:53Z] group_adp_2 from S0034
+S0039 2026-10-20T03:21:31Z refinement refine_step parent S0034 | 2 group B factors (main chain, side chain) for each residue (strategy group_adp) against individual ADPs | R-free 0.27208 -> 0.28350 (+4.7 sigma) R-work 0.19700 -> 0.20561 gap
+[2026-10-20T03:21:31Z] fix_rotamers_a from S0034
+S0040 2026-10-20T03:26:16Z refinement refine_step parent S0034 | rotamer restraints (side-chain torsions restrained to the nearest rotamer, refinement.main.rotamer_restraints) against none | R-free 0.27208 -> 0.28009 (+9.4 sigma) R-work 0.1
+[2026-10-20T03:26:17Z] coot_outliers_a (1) from S0034
+S0041 2026-10-20T03:31:06Z rotamer-finder coot_fix parent S0034 | Coot auto-fit rotamers on the rotamer outliers (phenix.rotalyze) | R-free 0.27208 -> 0.27055 (-1.9 sigma) R-work 0.19700 -> 0.19578 gap -0.0003 clash 4.9 rota 8.6 % | atoms 2
+[2026-10-20T03:31:06Z] coot_outliers_a (2) from S0041
+S0042 2026-10-20T03:36:41Z rotamer-finder coot_fix parent S0041 | Coot auto-fit rotamers on the rotamer outliers (phenix.rotalyze) | R-free 0.27055 -> 0.26958 (-1.2 sigma) R-work 0.19578 -> 0.19564 gap -0.0008 clash 4.0 rota 7.6 % | atoms 2
+[2026-10-20T03:36:42Z] tls_find_l from S0041
+S0043 2026-10-20T03:41:25Z refinement refine_step parent S0041 | TLS, 4 groups (phenix.find_tls_groups) against the standing 3 group(s) | R-free 0.27055 -> 0.27165 (+1.4 sigma) R-work 0.19578 -> 0.19566 gap +0.0012 clash 4.9 rota 8.2 % | at
+[2026-10-20T03:41:26Z] weights_tight_l2 (1) wc 1.0 wu 1.0 from S0041
+S0044 2026-10-20T03:45:55Z refinement refine_step parent S0041 | restraint weights wc 1 wu 1 against 2 2 | R-free 0.27055 -> 0.27250 (+2.0 sigma) R-work 0.19578 -> 0.18691 gap +0.0108 clash 6.3 rota 9.6 % | atoms 2896 waters 61 altlocs - an
+[2026-10-20T03:45:55Z] settle_l (1) from S0041
+S0045 2026-10-20T03:46:51Z refinement refine_step parent S0041 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.27055 -> 0.27054 (-0.0 sigma) R-work 0.19578 -> 0.19671 gap -0.0009 clash 4.8
+[2026-10-20T03:46:51Z] converge_l (1) from S0041
+S0046 2026-10-20T03:54:55Z refinement refine_step parent S0041 | 20 macro-cycles against 10 | R-free 0.27055 -> 0.26993 (-0.8 sigma) R-work 0.19578 -> 0.19525 gap -0.0001 clash 4.6 rota 8.2 % | atoms 2896 waters 61 altlocs - anisou 2764 | R
+[2026-10-20T03:54:55Z] chain_lowres end on /home/dev/runs/hr/T9884ae; best model S0041

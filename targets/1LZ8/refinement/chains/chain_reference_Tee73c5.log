@@ -1,0 +1,12 @@
+[2026-10-21T03:53:42Z] chain_after start on /home/dev/runs/hr/Tee73c5: reference_a = refine_step.py reference --file /home/dev/runs/hr/Tee73c5/prep/reference_model.pdb
+[2026-10-21T03:53:42Z] reference_a (1) from S0073
+S0080 2026-10-21T04:03:55Z refinement refine_step parent S0073 | reference-model torsion restraints to reference_model.pdb (phenix reference_model, sigma 1.0, limit 15; the sequences aligned by phenix) against none | R-free 0.24079 -> 0.243
+[2026-10-21T04:03:55Z] chain_after end on /home/dev/runs/hr/Tee73c5 (reference_a); best model S0073
+[2026-10-21T04:03:55Z] chain_after start on /home/dev/runs/hr/Tee73c5: settle_r = refine_step.py settle
+[2026-10-21T04:03:55Z] settle_r (1) from S0073
+S0081 2026-10-21T04:03:56Z refinement refine_step parent S0073 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.24079 -> 0.24344 (+6.4 sigma) R-work 0.16622 -> 0.16648 gap +0.0024 clash 1.5
+[2026-10-21T04:03:57Z] chain_after end on /home/dev/runs/hr/Tee73c5 (settle_r); best model S0073
+[2026-10-21T04:03:57Z] chain_after start on /home/dev/runs/hr/Tee73c5: converge_r = refine_step.py converge
+[2026-10-21T04:03:57Z] converge_r (1) from S0073
+S0082 2026-10-21T04:03:57Z refinement refine_step parent S0073 | 20 macro-cycles against 10 | R-free 0.24079 -> 0.24527 (+6.1 sigma) R-work 0.16622 -> 0.16786 gap +0.0028 clash 1.3 rota 0.5 % | atoms 4346 waters 419 altlocs AB anisou 2009 |
+[2026-10-21T04:03:58Z] chain_after end on /home/dev/runs/hr/Tee73c5 (converge_r); best model S0073

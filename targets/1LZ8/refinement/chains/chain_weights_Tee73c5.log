@@ -1,0 +1,4 @@
+[2026-10-19T11:27:41Z] chain_weights start on /home/dev/runs/hr/Tee73c5 from S0020, standing weights 0.5 1
+[2026-10-19T11:27:41Z] weights_tight (1) wc 1.0 wu 1.0 from S0020
+S0025 2026-10-19T11:32:26Z refinement refine_step parent S0020 | restraint weights wc 1 wu 1 against 0.5 1 | R-free 0.25994 -> 0.26001 (+0.1 sigma) R-work 0.20387 -> 0.20551 gap -0.0016 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs -
+[2026-10-19T11:32:26Z] chain_weights end on /home/dev/runs/hr/Tee73c5; best model S0020

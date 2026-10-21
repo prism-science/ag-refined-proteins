@@ -1,0 +1,160 @@
+Starting phenix.clashscore
+on Sun Oct 18 22:57:10 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/Tff1b3f/pending/ens_water_reletter_1/cand_s2.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/Tff1b3f/pending/ens_water_reletter_1/cand_s2.pdb"
+    }
+    default_model = "/home/dev/runs/hr/Tff1b3f/pending/ens_water_reletter_1/cand_s2.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 13.77 seconds
+wall clock time: 17.24 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 170 BGLU  OE1  z 186 BHOH  O   :0.822
+ A   3 FVAL HG23  A  31 FLYS  HB2 :0.815
+ A  14 CASP  OD1  z1343  HOH  O   :0.802
+ A   2 DGLU  HA   A  33 DTHR  OG1 :0.742
+ A  40 DASN  CG   z1040 DHOH O    :0.729
+ A 102 ELYS  HD3  z 479 EHOH  O   :0.712
+ A   3 FVAL  CG2  A  30 FVAL  O   :0.704
+ A  14 CASP  CG   z1343  HOH  O   :0.694
+ A  11 FLYS  NZ   A  14 FASP  HA  :0.674
+ A 135 BASP  OD2  z 213 BHOH  O   :0.669
+ A   2 DGLU  OE2  A  90 DLYS  HD2 :0.667
+ A  95 FVAL  O    z 510 FHOH  O   :0.665
+ A 168 DPHE  O    z1306 DHOH O    :0.660
+ A  11 FLYS  HZ2  A  14 FASP  HA  :0.659
+ A  25 DGLU  OE1  z1441 DHOH  O   :0.654
+ A  64 DGLU  OE1  z 318 DHOH  O   :0.650
+ A  80 DSER  OG   z 564 DHOH  O   :0.636
+ A  30 EVAL  CG2  A  32 EPRO  HD3 :0.633
+ A 100 FVAL HG11  z1351  HOH  O   :0.632
+ A   2 DGLU  O    A   4 DASN  N   :0.620
+ A 156 CPHE  CG   z1126 CHOH O    :0.618
+ A   2 DGLU  O    A  31 DLYS  O   :0.611
+ A  72 BASN  O    z 519 BHOH  O   :0.607
+ A 101 DASN  ND2  z 404 DHOH  O   :0.603
+ A 105 CASP  OD1  A 107 CGLN  HG3 :0.599
+ A  15 DASN  OD1  z 344 DHOH  O   :0.590
+ A  84 ASER  O    z 315 AHOH  O   :0.588
+ A 170 AGLU  HB2  z2010 AHOH  O   :0.586
+ A   3 FVAL HG22  A  30 FVAL  O   :0.577
+ A 118 CGLN  OE1  z 365 CHOH  O   :0.566
+ A 129 BALA  O    z 654 BHOH  O   :0.566
+ A  34 FVAL HG22  A  91 FHIS  HB2 :0.561
+ A  20 AASN  HA   A 155 AVAL  O   :0.558
+ A  45 DHIS  O    A  51 DGLY  HA2 :0.557
+ A  25 EGLU  OE2  A  29 ELYS  HG2 :0.556
+ A 167 FSER  HB2  z 323 FHOH  O   :0.554
+ A  72 EASN  O    z 301 EHOH  O   :0.554
+ A 137 FILE HD13  A 164 FLEU HD21 :0.553
+ A 148 CARG  CZ   z 753 CHOH  O   :0.553
+ A 166 ESER  O    A 170 EGLU  HG3 :0.552
+ A  85 BGLY  HA3  A  89 BALA  O   :0.551
+ A 110 FLYS  NZ   z1392  HOH  O   :0.548
+ A  26 EGLU  O    A  30 EVAL HG22 :0.547
+ A  74 CPRO  O    z 520 CHOH  O   :0.545
+ A   6 CPHE  CE1  A  30 CVAL HG11 :0.538
+ A  82 FVAL  O    A  83 FLEU HD23 :0.523
+ A   2 FGLU  N    A   2 FGLU  OE1 :0.521
+ A 126 BLEU HD23  A 136 BPRO  HB3 :0.520
+ A 163 ALYS  HD3  z1864 AHOH  O   :0.519
+ A 135 CASP  OD1  A 136 CPRO  HD2 :0.515
+ A 128 CSER  C    z 659 CHOH  O   :0.511
+ A  30 EVAL HG23  A  32 EPRO  HD3 :0.510
+ A 136 CPRO  HB2  A 164 CLEU HD22 :0.510
+ A  11 ELYS  HE2  A  17 ETYR  CE2 :0.509
+ A  97 BGLY  O    z 457 BHOH  O   :0.506
+ A 105 AASP  HB2  z1407 AHOH  O   :0.503
+ A   3 FVAL HG23  A  30 FVAL  O   :0.502
+ A 121 BVAL  HA   A 150 BASN  O   :0.502
+ A  26 EGLU  O    A  30 EVAL  CG2 :0.499
+ A  88 CLEU  CD2  z1981 CHOH  O   :0.497
+ A  33 BTHR HG21  z 237 BHOH  O   :0.489
+ A  32 CPRO  O    A  89 CALA  HA  :0.488
+ A 131 DILE  HA   z 404 DHOH  O   :0.488
+ A 120 FGLU  HG3  A 121 FVAL HG21 :0.487
+ A 121 DVAL  HA   A 150 DASN  O   :0.487
+ A  18 EILE HD11  A 155 EVAL HG21 :0.485
+ A 156 CPHE  CD2  z1126 CHOH O    :0.485
+ A  30 EVAL HG22  A  32 EPRO  HD3 :0.484
+ A   3 AVAL HG12  z1373 AHOH  O   :0.482
+ A  11 ELYS  NZ   A  14 EASP  HA  :0.482
+ A  25 FGLU  OE2  A  29 FLYS  HG2 :0.481
+ A  34 FVAL  HA   A  91 FHIS  O   :0.480
+ A  30 FVAL  CG2  A  32 FPRO  HD3 :0.476
+ A 141 FARG  HD3  z 204 FHOH  O   :0.475
+ A   2 EGLU  N    A   2 EGLU  OE1 :0.475
+ A  11 FLYS  NZ   A  17 FTYR  OH  :0.474
+ A  20 BASN  ND2  z 785 BHOH  O   :0.474
+ A   5 DSER  OG   A  30 DVAL  HA  :0.471
+ A  20 CASN  HA   A 155 CVAL  O   :0.470
+ A 154 EALA  O    z 313 EHOH  O   :0.470
+ A  80 BSER  HA   A  94 BHIS  O   :0.468
+ A  41 BVAL  HB   A  75 BLEU  O   :0.465
+ A   3 FVAL HG22  A   5 FSER  H   :0.461
+ A   2 BGLU  O    A   5 BSER  OG  :0.459
+ A 104 DGLU  OE1  z 458 DHOH  O   :0.459
+ A 113 BTYR  CZ   A 143 BCYS  HB2 :0.457
+ A  99 BASN  OD1  A 102 BLYS  HG2 :0.456
+ A  20 BASN  OD1  A 158 BLYS  HD3 :0.455
+ A   2 DGLU  HB3  z1439  HOH  O   :0.450
+ A   3 AVAL  CG1  z1373 AHOH  O   :0.450
+ A 168 FPHE  C    A 170 FGLU  N   :0.449
+ A  11 FLYS  HE2  A  17 FTYR  HE2 :0.447
+ A  33 DTHR HG22  A  34 DVAL HG23 :0.445
+ A  53 ELEU HD22  A  88 ELEU HD13 :0.444
+ A   5 FSER  O    A  30 FVAL HG12 :0.437
+ A   3 FVAL HG22  A   4 FASN  N   :0.437
+ A 144 EVAL HG21  A 168 EPHE  CE1 :0.435
+ A 120 FGLU  HG3  A 121 FVAL  CG2 :0.434
+ A   5 DSER  HB3  z1776 DHOH  O   :0.432
+ A   3 FVAL HG11  A  31 FLYS  HD2 :0.429
+ A  11 ELYS  HZ2  A  14 EASP  HA  :0.428
+ A 163 FLYS  HA   z 852 FHOH  O   :0.428
+ A 163 ALYS  HB3  z1864 AHOH  O   :0.425
+ A  46 CGLY  O    z 493 CHOH  O   :0.425
+ A  57 ATHR  HA   A  87 AASN  OD1 :0.423
+ A  14 DASP  O    z1100 DHOH O    :0.422
+ A   2 BGLU  HA   A   2 BGLU  OE1 :0.420
+ A  43 ELEU HD12  A  69 EILE HD11 :0.417
+ A 102 BLYS  NZ   z1437 BHOH  O   :0.417
+ A  20 EASN  HA   A 155 EVAL  O   :0.416
+ A  49 FVAL  O    A  53 FLEU  HG  :0.415
+ A  35 EVAL  O    A  92 ECYS  HA  :0.414
+ A  41 FVAL HG13  z 743 FHOH  O   :0.412
+ A  13 DTHR  HG1  A  15 DASN  H   :0.412
+ A 166 BSER  HB3  z 321 BHOH  O   :0.411
+ A  76 CLYS  NZ   z1048 CHOH O    :0.410
+ A  11 ELYS  NZ   A  14 EASP  O   :0.410
+ A   9 ATYR  HB3  A  17 ATYR  HB3 :0.408
+ A  30 FVAL HG22  A  32 FPRO  HD3 :0.404
+clashscore = 7.72

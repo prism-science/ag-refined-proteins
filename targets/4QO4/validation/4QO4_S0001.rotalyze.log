@@ -1,0 +1,116 @@
+Starting phenix.rotalyze
+on Wed Oct 21 17:26:31 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/4QO4.d/4QO4/model/4QO4_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  No PHIL parameters found
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/4QO4.d/4QO4/model/4QO4_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/4QO4.d/4QO4/model/4QO4_S0001.pdb"
+  }
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 6.67 seconds
+wall clock time: 6.80 seconds
+residue:occupancy:score%:chi1:chi2:chi3:chi4:evaluation:rotamer
+ A  18  GLN:1.00:0.0:19.4:186.5:168.8::OUTLIER:OUTLIER
+ A  19  ILE:1.00:17.8:299.4:186.7:::Favored:mt
+ A  20  PRO:1.00:38.0:34.2:322.1:26.6::Favored:Cg_endo
+ A  22  SER:1.00:95.5:63.8::::Favored:p
+ A  23  GLU:1.00:39.7:166.5:65.3:11.7::Favored:tp30
+ A  24  GLN:1.00:0.0:242.7:76.4:333.3::OUTLIER:OUTLIER
+ A  25  GLU:1.00:0.7:295.6:138.3:58.4::Allowed:mt-10
+ A  26  THR:1.00:88.6:301.3::::Favored:m
+ A  27  LEU:1.00:78.0:300.3:173.6:::Favored:mt
+ A  28  VAL:1.00:32.3:297.4::::Favored:m
+ A  29  ARG:1.00:28.7:192.0:179.2:303.0:188.4:Favored:ttm170
+ A  30  PRO:1.00:90.6:329.6:37.5:330.4::Favored:Cg_exo
+ A  31  LYS:1.00:89.0:295.0:174.3:190.6:178.6:Favored:mttt
+ A  32  PRO:1.00:86.8:330.6:40.1:325.7::Favored:Cg_exo
+ A  33  LEU:1.00:9.0:198.8:70.6:::Favored:tp
+ A  34  LEU:1.00:44.3:172.2:60.0:::Favored:tp
+ A  35  LEU:1.00:5.7:194.5:45.1:::Favored:tp
+ A  36  LYS:1.00:9.1:171.3:176.6:212.3:305.7:Favored:tttm
+ A  37  LEU:1.00:3.8:183.7:161.7:::Favored:tt
+ A  38  LEU:1.00:72.0:295.2:167.3:::Favored:mt
+ A  39  LYS:1.00:2.3:292.8:209.6:227.0:201.3:Favored:mttt
+ A  40  SER:1.00:75.8:71.1::::Favored:p
+ A  41  VAL:1.00:21.5:294.4::::Favored:m
+ A  44  GLN:1.00:2.2:285.9:255.0:296.9::Favored:mm-40
+ A  45  LYS:1.00:12.4:311.1:193.2:266.3:187.6:Favored:mtmt
+ A  46  ASP:1.00:84.3:289.5:334.6:::Favored:m-30
+ A  47  THR:1.00:63.0:295.7::::Favored:m
+ A  48  TYR:1.00:90.3:295.6:85.1:::Favored:m-80
+ A  49  THR:1.00:62.8:63.5::::Favored:p
+ A  50  MET:1.00:37.2:278.3:293.9:306.2::Favored:mmm
+ A  51  LYS:1.00:50.4:170.6:184.1:181.5:162.2:Favored:tttt
+ A  52  GLU:1.00:63.3:291.6:173.0:311.8::Favored:mt-10
+ A  53  VAL:1.00:81.6:173.2::::Favored:t
+ A  54  LEU:1.00:22.8:288.8:158.2:::Favored:mt
+ A  55  PHE:1.00:50.5:167.8:82.9:::Favored:t80
+ A  56  TYR:1.00:17.7:288.6:315.6:::Favored:m-80
+ A  57  LEU:1.00:35.9:284.3:162.7:::Favored:mt
+ A  59  GLN:1.00:1.9:287.3:282.9:162.9::Allowed:mm110
+ A  60  TYR:1.00:56.6:177.6:272.2:::Favored:t80
+ A  61  ILE:1.00:63.2:288.2:163.1:::Favored:mt
+ A  62  MET:1.00:72.3:293.5:315.3:293.4::Favored:mmm
+ A  63  THR:1.00:59.4:57.3::::Favored:p
+ A  64  LYS:1.00:27.1:303.5:191.1:60.2:174.6:Favored:mtpt
+ A  65  ARG:1.00:21.8:302.1:209.4:168.9:195.3:Favored:mtt180
+ A  66  LEU:1.00:44.0:306.6:182.9:::Favored:mt
+ A  67  TYR:1.00:53.9:180.6:62.6:::Favored:t80
+ A  68  ASP:1.00:19.3:194.2:317.2:::Favored:t0
+ A  73  HIS:1.00:10.2:288.3:329.8:::Favored:m-70
+ A  74  ILE:1.00:48.0:301.9:161.1:::Favored:mt
+ A  75  VAL:1.00:62.7:179.6::::Favored:t
+ A  76  TYR:1.00:96.2:298.8:93.1:::Favored:m-80
+ A  77  CYS:1.00:2.6:46.3::::Favored:p
+ A  78  SER:1.00:97.7:65.2::::Favored:p
+ A  79  ASN:1.00:33.7:278.3:305.7:::Favored:m-40
+ A  80  ASP:1.00:9.0:195.1:271.6:::Favored:t70
+ A  81  LEU:1.00:5.4:199.3:77.6:::Favored:tp
+ A  82  LEU:1.00:57.3:182.1:60.2:::Favored:tp
+ A  84  ASP:1.00:79.3:296.5:338.8:::Favored:m-30
+ A  85  LEU:1.00:6.2:276.2:155.5:::Favored:mt
+ A  86  PHE:1.00:4.8:274.9:11.3:::Favored:m-10
+ A  88  VAL:1.00:30.5:300.4::::Favored:m
+ A  89  PRO:1.00:47.1:33.3:323.6:24.9::Favored:Cg_endo
+ A  90  SER:1.00:88.3:67.0::::Favored:p
+ A  91  PHE:1.00:58.6:65.9:92.3:::Favored:p90
+ A  92  SER:1.00:18.5:169.6::::Favored:t
+ A  93  VAL:1.00:2.2:310.8::::Favored:m
+ A  94  LYS:1.00:68.8:294.5:294.1:178.4:173.4:Favored:mmtt
+ A  95  GLU:1.00:10.8:300.7:205.0:305.5::Favored:mt-10
+ A  96  HIS:1.00:37.2:285.8:190.5:::Favored:m170
+ A  97  ARG:1.00:66.2:307.8:174.3:194.2:184.6:Favored:mtt180
+ A  98  LYS:1.00:87.9:287.4:171.8:186.6:179.8:Favored:mttt
+ A  99  ILE:1.00:63.0:288.3:162.5:::Favored:mt
+ A 100  TYR:1.00:22.3:277.0:291.3:::Favored:m-80
+ A 101  THR:1.00:89.1:298.3::::Favored:m
+ A 102  MET:1.00:62.7:287.2:179.9:295.7::Favored:mtm
+ A 103  ILE:1.00:89.1:292.7:173.1:::Favored:mt
+ A 104  TYR:1.00:6.4:271.7:55.1:::Favored:m-80
+ A 105  ARG:1.00:5.2:286.0:155.5:30.6:101.4:Favored:mtp85
+ A 106  ASN:1.00:10.8:307.8:270.5:::Favored:m-40
+ A 107  LEU:1.00:2.5:56.0:78.5:::Favored:pp
+ A 108  VAL:1.00:98.7:175.6::::Favored:t
+ A 109  VAL:1.00:1.1:156.7::::Allowed:t
+ A 110  VAL:1.00:44.8:182.5::::Favored:t
+SUMMARY: 2.41% outliers (Goal: < 0.3%)

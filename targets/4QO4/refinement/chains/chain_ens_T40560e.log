@@ -1,0 +1,13 @@
+[2026-10-19T22:32:47Z] chain_ens start on /home/dev/runs/hr/T40560e from S0017, standing weights 0.3 0.25
+[2026-10-19T22:32:47Z] mask_e from S0017
+S0040 2026-10-19T22:37:21Z refinement refine_step parent S0017 | bulk-solvent mask radii optimised (refinement.main.optimize_mask) against the fixed defaults | R-free 0.30156 -> 0.30266 (+0.3 sigma) R-work 0.23418 -> 0.23474 gap +0.0005 cla
+[2026-10-19T22:37:22Z] weights_tight_e (1) wc 1.0 wu 1.0 from S0017
+S0041 2026-10-19T22:37:22Z refinement refine_step parent S0017 | restraint weights wc 1 wu 1 against 0.3 0.25 | R-free 0.30156 -> 0.31875 (+9.4 sigma) R-work 0.23418 -> 0.24458 gap +0.0068 clash 3.9 rota 1.2 % | atoms 844 waters 77 altlocs 
+[2026-10-19T22:37:22Z] weights_loose_e (1): the standing weights are 0.3 0.25 already
+[2026-10-19T22:37:22Z] occupancies_e (1) from S0017
+S0042 2026-10-19T22:40:00Z refinement refine_step parent S0017 | altloc occupancies refined | R-free 0.30156 -> 0.30380 (+1.0 sigma) R-work 0.23418 -> 0.23505 gap +0.0014 clash 2.6 rota 2.4 % | atoms 844 waters 77 altlocs - anisou 0 | REFUS
+[2026-10-19T22:40:01Z] settle_e (1) from S0017
+S0043 2026-10-19T22:40:01Z refinement refine_step parent S0017 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.30156 -> 0.30075 (-0.4 sigma) R-work 0.23418 -> 0.23468 gap -0.0013 clash 2.6
+[2026-10-19T22:40:01Z] converge_e2 (1) from S0017
+S0044 2026-10-19T22:40:02Z refinement refine_step parent S0017 | 20 macro-cycles against 10 | R-free 0.30156 -> 0.30448 (+1.6 sigma) R-work 0.23418 -> 0.23572 gap +0.0014 clash 2.6 rota 2.4 % | atoms 844 waters 77 altlocs - anisou 0 | REFUS
+[2026-10-19T22:40:02Z] chain_ens end on /home/dev/runs/hr/T40560e; best model S0017

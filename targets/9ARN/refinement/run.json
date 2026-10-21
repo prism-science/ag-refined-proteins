@@ -1,0 +1,161 @@
+{
+ "cc_half": 1.0,
+ "completeness_pct": 92.13,
+ "created": "2026-10-19T09:21:01Z",
+ "d_min": 1.370032433044185,
+ "data_mtz_sha256": "8640ea3357641af627fb7ee5cb2ffd9bbf1282efb842c5e89afd6c42b3a4e4e8",
+ "deposited_r_free": 0.2912,
+ "deposited_r_work": 0.2555,
+ "flags_mtz_sha256": "dd55f1943df4dd2012968726891d814a933c657522e04fd3c95c4ea77b7167fa",
+ "gap_max": 0.06744185030792796,
+ "gap_s0001": 0.062441850307927954,
+ "handle": "Tba97f6",
+ "i_over_sigma": 8.71,
+ "n_free": 772,
+ "n_vault": 360,
+ "n_work": 14538,
+ "noise_floor": {
+  "mean_r_free": 0.30341257068203314,
+  "measured_from": "S0000",
+  "median_seed": 2,
+  "n_seeds": 3,
+  "pending": "noise_floor_S0000",
+  "recipe": "common",
+  "seeds": [
+   {
+    "gap": 0.06986761102493727,
+    "r_free": 0.3039698665730455,
+    "r_work": 0.2341022555481082,
+    "seed": 1,
+    "sha256": "c8e449342ee32ee1dcac41f71db924b4ffb128c36cc1cb62cdaa3b649d60bd76"
+   },
+   {
+    "gap": 0.07137168760383888,
+    "r_free": 0.3039284020953889,
+    "r_work": 0.23255671449155002,
+    "seed": 2,
+    "sha256": "2f50e365a4cf37510c4bbbbfc2b9e01e536412378df19573cbc5e9c93d24de6b"
+   },
+   {
+    "gap": 0.06853035149897013,
+    "r_free": 0.30233944337766494,
+    "r_work": 0.2338090918786948,
+    "seed": 3,
+    "sha256": "5ff30a67350c71c1efc2f0542258c2e2c5874f0fbaae3e244a1a45cad1e84245"
+   }
+  ],
+  "sigma_gap": 0.001421483981374217,
+  "sigma_r_free": 0.0009295867276710657,
+  "sigma_r_work": 0.0008208827783147571,
+  "utc": "2026-10-19T10:41:49Z"
+ },
+ "noise_floor_history": [
+  {
+   "mean_r_free": 0.29743472315441205,
+   "median_seed": 2,
+   "n_seeds": 3,
+   "seeds": [
+    {
+     "gap": 0.06437139092568253,
+     "r_free": 0.3005720140757251,
+     "r_work": 0.23620062315004256,
+     "seed": 1,
+     "sha256": "ce6daa9004d8e0987914c4dc54ef07a4b37e6ecb71817c6b53e2bde623b549ca"
+    },
+    {
+     "gap": 0.062441850307927954,
+     "r_free": 0.2970353268492419,
+     "r_work": 0.23459347654131393,
+     "seed": 2,
+     "sha256": "2beab2e99bb1b2cba0d58c35da41dc69e46b1184957641c53991a7ee1b22336e"
+    },
+    {
+     "gap": 0.0629100492831022,
+     "r_free": 0.2946968285382692,
+     "r_work": 0.23178677925516697,
+     "seed": 3,
+     "sha256": "7ac8ac28671c7c51df69de1e30e50985966a3df80fc312e3deb0d7ec8311b1d0"
+    }
+   ],
+   "sigma_gap": 0.0010064671440454726,
+   "sigma_r_free": 0.0029578859564426212,
+   "sigma_r_work": 0.0022339235963637007
+  }
+ ],
+ "phenix_version": "Version: 2.1; Release tag: 6048",
+ "r_meas": null,
+ "r_merge": 0.04578,
+ "r_pim": null,
+ "redundancy": 8.2,
+ "stages": {
+  "fetch": {
+   "model": "/home/dev/runs/hr/Tba97f6/vault/_source/9ARN.cif",
+   "model_sha256": "aff7a4a4aab96fcc95c4bc7f679f9376fcb4455b449ec8d30f6b7cf6c891d77b",
+   "sf": "/home/dev/runs/hr/Tba97f6/vault/_source/9ARN-sf.cif",
+   "sf_sha256": "07d93a472fc9bb7e03b56b48833bf8892153865ecc31e0e6c88ffb3e2846c4db",
+   "utc": "2026-10-19T09:21:02Z"
+  },
+  "prep": {
+   "d_min": 1.370032433044185,
+   "n_free": 772,
+   "n_vault": 360,
+   "utc": "2026-10-19T09:21:03Z"
+  },
+  "s0000": {
+   "utc": "2026-10-19T09:21:30Z"
+  },
+  "s0001": {
+   "utc": "2026-10-19T09:29:29Z"
+  }
+ },
+ "standing": {
+  "rama": true,
+  "since": "S0062",
+  "ss": true,
+  "tls": [
+   "chain 'A' and (resid    1  through   31 )",
+   "chain 'A' and (resid   32  through   80 )"
+  ],
+  "utc": "2026-10-20T02:10:55Z",
+  "wc": 2.0,
+  "wu": 2.0
+ },
+ "standing_history": [
+  {
+   "since": "S0049",
+   "utc": "2026-10-20T00:39:13Z",
+   "wc": 2.0,
+   "wu": 2.0
+  },
+  {
+   "rama": true,
+   "since": "S0056",
+   "ss": true,
+   "utc": "2026-10-20T01:16:44Z",
+   "wc": 2.0,
+   "wu": 2.0
+  },
+  {
+   "rama": true,
+   "since": "S0062",
+   "ss": true,
+   "tls": [
+    "chain 'A' and (resid    1  through   31 )",
+    "chain 'A' and (resid   32  through   80 )"
+   ],
+   "utc": "2026-10-20T02:10:55Z",
+   "wc": 2.0,
+   "wu": 2.0
+  }
+ ],
+ "steps": {
+  "S0000": {
+   "label": "deposited",
+   "utc": "2026-10-19T09:21:03Z"
+  },
+  "S0001": {
+   "label": "first_refinement",
+   "utc": "2026-10-19T09:29:02Z"
+  }
+ }
+}

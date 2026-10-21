@@ -1,0 +1,51 @@
+Starting phenix.python
+on Wed Oct 21 17:26:29 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/7R2H.d/7R2H/model/7R2H_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/7R2H.d/7R2H/model/7R2H_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/7R2H.d/7R2H/model/7R2H_S0001.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 4.68 seconds
+wall clock time: 5.19 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A  91  LYS  NZ   S1029  HOH O    :0.869
+ A  23  GLU  CD   S 638  HOH O    :0.684
+ A 151  ARG  HG2  S 658  HOH O    :0.604
+ A 151  ARG  CG   S 658  HOH O    :0.568
+ A 151  ARG  HB2  S 658  HOH O    :0.476
+ A  41  THR  HG1  A  43  GLU  H   :0.462
+ A 151  ARG  CB   S 658  HOH O    :0.441
+ A 117 BILE  CD1  S 889  HOH O    :0.422
+ A  82  ARG  HA   A 108  ASN  O   :0.418
+ A 131 AHIS  ND1  S 645  HOH O    :0.408
+clashscore = 4.35

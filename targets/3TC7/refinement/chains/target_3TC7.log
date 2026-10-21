@@ -1,0 +1,68 @@
+[2026-10-19T23:28:07Z] metaparams written: /home/dev/runs/hr/T431c8e/metaparams.yaml
+[2026-10-19T23:28:07Z] fetch: model sha256 cf8d319f1918, sf sha256 2f6c3f1a9771
+[2026-10-19T23:28:09Z] bunker: 780 of 38977 work reflections (2.0 %) moved to /home/dev/runs/hr/T431c8e/vault/bunker.mtz (sha256 53c53b0b2e22); every working file rewritten without them; the vault is read by --final-score only
+[2026-10-19T23:28:10Z] T431c8e: 5 file(s) sealed to sealed.tar.enc, 0 removed as sealed before; plaintexts removed
+[2026-10-19T23:28:10Z] prep: 40272 reflections, 2075 free, 780 in the vault, d_min 1.500; vault/ is read-only
+S0000 2026-10-19T23:28:10Z preprocessing fetch parent - | deposited model, anonymised, scored on the run's working data | R-free 0.19184 R-work 0.15360 gap 0.0382 clash 2.9 rota 1.4 % | atoms 2220 waters 180 altlocs AB anisou 2020 | INIT
+[2026-10-19T23:28:47Z] first refinement: 3 seeds, 10 macro-cycles, ordered solvent on
+S0001 2026-10-19T23:37:51Z preprocessing refine parent S0000 | phenix.refine 10 cycles, sites + ADP + water occupancies, ordered solvent, nqh_flips off, 3 seeds; the median seed | R-free 0.19184 -> 0.18555 (-9.2 sigma) R-work 0.15360 -> 0.14124 gap +0.0061 clash 1.7 rota 1.4 % | atoms 2346 waters 306 altlocs AB anisou 2020 | INIT
+[2026-10-19T23:38:29Z] first refinement: sigma R-free 0.00069 over 3 seeds; gap cap 0.0493
+[2026-10-19T23:38:29Z] noise floor: the common recipe from S0001, 3 seeds
+[2026-10-19T23:43:36Z] noise floor: sigma R-free 0.00027, sigma gap 0.00022 over 3 seeds of the common recipe from S0001 (was 0.00069)
+[2026-10-19T23:43:36Z] noise floor: sigma R-free 0.00027 over 3 seeds of the common recipe; the first refinement's sigma is in noise_floor_history
+[2026-10-19T23:43:37Z] done. Run: /home/dev/runs/hr/T431c8e. Next: the Coordinator with protocol.md on this run.
+RUN=/home/dev/runs/hr/T431c8e
+[2026-10-19T23:43:37Z] chain_target start on /home/dev/runs/hr/T431c8e from S0001, d_min 1.4999525363353188
+[2026-10-19T23:43:37Z] noise floor: measured with the common recipe already
+[2026-10-19T23:43:37Z] tls_deposited_a from S0001
+S0002 2026-10-19T23:43:38Z refinement refine_step parent S0001 | the deposited model has no TLS group | R-free 0.18555 -> 0.18555 R-work 0.14124 -> 0.14124 gap +0.0000 clash 1.7 rota 1.4 % | atoms 2346 waters 306 altlocs AB anisou 2020 | RE
+[2026-10-19T23:43:38Z] settle_a (1) from S0001
+S0003 2026-10-19T23:45:12Z refinement refine_step parent S0001 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.18555 -> 0.18421 (-5.1 sigma) R-work 0.14124 -> 0.13873 gap +0.0012 clash 1.9
+[2026-10-19T23:45:12Z] settle_a (2) from S0003
+S0004 2026-10-19T23:51:25Z refinement refine_step parent S0003 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.18421 -> 0.18493 (+2.7 sigma) R-work 0.13873 -> 0.13871 gap +0.0007 clash 1.7
+[2026-10-19T23:51:25Z] add_hydrogens_a from S0003
+S0005 2026-10-19T23:58:30Z refinement refine_step parent S0003 | riding hydrogens added (phenix.ready_set, else mmtbx.reduce2); the control has none | R-free 0.18421 -> 0.17427 (-37.3 sigma) R-work 0.13873 -> 0.12816 gap +0.0006 clash 2.7 r
+[2026-10-19T23:58:31Z] iso_protein_a from S0005
+S0006 2026-10-20T00:06:15Z refinement refine_step parent S0005 | protein ADPs isotropic (anisotropic before) | R-free 0.17427 -> 0.17595 (+6.3 sigma) R-work 0.12816 -> 0.14288 gap -0.0130 clash 2.4 rota 1.4 % | atoms 4417 waters 306 altlocs
+[2026-10-20T00:06:15Z] tls_a from S0005
+S0007 2026-10-20T00:15:31Z refinement refine_step parent S0005 | TLS, 1 group (one for each protein chain) | R-free 0.17427 -> 0.17647 (+8.3 sigma) R-work 0.12816 -> 0.14507 gap -0.0147 clash 3.2 rota 1.4 % | atoms 4417 waters 306 altlocs A
+[2026-10-20T00:15:32Z] weights_tight (1) wc 1.0 wu 1.0 from S0005
+S0008 2026-10-20T00:22:38Z refinement refine_step parent S0005 | restraint weights wc 1 wu 1 against 0.5 1 | R-free 0.17427 -> 0.17436 (+0.4 sigma) R-work 0.12816 -> 0.13001 gap -0.0018 clash 2.2 rota 1.4 % | atoms 4417 waters 306 altlocs A
+[2026-10-20T00:22:38Z] weights_loose (1) wc 0.3 wu 0.25 from S0005
+S0009 2026-10-20T00:29:41Z refinement refine_step parent S0005 | restraint weights wc 0.3 wu 0.25 against 0.5 1 | R-free 0.17427 -> 0.17820 (+14.8 sigma) R-work 0.12816 -> 0.12027 gap +0.0118 clash 2.9 rota 1.4 % | atoms 4417 waters 306 alt
+[2026-10-20T00:29:41Z] ncs_a from S0005
+S0010 2026-10-20T00:29:42Z refinement refine_step parent S0005 | one protein chain: no NCS | R-free 0.17427 -> 0.17427 R-work 0.12816 -> 0.12816 gap +0.0000 clash 2.7 rota 1.4 % | atoms 4417 waters 306 altlocs AB anisou 2020 | REFUSE
+[2026-10-20T00:29:42Z] settle_b (1) from S0005
+S0011 2026-10-20T00:30:48Z refinement refine_step parent S0005 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.17427 -> 0.17458 (+1.2 sigma) R-work 0.12816 -> 0.12839 gap +0.0001 clash 2.9
+[2026-10-20T00:30:48Z] aniso_water_a (1) from S0005
+S0012 2026-10-20T00:37:34Z refinement refine_step parent S0005 | water ADPs anisotropic | R-free 0.17427 -> 0.17085 (-12.8 sigma) R-work 0.12816 -> 0.12148 gap +0.0033 clash 2.4 rota 1.4 % | atoms 4417 waters 306 altlocs AB anisou 2326 | RE
+[2026-10-20T00:37:34Z] split 2 copies from S0005
+S0013 2026-10-20T01:01:16Z rotamer-finder split_conformations parent S0005 | 2 copies from shake, riding H, 20 macro-cycles | R-free 0.17427 -> 0.17343 R-work 0.12816 -> 0.11126 gap +0.0161 clash 4.4 rota 0.7 % | atoms 8788 waters 612 altlo
+[2026-10-20T01:01:16Z] after the split the best model is S0013
+[2026-10-20T01:01:16Z] pick_4.0_a (1) from S0013
+S0014 2026-10-20T01:15:43Z solvent water_addition parent S0013 | waters at 4.0 sigma, mode single | R-free 0.17343 -> 0.16964 (-14.2 sigma) R-work 0.11126 -> 0.10505 gap +0.0024 clash 4.2 rota 0.7 % | atoms 8830 waters 654 altlocs AB anisou
+[2026-10-20T01:15:44Z] pick_3.0_a (1) from S0013
+S0017 2026-10-20T01:28:52Z solvent water_addition parent S0013 | waters at 3.0 sigma, mode single | R-free 0.17343 -> 0.17007 (-12.6 sigma) R-work 0.11126 -> 0.10165 gap +0.0063 clash 4.0 rota 0.7 % | atoms 8905 waters 729 altlocs AB anisou
+[2026-10-20T01:28:52Z] pick_3.0_a (2) from S0016
+S0019 2026-10-20T01:43:29Z solvent water_addition parent S0016 | waters at 3.0 sigma, mode single | R-free 0.17059 -> 0.16877 (-6.8 sigma) R-work 0.10839 -> 0.10044 gap +0.0061 clash 4.9 rota 1.1 % | atoms 8914 waters 738 altlocs AB anisou 
+[2026-10-20T01:43:30Z] pick_3.0_a (3) from S0018
+S0021 2026-10-20T01:58:32Z solvent water_addition parent S0018 | waters at 3.0 sigma, mode single | R-free 0.16966 -> 0.16748 (-8.2 sigma) R-work 0.10807 -> 0.09969 gap +0.0062 clash 4.5 rota 0.7 % | atoms 8913 waters 737 altlocs AB anisou 
+[2026-10-20T01:58:32Z] pick_2.5_a (1) from S0020
+S0023 2026-10-20T02:13:20Z solvent water_addition parent S0020 | waters at 2.5 sigma, mode single | R-free 0.16878 -> 0.16270 (-22.8 sigma) R-work 0.10784 -> 0.09641 gap +0.0054 clash 4.3 rota 0.7 % | atoms 8986 waters 810 altlocs AB anisou
+[2026-10-20T02:13:20Z] aniso_water_b (1) from S0020
+S0024 2026-10-20T02:26:19Z refinement refine_step parent S0020 | water ADPs anisotropic | R-free 0.16878 -> 0.16588 (-10.9 sigma) R-work 0.10784 -> 0.09920 gap +0.0057 clash 4.4 rota 0.7 % | atoms 8788 waters 612 altlocs AB anisou 4640 | RE
+[2026-10-20T02:26:20Z] converge_a (1) from S0020
+S0025 2026-10-20T02:51:45Z refinement refine_step parent S0020 | 20 macro-cycles against 10 | R-free 0.16878 -> 0.17023 (+5.5 sigma) R-work 0.10784 -> 0.10713 gap +0.0022 clash 4.5 rota 1.1 % | atoms 8788 waters 612 altlocs AB anisou 4028 |
+[2026-10-20T02:51:46Z] occupancies_a from S0020
+S0026 2026-10-20T03:06:04Z refinement refine_step parent S0020 | altloc occupancies refined | R-free 0.16878 -> 0.16958 (+3.0 sigma) R-work 0.10784 -> 0.10724 gap +0.0014 clash 4.7 rota 0.7 % | atoms 8788 waters 612 altlocs AB anisou 4028 |
+[2026-10-20T03:06:04Z] pick_2.5_b (1) from S0020
+S0027 2026-10-20T03:06:09Z solvent water_addition parent S0020 | waters at 2.5 sigma, mode single | R-free 0.16878 -> 0.16270 (-22.8 sigma) R-work 0.10784 -> 0.09641 gap +0.0054 clash 4.3 rota 0.7 % | atoms 8986 waters 810 altlocs AB anisou
+[2026-10-20T03:06:09Z] coot_rotamers_a (1) from S0020
+S0028 2026-10-20T03:06:51Z rotamer-finder coot_fix parent S0020 | no rotamer fit raised the residue CC by 0.02 | R-free 0.16878 -> 0.16878 R-work 0.10784 -> 0.10784 gap +0.0000 clash 4.5 rota 0.5 % | atoms 8788 waters 612 altlocs AB anisou 
+[2026-10-20T03:06:52Z] reletter_a from S0020
+S0029 2026-10-20T03:06:56Z solvent water_addition parent S0020 | no clashing water clears another copy | R-free 0.16878 -> 0.16878 R-work 0.10784 -> 0.10784 gap +0.0000 clash 4.5 rota 0.5 % | atoms 8788 waters 612 altlocs AB anisou 4028 | R
+[2026-10-20T03:06:56Z] copy_vote_a (1) from S0020
+S0030 2026-10-20T03:20:21Z rotamer-finder copy_vote parent S0020 | copies under difference peaks: the weakest copy takes the peak copy's rotamer | R-free 0.16878 -> 0.17021 (+5.4 sigma) R-work 0.10784 -> 0.10712 gap +0.0022 clash 4.4 rota 1
+[2026-10-20T03:20:22Z] converge_b (1) from S0020
+S0031 2026-10-20T03:20:22Z refinement refine_step parent S0020 | 20 macro-cycles against 10 | R-free 0.16878 -> 0.17023 (+5.5 sigma) R-work 0.10784 -> 0.10713 gap +0.0022 clash 4.5 rota 1.1 % | atoms 8788 waters 612 altlocs AB anisou 4028 |
+[2026-10-20T03:20:23Z] chain_target end on /home/dev/runs/hr/T431c8e; best model S0020

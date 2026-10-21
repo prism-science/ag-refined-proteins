@@ -1,0 +1,4 @@
+[2026-10-20T01:57:32Z] chain_after start on /home/dev/runs/hr/T431c8e: settle_2d = refine_step.py settle
+[2026-10-20T01:57:32Z] settle_2d (1) from S0020
+S0022 2026-10-20T02:12:05Z refinement refine_step parent S0020 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.16878 -> 0.16960 (+3.1 sigma) R-work 0.10784 -> 0.10682 gap +0.0018 clash 4.7
+[2026-10-20T02:12:05Z] chain_after end on /home/dev/runs/hr/T431c8e (settle_2d); best model S0020

@@ -1,0 +1,250 @@
+{
+ "after": {
+  "altlocs": "",
+  "angle_rmsd": 1.6182,
+  "bond_rmsd": 0.0114,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.1128,
+  "clashscore": 16.02,
+  "clashscore_mmtbx": 16.0154,
+  "copies": 1,
+  "dihedral_rmsd": 16.8254,
+  "gap": 0.05022133601413331,
+  "geometry": {
+   "angle": {
+    "max": 11.1623,
+    "mean": 1.6182,
+    "min": 0.0012,
+    "n": 1064,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 6.9511,
+    "mean": 0.9892,
+    "min": 0.0007,
+    "n": 1064,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.109,
+    "mean": 0.0114,
+    "min": 0.0,
+    "n": 785,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 5.451,
+    "mean": 0.6559,
+    "min": 0.0,
+    "n": 785,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.0,
+    "disfavored": 1.2346,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "ASN   79 ",
+       "CaBLAM Disfavored",
+       0.0168,
+       0.2789,
+       "",
+       0.0152,
+       0.0,
+       0.0002,
+       "ERROR",
+       [
+        23.907,
+        -22.178,
+        14.976
+       ]
+      ]
+     ]
+    },
+    "outliers": 0.0
+   },
+   "chirality": {
+    "max": 0.4618,
+    "mean": 0.1128,
+    "min": 0.0014,
+    "n": 122,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 16.0154
+   },
+   "dihedral": {
+    "max": 61.5056,
+    "mean": 16.8254,
+    "min": 0.0015,
+    "n": 326,
+    "outliers": []
+   },
+   "molprobity_score": 2.3755,
+   "nonbonded": {
+    "max": 4.8998,
+    "mean": 4.1275,
+    "min": 2.0174,
+    "n": 8380
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0608,
+    "mean": 0.0104,
+    "min": 0.0001,
+    "n": 126,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A  97 ",
+      "max_dev": 0.0337,
+      "mean_dev": 0.0072,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A 104 ",
+      "max_dev": 0.0444,
+      "mean_dev": 0.0104,
+      "resname": "TYR"
+     },
+     {
+      "id": " PHE A  55 ",
+      "max_dev": 0.021,
+      "mean_dev": 0.0076,
+      "resname": "PHE"
+     },
+     {
+      "id": " HIS A  73 ",
+      "max_dev": 0.0023,
+      "mean_dev": 0.0012,
+      "resname": "HIS"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 2.3529,
+    "favored": 97.6471,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 7.2289,
+    "favored": 86.747,
+    "outliers": 6.0241,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 8.41,
+   "Cl": 16.02,
+   "Mp": 2.38,
+   "Rf": 31.33,
+   "Rw": 26.31,
+   "ang": null,
+   "avangle": 0.978529,
+   "avbond": 0.430235,
+   "avchir": 0.318126,
+   "avnb": 2.86162,
+   "avomega": 0.11925,
+   "avplane": 0.214063,
+   "avrama": 0.463028,
+   "avrot": 5.52994,
+   "avtor": 0.80375,
+   "bond": null,
+   "chir": null,
+   "energy": 151.137,
+   "nb_e": 113.997,
+   "om": 5.71,
+   "ra": 3.77515,
+   "ro": 99.0,
+   "score": 366.199,
+   "vdw": 0.0,
+   "wang": 48.3,
+   "wbond": 29.7,
+   "wchir": 5.33,
+   "wdihe": 10.0,
+   "wplane": 18.0625
+  },
+  "holton_score": 366.199,
+  "holton_we": 151.137,
+  "model": "/home/dev/runs/hr/T40560e/prep/model.pdb",
+  "n_anisou": 0,
+  "n_atoms": 845,
+  "n_free": 528,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 767,
+  "n_reflections": 10811,
+  "n_residues_nonwater": 90,
+  "n_water_atoms": 78,
+  "n_water_iso": 78,
+  "n_work": 10283,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.0104,
+  "r_free": 0.3133276812332859,
+  "r_free_report": 0.2908974491286057,
+  "r_free_select": 0.33682424380449477,
+  "r_work": 0.2631063452191526,
+  "rama_favored_pct": 97.6471,
+  "rama_outliers_pct": 0.0,
+  "rota_pct": 6.02,
+  "rota_pct_mmtbx": 6.0241,
+  "scored_utc": "2026-10-19T06:41:59Z",
+  "sha256": "b817e53fc938c0ba8e2a60225b69439ca5551591bfb01ddc04dcc48c68503a3e",
+  "water_occ_sum": 77.5
+ }
+}

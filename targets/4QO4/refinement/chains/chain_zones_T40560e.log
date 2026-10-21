@@ -1,0 +1,20 @@
+[2026-10-20T09:44:55Z] chain_after start on /home/dev/runs/hr/T40560e: zone_42_46 = coot_fix.py zone --chain A --start 42 --end 46
+[2026-10-20T09:44:55Z] zone_42_46 (1) from S0064
+S0070 2026-10-20T09:48:21Z rotamer-finder coot_fix parent S0064 | Coot zone refinement A 42-46 | R-free 0.27468 -> 0.27450 (-0.3 sigma) R-work 0.22292 -> 0.22372 gap -0.0010 clash 6.7 rota 3.5 % | atoms 892 waters 77 altlocs - anisou 0 | RE
+[2026-10-20T09:48:21Z] chain_after end on /home/dev/runs/hr/T40560e (zone_42_46); best model S0064
+[2026-10-20T09:48:21Z] chain_after start on /home/dev/runs/hr/T40560e: zone_77_80 = coot_fix.py zone --chain A --start 77 --end 80
+[2026-10-20T09:48:21Z] zone_77_80 (1) from S0064
+S0071 2026-10-20T09:51:44Z rotamer-finder coot_fix parent S0064 | Coot zone refinement A 77-80 | R-free 0.27468 -> 0.27394 (-1.3 sigma) R-work 0.22292 -> 0.22234 gap -0.0002 clash 7.3 rota 3.5 % | atoms 892 waters 77 altlocs - anisou 0 | RE
+[2026-10-20T09:51:44Z] chain_after end on /home/dev/runs/hr/T40560e (zone_77_80); best model S0064
+[2026-10-20T09:51:44Z] chain_after start on /home/dev/runs/hr/T40560e: zone_108_110 = coot_fix.py zone --chain A --start 108 --end 110
+[2026-10-20T09:51:44Z] zone_108_110 (1) from S0064
+S0072 2026-10-20T09:55:08Z rotamer-finder coot_fix parent S0064 | Coot zone refinement A 108-110 | R-free 0.27468 -> 0.27462 (-0.1 sigma) R-work 0.22292 -> 0.22412 gap -0.0013 clash 7.3 rota 3.5 % | atoms 892 waters 77 altlocs - anisou 0 | 
+[2026-10-20T09:55:08Z] chain_after end on /home/dev/runs/hr/T40560e (zone_108_110); best model S0064
+[2026-10-20T09:55:08Z] chain_after start on /home/dev/runs/hr/T40560e: zone_54_56 = coot_fix.py zone --chain A --start 54 --end 56
+[2026-10-20T09:55:08Z] zone_54_56 (1) from S0064
+S0073 2026-10-20T09:58:31Z rotamer-finder coot_fix parent S0064 | Coot zone refinement A 54-56 | R-free 0.27468 -> 0.27417 (-0.9 sigma) R-work 0.22292 -> 0.22415 gap -0.0017 clash 7.3 rota 3.5 % | atoms 892 waters 77 altlocs - anisou 0 | RE
+[2026-10-20T09:58:32Z] chain_after end on /home/dev/runs/hr/T40560e (zone_54_56); best model S0064
+[2026-10-20T09:58:32Z] chain_after start on /home/dev/runs/hr/T40560e: settle_z = refine_step.py settle
+[2026-10-20T09:58:32Z] settle_z (1) from S0064
+S0074 2026-10-20T09:58:32Z refinement refine_step parent S0064 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.27468 -> 0.27409 (-1.1 sigma) R-work 0.22292 -> 0.22166 gap +0.0007 clash 8.0
+[2026-10-20T09:58:32Z] chain_after end on /home/dev/runs/hr/T40560e (settle_z); best model S0064
