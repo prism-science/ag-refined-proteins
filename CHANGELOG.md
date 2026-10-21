@@ -13,6 +13,10 @@ card states the fork's looser gap bounds and the main run's best under the stand
 record ships beside it. No vault has been read in these runs. `scripts/write_cards.py` wrote the seven cards, the
 README rows and the `provenance.json` entries from the files; `scripts/build_index.py` rebuilt the index and manifest.
 
+Later the same day, at the operator's direction, `manzuoni/refinement` was merged into `main`: `main` now carries the
+hierarchical line (eight targets). The earlier campaign's targets stay on the `release-*` branches and in the history
+before this merge.
+
 ## 2026-10-19 — branch manzuoni/refinement: the hierarchical line starts here
 
 One target, 7KR0, from the hierarchical refinement harness (`prism-science/autoresearch`, branch
