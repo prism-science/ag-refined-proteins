@@ -4,12 +4,12 @@ Crystallographic models refined by an autonomous harness (the *autoresearch* pro
 what is needed to use, check and extend them: the model, the map coefficients, the working data and the inherited
 free-reflection flags it was scored on, the deposited model it started from, and the complete step record of the run.
 
-This branch is the hierarchical refinement line (October 2026). It holds eight targets, from 0.75 to 2.7 Å, each
-refined from its deposited file by the harness: four six-copy ensembles (8C5N, 7KR0, 7R2H, 3TC7), one two-copy
-ensemble (1LZ8) and three single models (9ARN, 4QO4, 3QUE). The earlier campaign's targets and records (the
-single-model line, August to October 2026) are on `main` and the `release-*` branches. Nothing here is a ceiling: the
-runs continue (7R2H and 8C5N were still refining at this snapshot) and this branch is a dated snapshot of the model in
-force on each target.
+This is the hierarchical refinement line (October 2026), on `main` since 2026-10-21. It holds eight targets, from 0.75
+to 2.7 Å, each refined from its deposited file by the harness: four six-copy ensembles (8C5N, 7KR0, 7R2H, 3TC7), one
+two-copy ensemble (1LZ8) and three single models (9ARN, 4QO4, 3QUE). The earlier campaign's targets and records (the
+single-model line, August to October 2026) are on the `release-*` branches and in this repository's history before
+2026-10-21. Nothing here is a ceiling: the runs continue (7R2H and 8C5N were still refining at this snapshot) and this
+is a dated snapshot of the model in force on each target.
 
 ## Results
 
