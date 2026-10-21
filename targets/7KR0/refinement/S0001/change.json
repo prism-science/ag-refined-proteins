@@ -1,0 +1,15 @@
+{
+ "argv": "/home/dev/runs/hr/Tff1b3f/pending/first_refinement/refine.json",
+ "description": "phenix.refine 10 cycles, sites + ADP + water occupancies, ordered solvent, nqh_flips off, 3 seeds; the median seed",
+ "label": "first_refinement",
+ "metaparams_sha256": "68c67e58599831e96a285821a66d243765980d7cd5d11e8a41c67c195c7d8898",
+ "model_after": "/home/dev/runs/hr/Tff1b3f/trajectory/S0001/model.pdb",
+ "model_after_sha256": "307b7f7a053c370fbcadaa5bd00898b6d47a6d3f5f2c1dd76aa68dd43d91245c",
+ "model_before_sha256": "4a96af10034a47793705747f5c2a0882c94e8d9087c7d64d1656ae2a894caea8",
+ "parent": "S0000",
+ "stage": "preprocessing",
+ "step": "S0001",
+ "tool": "refine",
+ "utc": "2026-10-14T23:28:08Z",
+ "worker": "preprocessing"
+}

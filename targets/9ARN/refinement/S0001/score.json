@@ -1,0 +1,373 @@
+{
+ "after": {
+  "altlocs": "AB",
+  "angle_rmsd": 1.03,
+  "bond_rmsd": 0.01,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.063,
+  "clashscore": 3.19,
+  "clashscore_mmtbx": 3.1873,
+  "copies": 1,
+  "dihedral_rmsd": 16.656,
+  "gap": 0.062441850307927954,
+  "geometry": {
+   "angle": {
+    "max": 5.6298,
+    "mean": 1.0288,
+    "min": 0.0004,
+    "n": 832,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 2.8149,
+    "mean": 0.5653,
+    "min": 0.0004,
+    "n": 832,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0718,
+    "mean": 0.0103,
+    "min": 0.0,
+    "n": 619,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 2.3164,
+    "mean": 0.4685,
+    "min": 0.001,
+    "n": 619,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.0,
+    "disfavored": 0.0,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": []
+    },
+    "outliers": 0.0
+   },
+   "chirality": {
+    "max": 0.205,
+    "mean": 0.063,
+    "min": 0.0008,
+    "n": 95,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 3.1873
+   },
+   "dihedral": {
+    "max": 75.2104,
+    "mean": 16.656,
+    "min": 0.0155,
+    "n": 251,
+    "outliers": []
+   },
+   "molprobity_score": 1.4759,
+   "nonbonded": {
+    "max": 4.8998,
+    "mean": 4.1069,
+    "min": 2.4909,
+    "n": 6760
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0474,
+    "mean": 0.0086,
+    "min": 0.0,
+    "n": 109,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A  67 ",
+      "max_dev": 0.0137,
+      "mean_dev": 0.0015,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  74 ",
+      "max_dev": 0.0103,
+      "mean_dev": 0.0058,
+      "resname": "TYR"
+     },
+     {
+      "id": " TRP A  59 ",
+      "max_dev": 0.0154,
+      "mean_dev": 0.0065,
+      "resname": "TRP"
+     },
+     {
+      "id": " HIS A  52 ",
+      "max_dev": 0.0058,
+      "mean_dev": 0.0038,
+      "resname": "HIS"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 0.0,
+    "favored": 100.0,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 1.5152,
+    "favored": 95.4545,
+    "outliers": 3.0303,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 8.8804,
+   "Cl": 3.19,
+   "Mp": 1.48,
+   "Rf": 29.7,
+   "Rw": 23.46,
+   "ang": null,
+   "avangle": 0.319561,
+   "avbond": 0.219578,
+   "avchir": 0.0991572,
+   "avnb": 0.615079,
+   "avomega": 1.23225,
+   "avplane": 0.0504943,
+   "avrama": 0.0615328,
+   "avrot": 0.776182,
+   "avtor": 0.910682,
+   "bond": null,
+   "chir": null,
+   "energy": 59.55,
+   "nb_e": 3.08856,
+   "om": 16.1,
+   "ra": 1.36079,
+   "ro": 5.41378,
+   "score": 251.373,
+   "vdw": 0.0,
+   "wang": 7.92,
+   "wbond": 5.37,
+   "wchir": 1.05,
+   "wdihe": 10.4,
+   "wplane": 1.24499
+  },
+  "holton_score": 251.373,
+  "holton_we": 59.55,
+  "model": "/home/dev/runs/hr/Tba97f6/pending/first_refinement/cand_s2.pdb",
+  "n_anisou": 611,
+  "n_atoms": 673,
+  "n_free": 772,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 5,
+  "n_reflections": 15310,
+  "n_residues_nonwater": 73,
+  "n_water_atoms": 57,
+  "n_water_iso": 57,
+  "n_work": 14538,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.0086,
+  "r_free": 0.2970353268492419,
+  "r_free_report": 0.31568929683240715,
+  "r_free_select": 0.2777301187963352,
+  "r_work": 0.23459347654131393,
+  "rama_favored_pct": 100.0,
+  "rama_outliers_pct": 0.0,
+  "rota_pct": 3.03,
+  "rota_pct_mmtbx": 3.0303,
+  "scored_utc": "2026-10-19T09:29:03Z",
+  "sha256": "2beab2e99bb1b2cba0d58c35da41dc69e46b1184957641c53991a7ee1b22336e",
+  "water_occ_sum": 51.34
+ },
+ "median": {
+  "altlocs": "AB",
+  "angle_rmsd": 1.03,
+  "bond_rmsd": 0.01,
+  "copies": 1,
+  "gap": 0.062441850307927954,
+  "holton_we": null,
+  "model": "/home/dev/runs/hr/Tba97f6/pending/first_refinement/cand_s2.pdb",
+  "n_anisou": 611,
+  "n_atoms": 673,
+  "n_free": 772,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 5,
+  "n_reflections": 15310,
+  "n_residues_nonwater": 73,
+  "n_water_atoms": 57,
+  "n_water_iso": 57,
+  "n_work": 14538,
+  "r_free": 0.2970353268492419,
+  "r_free_report": 0.31568929683240715,
+  "r_free_select": 0.2777301187963352,
+  "r_work": 0.23459347654131393,
+  "scored_utc": "2026-10-19T09:29:03Z",
+  "seed": 2,
+  "sha256": "2beab2e99bb1b2cba0d58c35da41dc69e46b1184957641c53991a7ee1b22336e",
+  "water_occ_sum": 51.34
+ },
+ "noise_floor": {
+  "mean_r_free": 0.29743472315441205,
+  "median_seed": 2,
+  "n_seeds": 3,
+  "seeds": [
+   {
+    "gap": 0.06437139092568253,
+    "r_free": 0.3005720140757251,
+    "r_work": 0.23620062315004256,
+    "seed": 1,
+    "sha256": "ce6daa9004d8e0987914c4dc54ef07a4b37e6ecb71817c6b53e2bde623b549ca"
+   },
+   {
+    "gap": 0.062441850307927954,
+    "r_free": 0.2970353268492419,
+    "r_work": 0.23459347654131393,
+    "seed": 2,
+    "sha256": "2beab2e99bb1b2cba0d58c35da41dc69e46b1184957641c53991a7ee1b22336e"
+   },
+   {
+    "gap": 0.0629100492831022,
+    "r_free": 0.2946968285382692,
+    "r_work": 0.23178677925516697,
+    "seed": 3,
+    "sha256": "7ac8ac28671c7c51df69de1e30e50985966a3df80fc312e3deb0d7ec8311b1d0"
+   }
+  ],
+  "sigma_gap": 0.0010064671440454726,
+  "sigma_r_free": 0.0029578859564426212,
+  "sigma_r_work": 0.0022339235963637007
+ },
+ "rows": [
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 1.02,
+   "bond_rmsd": 0.01,
+   "copies": 1,
+   "gap": 0.06437139092568253,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/first_refinement/cand_s1.pdb",
+   "n_anisou": 611,
+   "n_atoms": 672,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 56,
+   "n_water_iso": 56,
+   "n_work": 14538,
+   "r_free": 0.3005720140757251,
+   "r_free_report": 0.3075041746457277,
+   "r_free_select": 0.29339784138321945,
+   "r_work": 0.23620062315004256,
+   "scored_utc": "2026-10-19T09:29:03Z",
+   "seed": 1,
+   "sha256": "ce6daa9004d8e0987914c4dc54ef07a4b37e6ecb71817c6b53e2bde623b549ca",
+   "water_occ_sum": 50.64
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 1.03,
+   "bond_rmsd": 0.01,
+   "copies": 1,
+   "gap": 0.062441850307927954,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/first_refinement/cand_s2.pdb",
+   "n_anisou": 611,
+   "n_atoms": 673,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 57,
+   "n_water_iso": 57,
+   "n_work": 14538,
+   "r_free": 0.2970353268492419,
+   "r_free_report": 0.31568929683240715,
+   "r_free_select": 0.2777301187963352,
+   "r_work": 0.23459347654131393,
+   "scored_utc": "2026-10-19T09:29:03Z",
+   "seed": 2,
+   "sha256": "2beab2e99bb1b2cba0d58c35da41dc69e46b1184957641c53991a7ee1b22336e",
+   "water_occ_sum": 51.34
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 1.051,
+   "bond_rmsd": 0.01,
+   "copies": 1,
+   "gap": 0.0629100492831022,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tba97f6/pending/first_refinement/cand_s3.pdb",
+   "n_anisou": 611,
+   "n_atoms": 674,
+   "n_free": 772,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 5,
+   "n_reflections": 15310,
+   "n_residues_nonwater": 73,
+   "n_water_atoms": 58,
+   "n_water_iso": 58,
+   "n_work": 14538,
+   "r_free": 0.2946968285382692,
+   "r_free_report": 0.3059176095144264,
+   "r_free_select": 0.28308431326906364,
+   "r_work": 0.23178677925516697,
+   "scored_utc": "2026-10-19T09:29:04Z",
+   "seed": 3,
+   "sha256": "7ac8ac28671c7c51df69de1e30e50985966a3df80fc312e3deb0d7ec8311b1d0",
+   "water_occ_sum": 53.26
+  }
+ ]
+}

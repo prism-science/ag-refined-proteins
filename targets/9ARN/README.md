@@ -1,7 +1,6 @@
 # 9ARN — Structure and interactions of HIV-1 gp41 CHR-NHR reverse hairpin constructs reveal molecular determinants of antiviral activity
 
-**Status: improved.** The released model is a single model with an R-free of 0.2769 on the deposited free set.
-The deposited model scores 0.2944 on the same reflections.
+**Status: improved.** The released model is a single model with an R-free of 0.2769 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2970 and the deposited model as scored (S0000) 0.2944 on the same reflections.
 
 | | |
 |---|---|
@@ -18,26 +17,29 @@ The deposited model scores 0.2944 on the same reflections.
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00093 from three seeds), gap widened by at most 0.002, gap ≤ 0.0674 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
 
-## The two models on the same flags
+## The three models on the same flags
 
-Both models are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
-rejection. The deposited model is scored as anonymised at preprocessing (S0000).
+All three are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
+rejection. S0000 is the deposited model as anonymised at preprocessing; S0001 is that model after the common recipe
+(phenix.refine, 10 macro-cycles, three seeds, the median), the baseline that every gain is measured against; the
+release is the model in force. Geometry from phenix.clashscore (hydrogens kept), rotalyze and ramalyze; the
+MolProbity score from those three.
 
-| | Deposited, our flags (S0000) | This release (S0062) |
-|---|---|---|
-| R-free | 0.2944 | **0.2769** |
-| R-work | 0.2542 | 0.2389 |
-| Gap R-free − R-work | 0.0402 | 0.0380 |
-| R-free on the select / report halves | 0.2947 / 0.2941 | 0.2680 / 0.2856 |
-| Clashscore (phenix.clashscore, hydrogens kept) | 1.6 | 1.6 |
-| Rotamer outliers | 0.00 % | 0.00 % |
-| Ramachandran outliers / favoured | 0.0 % / 100.0 % | 0.0 % / 100.0 % |
-| Bond RMSD / angle RMSD | 0.006 Å / 0.73° | 0.004 Å / 0.52° |
-| MolProbity score | 0.91 | 0.91 |
-| Copies | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) |
-| Atoms (of which H) | 654 (0) | 654 (0) |
-| Waters, occupancy sum | 38, 36 | 38, 36 |
-| ANISOU records | 611 | 649 |
+| | Deposited as scored (S0000) | Re-refined (S0001) | This release (S0062) |
+|---|---|---|---|
+| R-free | 0.2944 | 0.2970 | **0.2769** |
+| R-work | 0.2542 | 0.2346 | 0.2389 |
+| Gap R-free − R-work | 0.0402 | 0.0624 | 0.0380 |
+| R-free on the select / report halves | 0.2947 / 0.2941 | 0.2777 / 0.3157 | 0.2680 / 0.2856 |
+| Clashscore (phenix.clashscore, hydrogens kept) | 1.6 | 3.2 | 1.6 |
+| Rotamer outliers | 0.00 % | 3.03 % | 0.00 % |
+| Ramachandran outliers / favoured | 0.0 % / 100.0 % | 0.0 % / 100.0 % | 0.0 % / 100.0 % |
+| Bond RMSD / angle RMSD | 0.006 Å / 0.73° | 0.010 Å / 1.03° | 0.004 Å / 0.52° |
+| MolProbity score | 0.91 | 1.48 | 0.91 |
+| Copies | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) |
+| Atoms (of which H) | 654 (0) | 673 (0) | 654 (0) |
+| Waters, occupancy sum | 38, 36 | 57, 51 | 38, 36 |
+| ANISOU records | 611 | 611 | 649 |
 
 The entry's own header reports R-free 0.2912 and R-work 0.2555 on its own flags.
 
@@ -71,6 +73,7 @@ the gate wrote.
 |---|---|
 | `model/9ARN_S0062.pdb` | the released model, PDB, occupancies at four decimals, as the gate wrote it |
 | `model/9ARN_S0062.cif` | the same model as mmCIF (gemmi conversion) |
+| `model/9ARN_S0001.pdb` | the re-refined deposited model (S0001, the common recipe, the median of three seeds): the baseline of every comparison |
 | `maps/9ARN_S0062_map_coeffs.mtz` | phenix.maps coefficients from the work reflections only: `2FOFCWT/PH2FOFCWT` and `FOFCWT/PHFOFCWT` |
 | `data/9ARN_data.mtz`, `9ARN_flags.mtz`, `9ARN_split.mtz` | the working data, the inherited flags, the select/report split; the vault is absent from all three |
 | `data/prep.json`, `split.json` | how the files were built, with checksums and counts |
@@ -78,9 +81,10 @@ the gate wrote.
 | `refinement/score_history.txt`, `score_history.jsonl`, `scorecard.csv` | every step: the facts line, the full metrics, the scorecard row |
 | `refinement/steps.md` | the step table |
 | `refinement/S0062/` | the released step: facts line, change record, score record |
+| `refinement/S0001/`, `S0000/` | the baseline step and the deposited model as scored: facts lines and score records |
 | `refinement/metaparams.yaml`, `run.json` | the metaparameters of the run and its state (noise floor, standing recipe, the sealed vault's checksums) |
 | `refinement/chains/` | the chain scripts that scheduled the steps on the pod, as run, with their logs |
-| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model |
+| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model (`*_S0062.*`) and of the re-refined baseline (`*_S0001.*`) |
 
 ## Reproduce
 

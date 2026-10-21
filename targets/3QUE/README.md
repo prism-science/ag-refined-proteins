@@ -1,7 +1,6 @@
 # 3QUE — Human p38 MAP Kinase in Complex with Skepinone-L
 
-**Status: improved.** The released model is a single model with an R-free of 0.2642 on the deposited free set.
-The deposited model scores 0.2901 on the same reflections.
+**Status: improved.** The released model is a single model with an R-free of 0.2642 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2853 and the deposited model as scored (S0000) 0.2901 on the same reflections.
 
 | | |
 |---|---|
@@ -18,26 +17,29 @@ The deposited model scores 0.2901 on the same reflections.
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00080 from three seeds), gap widened by at most 0.002, gap ≤ 0.1008 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
 
-## The two models on the same flags
+## The three models on the same flags
 
-Both models are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
-rejection. The deposited model is scored as anonymised at preprocessing (S0000).
+All three are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
+rejection. S0000 is the deposited model as anonymised at preprocessing; S0001 is that model after the common recipe
+(phenix.refine, 10 macro-cycles, three seeds, the median), the baseline that every gain is measured against; the
+release is the model in force. Geometry from phenix.clashscore (hydrogens kept), rotalyze and ramalyze; the
+MolProbity score from those three.
 
-| | Deposited, our flags (S0000) | This release (S0057) |
-|---|---|---|
-| R-free | 0.2901 | **0.2642** |
-| R-work | 0.2231 | 0.2124 |
-| Gap R-free − R-work | 0.0670 | 0.0518 |
-| R-free on the select / report halves | 0.2919 / 0.2883 | 0.2702 / 0.2585 |
-| Clashscore (phenix.clashscore, hydrogens kept) | 10.6 | 6.3 |
-| Rotamer outliers | 7.59 % | 3.63 % |
-| Ramachandran outliers / favoured | 0.3 % / 95.0 % | 0.3 % / 96.8 % |
-| Bond RMSD / angle RMSD | 0.016 Å / 1.72° | 0.006 Å / 1.26° |
-| MolProbity score | 2.56 | 1.98 |
-| Copies | 1 | 1 |
-| Atoms (of which H) | 2 849 (0) | 2 896 (0) |
-| Waters, occupancy sum | 14, 14 | 61, 60 |
-| ANISOU records | 0 | 2 764 |
+| | Deposited as scored (S0000) | Re-refined (S0001) | This release (S0057) |
+|---|---|---|---|
+| R-free | 0.2901 | 0.2853 | **0.2642** |
+| R-work | 0.2231 | 0.1895 | 0.2124 |
+| Gap R-free − R-work | 0.0670 | 0.0958 | 0.0518 |
+| R-free on the select / report halves | 0.2919 / 0.2883 | 0.2836 / 0.2869 | 0.2702 / 0.2585 |
+| Clashscore (phenix.clashscore, hydrogens kept) | 10.6 | 10.4 | 6.3 |
+| Rotamer outliers | 7.59 % | 12.87 % | 3.63 % |
+| Ramachandran outliers / favoured | 0.3 % / 95.0 % | 0.3 % / 93.8 % | 0.3 % / 96.8 % |
+| Bond RMSD / angle RMSD | 0.016 Å / 1.72° | 0.013 Å / 1.44° | 0.006 Å / 1.26° |
+| MolProbity score | 2.56 | 2.79 | 1.98 |
+| Copies | 1 | 1 | 1 |
+| Atoms (of which H) | 2 849 (0) | 2 896 (0) | 2 896 (0) |
+| Waters, occupancy sum | 14, 14 | 61, 61 | 61, 60 |
+| ANISOU records | 0 | 0 | 2 764 |
 
 The entry's own header reports R-free 0.3109 and R-work 0.2225 on its own flags.
 
@@ -72,6 +74,7 @@ the gate wrote.
 |---|---|
 | `model/3QUE_S0057.pdb` | the released model, PDB, occupancies at four decimals, as the gate wrote it |
 | `model/3QUE_S0057.cif` | the same model as mmCIF (gemmi conversion) |
+| `model/3QUE_S0001.pdb` | the re-refined deposited model (S0001, the common recipe, the median of three seeds): the baseline of every comparison |
 | `maps/3QUE_S0057_map_coeffs.mtz` | phenix.maps coefficients from the work reflections only: `2FOFCWT/PH2FOFCWT` and `FOFCWT/PHFOFCWT` |
 | `data/3QUE_data.mtz`, `3QUE_flags.mtz`, `3QUE_split.mtz` | the working data, the inherited flags, the select/report split; the vault is absent from all three |
 | `data/prep.json`, `split.json` | how the files were built, with checksums and counts |
@@ -79,9 +82,10 @@ the gate wrote.
 | `refinement/score_history.txt`, `score_history.jsonl`, `scorecard.csv` | every step: the facts line, the full metrics, the scorecard row |
 | `refinement/steps.md` | the step table |
 | `refinement/S0057/` | the released step: facts line, change record, score record |
+| `refinement/S0001/`, `S0000/` | the baseline step and the deposited model as scored: facts lines and score records |
 | `refinement/metaparams.yaml`, `run.json` | the metaparameters of the run and its state (noise floor, standing recipe, the sealed vault's checksums) |
 | `refinement/chains/` | the chain scripts that scheduled the steps on the pod, as run, with their logs |
-| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model |
+| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model (`*_S0057.*`) and of the re-refined baseline (`*_S0001.*`) |
 | `refinement/S0057/reference_model_3LFF.pdb` | the reference model of the torsion restraints (PDB 3LFF as fetched) |
 
 ## Reproduce

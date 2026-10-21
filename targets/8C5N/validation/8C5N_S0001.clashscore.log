@@ -1,0 +1,52 @@
+Starting phenix.python
+on Wed Oct 21 17:26:29 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 3.08 seconds
+wall clock time: 3.57 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A  68 BASN  OD1  A 402  HOH  O   :0.814
+ A 144 BASN  OD1  A 401  HOH  O   :0.785
+ A 104  SER  O    A 185 BLYS  NZ  :0.657
+ A 132 BARG  HG2  A 132 BARG  NH1 :0.584
+ A 173  ARG  NH2  S 854  HOH O    :0.560
+ A  71 AASN  OD1  A  93 ALYS  NZ  :0.518
+ A 132 BARG  CG   A 132 BARG  NH1 :0.465
+ A  47  PRO  CG   S1160  HOH O    :0.455
+ A 144 BASN  ND2  A 147  LYS  CB  :0.434
+ A  84 BPRO  HG2  A  87 BGLN  CD  :0.421
+ A 144 BASN  ND2  A 144 BASN  O   :0.409
+clashscore = 4.84

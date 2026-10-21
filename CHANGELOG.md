@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-21 (c) — the re-refined baseline and the full geometry set
+
+From the meeting of 2026-10-21: every comparison is now against the re-refined deposited model (S0001, the deposited
+model after the common recipe), not the deposited model as scored; every score, the geometry included, is reported for
+the baseline and for the released model. Each target gains `model/<ID>_S0001.pdb`, `refinement/S0001/` and `S0000/`
+(facts and score records) and the baseline's clashscore, rotalyze and ramalyze logs under `validation/`. The cards
+show the three models (S0000, S0001, released) side by side with clashscore, rotamer outliers, Ramachandran outliers
+and favoured, bond and angle RMSD, MolProbity score, copies, atoms, waters and ANISOU counts. The README has two tables,
+R-free and geometry, both re-refined → ours. `index.json` carries the same score block for the three models and the
+status is against S0001. `scripts/write_cards.py` now writes the 7KR0 card too.
+
 ## 2026-10-21 — seven targets added: the hierarchical line's first full snapshot
 
 Seven targets from the hierarchical refinement harness join 7KR0 (R-free on our flags, released / deposited): 8C5N

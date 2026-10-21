@@ -1,13 +1,42 @@
 #!/usr/bin/env python3
-"""scripts/write_cards.py REPO: write targets/<ID>/README.md for the seven targets of the 2026-10-21 release, the README results
-table, provenance.json and the CHANGELOG entry. The numbers come from the files in targets/<ID>/; the narrative is written here. Run from the repository root: python3 scripts/write_cards.py ."""
-import json, re, sys, datetime
+"""scripts/write_cards.py REPO: write targets/<ID>/README.md for the eight targets, the two README tables (R-free and
+geometry), and the provenance entries. The numbers come from the files in targets/<ID>/; the narrative is written here.
+Every comparison is against the re-refined deposited model (S0001: the common recipe, the median of three seeds); the
+deposited model as scored (S0000) stands beside it on the card (operator, meeting of 2026-10-21). Run from the repository
+root: python3 scripts/write_cards.py ."""
+import datetime, json, math, re, sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[1])
 HARNESS = "prism-science/autoresearch, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21)"
+RUNNING = {"7R2H", "8C5N"}   # runs still going at export
 
 T = {
+ "7KR0": dict(handle="Tff1b3f", step="S0053", kind="a six-copy ensemble",
+   short="Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K)",
+   harness="prism-science/autoresearch, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; the card: bfed380, merged into `main` as 7d62e84)",
+   vault_row="3 400 work reflections (2 %) removed from every working file at preprocessing; read one time, at S0011",
+   vault_caveat="**The vault was read once, at S0011** (R-vault 0.0769 against R-free 0.0809, no leak signature). The 42 steps after it used no held-out reflections of any kind in a decision, and every map that placed a water excluded the free set, but the gains since S0011 have not yet been checked against the vault. That read is the operator's.",
+   what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working data
+with riding hydrogens, anisotropic ADPs on every protein atom and on most waters, restraint weights wc 0.3 / wu 0.25,
+and individual water occupancies. Every water is one atom: a lettered water belongs to one copy (its occupancy is
+refined; the mean is 0.30), a water with a blank altloc is shared by all six (mean 0.93). Ligands and ions are single.
+The ensemble is the deliverable; it is not merged back into one model.
+
+The model came from the deposited file in 54 recorded steps (S0000 to S0053), 15 of them accepted. The accepted levers,
+in order: anisotropic water ADPs; the six-copy split (a representation change, scored and recorded but not judged);
+water picks at 4, 3, 3, 2.5, 2.5, 2.5 and 2.5σ on work-only difference maps; anisotropic water ADPs again; restraint
+weights 0.3 / 0.25; 20-cycle convergence steps; altloc occupancies; and, last, waters in own-copy clashes moved to a
+copy they clear.""",
+   caveats=[
+    "**The gap is 0.0259**, against 0.0089 for the re-refined model and 0.0071 for the deposited model as scored: the six copies and the free water occupancies fit the work set better than the free set. The run's cap is 0.030. A reference six-copy ensemble of this entry built earlier with maps that may have included the free reflections scores 0.0676 / 0.0507 on these flags; its advantage over this model is entirely in its solvent, and that comparison is in the harness plan, not in this release.",
+    "**Clashscore 7.7** against 5.3 re-refined and 4.3 deposited; 40 waters sit in own-copy clashes that no other copy can take. Rotamer outliers 1.54 % are just above the gate's 1.5 % cap and passed because the control had the same.",
+    "Three mmtbx sub-reports (C-beta deviations, omega, Rama-Z) fail on a six-copy model; the geometry numbers above come from phenix.clashscore, rotalyze and ramalyze.",
+   ],
+   extra_files=[],
+   reproduce="""bash tools/preprocessing.sh 7KR0 --runs /home/dev/runs/hr --seeds 3 --nproc 3
+bash scripts/chain_target.sh /home/dev/runs/hr/Tff1b3f 6""",
+   repro_note="The second command runs the lever order that produced this model without an agent; the chain scripts under `refinement/chains/` are the hand-scheduled originals. Seeds are fixed; the same inputs give the same trajectory."),
  "3TC7": dict(handle="T431c8e_gap", step="S0061", kind="a six-copy ensemble",
    short="Engineered protein, NESG target OR62",
    what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
@@ -74,7 +103,8 @@ of 5σ and above that no atom explains, next to a nitrogen (S0050, −0.014); a 
 with a map correlation under 0.3 cut to CB (S0064, −0.009).""",
    caveats=[
     "**Rotamer outliers 3.5 %** (three residues) are above the gate's 1.5 % cap; the step passed because the control had the same three. The deposited model has 6.0 %. Clashscore 7.3 against 16.0 deposited; no Ramachandran outlier, 95.6 % favoured.",
-    "The gap is 0.0518 against 0.0502 for the deposited model (the run's cap 0.0704).",
+    "**The gain since the baseline is on the select half only.** R-free on the select / report halves is 0.3592 / 0.2625 at S0001 and 0.2874 / 0.2625 at S0064, with 264 reflections in each half; the re-refinement had moved them the other way (0.3368 / 0.2909 at S0000). Halves this small are noisy, and the vault read is the check.",
+    "The gap is 0.0518 against 0.0654 for the re-refined model and 0.0502 for the deposited model as scored (the run's cap 0.0704).",
     "The model has no hydrogens: riding hydrogens were refused in this run. Reference-model restraints (S0075 and the later re-test) were refused; a two-copy qFit build (S0069) and a six-copy fork (T40560e_six, R-free 0.3042) did not beat the single model. None of these is released.",
    ],
    extra_files=[],
@@ -173,69 +203,102 @@ bash scripts/chain_target.sh /home/dev/runs/hr/T5f59f1 6""",
    repro_note="`chain_target.sh` is the one chain of this run; its log is `refinement/chains/chain_target_T5f59f1.log`."),
 }
 
+
 def load(p): return json.loads(Path(p).read_text())
-def fmt_int(n): return "{:,}".format(int(n)).replace(",", " ")
-def pct(x, d=1): return ("%%.%df" % d) % x
+def fmt_int(n): return "{:,}".format(int(round(n))).replace(",", " ") if isinstance(n, (int, float)) else "n/a"
+def num(x, f): return (f % x) if isinstance(x, (int, float)) else "n/a"
+
+def molprobity(m):
+    g = m.get("geometry") or {}
+    if isinstance(g.get("molprobity_score"), (int, float)):
+        return g["molprobity_score"]
+    try:   # the MolProbity formula from the three components (the scorer's own value when it has one)
+        c, ro, fav = m["clashscore"], m["rota_pct"], m["rama_favored_pct"]
+        return 0.426 * math.log(1 + c) + 0.33 * math.log(1 + max(0.0, ro - 1)) + 0.25 * math.log(1 + max(0.0, 100 - fav - 2)) + 0.5
+    except (KeyError, TypeError):
+        return None
+
+def metrics_of(t, recs, step):
+    r = recs.get(step)
+    m = dict(r["metrics"]) if (r and r.get("metrics")) else {}
+    p = t / "refinement" / step / "score.json"
+    if not m and p.exists():
+        m = dict(load(p).get("after") or {})
+    rp = t / "refinement" / step / "rescored.json"   # the same model scored again by the current scorer at release
+    if rp.exists():
+        for k, v in load(rp).items():
+            if m.get(k) is None and k != "note":
+                m[k] = v
+    return m
+
+def copies(m):
+    if not m.get("copies"):
+        return "n/a"
+    if m["copies"] == 1:
+        return "1" + (" (altlocs %s on some residues)" % m["altlocs"] if m.get("altlocs") else "")
+    return "%d, altlocs %s" % (m["copies"], m["altlocs"])
 
 def card(tid, c):
     t = ROOT / "targets" / tid
     e = load(t / "deposited/rcsb_entry.json"); prep = load(t / "data/prep.json"); run = load(t / "refinement/run.json")
-    sc = load(t / ("refinement/%s/score.json" % c["step"])); a = sc["after"]; v = sc["verdict"]
+    recs = {}
+    for l in (t / "refinement/score_history.jsonl").read_text().splitlines():
+        r = json.loads(l); recs[r["step"]] = r
+    dep, base, a = metrics_of(t, recs, "S0000"), metrics_of(t, recs, "S0001"), metrics_of(t, recs, c["step"])
     facts = (t / ("refinement/%s/FACTS.txt" % c["step"])).read_text().strip()
-    recs = [json.loads(l) for l in (t / "refinement/score_history.jsonl").read_text().splitlines()]
-    dep = [r for r in recs if r["step"] == "S0000"][0]["metrics"]
     meta = (t / "refinement/metaparams.yaml").read_text()
-    gwm = float(re.search(r"^gap_widen_max:\s*([0-9.]+)", meta, re.M).group(1))
-    gcap = run["gap_max"]; sigma = run["noise_floor"]["sigma_r_free"]
+    mg = re.search(r"^gap_widen_max:\s*([0-9.]+)", meta, re.M); gwm = float(mg.group(1)) if mg else None
+    gcap = run.get("gap_max"); sigma = (run.get("noise_floor") or {}).get("sigma_r_free")
     utc = facts.split()[1]
     res = e["rcsb_entry_info"]["resolution_combined"][0]; sg = e["symmetry"]["space_group_name_H_M"]
     cite = e.get("rcsb_primary_citation") or {}
     progs = ", ".join(dict.fromkeys(s["name"] for s in e.get("software", []) if s.get("classification") == "refinement"))
     ref = (e.get("refine") or [{}])[0]
-    n_vault = run["n_vault"]; n_work = prep["n_work"]; n_free = prep["n_free"]
-    vault_pct = 100.0 * n_vault / (n_work + n_vault)
-    phenix = run["phenix_version"].replace("Version: ", "").replace("; Release tag: ", "-")
-    dm = dep.get("geometry") or {}; am = a.get("geometry") or {}
-    def mp(g): return ("%.2f" % g["molprobity_score"]) if isinstance(g.get("molprobity_score"), (int, float)) else "n/a"
-    def copies(m):
-        if m["copies"] == 1: return "1" + (" (altlocs %s on some residues)" % m["altlocs"] if m.get("altlocs") else "")
-        return "%d, altlocs %s" % (m["copies"], m["altlocs"])
+    n_vault = run.get("n_vault") or (prep.get("bunker") or {}).get("n"); n_work = prep["n_work"]; n_free = prep["n_free"]
+    vault_pct = 100.0 * n_vault / (n_work + n_vault) if n_vault else 0.0
+    phenix = (run.get("phenix_version") or "").replace("Version: ", "").replace("; Release tag: ", "-") or "2.1-6048"
     title = e["struct"]["title"].strip().rstrip(".")
-    running = c["step"] in ("S0019", "S0027")
-    status = "**Status: improved.** The released model is %s with an R-free of %.4f on the deposited free set.\nThe deposited model scores %.4f on the same reflections." % (c["kind"], a["r_free"], dep["r_free"])
-    if running: status += " The run was still going when this snapshot was taken (see the card's last caveat)." if False else " The run continues; this is the model in force on 2026-10-21."
+    status = ("**Status: improved.** The released model is %s with an R-free of %.4f on the deposited free set. The re-refined "
+              "deposited model (S0001, the common recipe) scores %.4f and the deposited model as scored (S0000) %.4f on the same "
+              "reflections." % (c["kind"], a["r_free"], base["r_free"], dep["r_free"]))
+    if tid in RUNNING:
+        status += " The run continues; this is the model in force on 2026-10-21."
+    gate = "ΔR-free ≤ −2σ against the control (σ = %s from three seeds), gap widened by at most %s, gap ≤ %s or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 %% or not above the control's" % (
+        num(sigma, "%.5f"), num(gwm, "%g"), num(gcap, "%.4f"))
     rows = [
      ("Resolution", "%g Å" % res), ("Space group", sg),
      ("Data", "%s (%s); %s reflections in the working files, %s work and %s free" % (prep["intensities_or_amplitudes"], prep["data_labels"], fmt_int(prep["n_reflections"]), fmt_int(n_work), fmt_int(n_free))),
      ("Free set", "the deposition's own flags, inherited unchanged (%.2f %%); select / report halves %s / %s" % (100 * prep["fraction_free"], fmt_int(prep["n_select"]), fmt_int(prep["n_report"]))),
-     ("Vault", "%s work reflections (%.0f %%) removed from every working file at preprocessing and sealed; not read in this run (the read is the operator's)" % (fmt_int(n_vault), vault_pct)),
+     ("Vault", c.get("vault_row") or "%s work reflections (%.0f %%) removed from every working file at preprocessing and sealed; not read in this run (the read is the operator's)" % (fmt_int(n_vault), vault_pct)),
      ("Deposited refinement program", progs or "n/a"),
      ("Released by the PDB", (e["rcsb_accession_info"]["initial_release_date"] or "")[:10]),
      ("Primary citation", "%s (%s %s), DOI %s" % ((cite.get("title") or "").rstrip("."), cite.get("journal_abbrev"), cite.get("year"), cite.get("pdbx_database_id_DOI"))),
-     ("Harness", HARNESS),
+     ("Harness", c.get("harness") or HARNESS),
      ("Run", "handle %s, step %s, %s UTC" % (c["handle"], c["step"], utc.replace("T", " ").replace("Z", ""))),
      ("Phenix", phenix),
-     ("Gate", "ΔR-free ≤ −2σ against the control (σ = %.5f from three seeds), gap widened by at most %g, gap ≤ %.4f or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 %% or not above the control's" % (sigma, gwm, gcap)),
+     ("Gate", gate),
     ]
-    two = [
-     ("R-free", "%.4f" % dep["r_free"], "**%.4f**" % a["r_free"]),
-     ("R-work", "%.4f" % dep["r_work"], "%.4f" % a["r_work"]),
-     ("Gap R-free − R-work", "%.4f" % dep["gap"], "%.4f" % a["gap"]),
-     ("R-free on the select / report halves", "%.4f / %.4f" % (dep["r_free_select"], dep["r_free_report"]), "%.4f / %.4f" % (a["r_free_select"], a["r_free_report"])),
-     ("Clashscore (phenix.clashscore, hydrogens kept)", "%.1f" % dep["clashscore"], "%.1f" % a["clashscore"]),
-     ("Rotamer outliers", "%.2f %%" % dep["rota_pct"], "%.2f %%" % a["rota_pct"]),
-     ("Ramachandran outliers / favoured", "%.1f %% / %.1f %%" % (dep["rama_outliers_pct"], dep["rama_favored_pct"]), "%.1f %% / %.1f %%" % (a["rama_outliers_pct"], a["rama_favored_pct"])),
-     ("Bond RMSD / angle RMSD", "%.3f Å / %.2f°" % (dep["bond_rmsd"], dep["angle_rmsd"]), "%.3f Å / %.2f°" % (a["bond_rmsd"], a["angle_rmsd"])),
-     ("MolProbity score", mp(dm), mp(am)),
-     ("Copies", copies(dep), copies(a)),
-     ("Atoms (of which H)", "%s (%s)" % (fmt_int(dep["n_atoms"]), fmt_int(dep["n_h"])), "%s (%s)" % (fmt_int(a["n_atoms"]), fmt_int(a["n_h"]))),
-     ("Waters, occupancy sum", "%s, %s" % (fmt_int(dep["n_water_atoms"]), fmt_int(round(dep["water_occ_sum"]))), "%s, %s" % (fmt_int(a["n_water_atoms"]), fmt_int(round(a["water_occ_sum"])))),
-     ("ANISOU records", fmt_int(dep["n_anisou"]), fmt_int(a["n_anisou"])),
+    def row(label, key, f):
+        return (label, num(dep.get(key), f), num(base.get(key), f), num(a.get(key), f))
+    three = [
+     ("R-free", num(dep.get("r_free"), "%.4f"), num(base.get("r_free"), "%.4f"), "**%.4f**" % a["r_free"]),
+     row("R-work", "r_work", "%.4f"), row("Gap R-free − R-work", "gap", "%.4f"),
+     ("R-free on the select / report halves",) + tuple("%s / %s" % (num(m.get("r_free_select"), "%.4f"), num(m.get("r_free_report"), "%.4f")) for m in (dep, base, a)),
+     row("Clashscore (phenix.clashscore, hydrogens kept)", "clashscore", "%.1f"),
+     row("Rotamer outliers", "rota_pct", "%.2f %%"),
+     ("Ramachandran outliers / favoured",) + tuple("%s / %s" % (num(m.get("rama_outliers_pct"), "%.1f %%"), num(m.get("rama_favored_pct"), "%.1f %%")) for m in (dep, base, a)),
+     ("Bond RMSD / angle RMSD",) + tuple("%s / %s" % (num(m.get("bond_rmsd"), "%.3f Å"), num(m.get("angle_rmsd"), "%.2f°")) for m in (dep, base, a)),
+     ("MolProbity score",) + tuple(num(molprobity(m), "%.2f") for m in (dep, base, a)),
+     ("Copies",) + tuple(copies(m) for m in (dep, base, a)),
+     ("Atoms (of which H)",) + tuple("%s (%s)" % (fmt_int(m.get("n_atoms")), fmt_int(m.get("n_h"))) for m in (dep, base, a)),
+     ("Waters, occupancy sum",) + tuple("%s, %s" % (fmt_int(m.get("n_water_atoms")), fmt_int(m.get("water_occ_sum"))) for m in (dep, base, a)),
+     ("ANISOU records",) + tuple(fmt_int(m.get("n_anisou")) for m in (dep, base, a)),
     ]
     hdr = "The entry's own header reports R-free %s and R-work %s on its own flags." % (ref.get("ls_R_factor_R_free"), ref.get("ls_R_factor_R_work"))
     files = [
      ("`model/%s_%s.pdb`" % (tid, c["step"]), "the released model, PDB, occupancies at four decimals, as the gate wrote it"),
      ("`model/%s_%s.cif`" % (tid, c["step"]), "the same model as mmCIF (gemmi conversion)"),
+     ("`model/%s_S0001.pdb`" % tid, "the re-refined deposited model (S0001, the common recipe, the median of three seeds): the baseline of every comparison"),
      ("`maps/%s_%s_map_coeffs.mtz`" % (tid, c["step"]), "phenix.maps coefficients from the work reflections only: `2FOFCWT/PH2FOFCWT` and `FOFCWT/PHFOFCWT`"),
      ("`data/%s_data.mtz`, `%s_flags.mtz`, `%s_split.mtz`" % (tid, tid, tid), "the working data, the inherited flags, the select/report split; the vault is absent from all three"),
      ("`data/prep.json`, `split.json`", "how the files were built, with checksums and counts"),
@@ -243,18 +306,22 @@ def card(tid, c):
      ("`refinement/score_history.txt`, `score_history.jsonl`, `scorecard.csv`", "every step: the facts line, the full metrics, the scorecard row"),
      ("`refinement/steps.md`", "the step table"),
      ("`refinement/%s/`" % c["step"], "the released step: facts line, change record, score record"),
+     ("`refinement/S0001/`, `S0000/`", "the baseline step and the deposited model as scored: facts lines and score records" + (" (`S0000/rescored.json`: the same model scored again by the current scorer at release, for the geometry fields the scorer of 2026-10-14 did not write)" if tid == "7KR0" else "")),
      ("`refinement/metaparams.yaml`, `run.json`", "the metaparameters of the run and its state (noise floor, standing recipe, the sealed vault's checksums)"),
      ("`refinement/chains/`", "the chain scripts that scheduled the steps on the pod, as run, with their logs"),
-     ("`validation/`", "phenix.clashscore, rotalyze and ramalyze logs of the released model"),
+     ("`validation/`", "phenix.clashscore, rotalyze and ramalyze logs of the released model (`*_%s.*`) and of the re-refined baseline (`*_S0001.*`)" % c["step"]),
     ] + c["extra_files"]
-    vault_cav = "**The vault has not been read in this run** (%s work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's." % fmt_int(n_vault)
+    vault_cav = c.get("vault_caveat") or ("**The vault has not been read in this run** (%s work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's." % fmt_int(n_vault))
     out = ["# %s — %s" % (tid, title), "", status, "", "| | |", "|---|---|"]
     out += ["| %s | %s |" % r for r in rows]
-    out += ["", "## The two models on the same flags", "",
-            "Both models are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier",
-            "rejection. The deposited model is scored as anonymised at preprocessing (S0000).", "",
-            "| | Deposited, our flags (S0000) | This release (%s) |" % c["step"], "|---|---|---|"]
-    out += ["| %s | %s | %s |" % r for r in two]
+    out += ["", "## The three models on the same flags", "",
+            "All three are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier",
+            "rejection. S0000 is the deposited model as anonymised at preprocessing; S0001 is that model after the common recipe",
+            "(phenix.refine, 10 macro-cycles, three seeds, the median), the baseline that every gain is measured against; the",
+            "release is the model in force. Geometry from phenix.clashscore (hydrogens kept), rotalyze and ramalyze; the",
+            "MolProbity score from those three.", "",
+            "| | Deposited as scored (S0000) | Re-refined (S0001) | This release (%s) |" % c["step"], "|---|---|---|---|"]
+    out += ["| %s | %s | %s | %s |" % r for r in three]
     out += ["", hdr, "", "## What the model is", "", c["what"], "",
             "The gate judged every change against a control, the parent refined with the same command and seeds, and accepted a",
             "change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their bounds.",
@@ -264,33 +331,41 @@ def card(tid, c):
     out += ["", "## Files", "", "| Path | Content |", "|---|---|"] + ["| %s | %s |" % f for f in files]
     out += ["", "## Reproduce", "", "In the harness checkout on the pod (`docs/POD.md` there):", "", "```", c["reproduce"], "```", "", c["repro_note"], ""]
     (t / "README.md").write_text("\n".join(out))
-    return dict(id=tid, res=res, title=c["short"], dep=dep, a=a, step=c["step"], kind=c["kind"], handle=c["handle"], utc=utc)
+    return dict(id=tid, res=res, title=c["short"], dep=dep, base=base, a=a, step=c["step"], kind=c["kind"], handle=c["handle"], utc=utc)
+
+def splice(text, name, body):
+    m = re.search(r"(<!-- %s:begin -->\n)(.*?)(<!-- %s:end -->)" % (name, name), text, re.S)
+    if not m:
+        raise SystemExit("README.md: no %s markers" % name)
+    return text[:m.end(1)] + body + text[m.start(3):]
 
 def main():
-    info = [card(tid, c) for tid, c in T.items()]
-    # README rows: by resolution, 7KR0's row kept
-    readme = (ROOT / "README.md").read_text()
-    m = re.search(r"(<!-- results-table:begin -->\n)(.*?)(<!-- results-table:end -->)", readme, re.S)
-    lines = m.group(2).rstrip("\n").split("\n")
-    head, kr0 = lines[:2], [l for l in lines[2:] if "7KR0" in l]
-    rows = []
-    for i in sorted(info, key=lambda x: x["res"]):
-        d, a = i["dep"], i["a"]
-        rows.append((i["res"], "| [%s](targets/%s/README.md) | %g | %s | %.4f / %.4f | **%.4f / %.4f** | −%.4f | %.4f → %.4f | %.1f, %.1f → %.1f, %.1f | %s, step %s | improved |" % (
-            i["id"], i["id"], i["res"], i["title"], d["r_free"], d["r_free_report"], a["r_free"], a["r_free_report"], d["r_free"] - a["r_free"], d["gap"], a["gap"],
-            d["clashscore"], d["rota_pct"], a["clashscore"], a["rota_pct"], i["kind"].replace("a ", ""), i["step"])))
-    rows.append((0.77, kr0[0]))
-    body = "\n".join(head + [r for _, r in sorted(rows)]) + "\n"
-    readme = readme[:m.start(2)] + body + readme[m.start(3):]
-    (ROOT / "README.md").write_text(readme)
-    # provenance
-    prov = load(ROOT / "provenance.json")
-    prov["harness"]["commit_at_release"] = "bfed380 (branch manzuoni/hierarchical_refinement; merged into main as 7d62e84)"
-    prov["harness"]["commit_of_the_model"] = "bd972d3 (7KR0); bfed380 for the seven targets of 2026-10-21"
-    prov["pod"] = "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>"
-    prov["exported_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    info = sorted((card(tid, c) for tid, c in T.items()), key=lambda x: x["res"])
+    r1 = ["| Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
+    r2 = ["| Target | Clashscore | Rotamer outliers % | Ramachandran outliers % | Ramachandran favoured % | Bond RMSD (Å) | Angle RMSD (°) | MolProbity score |",
+          "|---|---|---|---|---|---|---|---|"]
     for i in info:
-        prov["released"][i["id"]] = {"run_handle": i["handle"], "step": i["step"], "utc": i["utc"], "vault_last_read": "never in this run"}
+        b, a = i["base"], i["a"]
+        r1.append("| [%s](targets/%s/README.md) | %g | %s | %.4f / %.4f | **%.4f / %.4f** | −%.4f | %.4f → %.4f | %.4f → %.4f | %s, step %s | improved |" % (
+            i["id"], i["id"], i["res"], i["title"], b["r_free"], b["r_free_report"], a["r_free"], a["r_free_report"], b["r_free"] - a["r_free"],
+            b["r_work"], a["r_work"], b["gap"], a["gap"], i["kind"].replace("a ", ""), i["step"]))
+        arrow = lambda k, f: "%s → %s" % (num(b.get(k), f), num(a.get(k), f))
+        r2.append("| [%s](targets/%s/README.md) | %s | %s | %s | %s | %s | %s | %s → %s |" % (
+            i["id"], i["id"], arrow("clashscore", "%.1f"), arrow("rota_pct", "%.2f"), arrow("rama_outliers_pct", "%.1f"), arrow("rama_favored_pct", "%.1f"),
+            arrow("bond_rmsd", "%.3f"), arrow("angle_rmsd", "%.2f"), num(molprobity(b), "%.2f"), num(molprobity(a), "%.2f")))
+    readme = (ROOT / "README.md").read_text()
+    readme = splice(readme, "results-table", "\n".join(r1) + "\n")
+    readme = splice(readme, "geometry-table", "\n".join(r2) + "\n")
+    (ROOT / "README.md").write_text(readme)
+    prov = load(ROOT / "provenance.json")
+    prov["exported_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    prov["baseline"] = "S0001: the deposited model after the common recipe (phenix.refine, 10 macro-cycles, three seeds, the median); every comparison in the cards and the README is against it (operator, meeting of 2026-10-21)"
+    for i in info:
+        rec = prov["released"].setdefault(i["id"], {})
+        rec.update({"run_handle": i["handle"], "step": i["step"], "utc": i["utc"]})
+        rec.setdefault("vault_last_read", "never in this run")
+        rec["rerefined_r_free_S0001"] = round(i["base"]["r_free"], 5)
     (ROOT / "provenance.json").write_text(json.dumps(prov, indent=1) + "\n")
     print("cards written:", [i["id"] for i in info])
 

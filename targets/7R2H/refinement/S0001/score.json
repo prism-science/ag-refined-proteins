@@ -1,0 +1,762 @@
+{
+ "after": {
+  "altlocs": "AB",
+  "angle_rmsd": 1.074,
+  "bond_rmsd": 0.008,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0949,
+  "clashscore": 4.35,
+  "clashscore_mmtbx": 4.3497,
+  "copies": 1,
+  "dihedral_rmsd": 14.1761,
+  "gap": 0.01119170003863336,
+  "geometry": {
+   "angle": {
+    "max": 5.9611,
+    "mean": 0.9312,
+    "min": 0.0,
+    "n": 4600,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 4.1136,
+    "mean": 0.4478,
+    "min": 0.0,
+    "n": 4600,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0638,
+    "mean": 0.0054,
+    "min": 0.0,
+    "n": 2544,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 1.7863,
+    "mean": 0.2669,
+    "min": 0.0,
+    "n": 2544,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 1.875,
+    "disfavored": 12.5,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "LEU   17 ",
+       "CaBLAM Disfavored",
+       0.017,
+       0.0436,
+       "",
+       0.0,
+       0.0012,
+       0.0,
+       "ERROR",
+       [
+        -4.385,
+        22.865,
+        6.344
+       ]
+      ],
+      [
+       " A",
+       "PHE   46 ",
+       "CA Geom Outlier",
+       0.0336,
+       0.0004,
+       "",
+       0.0019,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -23.694,
+        27.632,
+        -6.129
+       ]
+      ],
+      [
+       " A",
+       "TYR   48 ",
+       "CaBLAM Disfavored",
+       0.0303,
+       0.0228,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -18.751,
+        23.889,
+        -2.409
+       ]
+      ],
+      [
+       " A",
+       "SER   59 ",
+       "CaBLAM Disfavored",
+       0.0124,
+       0.0999,
+       "",
+       0.0091,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -10.246,
+        4.856,
+        9.814
+       ]
+      ],
+      [
+       " A",
+       "PHE   60 ",
+       "CA Geom Outlier",
+       0.0138,
+       0.0042,
+       "",
+       0.0003,
+       0.0005,
+       0.0,
+       "ERROR",
+       [
+        -13.195,
+        5.215,
+        7.424
+       ]
+      ],
+      [
+       " A",
+       "ALA   64 ",
+       "CA Geom Outlier",
+       0.006,
+       0.0014,
+       "",
+       0.0,
+       0.0036,
+       0.0,
+       "ERROR",
+       [
+        -18.577,
+        16.889,
+        2.794
+       ]
+      ],
+      [
+       " A",
+       "HIS   70 ",
+       "CaBLAM Disfavored",
+       0.0193,
+       0.2767,
+       "",
+       0.0001,
+       0.0001,
+       0.0,
+       "ERROR",
+       [
+        -24.342,
+        21.769,
+        6.366
+       ]
+      ],
+      [
+       " A",
+       "ASN   71 ",
+       "CaBLAM Outlier",
+       0.0087,
+       0.0293,
+       "",
+       0.0,
+       0.0044,
+       0.0,
+       "ERROR",
+       [
+        -25.443,
+        18.608,
+        8.182
+       ]
+      ],
+      [
+       " A",
+       "TYR   79 ",
+       "CaBLAM Disfavored",
+       0.0208,
+       0.0332,
+       "",
+       0.0002,
+       0.0001,
+       0.0,
+       "ERROR",
+       [
+        -28.911,
+        18.891,
+        -12.908
+       ]
+      ],
+      [
+       " A",
+       "SER   81 ",
+       "CaBLAM Disfavored",
+       0.0127,
+       0.0093,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -31.939,
+        18.036,
+        -6.663
+       ]
+      ],
+      [
+       " A",
+       "GLU   86 ",
+       "CaBLAM Disfavored",
+       0.0367,
+       0.0454,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -24.2,
+        6.497,
+        -13.308
+       ]
+      ],
+      [
+       " A",
+       "VAL   93 ",
+       "CaBLAM Disfavored",
+       0.0136,
+       0.0238,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -9.974,
+        0.304,
+        -3.569
+       ]
+      ],
+      [
+       " A",
+       "PRO   95 ",
+       "CaBLAM Disfavored",
+       0.0317,
+       0.0171,
+       "",
+       0.0004,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -7.29,
+        5.492,
+        0.79
+       ]
+      ],
+      [
+       " A",
+       "ALA  103 ",
+       "CaBLAM Outlier",
+       0.003,
+       0.0325,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -29.54,
+        8.162,
+        0.726
+       ]
+      ],
+      [
+       " A",
+       "PRO  105 ",
+       "CaBLAM Disfavored",
+       0.045,
+       0.0221,
+       "",
+       0.001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -30.212,
+        4.172,
+        -4.988
+       ]
+      ],
+      [
+       " A",
+       "THR  107 ",
+       "CaBLAM Disfavored",
+       0.0336,
+       0.0585,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -30.03,
+        9.89,
+        -4.792
+       ]
+      ],
+      [
+       " A",
+       "ASN  108 ",
+       "CaBLAM Disfavored",
+       0.0485,
+       0.0472,
+       "",
+       0.0,
+       0.0008,
+       0.0,
+       "ERROR",
+       [
+        -26.752,
+        11.584,
+        -5.746
+       ]
+      ],
+      [
+       " A",
+       "SER  110 ",
+       "CaBLAM Outlier",
+       0.0014,
+       0.0276,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -23.623,
+        17.113,
+        -4.007
+       ]
+      ],
+      [
+       " A",
+       "HIS  131 ",
+       "CaBLAM Disfavored",
+       0.0278,
+       0.0271,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -9.189,
+        9.99,
+        -6.347
+       ]
+      ],
+      [
+       " A",
+       "GLU  134 ",
+       "CaBLAM Disfavored",
+       0.0236,
+       0.0068,
+       "",
+       0.0089,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        -2.052,
+        15.384,
+        -3.96
+       ]
+      ]
+     ]
+    },
+    "outliers": 2.5
+   },
+   "chirality": {
+    "max": 0.2442,
+    "mean": 0.0949,
+    "min": 0.0002,
+    "n": 189,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 4.3497
+   },
+   "dihedral": {
+    "max": 63.2433,
+    "mean": 14.1761,
+    "min": 0.0001,
+    "n": 909,
+    "outliers": [
+     [
+      754,
+      755,
+      767,
+      768
+     ]
+    ]
+   },
+   "molprobity_score": 1.3983,
+   "nonbonded": {
+    "max": 4.5999,
+    "mean": 3.7579,
+    "min": 1.5119,
+    "n": 48636
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0495,
+    "mean": 0.0065,
+    "min": 0.0,
+    "n": 388,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A  82 ",
+      "max_dev": 0.0509,
+      "mean_dev": 0.0109,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  48 ",
+      "max_dev": 0.0226,
+      "mean_dev": 0.0062,
+      "resname": "TYR"
+     },
+     {
+      "id": " PHE A 112 ",
+      "max_dev": 0.0485,
+      "mean_dev": 0.0074,
+      "resname": "PHE"
+     },
+     {
+      "id": " TRP A 121 ",
+      "max_dev": 0.0239,
+      "mean_dev": 0.0095,
+      "resname": "TRP"
+     },
+     {
+      "id": " HIS A  70 ",
+      "max_dev": 0.0064,
+      "mean_dev": 0.0026,
+      "resname": "HIS"
+     }
+    ],
+    "protein_planes_max_dev_noH": [
+     {
+      "id": " ARG A  55 ",
+      "max_dev": 0.0059,
+      "mean_dev": 0.0017,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  48 ",
+      "max_dev": 0.0185,
+      "mean_dev": 0.007,
+      "resname": "TYR"
+     },
+     {
+      "id": " PHE A 112 ",
+      "max_dev": 0.026,
+      "mean_dev": 0.0065,
+      "resname": "PHE"
+     },
+     {
+      "id": " TRP A 121 ",
+      "max_dev": 0.0143,
+      "mean_dev": 0.0077,
+      "resname": "TRP"
+     },
+     {
+      "id": " HIS A  70 ",
+      "max_dev": 0.0064,
+      "mean_dev": 0.0026,
+      "resname": "HIS"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 3.0864,
+    "favored": 96.9136,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 1.4599,
+    "favored": 98.5401,
+    "outliers": 0.0,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 15.21,
+   "Cl": 4.41,
+   "Mp": 1.4,
+   "Rf": 13.55,
+   "Rw": 12.43,
+   "ang": null,
+   "avangle": 0.403245,
+   "avbond": 0.139961,
+   "avchir": 0.22539,
+   "avnb": 6.41413,
+   "avomega": 2.59274,
+   "avplane": 0.0765132,
+   "avrama": 0.651952,
+   "avrot": 0.463883,
+   "avtor": 0.957541,
+   "bond": null,
+   "chir": null,
+   "energy": 112.406,
+   "nb_e": 96.6791,
+   "om": 20.54,
+   "ra": 4.5703,
+   "ro": 4.14191,
+   "score": 145.757,
+   "vdw": 0.0,
+   "wang": 16.9,
+   "wbond": 3.19,
+   "wchir": 1.49,
+   "wdihe": 16.9,
+   "wplane": 6.5025
+  },
+  "holton_score": 145.757,
+  "holton_we": 112.406,
+  "model": "/home/dev/runs/hr/Ta4f3f9/pending/first_refinement/cand_s3.pdb",
+  "n_anisou": 1258,
+  "n_atoms": 2975,
+  "n_free": 7538,
+  "n_h": 1253,
+  "n_nonwater_iso_heavy": 4,
+  "n_reflections": 147186,
+  "n_residues_nonwater": 165,
+  "n_water_atoms": 460,
+  "n_water_iso": 460,
+  "n_work": 139648,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.0065,
+  "r_free": 0.13548576823817152,
+  "r_free_report": 0.1364719758058918,
+  "r_free_select": 0.13449989111861926,
+  "r_work": 0.12429406819953816,
+  "rama_favored_pct": 96.9136,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 162,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 0,
+  "rota_pct": 0.0,
+  "rota_pct_mmtbx": 0.0,
+  "scored_utc": "2026-10-20T07:50:54Z",
+  "sha256": "978138cb3067f564c4253ae645c27b6593111ce72fa664705c8868a5be0ed9f3",
+  "water_occ_sum": 323.57
+ },
+ "median": {
+  "altlocs": "AB",
+  "angle_rmsd": 1.074,
+  "bond_rmsd": 0.008,
+  "copies": 1,
+  "gap": 0.01119170003863336,
+  "holton_we": null,
+  "model": "/home/dev/runs/hr/Ta4f3f9/pending/first_refinement/cand_s3.pdb",
+  "n_anisou": 1258,
+  "n_atoms": 2975,
+  "n_free": 7538,
+  "n_h": 1253,
+  "n_nonwater_iso_heavy": 4,
+  "n_reflections": 147186,
+  "n_residues_nonwater": 165,
+  "n_water_atoms": 460,
+  "n_water_iso": 460,
+  "n_work": 139648,
+  "r_free": 0.13548576823817152,
+  "r_free_report": 0.1364719758058918,
+  "r_free_select": 0.13449989111861926,
+  "r_work": 0.12429406819953816,
+  "scored_utc": "2026-10-20T07:50:54Z",
+  "seed": 3,
+  "sha256": "978138cb3067f564c4253ae645c27b6593111ce72fa664705c8868a5be0ed9f3",
+  "water_occ_sum": 323.57
+ },
+ "noise_floor": {
+  "mean_r_free": 0.1352951232403451,
+  "median_seed": 3,
+  "n_seeds": 3,
+  "seeds": [
+   {
+    "gap": 0.011237870551720056,
+    "r_free": 0.13566236451790775,
+    "r_work": 0.1244244939661877,
+    "seed": 1,
+    "sha256": "d22d7924400cd0736a9d488a4f7c1040391767490a10e6e282779cad9c1fefe8"
+   },
+   {
+    "gap": 0.01051518006371173,
+    "r_free": 0.13473723696495604,
+    "r_work": 0.12422205690124431,
+    "seed": 2,
+    "sha256": "b93bdf3023452f90c9eafbf170d1d943393c71dfc77c599446e6563e7eb03a83"
+   },
+   {
+    "gap": 0.01119170003863336,
+    "r_free": 0.13548576823817152,
+    "r_work": 0.12429406819953816,
+    "seed": 3,
+    "sha256": "978138cb3067f564c4253ae645c27b6593111ce72fa664705c8868a5be0ed9f3"
+   }
+  ],
+  "sigma_gap": 0.00040457643163444495,
+  "sigma_r_free": 0.0004911459902155158,
+  "sigma_r_work": 0.0001026135736237145
+ },
+ "rows": [
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 1.057,
+   "bond_rmsd": 0.007,
+   "copies": 1,
+   "gap": 0.011237870551720056,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Ta4f3f9/pending/first_refinement/cand_s1.pdb",
+   "n_anisou": 1258,
+   "n_atoms": 2975,
+   "n_free": 7538,
+   "n_h": 1253,
+   "n_nonwater_iso_heavy": 4,
+   "n_reflections": 147186,
+   "n_residues_nonwater": 165,
+   "n_water_atoms": 460,
+   "n_water_iso": 460,
+   "n_work": 139648,
+   "r_free": 0.13566236451790775,
+   "r_free_report": 0.13697302962042276,
+   "r_free_select": 0.13435213857941952,
+   "r_work": 0.1244244939661877,
+   "scored_utc": "2026-10-20T07:50:47Z",
+   "seed": 1,
+   "sha256": "d22d7924400cd0736a9d488a4f7c1040391767490a10e6e282779cad9c1fefe8",
+   "water_occ_sum": 334.75
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 1.064,
+   "bond_rmsd": 0.007,
+   "copies": 1,
+   "gap": 0.01051518006371173,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Ta4f3f9/pending/first_refinement/cand_s2.pdb",
+   "n_anisou": 1258,
+   "n_atoms": 2969,
+   "n_free": 7538,
+   "n_h": 1253,
+   "n_nonwater_iso_heavy": 4,
+   "n_reflections": 147186,
+   "n_residues_nonwater": 165,
+   "n_water_atoms": 454,
+   "n_water_iso": 454,
+   "n_work": 139648,
+   "r_free": 0.13473723696495604,
+   "r_free_report": 0.13596294552349905,
+   "r_free_select": 0.13351193910408152,
+   "r_work": 0.12422205690124431,
+   "scored_utc": "2026-10-20T07:50:50Z",
+   "seed": 2,
+   "sha256": "b93bdf3023452f90c9eafbf170d1d943393c71dfc77c599446e6563e7eb03a83",
+   "water_occ_sum": 325.66
+  },
+  {
+   "altlocs": "AB",
+   "angle_rmsd": 1.074,
+   "bond_rmsd": 0.008,
+   "copies": 1,
+   "gap": 0.01119170003863336,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Ta4f3f9/pending/first_refinement/cand_s3.pdb",
+   "n_anisou": 1258,
+   "n_atoms": 2975,
+   "n_free": 7538,
+   "n_h": 1253,
+   "n_nonwater_iso_heavy": 4,
+   "n_reflections": 147186,
+   "n_residues_nonwater": 165,
+   "n_water_atoms": 460,
+   "n_water_iso": 460,
+   "n_work": 139648,
+   "r_free": 0.13548576823817152,
+   "r_free_report": 0.1364719758058918,
+   "r_free_select": 0.13449989111861926,
+   "r_work": 0.12429406819953816,
+   "scored_utc": "2026-10-20T07:50:54Z",
+   "seed": 3,
+   "sha256": "978138cb3067f564c4253ae645c27b6593111ce72fa664705c8868a5be0ed9f3",
+   "water_occ_sum": 323.57
+  }
+ ]
+}
