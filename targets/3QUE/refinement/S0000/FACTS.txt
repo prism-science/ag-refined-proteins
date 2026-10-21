@@ -1,0 +1,1 @@
+S0000 2026-10-19T23:28:08Z preprocessing fetch parent - | deposited model, anonymised, scored on the run's working data | R-free 0.29008 R-work 0.22308 gap 0.0670 clash 10.6 rota 7.6 % | atoms 2849 waters 14 altlocs - anisou 0 | INIT

@@ -1,0 +1,51 @@
+Starting phenix.python
+on Wed Oct 21 17:26:29 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/3TC7.d/3TC7/model/3TC7_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/3TC7.d/3TC7/model/3TC7_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/3TC7.d/3TC7/model/3TC7_S0001.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 2.65 seconds
+wall clock time: 4.47 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+No H/D atoms detected - forcing hydrogen addition!
+
+
+Adding H/D atoms with reduce...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 401  ACY  H1   A 765  HOH  O   :0.659
+ A 143  GLU  HB3  A 778  HOH  O   :0.607
+ A  44  ASN  ND2  A 401  ACY  H3  :0.592
+ A   9  LEU HD11  A 184  TRP  HB3 :0.568
+ A   5  LEU  HB2  S1138  HOH O    :0.513
+ A 163  GLU  OE2  A 196  LYS  HE2 :0.505
+ A 219  ILE HG23  A 230  PHE  CE1 :0.401
+clashscore = 1.70

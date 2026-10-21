@@ -1,0 +1,538 @@
+{
+ "altlocs": "ABCD",
+ "angle_rmsd": 0.9899,
+ "bond_rmsd": 0.0214,
+ "cbeta_outliers": 0.0,
+ "chirality_rmsd": 0.0765,
+ "clashscore": 4.27,
+ "clashscore_mmtbx": 4.2671,
+ "copies": 1,
+ "dihedral_rmsd": 12.1112,
+ "gap": 0.007144502286915669,
+ "geometry": {
+  "angle": {
+   "max": 38.8141,
+   "mean": 0.9899,
+   "min": 0.0001,
+   "n": 7381,
+   "outliers": []
+  },
+  "angle_z": {
+   "max": 21.5634,
+   "mean": 0.4932,
+   "min": 0.0,
+   "n": 7381,
+   "outliers": []
+  },
+  "bond": {
+   "max": 1.3315,
+   "mean": 0.0214,
+   "min": 0.0,
+   "n": 4039,
+   "outliers": []
+  },
+  "bond_z": {
+   "max": 95.109,
+   "mean": 1.5113,
+   "min": 0.0,
+   "n": 4039,
+   "outliers": []
+  },
+  "c_beta": {
+   "cbetadev": "ERROR",
+   "outliers": 0.0
+  },
+  "cablam": {
+   "ca_outliers": 0.0,
+   "disfavored": 7.2727,
+   "gui_table": {
+    "column_formats": [
+     "%s",
+     "%s",
+     "%s",
+     "%.5f",
+     "%.5f",
+     "%s",
+     "%.5f",
+     "%.5f",
+     "%.5f"
+    ],
+    "column_labels": [
+     "Chain",
+     "Residue",
+     "Evaluation",
+     "CaBLAM Score",
+     "CA Geometry Score",
+     "Secondary Structure",
+     "Helix Score",
+     "Beta Score",
+     "3-10 Score"
+    ],
+    "column_widths": [
+     125,
+     125,
+     125,
+     125,
+     125,
+     125,
+     125,
+     125,
+     125
+    ],
+    "data": [
+     [
+      " A",
+      "THR   13 ",
+      "CaBLAM Outlier",
+      0.0088,
+      0.0599,
+      "",
+      0.0002,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       10.929,
+       4.962,
+       -6.278
+      ]
+     ],
+     [
+      " A",
+      "LYS   31 ",
+      "CaBLAM Disfavored",
+      0.0385,
+      0.1529,
+      "",
+      0.0,
+      0.2844,
+      0.0,
+      "ERROR",
+      [
+       6.792,
+       7.597,
+       15.889
+      ]
+     ],
+     [
+      " A",
+      "HIS   45 ",
+      "CaBLAM Disfavored",
+      0.0451,
+      0.1541,
+      "",
+      0.0,
+      0.0361,
+      0.0,
+      "ERROR",
+      [
+       21.113,
+       23.133,
+       16.619
+      ]
+     ],
+     [
+      " A",
+      "GLY   47 ",
+      "CaBLAM Outlier",
+      0.0069,
+      0.0199,
+      "",
+      0.0158,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       18.726,
+       27.044,
+       13.225
+      ]
+     ],
+     [
+      " A",
+      "ASN   59 ",
+      "CaBLAM Disfavored",
+      0.0446,
+      0.0801,
+      "",
+      0.0,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       16.421,
+       21.473,
+       24.289
+      ]
+     ],
+     [
+      " A",
+      "ASN   59 ",
+      "CaBLAM Disfavored",
+      0.0493,
+      0.0804,
+      "",
+      0.0,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       16.424,
+       21.468,
+       24.256
+      ]
+     ],
+     [
+      " A",
+      "LEU   83 ",
+      "CaBLAM Disfavored",
+      0.0298,
+      0.0381,
+      "",
+      0.0,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       22.283,
+       9.972,
+       19.287
+      ]
+     ],
+     [
+      " A",
+      "GLY   85 ",
+      "CaBLAM Disfavored",
+      0.0262,
+      0.0808,
+      "",
+      0.0,
+      0.1749,
+      0.0,
+      "ERROR",
+      [
+       15.767,
+       10.495,
+       19.363
+      ]
+     ],
+     [
+      " A",
+      "GLY   85 ",
+      "CaBLAM Disfavored",
+      0.0255,
+      0.102,
+      "",
+      0.0,
+      0.194,
+      0.0,
+      "ERROR",
+      [
+       15.767,
+       10.495,
+       19.363
+      ]
+     ],
+     [
+      " A",
+      "HIS   86 ",
+      "CaBLAM Disfavored",
+      0.0259,
+      0.1348,
+      "",
+      0.0002,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       14.374,
+       11.843,
+       22.667
+      ]
+     ],
+     [
+      " A",
+      "HIS   86 ",
+      "CaBLAM Disfavored",
+      0.0253,
+      0.1311,
+      "",
+      0.0002,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       14.237,
+       11.793,
+       22.603
+      ]
+     ],
+     [
+      " A",
+      "LEU   88 ",
+      "CaBLAM Disfavored",
+      0.0497,
+      0.0272,
+      "",
+      0.0008,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       10.685,
+       12.33,
+       18.49
+      ]
+     ],
+     [
+      " A",
+      "LEU   88 ",
+      "CaBLAM Disfavored",
+      0.0152,
+      0.0124,
+      "",
+      0.0004,
+      0.0006,
+      0.0,
+      "ERROR",
+      [
+       10.888,
+       12.424,
+       18.303
+      ]
+     ],
+     [
+      " A",
+      "ALA   89 ",
+      "CaBLAM Disfavored",
+      0.0385,
+      0.0413,
+      "",
+      0.0001,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       12.128,
+       8.92,
+       17.543
+      ]
+     ],
+     [
+      " A",
+      "LYS   90 ",
+      "CaBLAM Disfavored",
+      0.022,
+      0.0567,
+      "",
+      0.0,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       14.084,
+       6.034,
+       19.008
+      ]
+     ],
+     [
+      " A",
+      "LYS   90 ",
+      "CaBLAM Disfavored",
+      0.0184,
+      0.0497,
+      "",
+      0.0,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       14.084,
+       6.034,
+       19.008
+      ]
+     ],
+     [
+      " A",
+      "PRO  125 ",
+      "CaBLAM Disfavored",
+      0.0378,
+      0.4132,
+      "",
+      0.0,
+      0.0,
+      0.0,
+      "ERROR",
+      [
+       14.458,
+       16.203,
+       5.397
+      ]
+     ]
+    ]
+   },
+   "outliers": 1.2121
+  },
+  "chirality": {
+   "max": 0.3109,
+   "mean": 0.0765,
+   "min": 0.0004,
+   "n": 320,
+   "outliers": []
+  },
+  "clash": {
+   "clashes": "ERROR",
+   "score": 4.2671
+  },
+  "dihedral": {
+   "max": 87.5709,
+   "mean": 12.1112,
+   "min": 0.0001,
+   "n": 1413,
+   "outliers": []
+  },
+  "molprobity_score": 1.2078,
+  "nonbonded": {
+   "max": 4.6,
+   "mean": 3.7527,
+   "min": 1.6092,
+   "n": 75359
+  },
+  "omega": {
+   "cis_general": 0.0,
+   "cis_proline": 0.0,
+   "n_twisted_general": 0,
+   "omegalyze": "ERROR",
+   "twisted_general": 0.0,
+   "twisted_proline": 0.0
+  },
+  "parallelity": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n": 0
+  },
+  "planarity": {
+   "max": 0.2053,
+   "mean": 0.0097,
+   "min": 0.0,
+   "n": 642,
+   "protein_planes_max_dev": [
+    {
+     "id": " TYR A  68 ",
+     "max_dev": 0.0476,
+     "mean_dev": 0.0102,
+     "resname": "TYR"
+    },
+    {
+     "id": " PHE A 116 ",
+     "max_dev": 0.0354,
+     "mean_dev": 0.0088,
+     "resname": "PHE"
+    },
+    {
+     "id": " HIS A  45 ",
+     "max_dev": 0.005,
+     "mean_dev": 0.0024,
+     "resname": "HIS"
+    }
+   ],
+   "protein_planes_max_dev_noH": [
+    {
+     "id": " TYR A  68 ",
+     "max_dev": 0.0414,
+     "mean_dev": 0.0107,
+     "resname": "TYR"
+    },
+    {
+     "id": " PHE A 116 ",
+     "max_dev": 0.0263,
+     "mean_dev": 0.0088,
+     "resname": "PHE"
+    },
+    {
+     "id": " HIS A  45 ",
+     "max_dev": 0.005,
+     "mean_dev": 0.0024,
+     "resname": "HIS"
+    }
+   ]
+  },
+  "rama_z": "ERROR",
+  "ramachandran": {
+   "allowed": 0.5988,
+   "favored": 99.4012,
+   "outliers": 0.0,
+   "ramalyze": "ERROR"
+  },
+  "rotamer": {
+   "allowed": 3.5556,
+   "favored": 95.5556,
+   "outliers": 0.8889,
+   "rotalyze": "ERROR"
+  }
+ },
+ "holton": {
+  "CB": 15.0544,
+  "Cl": 4.73,
+  "Mp": 1.24,
+  "Rf": 11.75,
+  "Rw": 11.04,
+  "ang": null,
+  "avangle": 0.51875,
+  "avbond": 4.50374,
+  "avchir": 0.146413,
+  "avnb": 2.11051,
+  "avomega": 2.4598,
+  "avplane": 0.0841314,
+  "avrama": 0.525224,
+  "avrot": 1.01346,
+  "avtor": 0.979671,
+  "bond": null,
+  "chir": null,
+  "energy": 159.831,
+  "nb_e": 95.3758,
+  "om": 19.0,
+  "ra": 3.41141,
+  "ro": 99.0,
+  "score": 183.597,
+  "vdw": 0.0,
+  "wang": 465.0,
+  "wbond": 9050.0,
+  "wchir": 2.42,
+  "wdihe": 14.4,
+  "wplane": 7.5625
+ },
+ "holton_score": 183.597,
+ "holton_we": 159.831,
+ "n_anisou": 2310,
+ "n_atoms": 4300,
+ "n_free": 8712,
+ "n_h": 1990,
+ "n_nonwater_iso_heavy": 0,
+ "n_reflections": 174924,
+ "n_residues_nonwater": 169,
+ "n_water_atoms": 316,
+ "n_water_iso": 0,
+ "n_work": 166212,
+ "note": "the deposited model as scored (S0000) scored again by the current scorer at release (2026-10-21) for the geometry fields the scorer of 2026-10-14 did not write; the R factors must match the record",
+ "omega_cis_general": 0.0,
+ "omega_cis_proline": 0.0,
+ "omega_twisted_general": 0.0,
+ "planarity_rmsd": 0.0097,
+ "r_free": 0.117529320237438,
+ "r_free_report": 0.11681695656802502,
+ "r_free_select": 0.11822152021530352,
+ "r_work": 0.11038481795052234,
+ "rama_favored_pct": 99.4012,
+ "rama_n_outliers": 0,
+ "rama_n_residues": 167,
+ "rama_outliers_pct": 0.0,
+ "rota_n_outliers": 2,
+ "rota_n_residues": 225,
+ "rota_pct": 0.89,
+ "rota_pct_mmtbx": 0.8889,
+ "scored_utc": "2026-10-21T17:31:12Z",
+ "sha256": "78629dcb77bf0e3572636403da8f4f2be818e336a004961165f5c478ee458ee0",
+ "water_occ_sum": 309.04
+}

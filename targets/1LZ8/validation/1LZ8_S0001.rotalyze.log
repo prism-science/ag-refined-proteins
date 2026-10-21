@@ -1,0 +1,138 @@
+Starting phenix.rotalyze
+on Wed Oct 21 17:26:31 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/1LZ8.d/1LZ8/model/1LZ8_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  No PHIL parameters found
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/1LZ8.d/1LZ8/model/1LZ8_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/1LZ8.d/1LZ8/model/1LZ8_S0001.pdb"
+  }
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 9.65 seconds
+wall clock time: 9.85 seconds
+residue:occupancy:score%:chi1:chi2:chi3:chi4:evaluation:rotamer
+ A   1  LYS:1.00:55.4:173.6:177.9:169.2:162.5:Favored:tttt
+ A   2  VAL:1.00:85.9:177.4::::Favored:t
+ A   3  PHE:1.00:30.8:277.9:79.9:::Favored:m-80
+ A   5  ARG:1.00:78.9:175.9:176.7:68.1:86.8:Favored:ttp80
+ A   6  CYS:1.00:82.6:295.0::::Favored:m
+ A   7  GLU:1.00:56.6:185.8:189.8:13.3::Favored:tt0
+ A   8  LEU:1.00:53.4:180.2:56.5:::Favored:tp
+ A  12  MET:1.00:31.8:283.1:175.8:160.3::Favored:mtt
+ A  13  LYS:1.00:77.1:177.6:166.4:181.9:175.3:Favored:tttt
+ A  14  ARG:1.00:0.0:238.8:259.1:95.5:184.8:OUTLIER:OUTLIER
+ A  15  HIS:1.00:74.1:291.1:88.4:::Favored:m90
+ A  17  LEU:1.00:4.1:209.2:53.1:::Favored:tp
+ A  18  ASP:1.00:0.0:116.6:239.4:::OUTLIER:OUTLIER
+ A  19  ASN:1.00:0.8:257.3:295.4:::Allowed:m-40
+ A  20  TYR:1.00:39.2:193.2:84.8:::Favored:t80
+ A  21  ARG:1.00:6.0:289.5:297.8:179.8:125.9:Favored:mmt90
+ A  23  TYR:1.00:74.8:287.6:272.7:::Favored:m-80
+ A  24  SER:1.00:95.3:63.9::::Favored:p
+ A  25  LEU:1.00:6.3:199.2:49.7:::Favored:tp
+ A  27  ASN:1.00:43.8:277.9:286.9:::Favored:m-40
+ A  28  TRP:1.00:95.9:294.4:103.5:::Favored:m100
+ A  29  VAL:1.00:76.1:172.7::::Favored:t
+ A  30  CYS:1.00:54.2:183.9::::Favored:t
+ A  33  LYS:1.00:34.6:170.6:76.1:172.6:169.8:Favored:tptt
+ A  34  PHE:1.00:30.9:293.1:308.9:::Favored:m-80
+ A  35  GLU:1.00:58.3:291.9:296.1:354.4::Favored:mm-30
+ A  36  SER:1.00:78.8:60.9::::Favored:p
+ A  37  ASN:1.00:18.7:205.0:13.9:::Favored:t0
+ A  38  PHE:1.00:25.4:300.7:327.8:::Favored:m-10
+ A  39  ASN:1.00:55.9:186.5:354.3:::Favored:t0
+ A  40  THR:1.00:54.6:65.0::::Favored:p
+ A  41  GLN:1.00:36.7:295.7:194.2:79.4::Favored:mt0
+ A  43  THR:1.00:55.3:64.9::::Favored:p
+ A  44  ASN:1.00:60.1:283.8:290.0:::Favored:m-40
+ A  45  ARG:1.00:4.9:199.0:82.6:185.3:253.4:Favored:tpt-90
+ A  46  ASN:1.00:40.5:301.7:128.3:::Favored:m110
+ A  47  THR:1.00:17.3:49.2::::Favored:p
+ A  48  ASP:1.00:41.2:70.5:354.0:::Favored:p0
+ A  50  SER:1.00:92.8:64.5::::Favored:p
+ A  51  THR:1.00:99.2:300.3::::Favored:m
+ A  52  ASP:1.00:87.1:286.4:354.4:::Favored:m-30
+ A  53  TYR:1.00:85.8:293.4:82.6:::Favored:m-80
+ A  55  ILE:1.00:6.9:55.0:155.6:::Favored:pt
+ A  56  LEU:1.00:58.8:285.7:170.4:::Favored:mt
+ A  57  GLN:1.00:18.8:286.9:291.7:271.4::Favored:mm-40
+ A  58  ILE:1.00:75.4:290.7:173.4:::Favored:mt
+ A  59  ASN:1.00:0.6:192.6:181.6:::Allowed:t0
+ A  60  SER:1.00:73.7:59.5::::Favored:p
+ A  61  ARG:1.00:2.1:173.8:131.1:196.9:170.7:Favored:ttt180
+ A  62  TRP:1.00:60.7:293.7:118.9:::Favored:m100
+ A  63  TRP:1.00:71.2:304.6:107.6:::Favored:m100
+ A  64  CYS:1.00:30.3:61.0::::Favored:p
+ A  65  ASN:1.00:38.8:180.3:53.0:::Favored:t0
+ A  66  ASP:1.00:55.2:63.9:6.7:::Favored:p0
+ A  68  ARG:1.00:4.9:61.0:167.3:206.9:198.7:Favored:ptt180
+ A  69  THR:1.00:17.8:309.2::::Favored:m
+ A  70  PRO:1.00:52.6:327.9:38.5:330.5::Favored:Cg_exo
+ A  72  SER:1.00:88.4:69.3::::Favored:p
+ A  73  ARG:1.00:52.4:302.7:285.3:291.7:276.7:Favored:mmm-85
+ A  74  ASN:1.00:39.9:177.3:11.9:::Favored:t0
+ A  75  LEU:1.00:70.9:293.7:180.0:::Favored:mt
+ A  76  CYS:1.00:88.7:293.3::::Favored:m
+ A  77  ASN:1.00:64.1:307.0:302.8:::Favored:m-40
+ A  78  ILE:1.00:3.6:47.0:160.7:::Favored:pt
+ A  79  PRO:1.00:43.8:24.4:331.2:21.3::Favored:Cg_endo
+ A  80  CYS:1.00:63.9:300.0::::Favored:m
+ A  81  SER:1.00:94.1:64.2::::Favored:p
+ A  83  LEU:1.00:71.3:303.7:177.8:::Favored:mt
+ A  84  LEU:1.00:48.0:305.5:183.3:::Favored:mt
+ A  85  SER:1.00:42.8:175.4::::Favored:t
+ A  86  SER:1.00:54.7:57.1::::Favored:p
+ A  87  ASP:1.00:9.8:183.1:304.4:::Favored:t0
+ A  88  ILE:1.00:17.7:71.1:176.8:::Favored:pt
+ A  89  THR:1.00:97.8:300.0::::Favored:m
+ A  91  SER:1.00:3.4:279.2::::Favored:m
+ A  92  VAL:1.00:42.5:168.2::::Favored:t
+ A  93  ASN:1.00:89.9:292.1:347.2:::Favored:m-40
+ A  94  CYS:1.00:42.4:186.1::::Favored:t
+ A  96  LYS:1.00:96.4:290.4:179.4:181.2:183.7:Favored:mttt
+ A  97  LYS:1.00:4.3:273.3:210.2:150.3:189.6:Favored:mttt
+ A  98  ILE:1.00:93.7:295.8:168.9:::Favored:mt
+ A  99  VAL:1.00:3.3:74.0::::Favored:p
+ A 100  SER:1.00:50.7:301.1::::Favored:m
+ A 101  ASP:1.00:27.0:192.8:56.7:::Favored:t70
+ A 103  ASN:1.00:81.8:300.2:320.0:::Favored:m-40
+ A 105  MET:1.00:44.5:284.1:193.8:74.6::Favored:mtp
+ A 106  ASN:1.00:68.3:296.0:283.8:::Favored:m-40
+ A 108  TRP:1.00:30.7:289.2:273.3:::Favored:m-90
+ A 109  VAL:1.00:86.9:173.8::::Favored:t
+ A 111  TRP:1.00:86.8:175.9:83.3:::Favored:t60
+ A 112  ARG:1.00:49.3:178.6:160.9:59.4:72.3:Favored:ttp80
+ A 113  ASN:1.00:88.9:295.8:324.0:::Favored:m-40
+ A 114  ARG:1.00:54.1:303.8:176.8:77.8:171.5:Favored:mtp180
+ A 115  CYS:1.00:65.9:299.7::::Favored:m
+ A 116  LYS:1.00:53.6:191.6:185.0:196.1:170.7:Favored:tttt
+ A 118  THR:1.00:22.2:71.7::::Favored:p
+ A 119  ASP:1.00:48.8:184.2:9.1:::Favored:t0
+ A 120  VAL:1.00:6.0:288.2::::Favored:m
+ A 121  GLN:1.00:12.9:190.1:271.6:350.0::Favored:tm-30
+ A 123  TRP:1.00:99.7:292.1:97.7:::Favored:m100
+ A 124  ILE:1.00:42.6:61.5:174.5:::Favored:pt
+ A 125  ARG:1.00:19.4:191.8:158.1:305.7:154.7:Favored:ttm170
+ A 127  CYS:1.00:54.4:302.6::::Favored:m
+ A 128  ARG:1.00:31.0:182.8:176.0:197.3:94.0:Favored:ttt90
+ A 129  LEU:1.00:43.4:284.2:165.5:::Favored:mt
+SUMMARY: 1.90% outliers (Goal: < 0.3%)

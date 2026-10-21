@@ -1,0 +1,62 @@
+Starting phenix.python
+on Wed Oct 21 17:26:29 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/7KR0.d/7KR0/model/7KR0_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/7KR0.d/7KR0/model/7KR0_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/7KR0.d/7KR0/model/7KR0_S0001.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 2.74 seconds
+wall clock time: 3.91 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A  42 ATYR  OH   A 201  HOH  O   :0.840
+ A  66 AASP  OD2  A 202  HOH  O   :0.713
+ A 168 BPHE  CD1  A 222  HOH  O   :0.699
+ A 168 BPHE  CE1  A 487  HOH  O   :0.612
+ A 168 BPHE  HD1  A 222  HOH  O   :0.593
+ A  42 BTYR  HD2  S 513  HOH O    :0.482
+ A  20 AASN  HA   A 155 AVAL  O   :0.479
+ A 110 ALYS  NZ   A 218  HOH  O   :0.471
+ A  40 AASN  CG   S 513  HOH O    :0.465
+ A  20 BASN  HA   A 155 BVAL  O   :0.452
+ A 136 BPRO  CG   A 488  HOH  O   :0.452
+ A  30 BVAL  CG2  A  32 BPRO  HD3 :0.446
+ A 144  VAL HG21  A 168 BPHE  CE1 :0.439
+ A 124 BALA  O    A 153  LEU  HA  :0.434
+ A 156 BPHE  C    A 156 BPHE  CD1 :0.432
+ A 136 BPRO  HG2  A 488  HOH  O   :0.426
+ A 168 BPHE  HE1  A 487  HOH  O   :0.426
+ A 120 AGLU  CG   A 297  HOH  O   :0.415
+ A  30 BVAL HG22  A  32 BPRO  HD3 :0.407
+ A 121 AVAL  HA   A 150  ASN  O   :0.402
+ A 141 BARG  CZ   A 352  HOH  O   :0.402
+clashscore = 5.27

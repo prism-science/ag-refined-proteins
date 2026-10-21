@@ -31,8 +31,8 @@ phenix.model_vs_data targets/7KR0/model/7KR0_S0053.pdb targets/7KR0/data/7KR0_da
 ```
 
 Expect a value a few 10⁻⁴ below the card's: Phenix rejects outliers and reports its own scales; the gate keeps every
-reflection. Both the released model and the deposited model (`deposited/7KR0.cif`, on the same files) move by the same
-offset. The flags file carries the deposition's flags unchanged; `data/prep.json` has the checksums of the source file
+reflection. Both the released model and the baseline (`model/7KR0_S0001.pdb`, the deposited model after the common recipe, on
+the same files) move by the same offset; so does the deposited model (`deposited/7KR0.cif`). The flags file carries the deposition's flags unchanged; `data/prep.json` has the checksums of the source file
 and the counts.
 
 ### Geometry

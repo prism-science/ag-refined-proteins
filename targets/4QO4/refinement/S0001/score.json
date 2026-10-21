@@ -1,0 +1,398 @@
+{
+ "after": {
+  "altlocs": "",
+  "angle_rmsd": 1.296,
+  "bond_rmsd": 0.011,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0648,
+  "clashscore": 2.56,
+  "clashscore_mmtbx": 2.5641,
+  "copies": 1,
+  "dihedral_rmsd": 16.9238,
+  "gap": 0.06538663654993807,
+  "geometry": {
+   "angle": {
+    "max": 8.9896,
+    "mean": 1.297,
+    "min": 0.0007,
+    "n": 1064,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 2.6246,
+    "mean": 0.6454,
+    "min": 0.0006,
+    "n": 1064,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0846,
+    "mean": 0.0114,
+    "min": 0.0,
+    "n": 785,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 3.3849,
+    "mean": 0.4816,
+    "min": 0.0003,
+    "n": 785,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.0,
+    "disfavored": 1.2346,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "ASN   79 ",
+       "CaBLAM Outlier",
+       0.0048,
+       0.3802,
+       "",
+       0.0226,
+       0.0,
+       0.0025,
+       "ERROR",
+       [
+        23.73,
+        -22.247,
+        15.083
+       ]
+      ]
+     ]
+    },
+    "outliers": 1.2346
+   },
+   "chirality": {
+    "max": 0.2577,
+    "mean": 0.0648,
+    "min": 0.0003,
+    "n": 122,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 2.5641
+   },
+   "dihedral": {
+    "max": 63.0689,
+    "mean": 16.9238,
+    "min": 0.0233,
+    "n": 326,
+    "outliers": [
+     [
+      232,
+      233,
+      243,
+      244
+     ]
+    ]
+   },
+   "molprobity_score": 1.3316,
+   "nonbonded": {
+    "max": 4.9,
+    "mean": 4.1236,
+    "min": 2.2935,
+    "n": 8330
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0652,
+    "mean": 0.0096,
+    "min": 0.0,
+    "n": 126,
+    "protein_planes_max_dev": [
+     {
+      "id": " ARG A  97 ",
+      "max_dev": 0.0044,
+      "mean_dev": 0.0013,
+      "resname": "ARG"
+     },
+     {
+      "id": " TYR A  56 ",
+      "max_dev": 0.0237,
+      "mean_dev": 0.007,
+      "resname": "TYR"
+     },
+     {
+      "id": " PHE A  91 ",
+      "max_dev": 0.0262,
+      "mean_dev": 0.0074,
+      "resname": "PHE"
+     },
+     {
+      "id": " HIS A  96 ",
+      "max_dev": 0.0053,
+      "mean_dev": 0.0023,
+      "resname": "HIS"
+     }
+    ]
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 1.1765,
+    "favored": 98.8235,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 3.6145,
+    "favored": 93.9759,
+    "outliers": 2.4096,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 5.76,
+   "Cl": 2.56,
+   "Mp": 1.33,
+   "Rf": 30.97,
+   "Rw": 24.43,
+   "ang": null,
+   "avangle": 0.416523,
+   "avbond": 0.232019,
+   "avchir": 0.104884,
+   "avnb": 1.07342,
+   "avomega": 2.49133,
+   "avplane": 0.137501,
+   "avrama": 0.433632,
+   "avrot": 3.11002,
+   "avtor": 0.924931,
+   "bond": null,
+   "chir": null,
+   "energy": 82.2291,
+   "nb_e": 18.6604,
+   "om": 21.26,
+   "ra": 3.53941,
+   "ro": 99.0,
+   "score": 292.044,
+   "vdw": 0.0,
+   "wang": 6.89,
+   "wbond": 11.5,
+   "wchir": 1.66,
+   "wdihe": 18.1,
+   "wplane": 5.1076
+  },
+  "holton_score": 292.044,
+  "holton_we": 82.2291,
+  "model": "/home/dev/runs/hr/T40560e/pending/first_refinement/cand_s2.pdb",
+  "n_anisou": 0,
+  "n_atoms": 844,
+  "n_free": 528,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 767,
+  "n_reflections": 10811,
+  "n_residues_nonwater": 90,
+  "n_water_atoms": 77,
+  "n_water_iso": 77,
+  "n_work": 10283,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "planarity_rmsd": 0.0096,
+  "r_free": 0.3097134476920511,
+  "r_free_report": 0.26252280455801486,
+  "r_free_select": 0.3591475281776959,
+  "r_work": 0.24432681114211305,
+  "rama_favored_pct": 98.8235,
+  "rama_outliers_pct": 0.0,
+  "rota_pct": 2.41,
+  "rota_pct_mmtbx": 2.4096,
+  "scored_utc": "2026-10-19T06:45:36Z",
+  "sha256": "88bedb4c4c0aaca1d228ee64c501304706128fa86fba058728e566c8805f9406",
+  "water_occ_sum": 64.5
+ },
+ "median": {
+  "altlocs": "",
+  "angle_rmsd": 1.296,
+  "bond_rmsd": 0.011,
+  "copies": 1,
+  "gap": 0.06538663654993807,
+  "holton_we": null,
+  "model": "/home/dev/runs/hr/T40560e/pending/first_refinement/cand_s2.pdb",
+  "n_anisou": 0,
+  "n_atoms": 844,
+  "n_free": 528,
+  "n_h": 0,
+  "n_nonwater_iso_heavy": 767,
+  "n_reflections": 10811,
+  "n_residues_nonwater": 90,
+  "n_water_atoms": 77,
+  "n_water_iso": 77,
+  "n_work": 10283,
+  "r_free": 0.3097134476920511,
+  "r_free_report": 0.26252280455801486,
+  "r_free_select": 0.3591475281776959,
+  "r_work": 0.24432681114211305,
+  "scored_utc": "2026-10-19T06:45:36Z",
+  "seed": 2,
+  "sha256": "88bedb4c4c0aaca1d228ee64c501304706128fa86fba058728e566c8805f9406",
+  "water_occ_sum": 64.5
+ },
+ "noise_floor": {
+  "mean_r_free": 0.30912030323883344,
+  "median_seed": 2,
+  "n_seeds": 3,
+  "seeds": [
+   {
+    "gap": 0.061681789812241705,
+    "r_free": 0.30648171656935025,
+    "r_work": 0.24479992675710854,
+    "seed": 1,
+    "sha256": "fd5d13535057b4f7e45d04d3592a0855586ce3b91cd1c6d9c2ed22dc51893085"
+   },
+   {
+    "gap": 0.06538663654993807,
+    "r_free": 0.3097134476920511,
+    "r_work": 0.24432681114211305,
+    "seed": 2,
+    "sha256": "88bedb4c4c0aaca1d228ee64c501304706128fa86fba058728e566c8805f9406"
+   },
+   {
+    "gap": 0.06543249823304312,
+    "r_free": 0.311165745455099,
+    "r_work": 0.2457332472220559,
+    "seed": 3,
+    "sha256": "b6a6d491a208fb8233f5f41c3d28d8c2b8a7933bfad62332aafc6a2a4a77b83f"
+   }
+  ],
+  "sigma_gap": 0.002152355543029823,
+  "sigma_r_free": 0.0023976857399207563,
+  "sigma_r_work": 0.0007156567988460067
+ },
+ "rows": [
+  {
+   "altlocs": "",
+   "angle_rmsd": 1.4,
+   "bond_rmsd": 0.012,
+   "copies": 1,
+   "gap": 0.061681789812241705,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T40560e/pending/first_refinement/cand_s1.pdb",
+   "n_anisou": 0,
+   "n_atoms": 847,
+   "n_free": 528,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 767,
+   "n_reflections": 10811,
+   "n_residues_nonwater": 90,
+   "n_water_atoms": 80,
+   "n_water_iso": 80,
+   "n_work": 10283,
+   "r_free": 0.30648171656935025,
+   "r_free_report": 0.2581374992820654,
+   "r_free_select": 0.35712421198114563,
+   "r_work": 0.24479992675710854,
+   "scored_utc": "2026-10-19T06:45:36Z",
+   "seed": 1,
+   "sha256": "fd5d13535057b4f7e45d04d3592a0855586ce3b91cd1c6d9c2ed22dc51893085",
+   "water_occ_sum": 67.48
+  },
+  {
+   "altlocs": "",
+   "angle_rmsd": 1.296,
+   "bond_rmsd": 0.011,
+   "copies": 1,
+   "gap": 0.06538663654993807,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T40560e/pending/first_refinement/cand_s2.pdb",
+   "n_anisou": 0,
+   "n_atoms": 844,
+   "n_free": 528,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 767,
+   "n_reflections": 10811,
+   "n_residues_nonwater": 90,
+   "n_water_atoms": 77,
+   "n_water_iso": 77,
+   "n_work": 10283,
+   "r_free": 0.3097134476920511,
+   "r_free_report": 0.26252280455801486,
+   "r_free_select": 0.3591475281776959,
+   "r_work": 0.24432681114211305,
+   "scored_utc": "2026-10-19T06:45:36Z",
+   "seed": 2,
+   "sha256": "88bedb4c4c0aaca1d228ee64c501304706128fa86fba058728e566c8805f9406",
+   "water_occ_sum": 64.5
+  },
+  {
+   "altlocs": "",
+   "angle_rmsd": 1.305,
+   "bond_rmsd": 0.012,
+   "copies": 1,
+   "gap": 0.06543249823304312,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T40560e/pending/first_refinement/cand_s3.pdb",
+   "n_anisou": 0,
+   "n_atoms": 844,
+   "n_free": 528,
+   "n_h": 0,
+   "n_nonwater_iso_heavy": 767,
+   "n_reflections": 10811,
+   "n_residues_nonwater": 90,
+   "n_water_atoms": 77,
+   "n_water_iso": 77,
+   "n_work": 10283,
+   "r_free": 0.311165745455099,
+   "r_free_report": 0.2605621808424782,
+   "r_free_select": 0.3641749972852904,
+   "r_work": 0.2457332472220559,
+   "scored_utc": "2026-10-19T06:45:37Z",
+   "seed": 3,
+   "sha256": "b6a6d491a208fb8233f5f41c3d28d8c2b8a7933bfad62332aafc6a2a4a77b83f",
+   "water_occ_sum": 64.64
+  }
+ ]
+}

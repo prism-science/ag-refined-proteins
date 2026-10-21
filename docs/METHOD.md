@@ -23,7 +23,9 @@ every choice):
 
 The model is anonymised (atoms only, no header) and refined with the common recipe and three seeds. The standard
 deviation of R-free over the seeds is the run's noise floor σ. These are steps S0000 (the deposited model scored on
-the working data) and S0001 (the median seed).
+the working data) and S0001 (the median seed). S0001 is the baseline of every comparison in this release: a gain is
+counted only above what the common recipe alone gives the deposited model (operator, meeting of 2026-10-21). S0000 is
+on each card for reference.
 
 ## The common recipe
 

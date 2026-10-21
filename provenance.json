@@ -8,55 +8,64 @@
  },
  "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "exported_at": "2026-10-21T16:52:57Z",
+ "exported_at": "2026-10-21T17:32:18Z",
  "released": {
   "7KR0": {
    "run_handle": "Tff1b3f",
    "step": "S0053",
    "utc": "2026-10-18T23:06:47Z",
-   "vault_last_read": "S0011 (R-vault 0.07692, R-free 0.08086)"
+   "vault_last_read": "S0011 (R-vault 0.07692, R-free 0.08086)",
+   "rerefined_r_free_S0001": 0.10945
   },
   "3TC7": {
    "run_handle": "T431c8e_gap",
    "step": "S0061",
    "utc": "2026-10-21T01:52:30Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.18555
   },
   "1LZ8": {
    "run_handle": "Tee73c5",
    "step": "S0073",
    "utc": "2026-10-20T07:22:22Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.27121
   },
   "4QO4": {
    "run_handle": "T40560e",
    "step": "S0064",
    "utc": "2026-10-20T08:38:01Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.30971
   },
   "3QUE": {
    "run_handle": "T9884ae",
    "step": "S0057",
    "utc": "2026-10-21T03:58:49Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.28528
   },
   "9ARN": {
    "run_handle": "Tba97f6",
    "step": "S0062",
    "utc": "2026-10-20T02:10:55Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.29704
   },
   "7R2H": {
    "run_handle": "Ta4f3f9",
    "step": "S0019",
    "utc": "2026-10-21T04:20:51Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.13549
   },
   "8C5N": {
    "run_handle": "T5f59f1",
    "step": "S0027",
    "utc": "2026-10-21T14:13:07Z",
-   "vault_last_read": "never in this run"
+   "vault_last_read": "never in this run",
+   "rerefined_r_free_S0001": 0.12939
   }
- }
+ },
+ "baseline": "S0001: the deposited model after the common recipe (phenix.refine, 10 macro-cycles, three seeds, the median); every comparison in the cards and the README is against it (operator, meeting of 2026-10-21)"
 }

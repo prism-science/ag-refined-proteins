@@ -1,0 +1,103 @@
+Starting phenix.python
+on Wed Oct 21 17:26:29 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/3QUE.d/3QUE/model/3QUE_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/3QUE.d/3QUE/model/3QUE_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/3QUE.d/3QUE/model/3QUE_S0001.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 2.30 seconds
+wall clock time: 4.28 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+No H/D atoms detected - forcing hydrogen addition!
+
+
+Adding H/D atoms with reduce...
+
+Bad Clashes >= 0.4 Angstrom:
+ A  84  ILE HD11  A 106  THR HG21 :0.943
+ A 117  VAL HG23  A 119  CYS  H   :0.852
+ A 259  ILE  HA   A 262  LEU HD12 :0.849
+ A 353  LEU  H    A 353  LEU HD23 :0.732
+ A 245  GLU  HB3  S 641  HOH O    :0.669
+ A 161  ASP  HB3  A 163  GLU  HG3 :0.640
+ A  69  TYR  CZ   A  73  ARG  HD2 :0.603
+ A 112  ASP  OD1  A 114  ASN  HB3 :0.596
+ A  73  ARG HH22  A 324  ASP  HB3 :0.596
+ A 195  LEU HD11  A1000  BOG H5'2 :0.589
+ A 194  MET  CE   A 231  GLN  HG2 :0.587
+ A  69  TYR  OH   A  73  ARG  HD2 :0.567
+ A 244  ALA  O    A 248  LYS  HG3 :0.556
+ A 193  ILE HG12  A 200  TYR  CE2 :0.555
+ A  69  TYR  CE1  A 340  LEU  HB3 :0.548
+ A  12  GLU  OE2  A  15  LYS  HA  :0.530
+ A  81  GLU  HG3  A 136  ARG HH12 :0.528
+ A 113  LEU  HA   A 116  ILE HG22 :0.526
+ A 129  PHE  O    A 133  GLN  HG3 :0.526
+ A 120  GLN  HG2  A 121  LYS  N   :0.510
+ A 107  HIS  HB3  S 622  HOH O    :0.503
+ A  77  HIS  HB3  A  78  MET  HE2 :0.501
+ A 147  ILE HG22  A 149  ARG  HG3 :0.495
+ A  19  GLU  HG2  A  92  PRO  HB3 :0.492
+ A 194  MET  HE3  A 231  GLN  HG2 :0.490
+ A  11  GLN  NE2  A  13  LEU HD21 :0.489
+ A  54  LYS  HB2  A 103  TYR  CE2 :0.488
+ A 270  PHE  HB2  A 286  GLU  OE2 :0.487
+ A  57  ARG  HD3  A  60  GLN  OE1 :0.481
+ A  95  SER  OG   A  98  GLU  HG2 :0.480
+ A 268  MET  HE3  A 273  VAL HG21 :0.479
+ A  21  PRO  HD3  A  90  PHE  CE2 :0.462
+ A  10  ARG  HA   A  18  TRP  O   :0.461
+ A  64  HIS  CE1  A  67  ARG HH22 :0.459
+ A 238  LEU  HA   A 268  MET  HG3 :0.459
+ A 190  ALA  HB1  A 192  GLU  OE1 :0.456
+ A 230  ASP  O    A 234  LEU  HG  :0.452
+ A 241  THR HG21  A 264  GLN  HA  :0.451
+ A 291  LEU  HA   A 291  LEU HD23 :0.447
+ A 323  TYR  CE2  A 325  GLN  HG2 :0.444
+ A  62  ILE HG12  A 334  ILE HG13 :0.442
+ A  94  ARG  HE   A  98  GLU  CD  :0.439
+ A 291  LEU  O    A1000  BOG H2'2 :0.437
+ A  84  ILE HD11  A 106  THR  CG2 :0.436
+ A  95  SER  HB2  A  97  GLU  HG2 :0.430
+ A 101  ASP  HA   A 374  HOH  O   :0.427
+ A 189  ARG  HA   S 385  HOH O    :0.427
+ A 120  GLN  HG2  A 121  LYS  O   :0.424
+ A 346  ILE  HA   A 346  ILE HD13 :0.424
+ A 291  LEU  HB2  A 366  HOH  O   :0.423
+ A 327  PHE  HB3  S 386  HOH O    :0.420
+ A  81  GLU  H    A  81  GLU  HG2 :0.420
+ A   8  PHE  HA   A  20  VAL  O   :0.417
+ A  18  TRP  HZ3  A  52  VAL HG22 :0.413
+ A 153  PRO  HA   A 156  LEU HD12 :0.410
+ A  11  GLN HE21  A  13  LEU HD21 :0.405
+ A 116  ILE HD11  S 536  HOH O    :0.404
+ A  22  GLU  H    A  22  GLU  HG2 :0.404
+ A 173  ARG  NH1  A 175  THR  HA  :0.402
+clashscore = 10.40

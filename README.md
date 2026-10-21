@@ -15,25 +15,45 @@ is a dated snapshot of the model in force on each target.
 
 Every model is scored on the R-free flags inherited unchanged from its deposition, by the harness gate (a fresh cctbx
 fmodel on the working data, every reflection, no outlier rejection), so the numbers in a row are on the same held-out
-reflections. "Full" is the whole free set; "report" is the half the gate never consults for a decision.
+reflections. "Full" is the whole free set; "report" is one half of it, listed as a check that the gains are not on one
+half only. **The baseline of every comparison is the re-refined deposited model**: S0001, the deposited model after the
+harness's common recipe (phenix.refine, 10 macro-cycles, three seeds, the median). What plain re-refinement gives is
+not credited to the agent. The deposited model as scored (S0000) is on each card for reference.
 
 <!-- results-table:begin -->
-| Target | Res. (Å) | Entry | Deposited, our flags (full / report) | This release (full / report) | Δ full | Gap (deposited → ours) | Clashscore, rotamer outliers % (deposited → ours) | Model | Status |
+| Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| [8C5N](targets/8C5N/README.md) | 0.75 | Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa | 0.1571 / 0.1582 | **0.0908 / 0.0910** | −0.0663 | 0.0092 → 0.0233 | 7.0, 2.3 → 8.8, 1.3 | six-copy ensemble, step S0027 | improved |
-| [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K) | 0.1175 / 0.1189 | **0.0726 / 0.0740** | −0.0449 | 0.0071 → 0.0259 | 4.3, 0.9 → 7.7, 1.5 | six-copy ensemble, step S0053 | improved |
-| [7R2H](targets/7R2H/README.md) | 0.79 | Cyclophilin D with DMSO | 0.1551 / 0.1589 | **0.0993 / 0.1001** | −0.0559 | 0.0106 → 0.0300 | 0.0, 0.0 → 7.8, 1.0 | six-copy ensemble, step S0019 | improved |
-| [9ARN](targets/9ARN/README.md) | 1.41 | HIV-1 gp41 CHR-NHR reverse hairpin construct | 0.2944 / 0.2941 | **0.2769 / 0.2856** | −0.0175 | 0.0402 → 0.0380 | 1.6, 0.0 → 1.6, 0.0 | single model, step S0062 | improved |
-| [3TC7](targets/3TC7/README.md) | 1.5 | Engineered protein, NESG target OR62 | 0.1918 / 0.1932 | **0.1475 / 0.1466** | −0.0444 | 0.0382 → 0.0668 | 2.9, 1.4 → 6.8, 2.7 | six-copy ensemble, step S0061 | improved |
-| [1LZ8](targets/1LZ8/README.md) | 1.53 | Hen egg-white lysozyme, phased on the anomalous signal of S and Cl | 0.2826 / 0.2803 | **0.2408 / 0.2375** | −0.0418 | 0.0802 → 0.0746 | 5.1, 1.9 → 1.3, 0.5 | two-copy ensemble, step S0073 | improved |
-| [4QO4](targets/4QO4/README.md) | 1.7 | MDM2 (17-111) with compound 16 | 0.3133 / 0.2909 | **0.2747 / 0.2625** | −0.0386 | 0.0502 → 0.0518 | 16.0, 6.0 → 7.3, 3.5 | single model, step S0064 | improved |
-| [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP kinase with Skepinone-L | 0.2901 / 0.2883 | **0.2642 / 0.2585** | −0.0259 | 0.0670 → 0.0518 | 10.6, 7.6 → 6.3, 3.6 | single model, step S0057 | improved |
+| [8C5N](targets/8C5N/README.md) | 0.75 | Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa | 0.1294 / 0.1286 | **0.0908 / 0.0910** | −0.0386 | 0.1247 → 0.0675 | 0.0046 → 0.0233 | six-copy ensemble, step S0027 | improved |
+| [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K) | 0.1095 / 0.1104 | **0.0726 / 0.0740** | −0.0369 | 0.1005 → 0.0467 | 0.0089 → 0.0259 | six-copy ensemble, step S0053 | improved |
+| [7R2H](targets/7R2H/README.md) | 0.79 | Cyclophilin D with DMSO | 0.1355 / 0.1365 | **0.0993 / 0.1001** | −0.0362 | 0.1243 → 0.0693 | 0.0112 → 0.0300 | six-copy ensemble, step S0019 | improved |
+| [9ARN](targets/9ARN/README.md) | 1.41 | HIV-1 gp41 CHR-NHR reverse hairpin construct | 0.2970 / 0.3157 | **0.2769 / 0.2856** | −0.0201 | 0.2346 → 0.2389 | 0.0624 → 0.0380 | single model, step S0062 | improved |
+| [3TC7](targets/3TC7/README.md) | 1.5 | Engineered protein, NESG target OR62 | 0.1856 / 0.1836 | **0.1475 / 0.1466** | −0.0381 | 0.1412 → 0.0806 | 0.0443 → 0.0668 | six-copy ensemble, step S0061 | improved |
+| [1LZ8](targets/1LZ8/README.md) | 1.53 | Hen egg-white lysozyme, phased on the anomalous signal of S and Cl | 0.2712 / 0.2659 | **0.2408 / 0.2375** | −0.0304 | 0.2048 → 0.1662 | 0.0664 → 0.0746 | two-copy ensemble, step S0073 | improved |
+| [4QO4](targets/4QO4/README.md) | 1.7 | MDM2 (17-111) with compound 16 | 0.3097 / 0.2625 | **0.2747 / 0.2625** | −0.0350 | 0.2443 → 0.2229 | 0.0654 → 0.0518 | single model, step S0064 | improved |
+| [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP kinase with Skepinone-L | 0.2853 / 0.2869 | **0.2642 / 0.2585** | −0.0211 | 0.1895 → 0.2124 | 0.0958 → 0.0518 | single model, step S0057 | improved |
 <!-- results-table:end -->
+
+Geometry, re-refined → this release (phenix.clashscore with hydrogens kept, rotalyze, ramalyze, the bond and angle
+RMSDs of the gate's geometry summary, and the MolProbity score from clashscore, rotamer outliers and Ramachandran
+favoured):
+
+<!-- geometry-table:begin -->
+| Target | Clashscore | Rotamer outliers % | Ramachandran outliers % | Ramachandran favoured % | Bond RMSD (Å) | Angle RMSD (°) | MolProbity score |
+|---|---|---|---|---|---|---|---|
+| [8C5N](targets/8C5N/README.md) | 4.8 → 8.8 | 1.75 → 1.26 | 0.0 → 0.0 | 99.5 → 98.4 | 0.007 → 0.010 | 1.00 → 1.19 | 1.44 → 1.55 |
+| [7KR0](targets/7KR0/README.md) | 5.3 → 7.7 | 1.33 → 1.54 | 0.0 → 0.0 | 98.8 → 97.0 | 0.008 → 0.007 | 1.10 → 0.99 | 1.38 → 1.74 |
+| [7R2H](targets/7R2H/README.md) | 4.3 → 7.8 | 0.00 → 0.99 | 0.0 → 0.0 | 96.9 → 93.8 | 0.008 → 0.009 | 1.07 → 1.10 | 1.40 → 1.84 |
+| [9ARN](targets/9ARN/README.md) | 3.2 → 1.6 | 3.03 → 0.00 | 0.0 → 0.0 | 100.0 → 100.0 | 0.010 → 0.004 | 1.03 → 0.52 | 1.48 → 0.91 |
+| [3TC7](targets/3TC7/README.md) | 1.7 → 6.8 | 1.36 → 2.74 | 0.0 → 0.4 | 98.0 → 97.2 | 0.010 → 0.015 | 1.17 → 1.40 | 1.03 → 1.86 |
+| [1LZ8](targets/1LZ8/README.md) | 4.1 → 1.3 | 1.90 → 0.48 | 0.0 → 0.0 | 97.6 → 93.7 | 0.011 → 0.005 | 1.15 → 0.75 | 1.48 → 1.27 |
+| [4QO4](targets/4QO4/README.md) | 2.6 → 7.3 | 2.41 → 3.53 | 0.0 → 0.0 | 98.8 → 95.6 | 0.011 → 0.016 | 1.30 → 1.63 | 1.33 → 2.13 |
+| [3QUE](targets/3QUE/README.md) | 10.4 → 6.3 | 12.87 → 3.63 | 0.3 → 0.3 | 93.8 → 96.8 | 0.013 → 0.006 | 1.44 → 1.26 | 2.79 → 1.98 |
+<!-- geometry-table:end -->
 
 Status meanings:
 
-- **improved**: the model in force has a lower full R-free than the deposited model on the same flags, through steps
-  the gate accepted one by one against a paired control.
+- **improved**: the model in force has a lower full R-free than the re-refined deposited model (S0001) on the same
+  flags, through steps the gate accepted one by one against a paired control.
 
 ## What is in a target directory
 
@@ -41,6 +61,7 @@ Status meanings:
 targets/<ID>/
   README.md                 the card: the two models on the same flags, what the model is, caveats, files, reproduction
   model/<ID>_<step>.pdb     the released model (occupancies at four decimals) and .cif (mmCIF)
+  model/<ID>_S0001.pdb      the re-refined deposited model, the baseline of every comparison
   maps/<ID>_<step>_map_coeffs.mtz   2mFo-DFc and mFo-DFc coefficients from the work reflections only
   data/<ID>_data.mtz        the working data: the deposited structure factors without the vault (2 % of the work set)
   data/<ID>_flags.mtz       the inherited free flags (column R-free-flags, 0 = free)
@@ -52,9 +73,10 @@ targets/<ID>/
   refinement/score_history.jsonl, scorecard.csv   the same steps with every metric; the scorecard rows
   refinement/steps.md            the step table
   refinement/<step>/             the released step: FACTS.txt, change.json, score.json
+  refinement/S0001/, S0000/      the baseline step and the deposited model as scored
   refinement/metaparams.yaml, run.json   the run's fixed metaparameters and its state
   refinement/chains/             the scripts that scheduled the steps on the pod
-  validation/                    phenix.clashscore, rotalyze, ramalyze logs of the released model
+  validation/                    phenix.clashscore, rotalyze, ramalyze logs of the released model and of the baseline
 ```
 
 ## Use
@@ -83,7 +105,8 @@ read once, at the end, as the leak check.
 
 ## Caveats that apply to every target
 
-- R-free is comparable only on the same free set. Compare against the "deposited, our flags" column, never the header.
+- R-free is comparable only on the same free set. Compare against the "re-refined, our flags" column (or the card's
+  S0000 column), never the header.
 - The gate's R-free is a few 10⁻⁴ above phenix.refine's logged value for the same model (all reflections kept, fresh
   scaling). Both arms of every step carry the same offset.
 - A C-copy ensemble has C times the protein parameters of a single model. The gate's gap bound and cap are what keep

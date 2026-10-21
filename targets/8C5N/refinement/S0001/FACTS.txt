@@ -1,0 +1,1 @@
+S0001 2026-10-20T07:40:52Z preprocessing refine parent S0000 | phenix.refine 10 cycles, sites + ADP + water occupancies, ordered solvent, nqh_flips off, 3 seeds; the median seed | R-free 0.15715 -> 0.12939 (-91.1 sigma) R-work 0.14797 -> 0.12475 gap -0.0045 clash 4.8 rota 1.8 % | atoms 2676 waters 404 altlocs ABC anisou 1763 | INIT

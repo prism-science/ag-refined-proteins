@@ -1,0 +1,286 @@
+Starting phenix.ramalyze
+on Wed Oct 21 17:26:32 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  No PHIL parameters found
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb"
+  }
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 6.01 seconds
+wall clock time: 6.09 seconds
+residue:score%:phi:psi:evaluation:type
+ A  27  GLY:32.66:154.09:-170.58:Favored:Glycine
+ A  28  SER:9.66:-165.70:174.51:Favored:General
+ A  29  MET:41.30:-75.34:133.20:Favored:General
+ A  30  GLU:9.27:-107.04:-29.66:Favored:General
+ A  31  THR:29.33:-123.18:114.21:Favored:Pre-proline
+ A  32 APRO:55.91:-64.83:164.77:Favored:Cis-proline
+ A  32 BPRO:46.16:-64.83:167.13:Favored:Cis-proline
+ A  33 APRO:37.94:-67.70:136.11:Favored:Trans-proline
+ A  33 BPRO:75.76:-61.69:138.57:Favored:Trans-proline
+ A  34 ASER:13.25:-69.13:168.79:Favored:General
+ A  34 BSER:21.31:-75.68:167.74:Favored:General
+ A  35 AARG:83.55:-61.85:-47.77:Favored:General
+ A  35 BARG:83.40:-61.95:-47.77:Favored:General
+ A  36  VAL:84.98:-68.02:-42.04:Favored:Isoleucine or valine
+ A  37  TYR:72.41:-71.09:-37.63:Favored:General
+ A  38  GLY:93.10:-57.09:-44.25:Favored:Glycine
+ A  39  CYS:94.19:-64.99:-42.79:Favored:General
+ A  40  PHE:79.59:-56.30:-44.15:Favored:General
+ A  41  LEU:67.16:-65.14:-23.55:Favored:General
+ A  42  GLU:65.77:-67.13:-22.83:Favored:General
+ A  43  GLY:3.11:102.25:107.65:Favored:Glycine
+ A  44  PRO:90.23:-58.44:-30.02:Favored:Trans-proline
+ A  45 AGLU:59.98:-79.11:-11.39:Favored:General
+ A  45 BGLU:59.95:-79.11:-13.10:Favored:General
+ A  46 AASN:4.08:-149.77:59.86:Favored:Pre-proline
+ A  46 BASN:6.70:-150.53:64.70:Favored:Pre-proline
+ A  47 APRO:98.17:-60.00:145.52:Favored:Trans-proline
+ A  47 BPRO:80.58:-56.59:145.52:Favored:Trans-proline
+ A  48  LYS:4.94:-105.75:-43.29:Favored:General
+ A  49  SER:37.96:-75.50:151.60:Favored:General
+ A  50  ALA:84.13:-58.18:-41.55:Favored:General
+ A  51  ALA:82.44:-66.29:-44.81:Favored:General
+ A  52 ACYS:78.40:-68.61:-36.24:Favored:General
+ A  52 BCYS:78.72:-68.61:-36.48:Favored:General
+ A  53 ALYS:90.69:-58.79:-44.36:Favored:General
+ A  53 BLYS:83.59:-57.23:-45.77:Favored:General
+ A  54 AALA:82.62:-66.23:-36.28:Favored:General
+ A  54 BALA:82.53:-66.30:-36.28:Favored:General
+ A  55  ALA:99.57:-62.21:-42.73:Favored:General
+ A  56  VAL:82.13:-67.73:-39.48:Favored:Isoleucine or valine
+ A  57  ALA:73.17:-62.75:-32.10:Favored:General
+ A  58  ALA:22.74:-85.52:-31.43:Favored:General
+ A  59  GLY:2.45:-137.29:-1.83:Favored:Glycine
+ A  60  GLY:41.19:84.66:166.34:Favored:Glycine
+ A  61  THR:64.19:-68.96:-20.13:Favored:General
+ A  62  GLN:70.81:-61.04:-31.17:Favored:General
+ A  63  ALA:98.28:-62.33:-41.10:Favored:General
+ A  64  LEU:64.76:-73.65:-39.06:Favored:General
+ A  65  TYR:70.56:-60.65:-31.34:Favored:General
+ A  66  ASP:1.62:-96.96:34.98:Allowed:General
+ A  67 ATRP:64.51:-58.68:-27.11:Favored:General
+ A  67 BTRP:65.02:-58.68:-27.65:Favored:General
+ A  68 AASN:25.64:-90.69:10.48:Favored:General
+ A  68 BASN:48.71:-82.40:-1.03:Favored:General
+ A  69 AGLY:4.74:-119.16:33.38:Favored:Glycine
+ A  69 BGLY:5.23:-115.85:33.38:Favored:Glycine
+ A  70 AVAL:2.15:-84.50:85.72:Favored:Isoleucine or valine
+ A  70 BVAL:2.45:-84.50:88.44:Favored:Isoleucine or valine
+ A  71 AASN:17.01:-125.30:166.17:Favored:General
+ A  71 BASN:34.93:-138.46:162.26:Favored:General
+ A  72 AGLN:22.09:-133.25:121.18:Favored:General
+ A  72 BGLN:31.46:-126.61:121.18:Favored:General
+ A  73  GLY:75.70:-67.44:-30.97:Favored:Glycine
+ A  74  ASN:5.13:-118.99:34.66:Favored:General
+ A  75  ALA:59.63:-57.92:-53.31:Favored:General
+ A  76  ASN:26.73:50.81:41.63:Favored:General
+ A  77  GLY:69.75:81.09:-4.70:Favored:Glycine
+ A  78  ASN:3.62:-114.50:91.43:Favored:General
+ A  79  HIS:25.32:-84.38:-30.54:Favored:General
+ A  80  GLN:65.10:-67.85:-22.95:Favored:General
+ A  81  ALA:73.79:-62.86:-32.53:Favored:General
+ A  82  VAL:11.61:-117.74:-11.16:Favored:Isoleucine or valine
+ A  83 AVAL:48.40:-120.65:97.79:Favored:Pre-proline
+ A  83 BVAL:47.92:-120.65:98.78:Favored:Pre-proline
+ A  84 APRO:76.34:-65.39:153.85:Favored:Trans-proline
+ A  84 BPRO:27.19:-77.38:148.98:Favored:Trans-proline
+ A  85 AASP:52.63:-60.63:144.08:Favored:General
+ A  85 BASP:16.74:-53.21:144.08:Favored:General
+ A  86 AGLY:67.03:82.47:-6.81:Favored:Glycine
+ A  86 BGLY:73.50:82.47:-5.43:Favored:Glycine
+ A  87 AGLN:5.67:-129.34:21.35:Favored:General
+ A  87 BGLN:3.74:-134.24:28.50:Favored:General
+ A  88 ALEU:84.68:-58.75:-47.43:Favored:General
+ A  88 BLEU:77.36:-65.06:-47.43:Favored:General
+ A  89  CYS:66.11:-68.71:-27.63:Favored:General
+ A  90  GLY:72.70:-94.14:7.25:Favored:Glycine
+ A  91  ALA:14.03:54.08:31.58:Favored:General
+ A  92 AGLY:77.56:72.59:12.34:Favored:Glycine
+ A  92 BGLY:76.54:72.59:10.86:Favored:Glycine
+ A  93 ALYS:50.63:-103.53:131.46:Favored:General
+ A  93 BLYS:44.53:-97.38:130.40:Favored:General
+ A  94 AALA:67.84:-55.86:-36.69:Favored:General
+ A  94 BALA:71.41:-57.31:-36.69:Favored:General
+ A  95  LEU:64.68:-53.59:-39.22:Favored:General
+ A  96 APHE:19.52:-103.73:19.64:Favored:General
+ A  96 BPHE:17.30:-103.73:20.84:Favored:General
+ A  97 ALYS:66.66:-57.53:-32.02:Favored:General
+ A  97 BLYS:62.81:-55.97:-31.23:Favored:General
+ A  98 AGLY:55.62:-61.06:-18.75:Favored:Glycine
+ A  98 BGLY:66.86:-65.89:-18.75:Favored:Glycine
+ A  99  LEU:59.27:-76.12:-10.25:Favored:General
+ A 100  ASN:54.54:-94.22:-1.14:Favored:General
+ A 101  LEU:45.27:-54.35:133.63:Favored:General
+ A 102  ALA:5.54:-91.42:79.86:Favored:General
+ A 103  ARG:48.42:-125.37:149.13:Favored:General
+ A 104  SER:59.47:-83.28:-8.24:Favored:General
+ A 105  ASP:39.35:-101.45:11.30:Favored:General
+ A 106  TRP:66.37:-58.81:123.06:Favored:Pre-proline
+ A 107  PRO:49.51:-58.45:132.60:Favored:Trans-proline
+ A 108  SER:28.39:-119.41:157.35:Favored:General
+ A 109  THR:55.27:-108.45:129.45:Favored:General
+ A 110  ALA:23.85:-76.60:121.89:Favored:General
+ A 111  ILE:36.47:-126.13:156.76:Favored:Isoleucine or valine
+ A 112 AALA:21.29:-158.24:153.20:Favored:Pre-proline
+ A 112 BALA:20.30:-158.24:152.58:Favored:Pre-proline
+ A 113 APRO:52.60:-68.06:159.54:Favored:Trans-proline
+ A 113 BPRO:17.21:-57.71:159.44:Favored:Trans-proline
+ A 114 AASP:4.92:-80.14:-175.22:Favored:General
+ A 114 BASP:5.71:-83.85:-175.22:Favored:General
+ A 115  ALA:55.55:-66.92:-11.21:Favored:General
+ A 116  SER:61.55:-72.96:-15.41:Favored:General
+ A 117  GLY:81.51:91.13:-5.00:Favored:Glycine
+ A 118  ASN:17.75:-110.73:159.30:Favored:General
+ A 119  PHE:46.47:-108.00:137.16:Favored:General
+ A 120  GLN:14.58:-92.57:102.15:Favored:General
+ A 121  PHE:36.81:-76.98:147.53:Favored:General
+ A 122  VAL:38.71:-130.21:117.00:Favored:Isoleucine or valine
+ A 123 ATYR:46.85:-100.53:127.56:Favored:General
+ A 123 BTYR:46.94:-100.53:127.29:Favored:General
+ A 124 ALYS:14.16:-83.38:105.22:Favored:General
+ A 124 BLYS:17.03:-81.53:110.56:Favored:General
+ A 125 AALA:3.84:-94.60:80.87:Favored:General
+ A 125 BALA:2.39:-99.14:79.91:Favored:General
+ A 126 ASER:64.78:-68.92:-25.85:Favored:General
+ A 126 BSER:74.34:-55.14:-43.63:Favored:General
+ A 127 AALA:39.71:-130.20:91.16:Favored:Pre-proline
+ A 127 BALA:46.55:-125.22:92.81:Favored:Pre-proline
+ A 128 APRO:89.75:-58.30:146.33:Favored:Trans-proline
+ A 128 BPRO:46.21:-70.60:143.23:Favored:Trans-proline
+ A 129 AHIS:34.15:-148.67:150.98:Favored:General
+ A 129 BHIS:41.11:-142.56:150.98:Favored:General
+ A 130  ALA:28.60:-51.26:132.26:Favored:General
+ A 131 ATHR:57.00:-117.10:131.06:Favored:General
+ A 131 BTHR:55.88:-117.10:129.28:Favored:General
+ A 132 AARG:10.05:-85.18:-47.51:Favored:General
+ A 132 BARG:4.00:-79.43:-56.89:Favored:General
+ A 133 ATYR:19.37:-164.37:159.15:Favored:General
+ A 133 BTYR:36.82:-157.57:159.15:Favored:General
+ A 134  PHE:29.38:-110.68:115.33:Favored:General
+ A 135  ASP:34.48:-105.16:142.70:Favored:General
+ A 136  PHE:20.52:-123.91:114.96:Favored:General
+ A 137  TYR:16.40:-102.50:158.17:Favored:General
+ A 138  ILE:37.53:-131.98:144.33:Favored:Isoleucine or valine
+ A 139  THR:50.12:-61.82:146.26:Favored:General
+ A 140  LYS:39.08:-65.56:154.30:Favored:General
+ A 141  ASP:18.81:-51.44:139.90:Favored:General
+ A 142  GLY:87.41:82.82:-1.90:Favored:Glycine
+ A 143 ATYR:20.17:-57.39:124.80:Favored:General
+ A 143 BTYR:7.44:-57.39:120.00:Favored:General
+ A 144 AASN:67.00:-94.07:116.90:Favored:Pre-proline
+ A 144 BASN:64.19:-89.72:124.34:Favored:Pre-proline
+ A 145 APRO:23.54:-69.43:-8.41:Favored:Trans-proline
+ A 145 BPRO:22.44:-72.63:-8.41:Favored:Trans-proline
+ A 146  GLU:33.47:-77.12:-2.28:Favored:General
+ A 147  LYS:43.82:-93.32:128.15:Favored:Pre-proline
+ A 148  PRO:60.93:-54.62:134.20:Favored:Trans-proline
+ A 149  LEU:28.09:-72.92:125.65:Favored:General
+ A 150  ALA:25.15:-120.41:159.41:Favored:General
+ A 151 ATRP:69.68:-57.81:-34.46:Favored:General
+ A 151 BTRP:70.03:-57.81:-34.79:Favored:General
+ A 152 ASER:62.29:-70.96:-14.22:Favored:General
+ A 152 BSER:27.99:-77.05:-1.25:Favored:General
+ A 153 AASP:59.75:-80.44:-10.23:Favored:General
+ A 153 BASP:51.65:-87.76:-10.23:Favored:General
+ A 154  LEU:24.27:-99.75:148.55:Favored:General
+ A 155 AGLU:81.52:-58.49:143.13:Favored:Pre-proline
+ A 155 BGLU:75.67:-58.49:145.60:Favored:Pre-proline
+ A 156 APRO:89.16:-59.63:-37.27:Favored:Trans-proline
+ A 156 BPRO:0.90:-47.30:-60.38:Allowed:Trans-proline
+ A 157 AALA:28.84:-101.27:144.58:Favored:Pre-proline
+ A 157 BALA:29.31:-92.14:144.58:Favored:Pre-proline
+ A 158  PRO:79.89:-66.98:147.28:Favored:Trans-proline
+ A 159  PHE:48.25:-81.36:-17.68:Favored:General
+ A 160 ACYS:26.60:-144.66:137.39:Favored:General
+ A 160 BCYS:23.25:-144.66:134.13:Favored:General
+ A 161 ASER:6.15:-140.23:109.46:Favored:General
+ A 161 BSER:26.94:-130.35:121.93:Favored:General
+ A 162 AILE:51.10:-101.90:120.11:Favored:Isoleucine or valine
+ A 162 BILE:61.99:-112.68:120.11:Favored:Isoleucine or valine
+ A 163  THR:17.43:-111.32:2.03:Favored:General
+ A 164  SER:13.37:-139.53:119.40:Favored:General
+ A 165  VAL:36.11:-130.03:151.60:Favored:Isoleucine or valine
+ A 166  LYS:54.26:-119.77:129.00:Favored:General
+ A 167  LEU:20.65:-71.42:122.59:Favored:General
+ A 168  GLU:12.69:-132.86:113.26:Favored:General
+ A 169  ASN:21.91:48.86:44.21:Favored:General
+ A 170  GLY:80.66:76.53:16.53:Favored:Glycine
+ A 171  THR:29.67:-137.95:164.18:Favored:General
+ A 172  TYR:46.33:-113.51:122.13:Favored:General
+ A 173 AARG:36.01:-98.88:118.60:Favored:General
+ A 173 BARG:29.72:-98.88:115.82:Favored:General
+ A 174 AMET:26.47:-129.38:120.98:Favored:General
+ A 174 BMET:52.62:-122.17:129.79:Favored:General
+ A 175 AASN:30.16:-90.79:118.38:Favored:General
+ A 175 BASN:33.68:-97.35:118.38:Favored:General
+ A 176  CYS:41.15:-125.16:142.36:Favored:Pre-proline
+ A 177  PRO:89.83:-64.93:148.52:Favored:Trans-proline
+ A 178  LEU:36.75:-94.12:158.02:Favored:Pre-proline
+ A 179  PRO:19.29:-65.15:127.86:Favored:Trans-proline
+ A 180  GLN:40.60:-75.65:134.41:Favored:General
+ A 181 AGLY:63.64:82.16:-7.47:Favored:Glycine
+ A 181 BGLY:85.93:82.16:8.85:Favored:Glycine
+ A 182 ALYS:43.16:-73.43:132.61:Favored:General
+ A 182 BLYS:43.12:-75.24:140.29:Favored:General
+ A 183 ATHR:48.75:-134.48:145.38:Favored:General
+ A 183 BTHR:45.93:-132.79:135.83:Favored:General
+ A 184 AGLY:44.11:82.74:-165.51:Favored:Glycine
+ A 184 BGLY:27.85:94.32:-167.83:Favored:Glycine
+ A 185 ALYS:38.51:-77.40:132.43:Favored:General
+ A 185 BLYS:46.05:-73.42:139.72:Favored:General
+ A 185 CLYS:35.78:-80.01:131.37:Favored:General
+ A 186 AHIS:16.21:-148.84:171.48:Favored:General
+ A 186 BHIS:19.17:-154.27:171.48:Favored:General
+ A 186 CHIS:15.02:-146.56:171.48:Favored:General
+ A 187  VAL:74.29:-116.65:126.82:Favored:Isoleucine or valine
+ A 188  ILE:44.10:-91.48:126.89:Favored:Isoleucine or valine
+ A 189  TYR:18.76:-108.48:108.01:Favored:General
+ A 190  ASN:40.73:-97.33:134.34:Favored:General
+ A 191  VAL:65.16:-122.88:122.19:Favored:Isoleucine or valine
+ A 192  TRP:22.84:-106.42:110.58:Favored:General
+ A 193  GLN:40.50:-102.83:120.38:Favored:General
+ A 194  ARG:44.00:-69.69:153.01:Favored:General
+ A 195  SER:19.60:-98.55:-15.23:Favored:General
+ A 196  ASP:44.66:-99.79:3.15:Favored:General
+ A 197  SER:14.07:-163.66:154.74:Favored:Pre-proline
+ A 198  PRO:18.59:-75.08:-6.91:Favored:Trans-proline
+ A 199  GLU:57.40:-67.22:139.89:Favored:General
+ A 200  ALA:41.36:-129.73:157.73:Favored:General
+ A 201  PHE:45.88:-123.80:149.27:Favored:General
+ A 202  TYR:43.76:-130.78:130.47:Favored:General
+ A 203  ALA:5.72:-133.91:103.19:Favored:General
+ A 204  CYS:56.42:-66.10:136.77:Favored:General
+ A 205  ILE:26.21:-132.19:115.39:Favored:Isoleucine or valine
+ A 206  ASP:32.82:-84.99:125.58:Favored:General
+ A 207 AVAL:19.89:-139.90:166.88:Favored:Isoleucine or valine
+ A 207 BVAL:15.57:-139.90:170.11:Favored:Isoleucine or valine
+ A 208 ASER:50.88:-134.32:149.48:Favored:General
+ A 208 BSER:32.32:-140.00:135.07:Favored:General
+ A 209 APHE:47.97:-114.21:141.10:Favored:General
+ A 209 BPHE:38.29:-106.42:141.10:Favored:General
+ A 210  SER:30.20:-77.89:156.66:Favored:General
+SUMMARY: 183 Favored, 1 Allowed, 0 Outlier out of 184 residues (altloc A where applicable)
+SUMMARY: 0.00% outliers (Goal: < 0.2%)
+SUMMARY: 99.46% favored (Goal: > 98%)

@@ -1,7 +1,6 @@
 # 4QO4 — co-crystal structure of MDM2 (17-111) with compound 16, {(3R,5R,6S)-5-(3-CHLOROPHENYL)-6-(4-CHLOROPHENYL)-1-[(1S)-1-(6-CYCLOPROPYLPYRIDIN-2-YL)PROPYL]-3-METHYL-2-OXOPIPERIDIN-3-YL}ACETIC ACID
 
-**Status: improved.** The released model is a single model with an R-free of 0.2747 on the deposited free set.
-The deposited model scores 0.3133 on the same reflections.
+**Status: improved.** The released model is a single model with an R-free of 0.2747 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.3097 and the deposited model as scored (S0000) 0.3133 on the same reflections.
 
 | | |
 |---|---|
@@ -18,26 +17,29 @@ The deposited model scores 0.3133 on the same reflections.
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00056 from three seeds), gap widened by at most 0.002, gap ≤ 0.0704 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
 
-## The two models on the same flags
+## The three models on the same flags
 
-Both models are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
-rejection. The deposited model is scored as anonymised at preprocessing (S0000).
+All three are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier
+rejection. S0000 is the deposited model as anonymised at preprocessing; S0001 is that model after the common recipe
+(phenix.refine, 10 macro-cycles, three seeds, the median), the baseline that every gain is measured against; the
+release is the model in force. Geometry from phenix.clashscore (hydrogens kept), rotalyze and ramalyze; the
+MolProbity score from those three.
 
-| | Deposited, our flags (S0000) | This release (S0064) |
-|---|---|---|
-| R-free | 0.3133 | **0.2747** |
-| R-work | 0.2631 | 0.2229 |
-| Gap R-free − R-work | 0.0502 | 0.0518 |
-| R-free on the select / report halves | 0.3368 / 0.2909 | 0.2874 / 0.2625 |
-| Clashscore (phenix.clashscore, hydrogens kept) | 16.0 | 7.3 |
-| Rotamer outliers | 6.02 % | 3.53 % |
-| Ramachandran outliers / favoured | 0.0 % / 97.6 % | 0.0 % / 95.6 % |
-| Bond RMSD / angle RMSD | 0.011 Å / 1.62° | 0.016 Å / 1.63° |
-| MolProbity score | 2.38 | 2.13 |
-| Copies | 1 | 1 |
-| Atoms (of which H) | 845 (0) | 892 (0) |
-| Waters, occupancy sum | 78, 78 | 77, 65 |
-| ANISOU records | 0 | 0 |
+| | Deposited as scored (S0000) | Re-refined (S0001) | This release (S0064) |
+|---|---|---|---|
+| R-free | 0.3133 | 0.3097 | **0.2747** |
+| R-work | 0.2631 | 0.2443 | 0.2229 |
+| Gap R-free − R-work | 0.0502 | 0.0654 | 0.0518 |
+| R-free on the select / report halves | 0.3368 / 0.2909 | 0.3591 / 0.2625 | 0.2874 / 0.2625 |
+| Clashscore (phenix.clashscore, hydrogens kept) | 16.0 | 2.6 | 7.3 |
+| Rotamer outliers | 6.02 % | 2.41 % | 3.53 % |
+| Ramachandran outliers / favoured | 0.0 % / 97.6 % | 0.0 % / 98.8 % | 0.0 % / 95.6 % |
+| Bond RMSD / angle RMSD | 0.011 Å / 1.62° | 0.011 Å / 1.30° | 0.016 Å / 1.63° |
+| MolProbity score | 2.38 | 1.33 | 2.13 |
+| Copies | 1 | 1 | 1 |
+| Atoms (of which H) | 845 (0) | 844 (0) | 892 (0) |
+| Waters, occupancy sum | 78, 78 | 77, 64 | 77, 65 |
+| ANISOU records | 0 | 0 | 0 |
 
 The entry's own header reports R-free 0.302 and R-work 0.264 on its own flags.
 
@@ -62,7 +64,8 @@ the gate wrote.
 
 - **The vault has not been read in this run** (200 work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's.
 - **Rotamer outliers 3.5 %** (three residues) are above the gate's 1.5 % cap; the step passed because the control had the same three. The deposited model has 6.0 %. Clashscore 7.3 against 16.0 deposited; no Ramachandran outlier, 95.6 % favoured.
-- The gap is 0.0518 against 0.0502 for the deposited model (the run's cap 0.0704).
+- **The gain since the baseline is on the select half only.** R-free on the select / report halves is 0.3592 / 0.2625 at S0001 and 0.2874 / 0.2625 at S0064, with 264 reflections in each half; the re-refinement had moved them the other way (0.3368 / 0.2909 at S0000). Halves this small are noisy, and the vault read is the check.
+- The gap is 0.0518 against 0.0654 for the re-refined model and 0.0502 for the deposited model as scored (the run's cap 0.0704).
 - The model has no hydrogens: riding hydrogens were refused in this run. Reference-model restraints (S0075 and the later re-test) were refused; a two-copy qFit build (S0069) and a six-copy fork (T40560e_six, R-free 0.3042) did not beat the single model. None of these is released.
 
 ## Files
@@ -71,6 +74,7 @@ the gate wrote.
 |---|---|
 | `model/4QO4_S0064.pdb` | the released model, PDB, occupancies at four decimals, as the gate wrote it |
 | `model/4QO4_S0064.cif` | the same model as mmCIF (gemmi conversion) |
+| `model/4QO4_S0001.pdb` | the re-refined deposited model (S0001, the common recipe, the median of three seeds): the baseline of every comparison |
 | `maps/4QO4_S0064_map_coeffs.mtz` | phenix.maps coefficients from the work reflections only: `2FOFCWT/PH2FOFCWT` and `FOFCWT/PHFOFCWT` |
 | `data/4QO4_data.mtz`, `4QO4_flags.mtz`, `4QO4_split.mtz` | the working data, the inherited flags, the select/report split; the vault is absent from all three |
 | `data/prep.json`, `split.json` | how the files were built, with checksums and counts |
@@ -78,9 +82,10 @@ the gate wrote.
 | `refinement/score_history.txt`, `score_history.jsonl`, `scorecard.csv` | every step: the facts line, the full metrics, the scorecard row |
 | `refinement/steps.md` | the step table |
 | `refinement/S0064/` | the released step: facts line, change record, score record |
+| `refinement/S0001/`, `S0000/` | the baseline step and the deposited model as scored: facts lines and score records |
 | `refinement/metaparams.yaml`, `run.json` | the metaparameters of the run and its state (noise floor, standing recipe, the sealed vault's checksums) |
 | `refinement/chains/` | the chain scripts that scheduled the steps on the pod, as run, with their logs |
-| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model |
+| `validation/` | phenix.clashscore, rotalyze and ramalyze logs of the released model (`*_S0064.*`) and of the re-refined baseline (`*_S0001.*`) |
 
 ## Reproduce
 
