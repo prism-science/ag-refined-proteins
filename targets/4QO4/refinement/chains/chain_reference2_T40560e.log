@@ -1,0 +1,8 @@
+[2026-10-21T03:59:10Z] chain_after start on /home/dev/runs/hr/T40560e: reference_mc = refine_step.py reference --file /home/dev/runs/hr/T40560e/prep/reference_model.pdb --sigma 3 --no-fix-outliers --main-chain-only
+[2026-10-21T03:59:10Z] reference_mc (1) from S0064
+S0078 2026-10-21T04:02:01Z refinement refine_step parent S0064 | reference-model torsion restraints to reference_model.pdb (phenix reference_model, sigma 3, limit 15, outliers kept, main chain only; the sequences aligned by phenix) against 
+[2026-10-21T04:02:01Z] chain_after end on /home/dev/runs/hr/T40560e (reference_mc); best model S0064
+[2026-10-21T04:02:01Z] chain_after start on /home/dev/runs/hr/T40560e: settle_rm = refine_step.py settle
+[2026-10-21T04:02:01Z] settle_rm (1) from S0064
+S0079 2026-10-21T04:02:02Z refinement refine_step parent S0064 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.27468 -> 0.27409 (-1.1 sigma) R-work 0.22292 -> 0.22166 gap +0.0007 clash 8.0
+[2026-10-21T04:02:02Z] chain_after end on /home/dev/runs/hr/T40560e (settle_rm); best model S0064

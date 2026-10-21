@@ -1,0 +1,192 @@
+{
+ "cc_half": null,
+ "completeness_pct": 99.8,
+ "created": "2026-10-19T23:28:07Z",
+ "d_min": 2.700166696768957,
+ "data_mtz_sha256": "ddfc0f8e3ddf64221895839397d05cf03e5880b53ae263cf0ac6ef0330d76813",
+ "deposited_r_free": 0.3109,
+ "deposited_r_work": 0.2225,
+ "flags_mtz_sha256": "64d2a022b8a0bef35c4c163102792f15351c47a580b5d209f595c91dd6ecf328",
+ "gap_max": 0.10080831556714709,
+ "gap_s0001": 0.09580831556714708,
+ "handle": "T9884ae",
+ "i_over_sigma": 18.9,
+ "n_free": 864,
+ "n_vault": 200,
+ "n_work": 9729,
+ "noise_floor": {
+  "mean_r_free": 0.28429916655519105,
+  "measured_from": "S0001",
+  "median_seed": 3,
+  "n_seeds": 3,
+  "pending": "noise_floor_S0001",
+  "recipe": "common",
+  "seeds": [
+   {
+    "gap": 0.10277480127214131,
+    "r_free": 0.28367959822344435,
+    "r_work": 0.18090479695130304,
+    "seed": 1,
+    "sha256": "94f43b05e7a0a55fec671086a72eab2903ee65892fdb6a5c29bc4e53d4cc7dd5"
+   },
+   {
+    "gap": 0.10354150199571585,
+    "r_free": 0.28520362533631965,
+    "r_work": 0.1816621233406038,
+    "seed": 2,
+    "sha256": "ea2d8f5f06b70acfb42250f87449d46b3932687e0fe58775b5287619b6221275"
+   },
+   {
+    "gap": 0.10299724197257504,
+    "r_free": 0.28401427610580915,
+    "r_work": 0.1810170341332341,
+    "seed": 3,
+    "sha256": "b379e510b1c530a3aad81dfecf72d91c5b001646a749d72aa8c61e767f6471cb"
+   }
+  ],
+  "sigma_gap": 0.00039444662451093305,
+  "sigma_r_free": 0.0008009597906927196,
+  "sigma_r_work": 0.0004087135366822777,
+  "utc": "2026-10-19T23:35:16Z"
+ },
+ "noise_floor_history": [
+  {
+   "mean_r_free": 0.28412351690327564,
+   "median_seed": 1,
+   "n_seeds": 3,
+   "seeds": [
+    {
+     "gap": 0.09580831556714708,
+     "r_free": 0.2852771072206042,
+     "r_work": 0.1894687916534571,
+     "seed": 1,
+     "sha256": "33e6cdc690a4c4c9e2b02872e8153ed04f8cbc9dd1742631ce6d7ee7a11e4998"
+    },
+    {
+     "gap": 0.09500072972807455,
+     "r_free": 0.2816630204606959,
+     "r_work": 0.18666229073262136,
+     "seed": 2,
+     "sha256": "d9d0ed8ea6d87e6d0ac135545e37cc2cb9550446791c9c40a9d912736a3b6ccd"
+    },
+    {
+     "gap": 0.09623444662320718,
+     "r_free": 0.2854304230285269,
+     "r_work": 0.1891959764053197,
+     "seed": 3,
+     "sha256": "b185bae036734f55b619a7115f66f6d168ddd7aab716cc2b410575fb182b2cf8"
+    }
+   ],
+   "sigma_gap": 0.0006266099187619412,
+   "sigma_r_free": 0.002132230872161935,
+   "sigma_r_work": 0.0015476023749822901
+  }
+ ],
+ "phenix_version": "Version: 2.1; Release tag: 6048",
+ "r_meas": 0.09,
+ "r_merge": 0.082,
+ "r_pim": null,
+ "redundancy": 5.73,
+ "stages": {
+  "fetch": {
+   "model": "/home/dev/runs/hr/T9884ae/vault/_source/3QUE.cif",
+   "model_sha256": "67bbe98159bdb43ef40a652cc809a5a3cbe5117b0229508c5204a91ff6459fcc",
+   "sf": "/home/dev/runs/hr/T9884ae/vault/_source/3QUE-sf.cif",
+   "sf_sha256": "7dca2e602c18bdef3c708cd5d41354cda0ea63daddb6f0089bdb4081c84314cf",
+   "utc": "2026-10-19T23:28:07Z"
+  },
+  "floor": {
+   "utc": "2026-10-19T23:35:16Z"
+  },
+  "prep": {
+   "d_min": 2.700166696768957,
+   "n_free": 864,
+   "n_vault": 200,
+   "utc": "2026-10-19T23:28:08Z"
+  },
+  "s0000": {
+   "utc": "2026-10-19T23:28:46Z"
+  },
+  "s0001": {
+   "utc": "2026-10-19T23:32:54Z"
+  }
+ },
+ "standing": {
+  "rama": true,
+  "reference": "/home/dev/runs/hr/T9884ae/prep/reference_model.pdb",
+  "since": "S0057",
+  "ss": true,
+  "tls": [
+   "chain 'A' and (resid    5  through  102 )",
+   "chain 'A' and (resid  103  through  201 )",
+   "chain 'A' and (resid  202  through  353 )"
+  ],
+  "utc": "2026-10-21T03:58:50Z",
+  "wc": 2.0,
+  "wu": 2.0
+ },
+ "standing_history": [
+  {
+   "since": "S0027",
+   "tls": [
+    "chain 'A' and (resid    5  through  102 )",
+    "chain 'A' and (resid  103  through  201 )",
+    "chain 'A' and (resid  202  through  353 )"
+   ],
+   "utc": "2026-10-20T00:30:42Z"
+  },
+  {
+   "since": "S0034",
+   "tls": [
+    "chain 'A' and (resid    5  through  102 )",
+    "chain 'A' and (resid  103  through  201 )",
+    "chain 'A' and (resid  202  through  353 )"
+   ],
+   "utc": "2026-10-20T02:55:59Z",
+   "wc": 2.0,
+   "wu": 2.0
+  },
+  {
+   "rama": true,
+   "since": "S0052",
+   "ss": true,
+   "tls": [
+    "chain 'A' and (resid    5  through  102 )",
+    "chain 'A' and (resid  103  through  201 )",
+    "chain 'A' and (resid  202  through  353 )"
+   ],
+   "utc": "2026-10-20T07:08:38Z",
+   "wc": 2.0,
+   "wu": 2.0
+  },
+  {
+   "rama": true,
+   "reference": "/home/dev/runs/hr/T9884ae/prep/reference_model.pdb",
+   "since": "S0057",
+   "ss": true,
+   "tls": [
+    "chain 'A' and (resid    5  through  102 )",
+    "chain 'A' and (resid  103  through  201 )",
+    "chain 'A' and (resid  202  through  353 )"
+   ],
+   "utc": "2026-10-21T03:58:50Z",
+   "wc": 2.0,
+   "wu": 2.0
+  }
+ ],
+ "steps": {
+  "S0000": {
+   "label": "deposited",
+   "utc": "2026-10-19T23:28:08Z"
+  },
+  "S0001": {
+   "label": "first_refinement",
+   "utc": "2026-10-19T23:32:16Z"
+  }
+ },
+ "vault_sealed": {
+  "pubkey_sha256": "b07e0cb5edb19a02a2e15e782864311394930faf09ef21913782613345096bf5",
+  "sealed_tar_enc_sha256": "50621955a490807c2fc499b8ce984d1ab4897ec889a9187dd27373e1dd8775b7",
+  "utc": "2026-10-19T23:28:08Z"
+ }
+}

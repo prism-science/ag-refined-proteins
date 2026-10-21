@@ -1,0 +1,10 @@
+[2026-10-20T08:29:59Z] chain_loop start on /home/dev/runs/hr/T40560e from S0052: residues 69 to 72 of chain A
+[2026-10-20T08:29:59Z] loop_A_69_72 from S0052
+S0060 2026-10-20T08:33:12Z rotamer-finder build_loop parent S0052 | residues 69 to 72 of chain A built by phenix.fit_loops into the work-only 2mFo-DFc map, their rotamers fitted by Coot and inserted (the deposited model has none) | R-free 0
+[2026-10-20T08:33:12Z] settle_l (1) from S0052
+S0061 2026-10-20T08:33:12Z refinement refine_step parent S0052 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.28374 -> 0.28228 (-2.2 sigma) R-work 0.22551 -> 0.22414 gap -0.0001 clash 5.1
+[2026-10-20T08:33:13Z] pick_4.0_l (1) from S0052
+S0062 2026-10-20T08:33:14Z solvent water_addition parent S0052 | waters at 4.0 sigma, mode single | R-free 0.28374 -> 0.28489 (+1.5 sigma) R-work 0.22551 -> 0.22415 gap +0.0025 clash 4.4 rota 3.6 % | atoms 865 waters 78 altlocs - anisou 0 |
+[2026-10-20T08:33:14Z] converge_l (1) from S0052
+S0063 2026-10-20T08:33:15Z refinement refine_step parent S0052 | 20 macro-cycles against 10 | R-free 0.28374 -> 0.28303 (-0.6 sigma) R-work 0.22551 -> 0.22524 gap -0.0004 clash 4.4 rota 3.6 % | atoms 864 waters 77 altlocs - anisou 0 | REFUS
+[2026-10-20T08:33:15Z] chain_loop end on /home/dev/runs/hr/T40560e; best model S0052

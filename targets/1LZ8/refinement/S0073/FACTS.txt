@@ -1,0 +1,1 @@
+S0073 2026-10-20T07:22:22Z solvent place_ions parent S0070 | CL at the mFo-DFc peaks of 4.0 sigma and above that no atom explains, next to a nitrogen (occupancy 1) | R-free 0.24271 -> 0.24079 (-4.5 sigma) R-work 0.16707 -> 0.16622 gap -0.0011 clash 1.3 rota 0.5 % | atoms 4346 waters 419 altlocs AB anisou 2009 | ACCEPT

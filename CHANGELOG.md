@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-10-21 — seven targets added: the hierarchical line's first full snapshot
+
+Seven targets from the hierarchical refinement harness join 7KR0 (R-free on our flags, released / deposited): 8C5N
+(0.75 Å, six-copy ensemble, 0.0908 / 0.1571), 7R2H (0.79 Å, six copies, 0.0993 / 0.1551), 9ARN (1.41 Å, single model,
+0.2769 / 0.2944), 3TC7 (1.5 Å, six copies from the gap fork T431c8e_gap, 0.1475 / 0.1918), 1LZ8 (1.53 Å, two copies
+with two chlorides, 0.2408 / 0.2826), 4QO4 (1.7 Å, single model with sulfates and the built loop 69 to 72, 0.2747 /
+0.3133) and 3QUE (2.7 Å, single model under reference-model restraints to 3LFF, 0.2642 / 0.2901). Each comes with its
+map coefficients from the work reflections, the working data and flags, the deposited model, the full step record, the
+chain scripts with their logs, and the validation logs. The 7R2H and 8C5N runs were still going at export. The 3TC7
+card states the fork's looser gap bounds and the main run's best under the standing bounds (S0042, 0.1540), whose
+record ships beside it. No vault has been read in these runs. `scripts/write_cards.py` wrote the seven cards, the
+README rows and the `provenance.json` entries from the files; `scripts/build_index.py` rebuilt the index and manifest.
+
 ## 2026-10-19 — branch manzuoni/refinement: the hierarchical line starts here
 
 One target, 7KR0, from the hierarchical refinement harness (`prism-science/autoresearch`, branch

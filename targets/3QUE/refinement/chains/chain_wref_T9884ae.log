@@ -1,0 +1,16 @@
+[2026-10-21T04:38:24Z] chain_after start on /home/dev/runs/hr/T9884ae: w11_ref = refine_step.py weights --wc 1 --wu 1
+[2026-10-21T04:38:24Z] w11_ref (1) from S0057
+S0067 2026-10-21T04:43:20Z refinement refine_step parent S0057 | restraint weights wc 1 wu 1 against 2 2 | R-free 0.26419 -> 0.26316 (-1.3 sigma) R-work 0.21236 -> 0.19969 gap +0.0116 clash 6.0 rota 3.6 % | atoms 2896 waters 61 altlocs - an
+[2026-10-21T04:43:21Z] chain_after end on /home/dev/runs/hr/T9884ae (w11_ref); best model S0057
+[2026-10-21T04:43:21Z] chain_after start on /home/dev/runs/hr/T9884ae: w33_ref = refine_step.py weights --wc 3 --wu 3
+[2026-10-21T04:43:21Z] w33_ref (1) from S0057
+S0068 2026-10-21T04:48:21Z refinement refine_step parent S0057 | restraint weights wc 3 wu 3 against 2 2 | R-free 0.26419 -> 0.26704 (+3.6 sigma) R-work 0.21236 -> 0.22449 gap -0.0093 clash 6.9 rota 3.6 % | atoms 2896 waters 61 altlocs - an
+[2026-10-21T04:48:21Z] chain_after end on /home/dev/runs/hr/T9884ae (w33_ref); best model S0057
+[2026-10-21T04:48:21Z] chain_after start on /home/dev/runs/hr/T9884ae: w24_ref = refine_step.py weights --wc 2 --wu 4
+[2026-10-21T04:48:21Z] w24_ref (1) from S0057
+S0069 2026-10-21T04:53:16Z refinement refine_step parent S0057 | restraint weights wc 2 wu 4 against 2 2 | R-free 0.26419 -> 0.26832 (+5.2 sigma) R-work 0.21236 -> 0.21944 gap -0.0030 clash 5.5 rota 3.3 % | atoms 2896 waters 61 altlocs - an
+[2026-10-21T04:53:17Z] chain_after end on /home/dev/runs/hr/T9884ae (w24_ref); best model S0057
+[2026-10-21T04:53:17Z] chain_after start on /home/dev/runs/hr/T9884ae: settle_w = refine_step.py settle
+[2026-10-21T04:53:17Z] settle_w (1) from S0057
+S0070 2026-10-21T04:53:17Z refinement refine_step parent S0057 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.26419 -> 0.26497 (+1.0 sigma) R-work 0.21236 -> 0.21468 gap -0.0015 clash 5.5
+[2026-10-21T04:53:17Z] chain_after end on /home/dev/runs/hr/T9884ae (settle_w); best model S0057

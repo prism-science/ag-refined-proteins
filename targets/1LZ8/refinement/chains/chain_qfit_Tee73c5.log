@@ -1,0 +1,23 @@
+[2026-10-19T15:48:46Z] chain_qfit start on /home/dev/runs/hr/Tee73c5 from S0032, 2 copies from qFit
+[2026-10-19T15:48:46Z] split 2 copies from S0032, source qfit
+S0035 2026-10-19T16:35:48Z rotamer-finder split_conformations parent S0032 | 2 copies from qfit, riding H, 20 macro-cycles | R-free 0.25794 -> 0.24820 R-work 0.20259 -> 0.16179 gap +0.0311 clash 4.8 rota 1.9 % | atoms 4347 waters 422 altloc
+[2026-10-19T16:35:48Z] after the split the best model is S0035
+[2026-10-19T16:35:48Z] pick_4.0_q (1) from S0035
+S0036 2026-10-19T16:44:16Z solvent water_addition parent S0035 | waters at 4.0 sigma, mode single | R-free 0.24820 -> 0.24943 (+2.2 sigma) R-work 0.16179 -> 0.15850 gap +0.0045 clash 4.8 rota 1.4 % | atoms 4321 waters 396 altlocs AB anisou 
+[2026-10-19T16:44:17Z] pick_3.0_q (1) from S0035
+S0037 2026-10-19T16:51:58Z solvent water_addition parent S0035 | waters at 3.0 sigma, mode single | R-free 0.24820 -> 0.25042 (+5.4 sigma) R-work 0.16179 -> 0.15350 gap +0.0105 clash 4.1 rota 1.9 % | atoms 4356 waters 431 altlocs AB anisou 
+[2026-10-19T16:51:58Z] pick_2.5_q (1) from S0035
+S0038 2026-10-19T16:59:41Z solvent water_addition parent S0035 | waters at 2.5 sigma, mode single | R-free 0.24820 -> 0.25981 (+28.6 sigma) R-work 0.16179 -> 0.15064 gap +0.0228 clash 5.6 rota 1.4 % | atoms 4399 waters 474 altlocs AB anisou
+[2026-10-19T16:59:41Z] aniso_water_q (1) from S0035
+S0039 2026-10-19T17:08:14Z refinement refine_step parent S0035 | water ADPs anisotropic | R-free 0.24820 -> 0.25281 (+13.1 sigma) R-work 0.16179 -> 0.15327 gap +0.0131 clash 3.3 rota 1.4 % | atoms 4347 waters 422 altlocs AB anisou 2431 | RE
+[2026-10-19T17:08:14Z] converge_q (1) from S0035
+S0040 2026-10-19T17:22:15Z refinement refine_step parent S0035 | 20 macro-cycles against 10 | R-free 0.24820 -> 0.24921 (+4.0 sigma) R-work 0.16179 -> 0.16058 gap +0.0022 clash 4.6 rota 1.4 % | atoms 4347 waters 422 altlocs AB anisou 2009 |
+[2026-10-19T17:22:15Z] occupancies_q from S0035
+S0041 2026-10-19T17:30:25Z refinement refine_step parent S0035 | altloc occupancies refined | R-free 0.24820 -> 0.24759 (-1.7 sigma) R-work 0.16179 -> 0.16080 gap +0.0004 clash 3.6 rota 0.9 % | atoms 4347 waters 422 altlocs AB anisou 2009 |
+[2026-10-19T17:30:25Z] reletter_q from S0035
+S0042 2026-10-19T17:30:27Z solvent water_addition parent S0035 | no clashing water clears another copy | R-free 0.24820 -> 0.24820 R-work 0.16179 -> 0.16179 gap +0.0000 clash 4.8 rota 1.9 % | atoms 4347 waters 422 altlocs AB anisou 2009 | R
+[2026-10-19T17:30:28Z] copy_vote_q (1) from S0035
+S0043 2026-10-19T17:38:01Z rotamer-finder copy_vote parent S0035 | copies under difference peaks: the weakest copy takes the peak copy's rotamer | R-free 0.24820 -> 0.25101 (+8.2 sigma) R-work 0.16179 -> 0.16056 gap +0.0040 clash 4.1 rota 1
+[2026-10-19T17:38:02Z] converge_r (1) from S0035
+S0044 2026-10-19T17:38:02Z refinement refine_step parent S0035 | 20 macro-cycles against 10 | R-free 0.24820 -> 0.24921 (+4.0 sigma) R-work 0.16179 -> 0.16058 gap +0.0022 clash 4.6 rota 1.4 % | atoms 4347 waters 422 altlocs AB anisou 2009 |
+[2026-10-19T17:38:02Z] chain_qfit end on /home/dev/runs/hr/Tee73c5; best model S0035

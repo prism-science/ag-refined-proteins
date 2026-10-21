@@ -1,0 +1,9 @@
+[2026-10-20T00:19:18Z] chain_anneal waits for pid 1750813
+[2026-10-20T03:55:19Z] chain_anneal start on /home/dev/runs/hr/T9884ae from S0041, standing weights 2 2
+[2026-10-20T03:55:19Z] anneal_a (1) from S0041
+S0047 2026-10-20T04:01:53Z refinement refine_step parent S0041 | simulated annealing (Cartesian) in the candidate's refinement against the recipe without it | R-free 0.27055 -> 0.28803 (+5.4 sigma) R-work 0.19578 -> 0.20213 gap +0.0111 clas
+[2026-10-20T04:01:53Z] anneal_torsion_a from S0041
+S0048 2026-10-20T04:07:45Z refinement refine_step parent S0041 | simulated annealing (torsion-angle) in the candidate's refinement against the recipe without it | R-free 0.27055 -> 0.27325 (+2.5 sigma) R-work 0.19578 -> 0.19452 gap +0.0040 
+[2026-10-20T04:07:46Z] converge_sa (1) from S0041
+S0049 2026-10-20T04:07:46Z refinement refine_step parent S0041 | 20 macro-cycles against 10 | R-free 0.27055 -> 0.26993 (-0.8 sigma) R-work 0.19578 -> 0.19525 gap -0.0001 clash 4.6 rota 8.2 % | atoms 2896 waters 61 altlocs - anisou 2764 | R
+[2026-10-20T04:07:46Z] chain_anneal end on /home/dev/runs/hr/T9884ae; best model S0041

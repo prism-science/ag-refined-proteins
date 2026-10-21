@@ -1,0 +1,259 @@
+{
+ "bunker": {
+  "applied_after_frozen_check": false,
+  "applied_at": "2026-10-19T06:41:58Z",
+  "fraction": 0.02,
+  "n": 260,
+  "pre_bunker_sha256": {
+   "data_flags_mtz": "5258d436c27a7539d3c669ee0edf17493cb2650255df92d8d6345c1536509bd1",
+   "data_mtz": "f4867293e07f4edcff9d096311d1cd65d81fe7467aaf34dd1ece00c367658f12",
+   "flags_mtz": "8cbd2102c5449dd70a39bfc56f74500acf617dddc757ec6cfa046c19903a7b2c",
+   "split_mtz": "7c92a35d9e91e03d878cc56a173e48dd95c540c584c93ba2d11b0c4dcbcadcc4"
+  },
+  "seed": 1679676839,
+  "vault_json": "/home/dev/runs/hr/Tee73c5/vault/bunker.json",
+  "vault_json_sha256": "bfcd6fada34ad1a484b7fbf8046d65e9b780dfe8402e81fe1a973d96e63f06d7",
+  "vault_mtz": "/home/dev/runs/hr/Tee73c5/vault/bunker.mtz",
+  "vault_mtz_sha256": "c5286d99f706a6b8b76e313c07b8d89deaa9559e7f0775a9dda300d01a3a8368"
+ },
+ "columns_present": [
+  "F_meas_au",
+  "F_meas_sigma_au",
+  "status"
+ ],
+ "convention": {
+  "free_symbol": "f",
+  "source": "_refln.status"
+ },
+ "d_min": 1.7000760984892174,
+ "data_choice": {
+  "coverage": {
+   "amplitudes": {
+    "n_measured_rows": 13264,
+    "n_null": 0,
+    "n_usable": 13264,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   },
+   "intensities": null
+  },
+  "kind": "amplitudes",
+  "labels": [
+   "FP",
+   "SIGFP"
+  ],
+  "reason": "no merged intensities; amplitudes are all there is",
+  "sigma_tag": "F_meas_sigma_au",
+  "value_tag": "F_meas_au"
+ },
+ "data_flags_mtz": "/home/dev/runs/hr/Tee73c5/prep/data_flags.mtz",
+ "data_flags_mtz_sha256": "61e52ff1df7d451b673cb03c3d3cbf8b1b8753147b9a79489ad121d14cc3a5b1",
+ "data_labels": "FP,SIGFP",
+ "data_mtz": "/home/dev/runs/hr/Tee73c5/prep/data.mtz",
+ "data_mtz_sha256": "13d4c4223c89d54a53c36044ba60a15a65cb56d5c5077b53461a3d1624559ca8",
+ "flag_label": "R-free-flags",
+ "flags_mtz": "/home/dev/runs/hr/Tee73c5/prep/flags.mtz",
+ "flags_mtz_sha256": "8392b83d91c5ff9c45114a857b95ca5aa4752777cba1d508440668ba676aff3e",
+ "flags_source": "inherited",
+ "fraction_free": 0.050446,
+ "intensities_or_amplitudes": "amplitudes",
+ "model_pdb": "/home/dev/runs/hr/Tee73c5/prep/model.pdb",
+ "model_pdb_sha256": "3766a378805597aff810412fb7b235c5a0c5365cc0dfbb9756e7c8593e8d7fcb",
+ "n_dropped_missing_value": 0,
+ "n_dropped_unmeasured": 0,
+ "n_dropped_zero_amplitude": 0,
+ "n_free": 656,
+ "n_reflections": 13004,
+ "n_report": 328,
+ "n_rows_in_sf": 13264,
+ "n_select": 328,
+ "n_sleep": 0,
+ "n_sleep_hidden_from_phenix": 0,
+ "n_work": 12348,
+ "sf_block": "r1lz8sf",
+ "sf_sha256": "fc383935a8bb1c9e52a686f6f347c0577f3868a2ac394330185153cdd3366e88",
+ "sf_source": "vault/_source (sha256 fc383935a8bb1c9e52a686f6f347c0577f3868a2ac394330185153cdd3366e88)",
+ "space_group": "P 43 21 2",
+ "split": {
+  "method": "free reflections sorted by (-d, h, k, l), 20 equal-count shells, random.Random(410728415).shuffle per shell (one generator), dealt round robin to select/report",
+  "n_parts": 2,
+  "n_shells": 20,
+  "seed": 410728415,
+  "shells": [
+   {
+    "d_max": 11.9704,
+    "d_min": 4.3105,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 1
+   },
+   {
+    "d_max": 4.2931,
+    "d_min": 3.6402,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 2
+   },
+   {
+    "d_max": 3.5804,
+    "d_min": 3.1985,
+    "n": 32,
+    "n_report": 16,
+    "n_select": 16,
+    "shell": 3
+   },
+   {
+    "d_max": 3.1867,
+    "d_min": 2.8346,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 4
+   },
+   {
+    "d_max": 2.8193,
+    "d_min": 2.6177,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 5
+   },
+   {
+    "d_max": 2.617,
+    "d_min": 2.4923,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 6
+   },
+   {
+    "d_max": 2.4916,
+    "d_min": 2.378,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 7
+   },
+   {
+    "d_max": 2.3734,
+    "d_min": 2.2835,
+    "n": 32,
+    "n_report": 16,
+    "n_select": 16,
+    "shell": 8
+   },
+   {
+    "d_max": 2.2812,
+    "d_min": 2.2031,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 9
+   },
+   {
+    "d_max": 2.1987,
+    "d_min": 2.1228,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 10
+   },
+   {
+    "d_max": 2.1203,
+    "d_min": 2.066,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 11
+   },
+   {
+    "d_max": 2.0602,
+    "d_min": 1.9996,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 12
+   },
+   {
+    "d_max": 1.9995,
+    "d_min": 1.9599,
+    "n": 32,
+    "n_report": 16,
+    "n_select": 16,
+    "shell": 13
+   },
+   {
+    "d_max": 1.9578,
+    "d_min": 1.8958,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 14
+   },
+   {
+    "d_max": 1.8951,
+    "d_min": 1.8649,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 15
+   },
+   {
+    "d_max": 1.8646,
+    "d_min": 1.8249,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 16
+   },
+   {
+    "d_max": 1.8249,
+    "d_min": 1.7831,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 17
+   },
+   {
+    "d_max": 1.7829,
+    "d_min": 1.7467,
+    "n": 32,
+    "n_report": 16,
+    "n_select": 16,
+    "shell": 18
+   },
+   {
+    "d_max": 1.7451,
+    "d_min": 1.7241,
+    "n": 33,
+    "n_report": 16,
+    "n_select": 17,
+    "shell": 19
+   },
+   {
+    "d_max": 1.7232,
+    "d_min": 1.7002,
+    "n": 33,
+    "n_report": 17,
+    "n_select": 16,
+    "shell": 20
+   }
+  ]
+ },
+ "split_mtz": "/home/dev/runs/hr/Tee73c5/prep/split.mtz",
+ "split_mtz_sha256": "9427d44b5c67e9ab6da0359ce0bb965c6ede20f8b80a2fdd319cbc5d6d45df49",
+ "split_version": "stratified 2-way (this file's split v2-style)",
+ "target": "Tee73c5",
+ "test_flag_value": 0,
+ "unit_cell": [
+  78.81,
+  78.81,
+  36.8,
+  90.0,
+  90.0,
+  90.0
+ ],
+ "written_at": "2026-10-19T06:41:58Z"
+}

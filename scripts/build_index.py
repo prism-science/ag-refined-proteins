@@ -46,6 +46,15 @@ def target_record(t: Path) -> dict:
             rec = json.loads(ln)
             if rec.get("step") == "S0000":
                 deposited = rec.get("metrics", {})
+    if not deposited:
+        # a record whose jsonl starts after S0000 (7KR0): the facts line of S0000 in score_history.txt carries the numbers
+        txt = t / "refinement" / "score_history.txt"
+        for ln in (txt.read_text().splitlines() if txt.exists() else []):
+            if ln.startswith("S0000 "):
+                m = re.search(r"R-free ([0-9.]+) R-work ([0-9.]+) gap ([0-9.]+) clash ([0-9.]+) rota ([0-9.]+) %", ln)
+                if m:
+                    deposited = {"r_free": float(m.group(1)), "r_work": float(m.group(2)), "gap": float(m.group(3)),
+                                 "clashscore": float(m.group(4)), "rota_pct": float(m.group(5)), "source": "score_history.txt S0000 facts line"}
     cite = (entry.get("rcsb_primary_citation") or {})
     return {
         "id": tid,

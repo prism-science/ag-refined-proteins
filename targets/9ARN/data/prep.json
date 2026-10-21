@@ -1,0 +1,301 @@
+{
+ "bunker": {
+  "applied_after_frozen_check": false,
+  "applied_at": "2026-10-19T09:21:03Z",
+  "fraction": 0.02,
+  "n": 360,
+  "pre_bunker_sha256": {
+   "data_flags_mtz": "84632b454c3d994f439eaffa7db151e415a323a64813e783a8be7193b48f4ab1",
+   "data_mtz": "d8abe4cbc33cfd3a8ca2b583a3941d69ca3db71a401651a173ffd55d384c3ff3",
+   "flags_mtz": "8f29598b432adb28f1817152a2f499a839e3d28499f75f634fb8a43ea9706949",
+   "split_mtz": "de94fd828261eaaae939f96939f4b3bc28b5e070c06499ab3f7cb96e76a9ddeb"
+  },
+  "seed": 248517606,
+  "vault_json": "/home/dev/runs/hr/Tba97f6/vault/bunker.json",
+  "vault_json_sha256": "246ac3d45067e100309dc1106ee37d2185bc4ae42cc29df536b87c3690de48c0",
+  "vault_mtz": "/home/dev/runs/hr/Tba97f6/vault/bunker.mtz",
+  "vault_mtz_sha256": "8ff94b0bd9075ae34bf145899c57ecbdaa3107289d3b8bd906701f66889f8334"
+ },
+ "columns_present": [
+  "F_meas_au",
+  "F_meas_sigma_au",
+  "intensity_meas",
+  "intensity_sigma",
+  "pdbx_r_free_flag",
+  "status"
+ ],
+ "convention": {
+  "free_symbol": "f",
+  "source": "_refln.status"
+ },
+ "d_min": 1.370032433044185,
+ "data_choice": {
+  "coverage": {
+   "amplitudes": {
+    "n_measured_rows": 18490,
+    "n_null": 2914,
+    "n_usable": 15576,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   },
+   "intensities": {
+    "n_measured_rows": 18490,
+    "n_null": 0,
+    "n_usable": 18490,
+    "n_zero_placeholder": 0,
+    "n_zero_value": 0
+   }
+  },
+  "kind": "intensities",
+  "labels": [
+   "IMEAN",
+   "SIGIMEAN"
+  ],
+  "reason": "merged intensities present and populated; phenix.refine applies French-Wilson",
+  "sigma_tag": "intensity_sigma",
+  "value_tag": "intensity_meas"
+ },
+ "data_flags_mtz": "/home/dev/runs/hr/Tba97f6/prep/data_flags.mtz",
+ "data_flags_mtz_sha256": "f9c66dfcb620d355f9e3b79a3aebcac441bfb97b8a1a2c8d5f2a7ab78b61b07e",
+ "data_labels": "IMEAN,SIGIMEAN",
+ "data_mtz": "/home/dev/runs/hr/Tba97f6/prep/data.mtz",
+ "data_mtz_sha256": "8640ea3357641af627fb7ee5cb2ffd9bbf1282efb842c5e89afd6c42b3a4e4e8",
+ "deposited_tls": {
+  "n_groups": 2,
+  "n_rows": 2,
+  "rows": [
+   {
+    "beg_auth_asym_id": "A",
+    "beg_auth_seq_id": "1",
+    "end_auth_asym_id": "A",
+    "end_auth_seq_id": "31",
+    "id": "1",
+    "refine_tls_id": "1",
+    "selection_details": "chain 'A' and (resid 1 through 31 )\n"
+   },
+   {
+    "beg_auth_asym_id": "A",
+    "beg_auth_seq_id": "32",
+    "end_auth_asym_id": "A",
+    "end_auth_seq_id": "80",
+    "id": "2",
+    "refine_tls_id": "2",
+    "selection_details": "chain 'A' and (resid 32 through 80 )\n"
+   }
+  ],
+  "selections": [
+   "(chain A and resseq 1:31) and not water",
+   "(chain A and resseq 32:80) and not water"
+  ]
+ },
+ "flag_label": "R-free-flags",
+ "flags_mtz": "/home/dev/runs/hr/Tba97f6/prep/flags.mtz",
+ "flags_mtz_sha256": "dd55f1943df4dd2012968726891d814a933c657522e04fd3c95c4ea77b7167fa",
+ "flags_source": "inherited",
+ "fraction_free": 0.050083,
+ "intensities_or_amplitudes": "intensities",
+ "model_pdb": "/home/dev/runs/hr/Tba97f6/prep/model.pdb",
+ "model_pdb_sha256": "30a87cb80100bd0ff4ae5a8d4715bd102f87b387af70b926e1e61619b77b48dc",
+ "n_dropped_missing_value": 0,
+ "n_dropped_unmeasured": 4,
+ "n_dropped_zero_amplitude": 0,
+ "n_free": 772,
+ "n_free_in_file": 908,
+ "n_reflections": 15310,
+ "n_reflections_in_file": 18130,
+ "n_report": 388,
+ "n_report_in_file": 454,
+ "n_rows_in_sf": 18494,
+ "n_select": 384,
+ "n_select_in_file": 454,
+ "n_sleep": 0,
+ "n_sleep_hidden_from_phenix": 0,
+ "n_work": 14538,
+ "n_work_in_file": 17222,
+ "sf_block": "r9arnsf",
+ "sf_sha256": "07d93a472fc9bb7e03b56b48833bf8892153865ecc31e0e6c88ffb3e2846c4db",
+ "sf_source": "vault/_source (sha256 07d93a472fc9bb7e03b56b48833bf8892153865ecc31e0e6c88ffb3e2846c4db)",
+ "space_group": "H 3 2",
+ "split": {
+  "method": "free reflections sorted by (-d, h, k, l), 20 equal-count shells, random.Random(2109915952).shuffle per shell (one generator), dealt round robin to select/report",
+  "n_parts": 2,
+  "n_shells": 20,
+  "seed": 2109915952,
+  "shells": [
+   {
+    "d_max": 36.5775,
+    "d_min": 3.8208,
+    "n": 45,
+    "n_report": 22,
+    "n_select": 23,
+    "shell": 1
+   },
+   {
+    "d_max": 3.8095,
+    "d_min": 3.0814,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 2
+   },
+   {
+    "d_max": 3.0637,
+    "d_min": 2.6705,
+    "n": 45,
+    "n_report": 23,
+    "n_select": 22,
+    "shell": 3
+   },
+   {
+    "d_max": 2.6684,
+    "d_min": 2.4242,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 4
+   },
+   {
+    "d_max": 2.4233,
+    "d_min": 2.2412,
+    "n": 45,
+    "n_report": 22,
+    "n_select": 23,
+    "shell": 5
+   },
+   {
+    "d_max": 2.229,
+    "d_min": 2.0744,
+    "n": 45,
+    "n_report": 23,
+    "n_select": 22,
+    "shell": 6
+   },
+   {
+    "d_max": 2.0714,
+    "d_min": 1.9734,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 7
+   },
+   {
+    "d_max": 1.973,
+    "d_min": 1.8789,
+    "n": 45,
+    "n_report": 22,
+    "n_select": 23,
+    "shell": 8
+   },
+   {
+    "d_max": 1.8771,
+    "d_min": 1.7941,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 9
+   },
+   {
+    "d_max": 1.7938,
+    "d_min": 1.7533,
+    "n": 45,
+    "n_report": 23,
+    "n_select": 22,
+    "shell": 10
+   },
+   {
+    "d_max": 1.753,
+    "d_min": 1.7057,
+    "n": 45,
+    "n_report": 22,
+    "n_select": 23,
+    "shell": 11
+   },
+   {
+    "d_max": 1.7033,
+    "d_min": 1.6587,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 12
+   },
+   {
+    "d_max": 1.6584,
+    "d_min": 1.5951,
+    "n": 45,
+    "n_report": 23,
+    "n_select": 22,
+    "shell": 13
+   },
+   {
+    "d_max": 1.594,
+    "d_min": 1.5522,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 14
+   },
+   {
+    "d_max": 1.5522,
+    "d_min": 1.514,
+    "n": 45,
+    "n_report": 22,
+    "n_select": 23,
+    "shell": 15
+   },
+   {
+    "d_max": 1.514,
+    "d_min": 1.4786,
+    "n": 45,
+    "n_report": 23,
+    "n_select": 22,
+    "shell": 16
+   },
+   {
+    "d_max": 1.4781,
+    "d_min": 1.4508,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 17
+   },
+   {
+    "d_max": 1.4499,
+    "d_min": 1.4232,
+    "n": 45,
+    "n_report": 22,
+    "n_select": 23,
+    "shell": 18
+   },
+   {
+    "d_max": 1.4229,
+    "d_min": 1.3945,
+    "n": 46,
+    "n_report": 23,
+    "n_select": 23,
+    "shell": 19
+   },
+   {
+    "d_max": 1.394,
+    "d_min": 1.3706,
+    "n": 45,
+    "n_report": 23,
+    "n_select": 22,
+    "shell": 20
+   }
+  ]
+ },
+ "split_mtz": "/home/dev/runs/hr/Tba97f6/prep/split.mtz",
+ "split_mtz_sha256": "7b29732a64681404178cc366a826514b0ffacea671c40b2561a1651b4b9643ef",
+ "split_version": "stratified 2-way (this file's split v2-style)",
+ "target": "Tba97f6",
+ "test_flag_value": 0,
+ "unit_cell": [
+  44.783,
+  44.783,
+  220.058,
+  90.0,
+  90.0,
+  120.0
+ ],
+ "written_at": "2026-10-19T09:21:03Z"
+}

@@ -1,0 +1,16 @@
+[2026-10-21T04:03:48Z] chain_que3 start on /home/dev/runs/hr/T9884ae from S0057, standing weights 2 2
+[2026-10-21T04:03:48Z] coot_outliers_r (1) from S0057
+S0059 2026-10-21T04:09:06Z rotamer-finder coot_fix parent S0057 | Coot auto-fit rotamers on the rotamer outliers (phenix.rotalyze) | R-free 0.26419 -> 0.26543 (+1.6 sigma) R-work 0.21236 -> 0.21497 gap -0.0014 clash 6.5 rota 3.0 % | atoms 2
+[2026-10-21T04:09:07Z] pick_4.0_r (1) from S0057
+S0061 2026-10-21T04:14:11Z solvent water_addition parent S0057 | waters at 4.0 sigma, mode single | R-free 0.26419 -> 0.26981 (+7.0 sigma) R-work 0.21236 -> 0.21416 gap +0.0038 clash 6.2 rota 3.3 % | atoms 2905 waters 70 altlocs - anisou 27
+[2026-10-21T04:14:11Z] pick_3.0_r (1) from S0057
+S0062 2026-10-21T04:19:20Z solvent water_addition parent S0057 | waters at 3.0 sigma, mode single | R-free 0.26419 -> 0.27249 (+8.9 sigma) R-work 0.21236 -> 0.20881 gap +0.0118 clash 6.9 rota 4.0 % | atoms 2951 waters 116 altlocs - anisou 2
+[2026-10-21T04:19:20Z] add_hydrogens_r from S0057
+S0063 2026-10-21T04:27:04Z refinement refine_step parent S0057 | riding hydrogens added (phenix.ready_set, else mmtbx.reduce2); the control has none | R-free 0.26419 -> 0.26976 (+6.9 sigma) R-work 0.21236 -> 0.20602 gap +0.0119 clash 3.4 ro
+[2026-10-21T04:27:04Z] mask_r from S0057
+S0064 2026-10-21T04:34:47Z refinement refine_step parent S0057 | bulk-solvent mask radii optimised (refinement.main.optimize_mask) against the fixed defaults | R-free 0.26419 -> 0.26497 (+1.0 sigma) R-work 0.21236 -> 0.21468 gap -0.0015 cla
+[2026-10-21T04:34:47Z] settle_s (1) from S0057
+S0065 2026-10-21T04:34:47Z refinement refine_step parent S0057 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.26419 -> 0.26497 (+1.0 sigma) R-work 0.21236 -> 0.21468 gap -0.0015 clash 5.5
+[2026-10-21T04:34:48Z] converge_s from S0057
+S0066 2026-10-21T04:34:48Z refinement refine_step parent S0057 | 20 macro-cycles against 10 | R-free 0.26419 -> 0.26408 (-0.1 sigma) R-work 0.21236 -> 0.21667 gap -0.0044 clash 5.8 rota 3.6 % | atoms 2896 waters 61 altlocs - anisou 2764 | R
+[2026-10-21T04:34:48Z] chain_que3 end on /home/dev/runs/hr/T9884ae; best model S0057

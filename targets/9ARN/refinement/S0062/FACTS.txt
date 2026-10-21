@@ -1,0 +1,1 @@
+S0062 2026-10-20T02:10:55Z refinement refine_step parent S0060 | TLS, 2 groups (phenix.find_tls_groups) | R-free 0.28733 -> 0.27695 (-11.2 sigma) R-work 0.23462 -> 0.23894 gap -0.0147 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 649 | ACCEPT

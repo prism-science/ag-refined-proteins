@@ -1,0 +1,1 @@
+S0061 2026-10-21T01:52:30Z refinement refine_step parent S0050 | restraint weights wc 0.3 wu 0.25 against 1 1 | R-free 0.14797 -> 0.14746 (-1.9 sigma) R-work 0.08328 -> 0.08064 gap +0.0021 clash 6.8 rota 2.7 % | atoms 25909 waters 1425 altlocs ABCDEF anisou 12109 | ACCEPT

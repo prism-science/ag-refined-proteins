@@ -1,0 +1,21 @@
+[2026-10-20T00:34:05Z] chain_noise start on /home/dev/runs/hr/Tba97f6 from S0000, standing weights 0.5 1
+[2026-10-20T00:34:05Z] weights_2_2 from S0000
+S0049 2026-10-20T00:39:13Z refinement refine_step parent S0000 | restraint weights wc 2 wu 2 against 0.5 1 | R-free 0.29440 -> 0.29917 (+5.1 sigma) R-work 0.25417 -> 0.24226 gap +0.0167 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB 
+[2026-10-20T00:39:14Z] weights_3_3 from S0000
+S0050 2026-10-20T00:44:05Z refinement refine_step parent S0000 | restraint weights wc 3 wu 3 against 2 2 | R-free 0.29440 -> 0.30060 (+6.7 sigma) R-work 0.25417 -> 0.24569 gap +0.0147 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB an
+[2026-10-20T00:44:06Z] weights_5_5 from S0000
+S0051 2026-10-20T00:48:47Z refinement refine_step parent S0000 | restraint weights wc 5 wu 5 against 2 2 | R-free 0.29440 -> 0.30222 (+8.4 sigma) R-work 0.25417 -> 0.25491 gap +0.0071 clash 0.8 rota 0.0 % | atoms 654 waters 38 altlocs AB an
+[2026-10-20T00:48:47Z] weights_0.5_3 from S0000
+S0052 2026-10-20T00:53:36Z refinement refine_step parent S0000 | restraint weights wc 0.5 wu 3 against 2 2 | R-free 0.29440 -> 0.30193 (+8.1 sigma) R-work 0.25417 -> 0.24039 gap +0.0213 clash 2.4 rota 1.5 % | atoms 654 waters 38 altlocs AB 
+[2026-10-20T00:53:36Z] weights_0.5_5 from S0000
+S0053 2026-10-20T00:58:19Z refinement refine_step parent S0000 | restraint weights wc 0.5 wu 5 against 2 2 | R-free 0.29440 -> 0.30116 (+7.3 sigma) R-work 0.25417 -> 0.24689 gap +0.0140 clash 2.4 rota 0.0 % | atoms 654 waters 38 altlocs AB 
+[2026-10-20T00:58:20Z] group_adp_n1 from S0000
+S0054 2026-10-20T01:04:46Z refinement refine_step parent S0000 | 1 group B factor for each residue (strategy group_adp) against individual ADPs | R-free 0.29440 -> 0.29868 (+4.6 sigma) R-work 0.25417 -> 0.25920 gap -0.0007 clash 1.6 rota 1.
+[2026-10-20T01:04:47Z] group_adp_n2 from S0000
+S0055 2026-10-20T01:11:39Z refinement refine_step parent S0000 | 2 group B factors (main chain, side chain) for each residue (strategy group_adp) against individual ADPs | R-free 0.29440 -> 0.30334 (+9.6 sigma) R-work 0.25417 -> 0.26215 gap
+[2026-10-20T01:11:39Z] restraints_n from S0000
+S0056 2026-10-20T01:16:44Z refinement refine_step parent S0000 | secondary-structure restraints and Ramachandran restraints against none (the low-resolution restraints) | R-free 0.29440 -> 0.29338 (-1.1 sigma) R-work 0.25417 -> 0.23881 gap 
+[2026-10-20T01:16:44Z] fix_rotamers_n from S0056
+[2026-10-20T01:21:35Z] converge_n (1) from S0056
+S0057 2026-10-20T01:32:28Z refinement refine_step parent S0056 | 20 macro-cycles against 10 | R-free 0.29338 -> 0.29869 (+2.1 sigma) R-work 0.23881 -> 0.24416 gap -0.0000 clash 2.4 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 611 | RE
+[2026-10-20T01:32:28Z] chain_noise end on /home/dev/runs/hr/Tba97f6; best model S0056

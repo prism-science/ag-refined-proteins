@@ -4,10 +4,12 @@ Crystallographic models refined by an autonomous harness (the *autoresearch* pro
 what is needed to use, check and extend them: the model, the map coefficients, the working data and the inherited
 free-reflection flags it was scored on, the deposited model it started from, and the complete step record of the run.
 
-This branch is the starting point of the hierarchical refinement line (October 2026). It holds one target, 7KR0, the
-SARS-CoV-2 NSP3 macrodomain at 0.77 Å, refined from the deposited file to a six-copy ensemble. The earlier campaign's
-targets and records (the single-model line, August to October 2026) are on `main` and the `release-*` branches.
-Nothing here is a ceiling: the run continues and this branch is a dated snapshot of the model in force.
+This branch is the hierarchical refinement line (October 2026). It holds eight targets, from 0.75 to 2.7 Å, each
+refined from its deposited file by the harness: four six-copy ensembles (8C5N, 7KR0, 7R2H, 3TC7), one two-copy
+ensemble (1LZ8) and three single models (9ARN, 4QO4, 3QUE). The earlier campaign's targets and records (the
+single-model line, August to October 2026) are on `main` and the `release-*` branches. Nothing here is a ceiling: the
+runs continue (7R2H and 8C5N were still refining at this snapshot) and this branch is a dated snapshot of the model in
+force on each target.
 
 ## Results
 
@@ -18,7 +20,14 @@ reflections. "Full" is the whole free set; "report" is the half the gate never c
 <!-- results-table:begin -->
 | Target | Res. (Å) | Entry | Deposited, our flags (full / report) | This release (full / report) | Δ full | Gap (deposited → ours) | Clashscore, rotamer outliers % (deposited → ours) | Model | Status |
 |---|---|---|---|---|---|---|---|---|---|
+| [8C5N](targets/8C5N/README.md) | 0.75 | Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa | 0.1571 / 0.1582 | **0.0908 / 0.0910** | −0.0663 | 0.0092 → 0.0233 | 7.0, 2.3 → 8.8, 1.3 | six-copy ensemble, step S0027 | improved |
 | [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K) | 0.1175 / 0.1189 | **0.0726 / 0.0740** | −0.0449 | 0.0071 → 0.0259 | 4.3, 0.9 → 7.7, 1.5 | six-copy ensemble, step S0053 | improved |
+| [7R2H](targets/7R2H/README.md) | 0.79 | Cyclophilin D with DMSO | 0.1551 / 0.1589 | **0.0993 / 0.1001** | −0.0559 | 0.0106 → 0.0300 | 0.0, 0.0 → 7.8, 1.0 | six-copy ensemble, step S0019 | improved |
+| [9ARN](targets/9ARN/README.md) | 1.41 | HIV-1 gp41 CHR-NHR reverse hairpin construct | 0.2944 / 0.2941 | **0.2769 / 0.2856** | −0.0175 | 0.0402 → 0.0380 | 1.6, 0.0 → 1.6, 0.0 | single model, step S0062 | improved |
+| [3TC7](targets/3TC7/README.md) | 1.5 | Engineered protein, NESG target OR62 | 0.1918 / 0.1932 | **0.1475 / 0.1466** | −0.0444 | 0.0382 → 0.0668 | 2.9, 1.4 → 6.8, 2.7 | six-copy ensemble, step S0061 | improved |
+| [1LZ8](targets/1LZ8/README.md) | 1.53 | Hen egg-white lysozyme, phased on the anomalous signal of S and Cl | 0.2826 / 0.2803 | **0.2408 / 0.2375** | −0.0418 | 0.0802 → 0.0746 | 5.1, 1.9 → 1.3, 0.5 | two-copy ensemble, step S0073 | improved |
+| [4QO4](targets/4QO4/README.md) | 1.7 | MDM2 (17-111) with compound 16 | 0.3133 / 0.2909 | **0.2747 / 0.2625** | −0.0386 | 0.0502 → 0.0518 | 16.0, 6.0 → 7.3, 3.5 | single model, step S0064 | improved |
+| [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP kinase with Skepinone-L | 0.2901 / 0.2883 | **0.2642 / 0.2585** | −0.0259 | 0.0670 → 0.0518 | 10.6, 7.6 → 6.3, 3.6 | single model, step S0057 | improved |
 <!-- results-table:end -->
 
 Status meanings:

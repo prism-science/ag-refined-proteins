@@ -1,0 +1,22 @@
+[2026-10-19T15:09:58Z] chain_more start on /home/dev/runs/hr/Tee73c5 from S0020, d_min 1.7000760984892174, standing weights 0.5 1
+[2026-10-19T15:09:58Z] prune_a from S0020
+S0026 2026-10-19T15:13:43Z solvent water_addition parent S0020 | waters below 1.0 sigma in the work-only 2mFo-DFc map removed | R-free 0.25994 -> 0.26314 (+6.5 sigma) R-work 0.20387 -> 0.20577 gap +0.0013 clash 2.0 rota 1.9 % | atoms 1191 w
+[2026-10-19T15:13:43Z] cleanup_a from S0020
+S0027 2026-10-19T15:17:32Z solvent water_addition parent S0020 | water clash cleanup | R-free 0.25994 -> 0.25803 (-3.8 sigma) R-work 0.20387 -> 0.20296 gap -0.0010 clash 2.6 rota 1.9 % | atoms 1219 waters 209 altlocs - anisou 1010 | REFUSE
+[2026-10-19T15:17:33Z] tls_find_a from S0020
+S0028 2026-10-19T15:21:32Z refinement refine_step parent S0020 | TLS, 6 groups (phenix.find_tls_groups) against the standing 1 group(s) | R-free 0.25994 -> 0.25647 (-4.2 sigma) R-work 0.20387 -> 0.20137 gap -0.0010 clash 4.1 rota 1.9 % | at
+[2026-10-19T15:21:32Z] weights_0.5_0.5 from S0020
+S0029 2026-10-19T15:25:14Z refinement refine_step parent S0020 | restraint weights wc 0.5 wu 0.5 against 0.5 1 | R-free 0.25994 -> 0.25798 (-4.5 sigma) R-work 0.20387 -> 0.20026 gap +0.0017 clash 4.6 rota 1.9 % | atoms 1221 waters 211 altlo
+[2026-10-19T15:25:15Z] weights_0.5_2.0 from S0020
+S0030 2026-10-19T15:28:59Z refinement refine_step parent S0020 | restraint weights wc 0.5 wu 2 against 0.5 1 | R-free 0.25994 -> 0.25906 (-1.7 sigma) R-work 0.20387 -> 0.20578 gap -0.0028 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs
+[2026-10-19T15:28:59Z] weights_0.4_1.0 from S0020
+S0031 2026-10-19T15:32:44Z refinement refine_step parent S0020 | restraint weights wc 0.4 wu 1 against 0.5 1 | R-free 0.25994 -> 0.25777 (-4.7 sigma) R-work 0.20387 -> 0.20166 gap +0.0000 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs
+[2026-10-19T15:32:44Z] settle_d (1) from S0020
+S0032 2026-10-19T15:33:28Z refinement refine_step parent S0020 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.25994 -> 0.25794 (-4.8 sigma) R-work 0.20387 -> 0.20259 gap -0.0007 clash 4.6
+[2026-10-19T15:33:28Z] settle_d (2) from S0032
+S0033 2026-10-19T15:37:41Z refinement refine_step parent S0032 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.25794 -> 0.25821 (+0.4 sigma) R-work 0.20259 -> 0.20343 gap -0.0006 clash 4.1
+[2026-10-19T15:37:41Z] split 2 copies from S0032, source qfit
+[2026-10-19T15:37:44Z] after the split the best model is S0032
+[2026-10-19T15:37:44Z] converge_e (1) from S0032
+S0034 2026-10-19T15:44:13Z refinement refine_step parent S0032 | 20 macro-cycles against 10 | R-free 0.25794 -> 0.25879 (+1.0 sigma) R-work 0.20259 -> 0.20429 gap -0.0008 clash 4.1 rota 1.9 % | atoms 1221 waters 211 altlocs - anisou 1010 | 
+[2026-10-19T15:44:13Z] chain_more end on /home/dev/runs/hr/Tee73c5; best model S0032

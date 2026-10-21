@@ -1,0 +1,186 @@
+Starting phenix.python
+on Wed Oct 21 16:38:40 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0027.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0027.pdb"
+    }
+    default_model = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0027.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 10.82 seconds
+wall clock time: 14.73 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 109 ETHR  OG1  z 359 EHOH  O   :0.821
+ A 132 FARG  HG2  A 132 FARG HH11 :0.814
+ A 179 EPRO  HB2  A 182 ELYS  CG  :0.776
+ A 132 EARG  HG2  A 132 EARG HH11 :0.715
+ A  70 BVAL HG12  A  91 BALA  HB2 :0.701
+ A 202 ETYR  O    z 461 EHOH  O   :0.693
+ A 105 CASP  OD2  z 951 CHOH O    :0.688
+ A 111 DILE  O    z 329 DHOH  O   :0.663
+ A 118 DASN  OD1  z 487 DHOH  O   :0.661
+ A  46 CASN HD22  A  48 CLYS  NZ  :0.651
+ A  89 FCYS  O    z 424 FHOH  O   :0.649
+ A 111 EILE HD11  A 209 EPHE  HE1 :0.646
+ A  71 CASN  O    A  93 CLYS  HE3 :0.645
+ A 109 BTHR  OG1  z 356 BHOH  O   :0.645
+ A 137 ATYR  O    A 188 AILE  HA  :0.640
+ A  71 DASN  HB3  A 201 DPHE  CE2 :0.635
+ A  44 BPRO  O    A  47 BPRO  HD3 :0.624
+ A  27 DGLY  C    A 123 DTYR  OH  :0.623
+ A  80 FGLN  HG2  A 151 FTRP  CE2 :0.612
+ A  71 FASN  HB3  A 201 FPHE  CE2 :0.610
+ A  30 FGLU  CD   z1551 FHOH O    :0.599
+ A  71 BASN  OD1  A  93 BLYS  NZ  :0.599
+ A 109 DTHR  O    A 207 DVAL  HA  :0.594
+ A 104 FSER  O    A 185 FLYS  HE3 :0.592
+ A 111 EILE HD11  A 209 EPHE  CE1 :0.582
+ A  33 CPRO  HG3  z 882 CHOH  O   :0.581
+ A  71 CASN  O    A  93 CLYS  CE  :0.580
+ A  46 CASN  O    A  48 CLYS  HE3 :0.579
+ A  71 DASN  HB3  A 201 DPHE  CD2 :0.579
+ A  70 BVAL HG12  A  91 BALA  CB  :0.577
+ A  87 EGLN  HA   A 100 EASN  CG  :0.570
+ A 132 FARG  CG   A 132 FARG HH11 :0.570
+ A 179 EPRO  O    A 182 ELYS  HG3 :0.567
+ A  46 EASN  CG   A  46 EASN  O   :0.566
+ A 104 DSER  O    A 185 DLYS  NZ  :0.564
+ A  80 BGLN  HG2  A 151 BTRP  CE2 :0.558
+ A 108 FSER  HA   A 206 FASP  O   :0.557
+ A 103 BARG  O    A 145 BPRO  HB2 :0.557
+ A  97 CLYS  HE2  z1504 CHOH O    :0.550
+ A  26 CHIS  HA   A 201 CPHE  CE2 :0.548
+ A 136 FPHE  O    A 158 FPRO  HA  :0.547
+ A 135 DASP  O    A 190 DASN  HA  :0.547
+ A 179 EPRO  HB2  A 182 ELYS  HG2 :0.539
+ A  74 BASN  OD1  z 674 BHOH  O   :0.539
+ A 180 EGLN  OE1  z1020 EHOH O    :0.536
+ A 159 CPHE  CE2  A 179 CPRO  HD3 :0.535
+ A 182 CLYS  HD3  A 186 CHIS  CE1 :0.529
+ A  79 DHIS  ND1  A 202 DTYR  OH  :0.528
+ A  80 FGLN  HG2  A 151 FTRP  CD2 :0.524
+ A 188 BILE  O    A 205 BILE  N   :0.524
+ A 135 EASP  O    A 190 EASN  HA  :0.520
+ A  37 BTYR  CE2  A  41 BLEU HD11 :0.518
+ A 114 BASP  OD1  A 116 BSER  OG  :0.514
+ A 182 ELYS  HD2  z1061 EHOH O    :0.512
+ A  97 FLYS  HD3  z1505 FHOH O    :0.510
+ A 125 FALA  HB2  A 172 FTYR  CE2 :0.509
+ A  71 EASN  HB3  A 201 EPHE  CE2 :0.506
+ A 182 DLYS  HD3  A 186 DHIS  CE1 :0.503
+ A  46 CASN HD22  A  48 CLYS  HZ2 :0.500
+ A 114 AASP  HB2  A 301   CL CL   :0.498
+ A 137 CTYR  CE2  A 158 CPRO  HD3 :0.495
+ A 132 DARG  HB3  A 193 DGLN  O   :0.491
+ A 180 BGLN  HA   z1229 BHOH O    :0.491
+ A  97 BLYS  HE2  z1503 BHOH O    :0.484
+ A  90 EGLY  HA2  A  96 EPHE  HB3 :0.483
+ A 132 EARG  CG   A 132 EARG HH11 :0.483
+ A  71 FASN  HB3  A 201 FPHE  CD2 :0.482
+ A  93 FLYS  HD2  A  96 FPHE  CD2 :0.482
+ A 137 ATYR  HB2  A 189 ATYR  HB3 :0.482
+ A  26 FHIS  CE1  z 532 FHOH  O   :0.481
+ A  80 BGLN  HG2  A 151 BTRP  CD1 :0.481
+ A 132 DARG  HG2  A 132 DARG HH11 :0.475
+ A  71 DASN  O    A  93 DLYS  HD2 :0.474
+ A  53 DLYS  O    z 479 DHOH  O   :0.472
+ A  46 AASN  O    A  48 ALYS  HE3 :0.471
+ A  72 BGLN  HG3  A  82 BVAL  HB  :0.471
+ A  86 AGLY  N    A 149 ALEU  O   :0.469
+ A  44 FPRO  HG2  A  65 FTYR  CE1 :0.464
+ A 166 CLYS  HE2  A 168 CGLU  HG2 :0.463
+ A 145 CPRO  HB3  z 809 CHOH  O   :0.462
+ A 123 BTYR  O    A 171 BTHR  HA  :0.462
+ A 159 BPHE  CE1  A 179 BPRO  HD3 :0.461
+ A 139 ATHR HG23  A 187 AVAL  HB  :0.459
+ A 185 DLYS  HE2  z 433 DHOH  O   :0.458
+ A  29 AMET  SD   A 122 AVAL  O   :0.458
+ A  46 CASN  ND2  A  48 CLYS  NZ  :0.456
+ A  46 CASN  ND2  A  46 CASN  O   :0.455
+ A 179 EPRO  HB2  A 182 ELYS  CD  :0.451
+ A  30 AGLU  CD   A 124 ALYS  HE2 :0.450
+ A  80 BGLN  HG2  A 151 BTRP  NE1 :0.445
+ A  71 FASN  O    A  93 FLYS  HD3 :0.444
+ A  95 DLEU HD23  A  96 DPHE  CE2 :0.441
+ A  67 ETRP  CZ3  A  68 EASN  HB3 :0.437
+ A  68 DASN  C    A  68 DASN  OD1 :0.436
+ A  26 FHIS  HA   A 201 FPHE  CE2 :0.435
+ A  83 BVAL  CG1  A  88 BLEU  HA  :0.435
+ A 134 DPHE  HB3  A 190 DASN HD21 :0.435
+ A 179 EPRO  HB2  A 182 ELYS  HG3 :0.435
+ A  74 AASN  HA   A 198 APRO  HB2 :0.434
+ A  86 AGLY  CA   A 149 ALEU  O   :0.433
+ A 134 DPHE  HA   A 191 DVAL  O   :0.432
+ A  72 FGLN  HG3  A  82 FVAL HG13 :0.431
+ A 179 EPRO  HB2  A 182 ELYS  HD2 :0.431
+ A  26 CHIS  N    A 201 CPHE  CZ  :0.431
+ A  83 DVAL HG13  A  91 DALA  HA  :0.430
+ A  28 DSER  N    A 123 DTYR  CZ  :0.430
+ A 182 ALYS  HA   A 182 ALYS  HD2 :0.428
+ A  27 DGLY  HA3  A 123 DTYR  CE2 :0.427
+ A  35 FARG  NH1  A  89 FCYS  SG  :0.427
+ A 139 CTHR  HA   A 153 CASP  O   :0.426
+ A  79 DHIS  NE2  A 191 DVAL HG11 :0.425
+ A  87 CGLN  OE1  A  92 CGLY  HA2 :0.421
+ A  42 CGLU  O    A  46 CASN  ND2 :0.421
+ A 129 EHIS  CE1  A 194 EARG  CZ  :0.419
+ A 192 ATRP  O    A 200 AALA  HB1 :0.419
+ A  27 BGLY  N    A  68 BASN  HB2 :0.418
+ A  26 FHIS  HE1  z 532 FHOH  O   :0.418
+ A 138 CILE  O    A 154 CLEU  HA  :0.417
+ A  73 AGLY  O    A 198 APRO  HG2 :0.417
+ A  64 CLEU  O    A  67 CTRP  HD1 :0.417
+ A  71 AASN  OD1  A  93 ALYS  NZ  :0.417
+ A  46 EASN  O    A  46 EASN  OD1 :0.416
+ A  27 BGLY  HA3  A 124 BLYS  O   :0.415
+ A  67 FTRP  CD1  z 309 FHOH  O   :0.415
+ A 178 CLEU  HB3  A 179 CPRO  HD2 :0.415
+ A  39 ECYS  SG   A 106 ETRP  HZ3 :0.415
+ A 132 FARG  CG   A 132 FARG  NH1 :0.415
+ A  30 EGLU  CD   z1550 EHOH O    :0.413
+ A 121 CPHE  CD2  A 136 CPHE  CE2 :0.412
+ A 189 CTYR  CD1  A 204 CCYS  SG  :0.412
+ A 162 FILE HG21  A 174 FMET  HG2 :0.411
+ A  79 DHIS  HB3  A 202 DTYR  CE1 :0.410
+ A  93 FLYS  HD2  A  96 FPHE  HD2 :0.410
+ A  30 AGLU  OE1  A 124 ALYS  HE2 :0.410
+ A 149 BLEU  HB3  z 538 BHOH  O   :0.410
+ A 144 FASN  CG   A 144 FASN  O   :0.410
+ A 146 DGLU  O    z 472 DHOH  O   :0.410
+ A  86 AGLY  HA2  A 149 ALEU  O   :0.409
+ A  29 CMET  HA   A 123 CTYR  HA  :0.408
+ A  84 FPRO  HD2  A  92 FGLY  HA3 :0.408
+ A  74 CASN  HA   A  74 CASN HD22 :0.408
+ A 140 BLYS  O    A 141 BASP  C   :0.407
+ A  87 DGLN  O    A  91 DALA  N   :0.405
+ A 129 EHIS  CD2  A 194 EARG  HD2 :0.404
+ A 119 CPHE  HB2  A 178 CLEU HD11 :0.403
+clashscore = 8.84

@@ -1,0 +1,15 @@
+[2026-10-20T02:13:35Z] chain_arn3 waits for pid 1900744
+[2026-10-20T02:31:35Z] chain_arn3 start on /home/dev/runs/hr/Tba97f6 from S0062, standing weights 2 2
+[2026-10-20T02:31:35Z] iso_protein_b from S0062
+S0065 2026-10-20T02:39:25Z refinement refine_step parent S0062 | protein ADPs isotropic (anisotropic before) | R-free 0.27695 -> 0.29936 (+21.0 sigma) R-work 0.23894 -> 0.25342 gap +0.0079 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs 
+[2026-10-20T02:39:25Z] settle_arn (1) from S0062
+S0066 2026-10-20T02:40:07Z refinement refine_step parent S0062 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.27695 -> 0.28126 (+4.6 sigma) R-work 0.23894 -> 0.23966 gap +0.0036 clash 1.6
+[2026-10-20T02:40:08Z] weights_1_1_check from S0062
+S0067 2026-10-20T02:47:25Z refinement refine_step parent S0062 | restraint weights wc 1 wu 1 against 2 2 | R-free 0.27695 -> 0.27969 (+2.3 sigma) R-work 0.23894 -> 0.23693 gap +0.0048 clash 0.8 rota 0.0 % | atoms 654 waters 38 altlocs AB an
+[2026-10-20T02:47:25Z] pick_4.0_arn (1) from S0062
+S0068 2026-10-20T02:55:00Z solvent water_addition parent S0062 | waters at 4.0 sigma, mode single | R-free 0.27695 -> 0.28270 (+5.6 sigma) R-work 0.23894 -> 0.23931 gap +0.0054 clash 1.6 rota 0.0 % | atoms 660 waters 44 altlocs AB anisou 64
+[2026-10-20T02:55:00Z] tls_deposited_iso_b from S0062
+S0069 2026-10-20T03:02:51Z refinement refine_step parent S0062 | TLS, 2 groups (the deposited groups), protein ADPs isotropic against the standing 2 group(s) | R-free 0.27695 -> 0.29936 (+21.0 sigma) R-work 0.23894 -> 0.25342 gap +0.0079 cl
+[2026-10-20T03:02:51Z] converge_arn (1) from S0062
+S0070 2026-10-20T03:17:44Z refinement refine_step parent S0062 | 20 macro-cycles against 10 | R-free 0.27695 -> 0.28607 (+9.4 sigma) R-work 0.23894 -> 0.24507 gap +0.0030 clash 1.6 rota 0.0 % | atoms 654 waters 38 altlocs AB anisou 649 | RE
+[2026-10-20T03:17:45Z] chain_arn3 end on /home/dev/runs/hr/Tba97f6; best model S0062
