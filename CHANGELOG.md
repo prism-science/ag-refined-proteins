@@ -30,7 +30,7 @@ before this merge.
 
 ## 2026-10-19 — branch manzuoni/refinement: the hierarchical line starts here
 
-One target, 7KR0, from the hierarchical refinement harness (`prism-science/autoresearch`, branch
+One target, 7KR0, from the hierarchical refinement harness (`prism-science/agentic-refinement`, branch
 `manzuoni/hierarchical_refinement`): the six-copy ensemble in force at step S0053 (R-free 0.0726 on the deposited flags;
 the deposited model 0.1175 on the same flags), with its map coefficients from the work reflections, the working data and
 flags, the deposited model, the full step record (54 steps, 15 accepted) and the validation logs. The earlier campaign's

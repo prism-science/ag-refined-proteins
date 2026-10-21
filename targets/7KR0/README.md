@@ -12,7 +12,7 @@
 | Deposited refinement program | PHENIX |
 | Released by the PDB | 2020-12-09 |
 | Primary citation | Fragment binding to the Nsp3 macrodomain of SARS-CoV-2 identified through crystallographic screening and computational docking (Sci Adv 2021), DOI 10.1126/sciadv.abf8711 |
-| Harness | prism-science/autoresearch, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; the card: bfed380, merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; the card: bfed380, merged into `main` as 7d62e84) |
 | Run | handle Tff1b3f, step S0053, 2026-10-18 23:06:47 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00016 from three seeds), gap widened by at most 0.002, gap ≤ 0.0300 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

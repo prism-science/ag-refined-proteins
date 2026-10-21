@@ -1,7 +1,7 @@
 {
  "line": "hierarchical refinement (C-copy ensembles)",
  "harness": {
-  "repository": "prism-science/autoresearch",
+  "repository": "prism-science/agentic-refinement",
   "branch": "manzuoni/hierarchical_refinement",
   "commit_of_the_model": "bd972d3 (7KR0); bfed380 for the seven targets of 2026-10-21",
   "commit_at_release": "bfed380 (branch manzuoni/hierarchical_refinement; merged into main as 7d62e84)"

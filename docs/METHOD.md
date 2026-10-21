@@ -1,7 +1,7 @@
 # Method
 
 How the released models are produced, in enough detail to read the per-target records. The governing document is the
-harness specification, `docs/SPEC.md` in `prism-science/autoresearch` (branch `manzuoni/hierarchical_refinement`); the
+harness specification, `docs/SPEC.md` in `prism-science/agentic-refinement` (branch `manzuoni/hierarchical_refinement`); the
 dated results are in `docs/PLAN.md` there. This page orients.
 
 ## Inputs

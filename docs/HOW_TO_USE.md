@@ -55,7 +55,7 @@ bash scripts/verify_checksums.sh
 
 ## Continue
 
-The harness is `prism-science/autoresearch`, branch `manzuoni/hierarchical_refinement`. On its pod
+The harness is `prism-science/agentic-refinement`, branch `manzuoni/hierarchical_refinement`. On its pod
 (`docs/POD.md` there), with the run directory restored from `refinement/` and `data/`, every tool takes `--run RUN
 --parent S0053` and prints the facts line of the step it judged:
 

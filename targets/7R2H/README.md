@@ -12,7 +12,7 @@
 | Deposited refinement program | PHENIX |
 | Released by the PDB | 2023-02-15 |
 | Primary citation | Structure-based design of pyrazole derivatives targeting the human Cyclophilin D binding site (Int.J.Biol.Macromol. 2026), DOI 10.1016/j.ijbiomac.2026.151496 |
-| Harness | prism-science/autoresearch, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
 | Run | handle Ta4f3f9, step S0019, 2026-10-21 04:20:51 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00016 from three seeds), gap widened by at most 0.002, gap ≤ 0.0300 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

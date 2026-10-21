@@ -8,13 +8,13 @@ import datetime, json, math, re, sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[1])
-HARNESS = "prism-science/autoresearch, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21)"
+HARNESS = "prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21)"
 RUNNING = {"7R2H", "8C5N"}   # runs still going at export
 
 T = {
  "7KR0": dict(handle="Tff1b3f", step="S0053", kind="a six-copy ensemble",
    short="Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K)",
-   harness="prism-science/autoresearch, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; the card: bfed380, merged into `main` as 7d62e84)",
+   harness="prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; the card: bfed380, merged into `main` as 7d62e84)",
    vault_row="3 400 work reflections (2 %) removed from every working file at preprocessing; read one time, at S0011",
    vault_caveat="**The vault was read once, at S0011** (R-vault 0.0769 against R-free 0.0809, no leak signature). The 42 steps after it used no held-out reflections of any kind in a decision, and every map that placed a water excluded the free set, but the gains since S0011 have not yet been checked against the vault. That read is the operator's.",
    what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working data

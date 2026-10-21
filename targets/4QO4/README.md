@@ -12,7 +12,7 @@
 | Deposited refinement program | CNS |
 | Released by the PDB | 2014-07-16 |
 | Primary citation | Discovery of Potent and Simplified Piperidinone-Based Inhibitors of the MDM2-p53 Interaction (ACS Med Chem Lett 2014), DOI 10.1021/ml500142b |
-| Harness | prism-science/autoresearch, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
 | Run | handle T40560e, step S0064, 2026-10-20 08:38:01 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00056 from three seeds), gap widened by at most 0.002, gap ≤ 0.0704 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

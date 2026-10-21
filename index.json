@@ -2,7 +2,7 @@
  "name": "ag-refined-proteins",
  "generated_by": "scripts/build_index.py",
  "n_targets": 8,
- "line": "hierarchical refinement (C-copy ensembles), prism-science/autoresearch branch manzuoni/hierarchical_refinement",
+ "line": "hierarchical refinement (C-copy ensembles), prism-science/agentic-refinement branch manzuoni/hierarchical_refinement",
  "targets": [
   {
    "id": "1LZ8",
@@ -94,7 +94,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/1LZ8/README.md": "263615bbb1317d3873480ed6ea84370fbe5855a8a4066dd8b93c3836d774691a",
+    "targets/1LZ8/README.md": "232e2584b8db42a45459c18bb3575292ae6f43623de9e563e3f216e5a54ca52f",
     "targets/1LZ8/data/1LZ8_data.mtz": "13d4c4223c89d54a53c36044ba60a15a65cb56d5c5077b53461a3d1624559ca8",
     "targets/1LZ8/data/1LZ8_flags.mtz": "8392b83d91c5ff9c45114a857b95ca5aa4752777cba1d508440668ba676aff3e",
     "targets/1LZ8/data/1LZ8_split.mtz": "9427d44b5c67e9ab6da0359ce0bb965c6ede20f8b80a2fdd319cbc5d6d45df49",
@@ -248,7 +248,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/3QUE/README.md": "93f6a20f8a950352272d2e4da4317065723e42d40805f01b0a4ac46012f3556b",
+    "targets/3QUE/README.md": "ccd4d3fd211ebde4817cc7463ac27f40e607df5f4b611798b6a5e68dea8c20e9",
     "targets/3QUE/data/3QUE_data.mtz": "ddfc0f8e3ddf64221895839397d05cf03e5880b53ae263cf0ac6ef0330d76813",
     "targets/3QUE/data/3QUE_flags.mtz": "64d2a022b8a0bef35c4c163102792f15351c47a580b5d209f595c91dd6ecf328",
     "targets/3QUE/data/3QUE_split.mtz": "b271f05b8b273e16707ace63a011d489f80136d21a1f99d9bda6069387e59a2a",
@@ -394,7 +394,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/3TC7/README.md": "66fb6005e3d06d320629a642fc1c7a29a337788b5c60abf7ecc90deaccf860b9",
+    "targets/3TC7/README.md": "b782afb840fb8c4c7b58e376d4350177d60ee8a88562d620ffdde6421cc21eb6",
     "targets/3TC7/data/3TC7_data.mtz": "5ddb980eeb8ee13881d4eb73e18db7dbfa85206dd113de2d03e243ab56af32b4",
     "targets/3TC7/data/3TC7_flags.mtz": "586823458cad43181e3c4f901ade2b44dfbc44c9e016d54e6151680fca8b991f",
     "targets/3TC7/data/3TC7_split.mtz": "eef053ab823a1be057a1302f56ed8fe152867db30f1bbc1d4eb9f98a552e5552",
@@ -552,7 +552,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/4QO4/README.md": "7e4cec786c5e35c62840345e395b9a7cbe1dfae09a3801cd8e4701d7a22d77ff",
+    "targets/4QO4/README.md": "22dadfcf1ff18c478b125b10f76b34d2e5dd0c92a5efbb8f18544afee0e9c7d3",
     "targets/4QO4/data/4QO4_data.mtz": "18b3a17270ee0095586b08e4e735b2049145532985363f166919497d59dd5696",
     "targets/4QO4/data/4QO4_flags.mtz": "5832a8935cd6545714513e4175ebd5267cca241af678212735eb6d05989c7893",
     "targets/4QO4/data/4QO4_split.mtz": "00a74cbccf531092a0afa14a78b8b4e698c40dc7fd50a62cfb07a1d397d33fa2",
@@ -709,7 +709,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/7KR0/README.md": "e5e2f345be2bf9c13a2604c0f87d4734f1f6921424abc6131ac3c39197c33735",
+    "targets/7KR0/README.md": "a5eaa871c929d4a58640355209d700af6cd3790f4a8775825ca76e2922ad2f17",
     "targets/7KR0/data/7KR0_data.mtz": "0a8fdef1e4c5184cf11f93de372c640a61b2a72c6506d49cebaa656865a73438",
     "targets/7KR0/data/7KR0_flags.mtz": "bd3dbf9af8805a25c4fdaf7de6a42ebcb3f9045d8c383e8c6db6974324391ca9",
     "targets/7KR0/data/7KR0_split.mtz": "e2b642c35aa787850e9ee062697a6a5fbe948b908bd911d8306e69020050a78a",
@@ -856,7 +856,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/7R2H/README.md": "e911297f160e36806125bfb1dc2c89ca3f5f157b3fb4ed835913f12b696bc500",
+    "targets/7R2H/README.md": "dba8ca620312c858f72127e483a3e916f0fba4d48cfb6e5bdb281301fb19dcce",
     "targets/7R2H/data/7R2H_data.mtz": "471b7d0c6ad368f8da08deaded840c0e68c9e0f3967e53aac575c8e28fc6bc9c",
     "targets/7R2H/data/7R2H_flags.mtz": "873fa8517c5e5dcef175c37d2a713d00f6845b35377279fe0d620dec5214cd89",
     "targets/7R2H/data/7R2H_split.mtz": "50a69d3f79deebf942ffcf86fb55ff5ae85b7b33c548220b390475322729c63a",
@@ -988,7 +988,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/8C5N/README.md": "c95c76ffe695649c253656557d5f49bf8fc536fca5593bba28f4433982ea2659",
+    "targets/8C5N/README.md": "57b62c967c04aeea828062f7742f0dd2286708705614f92938792be49c48a712",
     "targets/8C5N/data/8C5N_data.mtz": "253761cd49491b3810df5124d25d3c04e20dfdd7800b6bae7ac883e18495bdd7",
     "targets/8C5N/data/8C5N_flags.mtz": "0cd16adf109f3527ab79f9db7c5acbae0e7c81f540820866ba3003a808a6f4de",
     "targets/8C5N/data/8C5N_split.mtz": "4ed3af076a3792df58753df38384bb91ec00e8afe1b38d00a13e14f08eeb0574",
@@ -1120,7 +1120,7 @@
    },
    "status": "improved",
    "files": {
-    "targets/9ARN/README.md": "620c72b39f1cad4c772817acbf3016416c0da1f691bac5d182df3fd3643db27e",
+    "targets/9ARN/README.md": "2f0da6b886b474b6f037b834be5170c6f701599b01a3ce25c89310b514546d49",
     "targets/9ARN/data/9ARN_data.mtz": "8640ea3357641af627fb7ee5cb2ffd9bbf1282efb842c5e89afd6c42b3a4e4e8",
     "targets/9ARN/data/9ARN_flags.mtz": "dd55f1943df4dd2012968726891d814a933c657522e04fd3c95c4ea77b7167fa",
     "targets/9ARN/data/9ARN_split.mtz": "7b29732a64681404178cc366a826514b0ffacea671c40b2561a1651b4b9643ef",

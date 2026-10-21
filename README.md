@@ -116,7 +116,7 @@ read once, at the end, as the leak check.
 ## Provenance
 
 `provenance.json` names the harness repository, branch and commits, the pod and the Phenix build, and the run handle
-and step of each released model. The harness (`prism-science/autoresearch`, branch `manzuoni/hierarchical_refinement`)
+and step of each released model. The harness (`prism-science/agentic-refinement`, branch `manzuoni/hierarchical_refinement`)
 holds the code, the specification (`docs/SPEC.md`) and the dated plan with every result (`docs/PLAN.md`).
 
 ## Refreshing this release
