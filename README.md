@@ -6,9 +6,7 @@
 Crystallographic models of eight PDB entries (0.75 to 2.7 Å) re-refined by an agentic workflow, with the data, maps,
 validation and step records needed to check and reuse them.
 
-## The idea
-
-The method was not found by the agent. The agent was directly prompted to follow a procedure based on the one in the
+The refinement process was directly prompted to follow a procedure based on the one in the
 preprint of Passmore et al. (2026), with their six-conformation model of 7KR0, PDB [44PS](https://www.rcsb.org/structure/44PS),
 as the reference model, complemented with additions for an agentic workflow: one change at a time, each refined beside
 a control and accepted only when R-free falls on the deposited free set, with a held-out set of reflections as a leak
