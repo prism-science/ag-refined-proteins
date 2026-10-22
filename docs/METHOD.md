@@ -1,8 +1,20 @@
 # Method
 
-How the released models are produced, in enough detail to read the per-target records. The governing document is the
-harness specification, `docs/SPEC.md` in `prism-science/agentic-refinement` (branch `manzuoni/hierarchical_refinement`); the
-dated results are in `docs/PLAN.md` there. This page orients.
+> In development. This page describes the procedure as it runs now; it will change.
+
+## Where the procedure comes from
+
+The procedure is not the agent's own. The agent was directly prompted to follow a procedure based on the one in the
+preprint of Passmore et al. (2026), six-conformation ensemble refinement with per-copy waters and connectivity
+optimisation of the copies (their program Untangler), with their PDB 44PS (six conformations, refined against 7KR0's
+data) as the reference model. The harness complements it with additions for an agentic workflow: each change is one
+step, refined beside a paired control and judged by one gate; a vault of held-out reflections is the leak check;
+decision maps use the work reflections only; and every step is recorded.
+
+> Passmore, S. K., Holton, J. M., Zatsepin, N. A., & Martin, A. V. (2026). Optimizing the connectivity of protein conformations to untangle ensemble refinement. *bioRxiv*. https://doi.org/10.64898/2026.09.17.752399 Code: https://github.com/Phoelionix/Untangler
+
+The governing document is the harness specification (`docs/SPEC.md` in `prism-science/agentic-refinement`); the dated
+results are in `docs/PLAN.md` there.
 
 ## Inputs
 

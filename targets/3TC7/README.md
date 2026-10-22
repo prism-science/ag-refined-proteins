@@ -1,5 +1,7 @@
 # 3TC7 — Crystal Structure of Engineered Protein. Northeast Structural Genomics Consortium Target OR62
 
+> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
+
 **Status: improved.** The released model is a six-copy ensemble with an R-free of 0.1475 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.1856 and the deposited model as scored (S0000) 0.1918 on the same reflections.
 
 | | |

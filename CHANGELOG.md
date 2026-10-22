@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-22 — the citation of the method
+
+The README now says what the repository is (in development) and where the method comes from: the agent was directly
+prompted to follow a procedure based on the preprint of Passmore et al. (2026), with PDB 44PS as the reference model,
+complemented with additions for an agentic workflow. The citation is in the README, in `docs/METHOD.md` and in
+`CITATION.cff` (as the preferred citation). Every card carries one attribution line; the 7KR0 card compares the release
+with 44PS on the same free set. The long harness description in the README is shortened.
+
 ## 2026-10-21 (d) — history flattened to one commit for the public release
 
 At the operator's direction the repository's history was rewritten: one commit now holds the tree of `main` as it

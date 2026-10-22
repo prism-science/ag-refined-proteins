@@ -1,5 +1,7 @@
 # 4QO4 — co-crystal structure of MDM2 (17-111) with compound 16, {(3R,5R,6S)-5-(3-CHLOROPHENYL)-6-(4-CHLOROPHENYL)-1-[(1S)-1-(6-CYCLOPROPYLPYRIDIN-2-YL)PROPYL]-3-METHYL-2-OXOPIPERIDIN-3-YL}ACETIC ACID
 
+> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
+
 **Status: improved.** The released model is a single model with an R-free of 0.2747 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.3097 and the deposited model as scored (S0000) 0.3133 on the same reflections.
 
 | | |

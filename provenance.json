@@ -8,7 +8,7 @@
  },
  "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "exported_at": "2026-10-21T17:32:18Z",
+ "exported_at": "2026-10-22T11:38:55Z",
  "released": {
   "7KR0": {
    "run_handle": "Tff1b3f",

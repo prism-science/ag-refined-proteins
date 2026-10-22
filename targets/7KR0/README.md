@@ -1,5 +1,7 @@
 # 7KR0 — Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K)
 
+> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
+
 **Status: improved.** The released model is a six-copy ensemble with an R-free of 0.0726 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.1095 and the deposited model as scored (S0000) 0.1175 on the same reflections.
 
 | | |
@@ -65,7 +67,8 @@ the gate wrote.
 ## Caveats
 
 - **The vault was read once, at S0011** (R-vault 0.0769 against R-free 0.0809, no leak signature). The 42 steps after it used no held-out reflections of any kind in a decision, and every map that placed a water excluded the free set, but the gains since S0011 have not yet been checked against the vault. That read is the operator's.
-- **The gap is 0.0259**, against 0.0089 for the re-refined model and 0.0071 for the deposited model as scored: the six copies and the free water occupancies fit the work set better than the free set. The run's cap is 0.030. A reference six-copy ensemble of this entry built earlier with maps that may have included the free reflections scores 0.0676 / 0.0507 on these flags; its advantage over this model is entirely in its solvent, and that comparison is in the harness plan, not in this release.
+- **The reference model scores lower.** PDB 44PS, the six-conformation model of these data from Passmore et al. (2026) and the reference model the agent was given, scores R-free 0.0657 and R-work 0.0485 on the same free set (scored 2026-10-03 by the earlier campaign's scorer), against 0.0726 / 0.0467 for this release. This release does not reach the reference.
+- **The gap is 0.0259**, against 0.0089 for the re-refined model and 0.0071 for the deposited model as scored: the six copies and the free water occupancies fit the work set better than the free set. The run's cap is 0.030.
 - **Clashscore 7.7** against 5.3 re-refined and 4.3 deposited; 40 waters sit in own-copy clashes that no other copy can take. Rotamer outliers 1.54 % are just above the gate's 1.5 % cap and passed because the control had the same.
 - Three mmtbx sub-reports (C-beta deviations, omega, Rama-Z) fail on a six-copy model; the geometry numbers above come from phenix.clashscore, rotalyze and ramalyze.
 

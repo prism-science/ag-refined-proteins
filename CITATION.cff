@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "ag-refined-proteins: crystallographic models refined by an autonomous harness, with data, maps, validation and the step record"
-message: "If you use these models or records, cite this repository and the original PDB entry of each target (its primary citation is in targets/<ID>/deposited/rcsb_entry.json)."
+title: "ag-refined-proteins: crystallographic models re-refined by an agentic workflow (in development), with data, maps, validation and the step record"
+message: "If you use these models, please cite the method they follow (Passmore et al. 2026, the preferred citation below) and the original PDB entry of each target (its primary citation is in targets/<ID>/deposited/rcsb_entry.json)."
 type: dataset
 authors:
   - name: "Astera Institute, autoresearch campaign"
@@ -11,5 +11,30 @@ keywords:
   - crystallography
   - refinement
   - R-free
+  - ensemble refinement
   - autonomous agent
   - Phenix
+preferred-citation:
+  type: article
+  title: "Optimizing the connectivity of protein conformations to untangle ensemble refinement"
+  authors:
+    - family-names: Passmore
+      given-names: Spencer K.
+    - family-names: Holton
+      given-names: J. M.
+    - family-names: Zatsepin
+      given-names: N. A.
+    - family-names: Martin
+      given-names: A. V.
+  journal: bioRxiv
+  year: 2026
+  doi: "10.64898/2026.09.17.752399"
+  url: "https://doi.org/10.64898/2026.09.17.752399"
+references:
+  - type: data
+    title: "6-conformation model of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K), PDB 44PS: the reference model"
+    authors:
+      - family-names: Passmore
+        given-names: S. K.
+    year: 2026
+    url: "https://www.rcsb.org/structure/44PS"

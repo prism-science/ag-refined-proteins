@@ -1,5 +1,7 @@
 # 3QUE — Human p38 MAP Kinase in Complex with Skepinone-L
 
+> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
+
 **Status: improved.** The released model is a single model with an R-free of 0.2642 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2853 and the deposited model as scored (S0000) 0.2901 on the same reflections.
 
 | | |

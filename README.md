@@ -1,24 +1,34 @@
 # ag-refined-proteins
 
-Crystallographic models refined by an autonomous harness (the *autoresearch* project, Astera Institute), released with
-what is needed to use, check and extend them: the model, the map coefficients, the working data and the inherited
-free-reflection flags it was scored on, the deposited model it started from, and the complete step record of the run.
+> This repository is under active development. The models are dated snapshots of refinements that are still running,
+> and the numbers will change. If you find a problem, please open an issue with the target ID and the file you used.
 
-This is the hierarchical refinement line (October 2026), on `main` since 2026-10-21. It holds eight targets, from 0.75
-to 2.7 Å, each refined from its deposited file by the harness: four six-copy ensembles (8C5N, 7KR0, 7R2H, 3TC7), one
-two-copy ensemble (1LZ8) and three single models (9ARN, 4QO4, 3QUE). The earlier campaign's targets and records (the
-single-model line, August to October 2026) are not in this repository; its history starts at the public release of
-2026-10-21. Nothing here is a ceiling: the runs continue (7R2H and 8C5N were still refining at this snapshot) and this
-is a dated snapshot of the model in force on each target.
+Crystallographic models of eight PDB entries (0.75 to 2.7 Å) re-refined by an agentic workflow, with the data, maps,
+validation and step records needed to check and reuse them.
+
+## The idea
+
+The method was not found by the agent. The agent was directly prompted to follow a procedure based on the one in the
+preprint of Passmore et al. (2026), with their six-conformation model of 7KR0, PDB [44PS](https://www.rcsb.org/structure/44PS),
+as the reference model, complemented with additions for an agentic workflow: one change at a time, each refined beside
+a control and accepted only when R-free falls on the deposited free set, with a held-out set of reflections as a leak
+check and a record of every step.
+
+## Citation
+
+If you use these models, please cite the method they follow:
+
+> Passmore, S. K., Holton, J. M., Zatsepin, N. A., & Martin, A. V. (2026). Optimizing the connectivity of protein conformations to untangle ensemble refinement. *bioRxiv*. https://doi.org/10.64898/2026.09.17.752399
+
+and the original PDB entry of each target (its primary citation is in `targets/<ID>/deposited/rcsb_entry.json`).
 
 ## Results
 
-Every model is scored on the R-free flags inherited unchanged from its deposition, by the harness gate (a fresh cctbx
-fmodel on the working data, every reflection, no outlier rejection), so the numbers in a row are on the same held-out
-reflections. "Full" is the whole free set; "report" is one half of it, listed as a check that the gains are not on one
-half only. **The baseline of every comparison is the re-refined deposited model**: S0001, the deposited model after the
-harness's common recipe (phenix.refine, 10 macro-cycles, three seeds, the median). What plain re-refinement gives is
-not credited to the agent. The deposited model as scored (S0000) is on each card for reference.
+All numbers are on the free-reflection flags inherited unchanged from each deposition, scored by the harness (a fresh
+cctbx fmodel, every reflection kept). Compare them only on the same free set, never with an entry's header. The
+baseline is the re-refined deposited model (S0001: phenix.refine, 10 macro-cycles, the median of three seeds), so what
+plain re-refinement gives is not credited to the agent. "Report" is one half of the free set, a check that a gain is
+not on one half only.
 
 <!-- results-table:begin -->
 | Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status |
@@ -50,10 +60,7 @@ favoured):
 | [3QUE](targets/3QUE/README.md) | 10.4 → 6.3 | 12.87 → 3.63 | 0.3 → 0.3 | 93.8 → 96.8 | 0.013 → 0.006 | 1.44 → 1.26 | 2.79 → 1.98 |
 <!-- geometry-table:end -->
 
-Status meanings:
-
-- **improved**: the model in force has a lower full R-free than the re-refined deposited model (S0001) on the same
-  flags, through steps the gate accepted one by one against a paired control.
+"Improved" means a lower full R-free than the re-refined deposited model on the same flags.
 
 ## What is in a target directory
 
@@ -81,51 +88,15 @@ targets/<ID>/
 
 ## Use
 
-Open the model with its maps in Coot:
+Open a model with its maps in Coot:
 
 ```bash
 coot targets/7KR0/model/7KR0_S0053.pdb --auto targets/7KR0/maps/7KR0_S0053_map_coeffs.mtz
 ```
 
-A six-copy ensemble shows as altlocs A to F on every residue; Coot's altloc controls show one copy at a time. Load
-`targets/7KR0/deposited/7KR0.cif` beside it to see the starting point; both are in the same frame.
-`docs/HOW_TO_USE.md` has the rest: recomputing R-free on the flags, reading the step record, continuing the run.
+A six-copy ensemble shows as altlocs A to F on every residue. `docs/METHOD.md` describes the procedure and
+`docs/HOW_TO_USE.md` how to check the numbers.
 
-## Method
+## Licence
 
-One paragraph; `docs/METHOD.md` has the detail and the harness repository has the specification. Preprocessing fetches
-the entry, removes a vault of 2 % of the work reflections from every working file, keeps the deposited free set
-untouched, anonymises the model and refines it with three seeds to measure the noise floor. The run then applies one
-change at a time: a refinement option, a water pick on a work-only difference map, the split into C copies, a
-connectivity relabel, a Coot fit. Each change is refined beside a control (the parent refined with the same command
-and seeds) and judged by one gate: R-free down by at least 2σ against the control, the gap not widened by more than
-0.002 and under its cap, clashscore and outliers under their caps or not above the control's. An accepted change is
-the new model in force; a refused one changes nothing. Every step is one line in a hash-chained record. The vault is
-read once, at the end, as the leak check.
-
-## Caveats that apply to every target
-
-- R-free is comparable only on the same free set. Compare against the "re-refined, our flags" column (or the card's
-  S0000 column), never the header.
-- The gate's R-free is a few 10⁻⁴ above phenix.refine's logged value for the same model (all reflections kept, fresh
-  scaling). Both arms of every step carry the same offset.
-- A C-copy ensemble has C times the protein parameters of a single model. The gate's gap bound and cap are what keep
-  it honest between vault reads; the vault read is the operator's and the card says when it was last done.
-- Geometry numbers come from phenix.clashscore, rotalyze and ramalyze on the file as released, hydrogens kept.
-
-## Provenance
-
-`provenance.json` names the harness repository, branch and commits, the pod and the Phenix build, and the run handle
-and step of each released model. The harness (`prism-science/agentic-refinement`, branch `manzuoni/hierarchical_refinement`)
-holds the code, the specification (`docs/SPEC.md`) and the dated plan with every result (`docs/PLAN.md`).
-
-## Refreshing this release
-
-Copy the step's files from the run directory on the pod into `targets/<ID>/` as the card's file table lays them out,
-run `python3 scripts/build_index.py` to rebuild `index.json` and `MANIFEST.sha256`, add a line to `CHANGELOG.md`, and
-commit with the step id in the message. `scripts/verify_checksums.sh` checks every file against the manifest.
-
-## Licence and citation
-
-CC-BY-4.0 (`LICENSE`). Cite this repository (`CITATION.cff`) and the original PDB entry of each target; its primary
-citation is in `targets/<ID>/deposited/rcsb_entry.json`.
+CC-BY-4.0 (`LICENSE`).

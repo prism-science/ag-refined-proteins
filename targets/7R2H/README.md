@@ -1,5 +1,7 @@
 # 7R2H — 0.79A resolution structure of DMSO bound Cyclophilin D
 
+> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
+
 **Status: improved.** The released model is a six-copy ensemble with an R-free of 0.0993 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.1355 and the deposited model as scored (S0000) 0.1551 on the same reflections. The run continues; this is the model in force on 2026-10-21.
 
 | | |

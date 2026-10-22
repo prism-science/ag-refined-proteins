@@ -29,7 +29,8 @@ water picks at 4, 3, 3, 2.5, 2.5, 2.5 and 2.5σ on work-only difference maps; an
 weights 0.3 / 0.25; 20-cycle convergence steps; altloc occupancies; and, last, waters in own-copy clashes moved to a
 copy they clear.""",
    caveats=[
-    "**The gap is 0.0259**, against 0.0089 for the re-refined model and 0.0071 for the deposited model as scored: the six copies and the free water occupancies fit the work set better than the free set. The run's cap is 0.030. A reference six-copy ensemble of this entry built earlier with maps that may have included the free reflections scores 0.0676 / 0.0507 on these flags; its advantage over this model is entirely in its solvent, and that comparison is in the harness plan, not in this release.",
+    "**The reference model scores lower.** PDB 44PS, the six-conformation model of these data from Passmore et al. (2026) and the reference model the agent was given, scores R-free 0.0657 and R-work 0.0485 on the same free set (scored 2026-10-03 by the earlier campaign's scorer), against 0.0726 / 0.0467 for this release. This release does not reach the reference.",
+    "**The gap is 0.0259**, against 0.0089 for the re-refined model and 0.0071 for the deposited model as scored: the six copies and the free water occupancies fit the work set better than the free set. The run's cap is 0.030.",
     "**Clashscore 7.7** against 5.3 re-refined and 4.3 deposited; 40 waters sit in own-copy clashes that no other copy can take. Rotamer outliers 1.54 % are just above the gate's 1.5 % cap and passed because the control had the same.",
     "Three mmtbx sub-reports (C-beta deviations, omega, Rama-Z) fail on a six-copy model; the geometry numbers above come from phenix.clashscore, rotalyze and ramalyze.",
    ],
@@ -312,7 +313,9 @@ def card(tid, c):
      ("`validation/`", "phenix.clashscore, rotalyze and ramalyze logs of the released model (`*_%s.*`) and of the re-refined baseline (`*_S0001.*`)" % c["step"]),
     ] + c["extra_files"]
     vault_cav = c.get("vault_caveat") or ("**The vault has not been read in this run** (%s work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's." % fmt_int(n_vault))
-    out = ["# %s — %s" % (tid, title), "", status, "", "| | |", "|---|---|"]
+    note = ("> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), "
+            "with PDB 44PS as the reference model; see the [citation](../../README.md#citation).")
+    out = ["# %s — %s" % (tid, title), "", note, "", status, "", "| | |", "|---|---|"]
     out += ["| %s | %s |" % r for r in rows]
     out += ["", "## The three models on the same flags", "",
             "All three are scored by the harness gate: a fresh cctbx fmodel on the working data with every reflection, no outlier",
