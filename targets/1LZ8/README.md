@@ -2,7 +2,7 @@
 
 > In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
 
-**Status: improved.** The released model is a two-copy ensemble with an R-free of 0.2408 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2712 and the deposited model as scored (S0000) 0.2826 on the same reflections.
+**Status: lower R-free, not confirmed by the vault.** The released model is a two-conformer ensemble with an R-free of 0.2408 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2712 and the deposited model as scored (S0000) 0.2826 on the same reflections. The model is the release of 2026-10-21; the run has had no accepted step since. **The vault read of 2026-10-22 does not confirm the gain** (see Caveats).
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@
 | Deposited refinement program | REFMAC |
 | Released by the PDB | 1999-05-26 |
 | Primary citation | Can anomalous signal of sulfur become a tool for solving protein crystal structures? (J.Mol.Biol. 1999), DOI 10.1006/jmbi.1999.2743 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/oct28-trials`, commit 25ec394 (pull request to `main` opened 2026-11-02); the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle Tee73c5, step S0073, 2026-10-20 07:22:22 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00026 from three seeds), gap widened by at most 0.002, gap ≤ 0.0714 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
@@ -38,7 +38,7 @@ MolProbity score from those three.
 | Ramachandran outliers / favoured | 0.0 % / 96.9 % | 0.0 % / 97.6 % | 0.0 % / 93.7 % |
 | Bond RMSD / angle RMSD | 0.026 Å / 3.58° | 0.011 Å / 1.15° | 0.005 Å / 0.75° |
 | MolProbity score | 1.68 | 1.48 | 1.27 |
-| Copies | 1 | 1 | 2, altlocs AB |
+| Conformers | 1 | 1 | 2, altlocs AB |
 | Atoms (of which H) | 1 234 (0) | 1 221 (0) | 4 346 (1 916) |
 | Waters, occupancy sum | 224, 224 | 211, 171 | 419, 257 |
 | ANISOU records | 0 | 0 | 2 009 |
@@ -47,10 +47,10 @@ The entry's own header reports R-free 0.31 and R-work 0.22 on its own flags.
 
 ## What the model is
 
-Two complete copies of the protein (altlocs A and B), each at occupancy 1/2, from a qFit split of the single
+Two complete conformers of the protein (altlocs A and B), each at occupancy 1/2, from a qFit split of the single
 model (S0035), refined together with riding hydrogens, restraint weights wc 2 / wu 2, TLS (one group) over an isotropic
 residual (the total ADP written as ANISOU records), optimised bulk-solvent mask radii and isotropic waters. Two chloride
-ions placed at difference peaks (S0073) are single and at occupancy 1. A lettered water belongs to one copy, a blank one
+ions placed at difference peaks (S0073) are single and at occupancy 1. A lettered water belongs to one conformer, a blank one
 to both.
 
 The model came from the deposited file in 83 recorded steps (S0000 to S0082), 9 of them accepted and 3 builds. The
@@ -60,17 +60,20 @@ convergence step (S0070); chloride ions at the two mFo−DFc peaks of 4σ and ab
 nitrogen (S0073; three waters removed). Restraint weights 2 / 2 were accepted on a sibling of the lineage (S0054) and
 are in the standing recipe from there on.
 
-The gate judged every change against a control, the parent refined with the same command and seeds, and accepted a
-change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their bounds.
+The gate judged every change against a control, the parent refined with the same command and seeds, and accepted an
+improving change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their
+bounds. From 2026-10-27 the gate also holds the model checks of `docs/METHOD.md` (waters in protein density, conformer-B
+outliers, residues in difference density, the tallest peak, Holton's wE) and accepts a repair: a change that lowers one
+check with R-free not worse than 2σ against its control.
 `refinement/steps.md` lists every step with its verdict and `refinement/score_history.txt` is the hash-chained record
 the gate wrote.
 
 ## Caveats
 
-- **The vault has not been read in this run** (260 work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's.
+- **The vault was read on 2026-10-22 at S0073** (the operator's read; 260 held-out work reflections): R-vault 0.2422 → 0.2517 from S0001 to that model, against R-free 0.2712 → 0.2408 on the deposited free set; the difference of the two changes is +2.5 σ of the sampling noise (σ 0.0158). **The vault does not confirm the gain: R-vault rose while R-free fell.** The free set is small, the gate's margin (two seed σ) is about 30 times smaller than the free set's own sampling noise of a paired change, and the run judged about 80 steps; the accepted gains are most likely fitted to the free set. The model is released as the record of the run, not as a confirmed improvement. No decision used held-out reflections of any kind, and every map that placed or moved an atom excluded the free set.
 - **The gap is 0.0746**, above the run's cap of 0.0714; the step passed because the control's gap (0.0754) was higher. The gap was 0.0802 for the deposited model and 0.0864 at the split (S0035); it has narrowed since.
-- Clashscore 1.3 against 5.1 deposited; rotamer outliers 0.48 % (one residue copy); no Ramachandran outlier; 93.7 % favoured against 96.9 % for the deposited model.
-- A six-copy fork of this run (Tee73c5_six) reached R-free 0.2627 and did not beat the two-copy model; a three-copy build (S0079) and the levers after it did not beat S0073 either. Both stay in the record; neither is released.
+- Clashscore 1.3 against 5.1 deposited; rotamer outliers 0.48 % (one residue in one conformer); no Ramachandran outlier; 93.7 % favoured against 96.9 % for the deposited model.
+- A six-conformer fork of this run (Tee73c5_six) reached R-free 0.2627 and did not beat the two-conformer model; a three-conformer build (S0079) and the levers after it did not beat S0073 either. Both stay in the record; neither is released.
 
 ## Files
 

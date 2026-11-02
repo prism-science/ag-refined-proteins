@@ -8,11 +8,11 @@ Each target ships the model with map coefficients computed from the work reflect
 needed:
 
 ```bash
-coot targets/7KR0/model/7KR0_S0053.pdb --auto targets/7KR0/maps/7KR0_S0053_map_coeffs.mtz
+coot targets/7KR0/model/7KR0_S0112.pdb --auto targets/7KR0/maps/7KR0_S0112_map_coeffs.mtz
 ```
 
-The MTZ carries `2FOFCWT/PH2FOFCWT` (2mFo−DFc) and `FOFCWT/PHFOFCWT` (mFo−DFc). A six-copy ensemble shows as altlocs A
-to F on every protein residue, each at occupancy 1/6; a lettered water belongs to one copy, a blank one to all six. To
+The MTZ carries `2FOFCWT/PH2FOFCWT` (2mFo−DFc) and `FOFCWT/PHFOFCWT` (mFo−DFc). A six-conformer ensemble shows as altlocs A
+to F on every protein residue, each at occupancy 1/6; a lettered water belongs to one conformer, a blank one to all six. To
 compare with the starting point, load `targets/7KR0/deposited/7KR0.cif` alongside; both are in the same frame.
 
 To see what the run changed, `targets/7KR0/refinement/steps.md` lists every step with its verdict, and
@@ -26,7 +26,7 @@ the margin in σ, R-work, gap, clashscore, rotamer outliers, atom and water coun
 The released number comes from the harness gate. The same quantity from Phenix's own tool:
 
 ```bash
-phenix.model_vs_data targets/7KR0/model/7KR0_S0053.pdb targets/7KR0/data/7KR0_data.mtz \
+phenix.model_vs_data targets/7KR0/model/7KR0_S0112.pdb targets/7KR0/data/7KR0_data.mtz \
   f_obs_label=FP r_free_flags_label=R-free-flags
 ```
 
@@ -40,11 +40,11 @@ and the counts.
 `validation/` holds the phenix.clashscore, rotalyze and ramalyze logs of the released file (hydrogens kept). To rerun:
 
 ```bash
-phenix.clashscore targets/7KR0/model/7KR0_S0053.pdb keep_hydrogens=True
-phenix.rotalyze  targets/7KR0/model/7KR0_S0053.pdb
+phenix.clashscore targets/7KR0/model/7KR0_S0112.pdb keep_hydrogens=True
+phenix.rotalyze  targets/7KR0/model/7KR0_S0112.pdb
 ```
 
-On a six-copy model phenix.clashscore's reduce step can exceed Phenix's built-in 120-second limit for larger ensembles;
+On a six-conformer model phenix.clashscore's reduce step can exceed Phenix's built-in 120-second limit for larger ensembles;
 the harness runs it through a wrapper that raises that limit (`tools/lib/phenix_wrap.py` in the harness).
 
 ### Checksums
@@ -55,14 +55,16 @@ bash scripts/verify_checksums.sh
 
 ## Continue
 
-The harness is `prism-science/agentic-refinement`, branch `manzuoni/hierarchical_refinement`. On its pod
-(`docs/POD.md` there), with the run directory restored from `refinement/` and `data/`, every tool takes `--run RUN
---parent S0053` and prints the facts line of the step it judged:
+The harness is `prism-science/agentic-refinement`, branch `manzuoni/oct28-trials` (the four targets of 2026-11-02) or
+`manzuoni/hierarchical_refinement` (the four of 2026-10-21). On its pod (`docs/POD.md` there), with the run directory
+restored from `refinement/` and `data/`, every tool takes `--run RUN --parent S0112` and prints the facts line of the
+step it judged:
 
 ```bash
 source /opt/phenix/phenix_env.sh
-phenix.python tools/water_addition.py pick --run RUN --parent S0053 --sigma 2.5 --nproc 6
-phenix.python tools/refine_step.py converge --run RUN --parent S0053 --nproc 6
+phenix.python tools/water_addition.py pick --run RUN --parent S0112 --sigma 2.5 --nproc 6
+phenix.python tools/refine_step.py converge --run RUN --parent S0112 --nproc 6
+phenix.python tools/coot_repair.py scan --model targets/7KR0/model/7KR0_S0112.pdb   # the model checks of docs/METHOD.md
 ```
 
 `scripts/chain_target.sh RUN` runs the whole lever order that produced this model on any preprocessed run. The vault

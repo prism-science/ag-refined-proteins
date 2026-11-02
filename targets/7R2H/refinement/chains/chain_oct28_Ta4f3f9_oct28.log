@@ -1,0 +1,27 @@
+forked /home/dev/runs/hr/Ta4f3f9_g8 -> /home/dev/runs/hr/Ta4f3f9_oct28 (138M)
+metaparams: the trials of 2026-10-28 on
+[2026-10-28T22:09:54Z] chain_oct28 start on /home/dev/runs/hr/Ta4f3f9_oct28 from S0051 (fork of /home/dev/runs/hr/Ta4f3f9_g8; the fork's steps start at S0060)
+waters that count 99 (own-copy clashes 10, in another copy's density 89; occupancy sum 35.88) | protein atoms with copy B differing more than 3 times: 67 of 1240 | copies 8, waters 1734
+[2026-10-28T22:09:55Z] peaks_q from S0051
+S0060 2026-10-28T22:10:46Z solvent coot_repair parent S0051 | no peak at 6.0 sigma on a lettered water or in open solvent | R-free 0.09542 -> 0.09542 R-work 0.06862 -> 0.06862 gap +0.0000 clash 10.0 rota 1.5 % | atoms 21496 waters 1734 altl
+[2026-10-28T22:10:46Z] untangle_q: clashscore 9.97 of S0051 not above 10
+[2026-10-28T22:10:46Z] envelope_q from S0051
+[2026-10-28T23:12:21Z] density_q from S0051
+S0061 2026-10-29T03:48:23Z rotamer-finder coot_repair parent S0051 | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side 
+[2026-10-29T03:48:23Z] bfactors_q from S0051
+S0062 2026-10-29T08:17:16Z rotamer-finder coot_repair parent S0051 | B-factors of the copies reset to the copy median where they differ by more than 3 times | R-free 0.09542 -> 0.09495 (-1.1 sigma) R-work 0.06862 -> 0.06609 gap +0.0021 clas
+[2026-10-29T08:17:17Z] pick_3.0_q from S0062
+S0067 2026-10-29T14:55:15Z solvent water_addition parent S0062 | waters at 3.0 sigma, mode single, none within 2.6 A of a protein atom of any copy | R-free 0.09495 -> 0.09674 (+11.3 sigma) R-work 0.06609 -> 0.06683 gap +0.0011 clash 11.9 ro
+[2026-10-29T14:55:16Z] pick_2.5_q from S0062
+S0069 2026-10-29T21:00:06Z solvent water_addition parent S0062 | waters at 2.5 sigma, mode single, none within 2.6 A of a protein atom of any copy | R-free 0.09495 -> 0.09722 (+14.3 sigma) R-work 0.06609 -> 0.06684 gap +0.0015 clash 11.6 ro
+[2026-10-29T21:00:07Z] aniso_water_q from S0062
+S0071 2026-10-30T03:20:47Z refinement refine_step parent S0062 | water ADPs anisotropic | R-free 0.09495 -> 0.09535 (+2.5 sigma) R-work 0.06609 -> 0.06747 gap -0.0010 clash 11.5 rota 1.7 % | atoms 21496 waters 1734 altlocs ABCDEFGH anisou 1
+[2026-10-30T03:20:48Z] settle_q from S0071
+S0072 2026-10-30T09:34:00Z refinement refine_step parent S0071 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.09535 -> 0.09509 (-1.6 sigma) R-work 0.06747 -> 0.06523 gap +0.0020 clash 12.
+[2026-10-30T09:34:01Z] peaks_q2 from S0071
+S0073 2026-10-30T09:34:14Z solvent coot_repair parent S0071 | no peak at 6.0 sigma on a lettered water or in open solvent | R-free 0.09535 -> 0.09535 R-work 0.06747 -> 0.06747 gap +0.0000 clash 11.5 rota 1.7 % | atoms 21496 waters 1734 altl
+[2026-10-30T09:34:14Z] untangle_q2: clashscore 11.54 of S0071 above 10: Untangler
+[2026-10-30T10:37:32Z] bfactors_q2 from S0071
+S0074 2026-10-30T16:55:27Z rotamer-finder coot_repair parent S0071 | B-factors of the copies reset to the copy median where they differ by more than 3 times | R-free 0.09535 -> 0.09519 (-1.0 sigma) R-work 0.06747 -> 0.06524 gap +0.0021 clas
+waters that count 116 (own-conformer clashes 16, in another conformer's density 100; occupancy sum 41.06) | protein atoms with conformer B differing more than 3 times: 29 of 1240 | copies 8, waters 1734
+[2026-10-30T16:55:28Z] chain_oct28 end on /home/dev/runs/hr/Ta4f3f9_oct28; the line's last model S0071 (from S0051)

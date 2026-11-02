@@ -1,0 +1,30 @@
+forked /home/dev/runs/hr/T5f59f1_heldcoot -> /home/dev/runs/hr/T5f59f1_oct28 (144M)
+metaparams: the trials of 2026-10-28 on
+[2026-10-28T22:09:53Z] chain_oct28 start on /home/dev/runs/hr/T5f59f1_oct28 from S0050 (fork of /home/dev/runs/hr/T5f59f1_heldcoot; the fork's steps start at S0051)
+waters that count 0 (own-copy clashes 0, in another copy's density 0; occupancy sum 0.00) | protein atoms with copy B differing more than 3 times: 17 of 1411 | copies 6, waters 2562
+[2026-10-28T22:09:55Z] peaks_q from S0050
+S0051 2026-10-29T01:38:50Z solvent coot_repair parent S0050 | the strongest mFo-DFc peaks (6.0 sigma and up): a lettered water under a peak made a water of every copy; a peak in open solvent a new water of every copy | R-free 0.08742 -> 0.0
+[2026-10-29T01:38:51Z] untangle_q: clashscore 14.21 of S0050 above 10: Untangler
+S0052 2026-10-29T05:17:33Z connectivity conn_optim parent S0050 | connectivity relabel, 10 min effort | R-free 0.08742 -> 0.08759 (+0.4 sigma) R-work 0.06336 -> 0.06335 gap +0.0002 clash 13.5 rota 1.5 % | atoms 18961 waters 2562 altlocs ABC
+[2026-10-29T05:17:34Z] envelope_q from S0050
+S0053 2026-10-29T08:41:08Z solvent coot_repair parent S0050 | waters in the range of motion deleted (within 2.2 A of a protein atom of any copy) | R-free 0.08742 -> 0.09207 (+10.1 sigma) R-work 0.06336 -> 0.06927 gap -0.0013 clash 15.5 rota
+[2026-10-29T08:41:09Z] density_q from S0050
+S0054 2026-10-29T11:40:48Z rotamer-finder coot_repair parent S0050 | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side 
+[2026-10-29T11:40:49Z] bfactors_q from S0050
+S0055 2026-10-29T14:59:13Z rotamer-finder coot_repair parent S0050 | B-factors of the copies reset to the copy median where they differ by more than 3 times | R-free 0.08742 -> 0.08760 (+0.4 sigma) R-work 0.06336 -> 0.06290 gap +0.0006 clas
+[2026-10-29T14:59:14Z] pick_3.0_q from S0055
+S0056 2026-10-29T18:06:27Z solvent water_addition parent S0055 | waters at 3.0 sigma, mode single, none within 2.6 A of a protein atom of any copy | R-free 0.08760 -> 0.08784 (+0.5 sigma) R-work 0.06290 -> 0.06242 gap +0.0007 clash 14.9 rot
+[2026-10-29T18:06:28Z] pick_2.5_q from S0055
+S0058 2026-10-29T20:28:45Z solvent water_addition parent S0055 | waters at 2.5 sigma, mode single, none within 2.6 A of a protein atom of any copy | R-free 0.08760 -> 0.08792 (+0.7 sigma) R-work 0.06290 -> 0.06224 gap +0.0010 clash 15.2 rot
+[2026-10-29T20:28:46Z] aniso_water_q from S0055
+S0060 2026-10-29T23:31:19Z refinement refine_step parent S0055 | water ADPs anisotropic | R-free 0.08760 -> 0.08794 (+0.7 sigma) R-work 0.06290 -> 0.06308 gap +0.0002 clash 15.0 rota 1.5 % | atoms 18961 waters 2562 altlocs ABCDEF anisou 110
+[2026-10-29T23:31:20Z] settle_q from S0055
+S0061 2026-10-30T00:04:52Z refinement refine_step parent S0055 | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | R-free 0.08760 -> 0.08767 (+0.2 sigma) R-work 0.06290 -> 0.06246 gap +0.0005 clash 15.
+[2026-10-30T00:04:53Z] peaks_q2 from S0055
+S0062 2026-10-30T00:05:06Z solvent coot_repair parent S0055 | no peak at 6.0 sigma on a lettered water or in open solvent | R-free 0.08760 -> 0.08760 R-work 0.06290 -> 0.06290 gap +0.0000 clash 14.6 rota 1.5 % | atoms 18961 waters 2562 altl
+[2026-10-30T00:05:07Z] untangle_q2: clashscore 14.64 of S0055 above 10: Untangler
+S0063 2026-10-30T00:19:39Z connectivity conn_optim parent S0055 | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | R-free 0.08760 -> 0.08731 (-0.6 sigma) R-work 0.06290 -> 0.06248 gap +0.0001 clash 15.2 rota 1.5
+[2026-10-30T00:19:40Z] bfactors_q2 from S0055
+S0064 2026-10-30T03:15:33Z rotamer-finder coot_repair parent S0055 | B-factors of the copies reset to the copy median where they differ by more than 3 times | R-free 0.08760 -> 0.08751 (-0.2 sigma) R-work 0.06290 -> 0.06249 gap +0.0003 clas
+waters that count 3 (own-copy clashes 3, in another copy's density 0; occupancy sum 0.51) | protein atoms with copy B differing more than 3 times: 9 of 1411 | copies 6, waters 2562
+[2026-10-30T03:15:35Z] chain_oct28 end on /home/dev/runs/hr/T5f59f1_oct28; the line's last model S0055 (from S0050)

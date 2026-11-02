@@ -48,7 +48,7 @@
  "notes": [
   {
    "utc": "2026-10-15T01:49:54Z",
-   "what": "gap_max raised from 0.0139 to 0.0300 on the operator instruction of 2026-10-15 (the operator: cap 3 %); no step had been accepted under the old cap"
+   "what": "gap_max raised from 0.0139 to 0.0300 on the operator instruction of 2026-10-15 (Spencer: cap 3 %); no step had been accepted under the old cap"
   },
   {
    "utc": "2026-10-15T02:07:42Z",
@@ -83,8 +83,9 @@
  },
  "standing": {
   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
-  "since": "S0012",
-  "utc": "2026-10-15T13:24:28Z",
+  "occupancies": "none",
+  "since": "S0082",
+  "utc": "2026-10-27T22:22:22Z",
   "wc": 0.3,
   "wu": 0.25
  },
@@ -93,6 +94,14 @@
    "note": "set by hand after S0012 was accepted before the standing-weights code existed",
    "since": "S0012",
    "utc": "2026-10-15T13:24:28Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0082",
+   "utc": "2026-10-27T22:22:22Z",
    "wc": 0.3,
    "wu": 0.25
   }
@@ -122,6 +131,42 @@
    "sigma_r_free": 0.00015998946696923322,
    "step": "S0011",
    "utc": "2026-10-15T10:31:55Z",
+   "who": "?"
+  },
+  {
+   "gap": 0.008913806967902727,
+   "model": "/home/dev/runs/hr/Tff1b3f/trajectory/S0001/model.pdb",
+   "n_vault": 3400,
+   "n_vault_dropped": 0,
+   "r_free": 0.10945213271543466,
+   "r_free_independent": 0.10945213271543466,
+   "r_vault": 0.1053869959006045,
+   "r_work": 0.10053832574753194,
+   "r_work_independent": 0.10053832574753194,
+   "reason": "operator, 2026-10-22: the leak check again after the two read fixes (two-part seals; intensity vaults scored as amplitudes)",
+   "sha256": "307b7f7a053c370fbcadaa5bd00898b6d47a6d3f5f2c1dd76aa68dd43d91245c",
+   "sigma_r_free": 0.00015998946696923322,
+   "step": "S0001",
+   "utc": "2026-10-22T12:06:29Z",
+   "vault_data": "amplitudes",
+   "who": "?"
+  },
+  {
+   "gap": 0.025876314846756926,
+   "model": "/home/dev/runs/hr/Tff1b3f/trajectory/S0053/model.pdb",
+   "n_vault": 3400,
+   "n_vault_dropped": 0,
+   "r_free": 0.07255035781480305,
+   "r_free_independent": 0.07255035781480305,
+   "r_vault": 0.07249387728560357,
+   "r_work": 0.04667404296804613,
+   "r_work_independent": 0.04667404296804613,
+   "reason": "operator, 2026-10-22: the leak check again after the two read fixes (two-part seals; intensity vaults scored as amplitudes)",
+   "sha256": "81f1a2ab661db5df2db42801f50c1809fc4a8c12d3dacce339d0e5091d783d5d",
+   "sigma_r_free": 0.00015998946696923322,
+   "step": "S0053",
+   "utc": "2026-10-22T12:06:43Z",
+   "vault_data": "amplitudes",
    "who": "?"
   }
  ]

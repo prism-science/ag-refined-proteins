@@ -1,11 +1,11 @@
 Starting phenix.ramalyze
-on Wed Oct 21 17:26:32 2026 by root
+on Mon Nov  2 23:41:48 2026 by root
 ===============================================================================
 
 Processing files:
 -------------------------------------------------------------------------------
 
-  Found model, /home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb
+  Found model, /home/dev/runs/hr/release_2026-11-02/8C5N/model/8C5N_S0001.pdb
 
 Processing PHIL parameters:
 -------------------------------------------------------------------------------
@@ -16,9 +16,9 @@ Final processed PHIL parameters:
 -------------------------------------------------------------------------------
   data_manager {
     model {
-      file = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb"
+      file = "/home/dev/runs/hr/release_2026-11-02/8C5N/model/8C5N_S0001.pdb"
     }
-    default_model = "/home/dev/runs/hr/agrp_export_20261021/8C5N.d/8C5N/model/8C5N_S0001.pdb"
+    default_model = "/home/dev/runs/hr/release_2026-11-02/8C5N/model/8C5N_S0001.pdb"
   }
 
 
@@ -27,8 +27,8 @@ Starting job
 
 ===============================================================================
 Job complete
-usr+sys time: 6.01 seconds
-wall clock time: 6.09 seconds
+usr+sys time: 10.71 seconds
+wall clock time: 10.70 seconds
 residue:score%:phi:psi:evaluation:type
  A  27  GLY:32.66:154.09:-170.58:Favored:Glycine
  A  28  SER:9.66:-165.70:174.51:Favored:General

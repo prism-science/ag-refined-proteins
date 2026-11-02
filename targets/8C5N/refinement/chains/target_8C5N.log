@@ -74,3 +74,5 @@ S0027 2026-10-21T14:13:07Z solvent water_addition parent S0021 | waters in own-c
 [2026-10-21T14:13:07Z] copy_vote_a (1) from S0027
 S0028 2026-10-21T16:26:17Z rotamer-finder copy_vote parent S0027 | copies under difference peaks: the weakest copy takes the peak copy's rotamer | R-free 0.09084 -> 0.09077 (-0.1 sigma) R-work 0.06749 -> 0.06681 gap +0.0006 clash 10.0 rota 
 [2026-10-21T16:26:18Z] converge_b (1) from S0027
+S0029 2026-10-21T20:13:16Z refinement refine_step parent S0027 | 20 macro-cycles against 10 | R-free 0.09084 -> 0.09090 (+0.1 sigma) R-work 0.06749 -> 0.06754 gap +0.0000 clash 10.8 rota 1.5 % | atoms 17842 waters 1443 altlocs ABCDEF anisou
+[2026-10-21T20:13:17Z] chain_target end on /home/dev/runs/hr/T5f59f1; best model S0027

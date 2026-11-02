@@ -1,0 +1,1 @@
+S0112 2026-10-29T19:15:07Z rotamer-finder coot_repair parent S0105 | B-factors of the copies reset to the copy median where they differ by more than 3 times | R-free 0.07234 -> 0.07251 (+1.1 sigma) R-work 0.04745 -> 0.04716 gap +0.0005 clash 12.7 rota 1.6 % | atoms 18184 waters 2770 altlocs ABCDEF anisou 10334 | ACCEPT

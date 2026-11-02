@@ -116,7 +116,7 @@ def target_record(t: Path) -> dict:
 def main() -> int:
     targets = [target_record(t) for t in sorted((ROOT / "targets").iterdir()) if t.is_dir()]
     index = {"name": "ag-refined-proteins", "generated_by": "scripts/build_index.py", "n_targets": len(targets),
-             "line": "hierarchical refinement (C-copy ensembles), prism-science/agentic-refinement branch manzuoni/hierarchical_refinement",
+             "line": "hierarchical refinement (C-conformer ensembles), prism-science/agentic-refinement branch manzuoni/oct28-trials (the four targets of 2026-11-02) and manzuoni/hierarchical_refinement (the four of 2026-10-21)",
              "targets": targets}
     (ROOT / "index.json").write_text(json.dumps(index, indent=1) + "\n")
     lines = []

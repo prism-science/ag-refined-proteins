@@ -2,7 +2,7 @@
 
 > In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
 
-**Status: improved.** The released model is a single model with an R-free of 0.2769 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2970 and the deposited model as scored (S0000) 0.2944 on the same reflections.
+**Status: improved.** The released model is a single model with an R-free of 0.2769 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2970 and the deposited model as scored (S0000) 0.2944 on the same reflections. The model is the release of 2026-10-21; the run has had no accepted step since.
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@
 | Deposited refinement program | PHENIX |
 | Released by the PDB | 2025-03-05 |
 | Primary citation | Structure and Interactions of HIV-1 gp41 CHR-NHR Reverse Hairpin Constructs Reveal Molecular Determinants of Antiviral Activity (J.Mol.Biol. 2024), DOI 10.1016/j.jmb.2024.168650 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/oct28-trials`, commit 25ec394 (pull request to `main` opened 2026-11-02); the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle Tba97f6, step S0062, 2026-10-20 02:10:55 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00093 from three seeds), gap widened by at most 0.002, gap ≤ 0.0674 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
@@ -38,7 +38,7 @@ MolProbity score from those three.
 | Ramachandran outliers / favoured | 0.0 % / 100.0 % | 0.0 % / 100.0 % | 0.0 % / 100.0 % |
 | Bond RMSD / angle RMSD | 0.006 Å / 0.73° | 0.010 Å / 1.03° | 0.004 Å / 0.52° |
 | MolProbity score | 0.91 | 1.48 | 0.91 |
-| Copies | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) |
+| Conformers | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) | 1 (altlocs AB on some residues) |
 | Atoms (of which H) | 654 (0) | 673 (0) | 654 (0) |
 | Waters, occupancy sum | 38, 36 | 57, 51 | 38, 36 |
 | ANISOU records | 611 | 611 | 649 |
@@ -57,17 +57,20 @@ were applied to S0000. The lineage of S0062: secondary-structure and Ramachandra
 ADPs (S0060); TLS, two groups (S0062, −0.010). Restraint weights 2 / 2 (S0049) were accepted on another branch and are
 in the standing recipe.
 
-The gate judged every change against a control, the parent refined with the same command and seeds, and accepted a
-change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their bounds.
+The gate judged every change against a control, the parent refined with the same command and seeds, and accepted an
+improving change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their
+bounds. From 2026-10-27 the gate also holds the model checks of `docs/METHOD.md` (waters in protein density, conformer-B
+outliers, residues in difference density, the tallest peak, Holton's wE) and accepts a repair: a change that lowers one
+check with R-free not worse than 2σ against its control.
 `refinement/steps.md` lists every step with its verdict and `refinement/score_history.txt` is the hash-chained record
 the gate wrote.
 
 ## Caveats
 
-- **The vault has not been read in this run** (360 work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's.
+- **The vault was read on 2026-10-22 at S0062** (the operator's read; 360 held-out work reflections): R-vault 0.2751 → 0.2643 from S0001 to that model, against R-free 0.2970 → 0.2769 on the deposited free set; the difference of the two changes is +0.5 σ of the sampling noise (σ 0.0192). The vault confirms the gain within the noise. No decision used held-out reflections of any kind, and every map that placed or moved an atom excluded the free set.
 - The gap is 0.0380 against 0.0402 for the deposited model. Clashscore 1.6 (deposited 1.6), no rotamer outlier, no Ramachandran outlier, 100 % favoured.
 - A run of the same entry with the data cut at 1.85 Å (handle Tf7cc84, `d_min_cut` 1.85) reached R-free 0.2598 at its S0002 with the same TLS lever. Its numbers are on a different reflection set and are not comparable with this card; it is not released. The entry's header reports 1.41 Å.
-- A six-copy fork of this run (Tba97f6_six, R-free 0.2853) did not beat the single model and is not released. The sulfate pick (S0071), the mask, annealing, isotropic protein ADPs and the water picks were refused after S0062.
+- A six-conformer fork of this run (Tba97f6_six, R-free 0.2853) did not beat the single model and is not released. The sulfate pick (S0071), the mask, annealing, isotropic protein ADPs and the water picks were refused after S0062.
 
 ## Files
 

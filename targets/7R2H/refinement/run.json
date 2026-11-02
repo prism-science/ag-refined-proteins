@@ -7,7 +7,7 @@
  "deposited_r_free": 0.1549,
  "deposited_r_work": 0.1434,
  "flags_mtz_sha256": "873fa8517c5e5dcef175c37d2a713d00f6845b35377279fe0d620dec5214cd89",
- "gap_max": 0.03,
+ "gap_max": 0.12,
  "gap_s0001": 0.01119170003863336,
  "handle": "Ta4f3f9",
  "i_over_sigma": 12.96,
@@ -82,6 +82,16 @@
    "sigma_r_work": 0.0001026135736237145
   }
  ],
+ "notes": [
+  {
+   "utc": "2026-10-21T20:14:34Z",
+   "what": "gap fork of Ta4f3f9: gap_widen_max 0.010 and gap_abs_max 0.12 (gap_max 0.12); the main run keeps the standing bounds"
+  },
+  {
+   "utc": "2026-10-25T23:10:34Z",
+   "what": "8-copy fork of Ta4f3f9_gap (operator, 2026-10-25): tools/grow_copies.py from the record's best, then the solvent and ensemble levers; the gap bounds of Ta4f3f9_gap"
+  }
+ ],
  "phenix_version": "Version: 2.1; Release tag: 6048",
  "r_meas": null,
  "r_merge": null,
@@ -112,8 +122,11 @@
   }
  },
  "standing": {
-  "since": "S0008",
-  "utc": "2026-10-20T09:39:41Z",
+  "since": "S0032",
+  "tls": [
+   "chain A and not water"
+  ],
+  "utc": "2026-10-22T07:07:35Z",
   "wc": 0.3,
   "wu": 0.25
  },
@@ -121,6 +134,15 @@
   {
    "since": "S0008",
    "utc": "2026-10-20T09:39:41Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "since": "S0032",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-22T07:07:35Z",
    "wc": 0.3,
    "wu": 0.25
   }
@@ -135,6 +157,24 @@
    "utc": "2026-10-20T07:50:43Z"
   }
  },
+ "vault_reads": [
+  {
+   "gap": 0.025747571308492867,
+   "model": "/home/dev/runs/hr/Ta4f3f9_gap/trajectory/S0032/model.pdb",
+   "n_vault": 2000,
+   "r_free": 0.09645035219315558,
+   "r_free_independent": 0.09645035219315558,
+   "r_vault": 0.0982207865254834,
+   "r_work": 0.07070278088466271,
+   "r_work_independent": 0.07070278088466271,
+   "reason": "operator, 2026-10-22: the leak check of every target's best model and of its re-refined baseline S0001",
+   "sha256": "6226b771261c9a13eff8f522f0c6776c0c4e4c3319dc496548af820e7099bdde",
+   "sigma_r_free": 0.0001582983680982835,
+   "step": "S0032",
+   "utc": "2026-10-22T11:57:38Z",
+   "who": "?"
+  }
+ ],
  "vault_sealed": {
   "pubkey_sha256": "b07e0cb5edb19a02a2e15e782864311394930faf09ef21913782613345096bf5",
   "sealed_tar_enc_sha256": "3d2a9a986e97ed316fb9091ac3179a8f3acce3dc450c7eb8b7b65eec24a14845",

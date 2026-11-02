@@ -1,15 +1,15 @@
 # metaparams of run Ta4f3f9, from /home/dev/hr/tools/defaults.yaml at 2026-10-20T07:14:25Z. Fixed for the run.
 version: 1
-ensemble_size: 6
+ensemble_size: 8               # the 8-copy fork (scripts/chain_grow.sh), set before its first step
 n_conformations: 2
 vault_fraction: 0.02
 vault_max: 2000
 noise_floor_seeds: 3
 seeds_per_arm: 3
 k_sigma: 2.0
-gap_widen_max: 0.002
+gap_widen_max: 0.010        # the gap fork: the bound of 0.002 refused accepted-size gains of the picks on the ensemble; the operator judges the fork's gap with the vault at the end
 gap_max_over_s0001: 0.005
-gap_abs_max: 0.03
+gap_abs_max: 0.12           # the gap fork: the cap does not bind; R-free and geometry decide
 clash_max_highres: 15.0
 clash_max: 15.0
 rota_max: 1.5
@@ -36,4 +36,18 @@ stop_after_refused: 3
 branches: 3
 budget_hours: 36
 seed_base: 1
-holton_we: true
+sanity_gate: true           # the Coot checks in the gate (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_water_tol: 3         # waters in protein density a step may add (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_copyb_tol: 5         # copy-B outliers a step may add (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_density_tol: 2       # residues beyond +-3.5 sigma a step may add (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_peaks_tol: 2         # residues next to positive peaks a step may add (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_envelope_tol: 3      # waters in the range of motion a step may add (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_count_k: 2           # each count tolerance at least 2 x sqrt(the control's count) (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_drop: 0.1            # a repair lowers one check by this share and by more than its tolerance, (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_gap_drop: 0.002      # or narrows the gap by this much, (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_rfree_k: 2.0         # with R-free not worse than this many sigma (scripts/chain_oct28.sh, set before the fork's first step)
+holton_we: true             # Holton's weighted energy on each judged model (scripts/chain_oct28.sh, set before the fork's first step)
+quality_we_rel: 0.05        # a step may raise wE by this share of the control's (scripts/chain_oct28.sh, set before the fork's first step)
+quality_we_drop: 0.10       # a repair: wE lower by this share (scripts/chain_oct28.sh, set before the fork's first step)
+quality_peak_tol: 1.0       # a step may raise the tallest mFo-DFc peak by this many sigma (scripts/chain_oct28.sh, set before the fork's first step)
+quality_peak_drop: 1.5      # a repair: the tallest peak lower by this many sigma (scripts/chain_oct28.sh, set before the fork's first step)

@@ -1,4 +1,4 @@
-# 3TC7: every step of run T431c8e_gap (the gate's facts lines)
+# 3TC7: every step of run T431c8e_oct29 (the gate's facts lines)
 
 R-free and R-work are the gate's numbers after the step (the candidate's median seed; for a refused step, the refused candidate). σ is the margin against the parent as written in the facts line; the verdict is against the control.
 
@@ -70,3 +70,53 @@ R-free and R-work are the gate's numbers after the step (the candidate's median 
 | S0063 | S0061 | refinement | water ADPs anisotropic (individual, next to the group B factors of the protein) | 0.1501 |  | 0.0712 | 0.0789 | 7.7 | - | REFUSE |
 | S0064 | S0061 | solvent | waters at 4.0 sigma, mode single | 0.1495 |  | 0.0828 | 0.0666 | 7.9 | - | REFUSE |
 | S0065 | S0061 | refinement | 20 macro-cycles against 10 | 0.1500 |  | 0.0831 | 0.0669 | 8.1 | - | REFUSE |
+| S0066 | S0061 | refinement | restraint weights wc 0.2 wu 0.25 against 0.3 0.25 | 0.1493 |  | 0.0810 | 0.0684 | 10.3 | - | REFUSE |
+| S0067 | S0061 | refinement | restraint weights wc 0.3 wu 0.1 against 0.3 0.25 | 0.1494 |  | 0.0826 | 0.0667 | 7.7 | - | REFUSE |
+| S0068 | S0061 | refinement | restraint weights wc 0.5 wu 0.5 against 0.3 0.25 | 0.1497 |  | 0.0849 | 0.0648 | 5.5 | - | REFUSE |
+| S0069 | S0061 | refinement | restraint weights wc 0.2 wu 0.1 against 0.3 0.25 | 0.1493 |  | 0.0810 | 0.0684 | 10.3 | - | REFUSE |
+| S0070 | S0061 | refinement | bulk-solvent mask radii optimised (refinement.main.optimize_mask) against the fixed defaults | 0.1495 |  | 0.0821 | 0.0673 | 8.3 | - | REFUSE |
+| S0071 | S0061 | refinement | the groups are the standing groups | 0.1475 |  | 0.0806 | 0.0668 | 6.8 | - | REFUSE |
+| S0072 | S0061 | solvent | waters at 3.5 sigma, mode single | 0.1500 |  | 0.0825 | 0.0675 | 7.8 | - | REFUSE |
+| S0073 | S0061 | solvent | waters at 3.5 sigma, mode single | 0.1500 |  | 0.0825 | 0.0675 | 7.8 | - | REFUSE |
+| S0074 | S0061 | solvent | waters at 3.0 sigma, mode single | 0.1528 |  | 0.0823 | 0.0705 | 8.1 | - | REFUSE |
+| S0075 | S0061 | solvent | waters at 3.0 sigma, mode single | 0.1528 |  | 0.0823 | 0.0705 | 8.1 | - | REFUSE |
+| S0076 | S0061 | solvent | waters at 2.5 sigma, mode single | 0.1546 |  | 0.0810 | 0.0736 | 7.3 | - | REFUSE |
+| S0077 | S0061 | solvent | waters at 2.0 sigma, mode single | 0.1570 |  | 0.0796 | 0.0773 | 7.5 | - | REFUSE |
+| S0078 | S0061 | refinement | altloc occupancies refined | 0.1493 |  | 0.0825 | 0.0668 | 7.7 | - | REFUSE |
+| S0079 | S0061 | rotamer-finder | no rotamer fit raised the residue CC by 0 | 0.1475 |  | 0.0806 | 0.0668 | 6.8 | - | REFUSE |
+| S0080 | S0061 | solvent | waters in own-copy clashes moved to a copy they clear; nothing deleted | 0.1493 |  | 0.0826 | 0.0667 | 7.2 | - | REFUSE |
+| S0081 | S0061 | rotamer-finder | copies under difference peaks: the weakest copy takes the peak copy's rotamer | 0.1501 |  | 0.0826 | 0.0675 | 7.8 | - | REFUSE |
+| S0082 | S0061 | rotamer-finder | waters in protein density deleted (own-copy clashes and other-copy density with occupancy above 1.5/C); Coot rotamer fit and real-space refinement of each copy of the residues next to them | 0.1550 |  | 0.0900 | 0.0650 | 8.0 | - | REFUSE |
+| S0083 | S0061 | rotamer-finder | waters in protein density deleted (own-copy clashes and other-copy density with occupancy above 1.5/C) | 0.1562 |  | 0.0911 | 0.0651 | 7.2 | - | REFUSE |
+| S0084 | S0061 | rotamer-finder | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map | 0.1493 |  | 0.0825 | 0.0668 | 9.0 | - | REFUSE |
+| S0085 | S0061 | refinement | restraint weights wc 1 wu 1 against 0.3 0.25 | 0.1505 |  | 0.0884 | 0.0621 | 3.0 | - | REFUSE |
+| S0086 | S0061 | rotamer-finder | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side chain overlaps deleted | 0.1498 |  | 0.0847 | 0.0652 | 7.4 | - | ACCEPT |
+| S0087 | S0086 | rotamer-finder | waters in protein density deleted (own-copy clashes and other-copy density with occupancy above 1.5/C); Coot rotamer fit and real-space refinement of each copy of the residues next to them | 0.1611 |  | 0.0962 | 0.0649 | 10.1 | - | REFUSE |
+| S0088 | S0086 | rotamer-finder | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side chain overlaps deleted | 0.1521 |  | 0.0881 | 0.0640 | 8.2 | - | REFUSE |
+| S0089 | S0086 | solvent | waters in own-copy clashes moved to a copy they clear; nothing deleted | 0.1516 |  | 0.0856 | 0.0660 | 7.7 | - | REFUSE |
+| S0090 | S0086 | solvent | waters at 3.0 sigma, mode single | 0.1526 |  | 0.0845 | 0.0681 | 8.2 | - | REFUSE |
+| S0091 | S0086 | refinement | water ADPs anisotropic (individual, next to the group B factors of the protein) | 0.1572 |  | 0.0761 | 0.0811 | 8.2 | - | REFUSE |
+| S0092 | S0086 | refinement | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | 0.1515 |  | 0.0855 | 0.0661 | 8.6 | - | REFUSE |
+| S0093 | S0086 | rotamer-finder | waters in protein density deleted (own-copy clashes and other-copy density with occupancy above 1.5/C); Coot rotamer fit and real-space refinement of each copy of the residues next to them | 0.1614 |  | 0.0963 | 0.0651 | 10.0 | - | REFUSE |
+| S0094 | S0086 | rotamer-finder | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side chain overlaps deleted | 0.1519 |  | 0.0881 | 0.0639 | 8.3 | - | REFUSE |
+| S0095 | S0086 | solvent | no peak at 6.0 sigma on a lettered water or in open solvent | 0.1498 |  | 0.0847 | 0.0652 | 7.4 | - | REFUSE |
+| S0096 | S0086 | rotamer-finder | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side chain overlaps deleted | 0.1518 |  | 0.0875 | 0.0643 | 8.5 | - | REFUSE |
+| S0097 | S0086 | rotamer-finder | no protein atom whose copy B-factors differ by more than 3 times | 0.1498 |  | 0.0847 | 0.0652 | 7.4 | - | REFUSE |
+| S0098 | S0086 | solvent | waters at 3.0 sigma, mode single, none within 2.6 A of a protein atom of any copy | 0.1526 |  | 0.0854 | 0.0672 | 8.4 | - | REFUSE |
+| S0099 | S0086 | solvent | waters at 2.5 sigma, mode single, none within 2.6 A of a protein atom of any copy | 0.1529 |  | 0.0845 | 0.0684 | 7.9 | - | REFUSE |
+| S0100 | S0086 | refinement | water ADPs anisotropic (individual, next to the group B factors of the protein) | 0.1572 |  | 0.0761 | 0.0811 | 8.2 | - | REFUSE |
+| S0101 | S0086 | refinement | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | 0.1515 |  | 0.0855 | 0.0661 | 8.6 | - | REFUSE |
+| S0102 | S0086 | solvent | no peak at 6.0 sigma on a lettered water or in open solvent | 0.1498 |  | 0.0847 | 0.0652 | 7.4 | - | REFUSE |
+| S0103 | S0086 | rotamer-finder | no protein atom whose copy B-factors differ by more than 3 times | 0.1498 |  | 0.0847 | 0.0652 | 7.4 | - | REFUSE |
+| S0104 | S0086 | refinement | methionine as selenomethionine in copies A and B of 6 (MET -> MSE, SD -> SE): a selenium fraction of 1/3 for the partial incorporation; the three tallest peaks of the work-only mFo-DFc map (12.0, 11.9, 10.3 sigma) are on the SD atoms; an anomalous group for Se (f' -8 and f'' 4 held: merged F-obs; data at 0.97915 A) against the sulfur model | 0.1498 |  | 0.0873 | 0.0625 | 8.7 | - | ACCEPT |
+| S0105 | S0104 | refinement | selenium kept in copy A of Met73, Met109 and Met237 (a fraction of 1/6); copy B of the five methionines and copy A of Met154 and Met200 back to sulfur. At S0104 every SE atom lies in negative mFo-DFc density (-7.7 to -10.5 sigma), and the SD atoms of Met154 and Met200 near 0; the anomalous group (f' -8, f'' 4, held) stays for the SE atoms left | 0.1512 |  | 0.0854 | 0.0658 | 9.2 | - | REFUSE |
+| S0106 | S0104 | refinement | selenium kept in copy A of Met73, Met109 and Met237 (a fraction of 1/6); copy B of the five methionines and copy A of Met154 and Met200 back to sulfur. At S0104 every SE atom lies in negative mFo-DFc density (-7.7 to -10.5 sigma), and the SD atoms of Met154 and Met200 near 0; a repair of the deepest point (the fork's check, set before its first step); the same change was refused as an improving step on T431c8e_oct28 (S0105, R-free -1.94 sigma) | 0.1512 |  | 0.0854 | 0.0658 | 9.2 | - | ACCEPT |
+| S0107 | S0106 | solvent | no peak at 6.0 sigma on a lettered water or in open solvent | 0.1512 |  | 0.0854 | 0.0658 | 9.2 | - | REFUSE |
+| S0108 | S0106 | rotamer-finder | Coot rotamer fit and real-space refinement of each copy of the residues with an atom beyond +-3.5 sigma in the work-only mFo-DFc map; the counted waters that a moved side chain overlaps deleted | 0.1504 |  | 0.0864 | 0.0640 | 9.0 | - | ACCEPT |
+| S0109 | S0108 | rotamer-finder | no protein atom whose copy B-factors differ by more than 3 times | 0.1504 |  | 0.0864 | 0.0640 | 9.0 | - | REFUSE |
+| S0110 | S0108 | solvent | waters at 3.0 sigma, mode single, none within 2.6 A of a protein atom of any copy | 0.1529 |  | 0.0887 | 0.0642 | 9.1 | - | REFUSE |
+| S0111 | S0108 | solvent | waters at 2.5 sigma, mode single, none within 2.6 A of a protein atom of any copy | 0.1547 |  | 0.0877 | 0.0670 | 9.0 | - | REFUSE |
+| S0112 | S0108 | refinement | water ADPs anisotropic (individual, next to the group B factors of the protein) | 0.1515 |  | 0.0722 | 0.0792 | 8.4 | - | REFUSE |
+| S0113 | S0108 | refinement | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | 0.1524 |  | 0.0883 | 0.0640 | 9.2 | - | REFUSE |
+| S0114 | S0108 | solvent | no peak at 6.0 sigma on a lettered water or in open solvent | 0.1504 |  | 0.0864 | 0.0640 | 9.0 | - | REFUSE |
+| S0115 | S0108 | rotamer-finder | no protein atom whose copy B-factors differ by more than 3 times | 0.1504 |  | 0.0864 | 0.0640 | 9.0 | - | REFUSE |

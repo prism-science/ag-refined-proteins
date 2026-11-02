@@ -119,11 +119,19 @@
  },
  "standing": {
   "adp": "group1",
-  "since": "S0061",
+  "anomalous": {
+   "eff": "/home/dev/runs/hr/T431c8e_oct28b/prep/anomalous_SE.eff",
+   "f_double_prime": 4.0,
+   "f_prime": -8.0,
+   "refine": false,
+   "selection": "element SE"
+  },
+  "since": "S0106",
   "tls": [
    "chain A and not water"
   ],
-  "utc": "2026-10-21T01:52:30Z",
+  "utc": "2026-10-29T14:41:39Z",
+  "wavelength": 0.97915,
   "wc": 0.3,
   "wu": 0.25
  },
@@ -160,6 +168,42 @@
    "utc": "2026-10-21T01:52:30Z",
    "wc": 0.3,
    "wu": 0.25
+  },
+  {
+   "adp": "group1",
+   "anomalous": {
+    "eff": "/home/dev/runs/hr/T431c8e_oct28/prep/anomalous_SE.eff",
+    "f_double_prime": 4.0,
+    "f_prime": -8.0,
+    "refine": false,
+    "selection": "element SE"
+   },
+   "since": "S0104",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-29T11:13:27Z",
+   "wavelength": 0.97915,
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "adp": "group1",
+   "anomalous": {
+    "eff": "/home/dev/runs/hr/T431c8e_oct28b/prep/anomalous_SE.eff",
+    "f_double_prime": 4.0,
+    "f_prime": -8.0,
+    "refine": false,
+    "selection": "element SE"
+   },
+   "since": "S0106",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-10-29T14:41:39Z",
+   "wavelength": 0.97915,
+   "wc": 0.3,
+   "wu": 0.25
   }
  ],
  "steps": {
@@ -172,6 +216,24 @@
    "utc": "2026-10-19T23:37:51Z"
   }
  },
+ "vault_reads": [
+  {
+   "gap": 0.06681565900123819,
+   "model": "/home/dev/runs/hr/T431c8e_gap/trajectory/S0061/model.pdb",
+   "n_vault": 780,
+   "r_free": 0.14745672404315993,
+   "r_free_independent": 0.14745672404315993,
+   "r_vault": 0.14932780432192538,
+   "r_work": 0.08064106504192174,
+   "r_work_independent": 0.08064106504192174,
+   "reason": "operator, 2026-10-22: the leak check of every target's best model and of its re-refined baseline S0001",
+   "sha256": "c2132a8446db8443566b6788bd57d02b7064b52479ffca59ecac6675c942a1b8",
+   "sigma_r_free": 0.0002665473946127796,
+   "step": "S0061",
+   "utc": "2026-10-22T11:56:58Z",
+   "who": "?"
+  }
+ ],
  "vault_sealed": {
   "pubkey_sha256": "b07e0cb5edb19a02a2e15e782864311394930faf09ef21913782613345096bf5",
   "sealed_tar_enc_sha256": "3b8cd6259c0e65ff4fae84ccacbc10793d1282e182d2346b818fd4b9c11953a5",
