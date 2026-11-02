@@ -2,7 +2,7 @@
 
 > In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), with PDB 44PS as the reference model; see the [citation](../../README.md#citation).
 
-**Status: improved.** The released model is a single model with an R-free of 0.2642 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2853 and the deposited model as scored (S0000) 0.2901 on the same reflections.
+**Status: improved.** The released model is a single model with an R-free of 0.2642 on the deposited free set. The re-refined deposited model (S0001, the common recipe) scores 0.2853 and the deposited model as scored (S0000) 0.2901 on the same reflections. The model is the release of 2026-10-21; the run has had no accepted step since.
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@
 | Deposited refinement program | REFMAC |
 | Released by the PDB | 2012-01-18 |
 | Primary citation | Skepinone-L is a selective p38 mitogen-activated protein kinase inhibitor (Nat.Chem.Biol. 2012), DOI 10.1038/nchembio.761 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/oct28-trials`, commit 25ec394 (pull request to `main` opened 2026-11-02); the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle T9884ae, step S0057, 2026-10-21 03:58:49 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00080 from three seeds), gap widened by at most 0.002, gap ≤ 0.1008 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
@@ -38,7 +38,7 @@ MolProbity score from those three.
 | Ramachandran outliers / favoured | 0.3 % / 95.0 % | 0.3 % / 93.8 % | 0.3 % / 96.8 % |
 | Bond RMSD / angle RMSD | 0.016 Å / 1.72° | 0.013 Å / 1.44° | 0.006 Å / 1.26° |
 | MolProbity score | 2.56 | 2.79 | 1.98 |
-| Copies | 1 | 1 | 1 |
+| Conformers | 1 | 1 | 1 |
 | Atoms (of which H) | 2 849 (0) | 2 896 (0) | 2 896 (0) |
 | Waters, occupancy sum | 14, 14 | 61, 61 | 61, 60 |
 | ANISOU records | 0 | 0 | 2 764 |
@@ -58,17 +58,20 @@ lineage of S0057: TLS, three groups (S0027); restraint weights 2 / 2 (S0034); Co
 (S0041); secondary-structure and Ramachandran restraints (S0052); the reference-model restraints (S0057: R-free
 0.2685 → 0.2642, R-work 0.1963 → 0.2124, rotamer outliers 8.2 → 3.6 %).
 
-The gate judged every change against a control, the parent refined with the same command and seeds, and accepted a
-change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their bounds.
+The gate judged every change against a control, the parent refined with the same command and seeds, and accepted an
+improving change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their
+bounds. From 2026-10-27 the gate also holds the model checks of `docs/METHOD.md` (waters in protein density, conformer-B
+outliers, residues in difference density, the tallest peak, Holton's wE) and accepts a repair: a change that lowers one
+check with R-free not worse than 2σ against its control.
 `refinement/steps.md` lists every step with its verdict and `refinement/score_history.txt` is the hash-chained record
 the gate wrote.
 
 ## Caveats
 
-- **The vault has not been read in this run** (200 work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's.
+- **The vault was read on 2026-10-22 at S0057** (the operator's read; 200 held-out work reflections): R-vault 0.2941 → 0.2735 from S0001 to that model, against R-free 0.2853 → 0.2642 on the deposited free set; the difference of the two changes is +0.0 σ of the sampling noise (σ 0.0160). The vault confirms the gain within the noise. No decision used held-out reflections of any kind, and every map that placed or moved an atom excluded the free set.
 - **The reference-model restraints pull the torsions toward 3LFF.** R-work rose by 0.016 while R-free fell by 0.004, so the gap closed from 0.072 to 0.052; the side-chain conformations of this model are not independent evidence. The restraint file and its options are in the step's record.
 - **Rotamer outliers 3.6 %** (11 residues) are above the gate's 1.5 % cap; the step passed because the control had 25. One Ramachandran outlier (0.3 %, as in the deposited model), 96.8 % favoured against 95.0 %. Clashscore 6.3 against 10.6 deposited.
-- At 2.7 Å the picks, the hydrogens, the mask and the weight re-tests were all refused after S0057. A six-copy fork of this run (T9884ae_six) was still converging at R-free 0.2834 when this snapshot was taken; it is not released.
+- At 2.7 Å the picks, the hydrogens, the mask and the weight re-tests were all refused after S0057. A six-conformer fork of this run (T9884ae_six) was still converging at R-free 0.2834 when this snapshot was taken; it is not released.
 
 ## Files
 

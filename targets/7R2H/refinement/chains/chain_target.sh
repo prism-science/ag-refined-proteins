@@ -8,8 +8,8 @@
 # 1LZ8 had 0.005 left), riding hydrogens (the deposited models have none), protein ADPs isotropic above 1.2 Å (9ARN
 # was anisotropic at 1.37 Å and overfit), TLS, the weights ladders (tighter: 1.0/1.0, 2.0/2.0; looser: 0.3/0.25, 0.2/0.25; each rung while the
 # one before is accepted; wc 0.5 / wu 1.0 is the recipe), NCS, settle again, then the 7KR0 order: water ADPs
-# anisotropic, the split (6 copies at or below 1.3 Å, 2 copies at 1.3-1.5 Å, none above), the water picks, convergence,
-# occupancies, Coot rotamers, reletter, copy votes. Levers that need an ensemble skip themselves on a single model.
+# anisotropic, the split (6 conformers at or below 1.3 Å, 2 conformers at 1.3-1.5 Å, none above), the water picks, convergence,
+# occupancies, Coot rotamers, reletter, conformer votes. Levers that need an ensemble skip themselves on a single model.
 # The log is RUN/chain_target.log.
 set -u
 K=${1:?run directory}

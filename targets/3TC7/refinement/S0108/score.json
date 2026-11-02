@@ -1,0 +1,5207 @@
+{
+ "after": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.635,
+  "bond_rmsd": 0.019,
+  "cbeta_outliers": 0.2101,
+  "chirality_rmsd": 0.1054,
+  "clashscore": 8.99,
+  "clashscore_mmtbx": 8.9855,
+  "copies": 6,
+  "copy_b_groups": 2015,
+  "copy_b_outliers": 0,
+  "density_flags": 11,
+  "density_peak_residues": [
+   {
+    "atom": "HD22/B",
+    "chain": "A",
+    "dist": 0.9,
+    "icode": "",
+    "peak": 6.14,
+    "resname": "LEU",
+    "resseq": "15"
+   },
+   {
+    "atom": "HD21/B",
+    "chain": "A",
+    "dist": 1.44,
+    "icode": "",
+    "peak": 5.83,
+    "resname": "ASN",
+    "resseq": "44"
+   },
+   {
+    "atom": "C/-",
+    "chain": "A",
+    "dist": 1.6,
+    "icode": "",
+    "peak": 5.49,
+    "resname": "ACY",
+    "resseq": "401"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.46,
+    "icode": "",
+    "peak": 5.38,
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "atom": "CE/B",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.19,
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "atom": "CZ/E",
+    "chain": "A",
+    "dist": 0.77,
+    "icode": "",
+    "peak": 5.09,
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "atom": "NH2/A",
+    "chain": "A",
+    "dist": 0.25,
+    "icode": "",
+    "peak": 4.43,
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "atom": "CZ/D",
+    "chain": "A",
+    "dist": 0.89,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "atom": "O/C",
+    "chain": "A",
+    "dist": 0.91,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "ALA",
+    "resseq": "209"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.85,
+    "icode": "",
+    "peak": 4.18,
+    "resname": "MET",
+    "resseq": "237"
+   },
+   {
+    "atom": "N/F",
+    "chain": "A",
+    "dist": 0.5,
+    "icode": "",
+    "peak": 3.98,
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.94,
+    "icode": "",
+    "peak": 3.96,
+    "resname": "MET",
+    "resseq": "109"
+   },
+   {
+    "atom": "HE3/B",
+    "chain": "A",
+    "dist": 1.76,
+    "icode": "",
+    "peak": 3.88,
+    "resname": "LYS",
+    "resseq": "196"
+   },
+   {
+    "atom": "H/D",
+    "chain": "A",
+    "dist": 0.86,
+    "icode": "",
+    "peak": 3.83,
+    "resname": "SER",
+    "resseq": "199"
+   },
+   {
+    "atom": "O1/-",
+    "chain": "A",
+    "dist": 1.46,
+    "icode": "",
+    "peak": 3.81,
+    "resname": "PO4",
+    "resseq": "301"
+   },
+   {
+    "atom": "O/A",
+    "chain": "A",
+    "dist": 0.11,
+    "icode": "",
+    "peak": 3.71,
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "atom": "HB2/A",
+    "chain": "A",
+    "dist": 0.25,
+    "icode": "",
+    "peak": 3.69,
+    "resname": "ASP",
+    "resseq": "128"
+   },
+   {
+    "atom": "CA/B",
+    "chain": "A",
+    "dist": 0.85,
+    "icode": "",
+    "peak": 3.64,
+    "resname": "LEU",
+    "resseq": "137"
+   },
+   {
+    "atom": "H/B",
+    "chain": "A",
+    "dist": 1.1,
+    "icode": "",
+    "peak": 3.58,
+    "resname": "GLU",
+    "resseq": "211"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.09,
+    "icode": "",
+    "peak": 3.57,
+    "resname": "PHE",
+    "resseq": "72"
+   }
+  ],
+  "density_peaks": 20,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.66,
+    "max_at": "SD/E",
+    "min": -2.81,
+    "min_at": "CE/E",
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.48,
+    "max_at": "O/A",
+    "min": -4.51,
+    "min_at": "CD1/E",
+    "resname": "LEU",
+    "resseq": "17"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.29,
+    "max_at": "NH2/A",
+    "min": -3.06,
+    "min_at": "CZ/F",
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.13,
+    "max_at": "CE/B",
+    "min": -3.61,
+    "min_at": "CE/F",
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.91,
+    "max_at": "CZ/E",
+    "min": -2.11,
+    "min_at": "NE/D",
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.86,
+    "max_at": "N/F",
+    "min": -0.22,
+    "min_at": "CE1/E",
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.78,
+    "max_at": "O/A",
+    "min": -1.11,
+    "min_at": "NE/B",
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.74,
+    "max_at": "O/D",
+    "min": -3.71,
+    "min_at": "NH1/D",
+    "resname": "ARG",
+    "resseq": "195"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.91,
+    "max_at": "CG/B",
+    "min": -3.69,
+    "min_at": "OE2/B",
+    "resname": "GLU",
+    "resseq": "143"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.59,
+    "max_at": "CG/C",
+    "min": 0.68,
+    "min_at": "CA/D",
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.54,
+    "max_at": "CA/E",
+    "min": -0.94,
+    "min_at": "CZ/D",
+    "resname": "PHE",
+    "resseq": "89"
+   }
+  ],
+  "dihedral_rmsd": 15.6672,
+  "envelope_a": 2.2,
+  "envelope_waters": 212,
+  "gap": 0.06395571500052384,
+  "geometry": {
+   "angle": {
+    "max": 16.1248,
+    "mean": 1.3136,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 7.201,
+    "mean": 0.6124,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.1818,
+    "mean": 0.0132,
+    "min": 0.0,
+    "n": 24655,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 8.4367,
+    "mean": 0.5744,
+    "min": 0.0,
+    "n": 24655,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.2101
+   },
+   "cablam": {
+    "ca_outliers": 0.8097,
+    "disfavored": 8.9069,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "SER   21 ",
+       "CaBLAM Disfavored",
+       0.0457,
+       0.4257,
+       "try beta sheet",
+       0.0,
+       0.0024,
+       0.0,
+       "ERROR",
+       [
+        32.949,
+        -7.482,
+        -2.362
+       ]
+      ],
+      [
+       " A",
+       "ARG   23 ",
+       "CaBLAM Disfavored",
+       0.0478,
+       0.1472,
+       "try beta sheet",
+       0.0,
+       0.0053,
+       0.0,
+       "ERROR",
+       [
+        34.912,
+        -8.369,
+        4.349
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Outlier",
+       0.0028,
+       0.2457,
+       "",
+       0.0266,
+       0.0006,
+       0.0,
+       "ERROR",
+       [
+        34.829,
+        -19.72,
+        9.681
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0481,
+       0.2719,
+       "",
+       0.0306,
+       0.0042,
+       0.0,
+       "ERROR",
+       [
+        34.484,
+        -19.563,
+        9.958
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0463,
+       0.086,
+       "",
+       0.0027,
+       0.0111,
+       0.0,
+       "ERROR",
+       [
+        34.94,
+        -19.815,
+        9.618
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0324,
+       0.1048,
+       "try beta sheet",
+       0.0,
+       0.0186,
+       0.0,
+       "ERROR",
+       [
+        36.085,
+        -20.13,
+        9.973
+       ]
+      ],
+      [
+       " A",
+       "ARG   28 ",
+       "CaBLAM Outlier",
+       0.0028,
+       0.1224,
+       "",
+       0.0008,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        35.356,
+        -23.227,
+        8.305
+       ]
+      ],
+      [
+       " A",
+       "PRO   29 ",
+       "CaBLAM Disfavored",
+       0.0412,
+       0.5204,
+       "",
+       0.0,
+       0.0005,
+       0.0,
+       "ERROR",
+       [
+        38.019,
+        -25.174,
+        6.425
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0033,
+       0.7398,
+       "",
+       0.1954,
+       0.0,
+       0.0084,
+       "ERROR",
+       [
+        14.578,
+        -21.444,
+        -16.766
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.003,
+       0.7195,
+       "",
+       0.1554,
+       0.0,
+       0.0022,
+       "ERROR",
+       [
+        14.442,
+        -20.843,
+        -17.077
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0003,
+       0.6325,
+       "",
+       0.105,
+       0.0,
+       0.001,
+       "ERROR",
+       [
+        14.674,
+        -21.233,
+        -16.716
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0081,
+       0.6365,
+       "",
+       0.1225,
+       0.0,
+       0.0012,
+       "ERROR",
+       [
+        14.599,
+        -21.435,
+        -16.647
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.0332,
+       0.7518,
+       "try alpha helix",
+       0.2286,
+       0.0,
+       0.0054,
+       "ERROR",
+       [
+        14.539,
+        -21.514,
+        -16.756
+       ]
+      ],
+      [
+       " A",
+       "LEU   60 ",
+       "CaBLAM Disfavored",
+       0.0472,
+       0.049,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.101,
+        -20.331,
+        -11.199
+       ]
+      ],
+      [
+       " A",
+       "GLU   63 ",
+       "CaBLAM Disfavored",
+       0.0391,
+       0.1598,
+       "try beta sheet",
+       0.0,
+       0.0229,
+       0.0,
+       "ERROR",
+       [
+        10.315,
+        -18.752,
+        -1.5
+       ]
+      ],
+      [
+       " A",
+       "ARG   64 ",
+       "CaBLAM Outlier",
+       0.0006,
+       0.1172,
+       "try beta sheet",
+       0.0,
+       0.0036,
+       0.0,
+       "ERROR",
+       [
+        11.242,
+        -21.622,
+        0.87
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Disfavored",
+       0.0215,
+       0.097,
+       "",
+       0.007,
+       0.0,
+       0.0072,
+       "ERROR",
+       [
+        21.821,
+        -36.765,
+        1.242
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Outlier",
+       0.0068,
+       0.0106,
+       "",
+       0.0008,
+       0.0,
+       0.0073,
+       "ERROR",
+       [
+        21.794,
+        -36.983,
+        0.93
+       ]
+      ],
+      [
+       " A",
+       "THR   84 ",
+       "CaBLAM Disfavored",
+       0.0301,
+       0.1418,
+       "try beta sheet",
+       0.0,
+       0.0287,
+       0.0,
+       "ERROR",
+       [
+        24.287,
+        -15.582,
+        -5.44
+       ]
+      ],
+      [
+       " A",
+       "SER  104 ",
+       "CaBLAM Disfavored",
+       0.0204,
+       0.1157,
+       "",
+       0.0,
+       0.0012,
+       0.0,
+       "ERROR",
+       [
+        29.259,
+        -29.163,
+        6.897
+       ]
+      ],
+      [
+       " A",
+       "SER  104 ",
+       "CaBLAM Disfavored",
+       0.0478,
+       0.126,
+       "",
+       0.0,
+       0.0017,
+       0.0,
+       "ERROR",
+       [
+        29.413,
+        -29.251,
+        7.087
+       ]
+      ],
+      [
+       " A",
+       "ILE  105 ",
+       "CaBLAM Disfavored",
+       0.0499,
+       0.05,
+       "try beta sheet",
+       0.0,
+       0.009,
+       0.0,
+       "ERROR",
+       [
+        29.691,
+        -30.55,
+        3.56
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Outlier",
+       0.0098,
+       0.09,
+       "try beta sheet",
+       0.0,
+       0.0094,
+       0.0,
+       "ERROR",
+       [
+        29.053,
+        -15.085,
+        -12.967
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Disfavored",
+       0.0485,
+       0.0705,
+       "try beta sheet",
+       0.0,
+       0.0084,
+       0.0,
+       "ERROR",
+       [
+        29.261,
+        -15.251,
+        -12.795
+       ]
+      ],
+      [
+       " A",
+       "ALA  127 ",
+       "CaBLAM Disfavored",
+       0.048,
+       0.2713,
+       "",
+       0.0,
+       0.0506,
+       0.0,
+       "ERROR",
+       [
+        32.35,
+        -21.405,
+        -0.025
+       ]
+      ],
+      [
+       " A",
+       "GLU  155 ",
+       "CaBLAM Disfavored",
+       0.0442,
+       0.5197,
+       "try beta sheet",
+       0.0,
+       0.079,
+       0.0,
+       "ERROR",
+       [
+        39.433,
+        -26.363,
+        -7.261
+       ]
+      ],
+      [
+       " A",
+       "ALA  174 ",
+       "CaBLAM Disfavored",
+       0.0149,
+       0.5781,
+       "try beta sheet",
+       0.0,
+       0.413,
+       0.0,
+       "ERROR",
+       [
+        40.868,
+        -28.047,
+        -15.602
+       ]
+      ],
+      [
+       " A",
+       "ASN  204 ",
+       "CaBLAM Disfavored",
+       0.0214,
+       0.5394,
+       "",
+       0.0005,
+       0.0,
+       0.1658,
+       "ERROR",
+       [
+        41.421,
+        -37.859,
+        -14.777
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.115,
+       0.0012,
+       "",
+       0.0001,
+       0.0,
+       0.0069,
+       "ERROR",
+       [
+        21.109,
+        -30.034,
+        -15.659
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.122,
+       0.0043,
+       "",
+       0.0084,
+       0.0,
+       0.0045,
+       "ERROR",
+       [
+        20.657,
+        -30.142,
+        -16.366
+       ]
+      ],
+      [
+       " A",
+       "GLY  212 ",
+       "CaBLAM Disfavored",
+       0.0402,
+       0.0987,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        19.029,
+        -32.701,
+        -17.398
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0355,
+       0.0274,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.862,
+        -34.952,
+        -14.675
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Outlier",
+       0.0083,
+       0.0348,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.877,
+        -35.63,
+        -15.171
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0461,
+       0.0475,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.888,
+        -35.224,
+        -15.39
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CA Geom Outlier",
+       0.0183,
+       0.0041,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.799,
+        -35.156,
+        -14.523
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0188,
+       0.0131,
+       "",
+       0.0,
+       0.0002,
+       0.0,
+       "ERROR",
+       [
+        18.624,
+        -35.147,
+        -14.746
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0242,
+       0.0176,
+       "",
+       0.0,
+       0.0004,
+       0.0,
+       "ERROR",
+       [
+        18.78,
+        -34.95,
+        -14.802
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0384,
+       0.0311,
+       "",
+       0.0244,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.703,
+        -36.158,
+        -13.57
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0107,
+       0.0139,
+       "",
+       0.0258,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.583,
+        -36.848,
+        -13.361
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0398,
+       0.0105,
+       "",
+       0.0185,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.604,
+        -36.47,
+        -13.314
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Disfavored",
+       0.0266,
+       0.0205,
+       "",
+       0.0119,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.336,
+        -27.802,
+        -8.963
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Disfavored",
+       0.01,
+       0.0146,
+       "",
+       0.0225,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.375,
+        -27.931,
+        -8.684
+       ]
+      ]
+     ]
+    },
+    "outliers": 2.834
+   },
+   "chirality": {
+    "max": 0.8911,
+    "mean": 0.1054,
+    "min": 0.0,
+    "n": 1878,
+    "outliers": [
+     [
+      13965,
+      13964,
+      13966,
+      13967
+     ],
+     [
+      1579,
+      1578,
+      1580,
+      1581
+     ]
+    ]
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 8.9855
+   },
+   "dihedral": {
+    "max": 115.5187,
+    "mean": 15.6672,
+    "min": 0.0003,
+    "n": 8515,
+    "outliers": [
+     [
+      5068,
+      5069,
+      5175,
+      5176
+     ],
+     [
+      2233,
+      2234,
+      2348,
+      2349
+     ],
+     [
+      5053,
+      5054,
+      5154,
+      5155
+     ],
+     [
+      5515,
+      5516,
+      5646,
+      5647
+     ],
+     [
+      19909,
+      19910,
+      19998,
+      19999
+     ],
+     [
+      17005,
+      17006,
+      17148,
+      17149
+     ],
+     [
+      7904,
+      7905,
+      8018,
+      8019
+     ],
+     [
+      12637,
+      12638,
+      12732,
+      12733
+     ],
+     [
+      8473,
+      8474,
+      8562,
+      8563
+     ],
+     [
+      20674,
+      20675,
+      20751,
+      20752
+     ],
+     [
+      5098,
+      5099,
+      5217,
+      5218
+     ],
+     [
+      15122,
+      15123,
+      15213,
+      15214
+     ],
+     [
+      24193,
+      24194,
+      24258,
+      24259
+     ],
+     [
+      5038,
+      5039,
+      5133,
+      5134
+     ],
+     [
+      12669,
+      12670,
+      12752,
+      12753
+     ],
+     [
+      1096,
+      1094,
+      1095,
+      1098
+     ]
+    ]
+   },
+   "molprobity_score": 2.1201,
+   "nonbonded": {
+    "max": 4.8,
+    "mean": 3.9001,
+    "min": 1.296,
+    "n": 497573
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.1559,
+    "mean": 0.0127,
+    "min": 0.0,
+    "n": 3577,
+    "protein_planes_max_dev": [],
+    "protein_planes_max_dev_noH": []
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 4.0161,
+    "favored": 95.5823,
+    "outliers": 0.4016,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 7.9909,
+    "favored": 89.2694,
+    "outliers": 2.7397,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 30.0304,
+   "Cl": 11.53,
+   "Mp": 2.22,
+   "Rf": 15.04,
+   "Rw": 8.64,
+   "ang": null,
+   "avangle": 0.792852,
+   "avbond": 0.662,
+   "avchir": 0.277821,
+   "avnb": 3.01391,
+   "avomega": 2.85496,
+   "avplane": 0.225649,
+   "avrama": 0.647112,
+   "avrot": 2.33925,
+   "avtor": 1.35848,
+   "bond": null,
+   "chir": null,
+   "energy": 707.109,
+   "nb_e": 352.193,
+   "om": 26.82,
+   "ra": 7.56835,
+   "ro": 99.0,
+   "score": 749.619,
+   "vdw": 0.0,
+   "wang": 51.9,
+   "wbond": 71.2,
+   "wchir": 19.9,
+   "wdihe": 28.8,
+   "wplane": 97.0225
+  },
+  "holton_score": 749.619,
+  "holton_we": 707.109,
+  "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/cand_s1.pdb",
+  "n_anisou": 12109,
+  "n_atoms": 25841,
+  "n_free": 2075,
+  "n_h": 12375,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 1357,
+  "n_water_iso": 1357,
+  "n_work": 38197,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "peak_max": 6.59,
+  "peak_min": -5.04,
+  "planarity_rmsd": 0.0127,
+  "r_free": 0.15039342359786054,
+  "r_free_report": 0.14927160873352358,
+  "r_free_select": 0.15154988576486408,
+  "r_work": 0.0864377085973367,
+  "rama_favored_pct": 95.5823,
+  "rama_n_outliers": 1,
+  "rama_n_residues": 249,
+  "rama_outliers_pct": 0.4016,
+  "rota_n_outliers": 36,
+  "rota_n_residues": 1314,
+  "rota_pct": 2.74,
+  "rota_pct_mmtbx": 2.7397,
+  "scored_utc": "2026-10-29T20:52:40Z",
+  "sha256": "69753d2f64e4b43429ed43406578cb19325f6a05d88d8ce456765364cd4fa32e",
+  "water_clashes": 3,
+  "water_in_density": 97,
+  "water_occ_sum": 570.16,
+  "water_overlap_occ": 45.81,
+  "water_overlaps": 100
+ },
+ "before": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.566,
+  "bond_rmsd": 0.018,
+  "cbeta_outliers": 0.1401,
+  "chirality_rmsd": 0.1018,
+  "clashscore": 9.15,
+  "clashscore_mmtbx": 9.1488,
+  "copies": 6,
+  "copy_b_groups": 2015,
+  "copy_b_outliers": 0,
+  "density_flags": 11,
+  "density_peak_residues": [
+   {
+    "atom": "SD/A",
+    "chain": "A",
+    "dist": 0.43,
+    "icode": "",
+    "peak": 5.79,
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "atom": "C/-",
+    "chain": "A",
+    "dist": 1.58,
+    "icode": "",
+    "peak": 5.71,
+    "resname": "ACY",
+    "resseq": "401"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.56,
+    "icode": "",
+    "peak": 4.8,
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "atom": "HH11/E",
+    "chain": "A",
+    "dist": 1.3,
+    "icode": "",
+    "peak": 4.62,
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "atom": "HE/E",
+    "chain": "A",
+    "dist": 1.31,
+    "icode": "",
+    "peak": 4.53,
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "atom": "O/C",
+    "chain": "A",
+    "dist": 0.93,
+    "icode": "",
+    "peak": 4.44,
+    "resname": "ALA",
+    "resseq": "209"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.79,
+    "icode": "",
+    "peak": 4.42,
+    "resname": "MET",
+    "resseq": "109"
+   },
+   {
+    "atom": "HB3/D",
+    "chain": "A",
+    "dist": 1.19,
+    "icode": "",
+    "peak": 4.4,
+    "resname": "SER",
+    "resseq": "250"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.76,
+    "icode": "",
+    "peak": 4.32,
+    "resname": "MET",
+    "resseq": "237"
+   },
+   {
+    "atom": "HD2/D",
+    "chain": "A",
+    "dist": 0.56,
+    "icode": "",
+    "peak": 4.27,
+    "resname": "ARG",
+    "resseq": "97"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.5,
+    "icode": "",
+    "peak": 4.22,
+    "resname": "SER",
+    "resseq": "234"
+   },
+   {
+    "atom": "N/F",
+    "chain": "A",
+    "dist": 0.6,
+    "icode": "",
+    "peak": 4.15,
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "atom": "HD23/F",
+    "chain": "A",
+    "dist": 2.32,
+    "icode": "",
+    "peak": 4.11,
+    "resname": "LEU",
+    "resseq": "15"
+   },
+   {
+    "atom": "HG13/F",
+    "chain": "A",
+    "dist": 0.93,
+    "icode": "",
+    "peak": 4.03,
+    "resname": "ILE",
+    "resseq": "31"
+   },
+   {
+    "atom": "HE/A",
+    "chain": "A",
+    "dist": 1.91,
+    "icode": "",
+    "peak": 4.03,
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "atom": "N/E",
+    "chain": "A",
+    "dist": 0.16,
+    "icode": "",
+    "peak": 3.94,
+    "resname": "ALA",
+    "resseq": "181"
+   },
+   {
+    "atom": "HA/B",
+    "chain": "A",
+    "dist": 0.72,
+    "icode": "",
+    "peak": 3.89,
+    "resname": "LYS",
+    "resseq": "210"
+   },
+   {
+    "atom": "HB2/A",
+    "chain": "A",
+    "dist": 0.22,
+    "icode": "",
+    "peak": 3.87,
+    "resname": "ASP",
+    "resseq": "128"
+   },
+   {
+    "atom": "O/A",
+    "chain": "A",
+    "dist": 0.08,
+    "icode": "",
+    "peak": 3.87,
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "atom": "O1/-",
+    "chain": "A",
+    "dist": 1.51,
+    "icode": "",
+    "peak": 3.79,
+    "resname": "PO4",
+    "resseq": "301"
+   },
+   {
+    "atom": "CG1/A",
+    "chain": "A",
+    "dist": 0.65,
+    "icode": "",
+    "peak": 3.77,
+    "resname": "ILE",
+    "resseq": "48"
+   },
+   {
+    "atom": "HA/E",
+    "chain": "A",
+    "dist": 1.35,
+    "icode": "",
+    "peak": 3.75,
+    "resname": "GLN",
+    "resseq": "27"
+   },
+   {
+    "atom": "HD3/B",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 3.73,
+    "resname": "LYS",
+    "resseq": "196"
+   },
+   {
+    "atom": "OD1/F",
+    "chain": "A",
+    "dist": 2.19,
+    "icode": "",
+    "peak": 3.68,
+    "resname": "ASN",
+    "resseq": "44"
+   }
+  ],
+  "density_peaks": 24,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 5.32,
+    "max_at": "SD/A",
+    "min": -2.11,
+    "min_at": "CG/B",
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.3,
+    "max_at": "C/C",
+    "min": -4.75,
+    "min_at": "OE2/C",
+    "resname": "GLU",
+    "resseq": "163"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.84,
+    "max_at": "CD1/A",
+    "min": -4.36,
+    "min_at": "CD1/E",
+    "resname": "LEU",
+    "resseq": "17"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.04,
+    "max_at": "O/A",
+    "min": -1.74,
+    "min_at": "NE/B",
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.63,
+    "max_at": "NH2/F",
+    "min": -4.04,
+    "min_at": "NH1/B",
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.83,
+    "max_at": "N/F",
+    "min": 0.12,
+    "min_at": "CE1/E",
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.82,
+    "max_at": "NH1/F",
+    "min": -3.09,
+    "min_at": "CZ/D",
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.76,
+    "max_at": "N/E",
+    "min": -0.83,
+    "min_at": "C/A",
+    "resname": "ALA",
+    "resseq": "181"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.3,
+    "max_at": "NZ/B",
+    "min": -3.66,
+    "min_at": "CD/F",
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.64,
+    "max_at": "CG/F",
+    "min": 0.65,
+    "min_at": "C/C",
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.61,
+    "max_at": "CA/F",
+    "min": -1.17,
+    "min_at": "CZ/C",
+    "resname": "PHE",
+    "resseq": "89"
+   }
+  ],
+  "dihedral_rmsd": 15.496,
+  "envelope_a": 2.2,
+  "envelope_waters": 229,
+  "gap": 0.06575745142492045,
+  "geometry": {
+   "angle": {
+    "max": 15.8041,
+    "mean": 1.2643,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 7.1837,
+    "mean": 0.5878,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.2102,
+    "mean": 0.0124,
+    "min": 0.0,
+    "n": 24654,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 7.4654,
+    "mean": 0.5365,
+    "min": 0.0,
+    "n": 24654,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.1401
+   },
+   "cablam": {
+    "ca_outliers": 0.8097,
+    "disfavored": 9.3117,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "SER   21 ",
+       "CaBLAM Disfavored",
+       0.0422,
+       0.428,
+       "try beta sheet",
+       0.0,
+       0.0028,
+       0.0,
+       "ERROR",
+       [
+        32.961,
+        -7.47,
+        -2.358
+       ]
+      ],
+      [
+       " A",
+       "ARG   23 ",
+       "CaBLAM Disfavored",
+       0.0472,
+       0.1471,
+       "try beta sheet",
+       0.0,
+       0.0052,
+       0.0,
+       "ERROR",
+       [
+        34.926,
+        -8.366,
+        4.336
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Outlier",
+       0.0039,
+       0.2887,
+       "",
+       0.0496,
+       0.0009,
+       0.0,
+       "ERROR",
+       [
+        34.872,
+        -19.727,
+        9.699
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0222,
+       0.0672,
+       "",
+       0.0164,
+       0.0047,
+       0.0,
+       "ERROR",
+       [
+        34.72,
+        -19.855,
+        9.534
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0387,
+       0.102,
+       "try beta sheet",
+       0.0,
+       0.0175,
+       0.0,
+       "ERROR",
+       [
+        36.157,
+        -20.061,
+        9.965
+       ]
+      ],
+      [
+       " A",
+       "ARG   28 ",
+       "CaBLAM Outlier",
+       0.0035,
+       0.1331,
+       "",
+       0.0008,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        35.319,
+        -23.201,
+        8.229
+       ]
+      ],
+      [
+       " A",
+       "ALA   50 ",
+       "CaBLAM Disfavored",
+       0.0439,
+       0.5194,
+       "try beta sheet",
+       0.0,
+       0.0138,
+       0.0,
+       "ERROR",
+       [
+        21.633,
+        -30.168,
+        -4.861
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0017,
+       0.7368,
+       "",
+       0.1881,
+       0.0,
+       0.0077,
+       "ERROR",
+       [
+        14.556,
+        -21.452,
+        -16.774
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0053,
+       0.7417,
+       "",
+       0.1937,
+       0.0,
+       0.0038,
+       "ERROR",
+       [
+        14.475,
+        -20.86,
+        -17.05
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0003,
+       0.634,
+       "",
+       0.0995,
+       0.0,
+       0.0009,
+       "ERROR",
+       [
+        14.681,
+        -21.229,
+        -16.717
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0078,
+       0.6689,
+       "",
+       0.133,
+       0.0,
+       0.0006,
+       "ERROR",
+       [
+        14.593,
+        -21.431,
+        -16.689
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.0345,
+       0.7536,
+       "try alpha helix",
+       0.2266,
+       0.0,
+       0.0053,
+       "ERROR",
+       [
+        14.559,
+        -21.523,
+        -16.77
+       ]
+      ],
+      [
+       " A",
+       "LEU   60 ",
+       "CaBLAM Disfavored",
+       0.0474,
+       0.0521,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.077,
+        -20.311,
+        -11.225
+       ]
+      ],
+      [
+       " A",
+       "GLU   63 ",
+       "CaBLAM Disfavored",
+       0.0378,
+       0.1618,
+       "try beta sheet",
+       0.0,
+       0.0233,
+       0.0,
+       "ERROR",
+       [
+        10.325,
+        -18.764,
+        -1.492
+       ]
+      ],
+      [
+       " A",
+       "ARG   64 ",
+       "CaBLAM Outlier",
+       0.0006,
+       0.1155,
+       "try beta sheet",
+       0.0,
+       0.0036,
+       0.0,
+       "ERROR",
+       [
+        11.234,
+        -21.618,
+        0.864
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Disfavored",
+       0.0192,
+       0.0915,
+       "",
+       0.0067,
+       0.0,
+       0.0073,
+       "ERROR",
+       [
+        21.809,
+        -36.75,
+        1.243
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Outlier",
+       0.0065,
+       0.0097,
+       "",
+       0.0007,
+       0.0,
+       0.0069,
+       "ERROR",
+       [
+        21.806,
+        -37.016,
+        0.962
+       ]
+      ],
+      [
+       " A",
+       "THR   84 ",
+       "CaBLAM Disfavored",
+       0.0261,
+       0.1376,
+       "try beta sheet",
+       0.0,
+       0.0245,
+       0.0,
+       "ERROR",
+       [
+        24.285,
+        -15.563,
+        -5.428
+       ]
+      ],
+      [
+       " A",
+       "SER  104 ",
+       "CaBLAM Disfavored",
+       0.0164,
+       0.1224,
+       "",
+       0.0,
+       0.0011,
+       0.0,
+       "ERROR",
+       [
+        29.27,
+        -29.171,
+        6.901
+       ]
+      ],
+      [
+       " A",
+       "ILE  105 ",
+       "CaBLAM Disfavored",
+       0.049,
+       0.0489,
+       "try beta sheet",
+       0.0,
+       0.0091,
+       0.0,
+       "ERROR",
+       [
+        29.677,
+        -30.547,
+        3.536
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Disfavored",
+       0.0112,
+       0.1024,
+       "try beta sheet",
+       0.0,
+       0.0097,
+       0.0,
+       "ERROR",
+       [
+        29.084,
+        -15.127,
+        -12.969
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Disfavored",
+       0.0464,
+       0.0659,
+       "try beta sheet",
+       0.0,
+       0.0083,
+       0.0,
+       "ERROR",
+       [
+        29.273,
+        -15.234,
+        -12.798
+       ]
+      ],
+      [
+       " A",
+       "GLU  155 ",
+       "CaBLAM Disfavored",
+       0.045,
+       0.5204,
+       "try beta sheet",
+       0.0,
+       0.0769,
+       0.0,
+       "ERROR",
+       [
+        39.448,
+        -26.318,
+        -7.285
+       ]
+      ],
+      [
+       " A",
+       "ALA  174 ",
+       "CaBLAM Disfavored",
+       0.0187,
+       0.5716,
+       "try beta sheet",
+       0.0,
+       0.3903,
+       0.0,
+       "ERROR",
+       [
+        40.853,
+        -28.044,
+        -15.598
+       ]
+      ],
+      [
+       " A",
+       "ALA  181 ",
+       "CaBLAM Disfavored",
+       0.0454,
+       0.1746,
+       "try beta sheet",
+       0.0,
+       0.0099,
+       0.0,
+       "ERROR",
+       [
+        22.922,
+        -29.414,
+        -21.337
+       ]
+      ],
+      [
+       " A",
+       "PRO  202 ",
+       "CaBLAM Disfavored",
+       0.0358,
+       0.5914,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        39.257,
+        -38.14,
+        -20.384
+       ]
+      ],
+      [
+       " A",
+       "ASN  204 ",
+       "CaBLAM Disfavored",
+       0.0281,
+       0.5361,
+       "",
+       0.0006,
+       0.0,
+       0.1377,
+       "ERROR",
+       [
+        41.396,
+        -37.888,
+        -14.757
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.1125,
+       0.0011,
+       "",
+       0.0001,
+       0.0,
+       0.0065,
+       "ERROR",
+       [
+        21.108,
+        -30.033,
+        -15.655
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.1241,
+       0.0044,
+       "",
+       0.0082,
+       0.0,
+       0.0047,
+       "ERROR",
+       [
+        20.67,
+        -30.145,
+        -16.371
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0362,
+       0.0283,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.863,
+        -34.947,
+        -14.731
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Outlier",
+       0.0088,
+       0.0277,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.847,
+        -35.607,
+        -15.133
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0437,
+       0.0475,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.904,
+        -35.255,
+        -15.381
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CA Geom Outlier",
+       0.0171,
+       0.0044,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.798,
+        -35.12,
+        -14.503
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0214,
+       0.013,
+       "",
+       0.0,
+       0.0001,
+       0.0,
+       "ERROR",
+       [
+        18.648,
+        -35.157,
+        -14.769
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0238,
+       0.0201,
+       "",
+       0.0,
+       0.0004,
+       0.0,
+       "ERROR",
+       [
+        18.805,
+        -34.926,
+        -14.763
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0361,
+       0.0336,
+       "",
+       0.0252,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.701,
+        -36.154,
+        -13.564
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0109,
+       0.0141,
+       "",
+       0.0246,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.575,
+        -36.821,
+        -13.356
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0376,
+       0.0098,
+       "",
+       0.0218,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.612,
+        -36.468,
+        -13.321
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Outlier",
+       0.0021,
+       0.0087,
+       "",
+       0.0263,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.363,
+        -27.927,
+        -8.642
+       ]
+      ],
+      [
+       " A",
+       "GLU  248 ",
+       "CaBLAM Disfavored",
+       0.0483,
+       0.1242,
+       "",
+       0.0142,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.301,
+        -45.064,
+        -3.097
+       ]
+      ]
+     ]
+    },
+    "outliers": 2.834
+   },
+   "chirality": {
+    "max": 0.7783,
+    "mean": 0.1018,
+    "min": 0.0,
+    "n": 1878,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 9.1488
+   },
+   "dihedral": {
+    "max": 89.424,
+    "mean": 15.496,
+    "min": 0.0002,
+    "n": 8515,
+    "outliers": [
+     [
+      2233,
+      2234,
+      2348,
+      2349
+     ],
+     [
+      5068,
+      5069,
+      5175,
+      5176
+     ],
+     [
+      5053,
+      5054,
+      5154,
+      5155
+     ],
+     [
+      17005,
+      17006,
+      17148,
+      17149
+     ],
+     [
+      5515,
+      5516,
+      5646,
+      5647
+     ],
+     [
+      5038,
+      5039,
+      5133,
+      5134
+     ],
+     [
+      8473,
+      8474,
+      8562,
+      8563
+     ],
+     [
+      12637,
+      12638,
+      12732,
+      12733
+     ],
+     [
+      7904,
+      7905,
+      8018,
+      8019
+     ],
+     [
+      15122,
+      15123,
+      15213,
+      15214
+     ],
+     [
+      22602,
+      22603,
+      22655,
+      22656
+     ],
+     [
+      7417,
+      7418,
+      7560,
+      7561
+     ],
+     [
+      1096,
+      1094,
+      1095,
+      1098
+     ]
+    ]
+   },
+   "molprobity_score": 2.0508,
+   "nonbonded": {
+    "max": 4.8,
+    "mean": 3.9002,
+    "min": 1.262,
+    "n": 498621
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.1302,
+    "mean": 0.0113,
+    "min": 0.0,
+    "n": 3577,
+    "protein_planes_max_dev": [],
+    "protein_planes_max_dev_noH": []
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 3.2129,
+    "favored": 96.3855,
+    "outliers": 0.4016,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 7.8387,
+    "favored": 89.4977,
+    "outliers": 2.6636,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 27.2484,
+   "Cl": 11.16,
+   "Mp": 2.13,
+   "Rf": 15.12,
+   "Rw": 8.54,
+   "ang": null,
+   "avangle": 0.726601,
+   "avbond": 0.577572,
+   "avchir": 0.258943,
+   "avnb": 2.80264,
+   "avomega": 2.81714,
+   "avplane": 0.200423,
+   "avrama": 0.701168,
+   "avrot": 2.20537,
+   "avtor": 1.33355,
+   "bond": null,
+   "chir": null,
+   "energy": 703.883,
+   "nb_e": 412.381,
+   "om": 27.74,
+   "ra": 99.0,
+   "ro": 99.0,
+   "score": 746.917,
+   "vdw": 0.0,
+   "wang": 51.6,
+   "wbond": 55.7,
+   "wchir": 15.1,
+   "wdihe": 30.8,
+   "wplane": 81.9025
+  },
+  "holton_score": 746.917,
+  "holton_we": 703.883,
+  "model": "/home/dev/runs/hr/T431c8e_oct29/trajectory/S0106/model.pdb",
+  "n_anisou": 12109,
+  "n_atoms": 25867,
+  "n_free": 2075,
+  "n_h": 12375,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 1383,
+  "n_water_iso": 1383,
+  "n_work": 38197,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "peak_max": 6.84,
+  "peak_min": -5.29,
+  "planarity_rmsd": 0.0113,
+  "r_free": 0.15119209355438273,
+  "r_free_report": 0.15176693420878878,
+  "r_free_select": 0.1505994989204465,
+  "r_work": 0.08543464212946228,
+  "rama_favored_pct": 96.3855,
+  "rama_n_outliers": 1,
+  "rama_n_residues": 249,
+  "rama_outliers_pct": 0.4016,
+  "rota_n_outliers": 35,
+  "rota_n_residues": 1316,
+  "rota_pct": 2.66,
+  "rota_pct_mmtbx": 2.6636,
+  "scored_utc": "2026-10-29T12:52:04Z",
+  "sha256": "3d6cdc70bf424ce7eb3a285a0c5a3dc49ca50c02e77f95c74df06b9ed818ddc7",
+  "water_clashes": 2,
+  "water_in_density": 110,
+  "water_occ_sum": 610.7,
+  "water_overlap_occ": 56.19,
+  "water_overlaps": 112
+ },
+ "cand": [
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.635,
+   "bond_rmsd": 0.019,
+   "clashscore": 8.99,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 11,
+   "density_peak_residues": [
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.9,
+     "icode": "",
+     "peak": 6.14,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.44,
+     "icode": "",
+     "peak": 5.83,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.6,
+     "icode": "",
+     "peak": 5.49,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.46,
+     "icode": "",
+     "peak": 5.38,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "CE/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.19,
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "atom": "CZ/E",
+     "chain": "A",
+     "dist": 0.77,
+     "icode": "",
+     "peak": 5.09,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "NH2/A",
+     "chain": "A",
+     "dist": 0.25,
+     "icode": "",
+     "peak": 4.43,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "CZ/D",
+     "chain": "A",
+     "dist": 0.89,
+     "icode": "",
+     "peak": 4.19,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 0.91,
+     "icode": "",
+     "peak": 4.19,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.85,
+     "icode": "",
+     "peak": 4.18,
+     "resname": "MET",
+     "resseq": "237"
+    },
+    {
+     "atom": "N/F",
+     "chain": "A",
+     "dist": 0.5,
+     "icode": "",
+     "peak": 3.98,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.94,
+     "icode": "",
+     "peak": 3.96,
+     "resname": "MET",
+     "resseq": "109"
+    },
+    {
+     "atom": "HE3/B",
+     "chain": "A",
+     "dist": 1.76,
+     "icode": "",
+     "peak": 3.88,
+     "resname": "LYS",
+     "resseq": "196"
+    },
+    {
+     "atom": "H/D",
+     "chain": "A",
+     "dist": 0.86,
+     "icode": "",
+     "peak": 3.83,
+     "resname": "SER",
+     "resseq": "199"
+    },
+    {
+     "atom": "O1/-",
+     "chain": "A",
+     "dist": 1.46,
+     "icode": "",
+     "peak": 3.81,
+     "resname": "PO4",
+     "resseq": "301"
+    },
+    {
+     "atom": "O/A",
+     "chain": "A",
+     "dist": 0.11,
+     "icode": "",
+     "peak": 3.71,
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.25,
+     "icode": "",
+     "peak": 3.69,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.85,
+     "icode": "",
+     "peak": 3.64,
+     "resname": "LEU",
+     "resseq": "137"
+    },
+    {
+     "atom": "H/B",
+     "chain": "A",
+     "dist": 1.1,
+     "icode": "",
+     "peak": 3.58,
+     "resname": "GLU",
+     "resseq": "211"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.09,
+     "icode": "",
+     "peak": 3.57,
+     "resname": "PHE",
+     "resseq": "72"
+    }
+   ],
+   "density_peaks": 20,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.66,
+     "max_at": "SD/E",
+     "min": -2.81,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.48,
+     "max_at": "O/A",
+     "min": -4.51,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.29,
+     "max_at": "NH2/A",
+     "min": -3.06,
+     "min_at": "CZ/F",
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.13,
+     "max_at": "CE/B",
+     "min": -3.61,
+     "min_at": "CE/F",
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.91,
+     "max_at": "CZ/E",
+     "min": -2.11,
+     "min_at": "NE/D",
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.86,
+     "max_at": "N/F",
+     "min": -0.22,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.78,
+     "max_at": "O/A",
+     "min": -1.11,
+     "min_at": "NE/B",
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.74,
+     "max_at": "O/D",
+     "min": -3.71,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.91,
+     "max_at": "CG/B",
+     "min": -3.69,
+     "min_at": "OE2/B",
+     "resname": "GLU",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.59,
+     "max_at": "CG/C",
+     "min": 0.68,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.54,
+     "max_at": "CA/E",
+     "min": -0.94,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 212,
+   "gap": 0.06395571500052384,
+   "holton_we": 707.109,
+   "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/cand_s1.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 6.59,
+   "peak_min": -5.04,
+   "r_free": 0.15039342359786054,
+   "r_free_report": 0.14927160873352358,
+   "r_free_select": 0.15154988576486408,
+   "r_work": 0.0864377085973367,
+   "rama_favored_pct": 95.5823,
+   "rama_n_outliers": 1,
+   "rama_n_residues": 249,
+   "rama_outliers_pct": 0.4016,
+   "rota_n_outliers": 36,
+   "rota_n_residues": 1314,
+   "rota_pct": 2.74,
+   "scored_utc": "2026-10-29T20:52:40Z",
+   "seed": 1,
+   "sha256": "69753d2f64e4b43429ed43406578cb19325f6a05d88d8ce456765364cd4fa32e",
+   "water_clashes": 3,
+   "water_in_density": 97,
+   "water_occ_sum": 570.16,
+   "water_overlap_occ": 45.81,
+   "water_overlaps": 100
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.587,
+   "bond_rmsd": 0.018,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 13,
+   "density_peak_residues": [
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.93,
+     "icode": "",
+     "peak": 6.47,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.43,
+     "icode": "",
+     "peak": 5.89,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.45,
+     "icode": "",
+     "peak": 5.45,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.63,
+     "icode": "",
+     "peak": 5.4,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CE/B",
+     "chain": "A",
+     "dist": 0.5,
+     "icode": "",
+     "peak": 5.19,
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "atom": "CZ/E",
+     "chain": "A",
+     "dist": 0.79,
+     "icode": "",
+     "peak": 5.08,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "NH2/A",
+     "chain": "A",
+     "dist": 0.23,
+     "icode": "",
+     "peak": 4.43,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "CZ/D",
+     "chain": "A",
+     "dist": 0.86,
+     "icode": "",
+     "peak": 4.24,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 0.87,
+     "icode": "",
+     "peak": 4.14,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "NH1/B",
+     "chain": "A",
+     "dist": 0.88,
+     "icode": "",
+     "peak": 4.11,
+     "resname": "ARG",
+     "resseq": "97"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.85,
+     "icode": "",
+     "peak": 4.1,
+     "resname": "MET",
+     "resseq": "237"
+    },
+    {
+     "atom": "N/E",
+     "chain": "A",
+     "dist": 0.52,
+     "icode": "",
+     "peak": 3.98,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "OE1/C",
+     "chain": "A",
+     "dist": 0.64,
+     "icode": "",
+     "peak": 3.94,
+     "resname": "GLU",
+     "resseq": "163"
+    },
+    {
+     "atom": "HE3/B",
+     "chain": "A",
+     "dist": 1.77,
+     "icode": "",
+     "peak": 3.93,
+     "resname": "LYS",
+     "resseq": "196"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.94,
+     "icode": "",
+     "peak": 3.87,
+     "resname": "MET",
+     "resseq": "109"
+    },
+    {
+     "atom": "H/D",
+     "chain": "A",
+     "dist": 0.84,
+     "icode": "",
+     "peak": 3.85,
+     "resname": "SER",
+     "resseq": "199"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.38,
+     "icode": "",
+     "peak": 3.78,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "O1/-",
+     "chain": "A",
+     "dist": 1.47,
+     "icode": "",
+     "peak": 3.74,
+     "resname": "PO4",
+     "resseq": "301"
+    },
+    {
+     "atom": "O/A",
+     "chain": "A",
+     "dist": 0.11,
+     "icode": "",
+     "peak": 3.69,
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.88,
+     "icode": "",
+     "peak": 3.64,
+     "resname": "LEU",
+     "resseq": "137"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.07,
+     "icode": "",
+     "peak": 3.57,
+     "resname": "PHE",
+     "resseq": "72"
+    }
+   ],
+   "density_peaks": 21,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.68,
+     "max_at": "SD/A",
+     "min": -2.85,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.53,
+     "max_at": "O/A",
+     "min": -4.58,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.35,
+     "max_at": "NH2/A",
+     "min": -3.08,
+     "min_at": "CZ/F",
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.1,
+     "max_at": "CE/B",
+     "min": -3.66,
+     "min_at": "CE/F",
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.87,
+     "max_at": "CZ/E",
+     "min": -2.19,
+     "min_at": "NE/D",
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.87,
+     "max_at": "N/F",
+     "min": -0.23,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.76,
+     "max_at": "O/A",
+     "min": -1.14,
+     "min_at": "NE/B",
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.83,
+     "max_at": "O/D",
+     "min": -3.7,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.67,
+     "max_at": "CG/C",
+     "min": 0.68,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.94,
+     "max_at": "OE1/D",
+     "min": -3.61,
+     "min_at": "OE2/B",
+     "resname": "GLU",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.84,
+     "max_at": "OD1/D",
+     "min": -3.55,
+     "min_at": "CG/C",
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.55,
+     "max_at": "CA/E",
+     "min": -0.98,
+     "min_at": "CZ/C",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.5,
+     "max_at": "C/B",
+     "min": 0.37,
+     "min_at": "CG/C",
+     "resname": "MET",
+     "resseq": "109"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 213,
+   "gap": 0.0636221021925605,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/cand_s2.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 6.66,
+   "peak_min": -5.07,
+   "r_free": 0.15060890200755905,
+   "r_free_report": 0.14922557963357366,
+   "r_free_select": 0.1520349483554395,
+   "r_work": 0.08698679981499856,
+   "scored_utc": "2026-10-29T20:53:05Z",
+   "seed": 2,
+   "sha256": "420289a9f8f80f3c504e3d01cd72770fe9c037a45ed469d3ddf0f8ef95203984",
+   "water_clashes": 3,
+   "water_in_density": 98,
+   "water_occ_sum": 570.08,
+   "water_overlap_occ": 46.22,
+   "water_overlaps": 101
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.583,
+   "bond_rmsd": 0.018,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 13,
+   "density_peak_residues": [
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.92,
+     "icode": "",
+     "peak": 6.3,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.44,
+     "icode": "",
+     "peak": 5.85,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.46,
+     "icode": "",
+     "peak": 5.49,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.62,
+     "icode": "",
+     "peak": 5.47,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CE/B",
+     "chain": "A",
+     "dist": 0.51,
+     "icode": "",
+     "peak": 5.22,
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "atom": "CZ/E",
+     "chain": "A",
+     "dist": 0.8,
+     "icode": "",
+     "peak": 5.1,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "NH2/A",
+     "chain": "A",
+     "dist": 0.23,
+     "icode": "",
+     "peak": 4.48,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "CZ/D",
+     "chain": "A",
+     "dist": 0.88,
+     "icode": "",
+     "peak": 4.2,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 0.92,
+     "icode": "",
+     "peak": 4.17,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.84,
+     "icode": "",
+     "peak": 4.13,
+     "resname": "MET",
+     "resseq": "237"
+    },
+    {
+     "atom": "NH1/B",
+     "chain": "A",
+     "dist": 0.87,
+     "icode": "",
+     "peak": 4.01,
+     "resname": "ARG",
+     "resseq": "97"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.96,
+     "icode": "",
+     "peak": 4.0,
+     "resname": "MET",
+     "resseq": "109"
+    },
+    {
+     "atom": "N/E",
+     "chain": "A",
+     "dist": 0.5,
+     "icode": "",
+     "peak": 3.98,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "OE1/C",
+     "chain": "A",
+     "dist": 0.62,
+     "icode": "",
+     "peak": 3.93,
+     "resname": "GLU",
+     "resseq": "163"
+    },
+    {
+     "atom": "HE3/B",
+     "chain": "A",
+     "dist": 1.77,
+     "icode": "",
+     "peak": 3.91,
+     "resname": "LYS",
+     "resseq": "196"
+    },
+    {
+     "atom": "H/D",
+     "chain": "A",
+     "dist": 0.86,
+     "icode": "",
+     "peak": 3.85,
+     "resname": "SER",
+     "resseq": "199"
+    },
+    {
+     "atom": "O1/-",
+     "chain": "A",
+     "dist": 1.47,
+     "icode": "",
+     "peak": 3.83,
+     "resname": "PO4",
+     "resseq": "301"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.39,
+     "icode": "",
+     "peak": 3.78,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "O/A",
+     "chain": "A",
+     "dist": 0.12,
+     "icode": "",
+     "peak": 3.7,
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.87,
+     "icode": "",
+     "peak": 3.64,
+     "resname": "LEU",
+     "resseq": "137"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.07,
+     "icode": "",
+     "peak": 3.54,
+     "resname": "PHE",
+     "resseq": "72"
+    }
+   ],
+   "density_peaks": 21,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.7,
+     "max_at": "SD/E",
+     "min": -2.86,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.5,
+     "max_at": "O/A",
+     "min": -4.53,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.38,
+     "max_at": "NH2/A",
+     "min": -3.05,
+     "min_at": "CZ/F",
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.08,
+     "max_at": "CE/B",
+     "min": -3.66,
+     "min_at": "CE/F",
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.89,
+     "max_at": "CZ/E",
+     "min": -2.17,
+     "min_at": "NE/D",
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.87,
+     "max_at": "N/F",
+     "min": -0.22,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.79,
+     "max_at": "O/A",
+     "min": -1.13,
+     "min_at": "NE/B",
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.78,
+     "max_at": "O/D",
+     "min": -3.72,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.95,
+     "max_at": "OE1/D",
+     "min": -3.67,
+     "min_at": "OE2/B",
+     "resname": "GLU",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.65,
+     "max_at": "CG/C",
+     "min": 0.66,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.58,
+     "max_at": "CA/E",
+     "min": -0.94,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.85,
+     "max_at": "OD1/D",
+     "min": -3.54,
+     "min_at": "CG/C",
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.5,
+     "max_at": "CA/B",
+     "min": -0.79,
+     "min_at": "CD2/F",
+     "resname": "LEU",
+     "resseq": "231"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 211,
+   "gap": 0.06338983162969637,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/cand_s3.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 6.63,
+   "peak_min": -5.04,
+   "r_free": 0.1503069213110261,
+   "r_free_report": 0.14899758077204317,
+   "r_free_select": 0.15165670089159264,
+   "r_work": 0.08691708968132973,
+   "scored_utc": "2026-10-29T20:53:29Z",
+   "seed": 3,
+   "sha256": "16ac1401ae10b33042ea60d8e810713c41e42091b2eaf72ec427d97f2820979e",
+   "water_clashes": 3,
+   "water_in_density": 96,
+   "water_occ_sum": 569.33,
+   "water_overlap_occ": 44.37,
+   "water_overlaps": 99
+  }
+ ],
+ "ctrl": [
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.574,
+   "bond_rmsd": 0.018,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 10,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.44,
+     "icode": "",
+     "peak": 5.83,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.59,
+     "icode": "",
+     "peak": 5.19,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.62,
+     "icode": "",
+     "peak": 4.55,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.02,
+     "icode": "",
+     "peak": 4.51,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HE/E",
+     "chain": "A",
+     "dist": 1.21,
+     "icode": "",
+     "peak": 4.5,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.82,
+     "icode": "",
+     "peak": 4.31,
+     "resname": "ILE",
+     "resseq": "31"
+    },
+    {
+     "atom": "N/F",
+     "chain": "A",
+     "dist": 0.67,
+     "icode": "",
+     "peak": 4.3,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "HH11/E",
+     "chain": "A",
+     "dist": 1.05,
+     "icode": "",
+     "peak": 4.3,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.76,
+     "icode": "",
+     "peak": 4.29,
+     "resname": "MET",
+     "resseq": "237"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.93,
+     "icode": "",
+     "peak": 4.08,
+     "resname": "MET",
+     "resseq": "109"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.16,
+     "icode": "",
+     "peak": 3.99,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "HE/A",
+     "chain": "A",
+     "dist": 1.83,
+     "icode": "",
+     "peak": 3.98,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "HA/B",
+     "chain": "A",
+     "dist": 0.79,
+     "icode": "",
+     "peak": 3.96,
+     "resname": "LYS",
+     "resseq": "210"
+    },
+    {
+     "atom": "HB3/D",
+     "chain": "A",
+     "dist": 1.19,
+     "icode": "",
+     "peak": 3.94,
+     "resname": "SER",
+     "resseq": "250"
+    },
+    {
+     "atom": "HD2/D",
+     "chain": "A",
+     "dist": 0.63,
+     "icode": "",
+     "peak": 3.89,
+     "resname": "ARG",
+     "resseq": "97"
+    },
+    {
+     "atom": "O/A",
+     "chain": "A",
+     "dist": 0.07,
+     "icode": "",
+     "peak": 3.87,
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "atom": "HD23/F",
+     "chain": "A",
+     "dist": 2.34,
+     "icode": "",
+     "peak": 3.76,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.5,
+     "icode": "",
+     "peak": 3.74,
+     "resname": "SER",
+     "resseq": "234"
+    },
+    {
+     "atom": "CA/F",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 3.74,
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "atom": "CG/F",
+     "chain": "A",
+     "dist": 0.12,
+     "icode": "",
+     "peak": 3.71,
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "atom": "N/E",
+     "chain": "A",
+     "dist": 0.22,
+     "icode": "",
+     "peak": 3.67,
+     "resname": "ALA",
+     "resseq": "181"
+    },
+    {
+     "atom": "O1/-",
+     "chain": "A",
+     "dist": 1.52,
+     "icode": "",
+     "peak": 3.55,
+     "resname": "PO4",
+     "resseq": "301"
+    }
+   ],
+   "density_peaks": 22,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.94,
+     "max_at": "SD/E",
+     "min": -2.09,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.37,
+     "max_at": "C/C",
+     "min": -4.79,
+     "min_at": "OE2/C",
+     "resname": "GLU",
+     "resseq": "163"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.04,
+     "max_at": "N/A",
+     "min": -4.35,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.88,
+     "max_at": "N/F",
+     "min": 0.15,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.86,
+     "max_at": "O/A",
+     "min": -1.58,
+     "min_at": "NE/B",
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.85,
+     "max_at": "CA/F",
+     "min": -1.01,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.65,
+     "max_at": "N/E",
+     "min": -0.58,
+     "min_at": "C/A",
+     "resname": "ALA",
+     "resseq": "181"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.62,
+     "max_at": "CA/B",
+     "min": -1.39,
+     "min_at": "CD1/F",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.61,
+     "max_at": "CG/F",
+     "min": 0.85,
+     "min_at": "C/C",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.55,
+     "max_at": "NH2/F",
+     "min": -3.54,
+     "min_at": "NH1/B",
+     "resname": "ARG",
+     "resseq": "175"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 225,
+   "gap": 0.06666647362330823,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/ctrl_s1.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25867,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1383,
+   "n_water_iso": 1383,
+   "n_work": 38197,
+   "peak_max": 6.39,
+   "peak_min": -5.31,
+   "r_free": 0.15334047270772658,
+   "r_free_report": 0.1539124532554987,
+   "r_free_select": 0.15275082651494634,
+   "r_work": 0.08667399908441835,
+   "scored_utc": "2026-10-29T20:58:49Z",
+   "seed": 1,
+   "sha256": "e849ce221a86cfb30c3b52ed8f55df1e0cca5f90fc5cc53e4bcc8ecd0c7b35f8",
+   "water_clashes": 2,
+   "water_in_density": 109,
+   "water_occ_sum": 573.66,
+   "water_overlap_occ": 52.64,
+   "water_overlaps": 111
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.619,
+   "bond_rmsd": 0.018,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 10,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.43,
+     "icode": "",
+     "peak": 5.8,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.6,
+     "icode": "",
+     "peak": 5.26,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "HE/E",
+     "chain": "A",
+     "dist": 1.22,
+     "icode": "",
+     "peak": 4.51,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.61,
+     "icode": "",
+     "peak": 4.49,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.01,
+     "icode": "",
+     "peak": 4.46,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HH11/E",
+     "chain": "A",
+     "dist": 1.01,
+     "icode": "",
+     "peak": 4.38,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "N/F",
+     "chain": "A",
+     "dist": 0.68,
+     "icode": "",
+     "peak": 4.36,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.77,
+     "icode": "",
+     "peak": 4.31,
+     "resname": "MET",
+     "resseq": "237"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.84,
+     "icode": "",
+     "peak": 4.25,
+     "resname": "ILE",
+     "resseq": "31"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.89,
+     "icode": "",
+     "peak": 4.11,
+     "resname": "MET",
+     "resseq": "109"
+    },
+    {
+     "atom": "HE/A",
+     "chain": "A",
+     "dist": 1.83,
+     "icode": "",
+     "peak": 4.05,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.16,
+     "icode": "",
+     "peak": 3.97,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "HB3/D",
+     "chain": "A",
+     "dist": 1.19,
+     "icode": "",
+     "peak": 3.97,
+     "resname": "SER",
+     "resseq": "250"
+    },
+    {
+     "atom": "HD2/D",
+     "chain": "A",
+     "dist": 0.63,
+     "icode": "",
+     "peak": 3.93,
+     "resname": "ARG",
+     "resseq": "97"
+    },
+    {
+     "atom": "O/A",
+     "chain": "A",
+     "dist": 0.08,
+     "icode": "",
+     "peak": 3.89,
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "atom": "HA/B",
+     "chain": "A",
+     "dist": 0.79,
+     "icode": "",
+     "peak": 3.88,
+     "resname": "LYS",
+     "resseq": "210"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.52,
+     "icode": "",
+     "peak": 3.76,
+     "resname": "SER",
+     "resseq": "234"
+    },
+    {
+     "atom": "CA/F",
+     "chain": "A",
+     "dist": 0.19,
+     "icode": "",
+     "peak": 3.72,
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "atom": "HD23/F",
+     "chain": "A",
+     "dist": 2.31,
+     "icode": "",
+     "peak": 3.71,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "CG/F",
+     "chain": "A",
+     "dist": 0.11,
+     "icode": "",
+     "peak": 3.69,
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "atom": "N/E",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 3.67,
+     "resname": "ALA",
+     "resseq": "181"
+    },
+    {
+     "atom": "O1/-",
+     "chain": "A",
+     "dist": 1.53,
+     "icode": "",
+     "peak": 3.6,
+     "resname": "PO4",
+     "resseq": "301"
+    }
+   ],
+   "density_peaks": 22,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.09,
+     "max_at": "SD/E",
+     "min": -1.93,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.49,
+     "max_at": "C/C",
+     "min": -4.82,
+     "min_at": "OE2/C",
+     "resname": "GLU",
+     "resseq": "163"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.19,
+     "max_at": "N/A",
+     "min": -4.27,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.98,
+     "max_at": "N/F",
+     "min": 0.17,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.96,
+     "max_at": "O/B",
+     "min": -1.55,
+     "min_at": "NE/B",
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.85,
+     "max_at": "CA/F",
+     "min": -1.05,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.72,
+     "max_at": "CG/F",
+     "min": 0.84,
+     "min_at": "C/C",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.69,
+     "max_at": "N/E",
+     "min": -0.54,
+     "min_at": "C/A",
+     "resname": "ALA",
+     "resseq": "181"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.64,
+     "max_at": "CA/F",
+     "min": -1.42,
+     "min_at": "CD1/F",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.52,
+     "max_at": "C/C",
+     "min": -2.41,
+     "min_at": "CE/C",
+     "resname": "LYS",
+     "resseq": "210"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 224,
+   "gap": 0.0671223447853157,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/ctrl_s2.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25867,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1383,
+   "n_water_iso": 1383,
+   "n_work": 38197,
+   "peak_max": 6.3,
+   "peak_min": -5.33,
+   "r_free": 0.1531669944659632,
+   "r_free_report": 0.15387520314979597,
+   "r_free_select": 0.15243691272499685,
+   "r_work": 0.08604464968064751,
+   "scored_utc": "2026-10-29T20:59:14Z",
+   "seed": 2,
+   "sha256": "ccc53fe5771eac457c0507e94378b472eaa0cb6c37b152778e72f3cc4a83b246",
+   "water_clashes": 2,
+   "water_in_density": 108,
+   "water_occ_sum": 577.46,
+   "water_overlap_occ": 52.28,
+   "water_overlaps": 110
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.575,
+   "bond_rmsd": 0.018,
+   "clashscore": 9.48,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 11,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.44,
+     "icode": "",
+     "peak": 5.74,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.6,
+     "icode": "",
+     "peak": 5.28,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.62,
+     "icode": "",
+     "peak": 4.64,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 0.87,
+     "icode": "",
+     "peak": 4.52,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HE/E",
+     "chain": "A",
+     "dist": 1.22,
+     "icode": "",
+     "peak": 4.5,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "HH11/E",
+     "chain": "A",
+     "dist": 1.05,
+     "icode": "",
+     "peak": 4.38,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.77,
+     "icode": "",
+     "peak": 4.3,
+     "resname": "MET",
+     "resseq": "237"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.83,
+     "icode": "",
+     "peak": 4.28,
+     "resname": "ILE",
+     "resseq": "31"
+    },
+    {
+     "atom": "N/F",
+     "chain": "A",
+     "dist": 0.67,
+     "icode": "",
+     "peak": 4.21,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.91,
+     "icode": "",
+     "peak": 4.12,
+     "resname": "MET",
+     "resseq": "109"
+    },
+    {
+     "atom": "HE/A",
+     "chain": "A",
+     "dist": 1.82,
+     "icode": "",
+     "peak": 4.09,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "HB3/D",
+     "chain": "A",
+     "dist": 1.19,
+     "icode": "",
+     "peak": 4.08,
+     "resname": "SER",
+     "resseq": "250"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.18,
+     "icode": "",
+     "peak": 4.01,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "HA/B",
+     "chain": "A",
+     "dist": 0.76,
+     "icode": "",
+     "peak": 3.92,
+     "resname": "LYS",
+     "resseq": "210"
+    },
+    {
+     "atom": "HD2/D",
+     "chain": "A",
+     "dist": 0.64,
+     "icode": "",
+     "peak": 3.91,
+     "resname": "ARG",
+     "resseq": "97"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.51,
+     "icode": "",
+     "peak": 3.8,
+     "resname": "SER",
+     "resseq": "234"
+    },
+    {
+     "atom": "CA/D",
+     "chain": "A",
+     "dist": 0.12,
+     "icode": "",
+     "peak": 3.78,
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "atom": "HD23/F",
+     "chain": "A",
+     "dist": 2.32,
+     "icode": "",
+     "peak": 3.76,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "O/A",
+     "chain": "A",
+     "dist": 0.08,
+     "icode": "",
+     "peak": 3.76,
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "atom": "N/E",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 3.65,
+     "resname": "ALA",
+     "resseq": "181"
+    },
+    {
+     "atom": "O1/-",
+     "chain": "A",
+     "dist": 1.52,
+     "icode": "",
+     "peak": 3.6,
+     "resname": "PO4",
+     "resseq": "301"
+    }
+   ],
+   "density_peaks": 21,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.12,
+     "max_at": "SD/E",
+     "min": -2.01,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.51,
+     "max_at": "C/C",
+     "min": -4.79,
+     "min_at": "OE2/C",
+     "resname": "GLU",
+     "resseq": "163"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.09,
+     "max_at": "N/A",
+     "min": -4.28,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.96,
+     "max_at": "O/A",
+     "min": -1.58,
+     "min_at": "NE/B",
+     "resname": "ARG",
+     "resseq": "140"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.9,
+     "max_at": "N/F",
+     "min": 0.14,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.85,
+     "max_at": "CA/F",
+     "min": -0.98,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.72,
+     "max_at": "CG/F",
+     "min": 0.86,
+     "min_at": "C/C",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.69,
+     "max_at": "N/E",
+     "min": -0.58,
+     "min_at": "C/A",
+     "resname": "ALA",
+     "resseq": "181"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.63,
+     "max_at": "CA/F",
+     "min": -1.42,
+     "min_at": "CD1/F",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.55,
+     "max_at": "NH2/F",
+     "min": -3.54,
+     "min_at": "NH1/B",
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.53,
+     "max_at": "C/A",
+     "min": -2.46,
+     "min_at": "CE/F",
+     "resname": "LYS",
+     "resseq": "210"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 227,
+   "gap": 0.06680874017217628,
+   "holton_we": 740.263,
+   "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/ctrl_s3.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25867,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1383,
+   "n_water_iso": 1383,
+   "n_work": 38197,
+   "peak_max": 6.32,
+   "peak_min": -5.29,
+   "r_free": 0.15322813995507498,
+   "r_free_report": 0.15378426022394814,
+   "r_free_select": 0.15265484388662262,
+   "r_work": 0.0864193997828987,
+   "rama_favored_pct": 96.3855,
+   "rama_n_outliers": 1,
+   "rama_n_residues": 249,
+   "rama_outliers_pct": 0.4016,
+   "rota_n_outliers": 39,
+   "rota_n_residues": 1313,
+   "rota_pct": 2.97,
+   "scored_utc": "2026-10-29T20:59:38Z",
+   "seed": 3,
+   "sha256": "cbfdb34e91fd68ed977244fc53b0735ec8e66f47fdf434f90beef292301d472f",
+   "water_clashes": 2,
+   "water_in_density": 110,
+   "water_occ_sum": 577.18,
+   "water_overlap_occ": 53.21,
+   "water_overlaps": 112
+  }
+ ],
+ "median_cand": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.635,
+  "bond_rmsd": 0.019,
+  "clashscore": 8.99,
+  "copies": 6,
+  "copy_b_groups": 2015,
+  "copy_b_outliers": 0,
+  "density_flags": 11,
+  "density_peak_residues": [
+   {
+    "atom": "HD22/B",
+    "chain": "A",
+    "dist": 0.9,
+    "icode": "",
+    "peak": 6.14,
+    "resname": "LEU",
+    "resseq": "15"
+   },
+   {
+    "atom": "HD21/B",
+    "chain": "A",
+    "dist": 1.44,
+    "icode": "",
+    "peak": 5.83,
+    "resname": "ASN",
+    "resseq": "44"
+   },
+   {
+    "atom": "C/-",
+    "chain": "A",
+    "dist": 1.6,
+    "icode": "",
+    "peak": 5.49,
+    "resname": "ACY",
+    "resseq": "401"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.46,
+    "icode": "",
+    "peak": 5.38,
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "atom": "CE/B",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.19,
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "atom": "CZ/E",
+    "chain": "A",
+    "dist": 0.77,
+    "icode": "",
+    "peak": 5.09,
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "atom": "NH2/A",
+    "chain": "A",
+    "dist": 0.25,
+    "icode": "",
+    "peak": 4.43,
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "atom": "CZ/D",
+    "chain": "A",
+    "dist": 0.89,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "atom": "O/C",
+    "chain": "A",
+    "dist": 0.91,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "ALA",
+    "resseq": "209"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.85,
+    "icode": "",
+    "peak": 4.18,
+    "resname": "MET",
+    "resseq": "237"
+   },
+   {
+    "atom": "N/F",
+    "chain": "A",
+    "dist": 0.5,
+    "icode": "",
+    "peak": 3.98,
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.94,
+    "icode": "",
+    "peak": 3.96,
+    "resname": "MET",
+    "resseq": "109"
+   },
+   {
+    "atom": "HE3/B",
+    "chain": "A",
+    "dist": 1.76,
+    "icode": "",
+    "peak": 3.88,
+    "resname": "LYS",
+    "resseq": "196"
+   },
+   {
+    "atom": "H/D",
+    "chain": "A",
+    "dist": 0.86,
+    "icode": "",
+    "peak": 3.83,
+    "resname": "SER",
+    "resseq": "199"
+   },
+   {
+    "atom": "O1/-",
+    "chain": "A",
+    "dist": 1.46,
+    "icode": "",
+    "peak": 3.81,
+    "resname": "PO4",
+    "resseq": "301"
+   },
+   {
+    "atom": "O/A",
+    "chain": "A",
+    "dist": 0.11,
+    "icode": "",
+    "peak": 3.71,
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "atom": "HB2/A",
+    "chain": "A",
+    "dist": 0.25,
+    "icode": "",
+    "peak": 3.69,
+    "resname": "ASP",
+    "resseq": "128"
+   },
+   {
+    "atom": "CA/B",
+    "chain": "A",
+    "dist": 0.85,
+    "icode": "",
+    "peak": 3.64,
+    "resname": "LEU",
+    "resseq": "137"
+   },
+   {
+    "atom": "H/B",
+    "chain": "A",
+    "dist": 1.1,
+    "icode": "",
+    "peak": 3.58,
+    "resname": "GLU",
+    "resseq": "211"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.09,
+    "icode": "",
+    "peak": 3.57,
+    "resname": "PHE",
+    "resseq": "72"
+   }
+  ],
+  "density_peaks": 20,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.66,
+    "max_at": "SD/E",
+    "min": -2.81,
+    "min_at": "CE/E",
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.48,
+    "max_at": "O/A",
+    "min": -4.51,
+    "min_at": "CD1/E",
+    "resname": "LEU",
+    "resseq": "17"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.29,
+    "max_at": "NH2/A",
+    "min": -3.06,
+    "min_at": "CZ/F",
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.13,
+    "max_at": "CE/B",
+    "min": -3.61,
+    "min_at": "CE/F",
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.91,
+    "max_at": "CZ/E",
+    "min": -2.11,
+    "min_at": "NE/D",
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.86,
+    "max_at": "N/F",
+    "min": -0.22,
+    "min_at": "CE1/E",
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.78,
+    "max_at": "O/A",
+    "min": -1.11,
+    "min_at": "NE/B",
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.74,
+    "max_at": "O/D",
+    "min": -3.71,
+    "min_at": "NH1/D",
+    "resname": "ARG",
+    "resseq": "195"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.91,
+    "max_at": "CG/B",
+    "min": -3.69,
+    "min_at": "OE2/B",
+    "resname": "GLU",
+    "resseq": "143"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.59,
+    "max_at": "CG/C",
+    "min": 0.68,
+    "min_at": "CA/D",
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.54,
+    "max_at": "CA/E",
+    "min": -0.94,
+    "min_at": "CZ/D",
+    "resname": "PHE",
+    "resseq": "89"
+   }
+  ],
+  "envelope_a": 2.2,
+  "envelope_waters": 212,
+  "gap": 0.06395571500052384,
+  "holton_we": 707.109,
+  "model": "/home/dev/runs/hr/T431c8e_oct29/pending/density_q/cand_s1.pdb",
+  "n_anisou": 12109,
+  "n_atoms": 25841,
+  "n_free": 2075,
+  "n_h": 12375,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 1357,
+  "n_water_iso": 1357,
+  "n_work": 38197,
+  "peak_max": 6.59,
+  "peak_min": -5.04,
+  "r_free": 0.15039342359786054,
+  "r_free_report": 0.14927160873352358,
+  "r_free_select": 0.15154988576486408,
+  "r_work": 0.0864377085973367,
+  "rama_favored_pct": 95.5823,
+  "rama_n_outliers": 1,
+  "rama_n_residues": 249,
+  "rama_outliers_pct": 0.4016,
+  "rota_n_outliers": 36,
+  "rota_n_residues": 1314,
+  "rota_pct": 2.74,
+  "scored_utc": "2026-10-29T20:52:40Z",
+  "seed": 1,
+  "sha256": "69753d2f64e4b43429ed43406578cb19325f6a05d88d8ce456765364cd4fa32e",
+  "water_clashes": 3,
+  "water_in_density": 97,
+  "water_occ_sum": 570.16,
+  "water_overlap_occ": 45.81,
+  "water_overlaps": 100
+ },
+ "verdict": {
+  "cand": {
+   "angle_rmsd": 1.6016666666666666,
+   "bond_rmsd": 0.01833333333333333,
+   "clashscore": 8.99,
+   "copy_b_outliers": 0.0,
+   "density_flags": 12.333333333333334,
+   "density_peaks": 20.666666666666668,
+   "envelope_waters": 212.0,
+   "gap": 0.0636558829409269,
+   "holton_we": 707.109,
+   "peak_max": 6.626666666666666,
+   "peak_min": -5.05,
+   "r_free": 0.15043641563881524,
+   "r_work": 0.08678053269788832,
+   "rama_outliers_pct": 0.4016,
+   "rota_pct": 2.74,
+   "water_overlaps": 100.0
+  },
+  "clash_cap": 15.0,
+  "ctrl": {
+   "angle_rmsd": 1.5893333333333333,
+   "bond_rmsd": 0.018,
+   "clashscore": 9.48,
+   "copy_b_outliers": 0.0,
+   "density_flags": 10.333333333333334,
+   "density_peaks": 21.666666666666668,
+   "envelope_waters": 225.33333333333334,
+   "gap": 0.06686585286026674,
+   "holton_we": 740.263,
+   "peak_max": 6.336666666666666,
+   "peak_min": -5.31,
+   "r_free": 0.1532452023762549,
+   "r_work": 0.08637934951598819,
+   "rama_outliers_pct": 0.4016,
+   "rota_pct": 2.97,
+   "water_overlaps": 111.0
+  },
+  "d_gap": -0.0032099699193398334,
+  "d_r_free": -0.0028087867374396724,
+  "gap_max": 0.12,
+  "k_sigma": 2.0,
+  "kind": "sanity",
+  "n_cand": 3,
+  "n_ctrl": 3,
+  "notes": [],
+  "outlier_counts": {
+   "rama_n_outliers": {
+    "cand": 1.0,
+    "ctrl": 1.0
+   },
+   "rota_n_outliers": {
+    "cand": 36.0,
+    "ctrl": 39.0
+   }
+  },
+  "outlier_tolerance": 1.0,
+  "reasons": [
+   "all criteria met"
+  ],
+  "sanity": {
+   "copy_b_outliers": {
+    "cand": 0.0,
+    "ctrl": 0.0,
+    "tol": 5.0
+   },
+   "density_flags": {
+    "cand": 12.333333333333334,
+    "ctrl": 10.333333333333334,
+    "tol": 6.429100507328637
+   },
+   "density_peaks": {
+    "cand": 20.666666666666668,
+    "ctrl": 21.666666666666668,
+    "tol": 9.309493362512628
+   },
+   "envelope_waters": {
+    "cand": 212.0,
+    "ctrl": 225.33333333333334,
+    "tol": 30.02221399786054
+   },
+   "gate": "on",
+   "holton_we": {
+    "cand": 707.109,
+    "ctrl": 740.263,
+    "repair_drop": 74.0263,
+    "tol": 37.01315
+   },
+   "peak_max": {
+    "cand": 6.626666666666666,
+    "ctrl": 6.336666666666666,
+    "repair_drop": 1.5,
+    "tol": 1.0
+   },
+   "peak_min": {
+    "cand": 5.05,
+    "ctrl": 5.31,
+    "repair_drop": 1.5,
+    "tol": 1.0
+   },
+   "water_overlaps": {
+    "cand": 100.0,
+    "ctrl": 111.0,
+    "tol": 21.071307505705477
+   }
+  },
+  "sigma": 0.0002665473946127796,
+  "verdict": "ACCEPT",
+  "z": -10.537663448258689
+ }
+}

@@ -5,8 +5,8 @@
 ## Where the procedure comes from
 
 The procedure is not the agent's own. The agent was directly prompted to follow a procedure based on the one in the
-preprint of Passmore et al. (2026), six-conformation ensemble refinement with per-copy waters and connectivity
-optimisation of the copies (their program Untangler), with their PDB 44PS (six conformations, refined against 7KR0's
+preprint of Passmore et al. (2026), six-conformation ensemble refinement with per-conformer waters and connectivity
+optimisation of the conformers (their program Untangler), with their PDB 44PS (six conformations, refined against 7KR0's
 data) as the reference model. The harness complements it with additions for an agentic workflow: each change is one
 step, refined beside a paired control and judged by one gate; a vault of held-out reflections is the leak check;
 decision maps use the work reflections only; and every step is recorded.
@@ -53,12 +53,19 @@ The run applies one change at a time to the model in force:
 - refinement options: more macro-cycles, anisotropic ADPs for waters or protein, restraint weights, altloc occupancies,
   individual hydrogens;
 - solvent: waters picked at a peak height on the mFo−DFc map of the work reflections only, one lettered water per
-  peak at 1/C occupancy in the copy it clears (shared when it clears every copy); hygiene; clash fixes that move a
-  water to a copy it clears;
-- the split into C copies of every protein residue (a representation change, scored and recorded as BUILD, not judged:
+  peak at 1/C occupancy in the conformer it clears (shared when it clears every conformer); hygiene; clash fixes that
+  move a water to a conformer it clears; from 2026-10-27, the held-water rule: every water at its conformer share
+  (lettered 1/C, shared 1), no water occupancy refined;
+- the split into C conformers of every protein residue (a representation change, scored and recorded as BUILD, not judged:
   its R-free is not comparable with the single model's);
-- connectivity: Untangler's relabel of which atoms belong to which copy, the waters following their copies;
-- Coot: auto-fit rotamers on the residues under the strongest difference peaks; population moves between copies.
+- connectivity: Untangler's relabel of which atoms belong to which conformer, the waters following their conformers;
+- Coot: auto-fit rotamers on the residues under the strongest difference peaks; population moves between conformers;
+- the Coot repairs (from 2026-10-27, after the review of 8C5N by Spencer Passmore and Stephanie Wankowicz): the waters in
+  protein density deleted and each conformer of the residues next to them refitted; each conformer of the residues in
+  difference density written as a single-conformer model and fitted in Coot (rotamer, then real-space refinement) into the
+  work-only map of the model with that conformer's residues at occupancy 0, kept where the density correlation does not
+  fall; the B-factor of a conformer above its site's median reset to the median where that conformer's density supports
+  it; ions or waters at named difference peaks.
 
 Each change is refined beside a control: the parent model refined with the same command and the same seeds. The gate
 (`score_model.py`) scores both arms with a fresh cctbx fmodel on all working reflections and judges the median seed:
@@ -68,6 +75,25 @@ Each change is refined beside a control: the parent model refined with the same 
   never below 0.03);
 - clashscore at or under 15, or not above the control's; rotamer outliers 1.5 %, Ramachandran outliers 0.5 %, bond and
   angle RMSD 0.020 Å and 2.0° the same way.
+
+## The model checks and the repairs (from 2026-10-27)
+
+The scorer counts, for each model, the defects a crystallographer looks for in Coot: waters closer than 2.2 Å to a
+protein atom of their own conformer or, with an occupancy above 1.5/C, to an atom of another conformer; protein atoms in
+four or more conformers whose B-factors are more than 3 times apart; residues with an atom beyond ±3.5σ in the work-only
+mFo−DFc map, and residues next to a positive peak of 3.5σ or more; the tallest and the deepest point of that map; and
+Holton's weighted geometry energy wE (Passmore et al. 2026). A run that names the checks in its metaparameters holds
+them in the gate: an improving step may not raise a count by more than its tolerance (a few units, or twice the square
+root of the control's count), the tallest peak by more than 1σ, or wE by more than 5 %. A second kind of step, the
+repair, passes when no check rises above its tolerance, R-free is not worse than 2σ against the control, and one
+check falls: a count by 10 % and more than its tolerance, wE by 10 %, the tallest peak by 1.5σ, the gap by 0.002. A
+repair can therefore cost up to 2σ of R-free, and the released model of a line is the model in force, not the model
+with the lowest R-free; the card says when they differ. Clashscore is judged against the control the same way when a
+run names it; Untangler runs on every model, with no threshold.
+
+The tolerances were calibrated on 44PS and on the best models of 2026-10-27: the expert model has no water in a clash
+with its own conformer but 64 near another conformer's side chain, and 3.7 % of its atoms with conformer B-factors more
+than 3 times apart, so the gate holds the counts against the control and does not require zero.
 
 A geometry step (a relabel, a clash fix, a Coot regularisation) is accepted when R-free is not worse than +2σ and the
 clashscore is 10 % below the control's. An accepted step is the new model in force, the median seed of its candidate

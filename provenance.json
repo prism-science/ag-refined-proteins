@@ -1,69 +1,69 @@
 {
- "line": "hierarchical refinement (C-copy ensembles)",
+ "line": "hierarchical refinement (C-conformer ensembles)",
  "harness": {
   "repository": "prism-science/agentic-refinement",
-  "branch": "manzuoni/hierarchical_refinement",
-  "commit_of_the_model": "bd972d3 (7KR0); bfed380 for the seven targets of 2026-10-21",
-  "commit_at_release": "bfed380 (branch manzuoni/hierarchical_refinement; merged into main as 7d62e84)"
+  "branch": "manzuoni/oct28-trials",
+  "commit_of_the_models": "25ec394 (8C5N, 7KR0, 7R2H, 3TC7 of 2026-11-02); bfed380 for the four targets unchanged since 2026-10-21",
+  "commit_at_release": "25ec394 (branch manzuoni/oct28-trials; pull request to main opened 2026-11-02)"
  },
  "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "exported_at": "2026-10-22T11:38:55Z",
+ "exported_at": "2026-11-02T23:56:23Z",
  "released": {
   "7KR0": {
-   "run_handle": "Tff1b3f",
-   "step": "S0053",
-   "utc": "2026-10-18T23:06:47Z",
-   "vault_last_read": "S0011 (R-vault 0.07692, R-free 0.08086)",
+   "run_handle": "Tff1b3f_oct28",
+   "step": "S0112",
+   "utc": "2026-10-29T19:15:07Z",
+   "vault_last_read": "2026-10-22 at S0053 (the release of 2026-10-21; also S0011 on 2026-10-18): R-vault 0.0725 (S0001 0.1054), R-free 0.0726 (S0001 0.1095), z +1.2, holds; a sibling of the released lineage",
    "rerefined_r_free_S0001": 0.10945
   },
   "3TC7": {
-   "run_handle": "T431c8e_gap",
-   "step": "S0061",
-   "utc": "2026-10-21T01:52:30Z",
-   "vault_last_read": "never in this run",
+   "run_handle": "T431c8e_oct29",
+   "step": "S0108",
+   "utc": "2026-10-29T21:05:02Z",
+   "vault_last_read": "2026-10-22 at S0061 (the release of 2026-10-21): R-vault 0.1493 (S0001 0.1906), R-free 0.1475 (S0001 0.1856), z -0.4, holds",
    "rerefined_r_free_S0001": 0.18555
   },
   "1LZ8": {
    "run_handle": "Tee73c5",
    "step": "S0073",
    "utc": "2026-10-20T07:22:22Z",
-   "vault_last_read": "never in this run",
+   "vault_last_read": "2026-10-22 at S0073: R-vault 0.2517 (S0001 0.2422), R-free 0.2408 (S0001 0.2712), z +2.5, fails",
    "rerefined_r_free_S0001": 0.27121
   },
   "4QO4": {
    "run_handle": "T40560e",
    "step": "S0064",
    "utc": "2026-10-20T08:38:01Z",
-   "vault_last_read": "never in this run",
+   "vault_last_read": "2026-10-22 at S0064: R-vault 0.3009 (S0001 0.2671), R-free 0.2747 (S0001 0.3097), z +3.2, fails",
    "rerefined_r_free_S0001": 0.30971
   },
   "3QUE": {
    "run_handle": "T9884ae",
    "step": "S0057",
    "utc": "2026-10-21T03:58:49Z",
-   "vault_last_read": "never in this run",
+   "vault_last_read": "2026-10-22 at S0057: R-vault 0.2735 (S0001 0.2941), R-free 0.2642 (S0001 0.2853), z +0.0, holds",
    "rerefined_r_free_S0001": 0.28528
   },
   "9ARN": {
    "run_handle": "Tba97f6",
    "step": "S0062",
    "utc": "2026-10-20T02:10:55Z",
-   "vault_last_read": "never in this run",
+   "vault_last_read": "2026-10-22 at S0062: R-vault 0.2643 (S0001 0.2751), R-free 0.2769 (S0001 0.2970), z +0.5, holds",
    "rerefined_r_free_S0001": 0.29704
   },
   "7R2H": {
-   "run_handle": "Ta4f3f9",
-   "step": "S0019",
-   "utc": "2026-10-21T04:20:51Z",
-   "vault_last_read": "never in this run",
+   "run_handle": "Ta4f3f9_oct28",
+   "step": "S0076",
+   "utc": "2026-11-02T14:50:56Z",
+   "vault_last_read": "2026-10-22 at S0032 of the gap fork: R-vault 0.0982 (S0001 0.1346), R-free 0.0965 (S0001 0.1355), z +0.6, holds",
    "rerefined_r_free_S0001": 0.13549
   },
   "8C5N": {
-   "run_handle": "T5f59f1",
-   "step": "S0027",
-   "utc": "2026-10-21T14:13:07Z",
-   "vault_last_read": "never in this run",
+   "run_handle": "T5f59f1_oct28",
+   "step": "S0065",
+   "utc": "2026-10-30T17:47:09Z",
+   "vault_last_read": "2026-10-22 at S0027 (the release of 2026-10-21): R-vault 0.0995 (S0001 0.1480), R-free 0.0908 (S0001 0.1294), z -2.3, holds; a sibling of the released lineage",
    "rerefined_r_free_S0001": 0.12939
   }
  },

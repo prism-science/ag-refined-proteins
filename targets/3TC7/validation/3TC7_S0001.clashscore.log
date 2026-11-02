@@ -1,11 +1,11 @@
 Starting phenix.python
-on Wed Oct 21 17:26:29 2026 by root
+on Mon Nov  2 23:43:49 2026 by root
 ===============================================================================
 
 Processing files:
 -------------------------------------------------------------------------------
 
-  Found model, /home/dev/runs/hr/agrp_export_20261021/3TC7.d/3TC7/model/3TC7_S0001.pdb
+  Found model, /home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb
 
 Processing PHIL parameters:
 -------------------------------------------------------------------------------
@@ -18,9 +18,9 @@ Final processed PHIL parameters:
 -------------------------------------------------------------------------------
   data_manager {
     model {
-      file = "/home/dev/runs/hr/agrp_export_20261021/3TC7.d/3TC7/model/3TC7_S0001.pdb"
+      file = "/home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb"
     }
-    default_model = "/home/dev/runs/hr/agrp_export_20261021/3TC7.d/3TC7/model/3TC7_S0001.pdb"
+    default_model = "/home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb"
   }
   keep_hydrogens = True
 
@@ -30,8 +30,8 @@ Starting job
 
 ===============================================================================
 Job complete
-usr+sys time: 2.65 seconds
-wall clock time: 4.47 seconds
+usr+sys time: 12.11 seconds
+wall clock time: 13.66 seconds
 
 Using electron cloud x-H distances and vdW radii
 

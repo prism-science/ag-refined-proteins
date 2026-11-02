@@ -82,6 +82,12 @@
    "sigma_r_work": 0.0003840464439115508
   }
  ],
+ "notes": [
+  {
+   "utc": "2026-10-27T05:19:40Z",
+   "what": "held-water fork of T5f59f1 (Spencer Passmore, 2026-10-27): water_occupancy held from the reset of S0014 on; the comparison with the refined line S0014 to S0027; the gate bounds of T5f59f1"
+  }
+ ],
  "phenix_version": "Version: 2.1; Release tag: 6048",
  "r_meas": 0.056,
  "r_merge": 0.055,
@@ -112,8 +118,9 @@
   }
  },
  "standing": {
-  "since": "S0008",
-  "utc": "2026-10-20T09:32:21Z",
+  "occupancies": "none",
+  "since": "S0030",
+  "utc": "2026-10-27T06:52:22Z",
   "wc": 0.3,
   "wu": 0.25
  },
@@ -121,6 +128,13 @@
   {
    "since": "S0008",
    "utc": "2026-10-20T09:32:21Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "occupancies": "none",
+   "since": "S0030",
+   "utc": "2026-10-27T06:52:22Z",
    "wc": 0.3,
    "wu": 0.25
   }
@@ -135,6 +149,76 @@
    "utc": "2026-10-20T07:40:52Z"
   }
  },
+ "vault_reads": [
+  {
+   "gap": 0.0046434417131635125,
+   "model": "/home/dev/runs/hr/T5f59f1/trajectory/S0001/model.pdb",
+   "n_vault": 2000,
+   "r_free": 0.12939180946082932,
+   "r_free_independent": 0.1293919316759405,
+   "r_vault": 0.7947283946840026,
+   "r_work": 0.1247483677476658,
+   "r_work_independent": 0.12474891106304195,
+   "reason": "operator, 2026-10-22: the leak check of every target's best model and of its re-refined baseline S0001",
+   "sha256": "3da23db512ffc6fff4be1567533caf4a2f407241caf255f8e566d944d091a0a3",
+   "sigma_r_free": 0.0004617740206117268,
+   "step": "S0001",
+   "utc": "2026-10-22T11:57:52Z",
+   "who": "?"
+  },
+  {
+   "gap": 0.023344961977790346,
+   "model": "/home/dev/runs/hr/T5f59f1/trajectory/S0027/model.pdb",
+   "n_vault": 2000,
+   "r_free": 0.09083658957064106,
+   "r_free_independent": 0.0908366442158837,
+   "r_vault": 0.7905664803510609,
+   "r_work": 0.06749162759285071,
+   "r_work_independent": 0.06749196864153027,
+   "reason": "operator, 2026-10-22: the leak check of every target's best model and of its re-refined baseline S0001",
+   "sha256": "d1bfe97844aa08e26f4e8b6284979333f2c7e81f35b301f20f343ae70c9776e7",
+   "sigma_r_free": 0.0004617740206117268,
+   "step": "S0027",
+   "utc": "2026-10-22T11:58:09Z",
+   "who": "?"
+  },
+  {
+   "gap": 0.0046434417131635125,
+   "model": "/home/dev/runs/hr/T5f59f1/trajectory/S0001/model.pdb",
+   "n_vault": 1991,
+   "n_vault_dropped": 9,
+   "r_free": 0.12939180946082932,
+   "r_free_independent": 0.1293919316759405,
+   "r_vault": 0.14801661534293525,
+   "r_work": 0.1247483677476658,
+   "r_work_independent": 0.12474891106304195,
+   "reason": "operator, 2026-10-22: the leak check again after the two read fixes (two-part seals; intensity vaults scored as amplitudes)",
+   "sha256": "3da23db512ffc6fff4be1567533caf4a2f407241caf255f8e566d944d091a0a3",
+   "sigma_r_free": 0.0004617740206117268,
+   "step": "S0001",
+   "utc": "2026-10-22T12:07:17Z",
+   "vault_data": "intensities, French-Wilson",
+   "who": "?"
+  },
+  {
+   "gap": 0.023344961977790346,
+   "model": "/home/dev/runs/hr/T5f59f1/trajectory/S0027/model.pdb",
+   "n_vault": 1991,
+   "n_vault_dropped": 9,
+   "r_free": 0.09083658957064106,
+   "r_free_independent": 0.0908366442158837,
+   "r_vault": 0.09951272392610587,
+   "r_work": 0.06749162759285071,
+   "r_work_independent": 0.06749196864153027,
+   "reason": "operator, 2026-10-22: the leak check again after the two read fixes (two-part seals; intensity vaults scored as amplitudes)",
+   "sha256": "d1bfe97844aa08e26f4e8b6284979333f2c7e81f35b301f20f343ae70c9776e7",
+   "sigma_r_free": 0.0004617740206117268,
+   "step": "S0027",
+   "utc": "2026-10-22T12:07:35Z",
+   "vault_data": "intensities, French-Wilson",
+   "who": "?"
+  }
+ ],
  "vault_sealed": {
   "pubkey_sha256": "b07e0cb5edb19a02a2e15e782864311394930faf09ef21913782613345096bf5",
   "sealed_tar_enc_sha256": "15e912fc3eb3980882db7c266bdfc21e9b61793bd762123a142c3c26ba85a6e5",

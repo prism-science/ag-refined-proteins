@@ -1,0 +1,19 @@
+forked /home/dev/runs/hr/Tff1b3f_held2 -> /home/dev/runs/hr/Tff1b3f_oct28 (264M)
+metaparams: the trials of 2026-10-28 on
+[2026-10-28T22:10:00Z] chain_oct28 start on /home/dev/runs/hr/Tff1b3f_oct28 from S0098 (fork of /home/dev/runs/hr/Tff1b3f_held2; the fork's steps start at S0099)
+waters that count 16 (own-copy clashes 16, in another copy's density 0; occupancy sum 2.72) | protein atoms with copy B differing more than 3 times: 166 of 1282 | copies 6, waters 2731
+[2026-10-28T22:10:02Z] peaks_q from S0098
+S0099 2026-10-28T23:47:03Z solvent coot_repair parent S0098 | the strongest mFo-DFc peaks (6.0 sigma and up): a lettered water under a peak made a water of every copy; a peak in open solvent a new water of every copy | R-free 0.07295 -> 0.0
+[2026-10-28T23:47:03Z] untangle_q: clashscore 11.48 of S0098 above 10: Untangler
+[2026-10-29T03:37:24Z] envelope_q from S0098
+[2026-10-29T05:03:36Z] density_q from S0098
+[2026-10-29T06:31:29Z] bfactors_q from S0098
+[2026-10-29T07:56:05Z] pick_3.0_q from S0103
+[2026-10-29T09:32:21Z] pick_2.5_q from S0103
+[2026-10-29T10:58:19Z] aniso_water_q from S0105
+[2026-10-29T12:35:15Z] settle_q from S0105
+[2026-10-29T12:47:39Z] peaks_q2 from S0105
+[2026-10-29T14:14:13Z] untangle_q2: clashscore 12.59 of S0105 above 10: Untangler
+[2026-10-29T17:50:52Z] bfactors_q2 from S0105
+waters that count 18 (own-copy clashes 18, in another copy's density 0; occupancy sum 3.06) | protein atoms with copy B differing more than 3 times: 50 of 1282 | copies 6, waters 2770
+[2026-10-29T19:15:09Z] chain_oct28 end on /home/dev/runs/hr/Tff1b3f_oct28; the line's last model S0112 (from S0098)

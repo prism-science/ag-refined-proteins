@@ -8,72 +8,119 @@ import datetime, json, math, re, sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[1])
-HARNESS = "prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84, 2026-10-21)"
-RUNNING = {"7R2H", "8C5N"}   # runs still going at export
+HARNESS = "prism-science/agentic-refinement, branch `manzuoni/oct28-trials`, commit 25ec394 (pull request to `main` opened 2026-11-02); the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84)"
+# The operator's vault read of 2026-10-22 (prism-science/agentic-refinement, docs/PLAN.md, 2026-10-22 12:10Z): the model read, R-vault and
+# R-free from S0001 to that model, the vault's size, the noise sigma of a paired change, z = (dR-vault - dR-free) / sigma, and whether the
+# model read is on the lineage of the released model.
+VAULT = {
+ "7KR0": dict(at="S0053 (the release of 2026-10-21; also S0011 on 2026-10-18)", rv=(0.1054, 0.0725), rf=(0.1095, 0.0726), n=3400, sigma=0.0032, z=+1.2, lineage=False, verdict="holds"),
+ "8C5N": dict(at="S0027 (the release of 2026-10-21)", rv=(0.1480, 0.0995), rf=(0.1294, 0.0908), n=1991, sigma=0.0044, z=-2.3, lineage=False, verdict="holds"),
+ "7R2H": dict(at="S0032 of the gap fork", rv=(0.1346, 0.0982), rf=(0.1355, 0.0965), n=2000, sigma=0.0045, z=+0.6, lineage=True, verdict="holds"),
+ "3TC7": dict(at="S0061 (the release of 2026-10-21)", rv=(0.1906, 0.1493), rf=(0.1856, 0.1475), n=780, sigma=0.0088, z=-0.4, lineage=True, verdict="holds"),
+ "3QUE": dict(at="S0057", rv=(0.2941, 0.2735), rf=(0.2853, 0.2642), n=200, sigma=0.0160, z=+0.0, lineage=True, verdict="holds"),
+ "9ARN": dict(at="S0062", rv=(0.2751, 0.2643), rf=(0.2970, 0.2769), n=306, sigma=0.0192, z=+0.5, lineage=True, verdict="holds"),
+ "1LZ8": dict(at="S0073", rv=(0.2422, 0.2517), rf=(0.2712, 0.2408), n=260, sigma=0.0158, z=+2.5, lineage=True, verdict="fails"),
+ "4QO4": dict(at="S0064", rv=(0.2671, 0.3009), rf=(0.3097, 0.2747), n=200, sigma=0.0214, z=+3.2, lineage=True, verdict="fails"),
+}
+
+def vault_caveat(tid, n_vault_fmt):
+    v = VAULT[tid]
+    head = "**The vault was read on 2026-10-22 at %s** (the operator's read; %s held-out work reflections): R-vault %.4f → %.4f from S0001 to that model, against R-free %.4f → %.4f on the deposited free set; the difference of the two changes is %+.1f σ of the sampling noise (σ %.4f)." % (
+        v["at"], n_vault_fmt, v["rv"][0], v["rv"][1], v["rf"][0], v["rf"][1], v["z"], v["sigma"])
+    if v["verdict"] == "fails":
+        head += (" **The vault does not confirm the gain: R-vault rose while R-free fell.** The free set is small, the gate's margin (two seed σ) is about"
+                 " 30 times smaller than the free set's own sampling noise of a paired change, and the run judged about 80 steps; the accepted gains are"
+                 " most likely fitted to the free set. The model is released as the record of the run, not as a confirmed improvement.")
+    else:
+        head += " The vault confirms the gain within the noise."
+    if not v["lineage"]:
+        head += " That model is a sibling of this lineage, which forks before it and has not been read."
+    elif tid in ("7R2H", "3TC7"):
+        head += " The steps accepted after that model have not been read."
+    head += " No decision used held-out reflections of any kind, and every map that placed or moved an atom excluded the free set."
+    return head
 
 T = {
- "7KR0": dict(handle="Tff1b3f", step="S0053", kind="a six-copy ensemble",
+ "7KR0": dict(handle="Tff1b3f_oct28", step="S0112", kind="a six-conformer ensemble", snapshot="2026-11-02",
    short="Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K)",
-   harness="prism-science/agentic-refinement, branch `manzuoni/hierarchical_refinement` (the model: commit bd972d3; the card: bfed380, merged into `main` as 7d62e84)",
-   vault_row="3 400 work reflections (2 %) removed from every working file at preprocessing; read one time, at S0011",
-   vault_caveat="**The vault was read once, at S0011** (R-vault 0.0769 against R-free 0.0809, no leak signature). The 42 steps after it used no held-out reflections of any kind in a decision, and every map that placed a water excluded the free set, but the gains since S0011 have not yet been checked against the vault. That read is the operator's.",
-   what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working data
-with riding hydrogens, anisotropic ADPs on every protein atom and on most waters, restraint weights wc 0.3 / wu 0.25,
-and individual water occupancies. Every water is one atom: a lettered water belongs to one copy (its occupancy is
-refined; the mean is 0.30), a water with a blank altloc is shared by all six (mean 0.93). Ligands and ions are single.
+   vault_row="3 400 work reflections (2 %) removed from every working file at preprocessing; read at S0011 and at S0053, siblings of this lineage; not read on this lineage",
+   what="""Six complete conformers of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
+data with riding hydrogens, anisotropic ADPs on every protein atom and on the waters, restraint weights wc 0.3 / wu 0.25,
+and every water occupancy held at its conformer share: a lettered water (one conformer) at 1/6, a shared water (blank
+altloc, all six) at 1. No water occupancy is refined; the 2026-10-21 release refined them. Ligands and ions are single.
 The ensemble is the deliverable; it is not merged back into one model.
 
-The model came from the deposited file in 54 recorded steps (S0000 to S0053), 15 of them accepted. The accepted levers,
-in order: anisotropic water ADPs; the six-copy split (a representation change, scored and recorded but not judged);
-water picks at 4, 3, 3, 2.5, 2.5, 2.5 and 2.5σ on work-only difference maps; anisotropic water ADPs again; restraint
-weights 0.3 / 0.25; 20-cycle convergence steps; altloc occupancies; and, last, waters in own-copy clashes moved to a
-copy they clear.""",
+The model came from the deposited file in 110 recorded steps (S0004 to S0113; the record of S0000 to S0003 is in the
+`refinement/S0000/` and `S0001/` files), 26 of them accepted and 3 builds, in the main run and its forks: the held-water
+fork (Tff1b3f_held, then Tff1b3f_held2) and the trial fork of 2026-10-28 (Tff1b3f_oct28). The lineage of S0112: anisotropic
+water ADPs (S0006); the six-conformer split from shake (S0007, a build); the held-water rule (S0082, a build: every water set
+to its conformer share, occupancy refinement off); water picks at 4, 4 and 3σ on work-only difference maps (S0084, S0085,
+S0088); anisotropic water ADPs three times (S0090 to S0092); a pick at 2.5σ (S0094); a 20-cycle convergence step (S0098);
+conformer B-factors more than 3 times apart reset to the site median (S0103, a repair); a pick at 2.5σ that puts no water
+within 2.6 Å of a protein atom of any conformer, the range-of-motion rule (S0105, R-free 0.0723, the lowest of the
+line); the same B-factor reset again (S0112, a repair: conformer-B outliers 109 → 50, R-free +1.1σ against the control).
+From S0082 on, the Coot checks gated every step (waters in protein density, conformer-B outliers, residues beyond ±3.5σ
+and next to positive peaks, the tallest peak, Holton's geometry energy wE). Refused after S0105: anisotropic water ADPs
+(S0106), the Phenix restraint weights 1 / 1 (S0107, +6.2σ), a convergence step (S0108), the peak repair (S0109) and
+Untangler's relabel on two trees (S0110, S0113).""",
    caveats=[
-    "**The reference model scores lower.** PDB 44PS, the six-conformation model of these data from Passmore et al. (2026) and the reference model the agent was given, scores R-free 0.0657 and R-work 0.0485 on the same free set (scored 2026-10-03 by the earlier campaign's scorer), against 0.0726 / 0.0467 for this release. This release does not reach the reference.",
-    "**The gap is 0.0259**, against 0.0089 for the re-refined model and 0.0071 for the deposited model as scored: the six copies and the free water occupancies fit the work set better than the free set. The run's cap is 0.030.",
-    "**Clashscore 7.7** against 5.3 re-refined and 4.3 deposited; 40 waters sit in own-copy clashes that no other copy can take. Rotamer outliers 1.54 % are just above the gate's 1.5 % cap and passed because the control had the same.",
-    "Three mmtbx sub-reports (C-beta deviations, omega, Rama-Z) fail on a six-copy model; the geometry numbers above come from phenix.clashscore, rotalyze and ramalyze.",
+    "**The reference model scores lower.** PDB 44PS, the six-conformation model of these data from Passmore et al. (2026) and the reference model the agent was given, scores R-free 0.0657 and R-work 0.0485 on the same free set (scored 2026-10-03 by the earlier campaign's scorer), against 0.0725 / 0.0472 for this release. This release does not reach the reference.",
+    "**Two 7KR0 models stand, and the operator has not chosen.** This one has the lower R-free. The held Coot line's S0104 (run Tff1b3f_held2coot on the pod: held waters, the Coot water and side-chain repairs, the Phenix weights 1 / 1) reads R-free 0.0736 with clashscore 8.4 and one difference peak of 6σ or more against eleven here: the cleaner map. It is not released.",
+    "**The gap is 0.0253** against 0.0089 for the re-refined model (the run's cap 0.030). Clashscore 12.7 (the cap 15) against 7.7 at the 2026-10-21 release and 5.3 re-refined: the held-water picks added waters, and 18 waters lie within 2.2 Å of a protein atom of their own conformer. Rotamer outliers 1.65 % are above the gate's 1.5 % cap and passed because the control had the same.",
+    "**The tallest difference peak, 10.5σ, is at Ser111**: the OG atoms of the conformers spread along a column where the data hold one position. The Coot refit of each conformer lowered it on a sibling model (10.8 → 7.7σ) and it is back here. The checks of this model: 21 residues with an atom beyond ±3.5σ, 13 next to a positive peak of 3.5σ or more, 50 conformer-B outliers, wE 575 (Holton's weighted geometry energy; 383 at the 2026-10-21 release).",
+    "Three mmtbx sub-reports (C-beta deviations, omega, Rama-Z) fail on a six-conformer model; the geometry numbers above come from phenix.clashscore, rotalyze and ramalyze.",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 7KR0 --runs /home/dev/runs/hr --seeds 3 --nproc 3
-bash scripts/chain_target.sh /home/dev/runs/hr/Tff1b3f 6""",
-   repro_note="The second command runs the lever order that produced this model without an agent; the chain scripts under `refinement/chains/` are the hand-scheduled originals. Seeds are fixed; the same inputs give the same trajectory."),
- "3TC7": dict(handle="T431c8e_gap", step="S0061", kind="a six-copy ensemble",
+bash scripts/chain_target.sh /home/dev/runs/hr/Tff1b3f 6                  # to the six-conformer split, S0007
+bash scripts/chain_heldwater.sh /home/dev/runs/hr/Tff1b3f /home/dev/runs/hr/Tff1b3f_held S0007 6
+bash scripts/chain_held_levers.sh /home/dev/runs/hr/Tff1b3f_held2 6       # the sibling fork from the held BUILD S0082, sanity_count_k 2
+bash scripts/chain_oct28.sh /home/dev/runs/hr/Tff1b3f_held2 /home/dev/runs/hr/Tff1b3f_oct28 S0098""",
+   repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs (`chain_oct28_Tff1b3f_oct28.log` for the trial fork; the earlier campaign's `chain*_7KR0.sh` stay for the record). The held-water and held-lever chains ran on the source forks; every command line of every step is in that step's `change.json` on the pod."),
+ "3TC7": dict(handle="T431c8e_oct29", step="S0108", kind="a six-conformer ensemble", snapshot="2026-11-02",
    short="Engineered protein, NESG target OR62",
-   what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
-data with riding hydrogens, restraint weights wc 0.3 / wu 0.25, TLS (one group for the protein) over an isotropic
-residual on every protein atom (the total ADP is written as ANISOU records) and isotropic waters. Every water is one
-atom: a lettered water belongs to one copy, a water with a blank altloc is shared by all six. The ensemble is the
+   what="""Six complete conformers of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
+data with riding hydrogens, restraint weights wc 0.3 / wu 0.25, TLS (one group for the protein) over an isotropic residual on
+every protein atom (the total ADP is written as ANISOU records) and isotropic waters. Selenium stands in place of sulfur in
+conformer A of Met73, Met109 and Met237 (MSE, one sixth selenium at each site); Met154 and Met200 are sulfur in every
+conformer. A lettered water belongs to one conformer, a water with a blank altloc to all six. The ensemble is the
 deliverable; it is not merged back into one model.
 
-The model came from the deposited file in 66 recorded steps (S0000 to S0065), 15 of them accepted and 2 builds, in two
-runs: the main run T431c8e up to the six-copy split (S0032) and, from S0033 on, its fork T431c8e_gap with looser gap
-bounds (one-step widening of at most 0.010 and a cap of 0.12, against 0.002 and 0.030 in the main run), made because
-the 0.002 bound refused every solvent lever on the ensemble. The lineage of S0061: a convergence step (S0003); riding
-hydrogens (S0005); a two-copy split from shake (S0013, a build); three convergence steps (S0016, S0018, S0020); the
-six-copy split from shake (S0032, a build); restraint weights 1 / 1 (S0033); isotropic protein ADPs in place of
-anisotropic ones (S0039, −0.008); water picks at 4, 4 and 3σ on work-only difference maps (S0043, S0046, S0050);
-restraint weights 0.3 / 0.25 (S0061). TLS with one group was accepted on a sibling of the lineage (S0047) and is in the
-standing recipe from there on.""",
+The model came from the deposited file in 116 recorded steps (S0000 to S0115), 19 of them accepted and 2 builds, in the
+main run T431c8e to the six-conformer split (S0032) and in its forks: T431c8e_gap with looser gap bounds (to S0061, the
+2026-10-21 release), the Coot repair fork T431c8e_coot (S0086), the trial forks of 2026-10-28 (T431c8e_oct28: S0104;
+T431c8e_oct28b: S0106) and T431c8e_oct29 (S0108). The lineage of S0108 to S0061 is on the 2026-10-21 card; after it: the
+Coot repair of the residues in difference density (S0086: each conformer fitted into the work-only map of the model with that
+conformer's residues at occupancy 0, the rotamer fitted then 20 cycles of real-space refinement, kept where the density
+correlation did not fall; 42 waters that the moved side chains overlapped deleted; R-free +2.0σ against the control, a
+repair); selenomethionine in conformers A and B of the five methionines, one third selenium (S0104: the tallest peak 13.7 →
+7.7σ, R-free −7.0σ); the revert to selenium in conformer A of Met73, Met109 and Met237 only (S0106: the deepest point of the
+difference map −11.0 → −5.3σ, a repair of the hole, R-free −1.9σ); the Coot repair again (S0108: 26 waters deleted, R-free
+−10.5σ against its control, the gap 0.003 narrower, clashscore 9.5 → 9.0).""",
    caveats=[
-    "**The gap is 0.0668** against 0.0382 for the deposited model and 0.0612 for the main run's best under the standing bounds (S0042, R-free 0.1540; its record is in `refinement/main_run_T431c8e/`). The fork's bounds let the gap widen by up to 0.010 in one step and cap it at 0.12; the operator judges the fork with the vault at the end.",
-    "**Rotamer outliers 2.74 %** (36 of 1 314 residue copies) are above the gate's 1.5 % cap. The step passed because the count is within one outlier residue per copy of the control's (30), the tolerance rule of 2026-10-21. One Ramachandran outlier (0.4 %). Clashscore 6.8 against 2.9 deposited; the last step (weights 0.3 / 0.25) raised it from 2.8.",
-    "Methionine as selenomethionine, with an anomalous group for Se (f' and f'' refined), was refused twice (S0038, S0042); the density at the SD sites is about a quarter of a selenium's. The residues stay MET.",
-    "Six copies at 1.5 Å: the gate's control is the parent refined with the same seeds, so an accepted gain is relative to that control, not evidence that six copies are the right number for this entry. The two-copy model of the same run (S0020, R-free 0.1688) is in the record.",
+    "**R-free 0.1504 is above the 2026-10-21 release (S0061, 0.1475) and above S0104 (0.1498).** The steps after S0061 were accepted as repairs: a change that lowers a check (the difference map, the waters in protein density, the conformer B-factors) with R-free not worse than 2σ against its control. From S0086 to S0108 the tallest work-only mFo-DFc peak fell 12.0 → 6.6σ, the deepest point −12 → −5.0σ, the residues with an atom beyond ±3.5σ 15 → 11 and the waters in protein density 135 → 100. The operator chose this line, the cleaner map, on 2026-10-29; S0104 stays in the record on the pod.",
+    "**Partial selenomethionine.** The SD sites hold about 18 electrons against 16 for sulfur: the crystal is partly selenomethionine. Selenium in every conformer was refused (+11σ, 2026-10-20); one third (S0104) left every Se atom in negative density; one sixth at three of the five methionines is what the maps support. The check that accepted S0106 (the deepest point of the difference map) was added after S0105, the same change on another fork, was refused by 0.06σ; the fork T431c8e_oct28b ran it with fresh arms, and the operator took the result.",
+    "**The gap is 0.0640** against 0.0443 for the re-refined model, under the fork's bounds (a widening of at most 0.010 in one step, a cap of 0.12; 0.002 and 0.030 in the main run). The main run's best under the standing bounds is S0042 (R-free 0.1540; its record is in `refinement/main_run_T431c8e/`).",
+    "**Rotamer outliers 2.74 %** are above the gate's 1.5 % cap and passed because the control had the same; one Ramachandran outlier (0.4 %). Clashscore 9.0 against 1.7 re-refined. Holton's weighted geometry energy wE rose from 602 at S0061 to 707: the repairs cost geometry energy. Bond RMSD 0.019 Å is at the gate's 0.020 Å cap.",
+    "Six conformers at 1.5 Å: the gate's control is the parent refined with the same seeds, so an accepted gain is relative to that control, not evidence that six conformers are the right number for this entry. The two-conformer model of the main run (S0020, R-free 0.1688) is in the record.",
    ],
    extra_files=[("`refinement/main_run_T431c8e/`", "the main run's own record after the fork point (its best S0042, R-free 0.1540, under the standing gap bounds)")],
    reproduce="""bash tools/preprocessing.sh 3TC7 --runs /home/dev/runs/hr --seeds 3 --nproc 3
-bash scripts/chain_target.sh /home/dev/runs/hr/T431c8e 6          # to the six-copy split, S0032
+bash scripts/chain_target.sh /home/dev/runs/hr/T431c8e 6          # to the six-conformer split, S0032
 bash scripts/fork_run.sh /home/dev/runs/hr/T431c8e /home/dev/runs/hr/T431c8e_gap
 # set gap_widen_max 0.010 and gap_abs_max 0.12 in T431c8e_gap/metaparams.yaml, as scripts/fork_gap_after.sh does
-bash scripts/chain_gap.sh /home/dev/runs/hr/T431c8e_gap 6""",
-   repro_note="The levers whose logs are `chain_gb`, `chain_iso`, `chain_anisogb`, `chain_semet`, `chain_settle_r` and `chain_after_settle*` were scheduled from one-off scripts that are not in `scripts/`; their logs are included, and every command line of every step is in that step's `change.json` on the pod."),
- "1LZ8": dict(handle="Tee73c5", step="S0073", kind="a two-copy ensemble",
+bash scripts/chain_gap.sh /home/dev/runs/hr/T431c8e_gap 6                                   # to S0061
+bash scripts/chain_coot_repair.sh /home/dev/runs/hr/T431c8e_gap /home/dev/runs/hr/T431c8e_coot S0061 6   # S0086
+bash scripts/chain_oct28.sh /home/dev/runs/hr/T431c8e_coot /home/dev/runs/hr/T431c8e_oct28 S0086       # S0104
+# T431c8e_oct28b: a fork of T431c8e_oct28 with quality_hole_tol 1.0 and quality_hole_drop 1.5; refine_step.py semet --revert --pairs --kind sanity from S0104 (S0106)
+bash scripts/chain_oct29.sh /home/dev/runs/hr/T431c8e_oct28b /home/dev/runs/hr/T431c8e_oct29 S0106     # S0108""",
+   repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs. The levers whose logs have no script there were scheduled from one-off scripts; every command line of every step is in that step's `change.json` on the pod."),
+ "1LZ8": dict(handle="Tee73c5", step="S0073", kind="a two-conformer ensemble",
    short="Hen egg-white lysozyme, phased on the anomalous signal of S and Cl",
-   what="""Two complete copies of the protein (altlocs A and B), each at occupancy 1/2, from a qFit split of the single
+   what="""Two complete conformers of the protein (altlocs A and B), each at occupancy 1/2, from a qFit split of the single
 model (S0035), refined together with riding hydrogens, restraint weights wc 2 / wu 2, TLS (one group) over an isotropic
 residual (the total ADP written as ANISOU records), optimised bulk-solvent mask radii and isotropic waters. Two chloride
-ions placed at difference peaks (S0073) are single and at occupancy 1. A lettered water belongs to one copy, a blank one
+ions placed at difference peaks (S0073) are single and at occupancy 1. A lettered water belongs to one conformer, a blank one
 to both.
 
 The model came from the deposited file in 83 recorded steps (S0000 to S0082), 9 of them accepted and 3 builds. The
@@ -84,8 +131,8 @@ nitrogen (S0073; three waters removed). Restraint weights 2 / 2 were accepted on
 are in the standing recipe from there on.""",
    caveats=[
     "**The gap is 0.0746**, above the run's cap of 0.0714; the step passed because the control's gap (0.0754) was higher. The gap was 0.0802 for the deposited model and 0.0864 at the split (S0035); it has narrowed since.",
-    "Clashscore 1.3 against 5.1 deposited; rotamer outliers 0.48 % (one residue copy); no Ramachandran outlier; 93.7 % favoured against 96.9 % for the deposited model.",
-    "A six-copy fork of this run (Tee73c5_six) reached R-free 0.2627 and did not beat the two-copy model; a three-copy build (S0079) and the levers after it did not beat S0073 either. Both stay in the record; neither is released.",
+    "Clashscore 1.3 against 5.1 deposited; rotamer outliers 0.48 % (one residue in one conformer); no Ramachandran outlier; 93.7 % favoured against 96.9 % for the deposited model.",
+    "A six-conformer fork of this run (Tee73c5_six) reached R-free 0.2627 and did not beat the two-conformer model; a three-conformer build (S0079) and the levers after it did not beat S0073 either. Both stay in the record; neither is released.",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 1LZ8 --runs /home/dev/runs/hr --seeds 3 --nproc 3
@@ -106,7 +153,7 @@ with a map correlation under 0.3 cut to CB (S0064, −0.009).""",
     "**Rotamer outliers 3.5 %** (three residues) are above the gate's 1.5 % cap; the step passed because the control had the same three. The deposited model has 6.0 %. Clashscore 7.3 against 16.0 deposited; no Ramachandran outlier, 95.6 % favoured.",
     "**The gain since the baseline is on the select half only.** R-free on the select / report halves is 0.3592 / 0.2625 at S0001 and 0.2874 / 0.2625 at S0064, with 264 reflections in each half; the re-refinement had moved them the other way (0.3368 / 0.2909 at S0000). Halves this small are noisy, and the vault read is the check.",
     "The gap is 0.0518 against 0.0654 for the re-refined model and 0.0502 for the deposited model as scored (the run's cap 0.0704).",
-    "The model has no hydrogens: riding hydrogens were refused in this run. Reference-model restraints (S0075 and the later re-test) were refused; a two-copy qFit build (S0069) and a six-copy fork (T40560e_six, R-free 0.3042) did not beat the single model. None of these is released.",
+    "The model has no hydrogens: riding hydrogens were refused in this run. Reference-model restraints (S0075 and the later re-test) were refused; a two-conformer qFit build (S0069) and a six-conformer fork (T40560e_six, R-free 0.3042) did not beat the single model. None of these is released.",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 4QO4 --runs /home/dev/runs/hr --seeds 3 --nproc 3
@@ -129,7 +176,7 @@ lineage of S0057: TLS, three groups (S0027); restraint weights 2 / 2 (S0034); Co
    caveats=[
     "**The reference-model restraints pull the torsions toward 3LFF.** R-work rose by 0.016 while R-free fell by 0.004, so the gap closed from 0.072 to 0.052; the side-chain conformations of this model are not independent evidence. The restraint file and its options are in the step's record.",
     "**Rotamer outliers 3.6 %** (11 residues) are above the gate's 1.5 % cap; the step passed because the control had 25. One Ramachandran outlier (0.3 %, as in the deposited model), 96.8 % favoured against 95.0 %. Clashscore 6.3 against 10.6 deposited.",
-    "At 2.7 Å the picks, the hydrogens, the mask and the weight re-tests were all refused after S0057. A six-copy fork of this run (T9884ae_six) was still converging at R-free 0.2834 when this snapshot was taken; it is not released.",
+    "At 2.7 Å the picks, the hydrogens, the mask and the weight re-tests were all refused after S0057. A six-conformer fork of this run (T9884ae_six) was still converging at R-free 0.2834 when this snapshot was taken; it is not released.",
    ],
    extra_files=[("`refinement/S0057/reference_model_3LFF.pdb`", "the reference model of the torsion restraints (PDB 3LFF as fetched)")],
    reproduce="""bash tools/preprocessing.sh 3QUE --runs /home/dev/runs/hr --seeds 3 --nproc 3
@@ -152,56 +199,77 @@ in the standing recipe.""",
    caveats=[
     "The gap is 0.0380 against 0.0402 for the deposited model. Clashscore 1.6 (deposited 1.6), no rotamer outlier, no Ramachandran outlier, 100 % favoured.",
     "A run of the same entry with the data cut at 1.85 Å (handle Tf7cc84, `d_min_cut` 1.85) reached R-free 0.2598 at its S0002 with the same TLS lever. Its numbers are on a different reflection set and are not comparable with this card; it is not released. The entry's header reports 1.41 Å.",
-    "A six-copy fork of this run (Tba97f6_six, R-free 0.2853) did not beat the single model and is not released. The sulfate pick (S0071), the mask, annealing, isotropic protein ADPs and the water picks were refused after S0062.",
+    "A six-conformer fork of this run (Tba97f6_six, R-free 0.2853) did not beat the single model and is not released. The sulfate pick (S0071), the mask, annealing, isotropic protein ADPs and the water picks were refused after S0062.",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 9ARN --runs /home/dev/runs/hr --seeds 3 --nproc 3
 bash scripts/chain_target.sh /home/dev/runs/hr/Tba97f6 6
 bash scripts/chain_tls.sh /home/dev/runs/hr/Tba97f6 6""",
    repro_note="The chain scripts under `refinement/chains/` (chain_target, chain_tls, chain_arn2, chain_arn3, chain_coot, chain_ions, chain_more, chain_noise, chain_qfit) are the hand-scheduled originals with their logs; `chain_after_rota` and `followup` were one-off scripts, and every command line is in the step's `change.json` on the pod."),
- "7R2H": dict(handle="Ta4f3f9", step="S0019", kind="a six-copy ensemble",
+ "7R2H": dict(handle="Ta4f3f9_oct28", step="S0076", kind="an eight-conformer ensemble", snapshot="2026-11-02",
    short="Cyclophilin D with DMSO",
-   what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
-data with riding hydrogens, anisotropic ADPs on every protein atom and on most waters (191 of 1 637 isotropic),
-restraint weights wc 0.3 / wu 0.25 and individual water occupancies. A lettered water belongs to one copy, a water with
-a blank altloc to all six. The ligand is single. The ensemble is the deliverable; it is not merged back into one model.
+   what="""Eight complete conformers of the protein (altlocs A to H), each at occupancy 1/8, refined together against the
+working data with riding hydrogens, TLS (one group) over isotropic protein ADPs, anisotropic water ADPs, restraint
+weights wc 0.3 / wu 0.25 and individual water occupancies. A lettered water belongs to one conformer, a water with a
+blank altloc to all eight. The ligand is single. The ensemble is the deliverable; it is not merged back into one model.
 
-The model came from the deposited file in 26 recorded steps (S0000 to S0025), 6 of them accepted and 1 build. The
-lineage of S0019: restraint weights 0.3 / 0.25 (S0008); anisotropic water ADPs (S0012, −0.011); the six-copy split from
-shake (S0014, a build, −0.010); water picks at 4σ three times (S0015, S0016, S0017) and at 2.5σ (S0019) on work-only
-difference maps. The run continues: the water re-letter, the copy votes and a convergence step were running when this
-snapshot was taken, with a fork under looser gap bounds queued after them.""",
+The model came from the deposited file in 77 recorded steps (S0000 to S0076), 16 of them accepted and 2 builds, in the
+main run Ta4f3f9 (to S0019, the 2026-10-21 release) and its forks: Ta4f3f9_gap with looser gap bounds, the
+eight-conformer fork Ta4f3f9_g8 and the trial fork of 2026-10-28 (Ta4f3f9_oct28). The lineage of S0076: restraint weights
+0.3 / 0.25 (S0008); anisotropic water ADPs (S0012); the six-conformer split from shake (S0014, a build); water picks at 4σ
+three times and at 2.5σ (S0015 to S0019); isotropic protein ADPs in place of anisotropic ones (S0030); TLS, one group
+(S0032); a pick at 2.5σ (S0035); eight conformers from six, the first two duplicated (S0046, a build); anisotropic water ADPs
+(S0051, R-free 0.0954); conformer B-factors more than 3 times apart reset to the site median (S0062, a repair);
+anisotropic water ADPs again (S0071); the B-factor reset by the density (S0076: a conformer's B above the site median
+reset to the median where that conformer's 2mFo-DFc density is at least half the site's; R-free 0.0954 → 0.0946).""",
    caveats=[
-    "**The gap is 0.0300**, at the run's cap of 0.030, against 0.0106 for the deposited model. The two picks after S0019 were refused on the gap rule (S0020, S0024); the queued fork loosens the bound for the operator to judge with the vault.",
-    "Clashscore 7.8 against 0.0 for the deposited file (which carries its own hydrogens); rotamer outliers 1.0 % (deposited 0.0 %); no Ramachandran outlier, 93.8 % favoured.",
-    "Six copies at 0.79 Å: 16 461 atoms against 2 850 deposited. The deposited model scores 0.1551 on our flags and 0.1355 after the common recipe (S0001); the header reports 0.1549 on its own flags.",
+    "**A 24σ difference peak that the model does not explain.** The tallest point of the work-only mFo-DFc map lies between Glu23 and Lys25, 1.2 to 1.8 Å from the OE2 atoms of six conformers of Glu23. A phosphate (R-free +9.1σ, the deepest point −22σ), a potassium ion (B 75 Å²) and a water (occupancy 0.38, 1.45 Å from Glu23 OE1) were refused at the site; no rotation of Glu23 reaches it; it is most likely the NZ of Lys25 in a rotamer no conformer has. The Coot refit of Lys25 and Glu23 in each conformer moved Lys25 in four conformers and left the peak. The site needs a person at Coot.",
+    "**S0076 was judged twice.** The same change was refused as a repair (S0075: R-free −2.7σ against the control, but no check fell by 10 %) and then judged as an improving step from the same parent (S0076, accepted on the R-free rule, the arms from the refinement cache). One change under two bars; the record discloses it.",
+    "**The gap is 0.0296** against 0.0112 for the re-refined model, under the fork's bounds (a widening of at most 0.010 in one step, a cap of 0.12; 0.002 and 0.030 in the main run). Clashscore 12.1 against 4.3 re-refined (the deposited file carries its own hydrogens and scores 0.0); rotamer outliers 1.76 % are above the 1.5 % cap and passed against the control; Ramachandran outliers 0.6 %.",
+    "**Eight conformers at 0.79 Å**: 21 496 atoms against 2 850 deposited. The conformer B-factors spread again after each reset (319 atoms in four or more conformers with B-factors more than 3 times apart at S0076; the spread returns to about 2.7 times under refinement). The water occupancies are refined on this line: 98 lettered waters with occupancy above 1.5/8 lie within 2.2 Å of another conformer's atom, 14 within 2.2 Å of their own. The held-water rule, which gave the best 8C5N and 7KR0 models, did not pay on 7R2H (fork Ta4f3f9_held, R-free 0.112).",
+    "The deposited model scores 0.1551 on our flags and 0.1355 after the common recipe (S0001); the header reports 0.1549 on its own flags.",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 7R2H --runs /home/dev/runs/hr --seeds 3 --nproc 3
-bash scripts/chain_target.sh /home/dev/runs/hr/Ta4f3f9 6""",
-   repro_note="`chain_target.sh` is the one chain of this run; its log is `refinement/chains/chain_target_Ta4f3f9.log`."),
- "8C5N": dict(handle="T5f59f1", step="S0027", kind="a six-copy ensemble",
+bash scripts/chain_target.sh /home/dev/runs/hr/Ta4f3f9 6                                            # to S0019
+bash scripts/fork_run.sh /home/dev/runs/hr/Ta4f3f9 /home/dev/runs/hr/Ta4f3f9_gap                    # looser gap bounds, as fork_gap_after.sh sets them
+bash scripts/chain_grow.sh /home/dev/runs/hr/Ta4f3f9_gap /home/dev/runs/hr/Ta4f3f9_g8 8             # eight conformers, S0046 and S0051
+bash scripts/chain_oct28.sh /home/dev/runs/hr/Ta4f3f9_g8 /home/dev/runs/hr/Ta4f3f9_oct28 S0051      # S0062 to S0076""",
+   repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs (`chain_oct28_Ta4f3f9_oct28.log` for the trial fork). The step S0076 was run by hand (`coot_repair.py bfactors --criterion density --kind improving`); every command line of every step is in that step's `change.json` on the pod."),
+ "8C5N": dict(handle="T5f59f1_oct28", step="S0065", kind="a six-conformer ensemble", snapshot="2026-11-02",
    short="Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa",
-   what="""Six complete copies of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
-data with riding hydrogens, anisotropic ADPs on every protein atom and every water (1 443), restraint weights wc 0.3 /
-wu 0.25 and individual water occupancies. A lettered water belongs to one copy, a water with a blank altloc to all six.
-Ligands and ions are single. The ensemble is the deliverable; it is not merged back into one model.
+   what="""Six complete conformers of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
+data with riding hydrogens, anisotropic ADPs on every protein atom and every water, restraint weights wc 0.3 / wu 0.25,
+and every water occupancy held at its conformer share: a lettered water (one conformer) at 1/6, a shared water (blank
+altloc, all six) at 1. No water occupancy is refined; the 2026-10-21 release refined them. Ligands and ions are single.
+The ensemble is the deliverable; it is not merged back into one model.
 
-The model came from the deposited file in 29 recorded steps (S0000 to S0028), 7 of them accepted and 1 build. The
-lineage of S0027: restraint weights 0.3 / 0.25 (S0008); anisotropic water ADPs (S0012, −0.006); the six-copy split from
-shake (S0014, a build, −0.017); water picks at 4, 4 and 3σ on work-only difference maps (S0015, S0016, S0018);
-anisotropic water ADPs again (S0021); waters in own-copy clashes moved to a copy they clear (S0027: 17 of 36 clashing
-waters re-lettered, nothing deleted). The run continues: a convergence step was running when this snapshot was taken,
-with a fork under looser gap bounds queued after it.""",
+The model came from the deposited file in 66 recorded steps (S0000 to S0065), 18 of them accepted and 2 builds, in the
+main run T5f59f1 (to S0027, the 2026-10-21 release) and its forks: the held-water fork T5f59f1_held, its Coot repair fork
+T5f59f1_heldcoot and the trial fork of 2026-10-28 (T5f59f1_oct28). The lineage of S0065: restraint weights 0.3 / 0.25
+(S0008); anisotropic water ADPs (S0012); the six-conformer split from shake (S0014, a build); the held-water rule (S0030, a
+build, from the split: every water set to its conformer share, occupancy refinement off); water picks at 4 and 3σ on
+work-only difference maps (S0031, S0034); anisotropic water ADPs (S0037, R-free 0.0891); a convergence step (S0040,
+0.0879); the Coot water repair (S0046, R-free 0.0871, the lowest of the line: the waters in protein density deleted, each
+conformer of the residues next to them fitted in Coot); conformer B-factors more than 3 times apart reset to the site median
+(S0049, a repair); the water repair again (S0050: no water in protein density left); the B-factor reset again (S0055, a
+repair); the B-factor reset by the density (S0065, a repair: a conformer's B above the site median reset to the median where
+that conformer's 2mFo-DFc density is at least half the site's; conformer-B outliers 31 → 3, R-free −0.3σ against the control).
+From S0030 on, the Coot checks gated every step. Refused after S0055: a 3σ and a 2.5σ pick with the range-of-motion rule
+(S0056, S0058), the Phenix restraint weights 1 / 1 (+6.2σ on the held Coot line), anisotropic water ADPs (S0060), a
+convergence step (S0061), the peak repair (S0062) and Untangler's relabel (S0063).""",
    caveats=[
-    "**The gap is 0.0233** against 0.0092 for the deposited model (the run's cap 0.030).",
-    "Clashscore 8.8 against 7.0 deposited (the re-letter step brought it down from 9.4); rotamer outliers 1.3 % (deposited 2.3 %); no Ramachandran outlier.",
-    "Six copies at 0.75 Å: 17 842 atoms against 2 850 deposited. The copy-vote step (S0028) was refused. The deposited model scores 0.1571 on our flags and 0.1294 after the common recipe (S0001); the header reports 0.1634 on its own flags.",
+    "**R-free 0.0875 is 0.0004 above S0046 (0.0871), the lowest of the line.** The four steps after S0046 were accepted as repairs: a change that lowers a check with R-free not worse than 2σ against its control. From the 2026-10-21 release (S0027) to S0065 the waters in protein density fell 62 → 4, the conformer-B outliers 20 → 3; the residues with an atom beyond ±3.5σ stay at 21 (20). The 2026-10-21 model refined the water occupancies; the reviewers (Spencer Passmore and Stephanie Wankowicz, 2026-10-27) found waters in protein density and extreme conformer B-factors on it, and the held-water rule and the Coot repairs are the answer.",
+    "**The gap is 0.0248** against 0.0046 for the re-refined model (the run's cap 0.030). **Clashscore 14.8** is at the gate's cap of 15, against 8.8 at the 2026-10-21 release and 4.8 re-refined: the held-water picks added waters at full conformer share. Rotamer outliers 1.48 %; no Ramachandran outlier.",
+    "Six conformers at 0.75 Å: 18 961 atoms against 2 850 deposited. The deposited model scores 0.1571 on our flags and 0.1294 after the common recipe (S0001); the header reports 0.1634 on its own flags. The checks of this model: 21 residues with an atom beyond ±3.5σ, 2 next to a positive peak of 3.5σ or more, the tallest peak 10.5σ, wE 741 (Holton's weighted geometry energy; 521 at the 2026-10-21 release).",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 8C5N --runs /home/dev/runs/hr --seeds 3 --nproc 3
-bash scripts/chain_target.sh /home/dev/runs/hr/T5f59f1 6""",
-   repro_note="`chain_target.sh` is the one chain of this run; its log is `refinement/chains/chain_target_T5f59f1.log`."),
+bash scripts/chain_target.sh /home/dev/runs/hr/T5f59f1 6                                                  # to the six-conformer split, S0014
+bash scripts/chain_heldwater.sh /home/dev/runs/hr/T5f59f1 /home/dev/runs/hr/T5f59f1_held S0014 6          # S0030 to S0040
+bash scripts/chain_coot_repair.sh /home/dev/runs/hr/T5f59f1_held /home/dev/runs/hr/T5f59f1_heldcoot S0040 6   # S0046 to S0050
+bash scripts/chain_oct28.sh /home/dev/runs/hr/T5f59f1_heldcoot /home/dev/runs/hr/T5f59f1_oct28 S0050       # S0055 to S0065""",
+   repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs (`chain_oct28_T5f59f1_oct28.log` for the trial fork). The held-water and Coot repair chains ran on the source forks; every command line of every step is in that step's `change.json` on the pod."),
 }
 
 
@@ -259,11 +327,15 @@ def card(tid, c):
     vault_pct = 100.0 * n_vault / (n_work + n_vault) if n_vault else 0.0
     phenix = (run.get("phenix_version") or "").replace("Version: ", "").replace("; Release tag: ", "-") or "2.1-6048"
     title = e["struct"]["title"].strip().rstrip(".")
-    status = ("**Status: improved.** The released model is %s with an R-free of %.4f on the deposited free set. The re-refined "
+    status = ("**Status: %s.** The released model is %s with an R-free of %.4f on the deposited free set. The re-refined "
               "deposited model (S0001, the common recipe) scores %.4f and the deposited model as scored (S0000) %.4f on the same "
-              "reflections." % (c["kind"], a["r_free"], base["r_free"], dep["r_free"]))
-    if tid in RUNNING:
-        status += " The run continues; this is the model in force on 2026-10-21."
+              "reflections." % ("improved" if VAULT[tid]["verdict"] == "holds" else "lower R-free, not confirmed by the vault", c["kind"], a["r_free"], base["r_free"], dep["r_free"]))
+    if c.get("snapshot"):
+        status += " This is the model in force on %s; the run may continue." % c["snapshot"]
+    else:
+        status += " The model is the release of 2026-10-21; the run has had no accepted step since."
+    if VAULT[tid]["verdict"] == "fails":
+        status += " **The vault read of 2026-10-22 does not confirm the gain** (see Caveats)."
     gate = "ΔR-free ≤ −2σ against the control (σ = %s from three seeds), gap widened by at most %s, gap ≤ %s or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 %% or not above the control's" % (
         num(sigma, "%.5f"), num(gwm, "%g"), num(gcap, "%.4f"))
     rows = [
@@ -290,7 +362,7 @@ def card(tid, c):
      ("Ramachandran outliers / favoured",) + tuple("%s / %s" % (num(m.get("rama_outliers_pct"), "%.1f %%"), num(m.get("rama_favored_pct"), "%.1f %%")) for m in (dep, base, a)),
      ("Bond RMSD / angle RMSD",) + tuple("%s / %s" % (num(m.get("bond_rmsd"), "%.3f Å"), num(m.get("angle_rmsd"), "%.2f°")) for m in (dep, base, a)),
      ("MolProbity score",) + tuple(num(molprobity(m), "%.2f") for m in (dep, base, a)),
-     ("Copies",) + tuple(copies(m) for m in (dep, base, a)),
+     ("Conformers",) + tuple(copies(m) for m in (dep, base, a)),
      ("Atoms (of which H)",) + tuple("%s (%s)" % (fmt_int(m.get("n_atoms")), fmt_int(m.get("n_h"))) for m in (dep, base, a)),
      ("Waters, occupancy sum",) + tuple("%s, %s" % (fmt_int(m.get("n_water_atoms")), fmt_int(m.get("water_occ_sum"))) for m in (dep, base, a)),
      ("ANISOU records",) + tuple(fmt_int(m.get("n_anisou")) for m in (dep, base, a)),
@@ -312,7 +384,7 @@ def card(tid, c):
      ("`refinement/chains/`", "the chain scripts that scheduled the steps on the pod, as run, with their logs"),
      ("`validation/`", "phenix.clashscore, rotalyze and ramalyze logs of the released model (`*_%s.*`) and of the re-refined baseline (`*_S0001.*`)" % c["step"]),
     ] + c["extra_files"]
-    vault_cav = c.get("vault_caveat") or ("**The vault has not been read in this run** (%s work reflections, sealed at preprocessing; `run.json` carries the checksums). No decision used held-out reflections of any kind, and every map that placed an atom excluded the free set, but the gains have not been checked against the vault. That read is the operator's." % fmt_int(n_vault))
+    vault_cav = vault_caveat(tid, fmt_int(n_vault))
     note = ("> In development. Refined by an agent that was prompted to follow a procedure based on Passmore et al. (2026), "
             "with PDB 44PS as the reference model; see the [citation](../../README.md#citation).")
     out = ["# %s — %s" % (tid, title), "", note, "", status, "", "| | |", "|---|---|"]
@@ -326,8 +398,11 @@ def card(tid, c):
             "| | Deposited as scored (S0000) | Re-refined (S0001) | This release (%s) |" % c["step"], "|---|---|---|---|"]
     out += ["| %s | %s | %s | %s |" % r for r in three]
     out += ["", hdr, "", "## What the model is", "", c["what"], "",
-            "The gate judged every change against a control, the parent refined with the same command and seeds, and accepted a",
-            "change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their bounds.",
+            "The gate judged every change against a control, the parent refined with the same command and seeds, and accepted an",
+            "improving change only when R-free fell by at least 2σ of the run's noise floor with the gap and the geometry inside their",
+            "bounds. From 2026-10-27 the gate also holds the model checks of `docs/METHOD.md` (waters in protein density, conformer-B",
+            "outliers, residues in difference density, the tallest peak, Holton's wE) and accepts a repair: a change that lowers one",
+            "check with R-free not worse than 2σ against its control.",
             "`refinement/steps.md` lists every step with its verdict and `refinement/score_history.txt` is the hash-chained record",
             "the gate wrote.", "", "## Caveats", "", "- " + vault_cav]
     out += ["- " + x for x in c["caveats"]]
@@ -344,15 +419,18 @@ def splice(text, name, body):
 
 def main():
     info = sorted((card(tid, c) for tid, c in T.items()), key=lambda x: x["res"])
-    r1 = ["| Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status |",
-          "|---|---|---|---|---|---|---|---|---|---|"]
+    r1 = ["| Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status | Vault check (2026-10-22) |",
+          "|---|---|---|---|---|---|---|---|---|---|---|"]
     r2 = ["| Target | Clashscore | Rotamer outliers % | Ramachandran outliers % | Ramachandran favoured % | Bond RMSD (Å) | Angle RMSD (°) | MolProbity score |",
           "|---|---|---|---|---|---|---|---|"]
     for i in info:
         b, a = i["base"], i["a"]
-        r1.append("| [%s](targets/%s/README.md) | %g | %s | %.4f / %.4f | **%.4f / %.4f** | −%.4f | %.4f → %.4f | %.4f → %.4f | %s, step %s | improved |" % (
+        v = VAULT[i["id"]]
+        vtxt = "%s at %s: R-vault %.4f → %.4f, z %+.1f" % (v["verdict"], v["at"].split(" ")[0], v["rv"][0], v["rv"][1], v["z"]) + ("" if v["lineage"] else " (a sibling)")
+        r1.append("| [%s](targets/%s/README.md) | %g | %s | %.4f / %.4f | **%.4f / %.4f** | −%.4f | %.4f → %.4f | %.4f → %.4f | %s, step %s | %s | %s |" % (
             i["id"], i["id"], i["res"], i["title"], b["r_free"], b["r_free_report"], a["r_free"], a["r_free_report"], b["r_free"] - a["r_free"],
-            b["r_work"], a["r_work"], b["gap"], a["gap"], i["kind"].replace("a ", ""), i["step"]))
+            b["r_work"], a["r_work"], b["gap"], a["gap"], i["kind"].replace("a ", "").replace("an ", ""), i["step"],
+            "improved" if v["verdict"] == "holds" else "lower R-free, not confirmed by the vault", vtxt))
         arrow = lambda k, f: "%s → %s" % (num(b.get(k), f), num(a.get(k), f))
         r2.append("| [%s](targets/%s/README.md) | %s | %s | %s | %s | %s | %s | %s → %s |" % (
             i["id"], i["id"], arrow("clashscore", "%.1f"), arrow("rota_pct", "%.2f"), arrow("rama_outliers_pct", "%.1f"), arrow("rama_favored_pct", "%.1f"),
@@ -363,11 +441,15 @@ def main():
     (ROOT / "README.md").write_text(readme)
     prov = load(ROOT / "provenance.json")
     prov["exported_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    prov["line"] = "hierarchical refinement (C-conformer ensembles)"
+    prov["harness"] = {"repository": "prism-science/agentic-refinement", "branch": "manzuoni/oct28-trials", "commit_of_the_models": "25ec394 (8C5N, 7KR0, 7R2H, 3TC7 of 2026-11-02); bfed380 for the four targets unchanged since 2026-10-21", "commit_at_release": "25ec394 (branch manzuoni/oct28-trials; pull request to main opened 2026-11-02)"}
     prov["baseline"] = "S0001: the deposited model after the common recipe (phenix.refine, 10 macro-cycles, three seeds, the median); every comparison in the cards and the README is against it (operator, meeting of 2026-10-21)"
     for i in info:
         rec = prov["released"].setdefault(i["id"], {})
         rec.update({"run_handle": i["handle"], "step": i["step"], "utc": i["utc"]})
-        rec.setdefault("vault_last_read", "never in this run")
+        v = VAULT[i["id"]]
+        rec["vault_last_read"] = "2026-10-22 at %s: R-vault %.4f (S0001 %.4f), R-free %.4f (S0001 %.4f), z %+.1f, %s%s" % (
+            v["at"], v["rv"][1], v["rv"][0], v["rf"][1], v["rf"][0], v["z"], v["verdict"], "" if v["lineage"] else "; a sibling of the released lineage")
         rec["rerefined_r_free_S0001"] = round(i["base"]["r_free"], 5)
     (ROOT / "provenance.json").write_text(json.dumps(prov, indent=1) + "\n")
     print("cards written:", [i["id"] for i in info])

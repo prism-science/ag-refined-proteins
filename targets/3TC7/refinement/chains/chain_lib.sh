@@ -62,7 +62,7 @@ floor() {   # the noise floor of a judged step: the common recipe from the best 
   phenix.python tools/noise_floor.py measure --parent "$P" --run "$K" --nproc "$HR_NPROC" --tag "noise_floor_$P" 2>&1 | tee -a "$LOG" | grep "noise floor" | cut -c1-200
 }
 split() {   # split COPIES: the representation change; the best-model rule leaves a worse BUILD behind
-  local P; P=$(best); say "split $1 copies from $P"
+  local P; P=$(best); say "split $1 conformers from $P"
   run split_conformations.py build --parent "$P" --source shake --copies "$1" --mc 20 --tag "split_shake_$1"
   say "after the split the best model is $(best)"
 }

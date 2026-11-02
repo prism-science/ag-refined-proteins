@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026-11-02 — four targets refreshed with the model in force; the vault read of 2026-10-22 on every card
+
+8C5N, 7KR0, 7R2H and 3TC7 are the models in force on their current lines on 2026-11-02 (the parent agent's choice;
+the operator has not chosen between the two 7KR0 models). What changed since 2026-10-21, R-free re-refined → released:
+
+- 8C5N: S0027 (0.0908) → S0065 (0.0875), run T5f59f1_oct28. Water occupancies held at the conformer share, the Coot
+  water repairs, the conformer-B resets; waters in protein density 62 → 4, conformer-B outliers 20 → 3.
+- 7KR0: S0053 (0.0726) → S0112 (0.0725), run Tff1b3f_oct28. Held waters, picks with the range-of-motion rule, the
+  conformer-B resets; conformer-B outliers 95 → 50. The held Coot line's S0104 (0.0736, clashscore 8.4, the cleaner map)
+  stays in the record on the pod.
+- 7R2H: S0019 (0.0993) → S0076 (0.0946), run Ta4f3f9_oct28. Eight conformers, TLS, the density-based conformer-B reset.
+  A 24σ difference peak at Glu23/Lys25 that no ion or water explains stays; the card says so.
+- 3TC7: S0061 (0.1475) → S0108 (0.1504), run T431c8e_oct29. The Coot side-chain repairs and one sixth selenomethionine
+  at Met73, Met109 and Met237: a higher R-free, a cleaner map (the tallest peak 12.0 → 6.6σ, the deepest point −12 →
+  −5.0σ); the operator's choice of 2026-10-29.
+- 1LZ8, 4QO4, 3QUE and 9ARN are unchanged: their runs have had no accepted step since the release of 2026-10-21.
+
+Every card and the README table carry the operator's vault read of 2026-10-22 (prism-science/agentic-refinement,
+`docs/PLAN.md`): the vault confirms six targets within the sampling noise; on 1LZ8 (z +2.5) and 4QO4 (z +3.2) R-vault
+rose while R-free fell, so their status is "lower R-free, not confirmed by the vault". For 8C5N and 7KR0 the model
+read is a sibling of the released lineage. `docs/METHOD.md` gains the model checks and the repair kind of step (the
+gate from 2026-10-27), and the held-water rule and the Coot repairs join the lever list; the cards' boilerplate says
+that a repair may cost up to 2σ of R-free. The word `copy` is `conformer` in every document and card (the JSON keys of
+the records, `copies` and `copy_b_outliers`, keep their names). `provenance.json` points at the harness branch
+`manzuoni/oct28-trials`, commit 25ec394. The old released steps of the four targets are removed from `targets/`; commit
+47d6123, the state before this refresh, holds them.
+
 ## 2026-10-22 — the citation of the method
 
 The README now says what the repository is (in development) and where the method comes from: the agent was directly
