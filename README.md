@@ -1,9 +1,8 @@
 # ag-refined-proteins
 
 > This repository is under active development. The models are dated snapshots of refinements that are still running,
-> and the numbers will change. The snapshot of 2026-11-02 (tag `2026-11-02`) refreshes 8C5N, 7KR0, 7R2H and 3TC7; the
-> other four targets are as released on 2026-10-21. If you find a problem, please open an issue with the target ID and
-> the file you used.
+> and the numbers will change; the Deposited column gives the date of each model. If you find a problem, please open an
+> issue with the target ID and the file you used.
 
 Crystallographic models of eight PDB entries (0.75 to 2.7 Å) re-refined by an agentic workflow, with the data, maps,
 validation and step records needed to check and reuse them.
@@ -69,7 +68,7 @@ targets/<ID>/
 Open a model with its maps in Coot:
 
 ```bash
-coot targets/7KR0/model/7KR0_S0112.pdb --auto targets/7KR0/maps/7KR0_S0112_map_coeffs.mtz
+coot targets/<ID>/model/<ID>_<step>.pdb --auto targets/<ID>/maps/<ID>_<step>_map_coeffs.mtz   # <step>: the Model column
 ```
 
 A six-conformer ensemble shows as altlocs A to F on every residue (A to H for the eight conformers of 7R2H). `docs/METHOD.md` describes the procedure and
