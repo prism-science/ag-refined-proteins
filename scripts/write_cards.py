@@ -409,7 +409,7 @@ def card(tid, c):
     out += ["", "## Files", "", "| Path | Content |", "|---|---|"] + ["| %s | %s |" % f for f in files]
     out += ["", "## Reproduce", "", "In the harness checkout on the pod (`docs/POD.md` there):", "", "```", c["reproduce"], "```", "", c["repro_note"], ""]
     (t / "README.md").write_text("\n".join(out))
-    return dict(id=tid, res=res, title=c["short"], dep=dep, base=base, a=a, step=c["step"], kind=c["kind"], handle=c["handle"], utc=utc)
+    return dict(id=tid, res=res, title=c["short"], snapshot=c.get("snapshot") or "2026-10-21", dep=dep, base=base, a=a, step=c["step"], kind=c["kind"], handle=c["handle"], utc=utc)
 
 def splice(text, name, body):
     m = re.search(r"(<!-- %s:begin -->\n)(.*?)(<!-- %s:end -->)" % (name, name), text, re.S)
@@ -419,25 +419,15 @@ def splice(text, name, body):
 
 def main():
     info = sorted((card(tid, c) for tid, c in T.items()), key=lambda x: x["res"])
-    r1 = ["| Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status | Vault check (2026-10-22) |",
-          "|---|---|---|---|---|---|---|---|---|---|---|"]
-    r2 = ["| Target | Clashscore | Rotamer outliers % | Ramachandran outliers % | Ramachandran favoured % | Bond RMSD (Å) | Angle RMSD (°) | MolProbity score |",
-          "|---|---|---|---|---|---|---|---|"]
+    r1 = ["| Target | Res. (Å) | Model | R-free (PDB → ours) | R-work | Gap | Clashscore (PDB → ours) | MolProbity | Deposited |",
+          "|---|---|---|---|---|---|---|---|---|"]
     for i in info:
-        b, a = i["base"], i["a"]
-        v = VAULT[i["id"]]
-        vtxt = "%s at %s: R-vault %.4f → %.4f, z %+.1f" % (v["verdict"], v["at"].split(" ")[0], v["rv"][0], v["rv"][1], v["z"]) + ("" if v["lineage"] else " (a sibling)")
-        r1.append("| [%s](targets/%s/README.md) | %g | %s | %.4f / %.4f | **%.4f / %.4f** | −%.4f | %.4f → %.4f | %.4f → %.4f | %s, step %s | %s | %s |" % (
-            i["id"], i["id"], i["res"], i["title"], b["r_free"], b["r_free_report"], a["r_free"], a["r_free_report"], b["r_free"] - a["r_free"],
-            b["r_work"], a["r_work"], b["gap"], a["gap"], i["kind"].replace("a ", "").replace("an ", ""), i["step"],
-            "improved" if v["verdict"] == "holds" else "lower R-free, not confirmed by the vault", vtxt))
-        arrow = lambda k, f: "%s → %s" % (num(b.get(k), f), num(a.get(k), f))
-        r2.append("| [%s](targets/%s/README.md) | %s | %s | %s | %s | %s | %s | %s → %s |" % (
-            i["id"], i["id"], arrow("clashscore", "%.1f"), arrow("rota_pct", "%.2f"), arrow("rama_outliers_pct", "%.1f"), arrow("rama_favored_pct", "%.1f"),
-            arrow("bond_rmsd", "%.3f"), arrow("angle_rmsd", "%.2f"), num(molprobity(b), "%.2f"), num(molprobity(a), "%.2f")))
+        d, a = i["dep"], i["a"]
+        r1.append("| [%s](targets/%s/README.md) | %g | %s | %s → **%s** | %s | %s | %s → %s | %s | %s |" % (
+            i["id"], i["id"], i["res"], i["step"], num(d.get("r_free"), "%.4f"), num(a.get("r_free"), "%.4f"), num(a.get("r_work"), "%.4f"),
+            num(a.get("gap"), "%.3f"), num(d.get("clashscore"), "%.1f"), num(a.get("clashscore"), "%.1f"), num(molprobity(a), "%.2f"), i["snapshot"]))
     readme = (ROOT / "README.md").read_text()
     readme = splice(readme, "results-table", "\n".join(r1) + "\n")
-    readme = splice(readme, "geometry-table", "\n".join(r2) + "\n")
     (ROOT / "README.md").write_text(readme)
     prov = load(ROOT / "provenance.json")
     prov["exported_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
