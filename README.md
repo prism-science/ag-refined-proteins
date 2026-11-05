@@ -1,8 +1,8 @@
 # ag-refined-proteins
 
 > This repository is under active development. The models are dated snapshots of refinements that are still running,
-> and the numbers will change. The snapshot of 2026-11-02 (tag `2026-11-02`) refreshes 8C5N, 7KR0, 7R2H and 3TC7; the
-> other four targets are as released on 2026-10-21. If you find a problem, please open an issue with the target ID and
+> and the numbers will change. The snapshot of 2026-11-05 (tag `2026-11-05`) refreshes 7KR0; 8C5N, 7R2H and 3TC7 are as
+> released on 2026-11-02 (tag `2026-11-02`) and the other four targets as released on 2026-10-21. If you find a problem, please open an issue with the target ID and
 > the file you used.
 
 Crystallographic models of eight PDB entries (0.75 to 2.7 Å) re-refined by an agentic workflow, with the data, maps,
@@ -39,7 +39,7 @@ sibling of the released lineage; each card says what was read.
 | Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status | Vault check (2026-10-22) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [8C5N](targets/8C5N/README.md) | 0.75 | Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa | 0.1294 / 0.1286 | **0.0875 / 0.0872** | −0.0419 | 0.1247 → 0.0627 | 0.0046 → 0.0248 | six-conformer ensemble, step S0065 | improved | holds at S0027: R-vault 0.1480 → 0.0995, z -2.3 (a sibling) |
-| [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K) | 0.1095 / 0.1104 | **0.0725 / 0.0701** | −0.0369 | 0.1005 → 0.0472 | 0.0089 → 0.0253 | six-conformer ensemble, step S0112 | improved | holds at S0053: R-vault 0.1054 → 0.0725, z +1.2 (a sibling) |
+| [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K) | 0.1095 / 0.1104 | **0.0728 / 0.0705** | −0.0367 | 0.1005 → 0.0461 | 0.0089 → 0.0266 | six-conformer ensemble, step S0144 | improved | holds at S0053: R-vault 0.1054 → 0.0725, z +1.2 (a sibling) |
 | [7R2H](targets/7R2H/README.md) | 0.79 | Cyclophilin D with DMSO | 0.1355 / 0.1365 | **0.0946 / 0.0948** | −0.0409 | 0.1243 → 0.0650 | 0.0112 → 0.0296 | eight-conformer ensemble, step S0076 | improved | holds at S0032: R-vault 0.1346 → 0.0982, z +0.6 |
 | [9ARN](targets/9ARN/README.md) | 1.41 | HIV-1 gp41 CHR-NHR reverse hairpin construct | 0.2970 / 0.3157 | **0.2769 / 0.2856** | −0.0201 | 0.2346 → 0.2389 | 0.0624 → 0.0380 | single model, step S0062 | improved | holds at S0062: R-vault 0.2751 → 0.2643, z +0.5 |
 | [3TC7](targets/3TC7/README.md) | 1.5 | Engineered protein, NESG target OR62 | 0.1856 / 0.1836 | **0.1504 / 0.1493** | −0.0352 | 0.1412 → 0.0864 | 0.0443 → 0.0640 | six-conformer ensemble, step S0108 | improved | holds at S0061: R-vault 0.1906 → 0.1493, z -0.4 |
@@ -56,7 +56,7 @@ favoured):
 | Target | Clashscore | Rotamer outliers % | Ramachandran outliers % | Ramachandran favoured % | Bond RMSD (Å) | Angle RMSD (°) | MolProbity score |
 |---|---|---|---|---|---|---|---|
 | [8C5N](targets/8C5N/README.md) | 4.8 → 14.8 | 1.75 → 1.48 | 0.0 → 0.0 | 99.5 → 96.7 | 0.007 → 0.010 | 1.00 → 1.17 | 1.44 → 2.01 |
-| [7KR0](targets/7KR0/README.md) | 5.3 → 12.7 | 1.33 → 1.65 | 0.0 → 0.0 | 98.8 → 98.8 | 0.008 → 0.008 | 1.10 → 1.04 | 1.38 → 1.78 |
+| [7KR0](targets/7KR0/README.md) | 5.3 → 5.8 | 1.33 → 1.77 | 0.0 → 0.0 | 98.8 → 98.2 | 0.008 → 0.008 | 1.10 → 1.01 | 1.38 → 1.51 |
 | [7R2H](targets/7R2H/README.md) | 4.3 → 12.1 | 0.00 → 1.76 | 0.0 → 0.6 | 96.9 → 95.7 | 0.008 → 0.011 | 1.07 → 1.25 | 1.40 → 2.08 |
 | [9ARN](targets/9ARN/README.md) | 3.2 → 1.6 | 3.03 → 0.00 | 0.0 → 0.0 | 100.0 → 100.0 | 0.010 → 0.004 | 1.03 → 0.52 | 1.48 → 0.91 |
 | [3TC7](targets/3TC7/README.md) | 1.7 → 9.0 | 1.36 → 2.74 | 0.0 → 0.4 | 98.0 → 95.6 | 0.010 → 0.019 | 1.17 → 1.64 | 1.03 → 2.12 |
@@ -100,7 +100,7 @@ targets/<ID>/
 Open a model with its maps in Coot:
 
 ```bash
-coot targets/7KR0/model/7KR0_S0112.pdb --auto targets/7KR0/maps/7KR0_S0112_map_coeffs.mtz
+coot targets/7KR0/model/7KR0_S0144.pdb --auto targets/7KR0/maps/7KR0_S0144_map_coeffs.mtz
 ```
 
 A six-conformer ensemble shows as altlocs A to F on every residue (A to H for the eight conformers of 7R2H). `docs/METHOD.md` describes the procedure and

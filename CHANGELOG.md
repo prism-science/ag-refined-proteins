@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-11-05 — 7KR0 refreshed: the clash term at a weight Phenix's own default allows
+
+- 7KR0: S0112 (R-free 0.0725, clashscore 12.7, wE 575) → S0144 (0.0728, clashscore 5.8, wE 386), run Tff1b3f_x. B to
+  occupancy for conformers with a high side-chain B (S0120, S0135) and the nonbonded (clash) term at weight 40 (S0144),
+  chosen over seven rounds of parallel levers with the gate advisory and a Referee deciding (the exploratory harness of
+  prism-science/agentic-refinement, PR #70, branch `manzuoni/nov03-consolidated`, commit 62eeafa). phenix.refine sets
+  the weight to 16 at d_min ≤ 1.2 Å, not the 100 documented; weights 110 to 300 cut the clashscore to 2.5 to 3.9 for 3
+  to 8σ of R-free and are not released. Conformer-B outliers rose from 50 to 191; the card says so.
+- 8C5N, 7R2H and 3TC7 are as released on 2026-11-02. On 7R2H the hydrogens refined individually (S0085) lowered the
+  clashscore but its R-free did not reproduce when re-refined (0.0949 recorded, 0.0962 in the control arms), so S0076
+  stays. 1LZ8, 4QO4, 3QUE and 9ARN are as released on 2026-10-21.
+- The vault was not read for this refresh; the 7KR0 card carries the read of 2026-10-22 (a sibling of this lineage).
+  The old 7KR0 step S0112 is removed from `targets/`; tag `2026-11-02` holds it.
+
 ## 2026-11-02 — four targets refreshed with the model in force; the vault read of 2026-10-22 on every card
 
 8C5N, 7KR0, 7R2H and 3TC7 are the models in force on their current lines on 2026-11-02 (the parent agent's choice;

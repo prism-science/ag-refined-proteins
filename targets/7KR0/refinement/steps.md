@@ -1,4 +1,4 @@
-# 7KR0: every step of run Tff1b3f_oct28 (the gate's facts lines)
+# 7KR0: every step of run Tff1b3f_x (the gate's facts lines)
 
 R-free and R-work are the gate's numbers after the step (the candidate's median seed; for a refused step, the refused candidate). σ is the margin against the parent as written in the facts line; the verdict is against the control.
 
@@ -115,3 +115,40 @@ R-free and R-work are the gate's numbers after the step (the candidate's median 
 | S0111 | S0105 | connectivity | connectivity: failed (exit 1; ImportError: cannot import name 'WIP_Solver' from 'LinearOptimizer' (/home/dev/runs/hr/Tff1b3f_oct28/pending/untangle_lcr/prepare/untangler/Untangler/LinearOptimizer/__init__.py) / log tail: .) | 0.0723 |  | 0.0475 | 0.0249 | 12.6 | - | REFUSE |
 | S0112 | S0105 | rotamer-finder | B-factors of the copies reset to the copy median where they differ by more than 3 times | 0.0725 |  | 0.0472 | 0.0253 | 12.7 | - | ACCEPT |
 | S0113 | S0105 | connectivity | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | 0.0730 |  | 0.0476 | 0.0254 | 13.9 | - | REFUSE |
+| S0114 | S0112 | refinement | Asn/Gln/His flips by reduce in the candidate's refinement (nqh_flips, off in the recipe) against the recipe without them | 0.0724 |  | 0.0466 | 0.0259 | 13.5 | - | REFUSE |
+| S0115 | S0112 | refinement | nonbonded restraint weight 300 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0735 |  | 0.0487 | 0.0248 | 2.5 | - | REFUSE |
+| S0116 | S0112 | solvent | lettered waters of one site in every conformer (within 0.5 A of their centroid) merged into one shared water at occupancy 1 | 0.0738 |  | 0.0487 | 0.0251 | 13.2 | - | REFUSE |
+| S0117 | S0112 | solvent | lettered waters of one site in every conformer (within 1 A of their centroid) merged into one shared water at occupancy 1 | 0.0800 |  | 0.0567 | 0.0233 | 12.3 | - | REFUSE |
+| S0118 | S0112 | rotamer-finder | residues whose conformers lie within 0.5 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | 0.0738 |  | 0.0516 | 0.0222 | 17.5 | - | REFUSE |
+| S0119 | S0112 | rotamer-finder | residues whose conformers lie within 0.75 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | 0.0765 |  | 0.0552 | 0.0213 | 21.6 | - | REFUSE |
+| S0120 | S0112 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0723 |  | 0.0466 | 0.0257 | 13.6 | - | ACCEPT |
+| S0121 | S0120 | connectivity | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | 0.0727 |  | 0.0468 | 0.0258 | 14.7 | - | REFUSE |
+| S0122 | S0120 | refinement | nonbonded restraint weight 1000 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0744 |  | 0.0506 | 0.0238 | 1.1 | - | REFUSE |
+| S0123 | S0120 | rotamer-finder | Coot rotamer fit and real-space refinement of each conformer of the residues in the most repeated MolProbity clash contacts (A37,A50,A45,A65,A20,A155,A113,A139,A92,A94,A2), on the omit maps; a repair on the clashscore | 0.0722 |  | 0.0465 | 0.0258 | 14.1 | - | REFUSE |
+| S0124 | S0120 | refinement | nonbonded restraint weight 300 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0734 |  | 0.0487 | 0.0247 | 2.6 | - | REFUSE |
+| S0125 | S0120 | connectivity | connectivity relabel, 30 min effort, Untangler low_compute_clash_resolution | 0.0727 |  | 0.0468 | 0.0258 | 14.7 | - | REFUSE |
+| S0126 | S0120 | refinement | hydrogen positions and ADPs refined individually (riding before) | 0.0745 |  | 0.0488 | 0.0257 | 14.1 | - | REFUSE |
+| S0127 | S0120 | refinement | nonbonded restraint weight 150 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0729 |  | 0.0476 | 0.0253 | 4.9 | - | REFUSE |
+| S0128 | S0124 | refinement | nonbonded restraint weight 200 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0731 |  | 0.0479 | 0.0252 | 2.5 | - | REFUSE |
+| S0129 | S0124 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0725 |  | 0.0466 | 0.0259 | 7.3 | - | ACCEPT |
+| S0130 | S0124 | connectivity | connectivity relabel, 30 min effort, Untangler low_compute_clash_resolution | 0.0723 |  | 0.0471 | 0.0251 | 9.7 | - | REFUSE |
+| S0131 | S0129 | refinement | nonbonded restraint weight 200 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0736 |  | 0.0489 | 0.0247 | 4.1 | - | REFUSE |
+| S0132 | S0129 | connectivity | connectivity relabel, 30 min effort, Untangler low_compute_clash_resolution | 0.0729 |  | 0.0465 | 0.0264 | 10.8 | - | REFUSE |
+| S0133 | S0130 | refinement | nonbonded restraint weight 200 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0736 |  | 0.0488 | 0.0248 | 3.9 | - | REFUSE |
+| S0134 | S0130 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0723 |  | 0.0465 | 0.0257 | 11.3 | - | ACCEPT |
+| S0135 | S0128 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0726 |  | 0.0464 | 0.0261 | 6.4 | - | ACCEPT |
+| S0136 | S0135 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0725 |  | 0.0459 | 0.0266 | 8.2 | - | REFUSE |
+| S0137 | S0135 | rotamer-finder | conformers with side-chain B above 1.5 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0746 |  | 0.0493 | 0.0253 | 8.2 | - | REFUSE |
+| S0138 | S0135 | refinement | nonbonded restraint weight 150 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0732 |  | 0.0469 | 0.0263 | 2.9 | - | REFUSE |
+| S0139 | S0135 | refinement | nonbonded restraint weight 200 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0733 |  | 0.0472 | 0.0261 | 2.7 | - | REFUSE |
+| S0140 | S0135 | refinement | nonbonded restraint weight 120 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0731 |  | 0.0468 | 0.0262 | 3.5 | - | REFUSE |
+| S0141 | S0135 | refinement | nonbonded restraint weight 110 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0730 |  | 0.0468 | 0.0263 | 3.7 | - | REFUSE |
+| S0142 | S0135 | refinement | nonbonded restraint weight 130 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0731 |  | 0.0468 | 0.0263 | 3.1 | - | REFUSE |
+| S0143 | S0135 | refinement | nonbonded restraint weight 60 against phenix's default (16 at d_min <= 1.2 A, else 100: phenix/refinement/fsr/preprocess.py) (the clash term alone; wc and wu unchanged) | 0.0728 |  | 0.0464 | 0.0265 | 5.2 | - | ACCEPT |
+| S0144 | S0135 | refinement | nonbonded restraint weight 40 against phenix's default (16 at d_min <= 1.2 A, else 100: phenix/refinement/fsr/preprocess.py) (the clash term alone; wc and wu unchanged) | 0.0728 |  | 0.0461 | 0.0266 | 5.8 | - | ACCEPT |
+| S0145 | S0135 | refinement | nonbonded restraint weight 25 against phenix's default (16 at d_min <= 1.2 A, else 100: phenix/refinement/fsr/preprocess.py) (the clash term alone; wc and wu unchanged) | 0.0725 |  | 0.0461 | 0.0264 | 7.1 | - | ACCEPT |
+| S0146 | S0120 | refinement | nonbonded restraint weight 30 against phenix's default (16 at d_min <= 1.2 A, else 100: phenix/refinement/fsr/preprocess.py) (the clash term alone; wc and wu unchanged) | 0.0725 |  | 0.0465 | 0.0260 | 11.1 | - | ACCEPT |
+| S0147 | S0144 | refinement | nonbonded restraint weight 50 against 40 (the clash term alone; wc and wu unchanged) | 0.0728 |  | 0.0460 | 0.0268 | 5.6 | - | REFUSE |
+| S0148 | S0144 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0727 |  | 0.0460 | 0.0267 | 6.0 | - | ACCEPT |
+| S0149 | S0145 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0727 |  | 0.0458 | 0.0268 | 6.8 | - | ACCEPT |
+| S0150 | S0144 | connectivity | connectivity relabel, 30 min effort, Untangler low_compute_clash_resolution | 0.0731 |  | 0.0466 | 0.0266 | 7.9 | - | REFUSE |

@@ -2,18 +2,18 @@
  "line": "hierarchical refinement (C-conformer ensembles)",
  "harness": {
   "repository": "prism-science/agentic-refinement",
-  "branch": "manzuoni/oct28-trials",
-  "commit_of_the_models": "25ec394 (8C5N, 7KR0, 7R2H, 3TC7 of 2026-11-02); bfed380 for the four targets unchanged since 2026-10-21",
-  "commit_at_release": "25ec394 (branch manzuoni/oct28-trials; pull request to main opened 2026-11-02)"
+  "branch": "manzuoni/nov03-consolidated",
+  "commit_of_the_models": "62eeafa (7KR0 of 2026-11-05, branch manzuoni/nov03-consolidated); 25ec394 (8C5N, 7R2H, 3TC7 of 2026-11-02, branch manzuoni/oct28-trials); bfed380 for the four targets unchanged since 2026-10-21",
+  "commit_at_release": "62eeafa (branch manzuoni/nov03-consolidated; pull request #70 to main)"
  },
  "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "exported_at": "2026-11-02T23:56:23Z",
+ "exported_at": "2026-11-05T16:27:13Z",
  "released": {
   "7KR0": {
-   "run_handle": "Tff1b3f_oct28",
-   "step": "S0112",
-   "utc": "2026-10-29T19:15:07Z",
+   "run_handle": "Tff1b3f_x",
+   "step": "S0144",
+   "utc": "2026-11-05T08:16:28Z",
    "vault_last_read": "2026-10-22 at S0053 (the release of 2026-10-21; also S0011 on 2026-10-18): R-vault 0.0725 (S0001 0.1054), R-free 0.0726 (S0001 0.1095), z +1.2, holds; a sibling of the released lineage",
    "rerefined_r_free_S0001": 0.10945
   },

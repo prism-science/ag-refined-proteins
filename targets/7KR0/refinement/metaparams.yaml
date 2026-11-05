@@ -52,3 +52,9 @@ quality_we_rel: 0.05        # a step may raise wE by this share of the control's
 quality_we_drop: 0.10       # a repair: wE lower by this share (scripts/chain_oct28.sh, set before the fork's first step)
 quality_peak_tol: 1.0       # a step may raise the tallest mFo-DFc peak by this many sigma (scripts/chain_oct28.sh, set before the fork's first step)
 quality_peak_drop: 1.5      # a repair: the tallest peak lower by this many sigma (scripts/chain_oct28.sh, set before the fork's first step)
+sanity_clash_tol: 1.0        # a step may raise the clashscore by this much; a repair lowers it by 10 % and more than this (set before the fork's first step, 2026-11-03; the nqh flip repairs)
+explore_rfree_k: 10.0         # advisory (EXPLORE_PLAN): a step may cost this many sigma of R-free and still be explored
+explore_branch_k: 10.0        # advisory: a branch head may sit this many sigma above its start
+explore_min_k: 2.0            # advisory: R-free or the gap moved by more than this many sigma is a move
+explore_min_pct: 0.10         # advisory: a rate moved by more than this share is a move
+explore_budget: 4             # advisory: follow-up steps a branch gets before it is judged against its start
