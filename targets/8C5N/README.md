@@ -14,7 +14,7 @@
 | Deposited refinement program | SHELXL, PHENIX |
 | Released by the PDB | 2023-06-28 |
 | Primary citation | Immunization with lytic polysaccharide monooxygenase CbpD induces protective immunity against Pseudomonas aeruginosa pneumonia (Proc.Natl.Acad.Sci.USA 2023), DOI 10.1073/pnas.2301538120 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/oct28-trials`, commit 25ec394 (pull request to `main` opened 2026-11-02); the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle T5f59f1_oct28, step S0065, 2026-10-30 17:47:09 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00046 from three seeds), gap widened by at most 0.002, gap ≤ 0.0300 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

@@ -1,0 +1,47 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/Tff1b3f_x/trajectory/S0135/model.pdb",
+ "cand_input_sha256": "bf5b7cc79e72bd5bc0e013f0cabb82a4aab2744aec549f46f874548195df463c",
+ "ctrl_input": "/home/dev/runs/hr/Tff1b3f_x/trajectory/S0135/model.pdb",
+ "ctrl_input_sha256": "bf5b7cc79e72bd5bc0e013f0cabb82a4aab2744aec549f46f874548195df463c",
+ "ctrl_options": {
+  "standing": {
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0082",
+   "utc": "2026-10-27T22:22:22Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "description": "nonbonded restraint weight 40 against phenix's default (16 at d_min <= 1.2 A, else 100: phenix/refinement/fsr/preprocess.py) (the clash term alone; wc and wu unchanged)",
+ "kind": "sanity",
+ "metaparams_sha256": "ee83149e19a3cd0926ac3c5ad28397e2b874032b5e10cf338d19ba127865197d",
+ "model_after": "/home/dev/runs/hr/Tff1b3f_x/trajectory/S0144/model.pdb",
+ "model_after_sha256": "f2fd1a9742e311a952b5cda94ec18356c1a0fbef201f2b1f4cb47af4c8f969e7",
+ "model_before_sha256": "bf5b7cc79e72bd5bc0e013f0cabb82a4aab2744aec549f46f874548195df463c",
+ "parent": "S0135",
+ "prepare": {},
+ "refine_options": {
+  "nonbonded_weight": 40.0,
+  "standing": {
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0082",
+   "utc": "2026-10-27T22:22:22Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "refinement",
+ "step": "S0144",
+ "tool": "refine_step",
+ "utc": "2026-11-05T08:16:28Z",
+ "worker": "refinement"
+}

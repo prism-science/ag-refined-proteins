@@ -14,7 +14,7 @@
 | Deposited refinement program | PHENIX |
 | Released by the PDB | 2011-08-24 |
 | Primary citation | Exploration of alternate catalytic mechanisms and optimization strategies for retroaldolase design (J.Mol.Biol. 2014), DOI 10.1016/j.jmb.2013.10.012 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/oct28-trials`, commit 25ec394 (pull request to `main` opened 2026-11-02); the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle T431c8e_oct29, step S0108, 2026-10-29 21:05:02 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00027 from three seeds), gap widened by at most 0.01, gap ≤ 0.1200 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

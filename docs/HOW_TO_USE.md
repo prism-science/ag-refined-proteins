@@ -8,7 +8,7 @@ Each target ships the model with map coefficients computed from the work reflect
 needed:
 
 ```bash
-coot targets/7KR0/model/7KR0_S0112.pdb --auto targets/7KR0/maps/7KR0_S0112_map_coeffs.mtz
+coot targets/7KR0/model/7KR0_S0144.pdb --auto targets/7KR0/maps/7KR0_S0144_map_coeffs.mtz
 ```
 
 The MTZ carries `2FOFCWT/PH2FOFCWT` (2mFo−DFc) and `FOFCWT/PHFOFCWT` (mFo−DFc). A six-conformer ensemble shows as altlocs A
@@ -26,7 +26,7 @@ the margin in σ, R-work, gap, clashscore, rotamer outliers, atom and water coun
 The released number comes from the harness gate. The same quantity from Phenix's own tool:
 
 ```bash
-phenix.model_vs_data targets/7KR0/model/7KR0_S0112.pdb targets/7KR0/data/7KR0_data.mtz \
+phenix.model_vs_data targets/7KR0/model/7KR0_S0144.pdb targets/7KR0/data/7KR0_data.mtz \
   f_obs_label=FP r_free_flags_label=R-free-flags
 ```
 
@@ -40,8 +40,8 @@ and the counts.
 `validation/` holds the phenix.clashscore, rotalyze and ramalyze logs of the released file (hydrogens kept). To rerun:
 
 ```bash
-phenix.clashscore targets/7KR0/model/7KR0_S0112.pdb keep_hydrogens=True
-phenix.rotalyze  targets/7KR0/model/7KR0_S0112.pdb
+phenix.clashscore targets/7KR0/model/7KR0_S0144.pdb keep_hydrogens=True
+phenix.rotalyze  targets/7KR0/model/7KR0_S0144.pdb
 ```
 
 On a six-conformer model phenix.clashscore's reduce step can exceed Phenix's built-in 120-second limit for larger ensembles;
@@ -55,16 +55,16 @@ bash scripts/verify_checksums.sh
 
 ## Continue
 
-The harness is `prism-science/agentic-refinement`, branch `manzuoni/oct28-trials` (the four targets of 2026-11-02) or
+The harness is `prism-science/agentic-refinement`, branch `manzuoni/nov03-consolidated` (7KR0 of 2026-11-05), `manzuoni/oct28-trials` (8C5N, 7R2H and 3TC7 of 2026-11-02) or
 `manzuoni/hierarchical_refinement` (the four of 2026-10-21). On its pod (`docs/POD.md` there), with the run directory
-restored from `refinement/` and `data/`, every tool takes `--run RUN --parent S0112` and prints the facts line of the
+restored from `refinement/` and `data/`, every tool takes `--run RUN --parent S0144` and prints the facts line of the
 step it judged:
 
 ```bash
 source /opt/phenix/phenix_env.sh
-phenix.python tools/water_addition.py pick --run RUN --parent S0112 --sigma 2.5 --nproc 6
-phenix.python tools/refine_step.py converge --run RUN --parent S0112 --nproc 6
-phenix.python tools/coot_repair.py scan --model targets/7KR0/model/7KR0_S0112.pdb   # the model checks of docs/METHOD.md
+phenix.python tools/water_addition.py pick --run RUN --parent S0144 --sigma 2.5 --nproc 6
+phenix.python tools/refine_step.py converge --run RUN --parent S0144 --nproc 6
+phenix.python tools/coot_repair.py scan --model targets/7KR0/model/7KR0_S0144.pdb   # the model checks of docs/METHOD.md
 ```
 
 `scripts/chain_target.sh RUN` runs the whole lever order that produced this model on any preprocessed run. The vault

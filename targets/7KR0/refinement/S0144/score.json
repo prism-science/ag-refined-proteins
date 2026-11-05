@@ -1,0 +1,7179 @@
+{
+ "after": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.008,
+  "bond_rmsd": 0.008,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0771,
+  "clashscore": 5.84,
+  "clashscore_mmtbx": 5.8388,
+  "copies": 6,
+  "copy_b_groups": 1282,
+  "copy_b_outliers": 191,
+  "density_flags": 22,
+  "density_peak_residues": [
+   {
+    "atom": "OG/E",
+    "chain": "A",
+    "dist": 0.21,
+    "icode": "",
+    "peak": 7.44,
+    "resname": "SER",
+    "resseq": "111"
+   },
+   {
+    "atom": "HG11/B",
+    "chain": "A",
+    "dist": 1.23,
+    "icode": "",
+    "peak": 6.46,
+    "resname": "VAL",
+    "resseq": "3"
+   },
+   {
+    "atom": "HB/B",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.52,
+    "resname": "THR",
+    "resseq": "33"
+   },
+   {
+    "atom": "SG/E",
+    "chain": "A",
+    "dist": 1.06,
+    "icode": "",
+    "peak": 4.83,
+    "resname": "CYS",
+    "resseq": "92"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.33,
+    "icode": "",
+    "peak": 4.54,
+    "resname": "SER",
+    "resseq": "167"
+   },
+   {
+    "atom": "HB2/D",
+    "chain": "A",
+    "dist": 0.58,
+    "icode": "",
+    "peak": 4.43,
+    "resname": "LYS",
+    "resseq": "55"
+   },
+   {
+    "atom": "HB/E",
+    "chain": "A",
+    "dist": 0.28,
+    "icode": "",
+    "peak": 4.04,
+    "resname": "VAL",
+    "resseq": "34"
+   },
+   {
+    "atom": "OE1/F",
+    "chain": "A",
+    "dist": 0.14,
+    "icode": "",
+    "peak": 4.04,
+    "resname": "GLN",
+    "resseq": "107"
+   },
+   {
+    "atom": "HD22/D",
+    "chain": "A",
+    "dist": 1.27,
+    "icode": "",
+    "peak": 3.92,
+    "resname": "ASN",
+    "resseq": "40"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.14,
+    "icode": "",
+    "peak": 3.77,
+    "resname": "ASN",
+    "resseq": "99"
+   },
+   {
+    "atom": "HA/E",
+    "chain": "A",
+    "dist": 0.48,
+    "icode": "",
+    "peak": 3.74,
+    "resname": "GLU",
+    "resseq": "2"
+   }
+  ],
+  "density_peaks": 11,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 9.68,
+    "max_at": "OG/F",
+    "min": -5.36,
+    "min_at": "OG/B",
+    "resname": "SER",
+    "resseq": "111"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": -1.39,
+    "max_at": "O/C",
+    "min": -7.97,
+    "min_at": "SG/A",
+    "resname": "CYS",
+    "resseq": "81"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": -1.12,
+    "max_at": "CE/C",
+    "min": -6.06,
+    "min_at": "SD/A",
+    "resname": "MET",
+    "resseq": "61"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 5.43,
+    "max_at": "OG/D",
+    "min": -3.96,
+    "min_at": "OG/C",
+    "resname": "SER",
+    "resseq": "167"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.99,
+    "max_at": "CG/F",
+    "min": -4.89,
+    "min_at": "CD/A",
+    "resname": "GLU",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.59,
+    "max_at": "CA/D",
+    "min": -4.88,
+    "min_at": "SG/B",
+    "resname": "CYS",
+    "resseq": "143"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.97,
+    "max_at": "C/F",
+    "min": -4.82,
+    "min_at": "O/E",
+    "resname": "GLU",
+    "resseq": "170"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.41,
+    "max_at": "CB/B",
+    "min": -4.73,
+    "min_at": "CG2/F",
+    "resname": "VAL",
+    "resseq": "34"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.66,
+    "max_at": "OE1/F",
+    "min": -3.44,
+    "min_at": "OE1/C",
+    "resname": "GLN",
+    "resseq": "107"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.72,
+    "max_at": "CG1/F",
+    "min": -4.52,
+    "min_at": "CB/E",
+    "resname": "VAL",
+    "resseq": "3"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.49,
+    "max_at": "O/D",
+    "min": -4.51,
+    "min_at": "NZ/C",
+    "resname": "LYS",
+    "resseq": "31"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.33,
+    "max_at": "OD2/E",
+    "min": -4.48,
+    "min_at": "OD2/F",
+    "resname": "ASP",
+    "resseq": "67"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.64,
+    "max_at": "O/F",
+    "min": -4.45,
+    "min_at": "OD1/A",
+    "resname": "ASP",
+    "resseq": "145"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.57,
+    "max_at": "C/B",
+    "min": -4.44,
+    "min_at": "OE1/C",
+    "resname": "GLU",
+    "resseq": "64"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.92,
+    "max_at": "CA/E",
+    "min": -4.38,
+    "min_at": "OD1/E",
+    "resname": "ASN",
+    "resseq": "72"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.09,
+    "max_at": "CD/F",
+    "min": -4.23,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "102"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.14,
+    "max_at": "NH1/E",
+    "min": -4.23,
+    "min_at": "CD/F",
+    "resname": "ARG",
+    "resseq": "148"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.1,
+    "max_at": "CA/E",
+    "min": -3.85,
+    "min_at": "NZ/D",
+    "resname": "LYS",
+    "resseq": "55"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.71,
+    "max_at": "C/E",
+    "min": -3.77,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "90"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.17,
+    "max_at": "O/B",
+    "min": -3.76,
+    "min_at": "NZ/C",
+    "resname": "LYS",
+    "resseq": "110"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.67,
+    "max_at": "CB/A",
+    "min": -3.7,
+    "min_at": "CG2/E",
+    "resname": "VAL",
+    "resseq": "30"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.01,
+    "max_at": "CZ/F",
+    "min": -3.58,
+    "min_at": "NE/C",
+    "resname": "ARG",
+    "resseq": "141"
+   }
+  ],
+  "dihedral_rmsd": 13.3958,
+  "envelope_a": 2.2,
+  "envelope_waters": 340,
+  "gap": 0.026613924611925195,
+  "geometry": {
+   "angle": {
+    "max": 7.7988,
+    "mean": 0.8969,
+    "min": 0.0,
+    "n": 28182,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 4.5278,
+    "mean": 0.4217,
+    "min": 0.0,
+    "n": 28182,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0785,
+    "mean": 0.0054,
+    "min": 0.0,
+    "n": 15546,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 2.6162,
+    "mean": 0.259,
+    "min": 0.0,
+    "n": 15546,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.6061,
+    "disfavored": 12.1212,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "ASN    4 ",
+       "CaBLAM Disfavored",
+       0.0131,
+       0.5631,
+       "",
+       0.0,
+       0.2219,
+       0.0,
+       "ERROR",
+       [
+        6.726,
+        3.807,
+        11.775
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Disfavored",
+       0.0113,
+       0.0341,
+       "",
+       0.0004,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.972,
+        5.062,
+        -6.258
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Disfavored",
+       0.0482,
+       0.0591,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.923,
+        4.807,
+        -6.269
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Outlier",
+       0.0088,
+       0.05,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        11.061,
+        5.32,
+        -6.46
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Disfavored",
+       0.0107,
+       0.0659,
+       "",
+       0.0003,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.91,
+        4.938,
+        -6.209
+       ]
+      ],
+      [
+       " A",
+       "ASP   14 ",
+       "CaBLAM Disfavored",
+       0.0482,
+       0.0311,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        11.285,
+        1.412,
+        -4.653
+       ]
+      ],
+      [
+       " A",
+       "ASP   14 ",
+       "CaBLAM Disfavored",
+       0.0484,
+       0.0904,
+       "",
+       0.0009,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.513,
+        2.008,
+        -4.635
+       ]
+      ],
+      [
+       " A",
+       "LYS   31 ",
+       "CaBLAM Disfavored",
+       0.0176,
+       0.1706,
+       "",
+       0.0,
+       0.4402,
+       0.0,
+       "ERROR",
+       [
+        6.819,
+        7.741,
+        15.893
+       ]
+      ],
+      [
+       " A",
+       "LYS   31 ",
+       "CaBLAM Disfavored",
+       0.0368,
+       0.1745,
+       "",
+       0.0,
+       0.1556,
+       0.0,
+       "ERROR",
+       [
+        6.659,
+        7.426,
+        15.839
+       ]
+      ],
+      [
+       " A",
+       "LYS   31 ",
+       "CaBLAM Disfavored",
+       0.0436,
+       0.1757,
+       "",
+       0.0,
+       0.1816,
+       0.0,
+       "ERROR",
+       [
+        6.856,
+        7.76,
+        15.818
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0326,
+       0.1412,
+       "",
+       0.0,
+       0.0396,
+       0.0,
+       "ERROR",
+       [
+        21.153,
+        23.226,
+        16.613
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0446,
+       0.1583,
+       "",
+       0.0,
+       0.0348,
+       0.0,
+       "ERROR",
+       [
+        21.022,
+        22.969,
+        16.701
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0372,
+       0.1527,
+       "",
+       0.0,
+       0.0375,
+       0.0,
+       "ERROR",
+       [
+        21.128,
+        23.217,
+        16.58
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0354,
+       0.1506,
+       "",
+       0.0,
+       0.0271,
+       0.0,
+       "ERROR",
+       [
+        21.035,
+        23.134,
+        16.701
+       ]
+      ],
+      [
+       " A",
+       "GLY   46 ",
+       "CaBLAM Disfavored",
+       0.0443,
+       0.0205,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        20.249,
+        26.912,
+        16.783
+       ]
+      ],
+      [
+       " A",
+       "GLY   46 ",
+       "CaBLAM Outlier",
+       0.0099,
+       0.0163,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        20.245,
+        26.912,
+        16.538
+       ]
+      ],
+      [
+       " A",
+       "GLY   46 ",
+       "CaBLAM Disfavored",
+       0.0243,
+       0.0326,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        20.036,
+        26.649,
+        16.893
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CA Geom Outlier",
+       0.0128,
+       0.0036,
+       "",
+       0.0044,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.439,
+        27.006,
+        13.444
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CA Geom Outlier",
+       0.0233,
+       0.0035,
+       "",
+       0.0009,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.026,
+        27.131,
+        13.488
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Disfavored",
+       0.0252,
+       0.0099,
+       "",
+       0.0113,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.544,
+        27.066,
+        13.419
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Disfavored",
+       0.0188,
+       0.0369,
+       "",
+       0.0081,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.832,
+        27.103,
+        13.246
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Outlier",
+       0.0057,
+       0.0888,
+       "",
+       0.0298,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        19.105,
+        27.079,
+        13.062
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Outlier",
+       0.0088,
+       0.1016,
+       "",
+       0.0265,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.89,
+        26.892,
+        12.871
+       ]
+      ],
+      [
+       " A",
+       "VAL   49 ",
+       "CaBLAM Disfavored",
+       0.0496,
+       0.0367,
+       "",
+       0.0013,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.683,
+        21.891,
+        10.754
+       ]
+      ],
+      [
+       " A",
+       "ASN   58 ",
+       "CaBLAM Disfavored",
+       0.0377,
+       0.0339,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        12.719,
+        21.28,
+        24.847
+       ]
+      ],
+      [
+       " A",
+       "ASN   59 ",
+       "CaBLAM Disfavored",
+       0.0458,
+       0.0757,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        16.437,
+        21.766,
+        24.21
+       ]
+      ],
+      [
+       " A",
+       "ASN   59 ",
+       "CaBLAM Disfavored",
+       0.0321,
+       0.0813,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        16.429,
+        21.563,
+        24.217
+       ]
+      ],
+      [
+       " A",
+       "ASN   59 ",
+       "CaBLAM Disfavored",
+       0.0258,
+       0.0771,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        16.353,
+        21.398,
+        24.265
+       ]
+      ],
+      [
+       " A",
+       "VAL   77 ",
+       "CaBLAM Disfavored",
+       0.039,
+       0.1837,
+       "",
+       0.0003,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        31.144,
+        17.175,
+        6.393
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0369,
+       0.0414,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.349,
+        9.913,
+        19.157
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.032,
+       0.0401,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.264,
+        9.937,
+        19.188
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0254,
+       0.0277,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.359,
+        9.879,
+        19.309
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0322,
+       0.0261,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.223,
+        10.054,
+        19.466
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0277,
+       0.099,
+       "",
+       0.0,
+       0.1622,
+       0.0,
+       "ERROR",
+       [
+        15.793,
+        10.354,
+        19.372
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0255,
+       0.1008,
+       "",
+       0.0,
+       0.1914,
+       0.0,
+       "ERROR",
+       [
+        15.829,
+        10.518,
+        19.576
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0299,
+       0.0715,
+       "",
+       0.0,
+       0.1592,
+       0.0,
+       "ERROR",
+       [
+        15.671,
+        10.777,
+        19.237
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0243,
+       0.0908,
+       "",
+       0.0,
+       0.2065,
+       0.0,
+       "ERROR",
+       [
+        15.821,
+        10.409,
+        19.453
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0274,
+       0.0845,
+       "",
+       0.0,
+       0.1429,
+       0.0,
+       "ERROR",
+       [
+        15.737,
+        10.392,
+        19.181
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0209,
+       0.0867,
+       "",
+       0.0,
+       0.2837,
+       0.0,
+       "ERROR",
+       [
+        15.736,
+        10.626,
+        19.362
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0254,
+       0.1418,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.384,
+        11.653,
+        22.678
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0228,
+       0.163,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.384,
+        11.867,
+        22.841
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Outlier",
+       0.0082,
+       0.1083,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.417,
+        11.923,
+        22.671
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0186,
+       0.1537,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.376,
+        11.788,
+        22.707
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0183,
+       0.1033,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.189,
+        11.844,
+        22.358
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0257,
+       0.1545,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.095,
+        11.905,
+        22.555
+       ]
+      ],
+      [
+       " A",
+       "LEU   88 ",
+       "CaBLAM Disfavored",
+       0.04,
+       0.019,
+       "",
+       0.0006,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.742,
+        12.205,
+        18.302
+       ]
+      ],
+      [
+       " A",
+       "LEU   88 ",
+       "CaBLAM Disfavored",
+       0.0207,
+       0.0109,
+       "",
+       0.0003,
+       0.0006,
+       0.0,
+       "ERROR",
+       [
+        10.885,
+        12.473,
+        18.057
+       ]
+      ],
+      [
+       " A",
+       "LEU   88 ",
+       "CaBLAM Disfavored",
+       0.0337,
+       0.0148,
+       "",
+       0.0005,
+       0.0004,
+       0.0,
+       "ERROR",
+       [
+        10.88,
+        12.471,
+        18.247
+       ]
+      ],
+      [
+       " A",
+       "ALA   89 ",
+       "CaBLAM Disfavored",
+       0.0497,
+       0.0433,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        12.198,
+        8.964,
+        17.574
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Disfavored",
+       0.0428,
+       0.0676,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.144,
+        6.13,
+        19.107
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Outlier",
+       0.0047,
+       0.0588,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.066,
+        5.974,
+        18.907
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Disfavored",
+       0.0209,
+       0.0479,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.0,
+        6.07,
+        18.852
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Disfavored",
+       0.02,
+       0.0582,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.163,
+        6.152,
+        19.154
+       ]
+      ],
+      [
+       " A",
+       "HIS   91 ",
+       "CaBLAM Disfavored",
+       0.048,
+       0.2424,
+       "",
+       0.0061,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        17.294,
+        7.369,
+        17.406
+       ]
+      ],
+      [
+       " A",
+       "ALA  129 ",
+       "CaBLAM Disfavored",
+       0.0256,
+       0.0478,
+       "",
+       0.0003,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.329,
+        22.579,
+        1.746
+       ]
+      ],
+      [
+       " A",
+       "THR  149 ",
+       "CaBLAM Disfavored",
+       0.0266,
+       0.0256,
+       "try beta sheet",
+       0.0,
+       0.0017,
+       0.0,
+       "ERROR",
+       [
+        17.041,
+        1.694,
+        2.32
+       ]
+      ],
+      [
+       " A",
+       "THR  149 ",
+       "CaBLAM Disfavored",
+       0.0345,
+       0.0311,
+       "try beta sheet",
+       0.0,
+       0.0013,
+       0.0,
+       "ERROR",
+       [
+        16.823,
+        1.937,
+        2.528
+       ]
+      ]
+     ]
+    },
+    "outliers": 3.0303
+   },
+   "chirality": {
+    "max": 0.3875,
+    "mean": 0.0771,
+    "min": 0.0,
+    "n": 1254,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 5.8388
+   },
+   "dihedral": {
+    "max": 179.1962,
+    "mean": 13.3958,
+    "min": 0.001,
+    "n": 5430,
+    "outliers": [
+     [
+      10654,
+      10655,
+      10656,
+      10657
+     ],
+     [
+      10669,
+      10670,
+      10671,
+      10672
+     ],
+     [
+      10639,
+      10640,
+      10641,
+      10642
+     ],
+     [
+      10834,
+      10835,
+      10947,
+      10948
+     ],
+     [
+      57,
+      58,
+      148,
+      149
+     ],
+     [
+      3531,
+      3532,
+      3598,
+      3599
+     ],
+     [
+      3521,
+      3522,
+      3584,
+      3585
+     ]
+    ]
+   },
+   "molprobity_score": 1.508,
+   "nonbonded": {
+    "max": 4.6,
+    "mean": 3.7461,
+    "min": 1.6748,
+    "n": 299759
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.0601,
+    "mean": 0.0055,
+    "min": 0.0,
+    "n": 2358,
+    "protein_planes_max_dev": [],
+    "protein_planes_max_dev_noH": []
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 1.7964,
+    "favored": 98.2036,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 3.3097,
+    "favored": 94.9173,
+    "outliers": 1.773,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 21.7156,
+   "Cl": 9.34,
+   "Mp": 1.68,
+   "Rf": 7.28,
+   "Rw": 4.61,
+   "ang": null,
+   "avangle": 0.347582,
+   "avbond": 0.132922,
+   "avchir": 0.148578,
+   "avnb": 1.6216,
+   "avomega": 2.67492,
+   "avplane": 0.07735,
+   "avrama": 0.631628,
+   "avrot": 0.898604,
+   "avtor": 1.01512,
+   "bond": null,
+   "chir": null,
+   "energy": 386.386,
+   "nb_e": 26.2292,
+   "om": 23.33,
+   "ra": 6.2661,
+   "ro": 99.0,
+   "score": 393.356,
+   "vdw": 0.0,
+   "wang": 20.5,
+   "wbond": 6.84,
+   "wchir": 3.75,
+   "wdihe": 21.8,
+   "wplane": 9.9225
+  },
+  "holton_score": 393.356,
+  "holton_we": 386.386,
+  "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/cand_s3.pdb",
+  "n_anisou": 10334,
+  "n_atoms": 18184,
+  "n_free": 8712,
+  "n_h": 7722,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 174924,
+  "n_residues_nonwater": 169,
+  "n_water_atoms": 2770,
+  "n_water_iso": 128,
+  "n_work": 166212,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "peak_max": 10.58,
+  "peak_min": -8.92,
+  "planarity_rmsd": 0.0055,
+  "r_free": 0.0727636773232791,
+  "r_free_report": 0.0705037341791058,
+  "r_free_select": 0.07495965202207155,
+  "r_work": 0.0461497527113539,
+  "rama_favored_pct": 98.2036,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 167,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 15,
+  "rota_n_residues": 847,
+  "rota_pct": 1.77,
+  "rota_pct_mmtbx": 1.773,
+  "scored_utc": "2026-11-05T08:08:19Z",
+  "sha256": "f2fd1a9742e311a952b5cda94ec18356c1a0fbef201f2b1f4cb47af4c8f969e7",
+  "water_clashes": 3,
+  "water_in_density": 0,
+  "water_occ_sum": 544.77,
+  "water_overlap_occ": 0.51,
+  "water_overlaps": 3
+ },
+ "before": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.022,
+  "bond_rmsd": 0.008,
+  "cbeta_outliers": 0.0,
+  "chirality_rmsd": 0.0775,
+  "clashscore": 6.36,
+  "clashscore_mmtbx": 6.3579,
+  "copies": 6,
+  "copy_b_groups": 1282,
+  "copy_b_outliers": 169,
+  "density_flags": 24,
+  "density_peak_residues": [
+   {
+    "atom": "OG/F",
+    "chain": "A",
+    "dist": 0.19,
+    "icode": "",
+    "peak": 7.48,
+    "resname": "SER",
+    "resseq": "111"
+   },
+   {
+    "atom": "HG11/B",
+    "chain": "A",
+    "dist": 1.24,
+    "icode": "",
+    "peak": 6.43,
+    "resname": "VAL",
+    "resseq": "3"
+   },
+   {
+    "atom": "HB/B",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.63,
+    "resname": "THR",
+    "resseq": "33"
+   },
+   {
+    "atom": "SG/E",
+    "chain": "A",
+    "dist": 1.05,
+    "icode": "",
+    "peak": 4.69,
+    "resname": "CYS",
+    "resseq": "92"
+   },
+   {
+    "atom": "OG/D",
+    "chain": "A",
+    "dist": 0.19,
+    "icode": "",
+    "peak": 4.59,
+    "resname": "SER",
+    "resseq": "167"
+   },
+   {
+    "atom": "HB2/D",
+    "chain": "A",
+    "dist": 0.59,
+    "icode": "",
+    "peak": 4.48,
+    "resname": "LYS",
+    "resseq": "55"
+   },
+   {
+    "atom": "HB/E",
+    "chain": "A",
+    "dist": 0.27,
+    "icode": "",
+    "peak": 4.12,
+    "resname": "VAL",
+    "resseq": "34"
+   },
+   {
+    "atom": "OE1/F",
+    "chain": "A",
+    "dist": 0.15,
+    "icode": "",
+    "peak": 4.04,
+    "resname": "GLN",
+    "resseq": "107"
+   },
+   {
+    "atom": "HD22/D",
+    "chain": "A",
+    "dist": 1.26,
+    "icode": "",
+    "peak": 3.86,
+    "resname": "ASN",
+    "resseq": "40"
+   },
+   {
+    "atom": "HA/E",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 3.77,
+    "resname": "GLU",
+    "resseq": "2"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.15,
+    "icode": "",
+    "peak": 3.69,
+    "resname": "ASN",
+    "resseq": "99"
+   }
+  ],
+  "density_peaks": 11,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 9.81,
+    "max_at": "OG/F",
+    "min": -5.23,
+    "min_at": "OG/B",
+    "resname": "SER",
+    "resseq": "111"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": -1.22,
+    "max_at": "O/C",
+    "min": -8.94,
+    "min_at": "SG/B",
+    "resname": "CYS",
+    "resseq": "81"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": -1.31,
+    "max_at": "CG/A",
+    "min": -6.8,
+    "min_at": "SD/A",
+    "resname": "MET",
+    "resseq": "61"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 5.53,
+    "max_at": "OG/D",
+    "min": -4.14,
+    "min_at": "OG/C",
+    "resname": "SER",
+    "resseq": "167"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.55,
+    "max_at": "CA/D",
+    "min": -5.2,
+    "min_at": "SG/B",
+    "resname": "CYS",
+    "resseq": "143"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.92,
+    "max_at": "CG/F",
+    "min": -5.12,
+    "min_at": "CD/A",
+    "resname": "GLU",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.98,
+    "max_at": "C/F",
+    "min": -4.99,
+    "min_at": "O/E",
+    "resname": "GLU",
+    "resseq": "170"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.59,
+    "max_at": "CB/B",
+    "min": -4.81,
+    "min_at": "CG2/F",
+    "resname": "VAL",
+    "resseq": "34"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.68,
+    "max_at": "O/F",
+    "min": -4.81,
+    "min_at": "OD1/A",
+    "resname": "ASP",
+    "resseq": "145"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.59,
+    "max_at": "C/B",
+    "min": -4.72,
+    "min_at": "OE1/C",
+    "resname": "GLU",
+    "resseq": "64"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.62,
+    "max_at": "OE1/F",
+    "min": -3.59,
+    "min_at": "OE1/C",
+    "resname": "GLN",
+    "resseq": "107"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.9,
+    "max_at": "CG1/F",
+    "min": -4.6,
+    "min_at": "CB/E",
+    "resname": "VAL",
+    "resseq": "3"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.59,
+    "max_at": "O/D",
+    "min": -4.5,
+    "min_at": "NZ/C",
+    "resname": "LYS",
+    "resseq": "31"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.99,
+    "max_at": "ND2/D",
+    "min": -4.48,
+    "min_at": "OD1/E",
+    "resname": "ASN",
+    "resseq": "72"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.45,
+    "max_at": "OD2/E",
+    "min": -4.43,
+    "min_at": "OD2/F",
+    "resname": "ASP",
+    "resseq": "67"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.14,
+    "max_at": "NH1/E",
+    "min": -4.25,
+    "min_at": "CD/F",
+    "resname": "ARG",
+    "resseq": "148"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.13,
+    "max_at": "CD/F",
+    "min": -4.17,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "102"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.92,
+    "max_at": "C/E",
+    "min": -4.0,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "90"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.14,
+    "max_at": "CA/E",
+    "min": -3.94,
+    "min_at": "NZ/D",
+    "resname": "LYS",
+    "resseq": "55"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.63,
+    "max_at": "CB/A",
+    "min": -3.79,
+    "min_at": "CG2/E",
+    "resname": "VAL",
+    "resseq": "30"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.21,
+    "max_at": "O/B",
+    "min": -3.79,
+    "min_at": "NZ/C",
+    "resname": "LYS",
+    "resseq": "110"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.66,
+    "max_at": "N/F",
+    "min": -3.65,
+    "min_at": "NZ/A",
+    "resname": "LYS",
+    "resseq": "11"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.04,
+    "max_at": "CZ/F",
+    "min": -3.63,
+    "min_at": "CZ/C",
+    "resname": "ARG",
+    "resseq": "141"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.2,
+    "max_at": "CD/C",
+    "min": -3.52,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "29"
+   }
+  ],
+  "dihedral_rmsd": 12.7993,
+  "envelope_a": 2.2,
+  "envelope_waters": 331,
+  "gap": 0.02611708993313261,
+  "geometry": {
+   "angle": {
+    "max": 7.8004,
+    "mean": 0.9069,
+    "min": 0.0,
+    "n": 28182,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 4.5884,
+    "mean": 0.4274,
+    "min": 0.0,
+    "n": 28182,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.0793,
+    "mean": 0.0054,
+    "min": 0.0,
+    "n": 15546,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 2.6418,
+    "mean": 0.2587,
+    "min": 0.0,
+    "n": 15546,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.0
+   },
+   "cablam": {
+    "ca_outliers": 0.6061,
+    "disfavored": 12.1212,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "ASN    4 ",
+       "CaBLAM Disfavored",
+       0.0137,
+       0.5633,
+       "",
+       0.0,
+       0.2142,
+       0.0,
+       "ERROR",
+       [
+        6.727,
+        3.803,
+        11.775
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Disfavored",
+       0.0113,
+       0.033,
+       "",
+       0.0004,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.975,
+        5.065,
+        -6.258
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Disfavored",
+       0.0483,
+       0.0594,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.923,
+        4.809,
+        -6.266
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Outlier",
+       0.0089,
+       0.05,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        11.065,
+        5.31,
+        -6.453
+       ]
+      ],
+      [
+       " A",
+       "THR   13 ",
+       "CaBLAM Disfavored",
+       0.0106,
+       0.0656,
+       "",
+       0.0003,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.909,
+        4.937,
+        -6.21
+       ]
+      ],
+      [
+       " A",
+       "ASP   14 ",
+       "CaBLAM Disfavored",
+       0.0473,
+       0.0306,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        11.284,
+        1.412,
+        -4.654
+       ]
+      ],
+      [
+       " A",
+       "ASP   14 ",
+       "CaBLAM Disfavored",
+       0.0459,
+       0.0904,
+       "",
+       0.0008,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.514,
+        2.006,
+        -4.634
+       ]
+      ],
+      [
+       " A",
+       "LYS   31 ",
+       "CaBLAM Disfavored",
+       0.0176,
+       0.169,
+       "",
+       0.0,
+       0.4354,
+       0.0,
+       "ERROR",
+       [
+        6.823,
+        7.737,
+        15.893
+       ]
+      ],
+      [
+       " A",
+       "LYS   31 ",
+       "CaBLAM Disfavored",
+       0.0386,
+       0.1727,
+       "",
+       0.0,
+       0.156,
+       0.0,
+       "ERROR",
+       [
+        6.662,
+        7.434,
+        15.849
+       ]
+      ],
+      [
+       " A",
+       "LYS   31 ",
+       "CaBLAM Disfavored",
+       0.0453,
+       0.1734,
+       "",
+       0.0,
+       0.1801,
+       0.0,
+       "ERROR",
+       [
+        6.852,
+        7.757,
+        15.818
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0325,
+       0.1414,
+       "",
+       0.0,
+       0.0397,
+       0.0,
+       "ERROR",
+       [
+        21.154,
+        23.225,
+        16.602
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0462,
+       0.1592,
+       "",
+       0.0,
+       0.035,
+       0.0,
+       "ERROR",
+       [
+        21.031,
+        22.967,
+        16.696
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0384,
+       0.1538,
+       "",
+       0.0,
+       0.0372,
+       0.0,
+       "ERROR",
+       [
+        21.121,
+        23.211,
+        16.585
+       ]
+      ],
+      [
+       " A",
+       "HIS   45 ",
+       "CaBLAM Disfavored",
+       0.0362,
+       0.1503,
+       "",
+       0.0,
+       0.0277,
+       0.0,
+       "ERROR",
+       [
+        21.036,
+        23.138,
+        16.7
+       ]
+      ],
+      [
+       " A",
+       "GLY   46 ",
+       "CaBLAM Disfavored",
+       0.0467,
+       0.0208,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        20.254,
+        26.907,
+        16.777
+       ]
+      ],
+      [
+       " A",
+       "GLY   46 ",
+       "CaBLAM Disfavored",
+       0.0106,
+       0.0168,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        20.238,
+        26.91,
+        16.552
+       ]
+      ],
+      [
+       " A",
+       "GLY   46 ",
+       "CaBLAM Disfavored",
+       0.0216,
+       0.0314,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        20.048,
+        26.649,
+        16.887
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CA Geom Outlier",
+       0.0124,
+       0.0038,
+       "",
+       0.0046,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.447,
+        27.005,
+        13.435
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CA Geom Outlier",
+       0.0232,
+       0.0036,
+       "",
+       0.0008,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.037,
+        27.136,
+        13.489
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Disfavored",
+       0.0263,
+       0.0093,
+       "",
+       0.0101,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.54,
+        27.062,
+        13.42
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Disfavored",
+       0.018,
+       0.037,
+       "",
+       0.0079,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.836,
+        27.102,
+        13.249
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Outlier",
+       0.0056,
+       0.0875,
+       "",
+       0.0293,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        19.098,
+        27.077,
+        13.064
+       ]
+      ],
+      [
+       " A",
+       "GLY   47 ",
+       "CaBLAM Outlier",
+       0.0083,
+       0.1025,
+       "",
+       0.0242,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.893,
+        26.891,
+        12.871
+       ]
+      ],
+      [
+       " A",
+       "VAL   49 ",
+       "CaBLAM Disfavored",
+       0.0488,
+       0.0363,
+       "",
+       0.0013,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.684,
+        21.896,
+        10.751
+       ]
+      ],
+      [
+       " A",
+       "ASN   58 ",
+       "CaBLAM Disfavored",
+       0.0373,
+       0.0338,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        12.719,
+        21.272,
+        24.845
+       ]
+      ],
+      [
+       " A",
+       "ASN   59 ",
+       "CaBLAM Disfavored",
+       0.0459,
+       0.0751,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        16.434,
+        21.761,
+        24.203
+       ]
+      ],
+      [
+       " A",
+       "ASN   59 ",
+       "CaBLAM Disfavored",
+       0.0321,
+       0.0811,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        16.426,
+        21.559,
+        24.216
+       ]
+      ],
+      [
+       " A",
+       "ASN   59 ",
+       "CaBLAM Disfavored",
+       0.0262,
+       0.077,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        16.357,
+        21.396,
+        24.265
+       ]
+      ],
+      [
+       " A",
+       "VAL   77 ",
+       "CaBLAM Disfavored",
+       0.0394,
+       0.1848,
+       "",
+       0.0003,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        31.145,
+        17.18,
+        6.399
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0361,
+       0.0406,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.349,
+        9.912,
+        19.156
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0317,
+       0.0386,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.264,
+        9.939,
+        19.197
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0254,
+       0.027,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.36,
+        9.882,
+        19.31
+       ]
+      ],
+      [
+       " A",
+       "LEU   83 ",
+       "CaBLAM Disfavored",
+       0.0332,
+       0.0268,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        22.226,
+        10.053,
+        19.464
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0278,
+       0.0998,
+       "",
+       0.0,
+       0.1658,
+       0.0,
+       "ERROR",
+       [
+        15.792,
+        10.365,
+        19.37
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0256,
+       0.0994,
+       "",
+       0.0,
+       0.1906,
+       0.0,
+       "ERROR",
+       [
+        15.825,
+        10.512,
+        19.572
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0299,
+       0.072,
+       "",
+       0.0,
+       0.158,
+       0.0,
+       "ERROR",
+       [
+        15.671,
+        10.774,
+        19.239
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0244,
+       0.0894,
+       "",
+       0.0,
+       0.2062,
+       0.0,
+       "ERROR",
+       [
+        15.822,
+        10.405,
+        19.452
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.0276,
+       0.0851,
+       "",
+       0.0,
+       0.1452,
+       0.0,
+       "ERROR",
+       [
+        15.743,
+        10.397,
+        19.183
+       ]
+      ],
+      [
+       " A",
+       "GLY   85 ",
+       "CaBLAM Disfavored",
+       0.021,
+       0.0877,
+       "",
+       0.0,
+       0.2738,
+       0.0,
+       "ERROR",
+       [
+        15.734,
+        10.62,
+        19.371
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0255,
+       0.1427,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.378,
+        11.655,
+        22.679
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0227,
+       0.1609,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.389,
+        11.868,
+        22.839
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Outlier",
+       0.008,
+       0.1084,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.412,
+        11.924,
+        22.671
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0187,
+       0.153,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.382,
+        11.79,
+        22.706
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0187,
+       0.1046,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.187,
+        11.846,
+        22.358
+       ]
+      ],
+      [
+       " A",
+       "HIS   86 ",
+       "CaBLAM Disfavored",
+       0.0256,
+       0.1521,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.101,
+        11.906,
+        22.567
+       ]
+      ],
+      [
+       " A",
+       "LEU   88 ",
+       "CaBLAM Disfavored",
+       0.0413,
+       0.0192,
+       "",
+       0.0006,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.739,
+        12.203,
+        18.306
+       ]
+      ],
+      [
+       " A",
+       "LEU   88 ",
+       "CaBLAM Disfavored",
+       0.0212,
+       0.0109,
+       "",
+       0.0003,
+       0.0006,
+       0.0,
+       "ERROR",
+       [
+        10.884,
+        12.473,
+        18.059
+       ]
+      ],
+      [
+       " A",
+       "LEU   88 ",
+       "CaBLAM Disfavored",
+       0.0334,
+       0.0147,
+       "",
+       0.0005,
+       0.0004,
+       0.0,
+       "ERROR",
+       [
+        10.882,
+        12.47,
+        18.252
+       ]
+      ],
+      [
+       " A",
+       "ALA   89 ",
+       "CaBLAM Disfavored",
+       0.0484,
+       0.0435,
+       "",
+       0.0002,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        12.2,
+        8.961,
+        17.573
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Disfavored",
+       0.0446,
+       0.0692,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.145,
+        6.136,
+        19.119
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Outlier",
+       0.0052,
+       0.057,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.066,
+        5.967,
+        18.899
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Disfavored",
+       0.0192,
+       0.0471,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        13.996,
+        6.071,
+        18.841
+       ]
+      ],
+      [
+       " A",
+       "LYS   90 ",
+       "CaBLAM Disfavored",
+       0.0193,
+       0.0591,
+       "",
+       0.0001,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        14.167,
+        6.151,
+        19.159
+       ]
+      ],
+      [
+       " A",
+       "HIS   91 ",
+       "CaBLAM Disfavored",
+       0.0484,
+       0.2416,
+       "",
+       0.006,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        17.291,
+        7.375,
+        17.408
+       ]
+      ],
+      [
+       " A",
+       "ALA  129 ",
+       "CaBLAM Disfavored",
+       0.0269,
+       0.0483,
+       "",
+       0.0003,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.327,
+        22.574,
+        1.756
+       ]
+      ],
+      [
+       " A",
+       "THR  149 ",
+       "CaBLAM Disfavored",
+       0.0268,
+       0.025,
+       "try beta sheet",
+       0.0,
+       0.0017,
+       0.0,
+       "ERROR",
+       [
+        17.04,
+        1.691,
+        2.322
+       ]
+      ],
+      [
+       " A",
+       "THR  149 ",
+       "CaBLAM Disfavored",
+       0.0346,
+       0.0307,
+       "try beta sheet",
+       0.0,
+       0.0013,
+       0.0,
+       "ERROR",
+       [
+        16.821,
+        1.932,
+        2.528
+       ]
+      ]
+     ]
+    },
+    "outliers": 2.4242
+   },
+   "chirality": {
+    "max": 0.38,
+    "mean": 0.0775,
+    "min": 0.0,
+    "n": 1254,
+    "outliers": []
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 6.3579
+   },
+   "dihedral": {
+    "max": 93.2727,
+    "mean": 12.7993,
+    "min": 0.0003,
+    "n": 5430,
+    "outliers": [
+     [
+      10834,
+      10835,
+      10947,
+      10948
+     ],
+     [
+      57,
+      58,
+      148,
+      149
+     ],
+     [
+      3531,
+      3532,
+      3598,
+      3599
+     ],
+     [
+      3521,
+      3522,
+      3584,
+      3585
+     ]
+    ]
+   },
+   "molprobity_score": 1.5392,
+   "nonbonded": {
+    "max": 4.6,
+    "mean": 3.7465,
+    "min": 1.6683,
+    "n": 299830
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.059,
+    "mean": 0.0056,
+    "min": 0.0,
+    "n": 2358,
+    "protein_planes_max_dev": [],
+    "protein_planes_max_dev_noH": []
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 1.1976,
+    "favored": 98.8024,
+    "outliers": 0.0,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 3.4279,
+    "favored": 94.7991,
+    "outliers": 1.773,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 21.5296,
+   "Cl": 9.73,
+   "Mp": 1.7,
+   "Rf": 7.26,
+   "Rw": 4.64,
+   "ang": null,
+   "avangle": 0.357978,
+   "avbond": 0.132579,
+   "avchir": 0.150118,
+   "avnb": 1.71786,
+   "avomega": 2.67651,
+   "avplane": 0.0797144,
+   "avrama": 0.628907,
+   "avrot": 0.896102,
+   "avtor": 1.00393,
+   "bond": null,
+   "chir": null,
+   "energy": 397.964,
+   "nb_e": 36.1797,
+   "om": 23.13,
+   "ra": 6.2661,
+   "ro": 99.0,
+   "score": 404.881,
+   "vdw": 0.0,
+   "wang": 21.1,
+   "wbond": 6.98,
+   "wchir": 3.61,
+   "wdihe": 21.4,
+   "wplane": 8.7025
+  },
+  "holton_score": 404.881,
+  "holton_we": 397.964,
+  "model": "/home/dev/runs/hr/Tff1b3f_x/trajectory/S0135/model.pdb",
+  "n_anisou": 10334,
+  "n_atoms": 18184,
+  "n_free": 8712,
+  "n_h": 7722,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 174924,
+  "n_residues_nonwater": 169,
+  "n_water_atoms": 2770,
+  "n_water_iso": 128,
+  "n_work": 166212,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "peak_max": 10.66,
+  "peak_min": -9.79,
+  "planarity_rmsd": 0.0056,
+  "r_free": 0.07256699417034944,
+  "r_free_report": 0.07033759171665224,
+  "r_free_select": 0.07473329264310916,
+  "r_work": 0.04644990423721683,
+  "rama_favored_pct": 98.8024,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 167,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 15,
+  "rota_n_residues": 847,
+  "rota_pct": 1.77,
+  "rota_pct_mmtbx": 1.773,
+  "scored_utc": "2026-11-04T21:25:20Z",
+  "sha256": "bf5b7cc79e72bd5bc0e013f0cabb82a4aab2744aec549f46f874548195df463c",
+  "water_clashes": 3,
+  "water_in_density": 0,
+  "water_occ_sum": 544.77,
+  "water_overlap_occ": 0.51,
+  "water_overlaps": 3
+ },
+ "cand": [
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.009,
+   "bond_rmsd": 0.008,
+   "copies": 6,
+   "copy_b_groups": 1282,
+   "copy_b_outliers": 193,
+   "density_flags": 24,
+   "density_peak_residues": [
+    {
+     "atom": "OG/E",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 7.48,
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "atom": "HG11/B",
+     "chain": "A",
+     "dist": 1.23,
+     "icode": "",
+     "peak": 6.48,
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "atom": "HB/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.58,
+     "resname": "THR",
+     "resseq": "33"
+    },
+    {
+     "atom": "SG/E",
+     "chain": "A",
+     "dist": 1.05,
+     "icode": "",
+     "peak": 4.83,
+     "resname": "CYS",
+     "resseq": "92"
+    },
+    {
+     "atom": "OG/D",
+     "chain": "A",
+     "dist": 0.18,
+     "icode": "",
+     "peak": 4.58,
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "atom": "HB2/D",
+     "chain": "A",
+     "dist": 0.58,
+     "icode": "",
+     "peak": 4.44,
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "atom": "OE1/F",
+     "chain": "A",
+     "dist": 0.14,
+     "icode": "",
+     "peak": 4.08,
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.28,
+     "icode": "",
+     "peak": 4.07,
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "atom": "HD22/D",
+     "chain": "A",
+     "dist": 1.27,
+     "icode": "",
+     "peak": 3.92,
+     "resname": "ASN",
+     "resseq": "40"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.14,
+     "icode": "",
+     "peak": 3.78,
+     "resname": "ASN",
+     "resseq": "99"
+    },
+    {
+     "atom": "HA/E",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 3.77,
+     "resname": "GLU",
+     "resseq": "2"
+    }
+   ],
+   "density_peaks": 11,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 9.81,
+     "max_at": "OG/F",
+     "min": -5.4,
+     "min_at": "OG/B",
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.54,
+     "max_at": "O/C",
+     "min": -8.7,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "81"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.14,
+     "max_at": "CE/C",
+     "min": -5.74,
+     "min_at": "SD/A",
+     "resname": "MET",
+     "resseq": "61"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.52,
+     "max_at": "OG/D",
+     "min": -4.02,
+     "min_at": "OG/C",
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.91,
+     "max_at": "CG/F",
+     "min": -4.95,
+     "min_at": "CD/A",
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.0,
+     "max_at": "C/F",
+     "min": -4.83,
+     "min_at": "O/E",
+     "resname": "GLU",
+     "resseq": "170"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.34,
+     "max_at": "CB/B",
+     "min": -4.75,
+     "min_at": "CG2/F",
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.67,
+     "max_at": "OE1/F",
+     "min": -3.46,
+     "min_at": "OE1/C",
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.73,
+     "max_at": "CG1/F",
+     "min": -4.55,
+     "min_at": "CB/E",
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.6,
+     "max_at": "CA/D",
+     "min": -4.54,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.64,
+     "max_at": "O/D",
+     "min": -4.53,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "31"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.35,
+     "max_at": "OD2/E",
+     "min": -4.53,
+     "min_at": "OD2/F",
+     "resname": "ASP",
+     "resseq": "67"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.66,
+     "max_at": "O/F",
+     "min": -4.49,
+     "min_at": "OD1/A",
+     "resname": "ASP",
+     "resseq": "145"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.6,
+     "max_at": "C/B",
+     "min": -4.38,
+     "min_at": "OE1/C",
+     "resname": "GLU",
+     "resseq": "64"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.9,
+     "max_at": "ND2/D",
+     "min": -4.33,
+     "min_at": "OD1/E",
+     "resname": "ASN",
+     "resseq": "72"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.13,
+     "max_at": "CD/F",
+     "min": -4.25,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "102"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.11,
+     "max_at": "NH1/E",
+     "min": -4.24,
+     "min_at": "CD/F",
+     "resname": "ARG",
+     "resseq": "148"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.1,
+     "max_at": "CA/E",
+     "min": -3.87,
+     "min_at": "NZ/D",
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.23,
+     "max_at": "O/B",
+     "min": -3.79,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "110"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.83,
+     "max_at": "C/E",
+     "min": -3.77,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "90"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.75,
+     "max_at": "CB/A",
+     "min": -3.74,
+     "min_at": "CG2/E",
+     "resname": "VAL",
+     "resseq": "30"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.03,
+     "max_at": "CZ/F",
+     "min": -3.61,
+     "min_at": "NE/C",
+     "resname": "ARG",
+     "resseq": "141"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.67,
+     "max_at": "N/F",
+     "min": -3.54,
+     "min_at": "CE/B",
+     "resname": "LYS",
+     "resseq": "11"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.2,
+     "max_at": "CD/C",
+     "min": -3.54,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "29"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 339,
+   "gap": 0.026403594251322438,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/cand_s1.pdb",
+   "n_anisou": 10334,
+   "n_atoms": 18184,
+   "n_free": 8712,
+   "n_h": 7722,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 174924,
+   "n_residues_nonwater": 169,
+   "n_water_atoms": 2770,
+   "n_water_iso": 128,
+   "n_work": 166212,
+   "peak_max": 10.69,
+   "peak_min": -9.33,
+   "r_free": 0.07266658541473914,
+   "r_free_report": 0.07041727100844668,
+   "r_free_select": 0.07485223222562719,
+   "r_work": 0.0462629911634167,
+   "scored_utc": "2026-11-05T08:06:03Z",
+   "seed": 1,
+   "sha256": "a9e9cd5872c831fb4793d86984e46b955fbfaa188f6c3e53f0ab0080c406533b",
+   "water_clashes": 3,
+   "water_in_density": 0,
+   "water_occ_sum": 544.77,
+   "water_overlap_occ": 0.51,
+   "water_overlaps": 3
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.013,
+   "bond_rmsd": 0.008,
+   "copies": 6,
+   "copy_b_groups": 1282,
+   "copy_b_outliers": 184,
+   "density_flags": 23,
+   "density_peak_residues": [
+    {
+     "atom": "OG/F",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 7.46,
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "atom": "HG11/B",
+     "chain": "A",
+     "dist": 1.23,
+     "icode": "",
+     "peak": 6.44,
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "atom": "HB/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.55,
+     "resname": "THR",
+     "resseq": "33"
+    },
+    {
+     "atom": "SG/E",
+     "chain": "A",
+     "dist": 1.05,
+     "icode": "",
+     "peak": 4.76,
+     "resname": "CYS",
+     "resseq": "92"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.33,
+     "icode": "",
+     "peak": 4.54,
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "atom": "HB2/D",
+     "chain": "A",
+     "dist": 0.59,
+     "icode": "",
+     "peak": 4.43,
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "atom": "OE1/F",
+     "chain": "A",
+     "dist": 0.14,
+     "icode": "",
+     "peak": 4.09,
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.28,
+     "icode": "",
+     "peak": 4.05,
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "atom": "HD22/D",
+     "chain": "A",
+     "dist": 1.27,
+     "icode": "",
+     "peak": 3.91,
+     "resname": "ASN",
+     "resseq": "40"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.13,
+     "icode": "",
+     "peak": 3.78,
+     "resname": "ASN",
+     "resseq": "99"
+    }
+   ],
+   "density_peaks": 10,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 9.67,
+     "max_at": "OG/F",
+     "min": -5.41,
+     "min_at": "OG/B",
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.51,
+     "max_at": "O/C",
+     "min": -7.79,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "81"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.01,
+     "max_at": "CE/C",
+     "min": -5.72,
+     "min_at": "SD/A",
+     "resname": "MET",
+     "resseq": "61"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.48,
+     "max_at": "OG/D",
+     "min": -3.98,
+     "min_at": "OG/C",
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.97,
+     "max_at": "CG/F",
+     "min": -4.89,
+     "min_at": "CD/A",
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.54,
+     "max_at": "CA/D",
+     "min": -4.89,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.95,
+     "max_at": "C/F",
+     "min": -4.86,
+     "min_at": "O/E",
+     "resname": "GLU",
+     "resseq": "170"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.4,
+     "max_at": "CB/B",
+     "min": -4.77,
+     "min_at": "CG2/F",
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.66,
+     "max_at": "OE1/F",
+     "min": -3.48,
+     "min_at": "OE1/C",
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.58,
+     "max_at": "O/D",
+     "min": -4.5,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "31"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.73,
+     "max_at": "CG1/F",
+     "min": -4.49,
+     "min_at": "CB/E",
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.3,
+     "max_at": "OD2/E",
+     "min": -4.49,
+     "min_at": "OD2/F",
+     "resname": "ASP",
+     "resseq": "67"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.61,
+     "max_at": "O/F",
+     "min": -4.46,
+     "min_at": "OD1/A",
+     "resname": "ASP",
+     "resseq": "145"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.63,
+     "max_at": "C/B",
+     "min": -4.44,
+     "min_at": "OE1/C",
+     "resname": "GLU",
+     "resseq": "64"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.95,
+     "max_at": "ND2/D",
+     "min": -4.29,
+     "min_at": "OD1/E",
+     "resname": "ASN",
+     "resseq": "72"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.11,
+     "max_at": "NH1/E",
+     "min": -4.25,
+     "min_at": "CD/F",
+     "resname": "ARG",
+     "resseq": "148"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.08,
+     "max_at": "CD/F",
+     "min": -4.24,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "102"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.08,
+     "max_at": "CA/E",
+     "min": -3.89,
+     "min_at": "NZ/D",
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.74,
+     "max_at": "C/E",
+     "min": -3.79,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "90"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.17,
+     "max_at": "O/B",
+     "min": -3.79,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "110"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.73,
+     "max_at": "CB/A",
+     "min": -3.7,
+     "min_at": "CG2/E",
+     "resname": "VAL",
+     "resseq": "30"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.0,
+     "max_at": "CZ/F",
+     "min": -3.55,
+     "min_at": "CZ/C",
+     "resname": "ARG",
+     "resseq": "141"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.2,
+     "max_at": "CD/C",
+     "min": -3.5,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "29"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 339,
+   "gap": 0.02657258629962861,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/cand_s2.pdb",
+   "n_anisou": 10334,
+   "n_atoms": 18184,
+   "n_free": 8712,
+   "n_h": 7722,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 174924,
+   "n_residues_nonwater": 169,
+   "n_water_atoms": 2770,
+   "n_water_iso": 128,
+   "n_work": 166212,
+   "peak_max": 10.63,
+   "peak_min": -8.66,
+   "r_free": 0.07277800588996633,
+   "r_free_report": 0.07045846547195536,
+   "r_free_select": 0.07503189094186023,
+   "r_work": 0.04620541959033772,
+   "scored_utc": "2026-11-05T08:07:11Z",
+   "seed": 2,
+   "sha256": "ae2d8314dc7ae589e488dccaaa98be64ca01759fb53d379f1086a0f0225f9e8f",
+   "water_clashes": 3,
+   "water_in_density": 0,
+   "water_occ_sum": 544.77,
+   "water_overlap_occ": 0.51,
+   "water_overlaps": 3
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.008,
+   "bond_rmsd": 0.008,
+   "clashscore": 5.84,
+   "copies": 6,
+   "copy_b_groups": 1282,
+   "copy_b_outliers": 191,
+   "density_flags": 22,
+   "density_peak_residues": [
+    {
+     "atom": "OG/E",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 7.44,
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "atom": "HG11/B",
+     "chain": "A",
+     "dist": 1.23,
+     "icode": "",
+     "peak": 6.46,
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "atom": "HB/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.52,
+     "resname": "THR",
+     "resseq": "33"
+    },
+    {
+     "atom": "SG/E",
+     "chain": "A",
+     "dist": 1.06,
+     "icode": "",
+     "peak": 4.83,
+     "resname": "CYS",
+     "resseq": "92"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.33,
+     "icode": "",
+     "peak": 4.54,
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "atom": "HB2/D",
+     "chain": "A",
+     "dist": 0.58,
+     "icode": "",
+     "peak": 4.43,
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.28,
+     "icode": "",
+     "peak": 4.04,
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "atom": "OE1/F",
+     "chain": "A",
+     "dist": 0.14,
+     "icode": "",
+     "peak": 4.04,
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "atom": "HD22/D",
+     "chain": "A",
+     "dist": 1.27,
+     "icode": "",
+     "peak": 3.92,
+     "resname": "ASN",
+     "resseq": "40"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.14,
+     "icode": "",
+     "peak": 3.77,
+     "resname": "ASN",
+     "resseq": "99"
+    },
+    {
+     "atom": "HA/E",
+     "chain": "A",
+     "dist": 0.48,
+     "icode": "",
+     "peak": 3.74,
+     "resname": "GLU",
+     "resseq": "2"
+    }
+   ],
+   "density_peaks": 11,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 9.68,
+     "max_at": "OG/F",
+     "min": -5.36,
+     "min_at": "OG/B",
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.39,
+     "max_at": "O/C",
+     "min": -7.97,
+     "min_at": "SG/A",
+     "resname": "CYS",
+     "resseq": "81"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.12,
+     "max_at": "CE/C",
+     "min": -6.06,
+     "min_at": "SD/A",
+     "resname": "MET",
+     "resseq": "61"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.43,
+     "max_at": "OG/D",
+     "min": -3.96,
+     "min_at": "OG/C",
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.99,
+     "max_at": "CG/F",
+     "min": -4.89,
+     "min_at": "CD/A",
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.59,
+     "max_at": "CA/D",
+     "min": -4.88,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.97,
+     "max_at": "C/F",
+     "min": -4.82,
+     "min_at": "O/E",
+     "resname": "GLU",
+     "resseq": "170"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.41,
+     "max_at": "CB/B",
+     "min": -4.73,
+     "min_at": "CG2/F",
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.66,
+     "max_at": "OE1/F",
+     "min": -3.44,
+     "min_at": "OE1/C",
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.72,
+     "max_at": "CG1/F",
+     "min": -4.52,
+     "min_at": "CB/E",
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.49,
+     "max_at": "O/D",
+     "min": -4.51,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "31"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.33,
+     "max_at": "OD2/E",
+     "min": -4.48,
+     "min_at": "OD2/F",
+     "resname": "ASP",
+     "resseq": "67"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.64,
+     "max_at": "O/F",
+     "min": -4.45,
+     "min_at": "OD1/A",
+     "resname": "ASP",
+     "resseq": "145"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.57,
+     "max_at": "C/B",
+     "min": -4.44,
+     "min_at": "OE1/C",
+     "resname": "GLU",
+     "resseq": "64"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.92,
+     "max_at": "CA/E",
+     "min": -4.38,
+     "min_at": "OD1/E",
+     "resname": "ASN",
+     "resseq": "72"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.09,
+     "max_at": "CD/F",
+     "min": -4.23,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "102"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.14,
+     "max_at": "NH1/E",
+     "min": -4.23,
+     "min_at": "CD/F",
+     "resname": "ARG",
+     "resseq": "148"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.1,
+     "max_at": "CA/E",
+     "min": -3.85,
+     "min_at": "NZ/D",
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.71,
+     "max_at": "C/E",
+     "min": -3.77,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "90"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.17,
+     "max_at": "O/B",
+     "min": -3.76,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "110"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.67,
+     "max_at": "CB/A",
+     "min": -3.7,
+     "min_at": "CG2/E",
+     "resname": "VAL",
+     "resseq": "30"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.01,
+     "max_at": "CZ/F",
+     "min": -3.58,
+     "min_at": "NE/C",
+     "resname": "ARG",
+     "resseq": "141"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 340,
+   "gap": 0.026613924611925195,
+   "holton_we": 386.386,
+   "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/cand_s3.pdb",
+   "n_anisou": 10334,
+   "n_atoms": 18184,
+   "n_free": 8712,
+   "n_h": 7722,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 174924,
+   "n_residues_nonwater": 169,
+   "n_water_atoms": 2770,
+   "n_water_iso": 128,
+   "n_work": 166212,
+   "peak_max": 10.58,
+   "peak_min": -8.92,
+   "r_free": 0.0727636773232791,
+   "r_free_report": 0.0705037341791058,
+   "r_free_select": 0.07495965202207155,
+   "r_work": 0.0461497527113539,
+   "rama_favored_pct": 98.2036,
+   "rama_n_outliers": 0,
+   "rama_n_residues": 167,
+   "rama_outliers_pct": 0.0,
+   "rota_n_outliers": 15,
+   "rota_n_residues": 847,
+   "rota_pct": 1.77,
+   "scored_utc": "2026-11-05T08:08:19Z",
+   "seed": 3,
+   "sha256": "f2fd1a9742e311a952b5cda94ec18356c1a0fbef201f2b1f4cb47af4c8f969e7",
+   "water_clashes": 3,
+   "water_in_density": 0,
+   "water_occ_sum": 544.77,
+   "water_overlap_occ": 0.51,
+   "water_overlaps": 3
+  }
+ ],
+ "ctrl": [
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.003,
+   "bond_rmsd": 0.007,
+   "copies": 6,
+   "copy_b_groups": 1282,
+   "copy_b_outliers": 190,
+   "density_flags": 23,
+   "density_peak_residues": [
+    {
+     "atom": "OG/E",
+     "chain": "A",
+     "dist": 0.2,
+     "icode": "",
+     "peak": 7.58,
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "atom": "HG11/B",
+     "chain": "A",
+     "dist": 1.16,
+     "icode": "",
+     "peak": 6.37,
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "atom": "HB/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.66,
+     "resname": "THR",
+     "resseq": "33"
+    },
+    {
+     "atom": "SG/E",
+     "chain": "A",
+     "dist": 1.07,
+     "icode": "",
+     "peak": 4.82,
+     "resname": "CYS",
+     "resseq": "92"
+    },
+    {
+     "atom": "OG/D",
+     "chain": "A",
+     "dist": 0.18,
+     "icode": "",
+     "peak": 4.59,
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "atom": "HB2/D",
+     "chain": "A",
+     "dist": 0.58,
+     "icode": "",
+     "peak": 4.44,
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "atom": "OE1/F",
+     "chain": "A",
+     "dist": 0.13,
+     "icode": "",
+     "peak": 4.11,
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.28,
+     "icode": "",
+     "peak": 4.07,
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "atom": "HD22/D",
+     "chain": "A",
+     "dist": 1.26,
+     "icode": "",
+     "peak": 3.86,
+     "resname": "ASN",
+     "resseq": "40"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.14,
+     "icode": "",
+     "peak": 3.77,
+     "resname": "ASN",
+     "resseq": "99"
+    },
+    {
+     "atom": "HA/E",
+     "chain": "A",
+     "dist": 0.47,
+     "icode": "",
+     "peak": 3.77,
+     "resname": "GLU",
+     "resseq": "2"
+    },
+    {
+     "atom": "CG/F",
+     "chain": "A",
+     "dist": 0.34,
+     "icode": "",
+     "peak": 3.73,
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "atom": "O/F",
+     "chain": "A",
+     "dist": 0.66,
+     "icode": "",
+     "peak": 3.57,
+     "resname": "GLU",
+     "resseq": "104"
+    }
+   ],
+   "density_peaks": 13,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 9.71,
+     "max_at": "OG/F",
+     "min": -5.45,
+     "min_at": "OG/B",
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.42,
+     "max_at": "O/C",
+     "min": -8.81,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "81"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.13,
+     "max_at": "CE/C",
+     "min": -6.25,
+     "min_at": "SD/E",
+     "resname": "MET",
+     "resseq": "61"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.5,
+     "max_at": "OG/D",
+     "min": -4.13,
+     "min_at": "OG/C",
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.96,
+     "max_at": "C/F",
+     "min": -4.91,
+     "min_at": "O/E",
+     "resname": "GLU",
+     "resseq": "170"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.4,
+     "max_at": "CB/B",
+     "min": -4.89,
+     "min_at": "CG2/F",
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.89,
+     "max_at": "CG/F",
+     "min": -4.87,
+     "min_at": "CD/A",
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.69,
+     "max_at": "OE1/F",
+     "min": -3.56,
+     "min_at": "OE1/C",
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.61,
+     "max_at": "O/F",
+     "min": -4.67,
+     "min_at": "OD1/A",
+     "resname": "ASP",
+     "resseq": "145"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.56,
+     "max_at": "O/D",
+     "min": -4.52,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "31"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.76,
+     "max_at": "O/B",
+     "min": -4.45,
+     "min_at": "CB/E",
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.57,
+     "max_at": "C/B",
+     "min": -4.45,
+     "min_at": "OE1/C",
+     "resname": "GLU",
+     "resseq": "64"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.28,
+     "max_at": "OD2/E",
+     "min": -4.44,
+     "min_at": "OD2/F",
+     "resname": "ASP",
+     "resseq": "67"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.95,
+     "max_at": "ND2/D",
+     "min": -4.38,
+     "min_at": "OD1/E",
+     "resname": "ASN",
+     "resseq": "72"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.66,
+     "max_at": "CA/D",
+     "min": -4.35,
+     "min_at": "SG/D",
+     "resname": "CYS",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.21,
+     "max_at": "CD/F",
+     "min": -4.33,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "102"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.16,
+     "max_at": "NH1/E",
+     "min": -4.27,
+     "min_at": "CD/F",
+     "resname": "ARG",
+     "resseq": "148"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.73,
+     "max_at": "CB/A",
+     "min": -3.97,
+     "min_at": "CG2/E",
+     "resname": "VAL",
+     "resseq": "30"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.09,
+     "max_at": "CA/E",
+     "min": -3.95,
+     "min_at": "NZ/D",
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.72,
+     "max_at": "C/E",
+     "min": -3.83,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "90"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.26,
+     "max_at": "O/B",
+     "min": -3.68,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "110"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.04,
+     "max_at": "CZ/F",
+     "min": -3.61,
+     "min_at": "NE/D",
+     "resname": "ARG",
+     "resseq": "141"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.25,
+     "max_at": "CD/C",
+     "min": -3.54,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "29"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 346,
+   "gap": 0.026668985414937237,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/ctrl_s1.pdb",
+   "n_anisou": 10334,
+   "n_atoms": 18184,
+   "n_free": 8712,
+   "n_h": 7722,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 174924,
+   "n_residues_nonwater": 169,
+   "n_water_atoms": 2770,
+   "n_water_iso": 128,
+   "n_work": 166212,
+   "peak_max": 10.81,
+   "peak_min": -9.49,
+   "r_free": 0.07262402623293618,
+   "r_free_report": 0.0704201385582373,
+   "r_free_select": 0.07476553213103782,
+   "r_work": 0.04595504081799894,
+   "scored_utc": "2026-11-05T05:07:38Z",
+   "seed": 1,
+   "sha256": "44d5179e9a8c5952da54e4ecd1dca2db4ef01681dc99640d747a81941b992420",
+   "water_clashes": 5,
+   "water_in_density": 0,
+   "water_occ_sum": 544.77,
+   "water_overlap_occ": 0.85,
+   "water_overlaps": 5
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.011,
+   "bond_rmsd": 0.008,
+   "copies": 6,
+   "copy_b_groups": 1282,
+   "copy_b_outliers": 187,
+   "density_flags": 24,
+   "density_peak_residues": [
+    {
+     "atom": "OG/E",
+     "chain": "A",
+     "dist": 0.2,
+     "icode": "",
+     "peak": 7.49,
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "atom": "HG11/B",
+     "chain": "A",
+     "dist": 1.15,
+     "icode": "",
+     "peak": 6.38,
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "atom": "HB/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.62,
+     "resname": "THR",
+     "resseq": "33"
+    },
+    {
+     "atom": "SG/E",
+     "chain": "A",
+     "dist": 1.05,
+     "icode": "",
+     "peak": 4.81,
+     "resname": "CYS",
+     "resseq": "92"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.33,
+     "icode": "",
+     "peak": 4.57,
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "atom": "HB2/D",
+     "chain": "A",
+     "dist": 0.58,
+     "icode": "",
+     "peak": 4.44,
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "atom": "OE1/F",
+     "chain": "A",
+     "dist": 0.12,
+     "icode": "",
+     "peak": 4.12,
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.27,
+     "icode": "",
+     "peak": 4.03,
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "atom": "HD22/D",
+     "chain": "A",
+     "dist": 1.27,
+     "icode": "",
+     "peak": 3.84,
+     "resname": "ASN",
+     "resseq": "40"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.14,
+     "icode": "",
+     "peak": 3.77,
+     "resname": "ASN",
+     "resseq": "99"
+    },
+    {
+     "atom": "HA/E",
+     "chain": "A",
+     "dist": 0.47,
+     "icode": "",
+     "peak": 3.76,
+     "resname": "GLU",
+     "resseq": "2"
+    }
+   ],
+   "density_peaks": 11,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 9.67,
+     "max_at": "OG/F",
+     "min": -5.43,
+     "min_at": "OG/B",
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.32,
+     "max_at": "O/C",
+     "min": -7.3,
+     "min_at": "SG/E",
+     "resname": "CYS",
+     "resseq": "81"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -0.94,
+     "max_at": "CE/C",
+     "min": -5.76,
+     "min_at": "SD/A",
+     "resname": "MET",
+     "resseq": "61"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.47,
+     "max_at": "OG/D",
+     "min": -4.15,
+     "min_at": "OG/C",
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.95,
+     "max_at": "CG/F",
+     "min": -4.93,
+     "min_at": "CD/A",
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.02,
+     "max_at": "C/F",
+     "min": -4.93,
+     "min_at": "O/E",
+     "resname": "GLU",
+     "resseq": "170"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.31,
+     "max_at": "CB/B",
+     "min": -4.79,
+     "min_at": "CG2/F",
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.7,
+     "max_at": "O/F",
+     "min": -4.75,
+     "min_at": "OD1/A",
+     "resname": "ASP",
+     "resseq": "145"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.72,
+     "max_at": "OE1/F",
+     "min": -3.56,
+     "min_at": "OE1/C",
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.3,
+     "max_at": "OD2/E",
+     "min": -4.47,
+     "min_at": "OD2/F",
+     "resname": "ASP",
+     "resseq": "67"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.78,
+     "max_at": "CG1/F",
+     "min": -4.46,
+     "min_at": "CB/E",
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.64,
+     "max_at": "O/D",
+     "min": -4.44,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "31"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.84,
+     "max_at": "ND2/D",
+     "min": -4.43,
+     "min_at": "OD1/E",
+     "resname": "ASN",
+     "resseq": "72"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.55,
+     "max_at": "C/B",
+     "min": -4.41,
+     "min_at": "OE1/C",
+     "resname": "GLU",
+     "resseq": "64"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.2,
+     "max_at": "CD/F",
+     "min": -4.29,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "102"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.16,
+     "max_at": "NH1/E",
+     "min": -4.26,
+     "min_at": "CD/F",
+     "resname": "ARG",
+     "resseq": "148"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.73,
+     "max_at": "CA/D",
+     "min": -4.24,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.68,
+     "max_at": "CB/A",
+     "min": -3.94,
+     "min_at": "CG2/E",
+     "resname": "VAL",
+     "resseq": "30"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.19,
+     "max_at": "CA/E",
+     "min": -3.93,
+     "min_at": "NZ/D",
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.72,
+     "max_at": "C/E",
+     "min": -3.82,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "90"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.28,
+     "max_at": "O/B",
+     "min": -3.74,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "110"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.25,
+     "max_at": "CD/C",
+     "min": -3.59,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "29"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.05,
+     "max_at": "CZ/F",
+     "min": -3.59,
+     "min_at": "NE/D",
+     "resname": "ARG",
+     "resseq": "141"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.7,
+     "max_at": "N/F",
+     "min": -3.55,
+     "min_at": "CE/B",
+     "resname": "LYS",
+     "resseq": "11"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 347,
+   "gap": 0.026509798073012708,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/ctrl_s2.pdb",
+   "n_anisou": 10334,
+   "n_atoms": 18184,
+   "n_free": 8712,
+   "n_h": 7722,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 174924,
+   "n_residues_nonwater": 169,
+   "n_water_atoms": 2770,
+   "n_water_iso": 128,
+   "n_work": 166212,
+   "peak_max": 10.51,
+   "peak_min": -8.04,
+   "r_free": 0.07247711080060909,
+   "r_free_report": 0.07028844224712107,
+   "r_free_select": 0.07460382835980811,
+   "r_work": 0.04596731272759638,
+   "scored_utc": "2026-11-05T05:08:46Z",
+   "seed": 2,
+   "sha256": "3a2703a295d8f409a8d65f7554afd2eba4e011571acd4dc0a706549d7ca2ae59",
+   "water_clashes": 5,
+   "water_in_density": 0,
+   "water_occ_sum": 544.77,
+   "water_overlap_occ": 0.85,
+   "water_overlaps": 5
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 0.996,
+   "bond_rmsd": 0.007,
+   "cbeta_outliers": 0.0,
+   "chirality_rmsd": 0.076,
+   "clashscore": 8.24,
+   "clashscore_mmtbx": 8.2393,
+   "copies": 6,
+   "copy_b_groups": 1282,
+   "copy_b_outliers": 189,
+   "density_flags": 23,
+   "density_peak_residues": [
+    {
+     "atom": "OG/F",
+     "chain": "A",
+     "dist": 0.21,
+     "icode": "",
+     "peak": 7.48,
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "atom": "HG11/B",
+     "chain": "A",
+     "dist": 1.15,
+     "icode": "",
+     "peak": 6.36,
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "atom": "HB/B",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.59,
+     "resname": "THR",
+     "resseq": "33"
+    },
+    {
+     "atom": "SG/E",
+     "chain": "A",
+     "dist": 1.07,
+     "icode": "",
+     "peak": 4.79,
+     "resname": "CYS",
+     "resseq": "92"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.33,
+     "icode": "",
+     "peak": 4.56,
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "atom": "HB2/D",
+     "chain": "A",
+     "dist": 0.58,
+     "icode": "",
+     "peak": 4.43,
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "atom": "OE1/F",
+     "chain": "A",
+     "dist": 0.12,
+     "icode": "",
+     "peak": 4.11,
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "atom": "HB/E",
+     "chain": "A",
+     "dist": 0.28,
+     "icode": "",
+     "peak": 4.01,
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "atom": "HD22/D",
+     "chain": "A",
+     "dist": 1.27,
+     "icode": "",
+     "peak": 3.82,
+     "resname": "ASN",
+     "resseq": "40"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.14,
+     "icode": "",
+     "peak": 3.77,
+     "resname": "ASN",
+     "resseq": "99"
+    },
+    {
+     "atom": "HA/E",
+     "chain": "A",
+     "dist": 0.48,
+     "icode": "",
+     "peak": 3.76,
+     "resname": "GLU",
+     "resseq": "2"
+    },
+    {
+     "atom": "O/F",
+     "chain": "A",
+     "dist": 0.67,
+     "icode": "",
+     "peak": 3.58,
+     "resname": "GLU",
+     "resseq": "104"
+    }
+   ],
+   "density_peaks": 12,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 9.65,
+     "max_at": "OG/F",
+     "min": -5.35,
+     "min_at": "OG/B",
+     "resname": "SER",
+     "resseq": "111"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.44,
+     "max_at": "O/C",
+     "min": -9.53,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "81"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": -1.02,
+     "max_at": "CE/C",
+     "min": -5.76,
+     "min_at": "SD/A",
+     "resname": "MET",
+     "resseq": "61"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 5.49,
+     "max_at": "OG/D",
+     "min": -4.04,
+     "min_at": "OG/C",
+     "resname": "SER",
+     "resseq": "167"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.01,
+     "max_at": "C/F",
+     "min": -4.89,
+     "min_at": "O/E",
+     "resname": "GLU",
+     "resseq": "170"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.94,
+     "max_at": "CG/F",
+     "min": -4.8,
+     "min_at": "CD/A",
+     "resname": "GLU",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.37,
+     "max_at": "CB/B",
+     "min": -4.79,
+     "min_at": "CG2/F",
+     "resname": "VAL",
+     "resseq": "34"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.73,
+     "max_at": "OE1/F",
+     "min": -3.52,
+     "min_at": "OE1/C",
+     "resname": "GLN",
+     "resseq": "107"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.76,
+     "max_at": "O/F",
+     "min": -4.65,
+     "min_at": "OD1/A",
+     "resname": "ASP",
+     "resseq": "145"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.58,
+     "max_at": "O/D",
+     "min": -4.46,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "31"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.78,
+     "max_at": "CG1/F",
+     "min": -4.44,
+     "min_at": "CB/E",
+     "resname": "VAL",
+     "resseq": "3"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.96,
+     "max_at": "ND2/D",
+     "min": -4.43,
+     "min_at": "OD1/E",
+     "resname": "ASN",
+     "resseq": "72"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.31,
+     "max_at": "OD2/E",
+     "min": -4.4,
+     "min_at": "OD2/F",
+     "resname": "ASP",
+     "resseq": "67"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.46,
+     "max_at": "C/B",
+     "min": -4.34,
+     "min_at": "OE1/C",
+     "resname": "GLU",
+     "resseq": "64"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.49,
+     "max_at": "CA/D",
+     "min": -4.32,
+     "min_at": "SG/B",
+     "resname": "CYS",
+     "resseq": "143"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.13,
+     "max_at": "CD/F",
+     "min": -4.31,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "102"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.19,
+     "max_at": "NH1/E",
+     "min": -4.24,
+     "min_at": "CD/F",
+     "resname": "ARG",
+     "resseq": "148"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.78,
+     "max_at": "CB/A",
+     "min": -3.86,
+     "min_at": "CG2/E",
+     "resname": "VAL",
+     "resseq": "30"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.1,
+     "max_at": "CA/E",
+     "min": -3.83,
+     "min_at": "NZ/D",
+     "resname": "LYS",
+     "resseq": "55"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.65,
+     "max_at": "C/E",
+     "min": -3.8,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "90"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.25,
+     "max_at": "O/B",
+     "min": -3.61,
+     "min_at": "NZ/C",
+     "resname": "LYS",
+     "resseq": "110"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.99,
+     "max_at": "CZ/F",
+     "min": -3.6,
+     "min_at": "NE/D",
+     "resname": "ARG",
+     "resseq": "141"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.24,
+     "max_at": "CD/C",
+     "min": -3.51,
+     "min_at": "CD/E",
+     "resname": "LYS",
+     "resseq": "29"
+    }
+   ],
+   "dihedral_rmsd": 13.367,
+   "envelope_a": 2.2,
+   "envelope_waters": 347,
+   "gap": 0.02666115428473042,
+   "geometry": {
+    "angle": {
+     "max": 7.6235,
+     "mean": 0.8887,
+     "min": 0.0,
+     "n": 28182,
+     "outliers": []
+    },
+    "angle_z": {
+     "max": 4.4127,
+     "mean": 0.4173,
+     "min": 0.0,
+     "n": 28182,
+     "outliers": []
+    },
+    "bond": {
+     "max": 0.0761,
+     "mean": 0.0052,
+     "min": 0.0,
+     "n": 15546,
+     "outliers": []
+    },
+    "bond_z": {
+     "max": 2.5364,
+     "mean": 0.2489,
+     "min": 0.0,
+     "n": 15546,
+     "outliers": []
+    },
+    "c_beta": {
+     "cbetadev": "ERROR",
+     "outliers": 0.0
+    },
+    "cablam": {
+     "ca_outliers": 0.6061,
+     "disfavored": 12.1212,
+     "gui_table": {
+      "column_formats": [
+       "%s",
+       "%s",
+       "%s",
+       "%.5f",
+       "%.5f",
+       "%s",
+       "%.5f",
+       "%.5f",
+       "%.5f"
+      ],
+      "column_labels": [
+       "Chain",
+       "Residue",
+       "Evaluation",
+       "CaBLAM Score",
+       "CA Geometry Score",
+       "Secondary Structure",
+       "Helix Score",
+       "Beta Score",
+       "3-10 Score"
+      ],
+      "column_widths": [
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125
+      ],
+      "data": [
+       [
+        " A",
+        "ASN    4 ",
+        "CaBLAM Disfavored",
+        0.0132,
+        0.5633,
+        "",
+        0.0,
+        0.23,
+        0.0,
+        "ERROR",
+        [
+         6.732,
+         3.811,
+         11.782
+        ]
+       ],
+       [
+        " A",
+        "THR   13 ",
+        "CaBLAM Disfavored",
+        0.0113,
+        0.0343,
+        "",
+        0.0004,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         10.972,
+         5.061,
+         -6.257
+        ]
+       ],
+       [
+        " A",
+        "THR   13 ",
+        "CaBLAM Disfavored",
+        0.0484,
+        0.059,
+        "",
+        0.0001,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         10.922,
+         4.809,
+         -6.269
+        ]
+       ],
+       [
+        " A",
+        "THR   13 ",
+        "CaBLAM Outlier",
+        0.0088,
+        0.0497,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         11.061,
+         5.319,
+         -6.459
+        ]
+       ],
+       [
+        " A",
+        "THR   13 ",
+        "CaBLAM Disfavored",
+        0.0107,
+        0.066,
+        "",
+        0.0003,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         10.908,
+         4.938,
+         -6.209
+        ]
+       ],
+       [
+        " A",
+        "ASP   14 ",
+        "CaBLAM Disfavored",
+        0.0483,
+        0.0308,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         11.286,
+         1.414,
+         -4.655
+        ]
+       ],
+       [
+        " A",
+        "ASP   14 ",
+        "CaBLAM Disfavored",
+        0.0498,
+        0.0913,
+        "",
+        0.0009,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         10.507,
+         2.008,
+         -4.629
+        ]
+       ],
+       [
+        " A",
+        "LYS   31 ",
+        "CaBLAM Disfavored",
+        0.0176,
+        0.169,
+        "",
+        0.0,
+        0.4456,
+        0.0,
+        "ERROR",
+        [
+         6.82,
+         7.745,
+         15.894
+        ]
+       ],
+       [
+        " A",
+        "LYS   31 ",
+        "CaBLAM Disfavored",
+        0.0349,
+        0.1752,
+        "",
+        0.0,
+        0.1543,
+        0.0,
+        "ERROR",
+        [
+         6.658,
+         7.43,
+         15.838
+        ]
+       ],
+       [
+        " A",
+        "LYS   31 ",
+        "CaBLAM Disfavored",
+        0.0444,
+        0.1742,
+        "",
+        0.0,
+        0.1833,
+        0.0,
+        "ERROR",
+        [
+         6.853,
+         7.757,
+         15.824
+        ]
+       ],
+       [
+        " A",
+        "HIS   45 ",
+        "CaBLAM Disfavored",
+        0.0328,
+        0.1415,
+        "",
+        0.0,
+        0.0396,
+        0.0,
+        "ERROR",
+        [
+         21.152,
+         23.226,
+         16.611
+        ]
+       ],
+       [
+        " A",
+        "HIS   45 ",
+        "CaBLAM Disfavored",
+        0.044,
+        0.1584,
+        "",
+        0.0,
+        0.0348,
+        0.0,
+        "ERROR",
+        [
+         21.022,
+         22.97,
+         16.701
+        ]
+       ],
+       [
+        " A",
+        "HIS   45 ",
+        "CaBLAM Disfavored",
+        0.0371,
+        0.1524,
+        "",
+        0.0,
+        0.0375,
+        0.0,
+        "ERROR",
+        [
+         21.126,
+         23.217,
+         16.58
+        ]
+       ],
+       [
+        " A",
+        "HIS   45 ",
+        "CaBLAM Disfavored",
+        0.0351,
+        0.1494,
+        "",
+        0.0,
+        0.0271,
+        0.0,
+        "ERROR",
+        [
+         21.039,
+         23.136,
+         16.705
+        ]
+       ],
+       [
+        " A",
+        "GLY   46 ",
+        "CaBLAM Disfavored",
+        0.0432,
+        0.0201,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         20.252,
+         26.912,
+         16.784
+        ]
+       ],
+       [
+        " A",
+        "GLY   46 ",
+        "CaBLAM Outlier",
+        0.0098,
+        0.0162,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         20.246,
+         26.911,
+         16.536
+        ]
+       ],
+       [
+        " A",
+        "GLY   46 ",
+        "CaBLAM Disfavored",
+        0.0255,
+        0.0324,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         20.039,
+         26.651,
+         16.894
+        ]
+       ],
+       [
+        " A",
+        "GLY   47 ",
+        "CA Geom Outlier",
+        0.013,
+        0.0036,
+        "",
+        0.0042,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.437,
+         27.007,
+         13.445
+        ]
+       ],
+       [
+        " A",
+        "GLY   47 ",
+        "CA Geom Outlier",
+        0.0224,
+        0.0035,
+        "",
+        0.0009,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.023,
+         27.129,
+         13.486
+        ]
+       ],
+       [
+        " A",
+        "GLY   47 ",
+        "CaBLAM Disfavored",
+        0.0247,
+        0.0096,
+        "",
+        0.0112,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.545,
+         27.062,
+         13.421
+        ]
+       ],
+       [
+        " A",
+        "GLY   47 ",
+        "CaBLAM Disfavored",
+        0.0191,
+        0.0373,
+        "",
+        0.008,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.83,
+         27.103,
+         13.246
+        ]
+       ],
+       [
+        " A",
+        "GLY   47 ",
+        "CaBLAM Outlier",
+        0.0056,
+        0.087,
+        "",
+        0.0306,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         19.103,
+         27.079,
+         13.064
+        ]
+       ],
+       [
+        " A",
+        "GLY   47 ",
+        "CaBLAM Outlier",
+        0.009,
+        0.1037,
+        "",
+        0.0268,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.891,
+         26.896,
+         12.87
+        ]
+       ],
+       [
+        " A",
+        "VAL   49 ",
+        "CaBLAM Disfavored",
+        0.0497,
+        0.0368,
+        "",
+        0.0013,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         15.682,
+         21.894,
+         10.754
+        ]
+       ],
+       [
+        " A",
+        "ASN   58 ",
+        "CaBLAM Disfavored",
+        0.0378,
+        0.0339,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         12.718,
+         21.278,
+         24.848
+        ]
+       ],
+       [
+        " A",
+        "ASN   59 ",
+        "CaBLAM Disfavored",
+        0.0469,
+        0.0758,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         16.437,
+         21.765,
+         24.21
+        ]
+       ],
+       [
+        " A",
+        "ASN   59 ",
+        "CaBLAM Disfavored",
+        0.0332,
+        0.0813,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         16.429,
+         21.561,
+         24.216
+        ]
+       ],
+       [
+        " A",
+        "ASN   59 ",
+        "CaBLAM Disfavored",
+        0.0252,
+        0.077,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         16.353,
+         21.398,
+         24.264
+        ]
+       ],
+       [
+        " A",
+        "VAL   77 ",
+        "CaBLAM Disfavored",
+        0.0389,
+        0.1846,
+        "",
+        0.0003,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         31.142,
+         17.174,
+         6.394
+        ]
+       ],
+       [
+        " A",
+        "LEU   83 ",
+        "CaBLAM Disfavored",
+        0.0367,
+        0.0405,
+        "",
+        0.0001,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         22.35,
+         9.912,
+         19.16
+        ]
+       ],
+       [
+        " A",
+        "LEU   83 ",
+        "CaBLAM Disfavored",
+        0.0321,
+        0.04,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         22.265,
+         9.938,
+         19.187
+        ]
+       ],
+       [
+        " A",
+        "LEU   83 ",
+        "CaBLAM Disfavored",
+        0.0255,
+        0.0275,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         22.357,
+         9.878,
+         19.311
+        ]
+       ],
+       [
+        " A",
+        "LEU   83 ",
+        "CaBLAM Disfavored",
+        0.0323,
+        0.0258,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         22.223,
+         10.051,
+         19.467
+        ]
+       ],
+       [
+        " A",
+        "GLY   85 ",
+        "CaBLAM Disfavored",
+        0.0277,
+        0.0988,
+        "",
+        0.0,
+        0.1612,
+        0.0,
+        "ERROR",
+        [
+         15.791,
+         10.35,
+         19.373
+        ]
+       ],
+       [
+        " A",
+        "GLY   85 ",
+        "CaBLAM Disfavored",
+        0.0253,
+        0.1003,
+        "",
+        0.0,
+        0.1896,
+        0.0,
+        "ERROR",
+        [
+         15.822,
+         10.509,
+         19.576
+        ]
+       ],
+       [
+        " A",
+        "GLY   85 ",
+        "CaBLAM Disfavored",
+        0.0299,
+        0.0718,
+        "",
+        0.0,
+        0.1584,
+        0.0,
+        "ERROR",
+        [
+         15.673,
+         10.778,
+         19.237
+        ]
+       ],
+       [
+        " A",
+        "GLY   85 ",
+        "CaBLAM Disfavored",
+        0.0243,
+        0.0904,
+        "",
+        0.0,
+        0.2088,
+        0.0,
+        "ERROR",
+        [
+         15.822,
+         10.411,
+         19.453
+        ]
+       ],
+       [
+        " A",
+        "GLY   85 ",
+        "CaBLAM Disfavored",
+        0.0276,
+        0.0853,
+        "",
+        0.0,
+        0.1416,
+        0.0,
+        "ERROR",
+        [
+         15.739,
+         10.394,
+         19.184
+        ]
+       ],
+       [
+        " A",
+        "GLY   85 ",
+        "CaBLAM Disfavored",
+        0.0206,
+        0.087,
+        "",
+        0.0,
+        0.2852,
+        0.0,
+        "ERROR",
+        [
+         15.738,
+         10.628,
+         19.365
+        ]
+       ],
+       [
+        " A",
+        "HIS   86 ",
+        "CaBLAM Disfavored",
+        0.0254,
+        0.1414,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.385,
+         11.654,
+         22.68
+        ]
+       ],
+       [
+        " A",
+        "HIS   86 ",
+        "CaBLAM Disfavored",
+        0.023,
+        0.162,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.384,
+         11.866,
+         22.841
+        ]
+       ],
+       [
+        " A",
+        "HIS   86 ",
+        "CaBLAM Outlier",
+        0.0082,
+        0.1081,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.417,
+         11.923,
+         22.67
+        ]
+       ],
+       [
+        " A",
+        "HIS   86 ",
+        "CaBLAM Disfavored",
+        0.0186,
+        0.1539,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.376,
+         11.787,
+         22.707
+        ]
+       ],
+       [
+        " A",
+        "HIS   86 ",
+        "CaBLAM Disfavored",
+        0.0183,
+        0.1028,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.187,
+         11.849,
+         22.357
+        ]
+       ],
+       [
+        " A",
+        "HIS   86 ",
+        "CaBLAM Disfavored",
+        0.0256,
+        0.1545,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.096,
+         11.905,
+         22.558
+        ]
+       ],
+       [
+        " A",
+        "LEU   88 ",
+        "CaBLAM Disfavored",
+        0.0394,
+        0.0186,
+        "",
+        0.0006,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         10.744,
+         12.204,
+         18.303
+        ]
+       ],
+       [
+        " A",
+        "LEU   88 ",
+        "CaBLAM Disfavored",
+        0.0206,
+        0.0108,
+        "",
+        0.0003,
+        0.0006,
+        0.0,
+        "ERROR",
+        [
+         10.886,
+         12.472,
+         18.058
+        ]
+       ],
+       [
+        " A",
+        "LEU   88 ",
+        "CaBLAM Disfavored",
+        0.0334,
+        0.0147,
+        "",
+        0.0005,
+        0.0004,
+        0.0,
+        "ERROR",
+        [
+         10.882,
+         12.471,
+         18.249
+        ]
+       ],
+       [
+        " A",
+        "ALA   89 ",
+        "CaBLAM Disfavored",
+        0.0487,
+        0.0432,
+        "",
+        0.0002,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         12.196,
+         8.962,
+         17.574
+        ]
+       ],
+       [
+        " A",
+        "LYS   90 ",
+        "CaBLAM Disfavored",
+        0.0427,
+        0.0677,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.145,
+         6.131,
+         19.109
+        ]
+       ],
+       [
+        " A",
+        "LYS   90 ",
+        "CaBLAM Outlier",
+        0.0048,
+        0.0585,
+        "",
+        0.0001,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.066,
+         5.974,
+         18.906
+        ]
+       ],
+       [
+        " A",
+        "LYS   90 ",
+        "CaBLAM Disfavored",
+        0.0209,
+        0.0475,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.0,
+         6.069,
+         18.849
+        ]
+       ],
+       [
+        " A",
+        "LYS   90 ",
+        "CaBLAM Disfavored",
+        0.0193,
+        0.0587,
+        "",
+        0.0001,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         14.161,
+         6.153,
+         19.158
+        ]
+       ],
+       [
+        " A",
+        "HIS   91 ",
+        "CaBLAM Disfavored",
+        0.0479,
+        0.2429,
+        "",
+        0.0061,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         17.293,
+         7.372,
+         17.407
+        ]
+       ],
+       [
+        " A",
+        "ALA  129 ",
+        "CaBLAM Disfavored",
+        0.0247,
+        0.0481,
+        "",
+        0.0003,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.328,
+         22.576,
+         1.745
+        ]
+       ],
+       [
+        " A",
+        "THR  149 ",
+        "CaBLAM Disfavored",
+        0.0256,
+        0.0253,
+        "try beta sheet",
+        0.0,
+        0.0016,
+        0.0,
+        "ERROR",
+        [
+         17.039,
+         1.692,
+         2.317
+        ]
+       ],
+       [
+        " A",
+        "THR  149 ",
+        "CaBLAM Disfavored",
+        0.0344,
+        0.0312,
+        "try beta sheet",
+        0.0,
+        0.0013,
+        0.0,
+        "ERROR",
+        [
+         16.825,
+         1.938,
+         2.528
+        ]
+       ]
+      ]
+     },
+     "outliers": 3.0303
+    },
+    "chirality": {
+     "max": 0.3864,
+     "mean": 0.076,
+     "min": 0.0,
+     "n": 1254,
+     "outliers": []
+    },
+    "clash": {
+     "clashes": "ERROR",
+     "score": 8.2393
+    },
+    "dihedral": {
+     "max": 179.0043,
+     "mean": 13.367,
+     "min": 0.0002,
+     "n": 5430,
+     "outliers": [
+      [
+       10654,
+       10655,
+       10656,
+       10657
+      ],
+      [
+       10669,
+       10670,
+       10671,
+       10672
+      ],
+      [
+       10639,
+       10640,
+       10641,
+       10642
+      ],
+      [
+       10834,
+       10835,
+       10947,
+       10948
+      ],
+      [
+       57,
+       58,
+       148,
+       149
+      ],
+      [
+       3521,
+       3522,
+       3584,
+       3585
+      ],
+      [
+       3531,
+       3532,
+       3598,
+       3599
+      ]
+     ]
+    },
+    "molprobity_score": 1.6575,
+    "nonbonded": {
+     "max": 4.6,
+     "mean": 3.746,
+     "min": 1.6282,
+     "n": 299841
+    },
+    "omega": {
+     "cis_general": 0.0,
+     "cis_proline": 0.0,
+     "n_twisted_general": 0,
+     "omegalyze": "ERROR",
+     "twisted_general": 0.0,
+     "twisted_proline": 0.0
+    },
+    "parallelity": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 0
+    },
+    "planarity": {
+     "max": 0.059,
+     "mean": 0.0053,
+     "min": 0.0,
+     "n": 2358,
+     "protein_planes_max_dev": [],
+     "protein_planes_max_dev_noH": []
+    },
+    "rama_z": "ERROR",
+    "ramachandran": {
+     "allowed": 1.1976,
+     "favored": 98.8024,
+     "outliers": 0.0,
+     "ramalyze": "ERROR"
+    },
+    "rotamer": {
+     "allowed": 3.1915,
+     "favored": 94.9173,
+     "outliers": 1.8913,
+     "rotalyze": "ERROR"
+    }
+   },
+   "holton": {
+    "CB": 21.9024,
+    "Cl": 11.41,
+    "Mp": 1.78,
+    "Rf": 7.26,
+    "Rw": 4.59,
+    "ang": null,
+    "avangle": 0.339359,
+    "avbond": 0.12266,
+    "avchir": 0.144306,
+    "avnb": 2.00027,
+    "avomega": 2.66096,
+    "avplane": 0.0735639,
+    "avrama": 0.632064,
+    "avrot": 1.0101,
+    "avtor": 1.00833,
+    "bond": null,
+    "chir": null,
+    "energy": 449.781,
+    "nb_e": 40.5376,
+    "om": 23.22,
+    "ra": 6.2661,
+    "ro": 99.0,
+    "score": 456.698,
+    "vdw": 0.0,
+    "wang": 19.5,
+    "wbond": 6.43,
+    "wchir": 3.73,
+    "wdihe": 21.6,
+    "wplane": 8.1225
+   },
+   "holton_score": 456.698,
+   "holton_we": 449.781,
+   "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/ctrl_s3.pdb",
+   "n_anisou": 10334,
+   "n_atoms": 18184,
+   "n_free": 8712,
+   "n_h": 7722,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 174924,
+   "n_residues_nonwater": 169,
+   "n_water_atoms": 2770,
+   "n_water_iso": 128,
+   "n_work": 166212,
+   "omega_cis_general": 0.0,
+   "omega_cis_proline": 0.0,
+   "omega_twisted_general": 0.0,
+   "peak_max": 10.84,
+   "peak_min": -10.42,
+   "planarity_rmsd": 0.0053,
+   "r_free": 0.07255910319813964,
+   "r_free_report": 0.07036330048757157,
+   "r_free_select": 0.07469275297971892,
+   "r_work": 0.045897948913409224,
+   "rama_favored_pct": 98.8024,
+   "rama_n_outliers": 0,
+   "rama_n_residues": 167,
+   "rama_outliers_pct": 0.0,
+   "rota_n_outliers": 16,
+   "rota_n_residues": 847,
+   "rota_pct": 1.89,
+   "rota_pct_mmtbx": 1.8913,
+   "scored_utc": "2026-11-05T05:09:54Z",
+   "seed": 3,
+   "sha256": "94a755a226d6ad591059d2a10ad83cc7a9fd8c8ebec8c898686261fecb7bd420",
+   "water_clashes": 5,
+   "water_in_density": 0,
+   "water_occ_sum": 544.77,
+   "water_overlap_occ": 0.85,
+   "water_overlaps": 5
+  }
+ ],
+ "median_cand": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.008,
+  "bond_rmsd": 0.008,
+  "clashscore": 5.84,
+  "copies": 6,
+  "copy_b_groups": 1282,
+  "copy_b_outliers": 191,
+  "density_flags": 22,
+  "density_peak_residues": [
+   {
+    "atom": "OG/E",
+    "chain": "A",
+    "dist": 0.21,
+    "icode": "",
+    "peak": 7.44,
+    "resname": "SER",
+    "resseq": "111"
+   },
+   {
+    "atom": "HG11/B",
+    "chain": "A",
+    "dist": 1.23,
+    "icode": "",
+    "peak": 6.46,
+    "resname": "VAL",
+    "resseq": "3"
+   },
+   {
+    "atom": "HB/B",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.52,
+    "resname": "THR",
+    "resseq": "33"
+   },
+   {
+    "atom": "SG/E",
+    "chain": "A",
+    "dist": 1.06,
+    "icode": "",
+    "peak": 4.83,
+    "resname": "CYS",
+    "resseq": "92"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.33,
+    "icode": "",
+    "peak": 4.54,
+    "resname": "SER",
+    "resseq": "167"
+   },
+   {
+    "atom": "HB2/D",
+    "chain": "A",
+    "dist": 0.58,
+    "icode": "",
+    "peak": 4.43,
+    "resname": "LYS",
+    "resseq": "55"
+   },
+   {
+    "atom": "HB/E",
+    "chain": "A",
+    "dist": 0.28,
+    "icode": "",
+    "peak": 4.04,
+    "resname": "VAL",
+    "resseq": "34"
+   },
+   {
+    "atom": "OE1/F",
+    "chain": "A",
+    "dist": 0.14,
+    "icode": "",
+    "peak": 4.04,
+    "resname": "GLN",
+    "resseq": "107"
+   },
+   {
+    "atom": "HD22/D",
+    "chain": "A",
+    "dist": 1.27,
+    "icode": "",
+    "peak": 3.92,
+    "resname": "ASN",
+    "resseq": "40"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.14,
+    "icode": "",
+    "peak": 3.77,
+    "resname": "ASN",
+    "resseq": "99"
+   },
+   {
+    "atom": "HA/E",
+    "chain": "A",
+    "dist": 0.48,
+    "icode": "",
+    "peak": 3.74,
+    "resname": "GLU",
+    "resseq": "2"
+   }
+  ],
+  "density_peaks": 11,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 9.68,
+    "max_at": "OG/F",
+    "min": -5.36,
+    "min_at": "OG/B",
+    "resname": "SER",
+    "resseq": "111"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": -1.39,
+    "max_at": "O/C",
+    "min": -7.97,
+    "min_at": "SG/A",
+    "resname": "CYS",
+    "resseq": "81"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": -1.12,
+    "max_at": "CE/C",
+    "min": -6.06,
+    "min_at": "SD/A",
+    "resname": "MET",
+    "resseq": "61"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 5.43,
+    "max_at": "OG/D",
+    "min": -3.96,
+    "min_at": "OG/C",
+    "resname": "SER",
+    "resseq": "167"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.99,
+    "max_at": "CG/F",
+    "min": -4.89,
+    "min_at": "CD/A",
+    "resname": "GLU",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.59,
+    "max_at": "CA/D",
+    "min": -4.88,
+    "min_at": "SG/B",
+    "resname": "CYS",
+    "resseq": "143"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.97,
+    "max_at": "C/F",
+    "min": -4.82,
+    "min_at": "O/E",
+    "resname": "GLU",
+    "resseq": "170"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.41,
+    "max_at": "CB/B",
+    "min": -4.73,
+    "min_at": "CG2/F",
+    "resname": "VAL",
+    "resseq": "34"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.66,
+    "max_at": "OE1/F",
+    "min": -3.44,
+    "min_at": "OE1/C",
+    "resname": "GLN",
+    "resseq": "107"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.72,
+    "max_at": "CG1/F",
+    "min": -4.52,
+    "min_at": "CB/E",
+    "resname": "VAL",
+    "resseq": "3"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.49,
+    "max_at": "O/D",
+    "min": -4.51,
+    "min_at": "NZ/C",
+    "resname": "LYS",
+    "resseq": "31"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.33,
+    "max_at": "OD2/E",
+    "min": -4.48,
+    "min_at": "OD2/F",
+    "resname": "ASP",
+    "resseq": "67"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.64,
+    "max_at": "O/F",
+    "min": -4.45,
+    "min_at": "OD1/A",
+    "resname": "ASP",
+    "resseq": "145"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.57,
+    "max_at": "C/B",
+    "min": -4.44,
+    "min_at": "OE1/C",
+    "resname": "GLU",
+    "resseq": "64"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.92,
+    "max_at": "CA/E",
+    "min": -4.38,
+    "min_at": "OD1/E",
+    "resname": "ASN",
+    "resseq": "72"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.09,
+    "max_at": "CD/F",
+    "min": -4.23,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "102"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.14,
+    "max_at": "NH1/E",
+    "min": -4.23,
+    "min_at": "CD/F",
+    "resname": "ARG",
+    "resseq": "148"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.1,
+    "max_at": "CA/E",
+    "min": -3.85,
+    "min_at": "NZ/D",
+    "resname": "LYS",
+    "resseq": "55"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 0.71,
+    "max_at": "C/E",
+    "min": -3.77,
+    "min_at": "CD/E",
+    "resname": "LYS",
+    "resseq": "90"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.17,
+    "max_at": "O/B",
+    "min": -3.76,
+    "min_at": "NZ/C",
+    "resname": "LYS",
+    "resseq": "110"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.67,
+    "max_at": "CB/A",
+    "min": -3.7,
+    "min_at": "CG2/E",
+    "resname": "VAL",
+    "resseq": "30"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.01,
+    "max_at": "CZ/F",
+    "min": -3.58,
+    "min_at": "NE/C",
+    "resname": "ARG",
+    "resseq": "141"
+   }
+  ],
+  "envelope_a": 2.2,
+  "envelope_waters": 340,
+  "gap": 0.026613924611925195,
+  "holton_we": 386.386,
+  "model": "/home/dev/runs/hr/Tff1b3f_x/pending/x6_nb40/cand_s3.pdb",
+  "n_anisou": 10334,
+  "n_atoms": 18184,
+  "n_free": 8712,
+  "n_h": 7722,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 174924,
+  "n_residues_nonwater": 169,
+  "n_water_atoms": 2770,
+  "n_water_iso": 128,
+  "n_work": 166212,
+  "peak_max": 10.58,
+  "peak_min": -8.92,
+  "r_free": 0.0727636773232791,
+  "r_free_report": 0.0705037341791058,
+  "r_free_select": 0.07495965202207155,
+  "r_work": 0.0461497527113539,
+  "rama_favored_pct": 98.2036,
+  "rama_n_outliers": 0,
+  "rama_n_residues": 167,
+  "rama_outliers_pct": 0.0,
+  "rota_n_outliers": 15,
+  "rota_n_residues": 847,
+  "rota_pct": 1.77,
+  "scored_utc": "2026-11-05T08:08:19Z",
+  "seed": 3,
+  "sha256": "f2fd1a9742e311a952b5cda94ec18356c1a0fbef201f2b1f4cb47af4c8f969e7",
+  "water_clashes": 3,
+  "water_in_density": 0,
+  "water_occ_sum": 544.77,
+  "water_overlap_occ": 0.51,
+  "water_overlaps": 3
+ },
+ "verdict": {
+  "cand": {
+   "angle_rmsd": 1.01,
+   "bond_rmsd": 0.008,
+   "clashscore": 5.84,
+   "copy_b_outliers": 189.33333333333334,
+   "density_flags": 23.0,
+   "density_peaks": 10.666666666666666,
+   "envelope_waters": 339.3333333333333,
+   "gap": 0.026530035054292078,
+   "holton_we": 386.386,
+   "peak_max": 10.633333333333333,
+   "peak_min": -8.97,
+   "r_free": 0.07273608954266152,
+   "r_work": 0.046206054488369445,
+   "rama_outliers_pct": 0.0,
+   "rota_pct": 1.77,
+   "water_overlaps": 3.0
+  },
+  "clash_cap": 15.0,
+  "ctrl": {
+   "angle_rmsd": 1.0033333333333332,
+   "bond_rmsd": 0.007333333333333333,
+   "clashscore": 8.24,
+   "copy_b_outliers": 188.66666666666666,
+   "density_flags": 23.333333333333332,
+   "density_peaks": 12.0,
+   "envelope_waters": 346.6666666666667,
+   "gap": 0.026613312590893456,
+   "holton_we": 449.781,
+   "peak_max": 10.719999999999999,
+   "peak_min": -9.316666666666666,
+   "r_free": 0.07255341341056164,
+   "r_work": 0.045940100819668185,
+   "rama_outliers_pct": 0.0,
+   "rota_pct": 1.89,
+   "water_overlaps": 5.0
+  },
+  "d_gap": -8.327753660137757e-05,
+  "d_r_free": 0.00018267613209987932,
+  "gap_max": 0.03,
+  "k_sigma": 2.0,
+  "kind": "sanity",
+  "n_cand": 3,
+  "n_ctrl": 3,
+  "notes": [],
+  "outlier_counts": {
+   "rama_n_outliers": {
+    "cand": 0.0,
+    "ctrl": 0.0
+   },
+   "rota_n_outliers": {
+    "cand": 15.0,
+    "ctrl": 16.0
+   }
+  },
+  "outlier_tolerance": 1.0,
+  "reading": {
+   "advice": "BETTER",
+   "better": [
+    "clashscore",
+    "holton_we"
+   ],
+   "envelope": {
+    "explore_branch_k": 10.0,
+    "explore_budget": 4.0,
+    "explore_min_k": 2.0,
+    "explore_min_pct": 0.1,
+    "explore_rfree_k": 10.0
+   },
+   "interesting": [
+    "clashscore",
+    "holton_we"
+   ],
+   "moves": {
+    "clashscore": {
+     "better": true,
+     "beyond_noise": true,
+     "cand": 5.84,
+     "ctrl": 8.24,
+     "delta": -2.4000000000000004,
+     "pct": -0.29126213592233013,
+     "tol": 1.0
+    },
+    "copy_b_outliers": {
+     "better": false,
+     "beyond_noise": false,
+     "cand": 189.33333333333334,
+     "ctrl": 188.66666666666666,
+     "delta": 0.6666666666666856,
+     "pct": 0.00353356890459374,
+     "tol": 27.47119703738202
+    },
+    "density_flags": {
+     "better": true,
+     "beyond_noise": false,
+     "cand": 23.0,
+     "ctrl": 23.333333333333332,
+     "delta": -0.33333333333333215,
+     "pct": -0.014285714285714235,
+     "tol": 9.66091783079296
+    },
+    "density_peaks": {
+     "better": true,
+     "beyond_noise": false,
+     "cand": 10.666666666666666,
+     "ctrl": 12.0,
+     "delta": -1.333333333333334,
+     "pct": -0.11111111111111116,
+     "tol": 6.928203230275509
+    },
+    "envelope_waters": {
+     "better": true,
+     "beyond_noise": false,
+     "cand": 339.3333333333333,
+     "ctrl": 346.6666666666667,
+     "delta": -7.333333333333371,
+     "pct": -0.021153846153846263,
+     "tol": 37.23797345005051
+    },
+    "gap": {
+     "better": true,
+     "beyond_noise": false,
+     "cand": 0.026530035054292078,
+     "ctrl": 0.026613312590893456,
+     "delta": -8.327753660137757e-05,
+     "z": -0.5205188702665798
+    },
+    "holton_we": {
+     "better": true,
+     "beyond_noise": true,
+     "cand": 386.386,
+     "ctrl": 449.781,
+     "delta": -63.39499999999998,
+     "pct": -0.14094637167866136,
+     "tol": 22.489050000000002
+    },
+    "peak_max": {
+     "better": true,
+     "beyond_noise": false,
+     "cand": 10.633333333333333,
+     "ctrl": 10.719999999999999,
+     "delta": -0.086666666666666,
+     "pct": -0.0080845771144278,
+     "tol": 1.0
+    },
+    "r_free": {
+     "better": false,
+     "beyond_noise": false,
+     "cand": 0.07273608954266152,
+     "ctrl": 0.07255341341056164,
+     "delta": 0.00018267613209987932,
+     "noise": 0.00015998946696923322,
+     "z": 1.141800992030362
+    },
+    "water_overlaps": {
+     "better": true,
+     "beyond_noise": false,
+     "cand": 3.0,
+     "ctrl": 5.0,
+     "delta": -2.0,
+     "pct": -0.4,
+     "tol": 4.47213595499958
+    }
+   },
+   "within_envelope": true,
+   "worse": []
+  },
+  "reasons": [
+   "all criteria met"
+  ],
+  "sanity": {
+   "clashscore": {
+    "cand": 5.84,
+    "ctrl": 8.24,
+    "tol": 1.0
+   },
+   "copy_b_outliers": {
+    "cand": 189.33333333333334,
+    "ctrl": 188.66666666666666,
+    "tol": 27.47119703738202
+   },
+   "density_flags": {
+    "cand": 23.0,
+    "ctrl": 23.333333333333332,
+    "tol": 9.66091783079296
+   },
+   "density_peaks": {
+    "cand": 10.666666666666666,
+    "ctrl": 12.0,
+    "tol": 6.928203230275509
+   },
+   "envelope_waters": {
+    "cand": 339.3333333333333,
+    "ctrl": 346.6666666666667,
+    "tol": 37.23797345005051
+   },
+   "gate": "on",
+   "holton_we": {
+    "cand": 386.386,
+    "ctrl": 449.781,
+    "repair_drop": 44.978100000000005,
+    "tol": 22.489050000000002
+   },
+   "peak_max": {
+    "cand": 10.633333333333333,
+    "ctrl": 10.719999999999999,
+    "repair_drop": 1.5,
+    "tol": 1.0
+   },
+   "water_overlaps": {
+    "cand": 3.0,
+    "ctrl": 5.0,
+    "tol": 4.47213595499958
+   }
+  },
+  "sigma": 0.00015998946696923322,
+  "verdict": "ACCEPT",
+  "z": 1.141800992030362
+ }
+}

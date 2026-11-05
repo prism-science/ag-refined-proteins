@@ -82,10 +82,11 @@
   }
  },
  "standing": {
-  "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+  "nonbonded_weight": 40.0,
+  "note": "referee: parallel round 6 accepts raced (last writer S0143 at 60); standing set to S0144's 40, the in-force model",
   "occupancies": "none",
-  "since": "S0082",
-  "utc": "2026-10-27T22:22:22Z",
+  "since": "S0144",
+  "utc": "2026-11-05T08:18:35Z",
   "wc": 0.3,
   "wu": 0.25
  },
@@ -102,6 +103,51 @@
    "occupancies": "none",
    "since": "S0082",
    "utc": "2026-10-27T22:22:22Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 60.0,
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0143",
+   "utc": "2026-11-05T08:16:10Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 40.0,
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0144",
+   "utc": "2026-11-05T08:16:28Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 25.0,
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0145",
+   "utc": "2026-11-05T08:16:31Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 30.0,
+   "note": "set by hand after S0012 was accepted before the standing-weights code existed",
+   "occupancies": "none",
+   "since": "S0146",
+   "utc": "2026-11-05T08:17:07Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 40.0,
+   "note": "referee: parallel round 6 accepts raced (last writer S0143 at 60); standing set to S0144's 40, the in-force model",
+   "occupancies": "none",
+   "since": "S0144",
+   "utc": "2026-11-05T08:18:35Z",
    "wc": 0.3,
    "wu": 0.25
   }

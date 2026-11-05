@@ -5,7 +5,7 @@ type: dataset
 authors:
   - name: "Astera Institute, autoresearch campaign"
 license: CC-BY-4.0
-date-released: "2026-11-02"
+date-released: "2026-11-05"
 repository-code: "https://github.com/prism-science/ag-refined-proteins"
 keywords:
   - crystallography
