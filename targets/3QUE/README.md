@@ -14,7 +14,7 @@
 | Deposited refinement program | REFMAC |
 | Released by the PDB | 2012-01-18 |
 | Primary citation | Skepinone-L is a selective p38 mitogen-activated protein kinase inhibitor (Nat.Chem.Biol. 2012), DOI 10.1038/nchembio.761 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0, 8C5N and 3TC7 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for 7R2H of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle T9884ae, step S0057, 2026-10-21 03:58:49 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00080 from three seeds), gap widened by at most 0.002, gap ≤ 0.1008 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

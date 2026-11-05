@@ -53,3 +53,4 @@ quality_peak_tol: 1.0       # a step may raise the tallest mFo-DFc peak by this 
 quality_peak_drop: 1.5      # a repair: the tallest peak lower by this many sigma (scripts/chain_oct29.sh, set before the fork's first step)
 quality_hole_tol: 1.0       # a step may deepen the deepest mFo-DFc point by this many sigma (scripts/chain_oct29.sh, set before the fork's first step)
 quality_hole_drop: 1.5      # a repair: the deepest point shallower by this many sigma (scripts/chain_oct29.sh, set before the fork's first step)
+sanity_clash_tol: 1.0        # a step may raise the clashscore by this much; a repair lowers it by 10 % and more than this (set before the fork's first step, 2026-11-03; the nqh flip repairs)

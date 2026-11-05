@@ -1,0 +1,4 @@
+[2026-11-03T21:45:58Z] chain_nov03b start on /home/dev/runs/hr/T5f59f1_nqh from S0074
+[2026-11-03T21:45:58Z] the first chain of /home/dev/runs/hr/T5f59f1_nqh has ended; the model in force is S0074
+waters that count 0 (own-conformer clashes 0, in another conformer's density 0; occupancy sum 0.00) | protein atoms with conformer B differing more than 3 times: 33 of 1411 | copies 6, waters 2562
+[2026-11-03T21:46:00Z] hydrogens_r from S0074

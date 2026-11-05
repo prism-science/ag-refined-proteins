@@ -14,7 +14,7 @@
 | Deposited refinement program | REFMAC |
 | Released by the PDB | 1999-05-26 |
 | Primary citation | Can anomalous signal of sulfur become a tool for solving protein crystal structures? (J.Mol.Biol. 1999), DOI 10.1006/jmbi.1999.2743 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0, 8C5N and 3TC7 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for 7R2H of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle Tee73c5, step S0073, 2026-10-20 07:22:22 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00026 from three seeds), gap widened by at most 0.002, gap ≤ 0.0714 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

@@ -1,0 +1,5342 @@
+{
+ "after": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.703,
+  "bond_rmsd": 0.019,
+  "cbeta_outliers": 0.2801,
+  "chirality_rmsd": 0.1083,
+  "clashscore": 0.78,
+  "clashscore_mmtbx": 0.776,
+  "copies": 6,
+  "copy_b_groups": 2015,
+  "copy_b_outliers": 0,
+  "density_flags": 9,
+  "density_peak_residues": [
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.47,
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "atom": "HD21/B",
+    "chain": "A",
+    "dist": 1.63,
+    "icode": "",
+    "peak": 4.61,
+    "resname": "ASN",
+    "resseq": "44"
+   },
+   {
+    "atom": "HH11/F",
+    "chain": "A",
+    "dist": 1.32,
+    "icode": "",
+    "peak": 4.52,
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "atom": "HH21/D",
+    "chain": "A",
+    "dist": 1.13,
+    "icode": "",
+    "peak": 4.49,
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "atom": "O/C",
+    "chain": "A",
+    "dist": 1.05,
+    "icode": "",
+    "peak": 4.31,
+    "resname": "ALA",
+    "resseq": "209"
+   },
+   {
+    "atom": "HD22/B",
+    "chain": "A",
+    "dist": 0.82,
+    "icode": "",
+    "peak": 4.3,
+    "resname": "LEU",
+    "resseq": "15"
+   },
+   {
+    "atom": "C/-",
+    "chain": "A",
+    "dist": 1.71,
+    "icode": "",
+    "peak": 4.2,
+    "resname": "ACY",
+    "resseq": "401"
+   },
+   {
+    "atom": "CA/D",
+    "chain": "A",
+    "dist": 0.68,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "atom": "CA/B",
+    "chain": "A",
+    "dist": 0.23,
+    "icode": "",
+    "peak": 4.18,
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "atom": "HB2/A",
+    "chain": "A",
+    "dist": 0.57,
+    "icode": "",
+    "peak": 3.71,
+    "resname": "ASP",
+    "resseq": "128"
+   },
+   {
+    "atom": "HD2/F",
+    "chain": "A",
+    "dist": 0.28,
+    "icode": "",
+    "peak": 3.64,
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.33,
+    "icode": "",
+    "peak": 3.62,
+    "resname": "SER",
+    "resseq": "83"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.25,
+    "icode": "",
+    "peak": 3.6,
+    "resname": "PHE",
+    "resseq": "72"
+   },
+   {
+    "atom": "CA/A",
+    "chain": "A",
+    "dist": 0.39,
+    "icode": "",
+    "peak": 3.57,
+    "resname": "PHE",
+    "resseq": "89"
+   }
+  ],
+  "density_peaks": 14,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.63,
+    "max_at": "SD/E",
+    "min": -2.49,
+    "min_at": "CE/E",
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.0,
+    "max_at": "CA/B",
+    "min": -0.5,
+    "min_at": "CD1/B",
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.23,
+    "max_at": "O/A",
+    "min": -3.89,
+    "min_at": "CD1/E",
+    "resname": "LEU",
+    "resseq": "17"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.82,
+    "max_at": "O/F",
+    "min": -3.79,
+    "min_at": "NH1/D",
+    "resname": "ARG",
+    "resseq": "195"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.68,
+    "max_at": "N/F",
+    "min": 0.09,
+    "min_at": "CE1/E",
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.57,
+    "max_at": "N/C",
+    "min": -3.56,
+    "min_at": "OD1/F",
+    "resname": "ASP",
+    "resseq": "183"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.54,
+    "max_at": "CG/A",
+    "min": 0.85,
+    "min_at": "CA/D",
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.52,
+    "max_at": "CA/D",
+    "min": -1.22,
+    "min_at": "CZ/D",
+    "resname": "PHE",
+    "resseq": "89"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.5,
+    "max_at": "O/A",
+    "min": -1.01,
+    "min_at": "NH1/E",
+    "resname": "ARG",
+    "resseq": "140"
+   }
+  ],
+  "dihedral_rmsd": 16.1592,
+  "envelope_a": 2.2,
+  "envelope_waters": 203,
+  "gap": 0.06229802185853832,
+  "geometry": {
+   "angle": {
+    "max": 15.1075,
+    "mean": 1.3656,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 6.2253,
+    "mean": 0.6387,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.1945,
+    "mean": 0.0134,
+    "min": 0.0,
+    "n": 24655,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 7.7811,
+    "mean": 0.59,
+    "min": 0.0,
+    "n": 24655,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.2801
+   },
+   "cablam": {
+    "ca_outliers": 0.8097,
+    "disfavored": 8.9069,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "ARG   23 ",
+       "CaBLAM Disfavored",
+       0.0441,
+       0.1408,
+       "try beta sheet",
+       0.0,
+       0.0071,
+       0.0,
+       "ERROR",
+       [
+        34.869,
+        -8.415,
+        4.346
+       ]
+      ],
+      [
+       " A",
+       "ARG   23 ",
+       "CaBLAM Disfavored",
+       0.0416,
+       0.1317,
+       "try beta sheet",
+       0.0,
+       0.0098,
+       0.0,
+       "ERROR",
+       [
+        34.759,
+        -8.343,
+        4.459
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Outlier",
+       0.0025,
+       0.1853,
+       "",
+       0.0074,
+       0.0002,
+       0.0,
+       "ERROR",
+       [
+        34.735,
+        -19.708,
+        9.576
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.027,
+       0.2663,
+       "",
+       0.0207,
+       0.0062,
+       0.0,
+       "ERROR",
+       [
+        34.647,
+        -19.591,
+        10.062
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0421,
+       0.0878,
+       "",
+       0.0034,
+       0.0107,
+       0.0,
+       "ERROR",
+       [
+        34.954,
+        -19.824,
+        9.646
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0248,
+       0.1018,
+       "try beta sheet",
+       0.0,
+       0.0185,
+       0.0,
+       "ERROR",
+       [
+        36.123,
+        -20.178,
+        9.975
+       ]
+      ],
+      [
+       " A",
+       "ARG   28 ",
+       "CaBLAM Outlier",
+       0.0018,
+       0.1237,
+       "",
+       0.0007,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        35.394,
+        -23.256,
+        8.366
+       ]
+      ],
+      [
+       " A",
+       "PRO   29 ",
+       "CaBLAM Disfavored",
+       0.0434,
+       0.4606,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        38.108,
+        -25.104,
+        6.442
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0026,
+       0.7307,
+       "",
+       0.1807,
+       0.0,
+       0.0087,
+       "ERROR",
+       [
+        14.591,
+        -21.46,
+        -16.707
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0015,
+       0.707,
+       "",
+       0.1405,
+       0.0,
+       0.0005,
+       "ERROR",
+       [
+        14.441,
+        -20.813,
+        -17.083
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0003,
+       0.7055,
+       "",
+       0.1419,
+       0.0,
+       0.0024,
+       "ERROR",
+       [
+        14.702,
+        -21.271,
+        -16.776
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.0129,
+       0.5935,
+       "",
+       0.101,
+       0.0,
+       0.0007,
+       "ERROR",
+       [
+        14.578,
+        -21.405,
+        -16.681
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.033,
+       0.7313,
+       "",
+       0.1708,
+       0.0,
+       0.0069,
+       "ERROR",
+       [
+        14.498,
+        -21.539,
+        -16.76
+       ]
+      ],
+      [
+       " A",
+       "LEU   60 ",
+       "CaBLAM Disfavored",
+       0.0375,
+       0.0339,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.151,
+        -20.26,
+        -11.213
+       ]
+      ],
+      [
+       " A",
+       "GLU   63 ",
+       "CaBLAM Disfavored",
+       0.0374,
+       0.1615,
+       "try beta sheet",
+       0.0,
+       0.0297,
+       0.0,
+       "ERROR",
+       [
+        10.399,
+        -18.768,
+        -1.52
+       ]
+      ],
+      [
+       " A",
+       "ARG   64 ",
+       "CaBLAM Outlier",
+       0.0006,
+       0.1202,
+       "try beta sheet",
+       0.0,
+       0.0035,
+       0.0,
+       "ERROR",
+       [
+        11.254,
+        -21.623,
+        0.872
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Disfavored",
+       0.0202,
+       0.1034,
+       "",
+       0.0072,
+       0.0,
+       0.0069,
+       "ERROR",
+       [
+        21.806,
+        -36.741,
+        1.229
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Outlier",
+       0.0071,
+       0.0114,
+       "",
+       0.001,
+       0.0,
+       0.0077,
+       "ERROR",
+       [
+        21.789,
+        -36.964,
+        0.919
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Disfavored",
+       0.0459,
+       0.0495,
+       "",
+       0.0031,
+       0.0,
+       0.0077,
+       "ERROR",
+       [
+        21.789,
+        -37.21,
+        0.798
+       ]
+      ],
+      [
+       " A",
+       "VAL   78 ",
+       "CaBLAM Disfavored",
+       0.0438,
+       0.0399,
+       "",
+       0.0004,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        27.443,
+        -34.855,
+        -1.937
+       ]
+      ],
+      [
+       " A",
+       "SER  104 ",
+       "CaBLAM Disfavored",
+       0.0232,
+       0.1236,
+       "",
+       0.0,
+       0.0013,
+       0.0,
+       "ERROR",
+       [
+        29.296,
+        -29.133,
+        6.888
+       ]
+      ],
+      [
+       " A",
+       "TYR  110 ",
+       "CaBLAM Disfavored",
+       0.0481,
+       0.0936,
+       "try beta sheet",
+       0.0,
+       0.0103,
+       0.0,
+       "ERROR",
+       [
+        27.329,
+        -20.278,
+        -8.422
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Disfavored",
+       0.0115,
+       0.0739,
+       "try beta sheet",
+       0.0,
+       0.0084,
+       0.0,
+       "ERROR",
+       [
+        29.029,
+        -15.052,
+        -12.971
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Disfavored",
+       0.0457,
+       0.0332,
+       "try beta sheet",
+       0.0,
+       0.0084,
+       0.0,
+       "ERROR",
+       [
+        28.991,
+        -15.053,
+        -12.958
+       ]
+      ],
+      [
+       " A",
+       "GLU  155 ",
+       "CaBLAM Disfavored",
+       0.0404,
+       0.5206,
+       "try beta sheet",
+       0.0,
+       0.0807,
+       0.0,
+       "ERROR",
+       [
+        39.372,
+        -26.423,
+        -7.254
+       ]
+      ],
+      [
+       " A",
+       "ALA  174 ",
+       "CaBLAM Disfavored",
+       0.0112,
+       0.5965,
+       "try beta sheet",
+       0.0,
+       0.4638,
+       0.0,
+       "ERROR",
+       [
+        40.909,
+        -28.018,
+        -15.584
+       ]
+      ],
+      [
+       " A",
+       "ALA  181 ",
+       "CaBLAM Disfavored",
+       0.0499,
+       0.1733,
+       "try beta sheet",
+       0.0,
+       0.0106,
+       0.0,
+       "ERROR",
+       [
+        22.995,
+        -29.489,
+        -21.463
+       ]
+      ],
+      [
+       " A",
+       "THR  186 ",
+       "CaBLAM Disfavored",
+       0.0496,
+       0.3157,
+       "",
+       0.0352,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        17.374,
+        -19.851,
+        -25.565
+       ]
+      ],
+      [
+       " A",
+       "ASN  204 ",
+       "CaBLAM Disfavored",
+       0.022,
+       0.5402,
+       "",
+       0.0005,
+       0.0,
+       0.2747,
+       "ERROR",
+       [
+        41.441,
+        -37.796,
+        -14.807
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.1068,
+       0.0011,
+       "",
+       0.0,
+       0.0,
+       0.0042,
+       "ERROR",
+       [
+        21.117,
+        -30.011,
+        -15.602
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.1137,
+       0.0048,
+       "",
+       0.0071,
+       0.0,
+       0.0055,
+       "ERROR",
+       [
+        20.637,
+        -30.13,
+        -16.314
+       ]
+      ],
+      [
+       " A",
+       "GLY  212 ",
+       "CaBLAM Disfavored",
+       0.033,
+       0.0922,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        19.014,
+        -32.588,
+        -17.399
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0325,
+       0.031,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.91,
+        -34.995,
+        -14.616
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Outlier",
+       0.0091,
+       0.0441,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.889,
+        -35.647,
+        -15.252
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CA Geom Outlier",
+       0.0206,
+       0.0033,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.733,
+        -35.147,
+        -14.627
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0173,
+       0.0126,
+       "",
+       0.0,
+       0.0001,
+       0.0,
+       "ERROR",
+       [
+        18.648,
+        -35.13,
+        -14.666
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0207,
+       0.0129,
+       "",
+       0.0,
+       0.0004,
+       0.0,
+       "ERROR",
+       [
+        18.745,
+        -34.91,
+        -14.826
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0154,
+       0.0124,
+       "",
+       0.0264,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.561,
+        -36.911,
+        -13.403
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0383,
+       0.0093,
+       "",
+       0.0185,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.611,
+        -36.461,
+        -13.258
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Disfavored",
+       0.0256,
+       0.0176,
+       "",
+       0.017,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.368,
+        -27.849,
+        -8.935
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Disfavored",
+       0.0299,
+       0.0204,
+       "",
+       0.0144,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.406,
+        -27.989,
+        -8.782
+       ]
+      ]
+     ]
+    },
+    "outliers": 2.4291
+   },
+   "chirality": {
+    "max": 1.0054,
+    "mean": 0.1083,
+    "min": 0.0,
+    "n": 1878,
+    "outliers": [
+     [
+      13965,
+      13964,
+      13966,
+      13967
+     ],
+     [
+      1579,
+      1578,
+      1580,
+      1581
+     ]
+    ]
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 0.776
+   },
+   "dihedral": {
+    "max": 89.7826,
+    "mean": 16.1592,
+    "min": 0.0001,
+    "n": 8515,
+    "outliers": [
+     [
+      5068,
+      5069,
+      5175,
+      5176
+     ],
+     [
+      2233,
+      2234,
+      2348,
+      2349
+     ],
+     [
+      5053,
+      5054,
+      5154,
+      5155
+     ],
+     [
+      20674,
+      20675,
+      20751,
+      20752
+     ],
+     [
+      24193,
+      24194,
+      24258,
+      24259
+     ],
+     [
+      7904,
+      7905,
+      8018,
+      8019
+     ],
+     [
+      5098,
+      5099,
+      5217,
+      5218
+     ],
+     [
+      17005,
+      17006,
+      17148,
+      17149
+     ],
+     [
+      2209,
+      2210,
+      2338,
+      2339
+     ],
+     [
+      12669,
+      12670,
+      12752,
+      12753
+     ],
+     [
+      5515,
+      5516,
+      5646,
+      5647
+     ],
+     [
+      2281,
+      2282,
+      2368,
+      2369
+     ],
+     [
+      12637,
+      12638,
+      12732,
+      12733
+     ],
+     [
+      19909,
+      19910,
+      19998,
+      19999
+     ],
+     [
+      8098,
+      8100,
+      8099,
+      8102
+     ],
+     [
+      16809,
+      16807,
+      16808,
+      16811
+     ],
+     [
+      1096,
+      1094,
+      1095,
+      1098
+     ]
+    ]
+   },
+   "molprobity_score": 1.4024,
+   "nonbonded": {
+    "max": 4.8,
+    "mean": 3.901,
+    "min": 1.3561,
+    "n": 496928
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.1758,
+    "mean": 0.0139,
+    "min": 0.0,
+    "n": 3577,
+    "protein_planes_max_dev": [],
+    "protein_planes_max_dev_noH": []
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 4.0161,
+    "favored": 95.5823,
+    "outliers": 0.4016,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 7.8387,
+    "favored": 89.2694,
+    "outliers": 2.8919,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 29.5936,
+   "Cl": 3.47,
+   "Mp": 1.8,
+   "Rf": 15.53,
+   "Rw": 9.3,
+   "ang": null,
+   "avangle": 0.86481,
+   "avbond": 0.698489,
+   "avchir": 0.293461,
+   "avnb": 2.02318,
+   "avomega": 3.06331,
+   "avplane": 0.256345,
+   "avrama": 0.710567,
+   "avrot": 2.4148,
+   "avtor": 1.43316,
+   "bond": null,
+   "chir": null,
+   "energy": 321.546,
+   "nb_e": 164.315,
+   "om": 26.69,
+   "ra": 99.0,
+   "ro": 99.0,
+   "score": 367.311,
+   "vdw": 0.0,
+   "wang": 38.8,
+   "wbond": 60.5,
+   "wchir": 25.3,
+   "wdihe": 28.5,
+   "wplane": 62.41
+  },
+  "holton_score": 367.311,
+  "holton_we": 321.546,
+  "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/cand_s2.pdb",
+  "n_anisou": 12109,
+  "n_atoms": 25841,
+  "n_free": 2075,
+  "n_h": 12375,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 1357,
+  "n_water_iso": 1357,
+  "n_work": 38197,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "peak_max": 5.66,
+  "peak_min": -4.58,
+  "planarity_rmsd": 0.0139,
+  "r_free": 0.15525869983433846,
+  "r_free_report": 0.1513011386394192,
+  "r_free_select": 0.1593384904852087,
+  "r_work": 0.09296067797580014,
+  "rama_favored_pct": 95.5823,
+  "rama_n_outliers": 1,
+  "rama_n_residues": 249,
+  "rama_outliers_pct": 0.4016,
+  "rota_n_outliers": 38,
+  "rota_n_residues": 1315,
+  "rota_pct": 2.89,
+  "rota_pct_mmtbx": 2.8919,
+  "scored_utc": "2026-11-03T07:52:30Z",
+  "sha256": "eb491262f0820fdc92c02b5f2e986f7a92e253a9c27050a025831434172e7af2",
+  "water_clashes": 0,
+  "water_in_density": 89,
+  "water_occ_sum": 458.63,
+  "water_overlap_occ": 38.32,
+  "water_overlaps": 89
+ },
+ "before": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.627,
+  "bond_rmsd": 0.018,
+  "cbeta_outliers": 0.3501,
+  "chirality_rmsd": 0.1043,
+  "clashscore": 3.51,
+  "clashscore_mmtbx": 3.5125,
+  "copies": 6,
+  "copy_b_groups": 2015,
+  "copy_b_outliers": 0,
+  "density_flags": 12,
+  "density_peak_residues": [
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.5,
+    "icode": "",
+    "peak": 5.54,
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "atom": "HD21/B",
+    "chain": "A",
+    "dist": 1.55,
+    "icode": "",
+    "peak": 5.39,
+    "resname": "ASN",
+    "resseq": "44"
+   },
+   {
+    "atom": "HD22/B",
+    "chain": "A",
+    "dist": 0.86,
+    "icode": "",
+    "peak": 5.33,
+    "resname": "LEU",
+    "resseq": "15"
+   },
+   {
+    "atom": "HH11/F",
+    "chain": "A",
+    "dist": 1.24,
+    "icode": "",
+    "peak": 5.23,
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "atom": "C/-",
+    "chain": "A",
+    "dist": 1.7,
+    "icode": "",
+    "peak": 4.82,
+    "resname": "ACY",
+    "resseq": "401"
+   },
+   {
+    "atom": "CE/B",
+    "chain": "A",
+    "dist": 0.55,
+    "icode": "",
+    "peak": 4.49,
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "atom": "HH21/D",
+    "chain": "A",
+    "dist": 0.85,
+    "icode": "",
+    "peak": 4.28,
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "atom": "HD2/F",
+    "chain": "A",
+    "dist": 0.26,
+    "icode": "",
+    "peak": 4.22,
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "atom": "O/C",
+    "chain": "A",
+    "dist": 1.01,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "ALA",
+    "resseq": "209"
+   },
+   {
+    "atom": "N/E",
+    "chain": "A",
+    "dist": 0.63,
+    "icode": "",
+    "peak": 4.14,
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "atom": "HE3/B",
+    "chain": "A",
+    "dist": 1.79,
+    "icode": "",
+    "peak": 4.04,
+    "resname": "LYS",
+    "resseq": "196"
+   },
+   {
+    "atom": "CA/B",
+    "chain": "A",
+    "dist": 0.27,
+    "icode": "",
+    "peak": 4.01,
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "atom": "O/A",
+    "chain": "A",
+    "dist": 0.08,
+    "icode": "",
+    "peak": 3.78,
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "atom": "CA/F",
+    "chain": "A",
+    "dist": 0.31,
+    "icode": "",
+    "peak": 3.73,
+    "resname": "PHE",
+    "resseq": "89"
+   },
+   {
+    "atom": "CG/F",
+    "chain": "A",
+    "dist": 0.19,
+    "icode": "",
+    "peak": 3.72,
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.22,
+    "icode": "",
+    "peak": 3.69,
+    "resname": "SER",
+    "resseq": "83"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.18,
+    "icode": "",
+    "peak": 3.68,
+    "resname": "PHE",
+    "resseq": "72"
+   },
+   {
+    "atom": "CA/A",
+    "chain": "A",
+    "dist": 0.65,
+    "icode": "",
+    "peak": 3.53,
+    "resname": "MSE",
+    "resseq": "109"
+   }
+  ],
+  "density_peaks": 18,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.71,
+    "max_at": "SD/E",
+    "min": -2.78,
+    "min_at": "CE/E",
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.38,
+    "max_at": "O/A",
+    "min": -4.41,
+    "min_at": "CD1/E",
+    "resname": "LEU",
+    "resseq": "17"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.13,
+    "max_at": "N/F",
+    "min": -0.28,
+    "min_at": "CE1/E",
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.87,
+    "max_at": "CG/C",
+    "min": 1.09,
+    "min_at": "CA/D",
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.78,
+    "max_at": "O/F",
+    "min": -3.86,
+    "min_at": "NH1/D",
+    "resname": "ARG",
+    "resseq": "195"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.85,
+    "max_at": "CA/B",
+    "min": -0.69,
+    "min_at": "CD1/B",
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.81,
+    "max_at": "CG/D",
+    "min": -3.83,
+    "min_at": "OD1/B",
+    "resname": "ASN",
+    "resseq": "44"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.81,
+    "max_at": "O/F",
+    "min": -1.02,
+    "min_at": "CD/A",
+    "resname": "ARG",
+    "resseq": "140"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.76,
+    "max_at": "CA/E",
+    "min": -1.1,
+    "min_at": "CZ/D",
+    "resname": "PHE",
+    "resseq": "89"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.17,
+    "max_at": "CB/D",
+    "min": -3.67,
+    "min_at": "CZ/C",
+    "resname": "ARG",
+    "resseq": "3"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.65,
+    "max_at": "CE/B",
+    "min": -3.25,
+    "min_at": "CE/F",
+    "resname": "LYS",
+    "resseq": "6"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.54,
+    "max_at": "NH2/A",
+    "min": -2.29,
+    "min_at": "CZ/F",
+    "resname": "ARG",
+    "resseq": "216"
+   }
+  ],
+  "dihedral_rmsd": 15.8608,
+  "envelope_a": 2.2,
+  "envelope_waters": 212,
+  "gap": 0.06246140751219527,
+  "geometry": {
+   "angle": {
+    "max": 14.7634,
+    "mean": 1.3103,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "angle_z": {
+    "max": 6.4229,
+    "mean": 0.6109,
+    "min": 0.0,
+    "n": 44739,
+    "outliers": []
+   },
+   "bond": {
+    "max": 0.1762,
+    "mean": 0.0128,
+    "min": 0.0,
+    "n": 24655,
+    "outliers": []
+   },
+   "bond_z": {
+    "max": 7.0474,
+    "mean": 0.561,
+    "min": 0.0,
+    "n": 24655,
+    "outliers": []
+   },
+   "c_beta": {
+    "cbetadev": "ERROR",
+    "outliers": 0.3501
+   },
+   "cablam": {
+    "ca_outliers": 0.8097,
+    "disfavored": 8.502,
+    "gui_table": {
+     "column_formats": [
+      "%s",
+      "%s",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%s",
+      "%.5f",
+      "%.5f",
+      "%.5f"
+     ],
+     "column_labels": [
+      "Chain",
+      "Residue",
+      "Evaluation",
+      "CaBLAM Score",
+      "CA Geometry Score",
+      "Secondary Structure",
+      "Helix Score",
+      "Beta Score",
+      "3-10 Score"
+     ],
+     "column_widths": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "data": [
+      [
+       " A",
+       "ARG   23 ",
+       "CaBLAM Disfavored",
+       0.0471,
+       0.1444,
+       "try beta sheet",
+       0.0,
+       0.0063,
+       0.0,
+       "ERROR",
+       [
+        34.894,
+        -8.381,
+        4.359
+       ]
+      ],
+      [
+       " A",
+       "ARG   23 ",
+       "CaBLAM Disfavored",
+       0.0448,
+       0.1367,
+       "try beta sheet",
+       0.0,
+       0.0105,
+       0.0,
+       "ERROR",
+       [
+        34.737,
+        -8.383,
+        4.44
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Outlier",
+       0.0028,
+       0.2027,
+       "",
+       0.0113,
+       0.0004,
+       0.0,
+       "ERROR",
+       [
+        34.77,
+        -19.715,
+        9.615
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0342,
+       0.2676,
+       "",
+       0.0229,
+       0.006,
+       0.0,
+       "ERROR",
+       [
+        34.586,
+        -19.556,
+        10.0
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.0466,
+       0.0884,
+       "",
+       0.0037,
+       0.0105,
+       0.0,
+       "ERROR",
+       [
+        34.955,
+        -19.816,
+        9.634
+       ]
+      ],
+      [
+       " A",
+       "GLN   27 ",
+       "CaBLAM Disfavored",
+       0.027,
+       0.1029,
+       "try beta sheet",
+       0.0,
+       0.0184,
+       0.0,
+       "ERROR",
+       [
+        36.072,
+        -20.164,
+        9.978
+       ]
+      ],
+      [
+       " A",
+       "ARG   28 ",
+       "CaBLAM Outlier",
+       0.0023,
+       0.1194,
+       "",
+       0.0007,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        35.394,
+        -23.249,
+        8.347
+       ]
+      ],
+      [
+       " A",
+       "PRO   29 ",
+       "CaBLAM Disfavored",
+       0.0399,
+       0.4766,
+       "",
+       0.0,
+       0.0002,
+       0.0,
+       "ERROR",
+       [
+        38.064,
+        -25.145,
+        6.445
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0024,
+       0.7259,
+       "",
+       0.1622,
+       0.0,
+       0.0083,
+       "ERROR",
+       [
+        14.6,
+        -21.462,
+        -16.741
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0019,
+       0.7072,
+       "",
+       0.1391,
+       0.0,
+       0.0003,
+       "ERROR",
+       [
+        14.435,
+        -20.812,
+        -17.086
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Outlier",
+       0.0003,
+       0.6656,
+       "",
+       0.1152,
+       0.0,
+       0.0014,
+       "ERROR",
+       [
+        14.682,
+        -21.258,
+        -16.745
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.0125,
+       0.6098,
+       "",
+       0.1109,
+       0.0,
+       0.0011,
+       "ERROR",
+       [
+        14.6,
+        -21.417,
+        -16.65
+       ]
+      ],
+      [
+       " A",
+       "SER   58 ",
+       "CaBLAM Disfavored",
+       0.03,
+       0.7304,
+       "try alpha helix",
+       0.1697,
+       0.0,
+       0.0068,
+       "ERROR",
+       [
+        14.508,
+        -21.518,
+        -16.754
+       ]
+      ],
+      [
+       " A",
+       "LEU   60 ",
+       "CaBLAM Disfavored",
+       0.0421,
+       0.0413,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        10.14,
+        -20.319,
+        -11.198
+       ]
+      ],
+      [
+       " A",
+       "GLU   63 ",
+       "CaBLAM Disfavored",
+       0.0377,
+       0.163,
+       "try beta sheet",
+       0.0,
+       0.0258,
+       0.0,
+       "ERROR",
+       [
+        10.356,
+        -18.758,
+        -1.513
+       ]
+      ],
+      [
+       " A",
+       "ARG   64 ",
+       "CaBLAM Outlier",
+       0.0006,
+       0.1208,
+       "try beta sheet",
+       0.0,
+       0.0036,
+       0.0,
+       "ERROR",
+       [
+        11.255,
+        -21.625,
+        0.871
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Disfavored",
+       0.0205,
+       0.1005,
+       "",
+       0.0072,
+       0.0,
+       0.007,
+       "ERROR",
+       [
+        21.832,
+        -36.782,
+        1.236
+       ]
+      ],
+      [
+       " A",
+       "TYR   76 ",
+       "CaBLAM Outlier",
+       0.0068,
+       0.0115,
+       "",
+       0.0009,
+       0.0,
+       0.0073,
+       "ERROR",
+       [
+        21.797,
+        -36.967,
+        0.925
+       ]
+      ],
+      [
+       " A",
+       "VAL   78 ",
+       "CaBLAM Disfavored",
+       0.0474,
+       0.042,
+       "",
+       0.0004,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        27.425,
+        -34.864,
+        -1.947
+       ]
+      ],
+      [
+       " A",
+       "THR   84 ",
+       "CaBLAM Disfavored",
+       0.0409,
+       0.1479,
+       "try beta sheet",
+       0.0,
+       0.0303,
+       0.0,
+       "ERROR",
+       [
+        24.331,
+        -15.619,
+        -5.47
+       ]
+      ],
+      [
+       " A",
+       "SER  104 ",
+       "CaBLAM Disfavored",
+       0.048,
+       0.1485,
+       "",
+       0.0,
+       0.0072,
+       0.0,
+       "ERROR",
+       [
+        29.383,
+        -29.231,
+        6.971
+       ]
+      ],
+      [
+       " A",
+       "SER  104 ",
+       "CaBLAM Disfavored",
+       0.022,
+       0.1167,
+       "",
+       0.0,
+       0.0013,
+       0.0,
+       "ERROR",
+       [
+        29.284,
+        -29.151,
+        6.886
+       ]
+      ],
+      [
+       " A",
+       "ILE  105 ",
+       "CaBLAM Disfavored",
+       0.0496,
+       0.0499,
+       "try beta sheet",
+       0.0,
+       0.0092,
+       0.0,
+       "ERROR",
+       [
+        29.666,
+        -30.551,
+        3.56
+       ]
+      ],
+      [
+       " A",
+       "PHE  112 ",
+       "CaBLAM Disfavored",
+       0.0106,
+       0.0805,
+       "try beta sheet",
+       0.0,
+       0.0086,
+       0.0,
+       "ERROR",
+       [
+        29.029,
+        -15.06,
+        -12.968
+       ]
+      ],
+      [
+       " A",
+       "GLU  155 ",
+       "CaBLAM Disfavored",
+       0.0429,
+       0.5244,
+       "try beta sheet",
+       0.0,
+       0.0804,
+       0.0,
+       "ERROR",
+       [
+        39.388,
+        -26.401,
+        -7.253
+       ]
+      ],
+      [
+       " A",
+       "ALA  174 ",
+       "CaBLAM Disfavored",
+       0.0139,
+       0.5806,
+       "try beta sheet",
+       0.0,
+       0.4253,
+       0.0,
+       "ERROR",
+       [
+        40.913,
+        -28.026,
+        -15.582
+       ]
+      ],
+      [
+       " A",
+       "ASN  204 ",
+       "CaBLAM Disfavored",
+       0.0191,
+       0.5379,
+       "",
+       0.0005,
+       0.0,
+       0.2007,
+       "ERROR",
+       [
+        41.435,
+        -37.824,
+        -14.785
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.1127,
+       0.0012,
+       "",
+       0.0001,
+       0.0,
+       0.006,
+       "ERROR",
+       [
+        21.111,
+        -30.012,
+        -15.622
+       ]
+      ],
+      [
+       " A",
+       "GLU  211 ",
+       "CA Geom Outlier",
+       0.1175,
+       0.0044,
+       "",
+       0.0077,
+       0.0,
+       0.0051,
+       "ERROR",
+       [
+        20.657,
+        -30.138,
+        -16.344
+       ]
+      ],
+      [
+       " A",
+       "GLY  212 ",
+       "CaBLAM Disfavored",
+       0.0296,
+       0.0939,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        19.042,
+        -32.65,
+        -17.395
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0332,
+       0.0292,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.894,
+        -34.966,
+        -14.606
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Outlier",
+       0.009,
+       0.0437,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.9,
+        -35.683,
+        -15.235
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.049,
+       0.0525,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.875,
+        -35.225,
+        -15.393
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CA Geom Outlier",
+       0.02,
+       0.0036,
+       "",
+       0.0,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.764,
+        -35.155,
+        -14.581
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0184,
+       0.0128,
+       "",
+       0.0,
+       0.0002,
+       0.0,
+       "ERROR",
+       [
+        18.619,
+        -35.138,
+        -14.703
+       ]
+      ],
+      [
+       " A",
+       "ILE  213 ",
+       "CaBLAM Disfavored",
+       0.0236,
+       0.014,
+       "",
+       0.0,
+       0.0003,
+       0.0,
+       "ERROR",
+       [
+        18.76,
+        -34.946,
+        -14.843
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0426,
+       0.0383,
+       "",
+       0.0217,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.681,
+        -36.142,
+        -13.557
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0109,
+       0.0133,
+       "",
+       0.0252,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.575,
+        -36.877,
+        -13.383
+       ]
+      ],
+      [
+       " A",
+       "SER  214 ",
+       "CaBLAM Disfavored",
+       0.0362,
+       0.0105,
+       "",
+       0.0158,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        15.607,
+        -36.484,
+        -13.287
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Disfavored",
+       0.0208,
+       0.0166,
+       "",
+       0.0183,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.346,
+        -27.822,
+        -8.923
+       ]
+      ],
+      [
+       " A",
+       "GLY  233 ",
+       "CaBLAM Disfavored",
+       0.0159,
+       0.0179,
+       "",
+       0.0181,
+       0.0,
+       0.0,
+       "ERROR",
+       [
+        18.392,
+        -27.957,
+        -8.738
+       ]
+      ]
+     ]
+    },
+    "outliers": 2.4291
+   },
+   "chirality": {
+    "max": 0.9043,
+    "mean": 0.1043,
+    "min": 0.0001,
+    "n": 1878,
+    "outliers": [
+     [
+      13965,
+      13964,
+      13966,
+      13967
+     ],
+     [
+      1579,
+      1578,
+      1580,
+      1581
+     ]
+    ]
+   },
+   "clash": {
+    "clashes": "ERROR",
+    "score": 3.5125
+   },
+   "dihedral": {
+    "max": 89.8356,
+    "mean": 15.8608,
+    "min": 0.0001,
+    "n": 8515,
+    "outliers": [
+     [
+      5068,
+      5069,
+      5175,
+      5176
+     ],
+     [
+      2233,
+      2234,
+      2348,
+      2349
+     ],
+     [
+      5053,
+      5054,
+      5154,
+      5155
+     ],
+     [
+      20674,
+      20675,
+      20751,
+      20752
+     ],
+     [
+      5515,
+      5516,
+      5646,
+      5647
+     ],
+     [
+      17005,
+      17006,
+      17148,
+      17149
+     ],
+     [
+      2209,
+      2210,
+      2338,
+      2339
+     ],
+     [
+      5098,
+      5099,
+      5217,
+      5218
+     ],
+     [
+      24193,
+      24194,
+      24258,
+      24259
+     ],
+     [
+      12669,
+      12670,
+      12752,
+      12753
+     ],
+     [
+      7904,
+      7905,
+      8018,
+      8019
+     ],
+     [
+      12637,
+      12638,
+      12732,
+      12733
+     ],
+     [
+      19909,
+      19910,
+      19998,
+      19999
+     ],
+     [
+      1096,
+      1094,
+      1095,
+      1098
+     ]
+    ]
+   },
+   "molprobity_score": 1.8524,
+   "nonbonded": {
+    "max": 4.8,
+    "mean": 3.9005,
+    "min": 1.3114,
+    "n": 497316
+   },
+   "omega": {
+    "cis_general": 0.0,
+    "cis_proline": 0.0,
+    "n_twisted_general": 0,
+    "omegalyze": "ERROR",
+    "twisted_general": 0.0,
+    "twisted_proline": 0.0
+   },
+   "parallelity": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0,
+    "n": 0
+   },
+   "planarity": {
+    "max": 0.1682,
+    "mean": 0.0133,
+    "min": 0.0,
+    "n": 3577,
+    "protein_planes_max_dev": [],
+    "protein_planes_max_dev_noH": []
+   },
+   "rama_z": "ERROR",
+   "ramachandran": {
+    "allowed": 4.4177,
+    "favored": 95.1807,
+    "outliers": 0.4016,
+    "ramalyze": "ERROR"
+   },
+   "rotamer": {
+    "allowed": 7.6104,
+    "favored": 89.2694,
+    "outliers": 3.1202,
+    "rotalyze": "ERROR"
+   }
+  },
+  "holton": {
+   "CB": 29.5936,
+   "Cl": 6.42,
+   "Mp": 2.06,
+   "Rf": 15.21,
+   "Rw": 8.96,
+   "ang": null,
+   "avangle": 0.787532,
+   "avbond": 0.63138,
+   "avchir": 0.272172,
+   "avnb": 2.1608,
+   "avomega": 2.92279,
+   "avplane": 0.227726,
+   "avrama": 0.647021,
+   "avrot": 2.19964,
+   "avtor": 1.37872,
+   "bond": null,
+   "chir": null,
+   "energy": 454.601,
+   "nb_e": 251.582,
+   "om": 26.59,
+   "ra": 7.56835,
+   "ro": 99.0,
+   "score": 498.227,
+   "vdw": 0.0,
+   "wang": 41.3,
+   "wbond": 49.7,
+   "wchir": 20.4,
+   "wdihe": 28.3,
+   "wplane": 66.4225
+  },
+  "holton_score": 498.227,
+  "holton_we": 454.601,
+  "model": "/home/dev/runs/hr/T431c8e_nqh/trajectory/S0116/model.pdb",
+  "n_anisou": 12109,
+  "n_atoms": 25841,
+  "n_free": 2075,
+  "n_h": 12375,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 1357,
+  "n_water_iso": 1357,
+  "n_work": 38197,
+  "omega_cis_general": 0.0,
+  "omega_cis_proline": 0.0,
+  "omega_twisted_general": 0.0,
+  "peak_max": 6.35,
+  "peak_min": -4.85,
+  "planarity_rmsd": 0.0133,
+  "r_free": 0.1520872164430499,
+  "r_free_report": 0.14872384544689646,
+  "r_free_select": 0.1555544653040733,
+  "r_work": 0.08962580893085463,
+  "rama_favored_pct": 95.1807,
+  "rama_n_outliers": 1,
+  "rama_n_residues": 249,
+  "rama_outliers_pct": 0.4016,
+  "rota_n_outliers": 41,
+  "rota_n_residues": 1314,
+  "rota_pct": 3.12,
+  "rota_pct_mmtbx": 3.1202,
+  "scored_utc": "2026-11-03T03:02:27Z",
+  "sha256": "f2f2f2b87510c92b2fbd42fb9c2ed2ce0dae8f37bcd07a5388f204b27b52a26c",
+  "water_clashes": 1,
+  "water_in_density": 103,
+  "water_occ_sum": 522.16,
+  "water_overlap_occ": 46.54,
+  "water_overlaps": 104
+ },
+ "cand": [
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.711,
+   "bond_rmsd": 0.019,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 8,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.5,
+     "icode": "",
+     "peak": 5.41,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.6,
+     "icode": "",
+     "peak": 4.55,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "HH21/D",
+     "chain": "A",
+     "dist": 1.1,
+     "icode": "",
+     "peak": 4.46,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "HH11/F",
+     "chain": "A",
+     "dist": 1.37,
+     "icode": "",
+     "peak": 4.45,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.09,
+     "icode": "",
+     "peak": 4.26,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.81,
+     "icode": "",
+     "peak": 4.25,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "CA/D",
+     "chain": "A",
+     "dist": 0.67,
+     "icode": "",
+     "peak": 4.18,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.7,
+     "icode": "",
+     "peak": 4.18,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CA/D",
+     "chain": "A",
+     "dist": 0.22,
+     "icode": "",
+     "peak": 4.16,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.36,
+     "icode": "",
+     "peak": 3.67,
+     "resname": "PHE",
+     "resseq": "72"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.57,
+     "icode": "",
+     "peak": 3.64,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.32,
+     "icode": "",
+     "peak": 3.58,
+     "resname": "SER",
+     "resseq": "83"
+    }
+   ],
+   "density_peaks": 12,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.55,
+     "max_at": "SD/E",
+     "min": -2.47,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.98,
+     "max_at": "CA/B",
+     "min": -0.48,
+     "min_at": "CD1/B",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.24,
+     "max_at": "O/A",
+     "min": -3.8,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.74,
+     "max_at": "O/F",
+     "min": -3.75,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.68,
+     "max_at": "CA/D",
+     "min": 0.12,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.59,
+     "max_at": "CG/A",
+     "min": 0.9,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.52,
+     "max_at": "N/C",
+     "min": -3.55,
+     "min_at": "OD1/F",
+     "resname": "ASP",
+     "resseq": "183"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.51,
+     "max_at": "CA/E",
+     "min": -1.21,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 203,
+   "gap": 0.06231036135862186,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/cand_s1.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 5.6,
+   "peak_min": -4.58,
+   "r_free": 0.15526062844819996,
+   "r_free_report": 0.15134978565791263,
+   "r_free_select": 0.1592922577944048,
+   "r_work": 0.0929502670895781,
+   "scored_utc": "2026-11-03T07:52:06Z",
+   "seed": 1,
+   "sha256": "9beece677e2e4fe7485b630b70107a7ba92b82048754ebaac0e33e5f4e5c956b",
+   "water_clashes": 0,
+   "water_in_density": 88,
+   "water_occ_sum": 452.9,
+   "water_overlap_occ": 38.11,
+   "water_overlaps": 88
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.703,
+   "bond_rmsd": 0.019,
+   "clashscore": 0.78,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 9,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.49,
+     "icode": "",
+     "peak": 5.47,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.63,
+     "icode": "",
+     "peak": 4.61,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "HH11/F",
+     "chain": "A",
+     "dist": 1.32,
+     "icode": "",
+     "peak": 4.52,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "HH21/D",
+     "chain": "A",
+     "dist": 1.13,
+     "icode": "",
+     "peak": 4.49,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.05,
+     "icode": "",
+     "peak": 4.31,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.82,
+     "icode": "",
+     "peak": 4.3,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.71,
+     "icode": "",
+     "peak": 4.2,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CA/D",
+     "chain": "A",
+     "dist": 0.68,
+     "icode": "",
+     "peak": 4.19,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.23,
+     "icode": "",
+     "peak": 4.18,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.57,
+     "icode": "",
+     "peak": 3.71,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "HD2/F",
+     "chain": "A",
+     "dist": 0.28,
+     "icode": "",
+     "peak": 3.64,
+     "resname": "ARG",
+     "resseq": "175"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.33,
+     "icode": "",
+     "peak": 3.62,
+     "resname": "SER",
+     "resseq": "83"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.25,
+     "icode": "",
+     "peak": 3.6,
+     "resname": "PHE",
+     "resseq": "72"
+    },
+    {
+     "atom": "CA/A",
+     "chain": "A",
+     "dist": 0.39,
+     "icode": "",
+     "peak": 3.57,
+     "resname": "PHE",
+     "resseq": "89"
+    }
+   ],
+   "density_peaks": 14,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.63,
+     "max_at": "SD/E",
+     "min": -2.49,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.0,
+     "max_at": "CA/B",
+     "min": -0.5,
+     "min_at": "CD1/B",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.23,
+     "max_at": "O/A",
+     "min": -3.89,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.82,
+     "max_at": "O/F",
+     "min": -3.79,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.68,
+     "max_at": "N/F",
+     "min": 0.09,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.57,
+     "max_at": "N/C",
+     "min": -3.56,
+     "min_at": "OD1/F",
+     "resname": "ASP",
+     "resseq": "183"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.54,
+     "max_at": "CG/A",
+     "min": 0.85,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.52,
+     "max_at": "CA/D",
+     "min": -1.22,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.5,
+     "max_at": "O/A",
+     "min": -1.01,
+     "min_at": "NH1/E",
+     "resname": "ARG",
+     "resseq": "140"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 203,
+   "gap": 0.06229802185853832,
+   "holton_we": 321.546,
+   "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/cand_s2.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 5.66,
+   "peak_min": -4.58,
+   "r_free": 0.15525869983433846,
+   "r_free_report": 0.1513011386394192,
+   "r_free_select": 0.1593384904852087,
+   "r_work": 0.09296067797580014,
+   "rama_favored_pct": 95.5823,
+   "rama_n_outliers": 1,
+   "rama_n_residues": 249,
+   "rama_outliers_pct": 0.4016,
+   "rota_n_outliers": 38,
+   "rota_n_residues": 1315,
+   "rota_pct": 2.89,
+   "scored_utc": "2026-11-03T07:52:30Z",
+   "seed": 2,
+   "sha256": "eb491262f0820fdc92c02b5f2e986f7a92e253a9c27050a025831434172e7af2",
+   "water_clashes": 0,
+   "water_in_density": 89,
+   "water_occ_sum": 458.63,
+   "water_overlap_occ": 38.32,
+   "water_overlaps": 89
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.712,
+   "bond_rmsd": 0.019,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 8,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.5,
+     "icode": "",
+     "peak": 5.41,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.62,
+     "icode": "",
+     "peak": 4.61,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "HH11/F",
+     "chain": "A",
+     "dist": 1.32,
+     "icode": "",
+     "peak": 4.55,
+     "resname": "ARG",
+     "resseq": "216"
+    },
+    {
+     "atom": "HH21/D",
+     "chain": "A",
+     "dist": 1.11,
+     "icode": "",
+     "peak": 4.47,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.06,
+     "icode": "",
+     "peak": 4.3,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.82,
+     "icode": "",
+     "peak": 4.25,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.69,
+     "icode": "",
+     "peak": 4.2,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CA/D",
+     "chain": "A",
+     "dist": 0.68,
+     "icode": "",
+     "peak": 4.17,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "CA/D",
+     "chain": "A",
+     "dist": 0.22,
+     "icode": "",
+     "peak": 4.16,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "HB2/A",
+     "chain": "A",
+     "dist": 0.58,
+     "icode": "",
+     "peak": 3.71,
+     "resname": "ASP",
+     "resseq": "128"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.37,
+     "icode": "",
+     "peak": 3.65,
+     "resname": "PHE",
+     "resseq": "72"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.32,
+     "icode": "",
+     "peak": 3.55,
+     "resname": "SER",
+     "resseq": "83"
+    }
+   ],
+   "density_peaks": 12,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.6,
+     "max_at": "SD/E",
+     "min": -2.47,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.95,
+     "max_at": "CA/B",
+     "min": -0.51,
+     "min_at": "CD1/B",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.28,
+     "max_at": "O/A",
+     "min": -3.86,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.75,
+     "max_at": "O/F",
+     "min": -3.76,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.68,
+     "max_at": "N/F",
+     "min": 0.1,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.6,
+     "max_at": "CG/A",
+     "min": 0.89,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.54,
+     "max_at": "CA/F",
+     "min": -1.19,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 1.49,
+     "max_at": "N/C",
+     "min": -3.53,
+     "min_at": "OD1/F",
+     "resname": "ASP",
+     "resseq": "183"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 198,
+   "gap": 0.062426932942567306,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/cand_s3.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 5.63,
+   "peak_min": -4.57,
+   "r_free": 0.1551058681012228,
+   "r_free_report": 0.15096432193069872,
+   "r_free_select": 0.15937532611196473,
+   "r_work": 0.09267893515865548,
+   "scored_utc": "2026-11-03T07:52:55Z",
+   "seed": 3,
+   "sha256": "a85d8b4f0610b4c66b49dc36d2bd67b2c289e05afc63d8f6275c5472b3d753ef",
+   "water_clashes": 0,
+   "water_in_density": 88,
+   "water_occ_sum": 457.7,
+   "water_overlap_occ": 38.38,
+   "water_overlaps": 88
+  }
+ ],
+ "ctrl": [
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.626,
+   "bond_rmsd": 0.018,
+   "cbeta_outliers": 0.4202,
+   "chirality_rmsd": 0.1039,
+   "clashscore": 3.31,
+   "clashscore_mmtbx": 3.3083,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 8,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.51,
+     "icode": "",
+     "peak": 5.28,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.59,
+     "icode": "",
+     "peak": 4.61,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "HH21/D",
+     "chain": "A",
+     "dist": 1.16,
+     "icode": "",
+     "peak": 4.45,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.08,
+     "icode": "",
+     "peak": 4.33,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "CA/C",
+     "chain": "A",
+     "dist": 0.61,
+     "icode": "",
+     "peak": 4.24,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.69,
+     "icode": "",
+     "peak": 4.17,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.25,
+     "icode": "",
+     "peak": 4.17,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.79,
+     "icode": "",
+     "peak": 4.17,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "CE/B",
+     "chain": "A",
+     "dist": 0.54,
+     "icode": "",
+     "peak": 3.93,
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.33,
+     "icode": "",
+     "peak": 3.79,
+     "resname": "PHE",
+     "resseq": "72"
+    },
+    {
+     "atom": "CG/F",
+     "chain": "A",
+     "dist": 0.23,
+     "icode": "",
+     "peak": 3.59,
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.34,
+     "icode": "",
+     "peak": 3.57,
+     "resname": "SER",
+     "resseq": "83"
+    },
+    {
+     "atom": "CA/A",
+     "chain": "A",
+     "dist": 0.41,
+     "icode": "",
+     "peak": 3.57,
+     "resname": "PHE",
+     "resseq": "89"
+    }
+   ],
+   "density_peaks": 13,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.39,
+     "max_at": "SD/E",
+     "min": -2.48,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.99,
+     "max_at": "CA/B",
+     "min": -0.49,
+     "min_at": "CD1/B",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.69,
+     "max_at": "O/E",
+     "min": -3.83,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.25,
+     "max_at": "O/A",
+     "min": -3.81,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.76,
+     "max_at": "CA/D",
+     "min": 0.12,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.58,
+     "max_at": "CG/A",
+     "min": 0.92,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.55,
+     "max_at": "CA/E",
+     "min": -1.13,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 0.29,
+     "max_at": "O/B",
+     "min": -3.52,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "112"
+    }
+   ],
+   "dihedral_rmsd": 15.9534,
+   "envelope_a": 2.2,
+   "envelope_waters": 204,
+   "gap": 0.06403957769571146,
+   "geometry": {
+    "angle": {
+     "max": 14.7758,
+     "mean": 1.3093,
+     "min": 0.0,
+     "n": 44739,
+     "outliers": []
+    },
+    "angle_z": {
+     "max": 5.8734,
+     "mean": 0.6108,
+     "min": 0.0,
+     "n": 44739,
+     "outliers": []
+    },
+    "bond": {
+     "max": 0.1764,
+     "mean": 0.0128,
+     "min": 0.0,
+     "n": 24655,
+     "outliers": []
+    },
+    "bond_z": {
+     "max": 7.0569,
+     "mean": 0.5612,
+     "min": 0.0,
+     "n": 24655,
+     "outliers": []
+    },
+    "c_beta": {
+     "cbetadev": "ERROR",
+     "outliers": 0.4202
+    },
+    "cablam": {
+     "ca_outliers": 0.8097,
+     "disfavored": 8.0972,
+     "gui_table": {
+      "column_formats": [
+       "%s",
+       "%s",
+       "%s",
+       "%.5f",
+       "%.5f",
+       "%s",
+       "%.5f",
+       "%.5f",
+       "%.5f"
+      ],
+      "column_labels": [
+       "Chain",
+       "Residue",
+       "Evaluation",
+       "CaBLAM Score",
+       "CA Geometry Score",
+       "Secondary Structure",
+       "Helix Score",
+       "Beta Score",
+       "3-10 Score"
+      ],
+      "column_widths": [
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125,
+       125
+      ],
+      "data": [
+       [
+        " A",
+        "ARG   23 ",
+        "CaBLAM Disfavored",
+        0.0461,
+        0.1408,
+        "try beta sheet",
+        0.0,
+        0.0077,
+        0.0,
+        "ERROR",
+        [
+         34.873,
+         -8.4,
+         4.344
+        ]
+       ],
+       [
+        " A",
+        "ARG   23 ",
+        "CaBLAM Disfavored",
+        0.0417,
+        0.1359,
+        "try beta sheet",
+        0.0,
+        0.0097,
+        0.0,
+        "ERROR",
+        [
+         34.737,
+         -8.367,
+         4.446
+        ]
+       ],
+       [
+        " A",
+        "GLN   27 ",
+        "CaBLAM Outlier",
+        0.0028,
+        0.1903,
+        "",
+        0.0054,
+        0.0001,
+        0.0,
+        "ERROR",
+        [
+         34.723,
+         -19.719,
+         9.587
+        ]
+       ],
+       [
+        " A",
+        "GLN   27 ",
+        "CaBLAM Disfavored",
+        0.0332,
+        0.2516,
+        "",
+        0.0198,
+        0.0067,
+        0.0,
+        "ERROR",
+        [
+         34.617,
+         -19.587,
+         10.013
+        ]
+       ],
+       [
+        " A",
+        "GLN   27 ",
+        "CaBLAM Disfavored",
+        0.0471,
+        0.0958,
+        "",
+        0.0019,
+        0.0118,
+        0.0,
+        "ERROR",
+        [
+         34.983,
+         -19.822,
+         9.652
+        ]
+       ],
+       [
+        " A",
+        "GLN   27 ",
+        "CaBLAM Disfavored",
+        0.0264,
+        0.1036,
+        "try beta sheet",
+        0.0,
+        0.0188,
+        0.0,
+        "ERROR",
+        [
+         36.105,
+         -20.143,
+         9.976
+        ]
+       ],
+       [
+        " A",
+        "ARG   28 ",
+        "CaBLAM Outlier",
+        0.0022,
+        0.1148,
+        "",
+        0.0006,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         35.427,
+         -23.258,
+         8.374
+        ]
+       ],
+       [
+        " A",
+        "SER   58 ",
+        "CaBLAM Outlier",
+        0.0029,
+        0.724,
+        "",
+        0.159,
+        0.0,
+        0.008,
+        "ERROR",
+        [
+         14.615,
+         -21.463,
+         -16.722
+        ]
+       ],
+       [
+        " A",
+        "SER   58 ",
+        "CaBLAM Outlier",
+        0.0018,
+        0.7096,
+        "",
+        0.1428,
+        0.0,
+        0.0007,
+        "ERROR",
+        [
+         14.419,
+         -20.813,
+         -17.108
+        ]
+       ],
+       [
+        " A",
+        "SER   58 ",
+        "CaBLAM Outlier",
+        0.0003,
+        0.6809,
+        "",
+        0.1251,
+        0.0,
+        0.0018,
+        "ERROR",
+        [
+         14.703,
+         -21.258,
+         -16.756
+        ]
+       ],
+       [
+        " A",
+        "SER   58 ",
+        "CaBLAM Disfavored",
+        0.0134,
+        0.5815,
+        "",
+        0.0995,
+        0.0,
+        0.0009,
+        "ERROR",
+        [
+         14.612,
+         -21.417,
+         -16.641
+        ]
+       ],
+       [
+        " A",
+        "SER   58 ",
+        "CaBLAM Disfavored",
+        0.0284,
+        0.7226,
+        "",
+        0.1537,
+        0.0,
+        0.0075,
+        "ERROR",
+        [
+         14.484,
+         -21.527,
+         -16.754
+        ]
+       ],
+       [
+        " A",
+        "LEU   60 ",
+        "CaBLAM Disfavored",
+        0.0406,
+        0.0385,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         10.163,
+         -20.288,
+         -11.204
+        ]
+       ],
+       [
+        " A",
+        "GLU   63 ",
+        "CaBLAM Disfavored",
+        0.0374,
+        0.1613,
+        "try beta sheet",
+        0.0,
+        0.0299,
+        0.0,
+        "ERROR",
+        [
+         10.397,
+         -18.766,
+         -1.521
+        ]
+       ],
+       [
+        " A",
+        "ARG   64 ",
+        "CaBLAM Outlier",
+        0.0005,
+        0.1198,
+        "try beta sheet",
+        0.0,
+        0.0035,
+        0.0,
+        "ERROR",
+        [
+         11.26,
+         -21.622,
+         0.872
+        ]
+       ],
+       [
+        " A",
+        "TYR   76 ",
+        "CaBLAM Disfavored",
+        0.0189,
+        0.1046,
+        "",
+        0.0075,
+        0.0,
+        0.0069,
+        "ERROR",
+        [
+         21.828,
+         -36.776,
+         1.221
+        ]
+       ],
+       [
+        " A",
+        "TYR   76 ",
+        "CaBLAM Outlier",
+        0.007,
+        0.0118,
+        "",
+        0.001,
+        0.0,
+        0.0073,
+        "ERROR",
+        [
+         21.788,
+         -36.956,
+         0.919
+        ]
+       ],
+       [
+        " A",
+        "TYR   76 ",
+        "CaBLAM Disfavored",
+        0.0464,
+        0.0536,
+        "",
+        0.0033,
+        0.0,
+        0.0072,
+        "ERROR",
+        [
+         21.784,
+         -37.192,
+         0.811
+        ]
+       ],
+       [
+        " A",
+        "VAL   78 ",
+        "CaBLAM Disfavored",
+        0.043,
+        0.0412,
+        "",
+        0.0004,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         27.442,
+         -34.845,
+         -1.942
+        ]
+       ],
+       [
+        " A",
+        "THR   84 ",
+        "CaBLAM Disfavored",
+        0.0495,
+        0.1514,
+        "try beta sheet",
+        0.0,
+        0.0312,
+        0.0,
+        "ERROR",
+        [
+         24.343,
+         -15.629,
+         -5.485
+        ]
+       ],
+       [
+        " A",
+        "SER  104 ",
+        "CaBLAM Disfavored",
+        0.0453,
+        0.1469,
+        "",
+        0.0,
+        0.0067,
+        0.0,
+        "ERROR",
+        [
+         29.372,
+         -29.216,
+         6.963
+        ]
+       ],
+       [
+        " A",
+        "SER  104 ",
+        "CaBLAM Disfavored",
+        0.0227,
+        0.1184,
+        "",
+        0.0,
+        0.0013,
+        0.0,
+        "ERROR",
+        [
+         29.286,
+         -29.154,
+         6.877
+        ]
+       ],
+       [
+        " A",
+        "ILE  105 ",
+        "CaBLAM Disfavored",
+        0.0471,
+        0.0468,
+        "try beta sheet",
+        0.0,
+        0.0089,
+        0.0,
+        "ERROR",
+        [
+         29.662,
+         -30.549,
+         3.578
+        ]
+       ],
+       [
+        " A",
+        "PHE  112 ",
+        "CaBLAM Disfavored",
+        0.0114,
+        0.0768,
+        "try beta sheet",
+        0.0,
+        0.0085,
+        0.0,
+        "ERROR",
+        [
+         29.017,
+         -15.057,
+         -12.969
+        ]
+       ],
+       [
+        " A",
+        "PHE  112 ",
+        "CaBLAM Disfavored",
+        0.0493,
+        0.0288,
+        "try beta sheet",
+        0.0,
+        0.0083,
+        0.0,
+        "ERROR",
+        [
+         29.002,
+         -15.036,
+         -12.96
+        ]
+       ],
+       [
+        " A",
+        "GLU  155 ",
+        "CaBLAM Disfavored",
+        0.0461,
+        0.5206,
+        "try beta sheet",
+        0.0,
+        0.0789,
+        0.0,
+        "ERROR",
+        [
+         39.363,
+         -26.411,
+         -7.247
+        ]
+       ],
+       [
+        " A",
+        "ALA  174 ",
+        "CaBLAM Disfavored",
+        0.0156,
+        0.5882,
+        "",
+        0.0,
+        0.4503,
+        0.0,
+        "ERROR",
+        [
+         40.913,
+         -28.006,
+         -15.576
+        ]
+       ],
+       [
+        " A",
+        "ASN  204 ",
+        "CaBLAM Disfavored",
+        0.0208,
+        0.5394,
+        "",
+        0.0005,
+        0.0,
+        0.1904,
+        "ERROR",
+        [
+         41.436,
+         -37.793,
+         -14.775
+        ]
+       ],
+       [
+        " A",
+        "GLU  211 ",
+        "CA Geom Outlier",
+        0.1101,
+        0.0012,
+        "",
+        0.0,
+        0.0,
+        0.0046,
+        "ERROR",
+        [
+         21.117,
+         -30.015,
+         -15.598
+        ]
+       ],
+       [
+        " A",
+        "GLU  211 ",
+        "CA Geom Outlier",
+        0.1093,
+        0.0046,
+        "",
+        0.0079,
+        0.0,
+        0.0047,
+        "ERROR",
+        [
+         20.656,
+         -30.14,
+         -16.327
+        ]
+       ],
+       [
+        " A",
+        "GLY  212 ",
+        "CaBLAM Disfavored",
+        0.0251,
+        0.09,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         19.053,
+         -32.629,
+         -17.415
+        ]
+       ],
+       [
+        " A",
+        "ILE  213 ",
+        "CaBLAM Disfavored",
+        0.0311,
+        0.0308,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.911,
+         -34.957,
+         -14.565
+        ]
+       ],
+       [
+        " A",
+        "ILE  213 ",
+        "CaBLAM Outlier",
+        0.0092,
+        0.0454,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.891,
+         -35.686,
+         -15.263
+        ]
+       ],
+       [
+        " A",
+        "ILE  213 ",
+        "CA Geom Outlier",
+        0.0205,
+        0.003,
+        "",
+        0.0,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.735,
+         -35.154,
+         -14.62
+        ]
+       ],
+       [
+        " A",
+        "ILE  213 ",
+        "CaBLAM Disfavored",
+        0.018,
+        0.0136,
+        "",
+        0.0,
+        0.0002,
+        0.0,
+        "ERROR",
+        [
+         18.638,
+         -35.148,
+         -14.664
+        ]
+       ],
+       [
+        " A",
+        "ILE  213 ",
+        "CaBLAM Disfavored",
+        0.0229,
+        0.0123,
+        "",
+        0.0,
+        0.0003,
+        0.0,
+        "ERROR",
+        [
+         18.737,
+         -34.953,
+         -14.879
+        ]
+       ],
+       [
+        " A",
+        "SER  214 ",
+        "CaBLAM Disfavored",
+        0.0492,
+        0.0398,
+        "",
+        0.0184,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         15.67,
+         -36.146,
+         -13.565
+        ]
+       ],
+       [
+        " A",
+        "SER  214 ",
+        "CaBLAM Disfavored",
+        0.0123,
+        0.0127,
+        "",
+        0.0258,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         15.56,
+         -36.896,
+         -13.404
+        ]
+       ],
+       [
+        " A",
+        "SER  214 ",
+        "CaBLAM Disfavored",
+        0.04,
+        0.0091,
+        "",
+        0.0165,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         15.62,
+         -36.508,
+         -13.287
+        ]
+       ],
+       [
+        " A",
+        "GLY  233 ",
+        "CaBLAM Disfavored",
+        0.0216,
+        0.0172,
+        "",
+        0.0178,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.373,
+         -27.824,
+         -8.94
+        ]
+       ],
+       [
+        " A",
+        "GLY  233 ",
+        "CaBLAM Disfavored",
+        0.0301,
+        0.0187,
+        "",
+        0.0166,
+        0.0,
+        0.0,
+        "ERROR",
+        [
+         18.381,
+         -27.999,
+         -8.742
+        ]
+       ]
+      ]
+     },
+     "outliers": 2.4291
+    },
+    "chirality": {
+     "max": 0.9596,
+     "mean": 0.1039,
+     "min": 0.0,
+     "n": 1878,
+     "outliers": [
+      [
+       13965,
+       13964,
+       13966,
+       13967
+      ]
+     ]
+    },
+    "clash": {
+     "clashes": "ERROR",
+     "score": 3.3083
+    },
+    "dihedral": {
+     "max": 88.6745,
+     "mean": 15.9534,
+     "min": 0.0,
+     "n": 8515,
+     "outliers": [
+      [
+       5068,
+       5069,
+       5175,
+       5176
+      ],
+      [
+       2233,
+       2234,
+       2348,
+       2349
+      ],
+      [
+       20674,
+       20675,
+       20751,
+       20752
+      ],
+      [
+       5053,
+       5054,
+       5154,
+       5155
+      ],
+      [
+       5098,
+       5099,
+       5217,
+       5218
+      ],
+      [
+       24193,
+       24194,
+       24258,
+       24259
+      ],
+      [
+       19909,
+       19910,
+       19998,
+       19999
+      ],
+      [
+       12669,
+       12670,
+       12752,
+       12753
+      ],
+      [
+       17005,
+       17006,
+       17148,
+       17149
+      ],
+      [
+       5515,
+       5516,
+       5646,
+       5647
+      ],
+      [
+       2209,
+       2210,
+       2338,
+       2339
+      ],
+      [
+       12637,
+       12638,
+       12732,
+       12733
+      ],
+      [
+       7904,
+       7905,
+       8018,
+       8019
+      ],
+      [
+       2281,
+       2282,
+       2368,
+       2369
+      ],
+      [
+       7417,
+       7418,
+       7560,
+       7561
+      ],
+      [
+       1096,
+       1094,
+       1095,
+       1098
+      ],
+      [
+       16809,
+       16807,
+       16808,
+       16811
+      ]
+     ]
+    },
+    "molprobity_score": 1.8049,
+    "nonbonded": {
+     "max": 4.8,
+     "mean": 3.9004,
+     "min": 1.3246,
+     "n": 497237
+    },
+    "omega": {
+     "cis_general": 0.0,
+     "cis_proline": 0.0,
+     "n_twisted_general": 0,
+     "omegalyze": "ERROR",
+     "twisted_general": 0.0,
+     "twisted_proline": 0.0
+    },
+    "parallelity": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 0
+    },
+    "planarity": {
+     "max": 0.1456,
+     "mean": 0.013,
+     "min": 0.0,
+     "n": 3577,
+     "protein_planes_max_dev": [],
+     "protein_planes_max_dev_noH": []
+    },
+    "rama_z": "ERROR",
+    "ramachandran": {
+     "allowed": 4.0161,
+     "favored": 95.5823,
+     "outliers": 0.4016,
+     "ramalyze": "ERROR"
+    },
+    "rotamer": {
+     "allowed": 7.9148,
+     "favored": 88.965,
+     "outliers": 3.1202,
+     "rotalyze": "ERROR"
+    }
+   },
+   "holton": {
+    "CB": 32.7184,
+    "Cl": 6.42,
+    "Mp": 2.04,
+    "Rf": 15.55,
+    "Rw": 9.14,
+    "ang": null,
+    "avangle": 0.787577,
+    "avbond": 0.631963,
+    "avchir": 0.270119,
+    "avnb": 2.20292,
+    "avomega": 2.92882,
+    "avplane": 0.220935,
+    "avrama": 0.712211,
+    "avrot": 2.42524,
+    "avtor": 1.37986,
+    "bond": null,
+    "chir": null,
+    "energy": 465.199,
+    "nb_e": 221.659,
+    "om": 26.58,
+    "ra": 99.0,
+    "ro": 99.0,
+    "score": 511.1,
+    "vdw": 0.0,
+    "wang": 34.5,
+    "wbond": 49.8,
+    "wchir": 23.0,
+    "wdihe": 28.3,
+    "wplane": 63.2025
+   },
+   "holton_score": 511.1,
+   "holton_we": 465.199,
+   "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/ctrl_s1.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "omega_cis_general": 0.0,
+   "omega_cis_proline": 0.0,
+   "omega_twisted_general": 0.0,
+   "peak_max": 5.65,
+   "peak_min": -4.59,
+   "planarity_rmsd": 0.013,
+   "r_free": 0.15545367887150835,
+   "r_free_report": 0.15218445051816692,
+   "r_free_select": 0.15882387748995117,
+   "r_work": 0.09141410117579689,
+   "rama_favored_pct": 95.5823,
+   "rama_n_outliers": 1,
+   "rama_n_residues": 249,
+   "rama_outliers_pct": 0.4016,
+   "rota_n_outliers": 41,
+   "rota_n_residues": 1314,
+   "rota_pct": 3.12,
+   "rota_pct_mmtbx": 3.1202,
+   "scored_utc": "2026-11-03T04:19:13Z",
+   "seed": 1,
+   "sha256": "741c63f00a4322aa53eed7fd53352e79fc6d76d7b381c52fdea03ceae6250c38",
+   "water_clashes": 1,
+   "water_in_density": 88,
+   "water_occ_sum": 456.07,
+   "water_overlap_occ": 39.03,
+   "water_overlaps": 89
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.624,
+   "bond_rmsd": 0.018,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 7,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.51,
+     "icode": "",
+     "peak": 5.31,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.57,
+     "icode": "",
+     "peak": 4.67,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.08,
+     "icode": "",
+     "peak": 4.35,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "HH21/D",
+     "chain": "A",
+     "dist": 1.13,
+     "icode": "",
+     "peak": 4.35,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.8,
+     "icode": "",
+     "peak": 4.26,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.69,
+     "icode": "",
+     "peak": 4.24,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "CA/C",
+     "chain": "A",
+     "dist": 0.63,
+     "icode": "",
+     "peak": 4.21,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.24,
+     "icode": "",
+     "peak": 4.16,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "CE/B",
+     "chain": "A",
+     "dist": 0.53,
+     "icode": "",
+     "peak": 3.99,
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "atom": "O/B",
+     "chain": "A",
+     "dist": 1.39,
+     "icode": "",
+     "peak": 3.81,
+     "resname": "PHE",
+     "resseq": "72"
+    }
+   ],
+   "density_peaks": 10,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.45,
+     "max_at": "SD/E",
+     "min": -2.44,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.94,
+     "max_at": "CA/B",
+     "min": -0.58,
+     "min_at": "CD1/B",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.78,
+     "max_at": "CA/D",
+     "min": 0.03,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.66,
+     "max_at": "O/F",
+     "min": -3.74,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.33,
+     "max_at": "O/A",
+     "min": -3.68,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.64,
+     "max_at": "CG/C",
+     "min": 0.95,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.57,
+     "max_at": "CA/E",
+     "min": -1.09,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 204,
+   "gap": 0.06335202508117695,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/ctrl_s2.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 6.11,
+   "peak_min": -4.64,
+   "r_free": 0.1552501005278983,
+   "r_free_report": 0.15132801072175134,
+   "r_free_select": 0.15929332425455403,
+   "r_work": 0.09189807544672136,
+   "scored_utc": "2026-11-03T04:19:38Z",
+   "seed": 2,
+   "sha256": "f50cde178f7865bd3b78e7fb24b731f660d13e44a20c29dd725e02720a79f87a",
+   "water_clashes": 1,
+   "water_in_density": 89,
+   "water_occ_sum": 458.32,
+   "water_overlap_occ": 39.37,
+   "water_overlaps": 90
+  },
+  {
+   "altlocs": "ABCDEF",
+   "angle_rmsd": 1.624,
+   "bond_rmsd": 0.018,
+   "copies": 6,
+   "copy_b_groups": 2015,
+   "copy_b_outliers": 0,
+   "density_flags": 7,
+   "density_peak_residues": [
+    {
+     "atom": "SD/E",
+     "chain": "A",
+     "dist": 0.51,
+     "icode": "",
+     "peak": 5.38,
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "atom": "HD21/B",
+     "chain": "A",
+     "dist": 1.57,
+     "icode": "",
+     "peak": 4.65,
+     "resname": "ASN",
+     "resseq": "44"
+    },
+    {
+     "atom": "HH21/D",
+     "chain": "A",
+     "dist": 1.15,
+     "icode": "",
+     "peak": 4.38,
+     "resname": "ARG",
+     "resseq": "18"
+    },
+    {
+     "atom": "O/C",
+     "chain": "A",
+     "dist": 1.08,
+     "icode": "",
+     "peak": 4.33,
+     "resname": "ALA",
+     "resseq": "209"
+    },
+    {
+     "atom": "C/-",
+     "chain": "A",
+     "dist": 1.68,
+     "icode": "",
+     "peak": 4.26,
+     "resname": "ACY",
+     "resseq": "401"
+    },
+    {
+     "atom": "HD22/B",
+     "chain": "A",
+     "dist": 0.79,
+     "icode": "",
+     "peak": 4.21,
+     "resname": "LEU",
+     "resseq": "15"
+    },
+    {
+     "atom": "CA/C",
+     "chain": "A",
+     "dist": 0.63,
+     "icode": "",
+     "peak": 4.2,
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "atom": "CA/B",
+     "chain": "A",
+     "dist": 0.25,
+     "icode": "",
+     "peak": 4.16,
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "atom": "CE/B",
+     "chain": "A",
+     "dist": 0.54,
+     "icode": "",
+     "peak": 3.94,
+     "resname": "LYS",
+     "resseq": "6"
+    },
+    {
+     "atom": "H/F",
+     "chain": "A",
+     "dist": 1.39,
+     "icode": "",
+     "peak": 3.82,
+     "resname": "GLU",
+     "resseq": "74"
+    },
+    {
+     "atom": "CG/F",
+     "chain": "A",
+     "dist": 0.2,
+     "icode": "",
+     "peak": 3.6,
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "atom": "CA/A",
+     "chain": "A",
+     "dist": 0.41,
+     "icode": "",
+     "peak": 3.6,
+     "resname": "PHE",
+     "resseq": "89"
+    },
+    {
+     "atom": "HB3/C",
+     "chain": "A",
+     "dist": 0.31,
+     "icode": "",
+     "peak": 3.54,
+     "resname": "SER",
+     "resseq": "83"
+    }
+   ],
+   "density_peaks": 13,
+   "density_residues": [
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 4.48,
+     "max_at": "SD/E",
+     "min": -2.43,
+     "min_at": "CE/E",
+     "resname": "MET",
+     "resseq": "200"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.96,
+     "max_at": "CA/B",
+     "min": -0.59,
+     "min_at": "CD1/B",
+     "resname": "LEU",
+     "resseq": "231"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.76,
+     "max_at": "CA/D",
+     "min": 0.06,
+     "min_at": "CE1/E",
+     "resname": "PHE",
+     "resseq": "230"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.3,
+     "max_at": "O/A",
+     "min": -3.72,
+     "min_at": "CD1/E",
+     "resname": "LEU",
+     "resseq": "17"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 2.63,
+     "max_at": "O/F",
+     "min": -3.72,
+     "min_at": "NH1/D",
+     "resname": "ARG",
+     "resseq": "195"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.66,
+     "max_at": "CG/C",
+     "min": 0.92,
+     "min_at": "CA/D",
+     "resname": "ASP",
+     "resseq": "120"
+    },
+    {
+     "chain": "A",
+     "icode": "",
+     "max": 3.6,
+     "max_at": "CA/E",
+     "min": -1.11,
+     "min_at": "CZ/D",
+     "resname": "PHE",
+     "resseq": "89"
+    }
+   ],
+   "envelope_a": 2.2,
+   "envelope_waters": 206,
+   "gap": 0.06367709281212931,
+   "holton_we": null,
+   "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/ctrl_s3.pdb",
+   "n_anisou": 12109,
+   "n_atoms": 25841,
+   "n_free": 2075,
+   "n_h": 12375,
+   "n_nonwater_iso_heavy": 0,
+   "n_reflections": 40272,
+   "n_residues_nonwater": 255,
+   "n_water_atoms": 1357,
+   "n_water_iso": 1357,
+   "n_work": 38197,
+   "peak_max": 6.08,
+   "peak_min": -4.61,
+   "r_free": 0.1555011739003101,
+   "r_free_report": 0.15156961909979288,
+   "r_free_select": 0.15955415494811478,
+   "r_work": 0.09182408108818078,
+   "scored_utc": "2026-11-03T04:20:03Z",
+   "seed": 3,
+   "sha256": "0e65986bfacbb3c9b2a29c0f1c1748246498241fdba751c80790700bf3a83fc8",
+   "water_clashes": 1,
+   "water_in_density": 90,
+   "water_occ_sum": 457.95,
+   "water_overlap_occ": 39.69,
+   "water_overlaps": 91
+  }
+ ],
+ "median_cand": {
+  "altlocs": "ABCDEF",
+  "angle_rmsd": 1.703,
+  "bond_rmsd": 0.019,
+  "clashscore": 0.78,
+  "copies": 6,
+  "copy_b_groups": 2015,
+  "copy_b_outliers": 0,
+  "density_flags": 9,
+  "density_peak_residues": [
+   {
+    "atom": "SD/E",
+    "chain": "A",
+    "dist": 0.49,
+    "icode": "",
+    "peak": 5.47,
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "atom": "HD21/B",
+    "chain": "A",
+    "dist": 1.63,
+    "icode": "",
+    "peak": 4.61,
+    "resname": "ASN",
+    "resseq": "44"
+   },
+   {
+    "atom": "HH11/F",
+    "chain": "A",
+    "dist": 1.32,
+    "icode": "",
+    "peak": 4.52,
+    "resname": "ARG",
+    "resseq": "216"
+   },
+   {
+    "atom": "HH21/D",
+    "chain": "A",
+    "dist": 1.13,
+    "icode": "",
+    "peak": 4.49,
+    "resname": "ARG",
+    "resseq": "18"
+   },
+   {
+    "atom": "O/C",
+    "chain": "A",
+    "dist": 1.05,
+    "icode": "",
+    "peak": 4.31,
+    "resname": "ALA",
+    "resseq": "209"
+   },
+   {
+    "atom": "HD22/B",
+    "chain": "A",
+    "dist": 0.82,
+    "icode": "",
+    "peak": 4.3,
+    "resname": "LEU",
+    "resseq": "15"
+   },
+   {
+    "atom": "C/-",
+    "chain": "A",
+    "dist": 1.71,
+    "icode": "",
+    "peak": 4.2,
+    "resname": "ACY",
+    "resseq": "401"
+   },
+   {
+    "atom": "CA/D",
+    "chain": "A",
+    "dist": 0.68,
+    "icode": "",
+    "peak": 4.19,
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "atom": "CA/B",
+    "chain": "A",
+    "dist": 0.23,
+    "icode": "",
+    "peak": 4.18,
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "atom": "HB2/A",
+    "chain": "A",
+    "dist": 0.57,
+    "icode": "",
+    "peak": 3.71,
+    "resname": "ASP",
+    "resseq": "128"
+   },
+   {
+    "atom": "HD2/F",
+    "chain": "A",
+    "dist": 0.28,
+    "icode": "",
+    "peak": 3.64,
+    "resname": "ARG",
+    "resseq": "175"
+   },
+   {
+    "atom": "HB3/C",
+    "chain": "A",
+    "dist": 0.33,
+    "icode": "",
+    "peak": 3.62,
+    "resname": "SER",
+    "resseq": "83"
+   },
+   {
+    "atom": "O/B",
+    "chain": "A",
+    "dist": 1.25,
+    "icode": "",
+    "peak": 3.6,
+    "resname": "PHE",
+    "resseq": "72"
+   },
+   {
+    "atom": "CA/A",
+    "chain": "A",
+    "dist": 0.39,
+    "icode": "",
+    "peak": 3.57,
+    "resname": "PHE",
+    "resseq": "89"
+   }
+  ],
+  "density_peaks": 14,
+  "density_residues": [
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.63,
+    "max_at": "SD/E",
+    "min": -2.49,
+    "min_at": "CE/E",
+    "resname": "MET",
+    "resseq": "200"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 4.0,
+    "max_at": "CA/B",
+    "min": -0.5,
+    "min_at": "CD1/B",
+    "resname": "LEU",
+    "resseq": "231"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.23,
+    "max_at": "O/A",
+    "min": -3.89,
+    "min_at": "CD1/E",
+    "resname": "LEU",
+    "resseq": "17"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 2.82,
+    "max_at": "O/F",
+    "min": -3.79,
+    "min_at": "NH1/D",
+    "resname": "ARG",
+    "resseq": "195"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.68,
+    "max_at": "N/F",
+    "min": 0.09,
+    "min_at": "CE1/E",
+    "resname": "PHE",
+    "resseq": "230"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 1.57,
+    "max_at": "N/C",
+    "min": -3.56,
+    "min_at": "OD1/F",
+    "resname": "ASP",
+    "resseq": "183"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.54,
+    "max_at": "CG/A",
+    "min": 0.85,
+    "min_at": "CA/D",
+    "resname": "ASP",
+    "resseq": "120"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.52,
+    "max_at": "CA/D",
+    "min": -1.22,
+    "min_at": "CZ/D",
+    "resname": "PHE",
+    "resseq": "89"
+   },
+   {
+    "chain": "A",
+    "icode": "",
+    "max": 3.5,
+    "max_at": "O/A",
+    "min": -1.01,
+    "min_at": "NH1/E",
+    "resname": "ARG",
+    "resseq": "140"
+   }
+  ],
+  "envelope_a": 2.2,
+  "envelope_waters": 203,
+  "gap": 0.06229802185853832,
+  "holton_we": 321.546,
+  "model": "/home/dev/runs/hr/T431c8e_nqh/pending/nonbonded_1000/cand_s2.pdb",
+  "n_anisou": 12109,
+  "n_atoms": 25841,
+  "n_free": 2075,
+  "n_h": 12375,
+  "n_nonwater_iso_heavy": 0,
+  "n_reflections": 40272,
+  "n_residues_nonwater": 255,
+  "n_water_atoms": 1357,
+  "n_water_iso": 1357,
+  "n_work": 38197,
+  "peak_max": 5.66,
+  "peak_min": -4.58,
+  "r_free": 0.15525869983433846,
+  "r_free_report": 0.1513011386394192,
+  "r_free_select": 0.1593384904852087,
+  "r_work": 0.09296067797580014,
+  "rama_favored_pct": 95.5823,
+  "rama_n_outliers": 1,
+  "rama_n_residues": 249,
+  "rama_outliers_pct": 0.4016,
+  "rota_n_outliers": 38,
+  "rota_n_residues": 1315,
+  "rota_pct": 2.89,
+  "scored_utc": "2026-11-03T07:52:30Z",
+  "seed": 2,
+  "sha256": "eb491262f0820fdc92c02b5f2e986f7a92e253a9c27050a025831434172e7af2",
+  "water_clashes": 0,
+  "water_in_density": 89,
+  "water_occ_sum": 458.63,
+  "water_overlap_occ": 38.32,
+  "water_overlaps": 89
+ },
+ "verdict": {
+  "cand": {
+   "angle_rmsd": 1.7086666666666668,
+   "bond_rmsd": 0.019,
+   "clashscore": 0.78,
+   "copy_b_outliers": 0.0,
+   "density_flags": 8.333333333333334,
+   "density_peaks": 12.666666666666666,
+   "envelope_waters": 201.33333333333334,
+   "gap": 0.06234510538657583,
+   "holton_we": 321.546,
+   "peak_max": 5.63,
+   "peak_min": -4.576666666666667,
+   "r_free": 0.15520839879458706,
+   "r_work": 0.09286329340801125,
+   "rama_outliers_pct": 0.4016,
+   "rota_pct": 2.89,
+   "water_overlaps": 88.33333333333333
+  },
+  "clash_cap": 15.0,
+  "ctrl": {
+   "angle_rmsd": 1.624666666666667,
+   "bond_rmsd": 0.018,
+   "clashscore": 3.31,
+   "copy_b_outliers": 0.0,
+   "density_flags": 7.333333333333333,
+   "density_peaks": 12.0,
+   "envelope_waters": 204.66666666666666,
+   "gap": 0.06368956519633924,
+   "holton_we": 465.199,
+   "peak_max": 5.946666666666666,
+   "peak_min": -4.613333333333333,
+   "r_free": 0.15540165109990559,
+   "r_work": 0.09171208590356635,
+   "rama_outliers_pct": 0.4016,
+   "rota_pct": 3.12,
+   "water_overlaps": 90.0
+  },
+  "d_gap": -0.0013444598097634083,
+  "d_r_free": -0.00019325230531852533,
+  "gap_max": 0.12,
+  "k_sigma": 2.0,
+  "kind": "sanity",
+  "n_cand": 3,
+  "n_ctrl": 3,
+  "notes": [],
+  "outlier_counts": {
+   "rama_n_outliers": {
+    "cand": 1.0,
+    "ctrl": 1.0
+   },
+   "rota_n_outliers": {
+    "cand": 38.0,
+    "ctrl": 41.0
+   }
+  },
+  "outlier_tolerance": 1.0,
+  "reasons": [
+   "all criteria met"
+  ],
+  "sanity": {
+   "clashscore": {
+    "cand": 0.78,
+    "ctrl": 3.31,
+    "tol": 1.0
+   },
+   "copy_b_outliers": {
+    "cand": 0.0,
+    "ctrl": 0.0,
+    "tol": 5.0
+   },
+   "density_flags": {
+    "cand": 8.333333333333334,
+    "ctrl": 7.333333333333333,
+    "tol": 5.41602560309064
+   },
+   "density_peaks": {
+    "cand": 12.666666666666666,
+    "ctrl": 12.0,
+    "tol": 6.928203230275509
+   },
+   "envelope_waters": {
+    "cand": 201.33333333333334,
+    "ctrl": 204.66666666666666,
+    "tol": 28.61235164516658
+   },
+   "gate": "on",
+   "holton_we": {
+    "cand": 321.546,
+    "ctrl": 465.199,
+    "repair_drop": 46.51990000000001,
+    "tol": 23.259950000000003
+   },
+   "peak_max": {
+    "cand": 5.63,
+    "ctrl": 5.946666666666666,
+    "repair_drop": 1.5,
+    "tol": 1.0
+   },
+   "peak_min": {
+    "cand": 4.576666666666667,
+    "ctrl": 4.613333333333333,
+    "repair_drop": 1.5,
+    "tol": 1.0
+   },
+   "water_overlaps": {
+    "cand": 88.33333333333333,
+    "ctrl": 90.0,
+    "tol": 18.973665961010276
+   }
+  },
+  "sigma": 0.0002665473946127796,
+  "verdict": "ACCEPT",
+  "z": -0.7250204249764588
+ }
+}

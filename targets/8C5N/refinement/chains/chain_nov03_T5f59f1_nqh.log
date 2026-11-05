@@ -1,0 +1,21 @@
+[2026-11-03T00:35:34Z] chain_nov03 start on /home/dev/runs/hr/T5f59f1_nqh from S0065
+[2026-11-03T02:13:34Z] the nqh step of /home/dev/runs/hr/T5f59f1_nqh has ended; the model in force is S0065
+waters that count 4 (own-conformer clashes 4, in another conformer's density 0; occupancy sum 0.68) | protein atoms with conformer B differing more than 3 times: 3 of 1411 | copies 6, waters 2562
+[2026-11-03T02:13:36Z] nonbonded_300 from S0065
+S0067 2026-11-03T03:43:42Z refinement refine_step parent S0065 | nonbonded restraint weight 300 against the default 100 (the clash term alone; wc and wu unchanged) | R-free 0.08746 -> 0.08816 (+1.5 sigma) R-work 0.06268 -> 0.06374 gap -0.00
+[2026-11-03T03:43:43Z] share_0.5 from S0067
+S0068 2026-11-03T05:29:22Z solvent ensemble_edit parent S0067 | lettered waters of one site in every conformer (within 0.5 A of their centroid) merged into one shared water at occupancy 1 | R-free 0.08816 -> 0.08839 (+0.5 sigma) R-work 0.06
+[2026-11-03T05:29:23Z] share_1.0 from S0067
+S0069 2026-11-03T07:16:01Z solvent ensemble_edit parent S0067 | lettered waters of one site in every conformer (within 1 A of their centroid) merged into one shared water at occupancy 1 | R-free 0.08816 -> 0.09196 (+8.2 sigma) R-work 0.0637
+[2026-11-03T07:16:01Z] prune_0.5 from S0067
+S0070 2026-11-03T08:42:39Z rotamer-finder ensemble_edit parent S0067 | residues whose conformers lie within 0.5 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | R-free 0.08816 -> 0.08859 (+0.9 sigma) R-work 0.06374
+[2026-11-03T08:42:39Z] prune_0.75 from S0067
+S0071 2026-11-03T09:45:04Z rotamer-finder ensemble_edit parent S0067 | residues whose conformers lie within 0.75 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | R-free 0.08816 -> 0.08956 (+3.0 sigma) R-work 0.0637
+[2026-11-03T09:45:04Z] b_to_occ_2 from S0067
+S0072 2026-11-03T11:15:50Z rotamer-finder ensemble_edit parent S0067 | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | R-free 0.08816 -> 0.08
+[2026-11-03T11:15:50Z] untangle_n from S0072: Untangler low_compute_clash_resolution
+S0073 2026-11-03T14:22:39Z connectivity conn_optim parent S0072 | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | R-free 0.08844 -> 0.08841 (-0.1 sigma) R-work 0.06397 -> 0.06358 gap +0.0004 clash 2.8 rota 1.4 
+[2026-11-03T14:22:40Z] nonbonded_1000 from S0072
+S0074 2026-11-03T16:17:48Z refinement refine_step parent S0072 | nonbonded restraint weight 1000 against 300 (the clash term alone; wc and wu unchanged) | R-free 0.08844 -> 0.08893 (+1.1 sigma) R-work 0.06397 -> 0.06460 gap -0.0001 clash 1.
+waters that count 0 (own-conformer clashes 0, in another conformer's density 0; occupancy sum 0.00) | protein atoms with conformer B differing more than 3 times: 33 of 1411 | copies 6, waters 2562
+[2026-11-03T16:17:51Z] chain_nov03 end on /home/dev/runs/hr/T5f59f1_nqh; the line's last model S0074 (from S0065)

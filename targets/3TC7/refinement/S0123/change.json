@@ -1,0 +1,69 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/T431c8e_nqh/trajectory/S0116/model.pdb",
+ "cand_input_sha256": "f2f2f2b87510c92b2fbd42fb9c2ed2ce0dae8f37bcd07a5388f204b27b52a26c",
+ "ctrl_input": "/home/dev/runs/hr/T431c8e_nqh/trajectory/S0116/model.pdb",
+ "ctrl_input_sha256": "f2f2f2b87510c92b2fbd42fb9c2ed2ce0dae8f37bcd07a5388f204b27b52a26c",
+ "ctrl_options": {
+  "standing": {
+   "adp": "group1",
+   "anomalous": {
+    "eff": "/home/dev/runs/hr/T431c8e_oct28b/prep/anomalous_SE.eff",
+    "f_double_prime": 4.0,
+    "f_prime": -8.0,
+    "refine": false,
+    "selection": "element SE"
+   },
+   "nonbonded_weight": 300.0,
+   "since": "S0116",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-11-03T03:08:06Z",
+   "wavelength": 0.97915,
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "description": "nonbonded restraint weight 1000 against 300 (the clash term alone; wc and wu unchanged)",
+ "kind": "sanity",
+ "metaparams_sha256": "2c065b5150c5e19733a90397809e30ee9d901101da410bd5b621080b5df1d4c7",
+ "model_after": "/home/dev/runs/hr/T431c8e_nqh/trajectory/S0123/model.pdb",
+ "model_after_sha256": "eb491262f0820fdc92c02b5f2e986f7a92e253a9c27050a025831434172e7af2",
+ "model_before_sha256": "f2f2f2b87510c92b2fbd42fb9c2ed2ce0dae8f37bcd07a5388f204b27b52a26c",
+ "parent": "S0116",
+ "prepare": {},
+ "refine_options": {
+  "nonbonded_weight": 1000.0,
+  "standing": {
+   "adp": "group1",
+   "anomalous": {
+    "eff": "/home/dev/runs/hr/T431c8e_oct28b/prep/anomalous_SE.eff",
+    "f_double_prime": 4.0,
+    "f_prime": -8.0,
+    "refine": false,
+    "selection": "element SE"
+   },
+   "nonbonded_weight": 300.0,
+   "since": "S0116",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-11-03T03:08:06Z",
+   "wavelength": 0.97915,
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "refinement",
+ "step": "S0123",
+ "tool": "refine_step",
+ "utc": "2026-11-03T07:57:59Z",
+ "worker": "refinement"
+}

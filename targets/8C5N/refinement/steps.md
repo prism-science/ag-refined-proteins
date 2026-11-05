@@ -1,4 +1,4 @@
-# 8C5N: every step of run T5f59f1_oct28 (the gate's facts lines)
+# 8C5N: every step of run T5f59f1_nqh (the gate's facts lines)
 
 R-free and R-work are the gate's numbers after the step (the candidate's median seed; for a refused step, the refused candidate). σ is the margin against the parent as written in the facts line; the verdict is against the control.
 
@@ -70,3 +70,14 @@ R-free and R-work are the gate's numbers after the step (the candidate's median 
 | S0063 | S0055 | connectivity | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | 0.0873 |  | 0.0625 | 0.0248 | 15.2 | - | REFUSE |
 | S0064 | S0055 | rotamer-finder | B-factors of the copies reset to the copy median where they differ by more than 3 times | 0.0875 |  | 0.0625 | 0.0250 | 14.9 | - | REFUSE |
 | S0065 | S0055 | rotamer-finder | conformer B-factors above the site median reset to the median where the conformer's 2mFo-DFc density is at least 0.5 of the site's (no ratio threshold); conformers in weak density keep their B | 0.0875 |  | 0.0627 | 0.0248 | 14.8 | - | ACCEPT |
+| S0066 | S0065 | refinement | Asn/Gln/His flips by reduce in the candidate's refinement (nqh_flips, off in the recipe) against the recipe without them | 0.0878 |  | 0.0623 | 0.0254 | 15.0 | - | REFUSE |
+| S0067 | S0065 | refinement | nonbonded restraint weight 300 against the default 100 (the clash term alone; wc and wu unchanged) | 0.0882 |  | 0.0637 | 0.0244 | 4.2 | - | ACCEPT |
+| S0068 | S0067 | solvent | lettered waters of one site in every conformer (within 0.5 A of their centroid) merged into one shared water at occupancy 1 | 0.0884 |  | 0.0647 | 0.0237 | 3.4 | - | REFUSE |
+| S0069 | S0067 | solvent | lettered waters of one site in every conformer (within 1 A of their centroid) merged into one shared water at occupancy 1 | 0.0920 |  | 0.0701 | 0.0219 | 3.6 | - | REFUSE |
+| S0070 | S0067 | rotamer-finder | residues whose conformers lie within 0.5 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | 0.0886 |  | 0.0646 | 0.0240 | 3.4 | - | REFUSE |
+| S0071 | S0067 | rotamer-finder | residues whose conformers lie within 0.75 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | 0.0896 |  | 0.0703 | 0.0193 | 3.0 | - | REFUSE |
+| S0072 | S0067 | rotamer-finder | conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.0884 |  | 0.0640 | 0.0245 | 3.2 | - | ACCEPT |
+| S0073 | S0072 | connectivity | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | 0.0884 |  | 0.0636 | 0.0248 | 2.8 | - | REFUSE |
+| S0074 | S0072 | refinement | nonbonded restraint weight 1000 against 300 (the clash term alone; wc and wu unchanged) | 0.0889 |  | 0.0646 | 0.0243 | 1.2 | - | ACCEPT |
+| S0075 | S0074 | rotamer-finder | Coot rotamer fit and real-space refinement of each conformer of the residues in the most repeated MolProbity clash contacts (A79,A202,A133,A139,A186,A77,A193,A68,A132,A97), on the omit maps; a repair on the clashscore | 0.0890 |  | 0.0644 | 0.0246 | 0.8 | - | REFUSE |
+| S0076 | S0074 | solvent | lettered waters of one site in every conformer (within 0.5 A of their centroid) merged into one shared water at occupancy 1 | 0.0895 |  | 0.0657 | 0.0238 | 0.9 | - | REFUSE |

@@ -1,11 +1,11 @@
 Starting phenix.rotalyze
-on Mon Nov  2 23:43:52 2026 by root
+on Thu Nov  5 18:30:39 2026 by root
 ===============================================================================
 
 Processing files:
 -------------------------------------------------------------------------------
 
-  Found model, /home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb
+  Found model, /home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0001.pdb
 
 Processing PHIL parameters:
 -------------------------------------------------------------------------------
@@ -16,9 +16,9 @@ Final processed PHIL parameters:
 -------------------------------------------------------------------------------
   data_manager {
     model {
-      file = "/home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb"
+      file = "/home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0001.pdb"
     }
-    default_model = "/home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb"
+    default_model = "/home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0001.pdb"
   }
 
 
@@ -27,8 +27,8 @@ Starting job
 
 ===============================================================================
 Job complete
-usr+sys time: 11.67 seconds
-wall clock time: 11.66 seconds
+usr+sys time: 9.03 seconds
+wall clock time: 9.03 seconds
 residue:occupancy:score%:chi1:chi2:chi3:chi4:evaluation:rotamer
  A   2  PRO:1.00:92.0:333.1:38.5:325.5::Favored:Cg_exo
  A   3  ARG:1.00:72.9:293.8:178.3:75.7:174.9:Favored:mtp180

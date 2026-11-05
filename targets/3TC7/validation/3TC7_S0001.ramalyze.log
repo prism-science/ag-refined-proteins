@@ -1,11 +1,11 @@
 Starting phenix.ramalyze
-on Mon Nov  2 23:43:53 2026 by root
+on Thu Nov  5 18:30:40 2026 by root
 ===============================================================================
 
 Processing files:
 -------------------------------------------------------------------------------
 
-  Found model, /home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb
+  Found model, /home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0001.pdb
 
 Processing PHIL parameters:
 -------------------------------------------------------------------------------
@@ -16,9 +16,9 @@ Final processed PHIL parameters:
 -------------------------------------------------------------------------------
   data_manager {
     model {
-      file = "/home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb"
+      file = "/home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0001.pdb"
     }
-    default_model = "/home/dev/runs/hr/release_2026-11-02/3TC7/model/3TC7_S0001.pdb"
+    default_model = "/home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0001.pdb"
   }
 
 
@@ -27,8 +27,8 @@ Starting job
 
 ===============================================================================
 Job complete
-usr+sys time: 12.03 seconds
-wall clock time: 12.04 seconds
+usr+sys time: 8.22 seconds
+wall clock time: 8.21 seconds
 residue:score%:phi:psi:evaluation:type
  A   3  ARG:18.51:-75.23:169.20:Favored:General
  A   4  TYR:20.90:-64.97:124.00:Favored:General

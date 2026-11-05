@@ -14,7 +14,7 @@
 | Deposited refinement program | PHENIX |
 | Released by the PDB | 2025-03-05 |
 | Primary citation | Structure and Interactions of HIV-1 gp41 CHR-NHR Reverse Hairpin Constructs Reveal Molecular Determinants of Antiviral Activity (J.Mol.Biol. 2024), DOI 10.1016/j.jmb.2024.168650 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0, 8C5N and 3TC7 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for 7R2H of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle Tba97f6, step S0062, 2026-10-20 02:10:55 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00093 from three seeds), gap widened by at most 0.002, gap ≤ 0.0674 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |

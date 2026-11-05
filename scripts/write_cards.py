@@ -8,7 +8,7 @@ import datetime, json, math, re, sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[1])
-HARNESS = "prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84)"
+HARNESS = "prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0, 8C5N and 3TC7 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for 7R2H of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84)"
 # The operator's vault read of 2026-10-22 (prism-science/agentic-refinement, docs/PLAN.md, 2026-10-22 12:10Z): the model read, R-vault and
 # R-free from S0001 to that model, the vault's size, the noise sigma of a paired change, z = (dR-vault - dR-free) / sigma, and whether the
 # model read is on the lineage of the released model.
@@ -87,7 +87,7 @@ bash scripts/chain_oct28.sh /home/dev/runs/hr/Tff1b3f_held2 /home/dev/runs/hr/Tf
 bash scripts/fork_run.sh /home/dev/runs/hr/Tff1b3f_nqh /home/dev/runs/hr/Tff1b3f_x       # then scripts/round.sh RUN JOBS 6 S0120, rounds 1-7
 phenix.python tools/score_model.py heads --run /home/dev/runs/hr/Tff1b3f_x              # the Referee's branches and decisions""",
    repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs (`chain_oct28_Tff1b3f_oct28.log` for the trial fork; the earlier campaign's `chain*_7KR0.sh` stay for the record). The rounds of 2026-11-04 and 2026-11-05 (the jobs files, the round reports, `heads.json` and `trajectory/referee.txt`) are on the pod under the fork; the held-water and held-lever chains ran on the source forks; every command line of every step is in that step's `change.json` on the pod."),
- "3TC7": dict(handle="T431c8e_oct29", step="S0108", kind="a six-conformer ensemble", snapshot="2026-11-02",
+ "3TC7": dict(handle="T431c8e_nqh", step="S0123", kind="a six-conformer ensemble", snapshot="2026-11-05",
    short="Engineered protein, NESG target OR62",
    what="""Six complete conformers of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
 data with riding hydrogens, restraint weights wc 0.3 / wu 0.25, TLS (one group for the protein) over an isotropic residual on
@@ -106,13 +106,14 @@ correlation did not fall; 42 waters that the moved side chains overlapped delete
 repair); selenomethionine in conformers A and B of the five methionines, one third selenium (S0104: the tallest peak 13.7 →
 7.7σ, R-free −7.0σ); the revert to selenium in conformer A of Met73, Met109 and Met237 only (S0106: the deepest point of the
 difference map −11.0 → −5.3σ, a repair of the hole, R-free −1.9σ); the Coot repair again (S0108: 26 waters deleted, R-free
-−10.5σ against its control, the gap 0.003 narrower, clashscore 9.5 → 9.0).""",
+−10.5σ against its control, the gap 0.003 narrower, clashscore 9.5 → 9.0), the release of 2026-11-02; then, in the clash
+fork T431c8e_nqh, the clash term (Phenix's nonbonded weight, 100 by default at this resolution) at 300 (S0116, clashscore
+9.0 → 3.5, R-free 0.1521) and at 1000 (S0123, clashscore 0.8, R-free 0.1553).""",
    caveats=[
-    "**R-free 0.1504 is above the 2026-10-21 release (S0061, 0.1475) and above S0104 (0.1498).** The steps after S0061 were accepted as repairs: a change that lowers a check (the difference map, the waters in protein density, the conformer B-factors) with R-free not worse than 2σ against its control. From S0086 to S0108 the tallest work-only mFo-DFc peak fell 12.0 → 6.6σ, the deepest point −12 → −5.0σ, the residues with an atom beyond ±3.5σ 15 → 11 and the waters in protein density 135 → 100. The operator chose this line, the cleaner map, on 2026-10-29; S0104 stays in the record on the pod.",
+    "**This release trades R-free for geometry.** Against the release of 2026-11-02 (S0108: R-free 0.1504, clashscore 9.0, wE 707) this model reads R-free 0.1553 (+0.0049) with clashscore 0.8 and wE 322: the clash term at weight 1000 against Phenix's default of 100. S0116 (weight 300: R-free 0.1521, clashscore 3.5) is the milder trade and stays in the record on the pod.",
     "**Partial selenomethionine.** The SD sites hold about 18 electrons against 16 for sulfur: the crystal is partly selenomethionine. Selenium in every conformer was refused (+11σ, 2026-10-20); one third (S0104) left every Se atom in negative density; one sixth at three of the five methionines is what the maps support. The check that accepted S0106 (the deepest point of the difference map) was added after S0105, the same change on another fork, was refused by 0.06σ; the fork T431c8e_oct28b ran it with fresh arms, and the operator took the result.",
-    "**The gap is 0.0640** against 0.0443 for the re-refined model, under the fork's bounds (a widening of at most 0.010 in one step, a cap of 0.12; 0.002 and 0.030 in the main run). The main run's best under the standing bounds is S0042 (R-free 0.1540; its record is in `refinement/main_run_T431c8e/`).",
-    "**Rotamer outliers 2.74 %** are above the gate's 1.5 % cap and passed because the control had the same; one Ramachandran outlier (0.4 %). Clashscore 9.0 against 1.7 re-refined. Holton's weighted geometry energy wE rose from 602 at S0061 to 707: the repairs cost geometry energy. Bond RMSD 0.019 Å is at the gate's 0.020 Å cap.",
     "Six conformers at 1.5 Å: the gate's control is the parent refined with the same seeds, so an accepted gain is relative to that control, not evidence that six conformers are the right number for this entry. The two-conformer model of the main run (S0020, R-free 0.1688) is in the record.",
+    "**The gap is 0.0623** against 0.0443 for the re-refined model. Rotamer outliers 2.89 %; one Ramachandran outlier (0.4 %); bond RMSD 0.019 Å; MolProbity score 1.40. The tallest work-only mFo-DFc peak is 5.7σ, the deepest point −4.6σ.",
    ],
    extra_files=[("`refinement/main_run_T431c8e/`", "the main run's own record after the fork point (its best S0042, R-free 0.1540, under the standing gap bounds)")],
    reproduce="""bash tools/preprocessing.sh 3TC7 --runs /home/dev/runs/hr --seeds 3 --nproc 3
@@ -123,7 +124,8 @@ bash scripts/chain_gap.sh /home/dev/runs/hr/T431c8e_gap 6                       
 bash scripts/chain_coot_repair.sh /home/dev/runs/hr/T431c8e_gap /home/dev/runs/hr/T431c8e_coot S0061 6   # S0086
 bash scripts/chain_oct28.sh /home/dev/runs/hr/T431c8e_coot /home/dev/runs/hr/T431c8e_oct28 S0086       # S0104
 # T431c8e_oct28b: a fork of T431c8e_oct28 with quality_hole_tol 1.0 and quality_hole_drop 1.5; refine_step.py semet --revert --pairs --kind sanity from S0104 (S0106)
-bash scripts/chain_oct29.sh /home/dev/runs/hr/T431c8e_oct28b /home/dev/runs/hr/T431c8e_oct29 S0106     # S0108""",
+bash scripts/chain_oct29.sh /home/dev/runs/hr/T431c8e_oct28b /home/dev/runs/hr/T431c8e_oct29 S0106     # S0108
+bash scripts/fork_run.sh /home/dev/runs/hr/T431c8e_oct29 /home/dev/runs/hr/T431c8e_nqh                     # then refine_step.py nonbonded --weight 300 (S0116) and --weight 1000 (S0123)""",
    repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs. The levers whose logs have no script there were scheduled from one-off scripts; every command line of every step is in that step's `change.json` on the pod."),
  "1LZ8": dict(handle="Tee73c5", step="S0073", kind="a two-conformer ensemble",
    short="Hen egg-white lysozyme, phased on the anomalous signal of S and Cl",
@@ -246,7 +248,7 @@ bash scripts/fork_run.sh /home/dev/runs/hr/Ta4f3f9 /home/dev/runs/hr/Ta4f3f9_gap
 bash scripts/chain_grow.sh /home/dev/runs/hr/Ta4f3f9_gap /home/dev/runs/hr/Ta4f3f9_g8 8             # eight conformers, S0046 and S0051
 bash scripts/chain_oct28.sh /home/dev/runs/hr/Ta4f3f9_g8 /home/dev/runs/hr/Ta4f3f9_oct28 S0051      # S0062 to S0076""",
    repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs (`chain_oct28_Ta4f3f9_oct28.log` for the trial fork). The step S0076 was run by hand (`coot_repair.py bfactors --criterion density --kind improving`); every command line of every step is in that step's `change.json` on the pod."),
- "8C5N": dict(handle="T5f59f1_oct28", step="S0065", kind="a six-conformer ensemble", snapshot="2026-11-02",
+ "8C5N": dict(handle="T5f59f1_nqh", step="S0074", kind="a six-conformer ensemble", snapshot="2026-11-05",
    short="Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa",
    what="""Six complete conformers of the protein (altlocs A to F), each at occupancy 1/6, refined together against the working
 data with riding hydrogens, anisotropic ADPs on every protein atom and every water, restraint weights wc 0.3 / wu 0.25,
@@ -264,21 +266,25 @@ work-only difference maps (S0031, S0034); anisotropic water ADPs (S0037, R-free 
 conformer of the residues next to them fitted in Coot); conformer B-factors more than 3 times apart reset to the site median
 (S0049, a repair); the water repair again (S0050: no water in protein density left); the B-factor reset again (S0055, a
 repair); the B-factor reset by the density (S0065, a repair: a conformer's B above the site median reset to the median where
-that conformer's 2mFo-DFc density is at least half the site's; conformer-B outliers 31 → 3, R-free −0.3σ against the control).
+that conformer's 2mFo-DFc density is at least half the site's; conformer-B outliers 31 → 3, R-free −0.3σ against the control),
+the release of 2026-11-02; then, in the clash fork T5f59f1_nqh: the clash term (Phenix's nonbonded weight) at 300 (S0067,
+clashscore 14.8 → 4.2, R-free 0.0882), B to occupancy for conformers whose side-chain B is above twice the site median
+(S0072, 0.0884 / 3.2) and the clash term at 1000 (S0074, 0.0889 / 1.2).
 From S0030 on, the Coot checks gated every step. Refused after S0055: a 3σ and a 2.5σ pick with the range-of-motion rule
 (S0056, S0058), the Phenix restraint weights 1 / 1 (+6.2σ on the held Coot line), anisotropic water ADPs (S0060), a
 convergence step (S0061), the peak repair (S0062) and Untangler's relabel (S0063).""",
    caveats=[
-    "**R-free 0.0875 is 0.0004 above S0046 (0.0871), the lowest of the line.** The four steps after S0046 were accepted as repairs: a change that lowers a check with R-free not worse than 2σ against its control. From the 2026-10-21 release (S0027) to S0065 the waters in protein density fell 62 → 4, the conformer-B outliers 20 → 3; the residues with an atom beyond ±3.5σ stay at 21 (20). The 2026-10-21 model refined the water occupancies; the reviewers (Spencer Passmore and Stephanie Wankowicz, 2026-10-27) found waters in protein density and extreme conformer B-factors on it, and the held-water rule and the Coot repairs are the answer.",
-    "**The gap is 0.0248** against 0.0046 for the re-refined model (the run's cap 0.030). **Clashscore 14.8** is at the gate's cap of 15, against 8.8 at the 2026-10-21 release and 4.8 re-refined: the held-water picks added waters at full conformer share. Rotamer outliers 1.48 %; no Ramachandran outlier.",
-    "Six conformers at 0.75 Å: 18 961 atoms against 2 850 deposited. The deposited model scores 0.1571 on our flags and 0.1294 after the common recipe (S0001); the header reports 0.1634 on its own flags. The checks of this model: 21 residues with an atom beyond ±3.5σ, 2 next to a positive peak of 3.5σ or more, the tallest peak 10.5σ, wE 741 (Holton's weighted geometry energy; 521 at the 2026-10-21 release).",
+    "**This release trades R-free for geometry.** Against the release of 2026-11-02 (S0065: R-free 0.0875, clashscore 14.8, wE 741) this model reads R-free 0.0889 (+0.0014) with clashscore 1.2 and wE 309: the clash term at weight 1000, where phenix.refine's own default at this resolution is 16. Rotamer outliers 1.37 %; no Ramachandran outlier; MolProbity score 1.25.",
+    "**The gap is 0.0243** against 0.0046 for the re-refined model (the run's cap 0.030). Conformer-B outliers 33 (3 at S0065): the B-to-occupancy step moves a conformer's excess B into its occupancy. The tallest work-only mFo-DFc peak is 9.8σ, the deepest point −6.6σ; no water overlaps protein.",
+    "Six conformers at 0.75 Å: 18 961 atoms against 2 850 deposited. The deposited model scores 0.1571 on our flags and 0.1294 after the common recipe (S0001); the header reports 0.1634 on its own flags.",
    ],
    extra_files=[],
    reproduce="""bash tools/preprocessing.sh 8C5N --runs /home/dev/runs/hr --seeds 3 --nproc 3
 bash scripts/chain_target.sh /home/dev/runs/hr/T5f59f1 6                                                  # to the six-conformer split, S0014
 bash scripts/chain_heldwater.sh /home/dev/runs/hr/T5f59f1 /home/dev/runs/hr/T5f59f1_held S0014 6          # S0030 to S0040
 bash scripts/chain_coot_repair.sh /home/dev/runs/hr/T5f59f1_held /home/dev/runs/hr/T5f59f1_heldcoot S0040 6   # S0046 to S0050
-bash scripts/chain_oct28.sh /home/dev/runs/hr/T5f59f1_heldcoot /home/dev/runs/hr/T5f59f1_oct28 S0050       # S0055 to S0065""",
+bash scripts/chain_oct28.sh /home/dev/runs/hr/T5f59f1_heldcoot /home/dev/runs/hr/T5f59f1_oct28 S0050       # S0055 to S0065
+bash scripts/fork_run.sh /home/dev/runs/hr/T5f59f1_oct28 /home/dev/runs/hr/T5f59f1_nqh                       # then refine_step.py nonbonded --weight 300 / ensemble_edit.py b-to-occ / nonbonded --weight 1000: S0067, S0072, S0074""",
    repro_note="The chain scripts under `refinement/chains/` are the hand-scheduled originals with their logs (`chain_oct28_T5f59f1_oct28.log` for the trial fork). The held-water and Coot repair chains ran on the source forks; every command line of every step is in that step's `change.json` on the pod."),
 }
 
@@ -452,7 +458,7 @@ def main():
     prov = load(ROOT / "provenance.json")
     prov["exported_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     prov["line"] = "hierarchical refinement (C-conformer ensembles)"
-    prov["harness"] = {"repository": "prism-science/agentic-refinement", "branch": "manzuoni/nov03-consolidated", "commit_of_the_models": "62eeafa (7KR0 of 2026-11-05, branch manzuoni/nov03-consolidated); 25ec394 (8C5N, 7R2H, 3TC7 of 2026-11-02, branch manzuoni/oct28-trials); bfed380 for the four targets unchanged since 2026-10-21", "commit_at_release": "62eeafa (branch manzuoni/nov03-consolidated; pull request #70 to main)"}
+    prov["harness"] = {"repository": "prism-science/agentic-refinement", "branch": "manzuoni/nov03-consolidated", "commit_of_the_models": "62eeafa (7KR0, 8C5N, 3TC7 of 2026-11-05, branch manzuoni/nov03-consolidated); 25ec394 (7R2H of 2026-11-02, branch manzuoni/oct28-trials); bfed380 for the four targets unchanged since 2026-10-21", "commit_at_release": "62eeafa (branch manzuoni/nov03-consolidated; pull request #70 to main)"}
     prov["baseline"] = "S0001: the deposited model after the common recipe (phenix.refine, 10 macro-cycles, three seeds, the median); every comparison in the cards and the README is against it (operator, meeting of 2026-10-21)"
     for i in info:
         rec = prov["released"].setdefault(i["id"], {})

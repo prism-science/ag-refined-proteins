@@ -126,11 +126,12 @@
    "refine": false,
    "selection": "element SE"
   },
-  "since": "S0106",
+  "nonbonded_weight": 1000.0,
+  "since": "S0123",
   "tls": [
    "chain A and not water"
   ],
-  "utc": "2026-10-29T14:41:39Z",
+  "utc": "2026-11-03T07:57:59Z",
   "wavelength": 0.97915,
   "wc": 0.3,
   "wu": 0.25
@@ -201,6 +202,44 @@
     "chain A and not water"
    ],
    "utc": "2026-10-29T14:41:39Z",
+   "wavelength": 0.97915,
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "adp": "group1",
+   "anomalous": {
+    "eff": "/home/dev/runs/hr/T431c8e_oct28b/prep/anomalous_SE.eff",
+    "f_double_prime": 4.0,
+    "f_prime": -8.0,
+    "refine": false,
+    "selection": "element SE"
+   },
+   "nonbonded_weight": 300.0,
+   "since": "S0116",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-11-03T03:08:06Z",
+   "wavelength": 0.97915,
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "adp": "group1",
+   "anomalous": {
+    "eff": "/home/dev/runs/hr/T431c8e_oct28b/prep/anomalous_SE.eff",
+    "f_double_prime": 4.0,
+    "f_prime": -8.0,
+    "refine": false,
+    "selection": "element SE"
+   },
+   "nonbonded_weight": 1000.0,
+   "since": "S0123",
+   "tls": [
+    "chain A and not water"
+   ],
+   "utc": "2026-11-03T07:57:59Z",
    "wavelength": 0.97915,
    "wc": 0.3,
    "wu": 0.25

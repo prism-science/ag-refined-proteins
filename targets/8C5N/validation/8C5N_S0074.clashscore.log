@@ -1,0 +1,61 @@
+Starting phenix.python
+on Thu Nov  5 18:28:36 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/release_1105b/8C5N/model/8C5N_S0074.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/release_1105b/8C5N/model/8C5N_S0074.pdb"
+    }
+    default_model = "/home/dev/runs/hr/release_1105b/8C5N/model/8C5N_S0074.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 9.12 seconds
+wall clock time: 13.27 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 132 FARG  HG2  A 132 FARG HH11 :0.550
+ A  26 DHIS  HA   A 201 DPHE  CE2 :0.493
+ A  26 FHIS  HA   A 201 FPHE  CE2 :0.481
+ A 135 EASP  O    A 190 EASN  HA  :0.471
+ A 136 FPHE  O    A 158 FPRO  HA  :0.461
+ A 114 AASP  HB2  A 301   CL CL   :0.439
+ A  80 FGLN  HG2  A 151 FTRP  CE2 :0.432
+ A 159 CPHE  CE2  A 179 CPRO  HD3 :0.432
+ A  27 AGLY  HA3  A 124 ALYS  O   :0.429
+ A  71 DASN  HB3  A 201 DPHE  CE2 :0.427
+ A 108 FSER  HA   A 206 FASP  O   :0.426
+ A 152 BSER  HB2  z1743 BHOH O    :0.426
+ A 179 EPRO  HB2  A 182 ELYS  HD2 :0.425
+ A 137 ATYR  O    A 188 AILE  HA  :0.423
+ A  79 DHIS  ND1  A 202 DTYR  OH  :0.422
+ A  26 CHIS  HA   A 201 CPHE  CE2 :0.420
+ A  71 FASN  O    A  93 FLYS  HD3 :0.420
+ A  71 FASN  HB3  A 201 FPHE  CE2 :0.411
+ A 137 CTYR  O    A 188 CILE  HA  :0.407
+ A  68 DASN  C    A  68 DASN  OD1 :0.400
+clashscore = 1.22

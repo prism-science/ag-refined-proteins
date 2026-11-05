@@ -3,12 +3,12 @@
  "harness": {
   "repository": "prism-science/agentic-refinement",
   "branch": "manzuoni/nov03-consolidated",
-  "commit_of_the_models": "62eeafa (7KR0 of 2026-11-05, branch manzuoni/nov03-consolidated); 25ec394 (8C5N, 7R2H, 3TC7 of 2026-11-02, branch manzuoni/oct28-trials); bfed380 for the four targets unchanged since 2026-10-21",
+  "commit_of_the_models": "62eeafa (7KR0, 8C5N, 3TC7 of 2026-11-05, branch manzuoni/nov03-consolidated); 25ec394 (7R2H of 2026-11-02, branch manzuoni/oct28-trials); bfed380 for the four targets unchanged since 2026-10-21",
   "commit_at_release": "62eeafa (branch manzuoni/nov03-consolidated; pull request #70 to main)"
  },
  "pod": "actl workspace pod autoresearch, namespace diffuse (owner xraymemory); run directories /home/dev/runs/hr/<handle>",
  "phenix_version": "Version: 2.1 Release tag: 6048",
- "exported_at": "2026-11-05T16:27:13Z",
+ "exported_at": "2026-11-05T18:31:33Z",
  "released": {
   "7KR0": {
    "run_handle": "Tff1b3f_x",
@@ -18,9 +18,9 @@
    "rerefined_r_free_S0001": 0.10945
   },
   "3TC7": {
-   "run_handle": "T431c8e_oct29",
-   "step": "S0108",
-   "utc": "2026-10-29T21:05:02Z",
+   "run_handle": "T431c8e_nqh",
+   "step": "S0123",
+   "utc": "2026-11-03T07:57:59Z",
    "vault_last_read": "2026-10-22 at S0061 (the release of 2026-10-21): R-vault 0.1493 (S0001 0.1906), R-free 0.1475 (S0001 0.1856), z -0.4, holds",
    "rerefined_r_free_S0001": 0.18555
   },
@@ -60,9 +60,9 @@
    "rerefined_r_free_S0001": 0.13549
   },
   "8C5N": {
-   "run_handle": "T5f59f1_oct28",
-   "step": "S0065",
-   "utc": "2026-10-30T17:47:09Z",
+   "run_handle": "T5f59f1_nqh",
+   "step": "S0074",
+   "utc": "2026-11-03T16:17:48Z",
    "vault_last_read": "2026-10-22 at S0027 (the release of 2026-10-21): R-vault 0.0995 (S0001 0.1480), R-free 0.0908 (S0001 0.1294), z -2.3, holds; a sibling of the released lineage",
    "rerefined_r_free_S0001": 0.12939
   }

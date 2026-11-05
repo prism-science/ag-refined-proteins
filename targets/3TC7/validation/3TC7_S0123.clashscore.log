@@ -1,0 +1,60 @@
+Starting phenix.python
+on Thu Nov  5 18:30:25 2026 by root
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, /home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0123.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    keep_hydrogens=True
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "/home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0123.pdb"
+    }
+    default_model = "/home/dev/runs/hr/release_1105c/3TC7/model/3TC7_S0123.pdb"
+  }
+  keep_hydrogens = True
+
+
+Starting job
+===============================================================================
+
+===============================================================================
+Job complete
+usr+sys time: 9.55 seconds
+wall clock time: 15.15 seconds
+
+Using electron cloud x-H distances and vdW radii
+
+Using input model H/D atoms...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 143 AGLU  HB3  z1104 AHOH  O   :0.713
+ A  18 DARG  HD2  z1516 DHOH O    :0.530
+ A 223 DARG  HD2  A 227 DVAL  O   :0.511
+ A  55 CLYS  HB3  A  90 CASN  HB2 :0.509
+ A 210 ELYS  HE3  z1242 EHOH O    :0.499
+ A  44 CASN  HA   A 401  ACY  H1  :0.482
+ A 165 DASP  HB2  z1074 DHOH  O   :0.459
+ A  51 EGLU  OE2  A 303  PO4  O4  :0.455
+ A  27 EGLN  CB   z 587 EHOH  O   :0.437
+ A 217 CASN  HA   A 220 CGLU  HG2 :0.426
+ A   3 CARG  HD2  A 137 CLEU  O   :0.421
+ A  52 ETYR  OH   A  66 EPRO  HG3 :0.421
+ A  18 DARG  HA   A  18 DARG  HD3 :0.413
+ A 401  ACY  H3   z1048 BHOH  O   :0.413
+ A  81 FPHE  CZ   A 110 FTYR  CD1 :0.411
+ A 188 AGLU  HB3  z 770 AHOH  O   :0.406
+ A 135 FLYS  HB2  z 405 FHOH  O   :0.404
+ A  81 CPHE  CZ   A 110 CTYR  CG  :0.400
+ A  44 CASN  C    A 401  ACY  H1  :0.400
+clashscore = 0.78

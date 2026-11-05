@@ -1,0 +1,47 @@
+{
+ "argv": "arms/refine.json",
+ "cand_input": "/home/dev/runs/hr/T5f59f1_nqh/trajectory/S0072/model.pdb",
+ "cand_input_sha256": "cf753c1ce3161979c4768a5cc92437230f48c7888b60f583e8d0d27722a8c65d",
+ "ctrl_input": "/home/dev/runs/hr/T5f59f1_nqh/trajectory/S0072/model.pdb",
+ "ctrl_input_sha256": "cf753c1ce3161979c4768a5cc92437230f48c7888b60f583e8d0d27722a8c65d",
+ "ctrl_options": {
+  "standing": {
+   "nonbonded_weight": 300.0,
+   "occupancies": "none",
+   "since": "S0067",
+   "utc": "2026-11-03T03:43:42Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "description": "nonbonded restraint weight 1000 against 300 (the clash term alone; wc and wu unchanged)",
+ "kind": "sanity",
+ "metaparams_sha256": "0954ccc4b2a118772740aab16437a57e24df33596eddeb9ca7cd9b03ed21e33d",
+ "model_after": "/home/dev/runs/hr/T5f59f1_nqh/trajectory/S0074/model.pdb",
+ "model_after_sha256": "79767a56d4d1f902e43d17387cc00732740a1bb6e8ed6d266a729128b3615adc",
+ "model_before_sha256": "cf753c1ce3161979c4768a5cc92437230f48c7888b60f583e8d0d27722a8c65d",
+ "parent": "S0072",
+ "prepare": {},
+ "refine_options": {
+  "nonbonded_weight": 1000.0,
+  "standing": {
+   "nonbonded_weight": 300.0,
+   "occupancies": "none",
+   "since": "S0067",
+   "utc": "2026-11-03T03:43:42Z",
+   "wc": 0.3,
+   "wu": 0.25
+  }
+ },
+ "retry": false,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "stage": "refinement",
+ "step": "S0074",
+ "tool": "refine_step",
+ "utc": "2026-11-03T16:17:48Z",
+ "worker": "refinement"
+}

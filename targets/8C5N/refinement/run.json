@@ -118,9 +118,10 @@
   }
  },
  "standing": {
+  "nonbonded_weight": 1000.0,
   "occupancies": "none",
-  "since": "S0030",
-  "utc": "2026-10-27T06:52:22Z",
+  "since": "S0074",
+  "utc": "2026-11-03T16:17:48Z",
   "wc": 0.3,
   "wu": 0.25
  },
@@ -135,6 +136,22 @@
    "occupancies": "none",
    "since": "S0030",
    "utc": "2026-10-27T06:52:22Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 300.0,
+   "occupancies": "none",
+   "since": "S0067",
+   "utc": "2026-11-03T03:43:42Z",
+   "wc": 0.3,
+   "wu": 0.25
+  },
+  {
+   "nonbonded_weight": 1000.0,
+   "occupancies": "none",
+   "since": "S0074",
+   "utc": "2026-11-03T16:17:48Z",
    "wc": 0.3,
    "wu": 0.25
   }

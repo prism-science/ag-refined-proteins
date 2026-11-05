@@ -1,0 +1,1 @@
+S0123 2026-11-03T07:57:59Z refinement refine_step parent S0116 | nonbonded restraint weight 1000 against 300 (the clash term alone; wc and wu unchanged) | R-free 0.15209 -> 0.15526 (+11.9 sigma) R-work 0.08963 -> 0.09296 gap -0.0002 clash 0.8 rota 2.9 % | atoms 25841 waters 1357 altlocs ABCDEF anisou 12109 | ACCEPT

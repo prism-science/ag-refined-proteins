@@ -1,0 +1,13 @@
+[2026-11-03T00:35:34Z] chain_nov03 start on /home/dev/runs/hr/T431c8e_nqh from S0108
+[2026-11-03T01:54:34Z] the nqh step of /home/dev/runs/hr/T431c8e_nqh has ended; the model in force is S0108
+waters that count 100 (own-conformer clashes 3, in another conformer's density 97; occupancy sum 45.81) | protein atoms with conformer B differing more than 3 times: 0 of 2015 | copies 6, waters 1357
+[2026-11-03T01:54:36Z] nonbonded_300 from S0108
+[2026-11-03T03:08:07Z] share_0.5 from S0116
+[2026-11-03T03:08:07Z] share_1.0 from S0116
+[2026-11-03T03:08:08Z] prune_0.5 from S0116
+[2026-11-03T04:25:26Z] prune_0.75 from S0116
+[2026-11-03T05:08:43Z] b_to_occ_2 from S0116
+[2026-11-03T05:08:44Z] untangle_n from S0116: Untangler low_compute_clash_resolution
+[2026-11-03T06:45:15Z] nonbonded_1000 from S0116
+waters that count 89 (own-conformer clashes 0, in another conformer's density 89; occupancy sum 38.32) | protein atoms with conformer B differing more than 3 times: 0 of 2015 | copies 6, waters 1357
+[2026-11-03T07:58:01Z] chain_nov03 end on /home/dev/runs/hr/T431c8e_nqh; the line's last model S0123 (from S0108)

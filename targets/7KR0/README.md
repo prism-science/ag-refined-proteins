@@ -14,7 +14,7 @@
 | Deposited refinement program | PHENIX |
 | Released by the PDB | 2020-12-09 |
 | Primary citation | Fragment binding to the Nsp3 macrodomain of SARS-CoV-2 identified through crystallographic screening and computational docking (Sci Adv 2021), DOI 10.1126/sciadv.abf8711 |
-| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for the three targets of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
+| Harness | prism-science/agentic-refinement, branch `manzuoni/nov03-consolidated`, commit 62eeafa (pull request #70 to `main`) for 7KR0, 8C5N and 3TC7 of 2026-11-05; branch `manzuoni/oct28-trials`, commit 25ec394, for 7R2H of 2026-11-02; the models of 2026-10-21: branch `manzuoni/hierarchical_refinement`, commit bfed380 (merged into `main` as 7d62e84) |
 | Run | handle Tff1b3f_x, step S0144, 2026-11-05 08:16:28 UTC |
 | Phenix | 2.1-6048 |
 | Gate | ΔR-free ≤ −2σ against the control (σ = 0.00016 from three seeds), gap widened by at most 0.002, gap ≤ 0.0300 or not above the control's, clashscore ≤ 15, rotamer outliers ≤ 1.5 % or not above the control's |
@@ -36,7 +36,7 @@ MolProbity score from those three.
 | Clashscore (phenix.clashscore, hydrogens kept) | 4.3 | 5.3 | 5.8 |
 | Rotamer outliers | 0.89 % | 1.33 % | 1.77 % |
 | Ramachandran outliers / favoured | 0.0 % / 99.4 % | 0.0 % / 98.8 % | 0.0 % / 98.2 % |
-| Bond RMSD / angle RMSD | n/a / n/a | 0.008 Å / 1.10° | 0.008 Å / 1.01° |
+| Bond RMSD / angle RMSD | 0.021 Å / 0.99° | 0.008 Å / 1.10° | 0.008 Å / 1.01° |
 | MolProbity score | 1.21 | 1.38 | 1.51 |
 | Conformers | 1 (altlocs ABCD on some residues) | 1 (altlocs ABCD on some residues) | 6, altlocs ABCDEF |
 | Atoms (of which H) | 4 300 (1 990) | 4 391 (1 990) | 18 184 (7 722) |

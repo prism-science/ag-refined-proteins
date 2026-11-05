@@ -1,7 +1,7 @@
 # ag-refined-proteins
 
 > This repository is under active development. The models are dated snapshots of refinements that are still running,
-> and the numbers will change. The snapshot of 2026-11-05 (tag `2026-11-05`) refreshes 7KR0; 8C5N, 7R2H and 3TC7 are as
+> and the numbers will change. The snapshot of 2026-11-05 (branch `manzuoni/2026-11-05`) refreshes 7KR0, 8C5N and 3TC7; 7R2H is as
 > released on 2026-11-02 (tag `2026-11-02`) and the other four targets as released on 2026-10-21. If you find a problem, please open an issue with the target ID and
 > the file you used.
 
@@ -38,11 +38,11 @@ sibling of the released lineage; each card says what was read.
 <!-- results-table:begin -->
 | Target | Res. (Å) | Entry | Re-refined, our flags (full / report) | This release (full / report) | Δ full | R-work (re-refined → ours) | Gap (re-refined → ours) | Model | Status | Vault check (2026-10-22) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [8C5N](targets/8C5N/README.md) | 0.75 | Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa | 0.1294 / 0.1286 | **0.0875 / 0.0872** | −0.0419 | 0.1247 → 0.0627 | 0.0046 → 0.0248 | six-conformer ensemble, step S0065 | improved | holds at S0027: R-vault 0.1480 → 0.0995, z -2.3 (a sibling) |
+| [8C5N](targets/8C5N/README.md) | 0.75 | Chitin-binding protein D (CbpD) from Pseudomonas aeruginosa | 0.1294 / 0.1286 | **0.0889 / 0.0878** | −0.0405 | 0.1247 → 0.0646 | 0.0046 → 0.0243 | six-conformer ensemble, step S0074 | improved | holds at S0027: R-vault 0.1480 → 0.0995, z -2.3 (a sibling) |
 | [7KR0](targets/7KR0/README.md) | 0.77 | Crystal structure of SARS-CoV-2 NSP3 macrodomain (C2 crystal form, 100 K) | 0.1095 / 0.1104 | **0.0728 / 0.0705** | −0.0367 | 0.1005 → 0.0461 | 0.0089 → 0.0266 | six-conformer ensemble, step S0144 | improved | holds at S0053: R-vault 0.1054 → 0.0725, z +1.2 (a sibling) |
 | [7R2H](targets/7R2H/README.md) | 0.79 | Cyclophilin D with DMSO | 0.1355 / 0.1365 | **0.0946 / 0.0948** | −0.0409 | 0.1243 → 0.0650 | 0.0112 → 0.0296 | eight-conformer ensemble, step S0076 | improved | holds at S0032: R-vault 0.1346 → 0.0982, z +0.6 |
 | [9ARN](targets/9ARN/README.md) | 1.41 | HIV-1 gp41 CHR-NHR reverse hairpin construct | 0.2970 / 0.3157 | **0.2769 / 0.2856** | −0.0201 | 0.2346 → 0.2389 | 0.0624 → 0.0380 | single model, step S0062 | improved | holds at S0062: R-vault 0.2751 → 0.2643, z +0.5 |
-| [3TC7](targets/3TC7/README.md) | 1.5 | Engineered protein, NESG target OR62 | 0.1856 / 0.1836 | **0.1504 / 0.1493** | −0.0352 | 0.1412 → 0.0864 | 0.0443 → 0.0640 | six-conformer ensemble, step S0108 | improved | holds at S0061: R-vault 0.1906 → 0.1493, z -0.4 |
+| [3TC7](targets/3TC7/README.md) | 1.5 | Engineered protein, NESG target OR62 | 0.1856 / 0.1836 | **0.1553 / 0.1513** | −0.0303 | 0.1412 → 0.0930 | 0.0443 → 0.0623 | six-conformer ensemble, step S0123 | improved | holds at S0061: R-vault 0.1906 → 0.1493, z -0.4 |
 | [1LZ8](targets/1LZ8/README.md) | 1.53 | Hen egg-white lysozyme, phased on the anomalous signal of S and Cl | 0.2712 / 0.2659 | **0.2408 / 0.2375** | −0.0304 | 0.2048 → 0.1662 | 0.0664 → 0.0746 | two-conformer ensemble, step S0073 | lower R-free, not confirmed by the vault | fails at S0073: R-vault 0.2422 → 0.2517, z +2.5 |
 | [4QO4](targets/4QO4/README.md) | 1.7 | MDM2 (17-111) with compound 16 | 0.3097 / 0.2625 | **0.2747 / 0.2625** | −0.0350 | 0.2443 → 0.2229 | 0.0654 → 0.0518 | single model, step S0064 | lower R-free, not confirmed by the vault | fails at S0064: R-vault 0.2671 → 0.3009, z +3.2 |
 | [3QUE](targets/3QUE/README.md) | 2.7 | Human p38 MAP kinase with Skepinone-L | 0.2853 / 0.2869 | **0.2642 / 0.2585** | −0.0211 | 0.1895 → 0.2124 | 0.0958 → 0.0518 | single model, step S0057 | improved | holds at S0057: R-vault 0.2941 → 0.2735, z +0.0 |
@@ -55,11 +55,11 @@ favoured):
 <!-- geometry-table:begin -->
 | Target | Clashscore | Rotamer outliers % | Ramachandran outliers % | Ramachandran favoured % | Bond RMSD (Å) | Angle RMSD (°) | MolProbity score |
 |---|---|---|---|---|---|---|---|
-| [8C5N](targets/8C5N/README.md) | 4.8 → 14.8 | 1.75 → 1.48 | 0.0 → 0.0 | 99.5 → 96.7 | 0.007 → 0.010 | 1.00 → 1.17 | 1.44 → 2.01 |
+| [8C5N](targets/8C5N/README.md) | 4.8 → 1.2 | 1.75 → 1.37 | 0.0 → 0.0 | 99.5 → 95.7 | 0.007 → 0.014 | 1.00 → 1.35 | 1.44 → 1.25 |
 | [7KR0](targets/7KR0/README.md) | 5.3 → 5.8 | 1.33 → 1.77 | 0.0 → 0.0 | 98.8 → 98.2 | 0.008 → 0.008 | 1.10 → 1.01 | 1.38 → 1.51 |
 | [7R2H](targets/7R2H/README.md) | 4.3 → 12.1 | 0.00 → 1.76 | 0.0 → 0.6 | 96.9 → 95.7 | 0.008 → 0.011 | 1.07 → 1.25 | 1.40 → 2.08 |
 | [9ARN](targets/9ARN/README.md) | 3.2 → 1.6 | 3.03 → 0.00 | 0.0 → 0.0 | 100.0 → 100.0 | 0.010 → 0.004 | 1.03 → 0.52 | 1.48 → 0.91 |
-| [3TC7](targets/3TC7/README.md) | 1.7 → 9.0 | 1.36 → 2.74 | 0.0 → 0.4 | 98.0 → 95.6 | 0.010 → 0.019 | 1.17 → 1.64 | 1.03 → 2.12 |
+| [3TC7](targets/3TC7/README.md) | 1.7 → 0.8 | 1.36 → 2.89 | 0.0 → 0.4 | 98.0 → 95.6 | 0.010 → 0.019 | 1.17 → 1.70 | 1.03 → 1.40 |
 | [1LZ8](targets/1LZ8/README.md) | 4.1 → 1.3 | 1.90 → 0.48 | 0.0 → 0.0 | 97.6 → 93.7 | 0.011 → 0.005 | 1.15 → 0.75 | 1.48 → 1.27 |
 | [4QO4](targets/4QO4/README.md) | 2.6 → 7.3 | 2.41 → 3.53 | 0.0 → 0.0 | 98.8 → 95.6 | 0.011 → 0.016 | 1.30 → 1.63 | 1.33 → 2.13 |
 | [3QUE](targets/3QUE/README.md) | 10.4 → 6.3 | 12.87 → 3.63 | 0.3 → 0.3 | 93.8 → 96.8 | 0.013 → 0.006 | 1.44 → 1.26 | 2.79 → 1.98 |

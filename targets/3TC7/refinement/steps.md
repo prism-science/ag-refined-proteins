@@ -1,4 +1,4 @@
-# 3TC7: every step of run T431c8e_oct29 (the gate's facts lines)
+# 3TC7: every step of run T431c8e_nqh (the gate's facts lines)
 
 R-free and R-work are the gate's numbers after the step (the candidate's median seed; for a refused step, the refused candidate). σ is the margin against the parent as written in the facts line; the verdict is against the control.
 
@@ -120,3 +120,12 @@ R-free and R-work are the gate's numbers after the step (the candidate's median 
 | S0113 | S0108 | refinement | 10 macro-cycles against none (a zero-cycle control): convergence of the model in force | 0.1524 |  | 0.0883 | 0.0640 | 9.2 | - | REFUSE |
 | S0114 | S0108 | solvent | no peak at 6.0 sigma on a lettered water or in open solvent | 0.1504 |  | 0.0864 | 0.0640 | 9.0 | - | REFUSE |
 | S0115 | S0108 | rotamer-finder | no protein atom whose copy B-factors differ by more than 3 times | 0.1504 |  | 0.0864 | 0.0640 | 9.0 | - | REFUSE |
+| S0116 | S0108 | refinement | nonbonded restraint weight 300 against the default 100 (the clash term alone; wc and wu unchanged) | 0.1521 |  | 0.0896 | 0.0625 | 3.5 | - | ACCEPT |
+| S0117 | S0116 | solvent | nothing to change: lettered waters of one site in every conformer (within 0.5 A of their centroid) merged into one shared water at occupancy 1 | 0.1521 |  | 0.0896 | 0.0625 | 3.5 | - | REFUSE |
+| S0118 | S0116 | solvent | nothing to change: lettered waters of one site in every conformer (within 1 A of their centroid) merged into one shared water at occupancy 1 | 0.1521 |  | 0.0896 | 0.0625 | 3.5 | - | REFUSE |
+| S0119 | S0116 | rotamer-finder | residues whose conformers lie within 0.5 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | 0.1582 |  | 0.0952 | 0.0630 | 5.0 | - | REFUSE |
+| S0120 | S0116 | rotamer-finder | residues whose conformers lie within 0.75 A RMSD of each other collapsed to one conformer (no letter, occupancy 1) | 0.1742 |  | 0.1200 | 0.0542 | 7.7 | - | REFUSE |
+| S0121 | S0116 | rotamer-finder | nothing to change: conformers with side-chain B above 2 x the site median: B to the median, occupancy x (median/B)^1.5, the residue's occupancies renormalised to 1 | 0.1521 |  | 0.0896 | 0.0625 | 3.5 | - | REFUSE |
+| S0122 | S0116 | connectivity | connectivity relabel, 10 min effort, Untangler low_compute_clash_resolution | 0.1550 |  | 0.0912 | 0.0639 | 3.5 | - | REFUSE |
+| S0123 | S0116 | refinement | nonbonded restraint weight 1000 against 300 (the clash term alone; wc and wu unchanged) | 0.1553 |  | 0.0930 | 0.0623 | 0.8 | - | ACCEPT |
+| S0124 | S0123 | rotamer-finder | Coot rotamer fit and real-space refinement of each conformer of the residues in the most repeated MolProbity clash contacts (A13,A17,A114,A142,A172,A160,A217,A221), on the omit maps; a repair on the clashscore | 0.1579 |  | 0.0952 | 0.0627 | 0.7 | - | REFUSE |
